@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-style-theme="standard">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#030712">
+<meta name="description" content="A working Supabase-powered theme configuration system for a static application, with read-only access, saved preferences, local fallback, and an architecture explanation.">
+  <title>Cloud-Managed Themes | App Engineering Showcases</title>
+  <link rel="stylesheet" href="./styles/shared/base.css">
+  <link rel="stylesheet" href="./styles/cloud-managed-themes.css">
+  <link rel="stylesheet" href="./styles/shared/navigation.css">
+  <script src="./site-navigation.js" defer></script>
+
+  <!-- Theme packages: every theme owns its CSS, metadata, and visual assets. -->
+  <script src="./styles/themes/theme-registry.js"></script>
+  <script src="./styles/themes/standard/theme-config.js"></script>
+  <script src="./styles/themes/playful-pop/theme-config.js"></script>
+  <script src="./styles/themes/raggedy-granite/theme-config.js"></script>
+  <link rel="stylesheet" href="./styles/themes/standard/theme.css" data-style-theme-stylesheet data-active-style-theme="standard">
+  <script src="./theme.js"></script>
+</head>
+
+<body class="flexbox-interfaces-page cloud-managed-themes-page application-architecture-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div data-portfolio-navigation data-root="./" data-current-page="cloud-managed-themes"></div>
+
+  <div class="site-shell">
+    <header class="hero">
+      <p class="eyebrow">Design Technologist · App Engineering Showcases</p>
+      <h1>Cloud-managed themes. Local rendering.</h1>
+      <p class="hero-lead">A read-only Supabase integration manages appearance defaults while seven local theme packages keep rendering in the browser. Run this companion with any static HTTP host.</p>
+
+      <div class="process-strip" aria-label="Project workflow">
+        <div class="process-step"><span class="process-number">01</span><strong>Problem &amp; Scope</strong></div>
+        <div class="process-step"><span class="process-number">02</span><strong>Architecture Concepts</strong></div>
+        <div class="process-step"><span class="process-number">03</span><strong>System Architecture</strong></div>
+        <div class="process-step"><span class="process-number">04</span><strong>AI Prompt</strong></div>
+        <div class="process-step"><span class="process-number">05</span><strong>Audit</strong></div>
+        <div class="process-step"><span class="process-number">06</span><strong>Working System</strong></div>
+        <div class="process-step"><span class="process-number">07</span><strong>Verification</strong></div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section-card" data-architecture-section="problem" aria-labelledby="problem-title">
+        <div class="section-header"><span class="section-index">01</span><div><h2 id="problem-title">A static application, with cloud-managed defaults</h2><p class="section-kicker">Add a data service without rebuilding the website or depending on the network to render.</p></div></div>
+        <div class="narrative-grid">
+          <article class="narrative-panel"><h3>Before: settings in source code</h3><p>The original portfolio supplied seven theme packages and an independent light/dark setting; this standalone companion retains those renderers. Changing the site-wide default or menu order previously required a source edit and deployment.</p></article>
+          <article class="narrative-panel"><h3>After: one public settings record</h3><p>Supabase stores the default theme, mode, and menu order. A static HTTP host delivers this standalone application. The browser validates configuration and reuses the existing theme controller.</p></article>
+        </div>
+        <p class="architecture-note"><strong>Actors &amp; non-goals.</strong> The site owner manages public defaults; visitors choose their own appearance. This prototype reads configuration only. It does not add visitor accounts, an administration screen, remote theme-code delivery, or a new hosting layer.</p>
+        <div class="risk-strip" aria-label="Architectural safeguards"><span>No visitor login</span><span>No remote CSS</span><span>No public writes</span><span>Local fallback</span></div>
+      </section>
+
+      <section class="section-card" data-architecture-section="concepts" aria-labelledby="concepts-title">
+        <div class="section-header"><span class="section-index">02</span><div><h2 id="concepts-title">The boundaries behind one small integration</h2><p class="section-kicker">Six concepts explain the connection, data ownership, and failure behavior.</p></div></div>
+        <div class="concept-grid">
+          <article class="concept-card concept-card--linked"><a class="concept-resource-link concept-resource-link--primary concept-resource-link--single" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch" target="_blank" rel="noopener noreferrer"><span class="concept-token">HTTPS GET</span><h3>Browser → API</h3><p>Fetch configuration while the browser retains rendering ownership.</p></a></article>
+          <article class="concept-card concept-card--linked"><a class="concept-resource-link concept-resource-link--primary concept-resource-link--single" href="https://supabase.com/docs/guides/getting-started/architecture" target="_blank" rel="noopener noreferrer"><span class="concept-token">PostgreSQL + PostgREST</span><h3>Service boundaries</h3><p>A relational database persists the record; a REST service exposes permitted queries.</p></a></article>
+          <article class="concept-card concept-card--linked"><a class="concept-resource-link concept-resource-link--primary concept-resource-link--single" href="https://supabase.com/docs/guides/database/postgres/row-level-security" target="_blank" rel="noopener noreferrer"><span class="concept-token">GRANT SELECT + RLS</span><h3>Read-only by design</h3><p>Grants permit reads; policies restrict which configuration is visible.</p></a></article>
+          <article class="concept-card concept-card--linked"><a class="concept-resource-link concept-resource-link--primary concept-resource-link--single" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="noopener noreferrer"><span class="concept-token">localStorage</span><h3>Visitor choice wins</h3><p>Saved style and mode remain independent from site-wide defaults.</p></a></article>
+          <article class="concept-card concept-card--linked"><a class="concept-resource-link concept-resource-link--primary concept-resource-link--single" href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController" target="_blank" rel="noopener noreferrer"><span class="concept-token">AbortController</span><h3>Bounded waiting</h3><p>Requests time out; newer reloads supersede older requests.</p></a></article>
+          <article class="concept-card concept-card--linked"><a class="concept-resource-link concept-resource-link--primary concept-resource-link--single" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/--*" target="_blank" rel="noopener noreferrer"><span class="concept-token">--custom-properties</span><h3>Local theme ownership</h3><p>Existing packages still own CSS, textures, icons, and visual tokens.</p></a></article>
+        </div>
+      </section>
+
+      <section class="section-card" data-architecture-section="architecture" aria-labelledby="architecture-title">
+        <div class="section-header"><span class="section-index">03</span><div><h2 id="architecture-title">How the cloud-managed theme system fits together</h2><p class="section-kicker">System Architecture · Three boundaries, separate responsibilities, one local renderer.</p></div></div>
+<div class="cmt-architecture-section" aria-label="Cloud-managed themes architecture">
+
+  <!-- Section Heading & Subtitle -->
+  <div class="cmt-header"><p class="cmt-subtitle">Website delivery, configuration data, and browser preferences have separate responsibilities. This explanatory diagram is not connection telemetry; live observations belong to the Working System panel.</p></div>
+
+  <!-- Legend -->
+  <div class="cmt-legend" role="region" aria-label="Diagram Legend">
+    <span class="cmt-legend-title">Legend:</span>
+    <span class="cmt-legend-item">
+      <span class="cmt-legend-line solid-accent" aria-hidden="true"></span>
+      <span>Normal runtime path (Static delivery &amp; direct API)</span>
+    </span>
+    <span class="cmt-legend-item">
+      <span class="cmt-legend-line solid-teal" aria-hidden="true"></span>
+      <span>Normal preference input &amp; local rendering</span>
+    </span>
+    <span class="cmt-legend-item">
+      <span class="cmt-legend-line dashed-fallback" aria-hidden="true"></span>
+      <span>Failure path: validated cache or bundled defaults</span>
+    </span>
+    <span class="cmt-legend-item">
+      <span class="cmt-legend-badge" aria-hidden="true">RLS</span>
+      <span>Operation grants + row-level SELECT policy</span>
+    </span>
+  </div>
+
+  <!-- Primary Diagram Card -->
+  <div class="cmt-diagram-card">
+    <!-- Desktop & Tablet SVG Diagram (Vector, responsive viewBox, pure CSS variables, crisp text) -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="cmt-svg-canvas" viewBox="0 0 1080 860" role="img" aria-labelledby="cmt-svg-title cmt-svg-desc">
+      <title id="cmt-svg-title">Cloud-Managed Themes System Architecture Diagram</title>
+      <desc id="cmt-svg-desc">Three boundaries: Static host delivers static files to the Visitor Browser. The Browser sends a direct HTTPS GET to the Supabase Data API, which returns configuration JSON. PostgreSQL operation grants and an RLS SELECT policy restrict browser access. Explicit preferences are normal inputs; validated cache or bundled defaults supply configuration on failure. Local packages render the appearance.</desc>
+
+      <defs>
+        
+        <marker id="cmt-arrow-accent" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse" aria-hidden="true">
+          <path d="M 0 1 L 10 5 L 0 9 z" class="cmt-arrowhead-accent" />
+        </marker>
+
+        
+        <marker id="cmt-arrow-teal" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse" aria-hidden="true">
+          <path d="M 0 1 L 10 5 L 0 9 z" class="cmt-arrowhead-teal" />
+        </marker>
+
+        
+        <marker id="cmt-arrow-fallback" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse" aria-hidden="true">
+          <path d="M 0 1 L 10 5 L 0 9 z" class="cmt-arrowhead-fallback" />
+        </marker>
+
+        
+        </defs>
+
+      
+      
+      
+      <g class="cmt-box-cloudflare"><rect x="20" y="30" width="230" height="770" rx="10" class="cmt-shape-elevated" /><text x="36" y="62" class="cmt-svg-text cmt-svg-tag">STATIC HOSTING</text><text x="36" y="96" class="cmt-svg-text cmt-svg-heading">Static host</text><text x="36" y="124" class="cmt-svg-text ">Static website delivery</text><rect x="36" y="155" width="198" height="262" rx="10" class="cmt-shape-surface" /><text x="50" y="184" class="cmt-svg-text cmt-svg-subheading">Static application</text><text x="50" y="207" class="cmt-svg-text cmt-svg-subheading">bundle</text><circle cx="51" cy="240" r="3" class="cmt-asset-dot" /><text x="63" y="245" class="cmt-svg-text ">HTML structure</text><circle cx="51" cy="275" r="3" class="cmt-asset-dot" /><text x="63" y="280" class="cmt-svg-text ">Base CSS</text><circle cx="51" cy="310" r="3" class="cmt-asset-dot" /><text x="63" y="315" class="cmt-svg-text ">JavaScript logic</text><circle cx="51" cy="345" r="3" class="cmt-asset-dot" /><text x="63" y="350" class="cmt-svg-text ">Theme packages</text><circle cx="51" cy="380" r="3" class="cmt-asset-dot" /><text x="63" y="385" class="cmt-svg-text ">Local visual assets</text><rect x="36" y="450" width="198" height="175" rx="10" class="cmt-shape-surface cmt-shape-dashed" /><text x="50" y="480" class="cmt-svg-text cmt-svg-subheading">Hosting boundary</text><text x="50" y="518" class="cmt-svg-text ">Serves static files.</text><text x="50" y="541" class="cmt-svg-text ">Does not proxy the</text><text x="50" y="564" class="cmt-svg-text ">configuration API.</text><text x="50" y="587" class="cmt-svg-text ">No database access.</text></g><g class="cmt-box-browser"><rect x="335" y="30" width="420" height="770" rx="10" class="cmt-shape-elevated" /><text x="353" y="62" class="cmt-svg-text cmt-svg-tag cmt-svg-teal">CLIENT RUNTIME</text><text x="353" y="96" class="cmt-svg-text cmt-svg-heading">Visitor’s Browser</text><text x="353" y="124" class="cmt-svg-text ">Executes the application; owns local rendering</text><rect x="353" y="155" width="384" height="139" rx="10" class="cmt-shape-surface" /><text x="369" y="184" class="cmt-svg-text cmt-svg-subheading">Cloud Configuration Loader</text><text x="369" y="213" class="cmt-svg-text ">Direct HTTPS client; publishable key</text><text x="369" y="236" class="cmt-svg-text ">Validates default_theme, default_mode,</text><text x="369" y="259" class="cmt-svg-text ">and theme_order against local IDs.</text><rect x="353" y="338" width="384" height="147" rx="10" class="cmt-shape-surface" /><text x="369" y="368" class="cmt-svg-text cmt-svg-subheading">Preference Resolution Engine</text><text x="369" y="397" class="cmt-svg-text ">Style and light/dark mode are independent.</text><text x="369" y="420" class="cmt-svg-text ">Explicit preferences override defaults.</text><text x="369" y="443" class="cmt-svg-text ">Resolve current choices after async work.</text><rect x="353" y="547" width="184" height="173" rx="10" class="cmt-shape-surface" /><text x="367" y="576" class="cmt-svg-text cmt-svg-subheading">Local Theme</text><text x="367" y="599" class="cmt-svg-text cmt-svg-subheading">Controller</text><text x="367" y="633" class="cmt-svg-text ">Registry packages</text><text x="367" y="656" class="cmt-svg-text ">own CSS and assets.</text><text x="367" y="679" class="cmt-svg-text ">Available local</text><text x="367" y="702" class="cmt-svg-text ">renderers apply.</text><rect x="553" y="547" width="184" height="173" rx="10" class="cmt-shape-surface" /><text x="567" y="576" class="cmt-svg-text cmt-svg-subheading">Browser Storage</text><text x="567" y="599" class="cmt-svg-text cmt-svg-subheading">&amp; Page Memory</text><text x="567" y="633" class="cmt-svg-text ">Saved preferences</text><text x="567" y="656" class="cmt-svg-text ">are normal inputs.</text><text x="567" y="679" class="cmt-svg-text ">localStorage holds</text><text x="567" y="702" class="cmt-svg-text ">validated config cache.</text><text x="353" y="754" class="cmt-svg-text ">Bundled defaults are shipped in code, not storage.</text><text x="353" y="777" class="cmt-svg-text ">Blocked storage: choices last this page session.</text></g><g class="cmt-box-supabase"><rect x="840" y="30" width="220" height="770" rx="10" class="cmt-shape-elevated" /><text x="856" y="62" class="cmt-svg-text cmt-svg-tag">CLOUD BACKEND</text><text x="856" y="96" class="cmt-svg-text cmt-svg-heading">Supabase</text><text x="856" y="124" class="cmt-svg-text ">Data API + PostgreSQL</text><rect x="856" y="155" width="188" height="139" rx="10" class="cmt-shape-surface" /><text x="869" y="184" class="cmt-svg-text cmt-svg-subheading">Data API /</text><text x="869" y="207" class="cmt-svg-text cmt-svg-subheading">PostgREST</text><text x="869" y="242" class="cmt-svg-text ">Configuration JSON</text><text x="869" y="265" class="cmt-svg-text ">No executable assets</text><rect x="856" y="338" width="188" height="382" rx="10" class="cmt-shape-surface" /><text x="869" y="368" class="cmt-svg-text cmt-svg-subheading">PostgreSQL</text><text x="869" y="400" class="cmt-svg-text ">public.</text><text x="869" y="423" class="cmt-svg-text ">portfolio_theme_</text><text x="869" y="446" class="cmt-svg-text">settings</text><text x="869" y="466" class="cmt-svg-text ">SELECT grants + RLS</text><text x="869" y="489" class="cmt-svg-text ">for the portfolio row.</text><text x="869" y="532" class="cmt-svg-text ">Browser roles: deny</text><text x="869" y="555" class="cmt-svg-text ">INSERT, UPDATE,</text><text x="869" y="578" class="cmt-svg-text ">DELETE. Admin edits</text><text x="869" y="601" class="cmt-svg-text ">remain possible.</text><text x="869" y="652" class="cmt-svg-text cmt-svg-mono">default_theme</text><text x="869" y="675" class="cmt-svg-text cmt-svg-mono">default_mode</text><text x="869" y="698" class="cmt-svg-text cmt-svg-mono">theme_order</text></g><path d="M 250 270 H 329" class="cmt-connector cmt-connector-accent" marker-end="url(#cmt-arrow-accent)" aria-hidden="true" /><text x="258" y="222" class="cmt-svg-text cmt-svg-flow">HTML/CSS</text><text x="258" y="245" class="cmt-svg-text cmt-svg-flow">JS/assets</text><path d="M 755 210 H 834" class="cmt-connector cmt-connector-accent" marker-end="url(#cmt-arrow-accent)" aria-hidden="true" /><text x="766" y="177" class="cmt-svg-text cmt-svg-flow">HTTPS</text><text x="766" y="200" class="cmt-svg-text cmt-svg-flow">GET</text><path d="M 840 268 H 761" class="cmt-connector cmt-connector-accent" marker-end="url(#cmt-arrow-accent)" aria-hidden="true" /><text x="771" y="245" class="cmt-svg-text cmt-svg-flow">JSON</text><path d="M 545 294 V 332" class="cmt-connector cmt-connector-accent" marker-end="url(#cmt-arrow-accent)" aria-hidden="true" /><path d="M 445 485 V 541" class="cmt-connector cmt-connector-teal" marker-end="url(#cmt-arrow-teal)" aria-hidden="true" /><text x="355" y="513" class="cmt-svg-text cmt-svg-teal">Render</text><text x="355" y="536" class="cmt-svg-text cmt-svg-teal">locally</text><path d="M 645 547 V 491" class="cmt-connector cmt-connector-teal" marker-end="url(#cmt-arrow-teal)" aria-hidden="true" /><text x="560" y="515" class="cmt-svg-text cmt-svg-teal">Choices</text><path d="M 737 690 H 746 V 324 H 655 V 332" class="cmt-connector cmt-connector-fallback" marker-end="url(#cmt-arrow-fallback)" aria-hidden="true" /><text x="560" y="315" class="cmt-svg-text cmt-svg-fallback">Cache on failure</text><path d="M 950 294 V 332" class="cmt-connector cmt-connector-accent" marker-end="url(#cmt-arrow-accent)" aria-hidden="true" /><text x="20" y="836" class="cmt-svg-text cmt-svg-caption">Direct Browser → API request; API → Browser JSON response. Diagram, not telemetry.</text></svg>
+
+    <!-- Stacked responsive presentation for mobile viewports (<=860px) -->
+    <div class="cmt-stacked-view">
+      <!-- 1. Static host Node -->
+      <div class="cmt-stack-node">
+        <div class="cmt-node-header">
+          <span class="cmt-node-tag">Static Hosting</span>
+          <span class="cmt-pill">Static Only</span>
+        </div>
+        <h3 class="cmt-node-title">Static host</h3>
+        <p class="cmt-node-description">
+          Hosts and delivers static bundle files to the visitor's browser. Does not proxy API calls or talk to PostgreSQL.
+        </p>
+        <div class="cmt-pill-list">
+          <span class="cmt-pill">HTML</span>
+          <span class="cmt-pill">CSS</span>
+          <span class="cmt-pill">JavaScript</span>
+          <span class="cmt-pill">Theme Packages</span>
+        </div>
+      </div>
+
+      <!-- Connector: Static Delivery -->
+      <div class="cmt-stack-flow">
+        <span class="cmt-flow-label accent">HTML / CSS / JavaScript / assets</span>
+        <div class="cmt-flow-arrow accent" aria-hidden="true"></div>
+      </div>
+
+      <!-- 2. Visitor's Browser Node -->
+      <div class="cmt-stack-node cmt-stack-node--browser">
+        <div class="cmt-node-header">
+          <span class="cmt-node-tag cmt-node-tag--client">Client Runtime</span>
+          <span class="cmt-pill">Browser Engine</span>
+        </div>
+        <h3 class="cmt-node-title">Visitor’s Browser</h3>
+        <p class="cmt-node-description">
+          Runs this application. Validates incoming configuration, resolves explicit preferences against defaults, and renders available local theme packages.
+        </p>
+        <div class="cmt-browser-steps">
+          <div class="cmt-browser-step">
+            <strong class="cmt-step-label">1. Cloud Config Loader:</strong> Direct HTTPS fetch to Supabase, validating schema.
+          </div>
+          <div class="cmt-browser-step">
+            <strong class="cmt-step-label">2. Preference Resolution:</strong> Style &amp; light/dark mode are independent. Explicit selection overrides default.
+          </div>
+          <div class="cmt-browser-step">
+            <strong class="cmt-step-label">3. Theme Controller:</strong> Uses the existing local registry and controller. Remote configuration supplies no executable JavaScript or CSS paths.
+          </div>
+          <div class="cmt-browser-step">
+            <strong>4. Normal preference input:</strong> Saved preferences from localStorage and current-page choices feed resolution on success too. When storage is blocked, memory-only choices last the current page session.</div><div class="cmt-storage-note"><strong>5. Failure configuration:</strong> A validated localStorage-backed configuration cache is used when available; otherwise bundled defaults shipped in code apply. Bundled defaults are not browser storage. This does not guarantee API availability or every theme asset.
+          </div>
+        </div>
+      </div>
+
+      <!-- Connector: API Direct Request & Response -->
+      <div class="cmt-stack-flow">
+        <span class="cmt-flow-label accent">Browser → API: HTTPS GET</span><span class="cmt-flow-label accent">API → Browser: configuration JSON</span>
+        <div class="cmt-flow-arrow accent" aria-hidden="true"></div>
+      </div>
+
+      <!-- 3. Supabase Node -->
+      <div class="cmt-stack-node">
+        <div class="cmt-node-header">
+          <span class="cmt-node-tag">Cloud Backend</span>
+          <span class="cmt-pill">SELECT Only</span>
+        </div>
+        <h3 class="cmt-node-title">Supabase (PostgREST + PostgreSQL)</h3>
+        <p class="cmt-node-description">
+          Serves configuration JSON from <code>public.portfolio_theme_settings</code>. Operation grants allow SELECT; the RLS SELECT policy restricts the visible row. INSERT, UPDATE, and DELETE are denied for browser roles (anon/authenticated), not all PostgreSQL users: administrative edits remain possible. The publishable key is not a privileged secret.
+        </p>
+        <div class="cmt-pill-list">
+          <span class="cmt-pill">Data API / PostgREST</span>
+          <span class="cmt-pill">RLS Enabled</span>
+          <span class="cmt-pill">default_theme</span>
+          <span class="cmt-pill">default_mode</span>
+          <span class="cmt-pill">theme_order</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Text equivalent for the same supplied architecture component. -->
+  <details class="cmt-accessible-details">
+    <summary class="cmt-accessible-summary">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="8" cy="8" r="6"></circle>
+        <line x1="8" y1="8" x2="8" y2="12"></line>
+        <line x1="8" y1="5" x2="8.01" y2="5"></line>
+      </svg>
+      <span>Text equivalent: ownership, flows &amp; fallback</span>
+    </summary>
+    <div class="cmt-accessible-content">
+      <p>Three execution and trust boundaries, not a trace of a live request:</p>
+      <ol>
+        <li><strong>Static host → Browser:</strong> Static HTML, CSS, JavaScript, and local theme packages are delivered to the Visitor Browser. Static host does not proxy this configuration API or access PostgreSQL.</li>
+        <li><strong>Browser → API:</strong> The browser sends a direct HTTPS GET with a publishable key to the Supabase Data API / PostgREST. <strong>API → Browser:</strong> The response is configuration JSON, not executable JavaScript, CSS, or arbitrary asset paths.</li>
+        <li><strong>Database boundary:</strong> PostgreSQL persists <code>public.portfolio_theme_settings</code>. SELECT operation grants and an RLS SELECT policy allow the portfolio row to be read. INSERT, UPDATE, and DELETE are denied for browser roles; administrative edits remain possible. RLS does not replace operation grants.</li>
+        <li><strong>Normal preference input:</strong> The browser validates default_theme, default_mode, and theme_order against its local whitelist. Saved preferences in localStorage and current-page choices are inputs even after a successful GET. Style and mode are independent; only explicit dimensions override configured defaults. Blocked storage leaves memory-only preferences for the current page session.</li>
+        <li><strong>Failure path:</strong> A validated configuration cache is localStorage-backed when available. Failed or timed-out reads use that cache, otherwise bundled defaults shipped in code—not preferences storage. Newer requests supersede older work; current choices are resolved after asynchronous loading.</li>
+        <li><strong>Local rendering:</strong> The existing controller activates available local packages. A successful API read does not prove every CSS or visual asset loaded. Bounded waiting and fallback reduce the dependency; they cannot guarantee API availability or complete asset rendering.</li>
+      </ol>
+    </div>
+  </details>
+</div>
+      </section>
+
+      <section class="section-card" data-architecture-section="prompt" aria-labelledby="prompt-title">
+        <div class="section-header"><span class="section-index">04</span><div><h2 id="prompt-title">AI Prompt</h2><p class="section-kicker">Review → plan → build → verify. Use AI in small steps, then inspect the result.</p></div></div>
+        <div class="prompt-build architecture-ai-workflow">
+          <ol class="architecture-ai-steps"><li data-ai-step><h3>01 · Review the existing app</h3><p>Give AI the current files and ask what must stay unchanged.</p><details class="ai-step-prompt"><summary>Suggested prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Step 01</span><button class="copy-button" type="button" data-copy-target="aiReviewPrompt">Copy Prompt</button></div><pre><code id="aiReviewPrompt">Review the attached application files before editing.
+Identify the theme controller, local theme packages,
+navigation, and the working showcase.
+
+Explain which parts run in the browser and which
+settings could come from a remote service.
+List the files that must remain unchanged.
+Do not write code yet.</code></pre></div></details></li><li data-ai-step><h3>02 · Plan the connection</h3><p>Ask for a small, read-only design with clear ownership.</p><details class="ai-step-prompt"><summary>Suggested prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Step 02</span><button class="copy-button" type="button" data-copy-target="aiPlanPrompt">Copy Prompt</button></div><pre><code id="aiPlanPrompt">Using the review above, plan a read-only Supabase
+connection for theme defaults and menu order.
+
+Show Static host delivery, a direct browser GET,
+PostgREST, PostgreSQL, SELECT grants, and RLS.
+Keep CSS and assets in the local theme packages.
+Explain visitor preferences, validation, timeout,
+and cache or bundled fallback. No browser writes.
+Return a focused plan before implementation.</code></pre></div></details></li><li data-ai-step><h3>03 · Build the working feature</h3><p>Use the implementation prompt alongside these steps, then inspect the changed files.</p><p><a href="#cloudWorkingPrompt">Use the implementation prompt</a></p></li><li data-ai-step><h3>04 · Verify and refine</h3><p>Return real test results to AI and request focused corrections.</p><details class="ai-step-prompt"><summary>Suggested prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Step 04</span><button class="copy-button" type="button" data-copy-target="aiVerifyPrompt">Copy Prompt</button></div><pre><code id="aiVerifyPrompt">Test the implementation against its requirements.
+Check a real read when reachable, independent
+style/mode choices, reload, reset, offline fallback,
+restricted storage, search, and keyboard access.
+Check installed themes and narrow layouts.
+
+Separate live observations from controlled tests.
+Report failures and blocked checks honestly.
+Fix only demonstrated defects; preserve the layout.
+Never invent a successful response or test result.</code></pre></div></details></li></ol>
+          <details class="ai-build-prompt" data-implementation-spec open><summary>Implementation specification · AI build prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Suggested implementation prompt</span><button class="copy-button" type="button" data-copy-target="cloudWorkingPrompt">Copy Prompt</button></div><pre><code id="cloudWorkingPrompt">Add read-only cloud configuration to this static
+application without replacing its local rendering
+system.
+
+1. Preserve local rendering. Theme packages and
+   standalone navigation remain usable independently
+   of the configuration request. Do not add other
+   portfolio pages.
+
+2. Verify the architecture. PostgreSQL stores one
+   public settings record; the Supabase Data API
+   exposes permitted reads through PostgREST. The
+   record controls the default theme, color mode,
+   and menu order, not CSS or assets.
+
+3. Restrict access. Use a publishable browser key
+   with SELECT grants and a row-level SELECT policy.
+   Browser roles cannot insert, update, or delete
+   settings. Keep database passwords and privileged
+   keys out of the frontend.
+
+4. Reuse the renderer. Validate remote values
+   against installed local theme IDs. The shared
+   theme controller applies local CSS and assets;
+   remote configuration cannot execute code or
+   supply arbitrary asset paths.
+
+5. Handle failure and preferences. Render
+   immediately. Use validated cache or bundled
+   settings when a request fails. Override defaults
+   only in dimensions the visitor explicitly
+   selects, including choices made while requests or
+   metadata loads are pending. Save choices when
+   browser storage is available; otherwise keep them
+   for the current page session.
+
+6. Verify observable behavior. Show actual request
+   status, duration, and returned settings. Label
+   offline simulation. Exercise reads, permission
+   checks, independent preferences, malformed data,
+   failure recovery, keyboard access, responsive
+   layouts, and Chromium/Firefox behavior. Keep
+   executed results separate from explanatory
+   diagrams and pending deployment checks.</code></pre></div></details>
+        </div>
+
+      </section>
+
+      <section class="section-card" data-architecture-section="audit" aria-labelledby="audit-title">
+        <div class="section-header"><span class="section-index">05</span><div><h2 id="audit-title">Audit</h2><p class="section-kicker">Check the generated code against the boundaries that matter.</p></div></div>
+        <div class="audit-layout"><div class="code-panel"><div class="code-toolbar"><span class="code-label">Permission contract · excerpt, not the complete migration</span><button class="copy-button" type="button" data-copy-target="cloudAuditCode">Copy SQL Excerpt</button></div><pre><code id="cloudAuditCode">alter table public.portfolio_theme_settings
+  enable row level security;
+revoke all on table public.portfolio_theme_settings
+  from public, anon, authenticated;
+grant select on table public.portfolio_theme_settings
+  to anon, authenticated;
+-- Add a SELECT-only policy for id = 'portfolio'.
+-- Full rerunnable migration: setup.sql</code></pre></div><div class="audit-grid"><article class="audit-item"><h3>Check access</h3><p>SELECT grants and RLS allow the public record to be read. Browser roles cannot write; administrative edits remain possible.</p></article><article class="audit-item"><h3>Validate the response</h3><p>Accept only known theme IDs from the local whitelist and supported modes—not remote CSS or executable code.</p></article><article class="audit-item"><h3>Preserve visitor choices</h3><p>Resolve style and mode independently. If storage is blocked, choices last the current page session.</p></article><article class="audit-item"><h3>Test failure honestly</h3><p>Use validated cache or bundled defaults on failure. Label simulations and show the actual configuration source.</p></article></div></div>
+
+      </section>
+
+      <section class="section-card" data-architecture-section="working" id="final-result" aria-labelledby="result-title">
+        <div class="section-header"><span class="section-index">06</span><div><h2 id="result-title">Inspect the connection. Try the result.</h2><p class="section-kicker">This standalone panel reads the public configuration record used by the original companion feature. The diagram explains service responsibilities; request metrics come from this browser.</p></div></div>
+        <div class="result-stage"><div class="cloud-lab">
+          <div class="cloud-lab__header"><div><p class="cloud-lab__eyebrow">APP ENGINEERING SHOWCASES · SUPABASE</p><h3>Cloud-managed themes</h3><p>One database record. Seven local design systems.</p></div><span class="cloud-lab__badge" id="cloud-status" role="status" aria-live="polite">Starting…</span></div>
+          <p class="architecture-runtime-note">Live browser observation · Read the current metrics below. <a href="#architecture-title">Section 03 explains the architecture</a>; it does not report connection health.</p>
+          <div class="cloud-lab__actions"><button type="button" id="cloud-reload">Reload from Supabase</button><button type="button" id="cloud-offline">Simulate offline fallback</button><button type="button" id="cloud-defaults">Use cloud defaults in this browser</button><button type="button" data-theme-toggle>Switch color mode</button></div>
+          <p class="cloud-lab__hint">Previews keep your choice for the current page session and save it for later visits when browser storage is available. “Use cloud defaults” removes current-page style/mode overrides and removes saved choices when browser storage permits. If removal is blocked, existing saved choices can return on reload. Offline simulation skips the request; it does not change Supabase.</p>
+          <dl class="cloud-lab__metrics"><div><dt>Configuration source</dt><dd id="cloud-source">Bundled defaults</dd></div><div><dt>Last request HTTP</dt><dd id="cloud-http">—</dd></div><div><dt>Request duration</dt><dd id="cloud-duration">—</dd></div><div><dt>Records returned</dt><dd id="cloud-count">—</dd></div></dl>
+          <p id="cloud-message" role="status" aria-live="polite">Waiting for the first request.</p>
+          <div class="cloud-lab__workspace">
+            <div><label class="cloud-lab__label" for="cloud-filter">Find a theme</label><input id="cloud-filter" type="search" maxlength="80" placeholder="Try luminous, gothic, or marble" aria-describedby="cloud-filter-help"><p id="cloud-filter-help" class="cloud-lab__hint">An empty search shows all themes. Up to 80 characters.</p><div id="cloud-cards" class="cloud-lab__cards" aria-label="Installed theme previews"></div><p id="cloud-empty" hidden>No themes match. Clear your search to show all themes.</p></div>
+            <aside class="cloud-lab__inspector" aria-labelledby="cloud-inspector-heading"><h4 id="cloud-inspector-heading">Configuration inspector</h4><dl><dt>Configured site default</dt><dd id="cloud-default-value">—</dd><dt>Current appearance</dt><dd id="cloud-current-value">—</dd><dt>Last successful fetch</dt><dd id="cloud-fetched">—</dd></dl><pre class="code-panel"><code id="cloud-json">Loading configuration…</code></pre><p class="cloud-lab__hint">Public settings only. No secret keys or internal logs.</p></aside>
+          </div>
+        </div></div>
+        <div class="result-explanation"><p>Your static HTTP host delivers this application. Supabase supplies configuration. Local theme packages render the result, and visitor choices override site defaults.</p><p><a href="setup.sql">Database setup SQL</a></p></div>
+      </section>
+
+      <section class="section-card" data-architecture-section="verification" aria-labelledby="verification-title">
+        <div class="section-header"><span class="section-index">07</span><div><h2 id="verification-title">Verification</h2><p class="section-kicker">Try the feature, inspect the evidence, and refine only what fails.</p></div></div>
+        <ol class="verification-list"><li>Reload and compare the configured default with the current appearance.</li><li>Choose a style and mode; check persistence and reset behavior.</li><li>Try offline simulation and confirm the fallback source.</li><li>Test search, Tab, Enter, and visible focus.</li><li>Check all installed themes at desktop and mobile widths.</li></ol>
+        <p class="verification-summary">Cloud settings choose defaults; local packages render the result. The useful trade-off is flexibility without handing rendering ownership to the backend.</p>
+
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-copyright">&copy; 2026 Dmitriy Chernichenko.</p>
+      <p>Supabase supplies settings; local theme packages render this application even when the configuration service is unavailable.</p>
+      <p><a href="#main-content">Back to the showcase</a></p>
+    </footer>
+
+    <noscript>
+      <p class="noscript-note">The architecture explanation remains readable without JavaScript. Live configuration, previews, and copying require JavaScript.</p>
+    </noscript>
+  </div>
+
+  <script src="./copy-code.js" defer></script>
+  <script src="showcase.js" defer></script>
+</body>
+</html>

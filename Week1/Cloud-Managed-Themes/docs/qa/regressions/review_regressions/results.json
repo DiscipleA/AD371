@@ -1,0 +1,77 @@
+{
+  "passed": 11,
+  "failed": 0,
+  "results": [
+    {
+      "test": "chromium restricted-storage choice survives reload and reset",
+      "passed": true,
+      "detail": "Session choice survives reload, then explicit reset clears it."
+    },
+    {
+      "test": "chromium unrelated failed metadata does not block configuration",
+      "passed": true,
+      "detail": "Real controller requested and accepted fixture configuration despite package problem."
+    },
+    {
+      "test": "chromium unrelated hanging metadata does not block configuration",
+      "passed": true,
+      "detail": "Real controller requested and accepted fixture configuration despite package problem."
+    },
+    {
+      "test": "chromium missing default package preserves a valid local renderer",
+      "passed": true,
+      "detail": "Real controller requested and accepted fixture configuration despite package problem."
+    },
+    {
+      "test": "chromium metadata load has bounded wait",
+      "passed": true,
+      "detail": {
+        "result": "failed-bounded"
+      }
+    },
+    {
+      "test": "chromium missing connection script reports unavailable",
+      "passed": true,
+      "detail": "Script failure visible; unavailable cloud actions disabled; local controller works."
+    },
+    {
+      "test": "chromium missing runtime script reports unavailable",
+      "passed": true,
+      "detail": "Script failure visible; unavailable cloud actions disabled; local controller works."
+    },
+    {
+      "test": "chromium hanging connection script has bounded unavailable state",
+      "passed": true,
+      "detail": "Hanging cloud script settles unavailable without breaking local controls."
+    },
+    {
+      "test": "chromium hanging runtime script has bounded unavailable state",
+      "passed": true,
+      "detail": "Hanging cloud script settles unavailable without breaking local controls."
+    },
+    {
+      "test": "chromium bounded API timeout preserves pending visitor choice",
+      "passed": true,
+      "detail": "Actual fetch timeout preserved choice and reported fallback, not an observed HTTP response."
+    },
+    {
+      "test": "chromium idle inspector does not claim verification",
+      "passed": true,
+      "detail": "Controlled idle state makes no success claim."
+    }
+  ],
+  "target_origin": "https://chernichenkodmitriy.com",
+  "execution_scope": "Existing assertions, live origin; Chromium-only selection in a diagnostic in-memory copy. Fixtures explicitly marked in original assertions; real reads not mocked. Firefox independently tested by run_firefox.py.",
+  "tested_source_sha256": {
+    "theme.js": "e906eb88b24711f137741620d28fa2812accdb29be0db2111f99c825ddf6dc26",
+    "theme-cloud.js": "09cf42e0132ccd16edb02d1004c572a9d09bf409b2853b8fb27974215058f604",
+    "theme-cloud-config.js": "51612fcc5f66fb9c70107a154a76e55ae679249eb491c2779c4d14ebf14b48e5",
+    "site-navigation.js": "dd42a3daf97be4cf86dcdcd1f25927d516e50b289b6cc3ee38e21bc59f88a1e4",
+    "resume.html": "ada96cf88ce28b59befad9ae2810104909076ff9a138e5f9493adf06ea382077",
+    "styles/themes/theme-registry.js": "efd038a63a38f0830a98d572ae5945648c6e8cd69338bd07f4a3c14f0ea7d874",
+    "styles/cloud-managed-themes.css": "af358d5c5a07e5c2c59f3a2a6fcdca93fb4dc4ccfa700d15acb7817532e08e1c",
+    "showcases/cloud-managed-themes/index.html": "d55304537e32c45ae056310bb5a501a501d6d849c8415d52a1ce19cba6ebc227",
+    "showcases/cloud-managed-themes/showcase.js": "4437658f1e6f13992e98d6552b000948fe14379fb89dfb02ad73613b7f66c305",
+    "showcases/cloud-managed-themes/setup.sql": "3251142e5aa2610f55d13c8b70f23529f291df5941a898ffc1e121e9aa249505"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "passed": 6,
+  "failed": 1,
+  "results": [
+    {
+      "test": "chromium style-only pending GET",
+      "passed": true,
+      "detail": "Selected dimension wins; unselected cloud dimension applies; rendered/controller state and next mode click agree."
+    },
+    {
+      "test": "chromium mode-only pending GET",
+      "passed": true,
+      "detail": "Selected dimension wins; unselected cloud dimension applies; rendered/controller state and next mode click agree."
+    },
+    {
+      "test": "chromium style-only pending metadata",
+      "passed": true,
+      "detail": "Selected dimension wins; unselected cloud dimension applies; rendered/controller state and next mode click agree."
+    },
+    {
+      "test": "chromium mode-only pending metadata",
+      "passed": true,
+      "detail": "Selected dimension wins; unselected cloud dimension applies; rendered/controller state and next mode click agree."
+    },
+    {
+      "test": "chromium storage-restricted style-only pending GET",
+      "passed": true,
+      "detail": "Selected dimension wins; unselected cloud dimension applies; rendered/controller state and next mode click agree."
+    },
+    {
+      "test": "chromium newer GET wins pending metadata",
+      "passed": false,
+      "error": "Page.evaluate: Error: Unable to load the installed theme package.\n    at Object.ensureKnownTheme (https://chernichenkodmitriy.com/theme.js:302:58)\n    at async eval (eval at evaluate (:302:30), <anonymous>:1:11)\n    at async <anonymous>:328:30",
+      "traceback": "Traceback (most recent call last):\n  File \"/media/reader/DAILY_USE/IT161/Week8/Resume/tests/cloud-managed-themes/interaction_regressions.py\", line 151, in <module>\n    detail=fn();results.append({'test':name+' '+title,'passed':True,'detail':detail});print('PASS',name,title,flush=True)\n           ^^^^\n  File \"/media/reader/DAILY_USE/IT161/Week8/Resume/tests/cloud-managed-themes/interaction_regressions.py\", line 146, in <lambda>\n    cases=[('style-only pending GET',lambda:partial_choice(browser)),('mode-only pending GET',lambda:partial_choice(browser,dimension='mode')),('style-only pending metadata',lambda:partial_choice(browser,metadata=True)),('mode-only pending metadata',lambda:partial_choice(browser,dimension='mode',metadata=True)),('storage-restricted style-only pending GET',lambda:partial_choice(browser,restricted=True)),('newer GET wins pending metadata',lambda:newer_request_wins(browser)),('keyboard focus survives moved menu option and transition',lambda:moving_focus(browser))]\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/media/reader/DAILY_USE/IT161/Week8/Resume/tests/cloud-managed-themes/interaction_regressions.py\", line 107, in newer_request_wins\n    page.evaluate('''async()=>{await portfolioTheme.ensureKnownTheme('glossy-marble');await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame)}''')\n  File \"/media/reader/DEVELOP/.cache/runtimes/linux-x64/venv/lib/python3.11/site-packages/playwright/sync_api/_generated.py\", line 9122, in evaluate\n    self._sync(\n  File \"/media/reader/DEVELOP/.cache/runtimes/linux-x64/venv/lib/python3.11/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"/media/reader/DEVELOP/.cache/runtimes/linux-x64/venv/lib/python3.11/site-packages/playwright/_impl/_page.py\", line 469, in evaluate\n    return await self._main_frame.evaluate(expression, arg)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/media/reader/DEVELOP/.cache/runtimes/linux-x64/venv/lib/python3.11/site-packages/playwright/_impl/_frame.py\", line 323, in evaluate\n    await self._channel.send(\n  File \"/media/reader/DEVELOP/.cache/runtimes/linux-x64/venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 69, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/media/reader/DEVELOP/.cache/runtimes/linux-x64/venv/lib/python3.11/site-packages/playwright/_impl/_connection.py\", line 559, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.Error: Page.evaluate: Error: Unable to load the installed theme package.\n    at Object.ensureKnownTheme (https://chernichenkodmitriy.com/theme.js:302:58)\n    at async eval (eval at evaluate (:302:30), <anonymous>:1:11)\n    at async <anonymous>:328:30\n"
+    },
+    {
+      "test": "chromium keyboard focus survives moved menu option and transition",
+      "passed": true,
+      "detail": "Reordered focused option stays visible/focused after CSS transition; Escape still closes normally."
+    }
+  ],
+  "network_fixtures": true,
+  "target_origin": "https://chernichenkodmitriy.com",
+  "execution_scope": "Existing assertions, live origin; Chromium-only selection in a diagnostic in-memory copy. Fixtures explicitly marked in original assertions; real reads not mocked. Firefox independently tested by run_firefox.py.",
+  "tested_source_sha256": {
+    "theme.js": "e906eb88b24711f137741620d28fa2812accdb29be0db2111f99c825ddf6dc26",
+    "theme-cloud.js": "09cf42e0132ccd16edb02d1004c572a9d09bf409b2853b8fb27974215058f604",
+    "theme-cloud-config.js": "51612fcc5f66fb9c70107a154a76e55ae679249eb491c2779c4d14ebf14b48e5",
+    "site-navigation.js": "dd42a3daf97be4cf86dcdcd1f25927d516e50b289b6cc3ee38e21bc59f88a1e4",
+    "resume.html": "ada96cf88ce28b59befad9ae2810104909076ff9a138e5f9493adf06ea382077",
+    "styles/themes/theme-registry.js": "efd038a63a38f0830a98d572ae5945648c6e8cd69338bd07f4a3c14f0ea7d874",
+    "styles/cloud-managed-themes.css": "af358d5c5a07e5c2c59f3a2a6fcdca93fb4dc4ccfa700d15acb7817532e08e1c",
+    "showcases/cloud-managed-themes/index.html": "d55304537e32c45ae056310bb5a501a501d6d849c8415d52a1ce19cba6ebc227",
+    "showcases/cloud-managed-themes/showcase.js": "4437658f1e6f13992e98d6552b000948fe14379fb89dfb02ad73613b7f66c305",
+    "showcases/cloud-managed-themes/setup.sql": "3251142e5aa2610f55d13c8b70f23529f291df5941a898ffc1e121e9aa249505"
+  }
+}

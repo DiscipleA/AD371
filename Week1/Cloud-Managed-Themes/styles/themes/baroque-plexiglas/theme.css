@@ -1,0 +1,449 @@
+/*
+  BAROQUE PLEXIGLAS
+  High-ornamentation 17th-century filigree interpreted as laser-cut clear acrylic:
+  sharp refractive edges, etched tracery, low-radius geometry, serif display type,
+  transparent layered surfaces, angular controls, and prismatic highlights.
+  Structural page contracts remain owned by shared/page CSS; this package owns material appearance.
+*/
+
+html[data-style-theme="baroque-plexiglas"] {
+  color-scheme: dark;
+  --baroque-canvas: #120f1a;
+  --baroque-surface: rgb(26 22 36 / 0.76);
+  --baroque-surface-strong: rgb(36 30 48 / 0.88);
+  --baroque-panel: rgb(18 16 28 / 0.68);
+  --baroque-border: #8ddbe8;
+  --baroque-border-soft: rgb(141 219 232 / 0.44);
+  --baroque-text: #f7f3ff;
+  --baroque-muted: #c8c0d8;
+  --baroque-accent: #f0c76b;
+  --baroque-accent-2: #84e0ed;
+  --baroque-accent-3: #cda5ff;
+  --baroque-success: #8fe4bd;
+  --baroque-shadow: rgb(0 0 0 / 0.54);
+  --baroque-focus: #fff1a6;
+  --baroque-refraction: linear-gradient(112deg, transparent 0 24%, rgb(132 224 237 / .18) 25% 27%, transparent 28% 55%, rgb(205 165 255 / .14) 56% 58%, transparent 59% 100%);
+  --baroque-glass: linear-gradient(145deg, rgb(255 255 255 / .13), rgb(255 255 255 / .025) 35%, rgb(132 224 237 / .055) 70%, rgb(240 199 107 / .05));
+  --baroque-font-display: Georgia, "Times New Roman", serif;
+  --baroque-font-body: "Trebuchet MS", "Segoe UI", sans-serif;
+  --baroque-font-mono: "Fira Code", Consolas, monospace;
+  --portfolio-content-max: 72rem;
+}
+
+html[data-style-theme="baroque-plexiglas"][data-theme="light"] {
+  color-scheme: light;
+  --baroque-canvas: #eef4f3;
+  --baroque-surface: rgb(255 255 255 / 0.66);
+  --baroque-surface-strong: rgb(246 250 250 / 0.84);
+  --baroque-panel: rgb(235 244 244 / 0.72);
+  --baroque-border: #267989;
+  --baroque-border-soft: rgb(38 121 137 / 0.36);
+  --baroque-text: #21192b;
+  --baroque-muted: #5c5266;
+  --baroque-accent: #865b08;
+  --baroque-accent-2: #0b7182;
+  --baroque-accent-3: #68418f;
+  --baroque-success: #1f7154;
+  --baroque-shadow: rgb(54 46 70 / 0.22);
+  --baroque-focus: #5a2e83;
+  --baroque-refraction: linear-gradient(112deg, transparent 0 24%, rgb(11 113 130 / .10) 25% 27%, transparent 28% 55%, rgb(104 65 143 / .09) 56% 58%, transparent 59% 100%);
+  --baroque-glass: linear-gradient(145deg, rgb(255 255 255 / .78), rgb(255 255 255 / .25) 38%, rgb(11 113 130 / .055) 72%, rgb(134 91 8 / .05));
+}
+
+/* Cross-generation token aliases keep every existing page family fully themed. */
+html[data-style-theme="baroque-plexiglas"] {
+  --canvas: var(--baroque-canvas);
+  --surface: var(--baroque-surface);
+  --surface-2: var(--baroque-surface-strong);
+  --border: var(--baroque-border-soft);
+  --text: var(--baroque-text);
+  --muted: var(--baroque-muted);
+  --brand: var(--baroque-accent);
+  --data: var(--baroque-accent-2);
+  --success: var(--baroque-success);
+  --shadow: var(--baroque-shadow);
+
+  --color-canvas: var(--baroque-canvas);
+  --color-primary: var(--baroque-accent);
+  --color-secondary: var(--baroque-accent-2);
+  --color-background: var(--baroque-canvas);
+  --color-surface: var(--baroque-surface);
+  --color-surface-elevated: var(--baroque-surface-strong);
+  --color-border: var(--baroque-border-soft);
+  --color-text: var(--baroque-text);
+  --color-text-primary: var(--baroque-text);
+  --color-text-secondary: color-mix(in srgb, var(--baroque-text) 84%, var(--baroque-muted));
+  --color-text-muted: var(--baroque-muted);
+  --color-on-primary: var(--baroque-canvas);
+  --color-on-accent: var(--baroque-canvas);
+  --color-positive: var(--baroque-success);
+  --color-attention: var(--baroque-accent);
+  --color-accent: var(--baroque-accent);
+  --color-accent-secondary: var(--baroque-accent-2);
+  --color-success: var(--baroque-success);
+  --color-shadow: var(--baroque-shadow);
+  --color-code: color-mix(in srgb, var(--baroque-canvas) 88%, black);
+  --focus-ring: 0 0 0 .25rem var(--baroque-focus);
+}
+
+html[data-style-theme="baroque-plexiglas"] body {
+  background-color: var(--baroque-canvas) !important;
+  background-image:
+    url("assets/textures/prism-facets.svg"),
+    radial-gradient(circle at 14% 10%, color-mix(in srgb, var(--baroque-accent-2) 20%, transparent), transparent 28rem),
+    radial-gradient(circle at 88% 24%, color-mix(in srgb, var(--baroque-accent-3) 16%, transparent), transparent 32rem),
+    linear-gradient(145deg, transparent 0 48%, color-mix(in srgb, var(--baroque-accent) 8%, transparent) 49% 50%, transparent 51% 100%) !important;
+  background-size: 900px auto, auto, auto, auto;
+  color: var(--baroque-text) !important;
+  font-family: var(--baroque-font-body) !important;
+}
+
+html[data-style-theme="baroque-plexiglas"] :is(h1, h2, h3, .profile-name, .profile-card__headline) {
+  font-family: var(--baroque-font-display) !important;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+html[data-style-theme="baroque-plexiglas"] :is(.eyebrow, .section-kicker, .profile-location, .milestone-status, .project-counter, .section-index, .concept-token, .code-label, .frame-kicker) {
+  font-family: var(--baroque-font-mono) !important;
+  letter-spacing: .09em;
+}
+
+html[data-style-theme="baroque-plexiglas"] :where(a, button, input, textarea, select):focus-visible {
+  outline: .2rem solid var(--baroque-focus) !important;
+  outline-offset: .2rem !important;
+  box-shadow: 0 0 0 .12rem var(--baroque-canvas), 0 0 0 .36rem color-mix(in srgb, var(--baroque-focus) 56%, transparent) !important;
+}
+
+/* Shared acrylic surface language: low-radius panels with etched/double edge geometry. */
+html[data-style-theme="baroque-plexiglas"] :is(
+  .profile-card, .profile-header, .dashboard-card, .project-box,
+  .hub-hero, .hub-card, .token-hero, .token-section,
+  .hero, .section-card, .process-step, .narrative-panel,
+  .archetype-card, .formula-card, .layout-preview-card,
+  .dashboard-frame, .milestone, .concept-card, .audit-item,
+  .prompt-layer, .result-stage
+) {
+  border-radius: .22rem !important;
+  border-color: var(--baroque-border-soft) !important;
+  background-color: var(--baroque-surface) !important;
+  background-image: var(--baroque-refraction), var(--baroque-glass), url("assets/textures/filigree-refraction.svg") !important;
+  background-size: auto, auto, 420px 420px !important;
+  background-position: center, center, right -120px top -120px !important;
+  box-shadow:
+    0 1rem 2.4rem var(--baroque-shadow),
+    inset 0 1px 0 rgb(255 255 255 / .38),
+    inset 0 0 0 1px color-mix(in srgb, var(--baroque-accent) 18%, transparent) !important;
+  backdrop-filter: blur(16px) saturate(128%);
+  -webkit-backdrop-filter: blur(16px) saturate(128%);
+}
+
+html[data-style-theme="baroque-plexiglas"] :is(.hero, .hub-hero, .token-hero, .profile-header, .profile-card, .section-card) {
+  position: relative;
+  overflow: hidden;
+}
+
+html[data-style-theme="baroque-plexiglas"] :is(.hero, .hub-hero, .token-hero, .profile-header, .profile-card, .section-card)::after {
+  content: "";
+  position: absolute;
+  inset: .42rem;
+  z-index: 0;
+  border: 1px solid color-mix(in srgb, var(--baroque-accent-2) 30%, transparent);
+  border-radius: .08rem;
+  clip-path: polygon(0 0, 2.2rem 0, 2.2rem .18rem, calc(100% - 2.2rem) .18rem, calc(100% - 2.2rem) 0, 100% 0, 100% 2.2rem, calc(100% - .18rem) 2.2rem, calc(100% - .18rem) calc(100% - 2.2rem), 100% calc(100% - 2.2rem), 100% 100%, calc(100% - 2.2rem) 100%, calc(100% - 2.2rem) calc(100% - .18rem), 2.2rem calc(100% - .18rem), 2.2rem 100%, 0 100%, 0 calc(100% - 2.2rem), .18rem calc(100% - 2.2rem), .18rem 2.2rem, 0 2.2rem);
+  pointer-events: none;
+}
+
+html[data-style-theme="baroque-plexiglas"] :is(.hero, .hub-hero, .token-hero, .profile-header, .profile-card, .section-card) > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Navigation becomes a laser-cut acrylic command strip, not a pill/glass clone. */
+html[data-style-theme="baroque-plexiglas"] .portfolio-banner {
+  --portfolio-nav-canvas: color-mix(in srgb, var(--baroque-canvas) 84%, transparent);
+  --portfolio-nav-panel: color-mix(in srgb, var(--baroque-surface-strong) 92%, transparent);
+  --portfolio-nav-panel-hover: color-mix(in srgb, var(--baroque-accent-2) 12%, var(--baroque-surface));
+  --portfolio-nav-border: var(--baroque-border-soft);
+  --portfolio-nav-text: var(--baroque-text);
+  --portfolio-nav-muted: var(--baroque-muted);
+  --portfolio-nav-accent: var(--baroque-accent);
+  --portfolio-nav-focus: var(--baroque-focus);
+  --portfolio-nav-shadow: var(--baroque-shadow);
+  --portfolio-nav-font: var(--baroque-font-mono);
+  background-image: var(--baroque-refraction), url("assets/textures/filigree-refraction.svg") !important;
+  background-size: auto, 360px 360px !important;
+  border-block-end: 1px solid var(--baroque-border) !important;
+  box-shadow: 0 .75rem 1.8rem var(--baroque-shadow), inset 0 -1px 0 rgb(255 255 255 / .18) !important;
+}
+
+html[data-style-theme="baroque-plexiglas"] :is(.portfolio-banner__profile, .portfolio-theme-menu__toggle, .portfolio-theme-menu__item, .portfolio-menu__toggle, .portfolio-menu__item, .portfolio-showcase-menu__toggle, .portfolio-showcase-menu__item, .portfolio-build-menu__toggle, .portfolio-build-menu__item) {
+  border-radius: 0 !important;
+  border-width: 1px !important;
+  background-image: linear-gradient(145deg, rgb(255 255 255 / .10), transparent 42%, color-mix(in srgb, var(--baroque-accent-2) 8%, transparent)) !important;
+  box-shadow: inset .18rem 0 0 color-mix(in srgb, var(--baroque-accent) 46%, transparent) !important;
+  text-transform: uppercase;
+  letter-spacing: .035em;
+}
+
+html[data-style-theme="baroque-plexiglas"] :is(.portfolio-theme-menu__panel, .portfolio-menu__panel, .portfolio-showcase-menu__panel, .portfolio-build-menu__panel) {
+  border-radius: .12rem !important;
+  background-image: var(--baroque-refraction), var(--baroque-glass), url("assets/textures/filigree-refraction.svg") !important;
+  background-size: auto, auto, 360px 360px !important;
+  backdrop-filter: blur(20px) saturate(140%);
+}
+
+/* Controls/actions: angular engraved tabs rather than rounded pills. */
+html[data-style-theme="baroque-plexiglas"] :is(.primary-action, .profile-card__action, .project-link, .milestone-link, .nav-link, .copy-button, .theme-toggle) {
+  border-radius: 0 !important;
+  border: 1px solid var(--baroque-border) !important;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--baroque-accent) 18%, transparent), var(--baroque-surface-strong) 45%, color-mix(in srgb, var(--baroque-accent-2) 14%, transparent)) !important;
+  color: var(--baroque-text) !important;
+  box-shadow: inset .22rem 0 0 var(--baroque-accent), inset 0 1px 0 rgb(255 255 255 / .32), 0 .55rem 1rem var(--baroque-shadow) !important;
+  font-family: var(--baroque-font-mono) !important;
+  text-transform: uppercase;
+  letter-spacing: .035em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html[data-style-theme="baroque-plexiglas"] :is(.primary-action, .profile-card__action, .project-link, .milestone-link, .nav-link, .copy-button, .theme-toggle):hover {
+    transform: translateY(-2px);
+    border-color: var(--baroque-accent) !important;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--baroque-accent) 26%, transparent), var(--baroque-surface-strong) 44%, color-mix(in srgb, var(--baroque-accent-2) 20%, transparent)) !important;
+  }
+
+  html[data-style-theme="baroque-plexiglas"] .week-story-tab:hover {
+    border-color: var(--baroque-accent) !important;
+    transform: translateY(-2px);
+  }
+}
+
+/* Profile Card: preserve 28rem vertical composition and 16/10 media; material is angular and etched. */
+html[data-style-theme="baroque-plexiglas"] .profile-card {
+  max-inline-size: 28rem !important;
+  border-radius: .18rem !important;
+  border: 1px solid var(--baroque-border) !important;
+}
+html[data-style-theme="baroque-plexiglas"] .profile-card__media {
+  aspect-ratio: 16 / 10 !important;
+  border-radius: 0 !important;
+  border-block-end: 1px solid var(--baroque-border-soft);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--baroque-accent-2) 15%, transparent), var(--baroque-panel)) !important;
+}
+html[data-style-theme="baroque-plexiglas"] .profile-card__img {
+  filter: saturate(.78) contrast(1.08) brightness(.94) hue-rotate(5deg);
+}
+html[data-style-theme="baroque-plexiglas"][data-theme="light"] .profile-card__img { filter: saturate(.74) contrast(1.04) brightness(1.02); }
+html[data-style-theme="baroque-plexiglas"] .profile-card__badge,
+html[data-style-theme="baroque-plexiglas"] .profile-card__stack-item {
+  border-radius: 0 !important;
+  border: 1px solid var(--baroque-border-soft) !important;
+  background: color-mix(in srgb, var(--baroque-accent-3) 10%, var(--baroque-panel)) !important;
+  color: var(--baroque-text) !important;
+  box-shadow: inset .18rem 0 var(--baroque-accent-2);
+}
+
+/* Resume cards use alternating engraved rails and asymmetric acrylic edges. */
+html[data-style-theme="baroque-plexiglas"] .resume-container { max-width: 82rem; }
+html[data-style-theme="baroque-plexiglas"] :is(.profile-header, .dashboard-card, .project-box) { border-radius: .16rem !important; }
+html[data-style-theme="baroque-plexiglas"] .dashboard-card:nth-child(even),
+html[data-style-theme="baroque-plexiglas"] .project-box:nth-child(even) { box-shadow: inset -.26rem 0 var(--baroque-accent-3), 0 .8rem 1.6rem var(--baroque-shadow) !important; }
+html[data-style-theme="baroque-plexiglas"] .dashboard-card:nth-child(odd),
+html[data-style-theme="baroque-plexiglas"] .project-box:nth-child(odd) { box-shadow: inset .26rem 0 var(--baroque-accent-2), 0 .8rem 1.6rem var(--baroque-shadow) !important; }
+html[data-style-theme="baroque-plexiglas"] :is(.skills-grid li, .gpa-tag, .project-counter) { border-radius: 0 !important; background: var(--baroque-panel) !important; border-color: var(--baroque-border-soft) !important; }
+
+/* Hub + weekly dashboard material hierarchy. */
+html[data-style-theme="baroque-plexiglas"] :is(.milestone--current, .progress-card--current) {
+  border-color: var(--baroque-accent) !important;
+  box-shadow: inset .28rem 0 var(--baroque-accent), inset -.12rem 0 var(--baroque-accent-2), 0 1rem 2rem var(--baroque-shadow) !important;
+}
+html[data-style-theme="baroque-plexiglas"] :is(.section-heading > span, .section-index) {
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--baroque-accent) !important;
+  border: 1px solid var(--baroque-border) !important;
+  box-shadow: inset 0 0 0 .18rem color-mix(in srgb, var(--baroque-accent-3) 12%, transparent);
+}
+html[data-style-theme="baroque-plexiglas"] :is(.dashboard-frame, .frame-rail, .frame-header, .frame-main, .frame-context, .frame-footer, .market-card, .adaptive-market-card) {
+  border-radius: .08rem !important;
+  border-color: var(--baroque-border-soft) !important;
+  background-color: var(--baroque-panel) !important;
+  background-image: var(--baroque-refraction), linear-gradient(145deg, rgb(255 255 255 / .07), transparent 55%) !important;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / .18), 0 .65rem 1.4rem var(--baroque-shadow) !important;
+}
+html[data-style-theme="baroque-plexiglas"] .frame-rail > strong { color: var(--baroque-accent); font-family: var(--baroque-font-display); font-size: 1.5rem; }
+html[data-style-theme="baroque-plexiglas"] :is(.frame-rail a, .context-list li, .market-card__status) { border-radius: 0 !important; border-color: var(--baroque-border-soft) !important; }
+html[data-style-theme="baroque-plexiglas"] :is(.market-chart, .adaptive-market-card__visual) span { background: linear-gradient(180deg, var(--baroque-accent-2), var(--baroque-accent), var(--baroque-accent-3)) !important; }
+html[data-style-theme="baroque-plexiglas"] .scroll-progress-bar { background: linear-gradient(90deg, var(--baroque-accent-3), var(--baroque-accent-2), var(--baroque-accent), var(--baroque-accent-2)) !important; }
+
+/* Code becomes smoked/clear acrylic with etched toolbar linework. */
+html[data-style-theme="baroque-plexiglas"] :is(pre, .code-panel) {
+  border-radius: 0 !important;
+  border-color: var(--baroque-border-soft) !important;
+  background: color-mix(in srgb, var(--baroque-canvas) 82%, black 18%) !important;
+  color: #eefcff !important;
+  box-shadow: inset .24rem 0 var(--baroque-accent-3), inset 0 1px 0 rgb(255 255 255 / .12), 0 .8rem 1.6rem var(--baroque-shadow) !important;
+}
+html[data-style-theme="baroque-plexiglas"][data-theme="light"] :is(pre, .code-panel) { background: #16202a !important; color: #eefcff !important; }
+html[data-style-theme="baroque-plexiglas"] .code-toolbar { border-radius: 0 !important; border-block-end-color: var(--baroque-border-soft) !important; background: color-mix(in srgb, var(--baroque-accent-2) 8%, var(--baroque-panel)) !important; }
+html[data-style-theme="baroque-plexiglas"] :not(pre) > code { color: var(--baroque-accent-2) !important; }
+
+/* Build Story tabs read as ornate indexed plates rather than pills. */
+html[data-style-theme="baroque-plexiglas"] .week-story-tab {
+  border-radius: 0 !important;
+  border: 1px solid var(--baroque-border-soft) !important;
+  background: var(--baroque-panel) !important;
+  box-shadow: inset .2rem 0 var(--baroque-accent-3) !important;
+}
+
+/* Linked concept cards: theme the card, never the stretched anchor geometry. */
+html[data-style-theme="baroque-plexiglas"] .concept-card--linked { position: relative; padding-inline-end: clamp(1.25rem, 3vw, 2rem) !important; }
+html[data-style-theme="baroque-plexiglas"] .concept-resource-link { border: 0 !important; border-radius: 0 !important; background: transparent !important; box-shadow: none !important; }
+html[data-style-theme="baroque-plexiglas"] .concept-card--linked:focus-within { border-color: var(--baroque-focus) !important; box-shadow: 0 0 0 .18rem color-mix(in srgb, var(--baroque-focus) 34%, transparent), 0 1rem 2rem var(--baroque-shadow) !important; }
+
+/* Browser-default / before-state demonstrations remain isolated contrast contracts. */
+html[data-style-theme="baroque-plexiglas"] .before-preview {
+  color-scheme: light !important;
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #111820 !important;
+  border-color: #7d8e95 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+html[data-style-theme="baroque-plexiglas"] .before-preview :where(h1,h2,h3,h4,p,blockquote,li,dt,dd,label,legend,small,strong,em,span) { color: #111820 !important; }
+html[data-style-theme="baroque-plexiglas"] .before-preview a { color: #0000ee !important; }
+
+/* Token ownership for Resume/Profile/Build Story showcase family. */
+html[data-style-theme="baroque-plexiglas"] {
+  --color-canvas: var(--baroque-canvas);
+  --color-surface: var(--baroque-surface);
+  --color-surface-elevated: var(--baroque-surface-strong);
+  --color-border: var(--baroque-border-soft);
+  --color-text-primary: var(--baroque-text);
+  --color-text-secondary: color-mix(in srgb, var(--baroque-text) 84%, var(--baroque-muted));
+  --color-text-muted: var(--baroque-muted);
+  --color-accent: var(--baroque-accent);
+  --color-accent-secondary: var(--baroque-accent-2);
+  --color-accent-soft: color-mix(in srgb, var(--baroque-accent) 10%, transparent);
+  --color-accent-soft-strong: color-mix(in srgb, var(--baroque-accent) 17%, transparent);
+  --color-on-accent: var(--baroque-canvas);
+  --color-success: var(--baroque-success);
+  --color-code: color-mix(in srgb, var(--baroque-canvas) 88%, black);
+  --focus-ring: 0 0 0 .25rem var(--baroque-focus);
+  --font-sans: var(--baroque-font-body);
+  --font-serif: var(--baroque-font-display);
+  --font-mono: var(--baroque-font-mono);
+  --radius-sm: .08rem;
+  --radius-md: .14rem;
+  --radius-lg: .22rem;
+  --radius-pill: .08rem;
+}
+
+/* Flexbox-derived showcase token contract. */
+html[data-style-theme="baroque-plexiglas"] body:is(
+  .flexbox-interfaces-page, .logical-properties-flexbox-page, .responsive-grid-page,
+  .asymmetric-dashboard-grid-page, .native-nesting-cascade-layers-page,
+  .multi-theme-scoped-component-systems-page, .container-relative-styling-parent-checking-selectors-page,
+  .adaptive-card-widgets-container-queries-state-toggles-page,
+  .scroll-driven-timelines-starting-style-transitions-page,
+  .pure-css-reading-progress-view-timeline-content-reveals-page
+) {
+  --flex-color-canvas: var(--baroque-canvas);
+  --flex-color-surface: var(--baroque-surface);
+  --flex-color-surface-elevated: var(--baroque-surface-strong);
+  --flex-color-border: var(--baroque-border-soft);
+  --flex-color-text-primary: var(--baroque-text);
+  --flex-color-text-secondary: color-mix(in srgb, var(--baroque-text) 84%, var(--baroque-muted));
+  --flex-color-text-muted: var(--baroque-muted);
+  --flex-color-accent: var(--baroque-accent);
+  --flex-color-accent-hover: color-mix(in srgb, var(--baroque-accent) 78%, white 22%);
+  --flex-color-accent-secondary: var(--baroque-accent-2);
+  --flex-color-success: var(--baroque-success);
+  --flex-color-on-accent: var(--baroque-canvas);
+  --flex-color-accent-soft: color-mix(in srgb, var(--baroque-accent) 10%, transparent);
+  --flex-color-accent-soft-strong: color-mix(in srgb, var(--baroque-accent) 18%, transparent);
+  --flex-color-accent-glow: color-mix(in srgb, var(--baroque-accent-2) 20%, transparent);
+  --flex-color-cyan-glow: color-mix(in srgb, var(--baroque-accent-3) 16%, transparent);
+  --flex-color-code: color-mix(in srgb, var(--baroque-canvas) 86%, black);
+  --flex-color-shadow: var(--baroque-shadow);
+  --flex-font-sans: var(--baroque-font-body);
+  --flex-font-mono: var(--baroque-font-mono);
+  --flex-radius-sm: .08rem;
+  --flex-radius-md: .14rem;
+  --flex-radius-lg: .22rem;
+  --flex-radius-pill: .08rem;
+  --flex-focus-ring: 0 0 0 .25rem var(--baroque-focus);
+  --flex-shadow-card: 0 1rem 2.4rem var(--baroque-shadow);
+}
+
+/* Showcase live-demo semantic token ownership. */
+html[data-style-theme="baroque-plexiglas"] body.fluid-typography-page {
+  --fluid-demo-stage-bg: var(--baroque-panel); --fluid-demo-text: var(--baroque-text); --fluid-demo-muted: var(--baroque-muted); --fluid-demo-border: var(--baroque-border-soft); --fluid-demo-accent: var(--baroque-accent-2); --fluid-demo-subtle: color-mix(in srgb, var(--baroque-accent-3) 10%, transparent); --fluid-demo-quote: var(--baroque-surface-strong);
+}
+html[data-style-theme="baroque-plexiglas"] body.logical-properties-flexbox-page {
+  --settings-bg: var(--baroque-panel); --settings-panel: var(--baroque-surface-strong); --settings-border: var(--baroque-border-soft); --settings-text: var(--baroque-text); --settings-muted: var(--baroque-muted); --settings-accent: var(--baroque-accent-2); --settings-focus: var(--baroque-focus);
+}
+html[data-style-theme="baroque-plexiglas"] body.responsive-grid-page {
+  --gallery-canvas: var(--baroque-panel); --gallery-surface: var(--baroque-surface-strong); --gallery-border: var(--baroque-border-soft); --gallery-text: var(--baroque-text); --gallery-muted: var(--baroque-muted); --gallery-accent: var(--baroque-accent); --gallery-tag: var(--baroque-accent-3); --gallery-visual-bg: color-mix(in srgb, var(--baroque-accent-2) 10%, var(--baroque-panel)); --gallery-shadow: var(--baroque-shadow); --gallery-card-shadow: 0 .8rem 1.6rem var(--baroque-shadow); --gallery-glow: color-mix(in srgb, var(--baroque-accent-2) 18%, transparent);
+}
+html[data-style-theme="baroque-plexiglas"] body.asymmetric-dashboard-grid-page {
+  --dashboard-canvas: var(--baroque-panel); --dashboard-surface: var(--baroque-surface); --dashboard-surface-strong: var(--baroque-surface-strong); --dashboard-border: var(--baroque-border-soft); --dashboard-text: var(--baroque-text); --dashboard-muted: var(--baroque-muted); --dashboard-accent: var(--baroque-accent-2); --dashboard-accent-soft: color-mix(in srgb, var(--baroque-accent-2) 12%, transparent); --dashboard-success: var(--baroque-success); --dashboard-warning: var(--baroque-accent); --dashboard-danger: #e98fa2; --dashboard-grid-line: color-mix(in srgb, var(--baroque-border) 25%, transparent); --dashboard-shadow: var(--baroque-shadow); --dashboard-radius: .08rem;
+}
+html[data-style-theme="baroque-plexiglas"] body.native-nesting-cascade-layers-page {
+  --booking-bg: var(--baroque-panel); --booking-panel: var(--baroque-surface-strong); --booking-border: var(--baroque-border-soft); --booking-text: var(--baroque-text); --booking-muted: var(--baroque-muted); --booking-accent: var(--baroque-accent); --booking-focus: var(--baroque-focus);
+}
+html[data-style-theme="baroque-plexiglas"] body.container-relative-styling-parent-checking-selectors-page {
+  --notification-stage-bg: var(--baroque-panel); --notification-stage-panel: var(--baroque-surface); --notification-stage-panel-strong: var(--baroque-surface-strong); --notification-stage-border: var(--baroque-border-soft); --notification-text: var(--baroque-text); --notification-muted: var(--baroque-muted); --notification-accent: var(--baroque-accent-2); --notification-accent-soft: color-mix(in srgb, var(--baroque-accent-2) 12%, transparent); --notification-focus: var(--baroque-focus); --notification-shadow: var(--baroque-shadow); --notification-archived-bg: color-mix(in srgb, var(--baroque-muted) 10%, var(--baroque-panel)); --notification-archived-border: var(--baroque-border-soft); --notification-archived-text: var(--baroque-muted);
+}
+html[data-style-theme="baroque-plexiglas"] body.adaptive-card-widgets-container-queries-state-toggles-page {
+  --adaptive-demo-bg: var(--baroque-panel); --adaptive-demo-panel: var(--baroque-surface); --adaptive-demo-panel-strong: var(--baroque-surface-strong); --adaptive-demo-border: var(--baroque-border-soft); --adaptive-demo-text: var(--baroque-text); --adaptive-demo-muted: var(--baroque-muted); --adaptive-demo-shadow: var(--baroque-shadow); --adaptive-demo-card: var(--baroque-surface-strong); --adaptive-demo-card-border: var(--baroque-border-soft); --adaptive-demo-card-text: var(--baroque-text); --adaptive-demo-card-muted: var(--baroque-muted); --adaptive-demo-card-accent: var(--baroque-accent-2); --adaptive-demo-card-accent-contrast: var(--baroque-canvas); --adaptive-demo-card-dark: #17131f; --adaptive-demo-card-dark-border: #6f8897; --adaptive-demo-card-dark-text: #f8f5ff; --adaptive-demo-card-dark-muted: #c9c2d5;
+}
+html[data-style-theme="baroque-plexiglas"] body.scroll-driven-timelines-starting-style-transitions-page {
+  --motion-demo-canvas: var(--baroque-panel); --motion-demo-surface: var(--baroque-surface); --motion-demo-panel: var(--baroque-surface-strong); --motion-demo-border: var(--baroque-border-soft); --motion-demo-text: var(--baroque-text); --motion-demo-muted: var(--baroque-muted); --motion-demo-accent: var(--baroque-accent-2); --motion-demo-accent-2: var(--baroque-accent-3); --motion-demo-on-accent: var(--baroque-canvas); --motion-demo-soft: color-mix(in srgb, var(--baroque-accent-2) 11%, transparent); --motion-demo-shadow: var(--baroque-shadow);
+}
+html[data-style-theme="baroque-plexiglas"] body.pure-css-reading-progress-view-timeline-content-reveals-page {
+  --progress-demo-canvas: var(--baroque-panel); --progress-demo-panel: var(--baroque-surface); --progress-demo-card: var(--baroque-surface-strong); --progress-demo-border: var(--baroque-border-soft); --progress-demo-text: var(--baroque-text); --progress-demo-muted: var(--baroque-muted); --progress-demo-accent: var(--baroque-accent-2); --progress-demo-accent-secondary: var(--baroque-accent-3); --progress-demo-on-accent: var(--baroque-canvas); --progress-demo-soft: color-mix(in srgb, var(--baroque-accent-2) 12%, transparent);
+}
+
+/* Project Hub token ownership. */
+html[data-style-theme="baroque-plexiglas"] body:not([class]) {
+  --canvas: var(--baroque-canvas); --surface: var(--baroque-surface); --surface-2: var(--baroque-surface-strong); --border: var(--baroque-border-soft); --text: var(--baroque-text); --muted: var(--baroque-muted); --brand: var(--baroque-accent); --data: var(--baroque-accent-2); --success: var(--baroque-success); --shadow: var(--baroque-shadow); --font: var(--baroque-font-body); --mono: var(--baroque-font-mono); --radius: .14rem;
+}
+
+/* Capstone weekly token ownership: Week 04-07 share these semantic names. */
+html[data-style-theme="baroque-plexiglas"] body:is(.trading-dashboard-week04-page, .trading-dashboard-week05-page, .trading-dashboard-week06-page, .trading-dashboard-week07-page) {
+  --color-primary: var(--baroque-accent);
+  --color-secondary: var(--baroque-accent-2);
+  --accent: var(--baroque-accent-2);
+  --color-background: var(--baroque-canvas);
+  --color-surface: var(--baroque-surface);
+  --color-surface-elevated: var(--baroque-surface-strong);
+  --color-border: var(--baroque-border-soft);
+  --color-text: var(--baroque-text);
+  --color-text-muted: var(--baroque-muted);
+  --color-on-primary: var(--baroque-canvas);
+  --color-positive: var(--baroque-success);
+  --color-attention: var(--baroque-accent);
+  --color-shadow: var(--baroque-shadow);
+  --font-sans: var(--baroque-font-body);
+  --font-mono: var(--baroque-font-mono);
+  --radius-sm: .08rem;
+  --radius-lg: .18rem;
+}
+
+@media (max-width: 40rem) {
+  html[data-style-theme="baroque-plexiglas"] :is(.hero, .hub-hero, .token-hero, .section-card, .hub-card, .token-section) {
+    background-size: auto, auto, 300px 300px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-style-theme="baroque-plexiglas"] *,
+  html[data-style-theme="baroque-plexiglas"] *::before,
+  html[data-style-theme="baroque-plexiglas"] *::after {
+    transition-duration: 0s !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

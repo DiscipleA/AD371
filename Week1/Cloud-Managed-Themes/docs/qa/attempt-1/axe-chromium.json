@@ -1,0 +1,1154 @@
+{
+  "url": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/",
+  "testEngine": {
+    "name": "axe-core",
+    "version": "4.14.0"
+  },
+  "passes": 29,
+  "incomplete": [
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "nodes": [
+        {
+          "target": [
+            ".process-strip"
+          ],
+          "summary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+        },
+        {
+          "target": [
+            ".risk-strip"
+          ],
+          "summary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+        },
+        {
+          "target": [
+            ".cmt-architecture-section"
+          ],
+          "summary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+        },
+        {
+          "target": [
+            "#cloud-cards"
+          ],
+          "summary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": [
+        {
+          "target": [
+            ".portfolio-banner__profile"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "h1"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".hero-lead"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "section[data-architecture-section=\"problem\"] > .section-header > .section-index"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#problem-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "section[data-architecture-section=\"problem\"] > .section-header > div > .section-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".narrative-panel:nth-child(1) > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".narrative-panel:nth-child(2) > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".architecture-note"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".architecture-note > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".risk-strip > span:nth-child(1)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".risk-strip > span:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".risk-strip > span:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".risk-strip > span:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "section[data-architecture-section=\"concepts\"] > .section-header > .section-index"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#concepts-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "section[data-architecture-section=\"concepts\"] > .section-header > div > .section-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(1) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > .concept-token"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(1) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(1) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(2) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > .concept-token"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(2) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(2) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(3) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > .concept-token"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(3) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(3) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(4) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > .concept-token"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(4) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(4) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(5) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > .concept-token"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(5) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(5) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(6) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > .concept-token"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(6) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".concept-card.concept-card--linked:nth-child(6) > .concept-resource-link.concept-resource-link--primary.concept-resource-link--single > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "section[data-architecture-section=\"architecture\"] > .section-header > .section-index"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#architecture-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "section[data-architecture-section=\"architecture\"] > .section-header > div > .section-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".cmt-subtitle"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".cmt-legend-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-legend-item:nth-child(2) > span:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-legend-item:nth-child(3) > span:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-legend-item:nth-child(4) > span:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-legend-badge"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-legend-item:nth-child(5) > span:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(1) > .cmt-node-header > .cmt-node-tag"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(1) > .cmt-node-header > .cmt-pill"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(1) > .cmt-node-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(1) > .cmt-pill-list > .cmt-pill:nth-child(1)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(1) > .cmt-pill-list > .cmt-pill:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(1) > .cmt-pill-list > .cmt-pill:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(1) > .cmt-pill-list > .cmt-pill:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-flow:nth-child(2) > .cmt-flow-label.accent"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-node-tag--client"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node--browser > .cmt-node-header > .cmt-pill"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node--browser > .cmt-node-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-browser-step:nth-child(1) > .cmt-step-label"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-browser-step:nth-child(2) > .cmt-step-label"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-browser-step:nth-child(3) > .cmt-step-label"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-browser-step:nth-child(4) > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-storage-note > strong"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-flow:nth-child(4) > .cmt-flow-label.accent:nth-child(1)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-flow-label.accent:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(5) > .cmt-node-header > .cmt-node-tag"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(5) > .cmt-node-header > .cmt-pill"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(5) > .cmt-node-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-node-description > code"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(5) > .cmt-pill-list > .cmt-pill:nth-child(1)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(5) > .cmt-pill-list > .cmt-pill:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(5) > .cmt-pill-list > .cmt-pill:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-stack-node:nth-child(5) > .cmt-pill-list > .cmt-pill:nth-child(4)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-pill:nth-child(5)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cmt-accessible-summary > span"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "section[data-architecture-section=\"prompt\"] > .section-header > .section-index"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#prompt-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "section[data-architecture-section=\"prompt\"] > .section-header > div > .section-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(1) > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(1) > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(1) > .ai-step-prompt[open=\"\"] > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(1) > .ai-step-prompt[open=\"\"] > .code-panel > .code-toolbar > .code-label"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-copy-target=\"aiReviewPrompt\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(2) > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(2) > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(2) > .ai-step-prompt[open=\"\"] > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(2) > .ai-step-prompt[open=\"\"] > .code-panel > .code-toolbar > .code-label"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-copy-target=\"aiPlanPrompt\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(3) > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(3) > p:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "a[href$=\"#cloudWorkingPrompt\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(4) > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(4) > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(4) > .ai-step-prompt[open=\"\"] > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "li[data-ai-step=\"\"]:nth-child(4) > .ai-step-prompt[open=\"\"] > .code-panel > .code-toolbar > .code-label"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-copy-target=\"aiVerifyPrompt\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".ai-build-prompt > summary"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".ai-build-prompt > .code-panel > .code-toolbar > .code-label"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-copy-target=\"cloudWorkingPrompt\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "section[data-architecture-section=\"audit\"] > .section-header > .section-index"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#audit-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "section[data-architecture-section=\"audit\"] > .section-header > div > .section-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".audit-layout > .code-panel > .code-toolbar > .code-label"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-copy-target=\"cloudAuditCode\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".audit-item:nth-child(1) > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".audit-item:nth-child(2) > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".audit-item:nth-child(2) > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".audit-item:nth-child(3) > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".audit-item:nth-child(3) > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".audit-item:nth-child(4) > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#final-result > .section-header > .section-index"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#result-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "#final-result > .section-header > div > .section-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".cloud-lab__eyebrow"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__header > div > h3"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__header > div > p:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-status"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-reload"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-offline"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-defaults"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-theme-toggle=\"\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "div:nth-child(1) > dt"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-source"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "div:nth-child(2) > dt"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-http"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "div:nth-child(3) > dt"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-duration"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "div:nth-child(4) > dt"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-count"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "label"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-filter-help"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(1) > div > h4"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(1) > div > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-style-theme-option=\"baroque-plexiglas\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(2) > div > h4"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(2) > div > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-style-theme-option=\"playful-pop\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(3) > div > h4"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(3) > div > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-style-theme-option=\"raggedy-granite\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(4) > div > h4"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(4) > div > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-style-theme-option=\"glossy-marble\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(5) > div > h4"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(5) > div > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-style-theme-option=\"luminous-midnight\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(6) > div > h4"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(6) > div > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-style-theme-option=\"gothic-stickerboard\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(7) > div > h4"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".cloud-lab__theme-card:nth-child(7) > div > p"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "button[data-style-theme-option=\"standard\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-inspector-heading"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "dl > dt:nth-child(1)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-default-value"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "dt:nth-child(3)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-current-value"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "dt:nth-child(5)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#cloud-fetched"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "aside > .cloud-lab__hint"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            ".result-explanation > p:nth-child(1)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".result-explanation > p:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "p:nth-child(2) > a[href$=\"resume.html\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "a[href$=\"setup.sql\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "a[href$=\"README.md\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "section[data-architecture-section=\"verification\"] > .section-header > .section-index"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "target": [
+            "#verification-title"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "section[data-architecture-section=\"verification\"] > .section-header > div > .section-kicker"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            ".footer-copyright"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "footer > p:nth-child(2)"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "target": [
+            "p:nth-child(3) > a[href$=\"resume.html\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        }
+      ]
+    }
+  ],
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "target": [
+            ".process-step:nth-child(1) > .process-number"
+          ],
+          "html": "<span class=\"process-number\">01</span>",
+          "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.7pt (16.896px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": [
+            ".process-step:nth-child(2) > .process-number"
+          ],
+          "html": "<span class=\"process-number\">02</span>",
+          "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.7pt (16.896px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": [
+            ".process-step:nth-child(3) > .process-number"
+          ],
+          "html": "<span class=\"process-number\">03</span>",
+          "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.7pt (16.896px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": [
+            ".process-step:nth-child(4) > .process-number"
+          ],
+          "html": "<span class=\"process-number\">04</span>",
+          "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.7pt (16.896px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": [
+            ".process-step:nth-child(5) > .process-number"
+          ],
+          "html": "<span class=\"process-number\">05</span>",
+          "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.7pt (16.896px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": [
+            ".process-step:nth-child(6) > .process-number"
+          ],
+          "html": "<span class=\"process-number\">06</span>",
+          "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.7pt (16.896px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": [
+            ".process-step:nth-child(7) > .process-number"
+          ],
+          "html": "<span class=\"process-number\">07</span>",
+          "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.7pt (16.896px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+      "nodes": [
+        {
+          "target": [
+            "button[data-style-theme-option=\"gothic-stickerboard\"]"
+          ],
+          "html": "<button type=\"button\" data-style-theme-option=\"gothic-stickerboard\" aria-label=\"Preview Gothic Stickerboard\" aria-pressed=\"true\" data-active=\"true\">Selected</button>",
+          "summary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-region-focusable",
+      "impact": "serious",
+      "help": "Scrollable region must have keyboard access",
+      "description": "Ensure elements that have scrollable content are accessible by keyboard in Safari",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/scrollable-region-focusable?application=axeAPI",
+      "nodes": [
+        {
+          "target": [
+            ".ai-build-prompt > .code-panel > pre"
+          ],
+          "html": "<pre>",
+          "summary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+        }
+      ]
+    }
+  ]
+}

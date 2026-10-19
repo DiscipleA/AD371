@@ -1,0 +1,131 @@
+TAP version 13
+# Subtest: installed theme allowlist stays complete
+ok 1 - installed theme allowlist stays complete
+  ---
+  duration_ms: 9.810777
+  type: 'test'
+  ...
+# Subtest: valid database record is normalized
+ok 2 - valid database record is normalized
+  ---
+  duration_ms: 0.848663
+  type: 'test'
+  ...
+# Subtest: untrusted executable theme ID is rejected
+ok 3 - untrusted executable theme ID is rejected
+  ---
+  duration_ms: 3.319149
+  type: 'test'
+  ...
+# Subtest: unknown mode is rejected
+ok 4 - unknown mode is rejected
+  ---
+  duration_ms: 0.594135
+  type: 'test'
+  ...
+# Subtest: duplicate or missing theme order is rejected
+ok 5 - duplicate or missing theme order is rejected
+  ---
+  duration_ms: 0.816529
+  type: 'test'
+  ...
+# Subtest: unknown order ID is rejected
+ok 6 - unknown order ID is rejected
+  ---
+  duration_ms: 0.483032
+  type: 'test'
+  ...
+# Subtest: null settings is rejected
+ok 7 - null settings is rejected
+  ---
+  duration_ms: 0.879172
+  type: 'test'
+  ...
+# Subtest: wrong configuration identity is rejected
+ok 8 - wrong configuration identity is rejected
+  ---
+  duration_ms: 0.608612
+  type: 'test'
+  ...
+# Subtest: new visitor receives cloud defaults
+ok 9 - new visitor receives cloud defaults
+  ---
+  duration_ms: 1.112719
+  type: 'test'
+  ...
+# Subtest: saved choices override cloud defaults
+ok 10 - saved choices override cloud defaults
+  ---
+  duration_ms: 1.121579
+  type: 'test'
+  ...
+# Subtest: saved mode is independent from cloud family
+ok 11 - saved mode is independent from cloud family
+  ---
+  duration_ms: 0.574213
+  type: 'test'
+  ...
+# Subtest: saved family is independent from cloud mode
+ok 12 - saved family is independent from cloud mode
+  ---
+  duration_ms: 0.310482
+  type: 'test'
+  ...
+# Subtest: invalid saved values fall back
+ok 13 - invalid saved values fall back
+  ---
+  duration_ms: 0.258897
+  type: 'test'
+  ...
+# Subtest: secret key is never accepted for browser requests
+ok 14 - secret key is never accepted for browser requests
+  ---
+  duration_ms: 1.294262
+  type: 'test'
+  ...
+# Subtest: untrusted endpoint is rejected before fetch
+ok 15 - untrusted endpoint is rejected before fetch
+  ---
+  duration_ms: 0.647289
+  type: 'test'
+  ...
+# Subtest: API fetch uses read-only GET, apikey header, and exact table
+ok 16 - API fetch uses read-only GET, apikey header, and exact table
+  ---
+  duration_ms: 1.73866
+  type: 'test'
+  ...
+# Subtest: HTTP failure cannot claim connection success
+ok 17 - HTTP failure cannot claim connection success
+  ---
+  duration_ms: 0.711625
+  type: 'test'
+  ...
+# Subtest: empty result is rejected rather than fabricated
+ok 18 - empty result is rejected rather than fabricated
+  ---
+  duration_ms: 1.0365
+  type: 'test'
+  ...
+# Subtest: duplicate configuration rows are rejected
+ok 19 - duplicate configuration rows are rejected
+  ---
+  duration_ms: 0.708543
+  type: 'test'
+  ...
+# Subtest: network failure is propagated for fallback handling
+ok 20 - network failure is propagated for fallback handling
+  ---
+  duration_ms: 0.508398
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 350.944802
+

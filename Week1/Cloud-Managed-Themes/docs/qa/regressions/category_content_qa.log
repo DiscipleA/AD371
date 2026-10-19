@@ -1,0 +1,10 @@
+PASS durable visitor-facing copy
+PASS HTTP success wording is not an authorization claim
+PASS verbatim historical appendix preserved
+PASS chromium category navigation resume.html
+PASS chromium category navigation showcases/cloud-managed-themes/index.html
+PASS chromium category navigation showcases/flexbox-interfaces/index.html
+PASS chromium resume category membership
+PASS chromium real read and cleaned public copy
+SUMMARY {"passed": 8, "failed": 0}
+

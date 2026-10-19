@@ -1,0 +1,188 @@
+{
+  "target": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/",
+  "tested_commit": "4cef72a7136d72f5e44d902c89d7465f49702b05",
+  "completed_at": "2026-10-19T04:33:08.350691+00:00",
+  "overall": "QA completed with findings; not an all-green or accessibility-certification verdict.",
+  "lighthouse_scores": {
+    "mobile": {
+      "performance": 80,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "desktop": {
+      "performance": 98,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100
+    }
+  },
+  "browser_versions": {
+    "Chromium": "148.0.7778.96",
+    "Firefox": "158.0"
+  },
+  "responsive_combinations": {
+    "Chromium": 70,
+    "Firefox": 56,
+    "total": 126
+  },
+  "functional_flows": "Verified live in both engines, including HTTP200 Supabase reads, native keyboard theme selection, mode changes, persistence, reset, search, and labeled fallback recovery.",
+  "console": "No uncaught JavaScript errors captured in either engine. Firefox root favicon404 prevents zero-broken-assets claim.",
+  "keyboard": "Fresh-context Chromium follow-up passed 1920/1440/390/320; Firefox follow-up passed native Tab/Enter/Escape. Earlier timing/focus failures remain preserved, not silently erased.",
+  "source_preservation": {
+    "checked_at": "2026-10-19T04:31:40.577079+00:00",
+    "baseline_file_count": 214,
+    "changed_files": [],
+    "missing_files": [],
+    "git_status_unchanged": true,
+    "commit_unchanged": true,
+    "no_source_changes_by_QA": true
+  },
+  "findings": [
+    {
+      "id": "QA-01",
+      "severity": "Medium",
+      "category": "Accessibility",
+      "title": "Process-step numbers miss minimum text contrast",
+      "evidence": [
+        "lighthouse/lighthouse-desktop.report.json",
+        "lighthouse/lighthouse-mobile.report.json",
+        "axe-chromium.json",
+        "axe-firefox.json"
+      ],
+      "detail": "Seven .process-number labels in the default Gothic Stickerboard light theme measure approximately 4.4:1, below the 4.5:1 requirement for their text size. Lighthouse and axe identify the same elements.",
+      "reproduce": "Open the live page in a fresh profile using cloud defaults. Inspect 01\u201307 in the process strip or the color-contrast audit.",
+      "recommendation": "Make a narrowly scoped contrast adjustment in the owning theme/page styles, then rerun the audits. No adjustment was made in this QA."
+    },
+    {
+      "id": "QA-02",
+      "severity": "Medium",
+      "category": "Accessibility",
+      "title": "Selected theme button text differs from its accessible name",
+      "evidence": [
+        "lighthouse/lighthouse-desktop.report.json",
+        "axe-chromium.json",
+        "axe-firefox.json"
+      ],
+      "detail": "The active Gothic Stickerboard button visibly says Selected but its aria-label is Preview Gothic Stickerboard. The visible label is not included in the accessible name, which affects speech-input users.",
+      "reproduce": "Use cloud defaults, inspect the active theme card, and compare its visible Selected text with its aria-label.",
+      "recommendation": "Keep the accessible name consistent with the visible label and selected state; retain the theme identity and aria-pressed behavior."
+    },
+    {
+      "id": "QA-03",
+      "severity": "Medium",
+      "category": "Accessibility",
+      "title": "Scrollable build-prompt code panel is not keyboard-focusable",
+      "evidence": [
+        "axe-chromium.json",
+        "axe-firefox.json"
+      ],
+      "detail": "The .ai-build-prompt > .code-panel > pre region is scrollable but has no focusable content or focus target. Both engines report scrollable-region-focusable.",
+      "reproduce": "Open the build-prompt disclosure. Use keyboard-only navigation and try to reach/scroll the overflowing prompt content.",
+      "recommendation": "Provide a suitable keyboard-focusable scrolling region with visible focus, then verify actual scrolling. No source change made."
+    },
+    {
+      "id": "QA-04",
+      "severity": "Medium",
+      "category": "Network / assets",
+      "title": "Root favicon request returns HTTP404 in Firefox",
+      "evidence": [
+        "firefox-followup.json"
+      ],
+      "detail": "Firefox BiDi captured real requests to https://chernichenkodmitriy.com/favicon.ico returning 404. A separate direct GET also returned 404. Theme-owned SVG favicon files still load; the early browser-default request is the missing asset.",
+      "reproduce": "Open the live page in a fresh Firefox profile and inspect Network, or request /favicon.ico directly.",
+      "recommendation": "Provide a valid root icon or ensure a valid favicon link exists before the browser issues its fallback request. Recheck both engines before claiming zero asset404s."
+    },
+    {
+      "id": "QA-05",
+      "severity": "Needs investigation",
+      "category": "Controlled timing regression",
+      "title": "Held-metadata/newer-GET regression fails against the live origin",
+      "evidence": [
+        "regressions/interaction_regressions/results.json",
+        "regressions/interaction-isolated-followup.json"
+      ],
+      "detail": "The scenario newer GET wins pending metadata throws Unable to load the installed theme package. It failed in the full regression run and a focused unchanged rerun. This test deliberately intercepts API responses and holds local metadata, so it is not evidence that the normal live Supabase read failed. Root cause is not settled by these runs.",
+      "reproduce": "Run the saved interaction regression against the live base URL with filter newer GET. The script uses explicitly controlled responses, not live backend data for that scenario.",
+      "recommendation": "Investigate the metadata hold/retry and 3.5-second loader timeout before marking the full regression suite passed. Do not weaken assertions or change production based on an unconfirmed cause."
+    }
+  ],
+  "raw_run_counts": {
+    "chromium_initial_custom": {
+      "passed": 10,
+      "failed": 2
+    },
+    "firefox_custom_exact_viewports": {
+      "passed": 5,
+      "failed": 4
+    },
+    "firefox_focused_followup": {
+      "passed": 5,
+      "failed": 1
+    },
+    "chromium_keyboard_followup": {
+      "passed": 4,
+      "failed": 0
+    }
+  },
+  "regression_suites": [
+    {
+      "suite": "core-units",
+      "exit_code": 0,
+      "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/core-units.log"
+    },
+    {
+      "suite": "category-label",
+      "exit_code": 0,
+      "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/category-label.log"
+    },
+    {
+      "suite": "browser_qa",
+      "exit_code": 0,
+      "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/browser_qa.log",
+      "passed": 11,
+      "failed": 0,
+      "report": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/browser_qa/browser-results.json"
+    },
+    {
+      "suite": "review_regressions",
+      "exit_code": 0,
+      "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/review_regressions.log",
+      "passed": 11,
+      "failed": 0,
+      "report": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/review_regressions/results.json"
+    },
+    {
+      "suite": "interaction_regressions",
+      "exit_code": 1,
+      "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/interaction_regressions.log",
+      "passed": 6,
+      "failed": 1,
+      "report": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/interaction_regressions/results.json"
+    },
+    {
+      "suite": "category_content_qa",
+      "exit_code": 0,
+      "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/category_content_qa.log",
+      "passed": 8,
+      "failed": 0,
+      "report": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/category_content_qa/results.json"
+    },
+    {
+      "suite": "category_review_regressions",
+      "exit_code": 1,
+      "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/category_review_regressions.log",
+      "passed": 3,
+      "failed": 1,
+      "report": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/category_review_regressions/results.json"
+    }
+  ],
+  "limitations": [
+    "Single-run Lighthouse lab results with default simulated throttling; not field Core Web Vitals or guaranteed real-device speed.",
+    "Accessibility automation covers default Gothic Stickerboard/light; theme matrix checks rendering/overflow and is not full accessibility certification of all theme/mode combinations.",
+    "Responsive screenshots are sampled; no page-wide overflow does not prove every internal text label is unclipped.",
+    "No database writes, backend administrative edits, new permission probes, production fixes, source commits, or deployments were performed.",
+    "A real outage is not induced. Explicit offline button behavior is labeled simulation; additional failure regressions use controlled browser fixtures.",
+    "User recording/webcam, video upload, and the unfinished standalone Desktop project are outside this QA run."
+  ]
+}

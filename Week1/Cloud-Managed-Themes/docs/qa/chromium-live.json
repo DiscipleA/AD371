@@ -1,0 +1,785 @@
+{
+  "engine": "Chromium",
+  "target": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/",
+  "started_at": "2026-10-19T04:25:01.215687+00:00",
+  "checks": [
+    {
+      "name": "Real production HTTP200 configuration and seven-section/seven-theme rendering",
+      "passed": true,
+      "detail": {
+        "source": "supabase",
+        "http": 200,
+        "settings": {
+          "id": "portfolio",
+          "default_theme": "gothic-stickerboard",
+          "default_mode": "light",
+          "theme_order": [
+            "baroque-plexiglas",
+            "playful-pop",
+            "raggedy-granite",
+            "glossy-marble",
+            "luminous-midnight",
+            "gothic-stickerboard",
+            "standard"
+          ]
+        },
+        "initial_appearance": {
+          "mode": "light",
+          "styleTheme": "gothic-stickerboard"
+        },
+        "navigation_ms": 3428
+      }
+    },
+    {
+      "name": "Search labels and empty/long/unexpected input",
+      "passed": true,
+      "detail": "Empty, no-match, long (80-char cap), and markup-like strings handled without executing markup."
+    },
+    {
+      "name": "Keyboard theme selection, mode control, and persistence across reloads",
+      "passed": true,
+      "detail": {
+        "style": "luminous-midnight",
+        "mode": "dark",
+        "document_and_API_reload_preserved_choice": true
+      }
+    },
+    {
+      "name": "Labeled offline fallback and live recovery",
+      "passed": true,
+      "detail": "Explicitly labeled simulation reused validated cache without a request; real reload recovered HTTP200."
+    },
+    {
+      "name": "Cloud-default reset removes isolated browser overrides",
+      "passed": true,
+      "detail": {
+        "applied_defaults": {
+          "id": "portfolio",
+          "default_theme": "gothic-stickerboard",
+          "default_mode": "light",
+          "theme_order": [
+            "baroque-plexiglas",
+            "playful-pop",
+            "raggedy-granite",
+            "glossy-marble",
+            "luminous-midnight",
+            "gothic-stickerboard",
+            "standard"
+          ]
+        },
+        "saved_overrides_removed": true
+      }
+    },
+    {
+      "name": "Repeated concurrent configuration requests",
+      "passed": true,
+      "detail": "Three concurrent reads finish connected with one seven-card set; no public writes."
+    },
+    {
+      "name": "Sequential keyboard navigation and closed-menu focus exclusion",
+      "passed": false,
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_chromium.py\", line 17, in check\n    detail=fn();case={'name':name,'passed':True,'detail':detail}\n           ^^^^\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_chromium.py\", line 91, in menu_keyboard\n    page.keyboard.press('Tab');assert page.evaluate('document.activeElement.matches(\".portfolio-menu__item\")')\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "All five copyable prompts/SQL targets copy exact text",
+      "passed": true,
+      "detail": {
+        "exact_clipboard_targets": [
+          "aiReviewPrompt",
+          "aiPlanPrompt",
+          "aiVerifyPrompt",
+          "cloudWorkingPrompt",
+          "cloudAuditCode"
+        ]
+      }
+    },
+    {
+      "name": "Seven themes \u00d7 two modes \u00d7 five responsive sizes (70 combinations)",
+      "passed": true,
+      "detail": {
+        "combinations": 70,
+        "samples": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "standard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "standard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "playful-pop",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "playful-pop",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "raggedy-granite",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "raggedy-granite",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "glossy-marble",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "glossy-marble",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "luminous-midnight",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "luminous-midnight",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "gothic-stickerboard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "gothic-stickerboard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "baroque-plexiglas",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "theme": "baroque-plexiglas",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "standard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "standard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "playful-pop",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "playful-pop",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "raggedy-granite",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "raggedy-granite",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "glossy-marble",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "glossy-marble",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "luminous-midnight",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "luminous-midnight",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "gothic-stickerboard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "gothic-stickerboard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "baroque-plexiglas",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "theme": "baroque-plexiglas",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "standard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "standard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "playful-pop",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "playful-pop",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "raggedy-granite",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "raggedy-granite",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "glossy-marble",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "glossy-marble",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "luminous-midnight",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "luminous-midnight",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "gothic-stickerboard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "gothic-stickerboard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "baroque-plexiglas",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "theme": "baroque-plexiglas",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "standard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "standard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "playful-pop",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "playful-pop",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "raggedy-granite",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "raggedy-granite",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "glossy-marble",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "glossy-marble",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "luminous-midnight",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "luminous-midnight",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "gothic-stickerboard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "gothic-stickerboard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "baroque-plexiglas",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "theme": "baroque-plexiglas",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "standard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "standard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "playful-pop",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "playful-pop",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "raggedy-granite",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "raggedy-granite",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "glossy-marble",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "glossy-marble",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "luminous-midnight",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "luminous-midnight",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "gothic-stickerboard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "gothic-stickerboard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "baroque-plexiglas",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "width": 320,
+            "height": 900,
+            "theme": "baroque-plexiglas",
+            "mode": "dark",
+            "no_page_overflow": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Existing internal navigation and document links resolve",
+      "passed": true,
+      "detail": [
+        {
+          "url": "https://chernichenkodmitriy.com/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/resume.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/fluid-typography/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/flexbox-interfaces/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/logical-properties-flexbox/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/responsive-grid/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/asymmetric-dashboard-grid/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/native-nesting-cascade-layers/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/multi-theme-scoped-component-systems/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/container-relative-styling-parent-checking-selectors/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/adaptive-card-widgets-container-queries-state-toggles/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/scroll-driven-timelines-starting-style-transitions/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/pure-css-reading-progress-view-timeline-content-reveals/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/trading-dashboard-showcase.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/trading-dashboard/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/trading-dashboard/week01/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/trading-dashboard/week02/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/trading-dashboard/week03/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/trading-dashboard/week04/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/trading-dashboard/week05/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/trading-dashboard/week06/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/trading-dashboard/week07/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/trading-dashboard/week08/index.html",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/setup.sql",
+          "status": 200
+        },
+        {
+          "url": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/README.md",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "name": "Automated WCAG 2/2.1 A/AA axe scan (not a certification)",
+      "passed": false,
+      "error": "[{\"id\": \"color-contrast\", \"impact\": \"serious\", \"nodes\": 7}, {\"id\": \"label-content-name-mismatch\", \"impact\": \"serious\", \"nodes\": 1}, {\"id\": \"scrollable-region-focusable\", \"impact\": \"serious\", \"nodes\": 1}]",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_chromium.py\", line 17, in check\n    detail=fn();case={'name':name,'passed':True,'detail':detail}\n           ^^^^\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_chromium.py\", line 139, in accessibility\n    assert not result['violations'],json.dumps([{'id':v['id'],'impact':v['impact'],'nodes':len(v['nodes'])} for v in result['violations']])\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{\"id\": \"color-contrast\", \"impact\": \"serious\", \"nodes\": 7}, {\"id\": \"label-content-name-mismatch\", \"impact\": \"serious\", \"nodes\": 1}, {\"id\": \"scrollable-region-focusable\", \"impact\": \"serious\", \"nodes\": 1}]\n"
+    },
+    {
+      "name": "Live console/runtime/assets and no database write requests",
+      "passed": true,
+      "detail": {
+        "uncaught_errors": 0,
+        "HTTP_failures": 0,
+        "unexpected_writes": 0,
+        "console_warning_error_messages": []
+      }
+    }
+  ],
+  "scope": "Live remote website; no mocked responses in this script; isolated browser storage.",
+  "browser_version": "148.0.7778.96",
+  "settings": {
+    "id": "portfolio",
+    "default_theme": "gothic-stickerboard",
+    "default_mode": "light",
+    "theme_order": [
+      "baroque-plexiglas",
+      "playful-pop",
+      "raggedy-granite",
+      "glossy-marble",
+      "luminous-midnight",
+      "gothic-stickerboard",
+      "standard"
+    ]
+  },
+  "live_api_response": [
+    {
+      "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+      "status": 200,
+      "method": "GET"
+    }
+  ],
+  "passed": 10,
+  "failed": 2,
+  "axe_summary": {
+    "passes": 30,
+    "violations": 3,
+    "incomplete": 2
+  },
+  "console_messages": [],
+  "uncaught_errors": [],
+  "http_failures": [],
+  "unexpected_supabase_writes": [],
+  "api_requests": [
+    {
+      "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+      "status": 200,
+      "method": "GET"
+    }
+  ],
+  "completed_at": "2026-10-19T04:28:55.887680+00:00"
+}

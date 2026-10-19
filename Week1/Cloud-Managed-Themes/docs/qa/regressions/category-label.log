@@ -1,0 +1,10 @@
+
+test_legacy_keys_and_destination_are_preserved (__main__.CategoryLabelTests.test_legacy_keys_and_destination_are_preserved) ... ok
+test_resume_group_matches_navigation (__main__.CategoryLabelTests.test_resume_group_matches_navigation) ... ok
+test_shared_navigation_uses_requested_label (__main__.CategoryLabelTests.test_shared_navigation_uses_requested_label) ... ok
+test_showcase_document_title_and_eyebrow_match (__main__.CategoryLabelTests.test_showcase_document_title_and_eyebrow_match) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK

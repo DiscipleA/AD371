@@ -1,0 +1,161 @@
+{
+  "engine": "Firefox / Gecko",
+  "target": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/",
+  "started_at": "2026-10-19T04:29:02.055924+00:00",
+  "checks": [
+    {
+      "name": "Real Firefox live Supabase read and initial seven-theme render",
+      "passed": true,
+      "detail": {
+        "state": {
+          "status": "connected",
+          "source": "supabase",
+          "httpStatus": 200
+        },
+        "appearance": {
+          "mode": "light",
+          "styleTheme": "gothic-stickerboard"
+        },
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        }
+      }
+    },
+    {
+      "name": "Search edge cases and accessible label",
+      "passed": true,
+      "detail": "Native WebDriver typing exercised empty/no-match/long/markup-like strings and accessible label."
+    },
+    {
+      "name": "Keyboard preview, mode, and saved preferences across reload",
+      "passed": true,
+      "detail": {
+        "keyboard_style": "luminous-midnight",
+        "mode": "dark",
+        "document_and_configuration_reload_preserved_choice": true
+      }
+    },
+    {
+      "name": "Labeled fallback, real recovery, and cloud-default reset",
+      "passed": true,
+      "detail": "Labeled simulation skipped API, recovered real connection, and reset cleared only test-profile overrides."
+    },
+    {
+      "name": "Sequential Tab/Enter/Escape and hidden-menu focus exclusion",
+      "passed": true,
+      "detail": [
+        {
+          "requested_width": 1920,
+          "actual_viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "Tab_Enter_Escape_and_inert": true
+        },
+        {
+          "requested_width": 390,
+          "actual_viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "Tab_Enter_Escape_and_inert": true
+        },
+        {
+          "requested_width": 320,
+          "actual_viewport": {
+            "width": 320,
+            "height": 900
+          },
+          "Tab_Enter_Escape_and_inert": true
+        }
+      ]
+    },
+    {
+      "name": "Firefox BiDi console/network health and absence of public writes",
+      "passed": false,
+      "error": "[{'url': 'https://chernichenkodmitriy.com/favicon.ico', 'status': 404, 'method': 'GET'}, {'url': 'https://chernichenkodmitriy.com/favicon.ico', 'status': 404, 'method': 'GET'}]",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 23, in check\n    try:case={'name':name,'passed':True,'detail':fn()}\n                                                 ^^^^\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 185, in health\n    assert not events['javascript_errors'],events['javascript_errors'];assert not events['http_failures'],events['http_failures'];assert not unexpected,unexpected;assert not events['unexpected_writes'],events['unexpected_writes']\n                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'url': 'https://chernichenkodmitriy.com/favicon.ico', 'status': 404, 'method': 'GET'}, {'url': 'https://chernichenkodmitriy.com/favicon.ico', 'status': 404, 'method': 'GET'}]\n"
+    }
+  ],
+  "scope": "Real live requests, isolated temporary Firefox profile. No API fixtures or database writes.",
+  "browser_version": "158.0",
+  "profile_is_temporary": true,
+  "settings": {
+    "id": "portfolio",
+    "default_theme": "gothic-stickerboard",
+    "default_mode": "light",
+    "theme_order": [
+      "baroque-plexiglas",
+      "playful-pop",
+      "raggedy-granite",
+      "glossy-marble",
+      "luminous-midnight",
+      "gothic-stickerboard",
+      "standard"
+    ]
+  },
+  "passed": 5,
+  "failed": 1,
+  "bidi_events": {
+    "javascript_errors": [],
+    "console_messages": [],
+    "http_failures": [
+      {
+        "url": "https://chernichenkodmitriy.com/favicon.ico",
+        "status": 404,
+        "method": "GET"
+      },
+      {
+        "url": "https://chernichenkodmitriy.com/favicon.ico",
+        "status": 404,
+        "method": "GET"
+      }
+    ],
+    "fetch_errors": [],
+    "api_responses": [
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "status": 200,
+        "method": "OPTIONS"
+      },
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "status": 200,
+        "method": "GET"
+      },
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "status": 200,
+        "method": "OPTIONS"
+      },
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "status": 200,
+        "method": "GET"
+      },
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "status": 200,
+        "method": "OPTIONS"
+      },
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "status": 200,
+        "method": "GET"
+      },
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "status": 200,
+        "method": "OPTIONS"
+      },
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "status": 200,
+        "method": "GET"
+      }
+    ],
+    "unexpected_writes": []
+  },
+  "completed_at": "2026-10-19T04:29:21.487868+00:00"
+}

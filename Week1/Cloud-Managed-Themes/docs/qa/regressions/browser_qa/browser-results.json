@@ -1,0 +1,220 @@
+{
+  "results": [
+    {
+      "test": "chromium real live connection + primary flow + responsive",
+      "passed": true,
+      "detail": {
+        "liveState": {
+          "status": "connected",
+          "source": "supabase",
+          "settings": {
+            "id": "portfolio",
+            "default_theme": "gothic-stickerboard",
+            "default_mode": "light",
+            "theme_order": [
+              "baroque-plexiglas",
+              "playful-pop",
+              "raggedy-granite",
+              "glossy-marble",
+              "luminous-midnight",
+              "gothic-stickerboard",
+              "standard"
+            ]
+          },
+          "httpStatus": 200,
+          "durationMs": 1371,
+          "fetchedAt": "2026-10-19T04:23:41.040Z",
+          "error": "",
+          "simulation": false
+        },
+        "widths": [
+          1920,
+          768,
+          375,
+          320
+        ],
+        "pageErrors": [],
+        "failedRequests": []
+      }
+    },
+    {
+      "test": "chromium controlled remote defaults + order",
+      "passed": true,
+      "detail": "Controlled fixture only: remote default and menu order applied without saving visitor preference."
+    },
+    {
+      "test": "chromium saved preferences win",
+      "passed": true,
+      "detail": "Controlled fixture: both saved dimensions override differing remote defaults."
+    },
+    {
+      "test": "chromium delayed request preserves visitor choice",
+      "passed": true,
+      "detail": "Controlled delayed response: in-flight visitor selection preserved."
+    },
+    {
+      "test": "chromium offline with cache",
+      "passed": true,
+      "detail": "Controlled failure fixture: fallback remains interactive; no fabricated live success."
+    },
+    {
+      "test": "chromium offline without cache",
+      "passed": true,
+      "detail": "Controlled failure fixture: fallback remains interactive; no fabricated live success."
+    },
+    {
+      "test": "chromium invalid remote theme rejected",
+      "passed": true,
+      "detail": "Controlled failure fixture: fallback remains interactive; no fabricated live success."
+    },
+    {
+      "test": "chromium restricted localStorage fallback",
+      "passed": true,
+      "detail": "Controlled failure fixture: fallback remains interactive; no fabricated live success."
+    },
+    {
+      "test": "chromium repeated requests",
+      "passed": true,
+      "detail": "Controlled requests: superseded requests do not duplicate controls or report stale completion."
+    },
+    {
+      "test": "chromium slow local metadata",
+      "passed": true,
+      "detail": "Slow local package metadata still produces all seven menu entries."
+    },
+    {
+      "test": "chromium seven themes \u00d7 two modes",
+      "passed": true,
+      "detail": [
+        {
+          "theme": "standard",
+          "mode": "light",
+          "codeColors": {
+            "text": "oklch(0.91 0.012 255)",
+            "background": "oklch(0.2 0.022 255)"
+          }
+        },
+        {
+          "theme": "standard",
+          "mode": "dark",
+          "codeColors": {
+            "text": "oklch(0.91 0.012 255)",
+            "background": "oklch(0.125 0.022 255)"
+          }
+        },
+        {
+          "theme": "playful-pop",
+          "mode": "light",
+          "codeColors": {
+            "text": "oklch(0.24 0.08 300)",
+            "background": "oklch(0.946799 0.045612 305)"
+          }
+        },
+        {
+          "theme": "playful-pop",
+          "mode": "dark",
+          "codeColors": {
+            "text": "oklch(0.91 0.012 255)",
+            "background": "oklch(0.16 0.05 300)"
+          }
+        },
+        {
+          "theme": "raggedy-granite",
+          "mode": "light",
+          "codeColors": {
+            "text": "rgb(241, 234, 217)",
+            "background": "rgb(38, 40, 32)"
+          }
+        },
+        {
+          "theme": "raggedy-granite",
+          "mode": "dark",
+          "codeColors": {
+            "text": "oklch(0.91 0.012 255)",
+            "background": "rgb(17, 18, 15)"
+          }
+        },
+        {
+          "theme": "glossy-marble",
+          "mode": "light",
+          "codeColors": {
+            "text": "rgb(238, 248, 246)",
+            "background": "rgb(23, 35, 42)"
+          }
+        },
+        {
+          "theme": "glossy-marble",
+          "mode": "dark",
+          "codeColors": {
+            "text": "rgb(238, 248, 246)",
+            "background": "rgb(12, 20, 26)"
+          }
+        },
+        {
+          "theme": "luminous-midnight",
+          "mode": "light",
+          "codeColors": {
+            "text": "rgb(16, 33, 61)",
+            "background": "rgb(245, 249, 255)"
+          }
+        },
+        {
+          "theme": "luminous-midnight",
+          "mode": "dark",
+          "codeColors": {
+            "text": "rgb(223, 248, 255)",
+            "background": "rgb(2, 6, 19)"
+          }
+        },
+        {
+          "theme": "gothic-stickerboard",
+          "mode": "light",
+          "codeColors": {
+            "text": "rgb(243, 231, 206)",
+            "background": "rgb(36, 25, 31)"
+          }
+        },
+        {
+          "theme": "gothic-stickerboard",
+          "mode": "dark",
+          "codeColors": {
+            "text": "rgb(243, 231, 206)",
+            "background": "rgb(16, 11, 15)"
+          }
+        },
+        {
+          "theme": "baroque-plexiglas",
+          "mode": "light",
+          "codeColors": {
+            "text": "rgb(238, 252, 255)",
+            "background": "rgb(22, 32, 42)"
+          }
+        },
+        {
+          "theme": "baroque-plexiglas",
+          "mode": "dark",
+          "codeColors": {
+            "text": "rgb(238, 252, 255)",
+            "background": "color(srgb 0.0578824 0.0482353 0.0836078)"
+          }
+        }
+      ]
+    }
+  ],
+  "passed": 11,
+  "failed": 0,
+  "target_origin": "https://chernichenkodmitriy.com",
+  "execution_scope": "Existing assertions, live origin; Chromium-only selection in a diagnostic in-memory copy. Fixtures explicitly marked in original assertions; real reads not mocked. Firefox independently tested by run_firefox.py.",
+  "tested_source_sha256": {
+    "theme.js": "e906eb88b24711f137741620d28fa2812accdb29be0db2111f99c825ddf6dc26",
+    "theme-cloud.js": "09cf42e0132ccd16edb02d1004c572a9d09bf409b2853b8fb27974215058f604",
+    "theme-cloud-config.js": "51612fcc5f66fb9c70107a154a76e55ae679249eb491c2779c4d14ebf14b48e5",
+    "site-navigation.js": "dd42a3daf97be4cf86dcdcd1f25927d516e50b289b6cc3ee38e21bc59f88a1e4",
+    "resume.html": "ada96cf88ce28b59befad9ae2810104909076ff9a138e5f9493adf06ea382077",
+    "styles/themes/theme-registry.js": "efd038a63a38f0830a98d572ae5945648c6e8cd69338bd07f4a3c14f0ea7d874",
+    "styles/cloud-managed-themes.css": "af358d5c5a07e5c2c59f3a2a6fcdca93fb4dc4ccfa700d15acb7817532e08e1c",
+    "showcases/cloud-managed-themes/index.html": "d55304537e32c45ae056310bb5a501a501d6d849c8415d52a1ce19cba6ebc227",
+    "showcases/cloud-managed-themes/showcase.js": "4437658f1e6f13992e98d6552b000948fe14379fb89dfb02ad73613b7f66c305",
+    "showcases/cloud-managed-themes/setup.sql": "3251142e5aa2610f55d13c8b70f23529f291df5941a898ffc1e121e9aa249505"
+  }
+}

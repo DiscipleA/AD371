@@ -1,0 +1,13 @@
+PASS chromium restricted-storage choice survives reload and reset
+PASS chromium unrelated failed metadata does not block configuration
+PASS chromium unrelated hanging metadata does not block configuration
+PASS chromium missing default package preserves a valid local renderer
+PASS chromium metadata load has bounded wait
+PASS chromium missing connection script reports unavailable
+PASS chromium missing runtime script reports unavailable
+PASS chromium hanging connection script has bounded unavailable state
+PASS chromium hanging runtime script has bounded unavailable state
+PASS chromium bounded API timeout preserves pending visitor choice
+PASS chromium idle inspector does not claim verification
+SUMMARY {"passed": 11, "failed": 0}
+

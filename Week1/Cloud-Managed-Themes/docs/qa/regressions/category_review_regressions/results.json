@@ -1,0 +1,58 @@
+{
+  "passed": 3,
+  "failed": 1,
+  "results": [
+    {
+      "test": "chromium sequential Tab across closed/open menus 1440",
+      "passed": false,
+      "error": "CSS toggle must initially have focus.",
+      "traceback": "Traceback (most recent call last):\n  File \"/media/reader/DAILY_USE/IT161/Week8/Resume/tests/cloud-managed-themes/category_review_regressions.py\", line 20, in check\n    detail=fn();RESULTS.append({'test':name,'passed':True,'detail':detail});print('PASS',name,flush=True)\n           ^^^^\n  File \"/media/reader/DAILY_USE/IT161/Week8/Resume/tests/cloud-managed-themes/category_review_regressions.py\", line 106, in <lambda>\n    for width in [1440,375,320]:check(name+' sequential Tab across closed/open menus '+str(width),lambda width=width:sequential_tab(browser,width))\n                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/media/reader/DAILY_USE/IT161/Week8/Resume/tests/cloud-managed-themes/category_review_regressions.py\", line 38, in sequential_tab\n    css.locator(':scope > button').focus();assert_focus(css.locator(':scope > button'),'CSS toggle must initially have focus.')\n                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/media/reader/DAILY_USE/IT161/Week8/Resume/tests/cloud-managed-themes/category_review_regressions.py\", line 24, in assert_focus\n    assert locator.evaluate('(e)=>document.activeElement===e'),label\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: CSS toggle must initially have focus.\n"
+    },
+    {
+      "test": "chromium sequential Tab across closed/open menus 375",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "pages": [
+          "resume",
+          "application showcase"
+        ],
+        "sequential_tab_skips_collapsed_panels": true,
+        "opening_escape_hover_outside_preserved": true
+      }
+    },
+    {
+      "test": "chromium sequential Tab across closed/open menus 320",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "pages": [
+          "resume",
+          "application showcase"
+        ],
+        "sequential_tab_skips_collapsed_panels": true,
+        "opening_escape_hover_outside_preserved": true
+      }
+    },
+    {
+      "test": "chromium blocked saved-reset wording and page-memory boundary",
+      "passed": true,
+      "detail": "QA-only controlled response/removal failure: current-page reset succeeds, saved preferences remain and return on reload; public copy discloses the limit."
+    }
+  ],
+  "tested_source_sha256": {
+    "theme.js": "e906eb88b24711f137741620d28fa2812accdb29be0db2111f99c825ddf6dc26",
+    "theme-cloud.js": "09cf42e0132ccd16edb02d1004c572a9d09bf409b2853b8fb27974215058f604",
+    "theme-cloud-config.js": "51612fcc5f66fb9c70107a154a76e55ae679249eb491c2779c4d14ebf14b48e5",
+    "site-navigation.js": "dd42a3daf97be4cf86dcdcd1f25927d516e50b289b6cc3ee38e21bc59f88a1e4",
+    "resume.html": "ada96cf88ce28b59befad9ae2810104909076ff9a138e5f9493adf06ea382077",
+    "styles/themes/theme-registry.js": "efd038a63a38f0830a98d572ae5945648c6e8cd69338bd07f4a3c14f0ea7d874",
+    "styles/cloud-managed-themes.css": "af358d5c5a07e5c2c59f3a2a6fcdca93fb4dc4ccfa700d15acb7817532e08e1c",
+    "showcases/cloud-managed-themes/index.html": "d55304537e32c45ae056310bb5a501a501d6d849c8415d52a1ce19cba6ebc227",
+    "showcases/cloud-managed-themes/showcase.js": "4437658f1e6f13992e98d6552b000948fe14379fb89dfb02ad73613b7f66c305",
+    "showcases/cloud-managed-themes/setup.sql": "3251142e5aa2610f55d13c8b70f23529f291df5941a898ffc1e121e9aa249505"
+  },
+  "verified_at_utc": "2026-10-19T04:28:19.675116+00:00",
+  "target_origin": "https://chernichenkodmitriy.com",
+  "execution_scope": "Existing assertions, live origin; Chromium-only selection in a diagnostic in-memory copy. Fixtures explicitly marked in original assertions; real reads not mocked. Firefox independently tested by run_firefox.py."
+}

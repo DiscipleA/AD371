@@ -1,0 +1,722 @@
+{
+  "engine": "Firefox / Gecko",
+  "target": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/",
+  "started_at": "2026-10-19T04:26:49.479419+00:00",
+  "checks": [
+    {
+      "name": "Real Firefox live Supabase read and initial seven-theme render",
+      "passed": true,
+      "detail": {
+        "state": {
+          "status": "connected",
+          "source": "supabase",
+          "httpStatus": 200
+        },
+        "appearance": {
+          "mode": "light",
+          "styleTheme": "gothic-stickerboard"
+        },
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        }
+      }
+    },
+    {
+      "name": "Search edge cases and accessible label",
+      "passed": true,
+      "detail": "Native WebDriver typing exercised empty/no-match/long/markup-like strings and accessible label."
+    },
+    {
+      "name": "Keyboard preview, mode, and saved preferences across reload",
+      "passed": false,
+      "error": "{'error': 'element click intercepted', 'message': 'Element <button type=\"button\"> is not clickable at point (1179,6) because another element <header class=\"portfolio-banner\"> obscures it', 'stacktrace': 'RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:14:8\\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5\\nElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:321:5\\nwebdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:178:11\\ninteraction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11\\nclickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:338:29\\nreceiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31\\n', 'data': {'coords': {'x': 1179, 'y': 6}, 'obscuredElement': '<button type=\"button\">', 'overlayingElement': '<header class=\"portfolio-banner\">'}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 21, in check\n    try:case={'name':name,'passed':True,'detail':fn()}\n                                                 ^^^^\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 121, in user_preferences\n    before=js('return portfolioTheme.getCurrentPreferences()');click('.cloud-lab__actions [data-theme-toggle]');mode='light' if before['mode']=='dark' else 'dark';appearance('luminous-midnight',mode)\n                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 62, in click\n    def click(selector):return command('POST','/element/'+element(selector)+'/click',{})\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 42, in command\n    if response.status_code>=400:raise RuntimeError(str(data)[:1800])\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: {'error': 'element click intercepted', 'message': 'Element <button type=\"button\"> is not clickable at point (1179,6) because another element <header class=\"portfolio-banner\"> obscures it', 'stacktrace': 'RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:14:8\\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5\\nElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:321:5\\nwebdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:178:11\\ninteraction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11\\nclickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:338:29\\nreceiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31\\n', 'data': {'coords': {'x': 1179, 'y': 6}, 'obscuredElement': '<button type=\"button\">', 'overlayingElement': '<header class=\"portfolio-banner\">'}}\n"
+    },
+    {
+      "name": "Labeled fallback, real recovery, and cloud-default reset",
+      "passed": false,
+      "error": "{'error': 'element click intercepted', 'message': 'Element <button id=\"cloud-offline\" type=\"button\"> is not clickable at point (769,6) because another element <header class=\"portfolio-banner\"> obscures it', 'stacktrace': 'RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:14:8\\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5\\nElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:321:5\\nwebdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:178:11\\ninteraction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11\\nclickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:338:29\\nreceiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31\\n', 'data': {'coords': {'x': 769, 'y': 6}, 'obscuredElement': '<button id=\"cloud-offline\" type=\"button\">', 'overlayingElement': '<header class=\"portfolio-banner\">'}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 21, in check\n    try:case={'name':name,'passed':True,'detail':fn()}\n                                                 ^^^^\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 127, in offline_reset\n    before=len(events['api_responses']);click('#cloud-offline');ready();s=js('return portfolioThemeCloud.getState()');assert s['status']=='fallback' and s['simulation'] and s['source']=='cache'\n                                        ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 62, in click\n    def click(selector):return command('POST','/element/'+element(selector)+'/click',{})\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 42, in command\n    if response.status_code>=400:raise RuntimeError(str(data)[:1800])\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: {'error': 'element click intercepted', 'message': 'Element <button id=\"cloud-offline\" type=\"button\"> is not clickable at point (769,6) because another element <header class=\"portfolio-banner\"> obscures it', 'stacktrace': 'RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:14:8\\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5\\nElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:321:5\\nwebdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:178:11\\ninteraction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11\\nclickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:338:29\\nreceiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31\\n', 'data': {'coords': {'x': 769, 'y': 6}, 'obscuredElement': '<button id=\"cloud-offline\" type=\"button\">', 'overlayingElement': '<header class=\"portfolio-banner\">'}}\n"
+    },
+    {
+      "name": "Repeated concurrent requests",
+      "passed": true,
+      "detail": "Concurrent configuration reads settle connected without duplicate theme cards."
+    },
+    {
+      "name": "Sequential Tab/Enter/Escape and hidden-menu focus exclusion",
+      "passed": false,
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 21, in check\n    try:case={'name':name,'passed':True,'detail':fn()}\n                                                 ^^^^\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 144, in keyboard\n    keys(toggle,'\\ue004');assert js('return document.activeElement.matches(\".portfolio-menu__item\")')\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "Seven themes \u00d7 two modes \u00d7 four responsive sizes (56 combinations)",
+      "passed": true,
+      "detail": {
+        "combinations": 56,
+        "samples": [
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "standard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "standard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "playful-pop",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "playful-pop",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "raggedy-granite",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "raggedy-granite",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "glossy-marble",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "glossy-marble",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "luminous-midnight",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "luminous-midnight",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "gothic-stickerboard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "gothic-stickerboard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "baroque-plexiglas",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 1920,
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "style": "baroque-plexiglas",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "standard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "standard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "playful-pop",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "playful-pop",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "raggedy-granite",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "raggedy-granite",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "glossy-marble",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "glossy-marble",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "luminous-midnight",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "luminous-midnight",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "gothic-stickerboard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "gothic-stickerboard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "baroque-plexiglas",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 768,
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "style": "baroque-plexiglas",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "standard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "standard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "playful-pop",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "playful-pop",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "raggedy-granite",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "raggedy-granite",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "glossy-marble",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "glossy-marble",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "luminous-midnight",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "luminous-midnight",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "gothic-stickerboard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "gothic-stickerboard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "baroque-plexiglas",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 390,
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "style": "baroque-plexiglas",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "standard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "standard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "playful-pop",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "playful-pop",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "raggedy-granite",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "raggedy-granite",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "glossy-marble",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "glossy-marble",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "luminous-midnight",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "luminous-midnight",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "gothic-stickerboard",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "gothic-stickerboard",
+            "mode": "dark",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "baroque-plexiglas",
+            "mode": "light",
+            "no_page_overflow": true
+          },
+          {
+            "requested_width": 320,
+            "viewport": {
+              "width": 320,
+              "height": 900
+            },
+            "style": "baroque-plexiglas",
+            "mode": "dark",
+            "no_page_overflow": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Automated Firefox WCAG A/AA scan (not a certification)",
+      "passed": false,
+      "error": "[{\"id\": \"color-contrast\", \"impact\": \"serious\", \"nodes\": 7}, {\"id\": \"label-content-name-mismatch\", \"impact\": \"serious\", \"nodes\": 1}, {\"id\": \"scrollable-region-focusable\", \"impact\": \"serious\", \"nodes\": 1}]",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 21, in check\n    try:case={'name':name,'passed':True,'detail':fn()}\n                                                 ^^^^\n  File \"/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/run_firefox.py\", line 171, in accessibility\n    assert not data['violations'],json.dumps([{'id':v['id'],'impact':v['impact'],'nodes':len(v['nodes'])} for v in data['violations']])\n           ^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{\"id\": \"color-contrast\", \"impact\": \"serious\", \"nodes\": 7}, {\"id\": \"label-content-name-mismatch\", \"impact\": \"serious\", \"nodes\": 1}, {\"id\": \"scrollable-region-focusable\", \"impact\": \"serious\", \"nodes\": 1}]\n"
+    },
+    {
+      "name": "Firefox BiDi console/network health and absence of public writes",
+      "passed": true,
+      "detail": {
+        "uncaught_errors": 0,
+        "HTTP_failures": 0,
+        "unexpected_transport_failures": 0,
+        "expected_cancellations_during_navigation_or_superseded_GET": [
+          {
+            "url": "https://chernichenkodmitriy.com/favicon.ico",
+            "error": "NS_BINDING_ABORTED"
+          },
+          {
+            "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+            "error": "NS_BINDING_ABORTED"
+          },
+          {
+            "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+            "error": "NS_BINDING_ABORTED"
+          }
+        ],
+        "unexpected_writes": 0,
+        "captured_API_responses": 4,
+        "console_warning_error_messages": []
+      }
+    }
+  ],
+  "scope": "Real live requests, isolated temporary Firefox profile. No API fixtures or database writes.",
+  "browser_version": "158.0",
+  "profile_is_temporary": true,
+  "settings": {
+    "id": "portfolio",
+    "default_theme": "gothic-stickerboard",
+    "default_mode": "light",
+    "theme_order": [
+      "baroque-plexiglas",
+      "playful-pop",
+      "raggedy-granite",
+      "glossy-marble",
+      "luminous-midnight",
+      "gothic-stickerboard",
+      "standard"
+    ]
+  },
+  "passed": 5,
+  "failed": 4,
+  "axe_summary": {
+    "passes": 30,
+    "violations": 3,
+    "incomplete": 2
+  },
+  "bidi_events": {
+    "javascript_errors": [],
+    "console_messages": [],
+    "http_failures": [],
+    "fetch_errors": [
+      {
+        "url": "https://chernichenkodmitriy.com/favicon.ico",
+        "error": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "error": "NS_BINDING_ABORTED"
+      },
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "error": "NS_BINDING_ABORTED"
+      }
+    ],
+    "api_responses": [
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "status": 200,
+        "method": "OPTIONS"
+      },
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "status": 200,
+        "method": "GET"
+      },
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "status": 200,
+        "method": "OPTIONS"
+      },
+      {
+        "url": "https://iubbxotkeplkecdhuzke.supabase.co/rest/v1/portfolio_theme_settings?id=eq.portfolio&select=id%2Cdefault_theme%2Cdefault_mode%2Ctheme_order",
+        "status": 200,
+        "method": "GET"
+      }
+    ],
+    "unexpected_writes": []
+  },
+  "completed_at": "2026-10-19T04:27:58.258152+00:00"
+}

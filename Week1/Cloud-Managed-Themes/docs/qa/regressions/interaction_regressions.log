@@ -1,0 +1,12 @@
+PASS chromium style-only pending GET
+PASS chromium mode-only pending GET
+PASS chromium style-only pending metadata
+PASS chromium mode-only pending metadata
+PASS chromium storage-restricted style-only pending GET
+FAIL chromium newer GET wins pending metadata Page.evaluate: Error: Unable to load the installed theme package.
+    at Object.ensureKnownTheme (https://chernichenkodmitriy.com/theme.js:302:58)
+    at async eval (eval at evaluate (:302:30), <anonymous>:1:11)
+    at async <anonymous>:328:30
+PASS chromium keyboard focus survives moved menu option and transition
+SUMMARY {"passed": 6, "failed": 1}
+

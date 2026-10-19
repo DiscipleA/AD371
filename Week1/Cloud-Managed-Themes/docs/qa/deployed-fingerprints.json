@@ -1,0 +1,62 @@
+[
+  {
+    "path": "resume.html",
+    "status": 200,
+    "sha256": "ada96cf88ce28b59befad9ae2810104909076ff9a138e5f9493adf06ea382077",
+    "matches_tested_source": true
+  },
+  {
+    "path": "site-navigation.js",
+    "status": 200,
+    "sha256": "dd42a3daf97be4cf86dcdcd1f25927d516e50b289b6cc3ee38e21bc59f88a1e4",
+    "matches_tested_source": true
+  },
+  {
+    "path": "theme.js",
+    "status": 200,
+    "sha256": "e906eb88b24711f137741620d28fa2812accdb29be0db2111f99c825ddf6dc26",
+    "matches_tested_source": true
+  },
+  {
+    "path": "theme-cloud.js",
+    "status": 200,
+    "sha256": "09cf42e0132ccd16edb02d1004c572a9d09bf409b2853b8fb27974215058f604",
+    "matches_tested_source": true
+  },
+  {
+    "path": "theme-cloud-config.js",
+    "status": 200,
+    "sha256": "51612fcc5f66fb9c70107a154a76e55ae679249eb491c2779c4d14ebf14b48e5",
+    "matches_tested_source": true
+  },
+  {
+    "path": "showcases/cloud-managed-themes/index.html",
+    "status": 200,
+    "sha256": "d55304537e32c45ae056310bb5a501a501d6d849c8415d52a1ce19cba6ebc227",
+    "matches_tested_source": true
+  },
+  {
+    "path": "showcases/cloud-managed-themes/showcase.js",
+    "status": 200,
+    "sha256": "4437658f1e6f13992e98d6552b000948fe14379fb89dfb02ad73613b7f66c305",
+    "matches_tested_source": true
+  },
+  {
+    "path": "showcases/cloud-managed-themes/setup.sql",
+    "status": 200,
+    "sha256": "3251142e5aa2610f55d13c8b70f23529f291df5941a898ffc1e121e9aa249505",
+    "matches_tested_source": true
+  },
+  {
+    "path": "styles/cloud-managed-themes.css",
+    "status": 200,
+    "sha256": "af358d5c5a07e5c2c59f3a2a6fcdca93fb4dc4ccfa700d15acb7817532e08e1c",
+    "matches_tested_source": true
+  },
+  {
+    "path": "styles/themes/theme-registry.js",
+    "status": 200,
+    "sha256": "efd038a63a38f0830a98d572ae5945648c6e8cd69338bd07f4a3c14f0ea7d874",
+    "matches_tested_source": true
+  }
+]

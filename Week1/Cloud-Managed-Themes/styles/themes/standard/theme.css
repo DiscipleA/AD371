@@ -1,0 +1,10 @@
+/*
+  Standard visual family.
+  The existing page-level CSS remains the source of truth for this theme.
+  This file is intentionally small so the global theme loader can switch
+  directories without duplicating the original design system.
+*/
+html[data-style-theme="standard"] {
+  --portfolio-style-family: "standard";
+  --portfolio-content-max: 72rem;
+}

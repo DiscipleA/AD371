@@ -1,0 +1,13 @@
+PASS chromium real live connection + primary flow + responsive
+PASS chromium controlled remote defaults + order
+PASS chromium saved preferences win
+PASS chromium delayed request preserves visitor choice
+PASS chromium offline with cache
+PASS chromium offline without cache
+PASS chromium invalid remote theme rejected
+PASS chromium restricted localStorage fallback
+PASS chromium repeated requests
+PASS chromium slow local metadata
+PASS chromium seven themes × two modes
+SUMMARY {"passed": 11, "failed": 0}
+

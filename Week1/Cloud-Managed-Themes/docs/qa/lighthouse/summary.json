@@ -1,0 +1,1644 @@
+[
+  {
+    "mode": "mobile",
+    "started_at": "2026-10-19T04:20:05.777003+00:00",
+    "exit_code": 0,
+    "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/lighthouse/mobile.log",
+    "json": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/lighthouse/lighthouse-mobile.report.json",
+    "html": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/lighthouse/lighthouse-mobile.report.html",
+    "version": "13.5.0",
+    "requestedUrl": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/",
+    "finalDisplayedUrl": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/",
+    "fetchTime": "2026-10-19T04:20:16.174Z",
+    "runtimeError": null,
+    "runWarnings": [],
+    "scores": {
+      "performance": 80,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "failed_audits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "score": 0.71,
+        "mode": "numeric",
+        "displayValue": "2.4\u00a0s",
+        "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+        "details": null
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "score": 0.87,
+        "mode": "numeric",
+        "displayValue": "2.6\u00a0s",
+        "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+        "details": null
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "score": 0.98,
+        "mode": "numeric",
+        "displayValue": "2.4\u00a0s",
+        "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+        "details": null
+      },
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "score": 0.53,
+        "mode": "numeric",
+        "displayValue": "560\u00a0ms",
+        "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/).",
+        "details": null
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "score": 0.66,
+        "mode": "numeric",
+        "displayValue": "200\u00a0ms",
+        "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+        "details": null
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "score": 0.92,
+        "mode": "numeric",
+        "displayValue": "3.5\u00a0s",
+        "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+        "details": null
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "score": 0,
+        "mode": "metricSavings",
+        "displayValue": "4.8\u00a0s",
+        "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "groupLabel",
+              "valueType": "text",
+              "label": "Category"
+            },
+            {
+              "key": "duration",
+              "valueType": "ms",
+              "granularity": 1,
+              "label": "Time Spent"
+            }
+          ],
+          "items": [
+            {
+              "group": "styleLayout",
+              "groupLabel": "Style & Layout",
+              "duration": 2142.2519999999995
+            },
+            {
+              "group": "other",
+              "groupLabel": "Other",
+              "duration": 1277.4239999999934
+            },
+            {
+              "group": "scriptEvaluation",
+              "groupLabel": "Script Evaluation",
+              "duration": 955.9639999999996
+            },
+            {
+              "group": "parseHTML",
+              "groupLabel": "Parse HTML & CSS",
+              "duration": 227.72
+            },
+            {
+              "group": "paintCompositeRender",
+              "groupLabel": "Rendering",
+              "duration": 120.59599999999998
+            },
+            {
+              "group": "scriptParseCompile",
+              "groupLabel": "Script Parsing & Compilation",
+              "duration": 64.48400000000001
+            }
+          ],
+          "sortedBy": [
+            "duration"
+          ]
+        }
+      },
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "score": 0,
+        "mode": "binary",
+        "displayValue": null,
+        "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast).",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,0,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 581,
+                  "bottom": 607,
+                  "left": 61,
+                  "right": 183,
+                  "width": 122,
+                  "height": 27
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "01",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.1pt (16.184px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,0,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 563,
+                        "bottom": 677,
+                        "left": 43,
+                        "right": 200,
+                        "width": 157,
+                        "height": 113
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "01\nProblem & Scope"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,1,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 581,
+                  "bottom": 607,
+                  "left": 229,
+                  "right": 351,
+                  "width": 122,
+                  "height": 27
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "02",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.1pt (16.184px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-3-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,1,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 563,
+                        "bottom": 677,
+                        "left": 212,
+                        "right": 369,
+                        "width": 157,
+                        "height": 113
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "02\nArchitecture Concepts"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-4-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,2,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 706,
+                  "bottom": 733,
+                  "left": 61,
+                  "right": 183,
+                  "width": 122,
+                  "height": 27
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "03",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.1pt (16.184px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-5-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,2,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 689,
+                        "bottom": 802,
+                        "left": 43,
+                        "right": 200,
+                        "width": 157,
+                        "height": 113
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "03\nSystem Architecture"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-6-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,3,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 706,
+                  "bottom": 733,
+                  "left": 229,
+                  "right": 351,
+                  "width": 122,
+                  "height": 27
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "04",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.1pt (16.184px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-7-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,3,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 689,
+                        "bottom": 802,
+                        "left": 212,
+                        "right": 369,
+                        "width": 157,
+                        "height": 113
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "04\nAI Prompt"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-8-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,4,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 832,
+                  "bottom": 858,
+                  "left": 61,
+                  "right": 183,
+                  "width": 122,
+                  "height": 27
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "05",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.1pt (16.184px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-9-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,4,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 814,
+                        "bottom": 906,
+                        "left": 43,
+                        "right": 200,
+                        "width": 157,
+                        "height": 91
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "05\nAudit"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-10-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,5,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 832,
+                  "bottom": 858,
+                  "left": 229,
+                  "right": 351,
+                  "width": 122,
+                  "height": 27
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "06",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.1pt (16.184px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-11-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,5,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 814,
+                        "bottom": 906,
+                        "left": 212,
+                        "right": 369,
+                        "width": 157,
+                        "height": 91
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "06\nWorking System"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-12-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,6,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 935,
+                  "bottom": 962,
+                  "left": 61,
+                  "right": 183,
+                  "width": 122,
+                  "height": 27
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "07",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 12.1pt (16.184px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-13-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,6,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 918,
+                        "bottom": 1009,
+                        "left": 43,
+                        "right": 200,
+                        "width": 157,
+                        "height": 91
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "07\nVerification"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.color",
+              "wcag2aa",
+              "wcag143",
+              "TTv5",
+              "TT13.c",
+              "EN-301-549",
+              "EN-9.1.4.3",
+              "ACT",
+              "RGAAv4",
+              "RGAA-3.2.1"
+            ]
+          }
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "score": 0,
+        "mode": "binary",
+        "displayValue": null,
+        "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.13/label-content-name-mismatch).",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-14-BUTTON",
+                "path": "1,HTML,1,BODY,2,DIV,1,MAIN,5,SECTION,1,DIV,0,DIV,6,DIV,0,DIV,3,DIV,5,ARTICLE,1,BUTTON",
+                "selector": "div > div#cloud-cards > article.cloud-lab__theme-card > button",
+                "boundingRect": {
+                  "top": 12636,
+                  "bottom": 12680,
+                  "left": 90,
+                  "right": 322,
+                  "width": 233,
+                  "height": 44
+                },
+                "snippet": "<button type=\"button\" data-style-theme-option=\"gothic-stickerboard\" aria-label=\"Preview Gothic Stickerboard\" aria-pressed=\"true\" data-active=\"true\">",
+                "nodeLabel": "Selected",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "score": 0.5,
+        "mode": "metricSavings",
+        "displayValue": "Est savings of 4\u00a0KiB",
+        "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more about caching](https://developer.chrome.com/docs/performance/insights/cache).",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "Request"
+            },
+            {
+              "key": "cacheLifetimeMs",
+              "valueType": "ms",
+              "label": "Cache TTL",
+              "displayUnit": "duration"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size",
+              "displayUnit": "kb",
+              "granularity": 1
+            }
+          ],
+          "items": [
+            {
+              "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+              "cacheLifetimeMs": 86400000,
+              "totalBytes": 10478,
+              "wastedBytes": 4191.2
+            }
+          ],
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "skipSumming": [
+            "cacheLifetimeMs"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "wastedBytes": 4191.2
+          }
+        }
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "score": 0,
+        "mode": "metricSavings",
+        "displayValue": "Est savings of 10\u00a0KiB",
+        "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://developer.chrome.com/docs/performance/insights/legacy-javascript)",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "subItemsHeading": {
+                "key": "location",
+                "valueType": "source-location"
+              },
+              "label": "URL"
+            },
+            {
+              "key": null,
+              "valueType": "code",
+              "subItemsHeading": {
+                "key": "signal"
+              },
+              "label": ""
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Wasted bytes"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+              "wastedBytes": 10483,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "signal": "Array.prototype.at",
+                    "location": {
+                      "type": "source-location",
+                      "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+                      "urlProvider": "network",
+                      "line": 0,
+                      "column": 1118
+                    }
+                  },
+                  {
+                    "signal": "Array.prototype.findLast",
+                    "location": {
+                      "type": "source-location",
+                      "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+                      "urlProvider": "network",
+                      "line": 0,
+                      "column": 888
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "wastedBytes": 10483
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "score": 0,
+        "mode": "numeric",
+        "displayValue": null,
+        "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/performance/insights/network-dependency-tree) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "41E82A557B45B37E68B2F2B43BA87A64": {
+                    "url": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/",
+                    "navStartToEndTime": 337,
+                    "transferSize": 11219,
+                    "isLongest": true,
+                    "children": {
+                      "125132.14": {
+                        "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+                        "navStartToEndTime": 611,
+                        "transferSize": 10478,
+                        "isLongest": true,
+                        "children": {
+                          "125132.37": {
+                            "url": "https://chernichenkodmitriy.com/cdn-cgi/rum?",
+                            "navStartToEndTime": 1757,
+                            "transferSize": 477,
+                            "isLongest": true,
+                            "children": {}
+                          }
+                        }
+                      },
+                      "125132.6": {
+                        "url": "https://chernichenkodmitriy.com/styles/themes/theme-registry.js",
+                        "navStartToEndTime": 458,
+                        "transferSize": 2098,
+                        "children": {
+                          "125132.20": {
+                            "url": "https://chernichenkodmitriy.com/styles/themes/gothic-stickerboard/theme.css",
+                            "navStartToEndTime": 619,
+                            "transferSize": 7545,
+                            "children": {}
+                          }
+                        }
+                      },
+                      "125132.8": {
+                        "url": "https://chernichenkodmitriy.com/styles/themes/playful-pop/theme-config.js",
+                        "navStartToEndTime": 498,
+                        "transferSize": 840,
+                        "children": {}
+                      },
+                      "125132.11": {
+                        "url": "https://chernichenkodmitriy.com/theme.js",
+                        "navStartToEndTime": 496,
+                        "transferSize": 4631,
+                        "children": {}
+                      },
+                      "125132.3": {
+                        "url": "https://chernichenkodmitriy.com/styles/cloud-managed-themes.css",
+                        "navStartToEndTime": 495,
+                        "transferSize": 12217,
+                        "children": {}
+                      },
+                      "125132.10": {
+                        "url": "https://chernichenkodmitriy.com/styles/themes/standard/theme.css",
+                        "navStartToEndTime": 478,
+                        "transferSize": 735,
+                        "children": {}
+                      },
+                      "125132.2": {
+                        "url": "https://chernichenkodmitriy.com/styles/shared/base.css",
+                        "navStartToEndTime": 475,
+                        "transferSize": 2067,
+                        "children": {}
+                      },
+                      "125132.4": {
+                        "url": "https://chernichenkodmitriy.com/styles/shared/navigation.css",
+                        "navStartToEndTime": 474,
+                        "transferSize": 2607,
+                        "children": {}
+                      },
+                      "125132.9": {
+                        "url": "https://chernichenkodmitriy.com/styles/themes/raggedy-granite/theme-config.js",
+                        "navStartToEndTime": 453,
+                        "transferSize": 845,
+                        "children": {}
+                      },
+                      "125132.7": {
+                        "url": "https://chernichenkodmitriy.com/styles/themes/standard/theme-config.js",
+                        "navStartToEndTime": 446,
+                        "transferSize": 848,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 1757
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0,
+        "mode": "metricSavings",
+        "displayValue": "Est savings of 180\u00a0ms",
+        "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://chernichenkodmitriy.com/styles/themes/playful-pop/theme-config.js",
+              "totalBytes": 840,
+              "wastedMs": 243
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/cloud-managed-themes.css",
+              "totalBytes": 12217,
+              "wastedMs": 845
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/theme.js",
+              "totalBytes": 4631,
+              "wastedMs": 243
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/themes/standard/theme.css",
+              "totalBytes": 735,
+              "wastedMs": 644
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/shared/base.css",
+              "totalBytes": 2067,
+              "wastedMs": 243
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/shared/navigation.css",
+              "totalBytes": 2607,
+              "wastedMs": 644
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/themes/theme-registry.js",
+              "totalBytes": 2098,
+              "wastedMs": 644
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/themes/raggedy-granite/theme-config.js",
+              "totalBytes": 845,
+              "wastedMs": 243
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/themes/standard/theme-config.js",
+              "totalBytes": 848,
+              "wastedMs": 644
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/themes/gothic-stickerboard/theme.css",
+              "totalBytes": 7545
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "started_at": "2026-10-19T04:20:30.828623+00:00",
+    "exit_code": 0,
+    "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/lighthouse/desktop.log",
+    "json": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/lighthouse/lighthouse-desktop.report.json",
+    "html": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/lighthouse/lighthouse-desktop.report.html",
+    "version": "13.5.0",
+    "requestedUrl": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/",
+    "finalDisplayedUrl": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/",
+    "fetchTime": "2026-10-19T04:20:35.916Z",
+    "runtimeError": null,
+    "runWarnings": [],
+    "scores": {
+      "performance": 98,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "failed_audits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "score": 0.94,
+        "mode": "numeric",
+        "displayValue": "0.8\u00a0s",
+        "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+        "details": null
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "score": 0.96,
+        "mode": "numeric",
+        "displayValue": "0.9\u00a0s",
+        "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+        "details": null
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "score": 0.97,
+        "mode": "numeric",
+        "displayValue": "1.0\u00a0s",
+        "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+        "details": null
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "score": 0.99,
+        "mode": "numeric",
+        "displayValue": "80\u00a0ms",
+        "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+        "details": null
+      },
+      {
+        "id": "cumulative-layout-shift",
+        "title": "Cumulative Layout Shift",
+        "score": 0.99,
+        "mode": "numeric",
+        "displayValue": "0.048",
+        "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport. [Learn more about the Cumulative Layout Shift metric](https://web.dev/articles/cls).",
+        "details": {
+          "type": "debugdata",
+          "items": [
+            {
+              "cumulativeLayoutShiftMainFrame": 0.048443,
+              "newEngineResult": {
+                "cumulativeLayoutShift": 0.048443,
+                "cumulativeLayoutShiftMainFrame": 0.048443
+              },
+              "newEngineResultDiffered": false
+            }
+          ]
+        }
+      },
+      {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "score": 0,
+        "mode": "binary",
+        "displayValue": null,
+        "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast).",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,0,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 761,
+                  "bottom": 791,
+                  "left": 166,
+                  "right": 261,
+                  "width": 95,
+                  "height": 30
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "01",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,0,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 739,
+                        "bottom": 869,
+                        "left": 144,
+                        "right": 283,
+                        "width": 139,
+                        "height": 130
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "01\nProblem & Scope"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,1,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 761,
+                  "bottom": 791,
+                  "left": 317,
+                  "right": 412,
+                  "width": 95,
+                  "height": 30
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "02",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-3-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,1,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 739,
+                        "bottom": 869,
+                        "left": 295,
+                        "right": 434,
+                        "width": 139,
+                        "height": 130
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "02\nArchitecture Concepts"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-4-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,2,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 761,
+                  "bottom": 791,
+                  "left": 469,
+                  "right": 564,
+                  "width": 95,
+                  "height": 30
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "03",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-5-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,2,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 739,
+                        "bottom": 869,
+                        "left": 446,
+                        "right": 586,
+                        "width": 139,
+                        "height": 130
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "03\nSystem Architecture"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-6-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,3,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 761,
+                  "bottom": 791,
+                  "left": 620,
+                  "right": 715,
+                  "width": 95,
+                  "height": 30
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "04",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-7-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,3,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 739,
+                        "bottom": 869,
+                        "left": 598,
+                        "right": 737,
+                        "width": 139,
+                        "height": 130
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "04\nAI Prompt"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-8-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,4,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 761,
+                  "bottom": 791,
+                  "left": 771,
+                  "right": 866,
+                  "width": 95,
+                  "height": 30
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "05",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-9-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,4,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 739,
+                        "bottom": 869,
+                        "left": 749,
+                        "right": 889,
+                        "width": 139,
+                        "height": 130
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "05\nAudit"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-10-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,5,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 761,
+                  "bottom": 791,
+                  "left": 923,
+                  "right": 1018,
+                  "width": 95,
+                  "height": 30
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "06",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-11-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,5,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 739,
+                        "bottom": 869,
+                        "left": 901,
+                        "right": 1040,
+                        "width": 139,
+                        "height": 130
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "06\nWorking System"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-12-SPAN",
+                "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,6,DIV,0,SPAN",
+                "selector": "header.hero > div.process-strip > div.process-step > span.process-number",
+                "boundingRect": {
+                  "top": 761,
+                  "bottom": 791,
+                  "left": 1074,
+                  "right": 1169,
+                  "width": 95,
+                  "height": 30
+                },
+                "snippet": "<span class=\"process-number\">",
+                "nodeLabel": "07",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #7a5723, background color: #e3d2b5, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-13-DIV",
+                      "path": "1,HTML,1,BODY,2,DIV,0,HEADER,3,DIV,6,DIV",
+                      "selector": "div.site-shell > header.hero > div.process-strip > div.process-step",
+                      "boundingRect": {
+                        "top": 739,
+                        "bottom": 869,
+                        "left": 1052,
+                        "right": 1191,
+                        "width": 139,
+                        "height": 130
+                      },
+                      "snippet": "<div class=\"process-step\">",
+                      "nodeLabel": "07\nVerification"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.color",
+              "wcag2aa",
+              "wcag143",
+              "TTv5",
+              "TT13.c",
+              "EN-301-549",
+              "EN-9.1.4.3",
+              "ACT",
+              "RGAAv4",
+              "RGAA-3.2.1"
+            ]
+          }
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "score": 0,
+        "mode": "binary",
+        "displayValue": null,
+        "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.13/label-content-name-mismatch).",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-14-BUTTON",
+                "path": "1,HTML,1,BODY,2,DIV,1,MAIN,5,SECTION,1,DIV,0,DIV,6,DIV,0,DIV,3,DIV,5,ARTICLE,1,BUTTON",
+                "selector": "div > div#cloud-cards > article.cloud-lab__theme-card > button",
+                "boundingRect": {
+                  "top": 7218,
+                  "bottom": 7262,
+                  "left": 610,
+                  "right": 694,
+                  "width": 84,
+                  "height": 44
+                },
+                "snippet": "<button type=\"button\" data-style-theme-option=\"gothic-stickerboard\" aria-label=\"Preview Gothic Stickerboard\" aria-pressed=\"true\" data-active=\"true\">",
+                "nodeLabel": "Selected",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "score": 0.5,
+        "mode": "metricSavings",
+        "displayValue": "Est savings of 4\u00a0KiB",
+        "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more about caching](https://developer.chrome.com/docs/performance/insights/cache).",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "Request"
+            },
+            {
+              "key": "cacheLifetimeMs",
+              "valueType": "ms",
+              "label": "Cache TTL",
+              "displayUnit": "duration"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size",
+              "displayUnit": "kb",
+              "granularity": 1
+            }
+          ],
+          "items": [
+            {
+              "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+              "cacheLifetimeMs": 86400000,
+              "totalBytes": 10478,
+              "wastedBytes": 4191.2
+            }
+          ],
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "skipSumming": [
+            "cacheLifetimeMs"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "wastedBytes": 4191.2
+          }
+        }
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "score": 0.5,
+        "mode": "metricSavings",
+        "displayValue": "Est savings of 10\u00a0KiB",
+        "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://developer.chrome.com/docs/performance/insights/legacy-javascript)",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "subItemsHeading": {
+                "key": "location",
+                "valueType": "source-location"
+              },
+              "label": "URL"
+            },
+            {
+              "key": null,
+              "valueType": "code",
+              "subItemsHeading": {
+                "key": "signal"
+              },
+              "label": ""
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Wasted bytes"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+              "wastedBytes": 10483,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "signal": "Array.prototype.at",
+                    "location": {
+                      "type": "source-location",
+                      "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+                      "urlProvider": "network",
+                      "line": 0,
+                      "column": 1118
+                    }
+                  },
+                  {
+                    "signal": "Array.prototype.findLast",
+                    "location": {
+                      "type": "source-location",
+                      "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+                      "urlProvider": "network",
+                      "line": 0,
+                      "column": 888
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "wastedBytes": 10483
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "score": 0,
+        "mode": "numeric",
+        "displayValue": null,
+        "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/performance/insights/network-dependency-tree) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "34E661CD67A21A44C50C02E295ABF78C": {
+                    "url": "https://chernichenkodmitriy.com/showcases/cloud-managed-themes/",
+                    "navStartToEndTime": 209,
+                    "transferSize": 11221,
+                    "isLongest": true,
+                    "children": {
+                      "125327.14": {
+                        "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+                        "navStartToEndTime": 372,
+                        "transferSize": 10478,
+                        "isLongest": true,
+                        "children": {
+                          "125327.37": {
+                            "url": "https://chernichenkodmitriy.com/cdn-cgi/rum?",
+                            "navStartToEndTime": 1686,
+                            "transferSize": 481,
+                            "isLongest": true,
+                            "children": {}
+                          }
+                        }
+                      },
+                      "125327.6": {
+                        "url": "https://chernichenkodmitriy.com/styles/themes/theme-registry.js",
+                        "navStartToEndTime": 352,
+                        "transferSize": 2107,
+                        "children": {
+                          "125327.20": {
+                            "url": "https://chernichenkodmitriy.com/styles/themes/gothic-stickerboard/theme.css",
+                            "navStartToEndTime": 461,
+                            "transferSize": 7596,
+                            "children": {}
+                          }
+                        }
+                      },
+                      "125327.9": {
+                        "url": "https://chernichenkodmitriy.com/styles/themes/raggedy-granite/theme-config.js",
+                        "navStartToEndTime": 363,
+                        "transferSize": 847,
+                        "children": {}
+                      },
+                      "125327.7": {
+                        "url": "https://chernichenkodmitriy.com/styles/themes/standard/theme-config.js",
+                        "navStartToEndTime": 362,
+                        "transferSize": 848,
+                        "children": {}
+                      },
+                      "125327.11": {
+                        "url": "https://chernichenkodmitriy.com/theme.js",
+                        "navStartToEndTime": 348,
+                        "transferSize": 4624,
+                        "children": {}
+                      },
+                      "125327.4": {
+                        "url": "https://chernichenkodmitriy.com/styles/shared/navigation.css",
+                        "navStartToEndTime": 344,
+                        "transferSize": 2601,
+                        "children": {}
+                      },
+                      "125327.2": {
+                        "url": "https://chernichenkodmitriy.com/styles/shared/base.css",
+                        "navStartToEndTime": 322,
+                        "transferSize": 2080,
+                        "children": {}
+                      },
+                      "125327.10": {
+                        "url": "https://chernichenkodmitriy.com/styles/themes/standard/theme.css",
+                        "navStartToEndTime": 318,
+                        "transferSize": 734,
+                        "children": {}
+                      },
+                      "125327.3": {
+                        "url": "https://chernichenkodmitriy.com/styles/cloud-managed-themes.css",
+                        "navStartToEndTime": 311,
+                        "transferSize": 12226,
+                        "children": {}
+                      },
+                      "125327.8": {
+                        "url": "https://chernichenkodmitriy.com/styles/themes/playful-pop/theme-config.js",
+                        "navStartToEndTime": 305,
+                        "transferSize": 844,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 1686
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0,
+        "mode": "metricSavings",
+        "displayValue": "Est savings of 70\u00a0ms",
+        "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://chernichenkodmitriy.com/styles/themes/raggedy-granite/theme-config.js",
+              "totalBytes": 847,
+              "wastedMs": 122
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/themes/standard/theme-config.js",
+              "totalBytes": 848,
+              "wastedMs": 316
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/themes/theme-registry.js",
+              "totalBytes": 2107,
+              "wastedMs": 316
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/theme.js",
+              "totalBytes": 4624,
+              "wastedMs": 122
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/shared/navigation.css",
+              "totalBytes": 2601,
+              "wastedMs": 316
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/shared/base.css",
+              "totalBytes": 2080,
+              "wastedMs": 122
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/themes/standard/theme.css",
+              "totalBytes": 734,
+              "wastedMs": 316
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/cloud-managed-themes.css",
+              "totalBytes": 12226,
+              "wastedMs": 316
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/themes/playful-pop/theme-config.js",
+              "totalBytes": 844,
+              "wastedMs": 122
+            },
+            {
+              "url": "https://chernichenkodmitriy.com/styles/themes/gothic-stickerboard/theme.css",
+              "totalBytes": 7596
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

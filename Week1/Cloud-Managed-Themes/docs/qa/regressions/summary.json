@@ -1,0 +1,52 @@
+[
+  {
+    "suite": "core-units",
+    "exit_code": 0,
+    "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/core-units.log"
+  },
+  {
+    "suite": "category-label",
+    "exit_code": 0,
+    "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/category-label.log"
+  },
+  {
+    "suite": "browser_qa",
+    "exit_code": 0,
+    "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/browser_qa.log",
+    "passed": 11,
+    "failed": 0,
+    "report": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/browser_qa/browser-results.json"
+  },
+  {
+    "suite": "review_regressions",
+    "exit_code": 0,
+    "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/review_regressions.log",
+    "passed": 11,
+    "failed": 0,
+    "report": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/review_regressions/results.json"
+  },
+  {
+    "suite": "interaction_regressions",
+    "exit_code": 1,
+    "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/interaction_regressions.log",
+    "passed": 6,
+    "failed": 1,
+    "report": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/interaction_regressions/results.json"
+  },
+  {
+    "suite": "category_content_qa",
+    "exit_code": 0,
+    "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/category_content_qa.log",
+    "passed": 8,
+    "failed": 0,
+    "report": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/category_content_qa/results.json"
+  },
+  {
+    "suite": "category_review_regressions",
+    "exit_code": 1,
+    "log": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/category_review_regressions.log",
+    "passed": 3,
+    "failed": 1,
+    "report": "/home/reader/Desktop/Cloud-Managed-Themes-QA-20261018-2117/regressions/category_review_regressions/results.json"
+  }
+]

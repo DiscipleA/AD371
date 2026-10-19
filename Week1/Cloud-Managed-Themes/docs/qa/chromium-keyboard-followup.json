@@ -1,0 +1,251 @@
+{
+  "scope": "Fresh context per width; live production; actual Tab/Enter/Escape after full live initialization and finite transitions. Original failures retained.",
+  "results": [
+    {
+      "width": 1920,
+      "passed": true,
+      "steps": [
+        {
+          "stage": "opened",
+          "state": {
+            "active": "<button class=\"portfolio-menu__toggle\" type=\"button\" aria-expanded=\"true\" aria-haspopup=\"true\">Menu</button>",
+            "open": "true",
+            "panelInert": false,
+            "panelVisibility": "visible",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "first Tab",
+          "state": {
+            "active": "<a class=\"portfolio-menu__item\" href=\"../../resume.html\">Resume</a>",
+            "open": "true",
+            "panelInert": false,
+            "panelVisibility": "visible",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "submenu Tab",
+          "state": {
+            "active": "<a class=\"portfolio-showcase-menu__item\" href=\"../../showcases/cloud-managed-themes/index.html\" aria-current=\"page\">Cloud-Managed Themes</a>",
+            "open": "true",
+            "panelInert": false,
+            "panelVisibility": "visible",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "Escape",
+          "state": {
+            "active": "<button class=\"portfolio-menu__toggle\" type=\"button\" aria-expanded=\"false\" aria-haspopup=\"true\">Menu</button>",
+            "open": "false",
+            "panelInert": true,
+            "panelVisibility": "hidden",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "closed Tab",
+          "state": {
+            "active": "<a class=\"concept-resource-link concept-resource-link--primary concept-resource-link--single\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"concept-token\">HTTPS GET</span><h3>Browser \u2192 API</h3><p>Fetch configuration while the browser retains rendering ownership.</p></a>",
+            "open": "false",
+            "panelInert": true,
+            "panelVisibility": "hidden",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "passed": true,
+      "steps": [
+        {
+          "stage": "opened",
+          "state": {
+            "active": "<button class=\"portfolio-menu__toggle\" type=\"button\" aria-expanded=\"true\" aria-haspopup=\"true\">Menu</button>",
+            "open": "true",
+            "panelInert": false,
+            "panelVisibility": "visible",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "first Tab",
+          "state": {
+            "active": "<a class=\"portfolio-menu__item\" href=\"../../resume.html\">Resume</a>",
+            "open": "true",
+            "panelInert": false,
+            "panelVisibility": "visible",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "submenu Tab",
+          "state": {
+            "active": "<a class=\"portfolio-showcase-menu__item\" href=\"../../showcases/cloud-managed-themes/index.html\" aria-current=\"page\">Cloud-Managed Themes</a>",
+            "open": "true",
+            "panelInert": false,
+            "panelVisibility": "visible",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "Escape",
+          "state": {
+            "active": "<button class=\"portfolio-menu__toggle\" type=\"button\" aria-expanded=\"false\" aria-haspopup=\"true\">Menu</button>",
+            "open": "false",
+            "panelInert": true,
+            "panelVisibility": "hidden",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "closed Tab",
+          "state": {
+            "active": "<a class=\"concept-resource-link concept-resource-link--primary concept-resource-link--single\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"concept-token\">HTTPS GET</span><h3>Browser \u2192 API</h3><p>Fetch configuration while the browser retains rendering ownership.</p></a>",
+            "open": "false",
+            "panelInert": true,
+            "panelVisibility": "hidden",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "passed": true,
+      "steps": [
+        {
+          "stage": "opened",
+          "state": {
+            "active": "<button class=\"portfolio-menu__toggle\" type=\"button\" aria-expanded=\"true\" aria-haspopup=\"true\">Menu</button>",
+            "open": "true",
+            "panelInert": false,
+            "panelVisibility": "visible",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "first Tab",
+          "state": {
+            "active": "<a class=\"portfolio-menu__item\" href=\"../../resume.html\">Resume</a>",
+            "open": "true",
+            "panelInert": false,
+            "panelVisibility": "visible",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "submenu Tab",
+          "state": {
+            "active": "<a class=\"portfolio-showcase-menu__item\" href=\"../../showcases/cloud-managed-themes/index.html\" aria-current=\"page\">Cloud-Managed Themes</a>",
+            "open": "true",
+            "panelInert": false,
+            "panelVisibility": "visible",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "Escape",
+          "state": {
+            "active": "<button class=\"portfolio-menu__toggle\" type=\"button\" aria-expanded=\"false\" aria-haspopup=\"true\">Menu</button>",
+            "open": "false",
+            "panelInert": true,
+            "panelVisibility": "hidden",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "closed Tab",
+          "state": {
+            "active": "<a class=\"concept-resource-link concept-resource-link--primary concept-resource-link--single\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"concept-token\">HTTPS GET</span><h3>Browser \u2192 API</h3><p>Fetch configuration while the browser retains rendering ownership.</p></a>",
+            "open": "false",
+            "panelInert": true,
+            "panelVisibility": "hidden",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "passed": true,
+      "steps": [
+        {
+          "stage": "opened",
+          "state": {
+            "active": "<button class=\"portfolio-menu__toggle\" type=\"button\" aria-expanded=\"true\" aria-haspopup=\"true\">Menu</button>",
+            "open": "true",
+            "panelInert": false,
+            "panelVisibility": "visible",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "first Tab",
+          "state": {
+            "active": "<a class=\"portfolio-menu__item\" href=\"../../resume.html\">Resume</a>",
+            "open": "true",
+            "panelInert": false,
+            "panelVisibility": "visible",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "submenu Tab",
+          "state": {
+            "active": "<a class=\"portfolio-showcase-menu__item\" href=\"../../showcases/cloud-managed-themes/index.html\" aria-current=\"page\">Cloud-Managed Themes</a>",
+            "open": "true",
+            "panelInert": false,
+            "panelVisibility": "visible",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "Escape",
+          "state": {
+            "active": "<button class=\"portfolio-menu__toggle\" type=\"button\" aria-expanded=\"false\" aria-haspopup=\"true\">Menu</button>",
+            "open": "false",
+            "panelInert": true,
+            "panelVisibility": "hidden",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        },
+        {
+          "stage": "closed Tab",
+          "state": {
+            "active": "<a class=\"concept-resource-link concept-resource-link--primary concept-resource-link--single\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"concept-token\">HTTPS GET</span><h3>Browser \u2192 API</h3><p>Fetch configuration while the browser retains rendering ownership.</p></a>",
+            "open": "false",
+            "panelInert": true,
+            "panelVisibility": "hidden",
+            "style": "gothic-stickerboard",
+            "mode": "light"
+          }
+        }
+      ]
+    }
+  ],
+  "passed": 4,
+  "failed": 0
+}

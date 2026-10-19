@@ -1,0 +1,51 @@
+{
+  "verified_at": "2026-10-19T05:25:40.583408+00:00",
+  "relative_file_links_checked": 72,
+  "broken_links": [],
+  "readme_anchors_checked": 6,
+  "copied_evidence_hashes_verified": 97,
+  "preexisting_application_and_test_files_verified_unchanged": 50,
+  "changed_preexisting_files": [],
+  "unexpected_new_files_outside_documentation_scope": [],
+  "local_checks": [
+    {
+      "name": "local-structure",
+      "exit_code": 0,
+      "log": "local-structure-documentation-check.log"
+    },
+    {
+      "name": "local-core",
+      "exit_code": 0,
+      "log": "local-core-documentation-check.log"
+    }
+  ],
+  "http_serving_checks": [
+    {
+      "path": "README.md",
+      "status": 200,
+      "bytes": 17214
+    },
+    {
+      "path": "docs/qa/qa-report.html",
+      "status": 200,
+      "bytes": 6179
+    },
+    {
+      "path": "docs/qa/lighthouse/lighthouse-desktop.report.html",
+      "status": 200,
+      "bytes": 824732
+    },
+    {
+      "path": "docs/qa/lighthouse/lighthouse-mobile.report.html",
+      "status": 200,
+      "bytes": 911537
+    }
+  ],
+  "lighthouse_scores_match_originals": true,
+  "standalone_git_initialized": false,
+  "rendered_readme_preview": "/tmp/cloud-managed-themes-readme-preview.html",
+  "scope": "Documentation packaging only; no new full browser or Lighthouse audit was performed.",
+  "final_readme_sha256": "4175fec2e211f83c331268e94728c6ec1b06e796675b7cb7ac4cb94bcf6c646b",
+  "final_readme_content_checks": "Explicit project description, clone/source distinction, static configuration/no environment-variable requirement, run steps, and brief website-only AI workflow.",
+  "browser_report_render_check": "Both copied Lighthouse HTML reports rendered with expected visible score gauges and no uncaught JavaScript errors."
+}
