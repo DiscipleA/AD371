@@ -1,0 +1,27 @@
+PASS Callback credentials removed from URL without importing or persisting a session
+PASS Configured client enables resource controls
+PASS Seven direct section cards
+PASS Empty input rejected before network request
+PASS SQL-like invalid email rejected without execution
+PASS All installed theme/mode/viewport layout combinations
+PASS Real keyboard opens menu, Escape restores focus, closed descendants excluded
+PASS Copy button copies complete build prompt
+PASS No uncaught JS, broken local assets, or unexpected service requests
+FAIL Browser suite completion
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/browser_local.py", line 144, in <module>
+    try:asyncio.run(main())
+        ~~~~~~~~~~~^^^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+202****0901-linux-x64/lib/python3.14/asyncio/runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+202****0901-linux-x64/lib/python3.14/asyncio/runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+202****0901-linux-x64/lib/python3.14/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/browser_local.py", line 135, in main
+    assert await page.locator('#auth-role').inner_text()!='Admin','Stale Admin role must not survive a current Admin denial'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Stale Admin role must not survive a current Admin denial

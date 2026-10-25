@@ -1,0 +1,264 @@
+TAP version 13
+# Subtest: public needs no JWT or upstream calls and has security headers
+ok 1 - public needs no JWT or upstream calls and has security headers
+  ---
+  duration_ms: 68.580422
+  type: 'test'
+  ...
+# Subtest: User 200 uses Auth then same bearer-scoped RPC, never Auth metadata role
+ok 2 - User 200 uses Auth then same bearer-scoped RPC, never Auth metadata role
+  ---
+  duration_ms: 6.749793
+  type: 'test'
+  ...
+# Subtest: Admin 200 comes from private-role RPC only
+ok 3 - Admin 200 comes from private-role RPC only
+  ---
+  duration_ms: 5.916333
+  type: 'test'
+  ...
+# Subtest: missing and malformed bearer fail 401 before external calls
+ok 4 - missing and malformed bearer fail 401 before external calls
+  ---
+  duration_ms: 6.966543
+  type: 'test'
+  ...
+# Subtest: forged compact JWT rejected by Auth before RPC
+ok 5 - forged compact JWT rejected by Auth before RPC
+  ---
+  duration_ms: 2.668169
+  type: 'test'
+  ...
+# Subtest: User requesting admin gets 403; metadata and header spoof cannot elevate
+ok 6 - User requesting admin gets 403; metadata and header spoof cannot elevate
+  ---
+  duration_ms: 6.539227
+  type: 'test'
+  ...
+# Subtest: stale/revoked session from independent RPC check maps 401
+ok 7 - stale/revoked session from independent RPC check maps 401
+  ---
+  duration_ms: 3.259477
+  type: 'test'
+  ...
+# Subtest: strict resource query rejects duplicates, unknown keys, tokens and role injection
+ok 8 - strict resource query rejects duplicates, unknown keys, tokens and role injection
+  ---
+  duration_ms: 8.152335
+  type: 'test'
+  ...
+# Subtest: non-GET methods fail 405 and declare Allow
+ok 9 - non-GET methods fail 405 and declare Allow
+  ---
+  duration_ms: 6.463046
+  type: 'test'
+  ...
+# Subtest: exact CORS allowlist denies null, suffix and arbitrary origins without echo
+ok 10 - exact CORS allowlist denies null, suffix and arbitrary origins without echo
+  ---
+  duration_ms: 5.615194
+  type: 'test'
+  ...
+# Subtest: preflight permits only configured origin GET and known headers
+ok 11 - preflight permits only configured origin GET and known headers
+  ---
+  duration_ms: 2.11979
+  type: 'test'
+  ...
+# Subtest: invalid environment fails closed without upstream traffic
+ok 12 - invalid environment fails closed without upstream traffic
+  ---
+  duration_ms: 5.931128
+  type: 'test'
+  ...
+# Subtest: hosted plural publishable-key dictionary uses its validated default key
+ok 13 - hosted plural publishable-key dictionary uses its validated default key
+  ---
+  duration_ms: 2.697963
+  type: 'test'
+  ...
+# Subtest: invalid hosted key dictionaries fail closed
+ok 14 - invalid hosted key dictionaries fail closed
+  ---
+  duration_ms: 4.121653
+  type: 'test'
+  ...
+# Subtest: empty hosted dictionary never falls back to a coexisting valid anon key
+not ok 15 - empty hosted dictionary never falls back to a coexisting valid anon key
+  ---
+  duration_ms: 2.171098
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:108:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    200 !== 503
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 503
+  actual: 200
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:111:9)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: localhost CLI URLs and fallback anon key are accepted
+ok 16 - localhost CLI URLs and fallback anon key are accepted
+  ---
+  duration_ms: 0.883812
+  type: 'test'
+  ...
+# Subtest: Auth unavailable/network errors and malformed identity fail closed
+ok 17 - Auth unavailable/network errors and malformed identity fail closed
+  ---
+  duration_ms: 8.87126
+  type: 'test'
+  ...
+# Subtest: RPC unavailable and malformed envelopes never expose upstream payload
+ok 18 - RPC unavailable and malformed envelopes never expose upstream payload
+  ---
+  duration_ms: 14.443207
+  type: 'test'
+  ...
+# Subtest: response allowlist removes password/hash/token/metadata fields at every layer
+ok 19 - response allowlist removes password/hash/token/metadata fields at every layer
+  ---
+  duration_ms: 3.135365
+  type: 'test'
+  ...
+# Subtest: legacy service-role or malformed key cannot be accepted as anon environment credential
+ok 20 - legacy service-role or malformed key cannot be accepted as anon environment credential
+  ---
+  duration_ms: 2.354623
+  type: 'test'
+  ...
+# Subtest: Admin success cannot be paired with User role even when resource matches
+ok 21 - Admin success cannot be paired with User role even when resource matches
+  ---
+  duration_ms: 1.804643
+  type: 'test'
+  ...
+# Subtest: RPC email mismatch fails closed instead of returning a different identity
+ok 22 - RPC email mismatch fails closed instead of returning a different identity
+  ---
+  duration_ms: 1.982422
+  type: 'test'
+  ...
+# Subtest: Auth fetch has timeout and aborts rather than hanging
+ok 23 - Auth fetch has timeout and aborts rather than hanging
+  ---
+  duration_ms: 27.729517
+  type: 'test'
+  ...
+# Subtest: RPC body consumption also times out
+ok 24 - RPC body consumption also times out
+  ---
+  duration_ms: 17.351219
+  type: 'test'
+  ...
+# Subtest: rejects unconfigured and privileged browser settings
+ok 25 - rejects unconfigured and privileged browser settings
+  ---
+  duration_ms: 4.361644
+  type: 'test'
+  ...
+# Subtest: accepts only genuine anon legacy JWT browser keys
+ok 26 - accepts only genuine anon legacy JWT browser keys
+  ---
+  duration_ms: 1.063601
+  type: 'test'
+  ...
+# Subtest: validates required email and password without trimming passwords
+ok 27 - validates required email and password without trimming passwords
+  ---
+  duration_ms: 0.864106
+  type: 'test'
+  ...
+# Subtest: session storage is disabled and URL tokens never auto-imported
+ok 28 - session storage is disabled and URL tokens never auto-imported
+  ---
+  duration_ms: 0.578279
+  type: 'test'
+  ...
+# Subtest: only protected resource actions attach the in-memory access token
+ok 29 - only protected resource actions attach the in-memory access token
+  ---
+  duration_ms: 65.465343
+  type: 'test'
+  ...
+# Subtest: keeps real 401 and 403 distinct from network failures
+ok 30 - keeps real 401 and 403 distinct from network failures
+  ---
+  duration_ms: 1.547865
+  type: 'test'
+  ...
+# Subtest: never echoes tokens or credential fields into the resource inspector
+ok 31 - never echoes tokens or credential fields into the resource inspector
+  ---
+  duration_ms: 0.417389
+  type: 'test'
+  ...
+# Subtest: request errors are generic and cannot leak upstream internals
+ok 32 - request errors are generic and cannot leak upstream internals
+  ---
+  duration_ms: 0.974967
+  type: 'test'
+  ...
+# Subtest: malformed or wrong-resource HTTP 200 never claims successful delivery
+ok 33 - malformed or wrong-resource HTTP 200 never claims successful delivery
+  ---
+  duration_ms: 8.05869
+  type: 'test'
+  ...
+# Subtest: invalid JSON preserves the observed HTTP status without claiming delivery
+ok 34 - invalid JSON preserves the observed HTTP status without claiming delivery
+  ---
+  duration_ms: 3.642586
+  type: 'test'
+  ...
+# Subtest: protected success requires resource-specific non-array data
+not ok 35 - protected success requires resource-specific non-array data
+  ---
+  duration_ms: 3.086192
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/client.test.mjs:71:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    {"resource":"user","data":[]}
+    
+    true !== false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/client.test.mjs:78:11)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: own-account scope is preserved without forwarding arbitrary data
+ok 36 - own-account scope is preserved without forwarding arbitrary data
+  ---
+  duration_ms: 1.881143
+  type: 'test'
+  ...
+# Subtest: login failure message does not reveal whether account exists
+ok 37 - login failure message does not reveal whether account exists
+  ---
+  duration_ms: 0.412948
+  type: 'test'
+  ...
+1..37
+# tests 37
+# suites 0
+# pass 35
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 331.490527

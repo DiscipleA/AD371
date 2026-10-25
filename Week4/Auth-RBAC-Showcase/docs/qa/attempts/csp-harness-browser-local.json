@@ -1,0 +1,100 @@
+{
+  "scope": "Local source presentation + explicitly controlled client API responses, NOT live Supabase backend results",
+  "target": "http://127.0.0.1:8771/",
+  "captured_at": "2026-10-23T07:03:56.547583+00:00",
+  "checks": [
+    {
+      "name": "Configured client enables resource controls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Seven direct section cards",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Empty input rejected before network request",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SQL-like invalid email rejected without execution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All installed theme/mode/viewport layout combinations",
+      "passed": true,
+      "detail": {
+        "combinations": 56,
+        "themes": [
+          "standard",
+          "playful-pop",
+          "raggedy-granite",
+          "glossy-marble",
+          "luminous-midnight",
+          "gothic-stickerboard",
+          "baroque-plexiglas"
+        ],
+        "modes": [
+          "light",
+          "dark"
+        ],
+        "viewports": [
+          [
+            1920,
+            1080
+          ],
+          [
+            768,
+            1024
+          ],
+          [
+            390,
+            844
+          ],
+          [
+            320,
+            900
+          ]
+        ],
+        "note": "Overflow and visibility assertions; screenshots sampled, not an all-theme accessibility certification."
+      }
+    },
+    {
+      "name": "Real keyboard opens menu, Escape restores focus, closed descendants excluded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Copy button copies complete build prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No uncaught JS, broken local assets, or unexpected service requests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Browser suite completion",
+      "passed": false,
+      "detail": "Page.wait_for_function: EvalError: Evaluating a string as JavaScript violates the following Content Security Policy directive because 'unsafe-eval' is not an allowed source of script: script-src 'self'\".\n\n    at eval (<anonymous>)\n    at predicate (eval at evaluate (:311:30), <anonymous>:4:60)\n    at next (eval at evaluate (:311:30), <anonymous>:29:33)"
+    }
+  ],
+  "browser": {
+    "engine": "Chromium",
+    "version": "151.0.7922.34",
+    "binary": "/media/reader/DEVELOP/.cache/runtimes/linux-x64/playwright/chromium-1234/chrome-linux64/chrome"
+  },
+  "passed": 8,
+  "failed": 1,
+  "source_hashes": {
+    "index.html": "0a5e8a3824e450a02dcf11e9b0cd7a89bdc707e87d778eeeaf01881c637973e2",
+    "scripts/auth-client.mjs": "8c275d9391dee1d7ae3c61013ee78811e8d3cb57f831c5ede66a5294c461cdf9",
+    "scripts/showcase.js": "5dfe84f3d6e3094faff8ba23e3292187b1da0a06b1d7f72ad55556c448d0c940",
+    "config.js": "e671e1179ba13220b3f27bfcf10ea72dc6b2c0f50a389b6821af2e8834aedd12",
+    "styles/auth-rbac-showcase.css": "36b58ee27fd2a10dbf9929031d80cf126121ed3ebb6a3e18cfa3044847a5064c"
+  }
+}

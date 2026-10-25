@@ -1,0 +1,10 @@
+Timestamp Navigation:
+
+    0:00 - Introduction & Assignment Requirements
+    1:15 - Authentication vs. Authorization Fundamentals
+    3:20 - Broken Object-Level Authorization & Ownership Checks
+    5:30 - SQL Injection Mechanics & Query Manipulation
+    7:05 - Prepared Statements & Defense in Depth
+    8:45 - Engineering Security Principles & Conclusion
+
+Approximate timestamps: based on a 10-minute video, the first slide starting at 1:15, and the remaining time allocated proportionally to each slide's speaker-note word count. These are estimates, not verified recording timestamps; actual transitions may differ.

@@ -1,0 +1,118 @@
+TAP version 13
+# Subtest: rejects unconfigured and privileged browser settings
+ok 1 - rejects unconfigured and privileged browser settings
+  ---
+  duration_ms: 3.623429
+  type: 'test'
+  ...
+# Subtest: accepts only genuine anon legacy JWT browser keys
+ok 2 - accepts only genuine anon legacy JWT browser keys
+  ---
+  duration_ms: 1.028405
+  type: 'test'
+  ...
+# Subtest: validates required email and password without trimming passwords
+ok 3 - validates required email and password without trimming passwords
+  ---
+  duration_ms: 0.963489
+  type: 'test'
+  ...
+# Subtest: session storage is disabled and URL tokens never auto-imported
+ok 4 - session storage is disabled and URL tokens never auto-imported
+  ---
+  duration_ms: 0.799602
+  type: 'test'
+  ...
+# Subtest: only protected resource actions attach the in-memory access token
+ok 5 - only protected resource actions attach the in-memory access token
+  ---
+  duration_ms: 85.349438
+  type: 'test'
+  ...
+# Subtest: keeps real 401 and 403 distinct from network failures
+ok 6 - keeps real 401 and 403 distinct from network failures
+  ---
+  duration_ms: 1.696133
+  type: 'test'
+  ...
+# Subtest: never echoes tokens or credential fields into the resource inspector
+ok 7 - never echoes tokens or credential fields into the resource inspector
+  ---
+  duration_ms: 0.447802
+  type: 'test'
+  ...
+# Subtest: request errors are generic and cannot leak upstream internals
+ok 8 - request errors are generic and cannot leak upstream internals
+  ---
+  duration_ms: 0.893418
+  type: 'test'
+  ...
+# Subtest: login failure message does not reveal whether account exists
+ok 9 - login failure message does not reveal whether account exists
+  ---
+  duration_ms: 0.881802
+  type: 'test'
+  ...
+# Subtest: seven full-width narrative sections retain reference order and compatibility hooks
+ok 10 - seven full-width narrative sections retain reference order and compatibility hooks
+  ---
+  duration_ms: 7.77866
+  type: 'test'
+  ...
+# Subtest: auth form exposes parent runtime contract without a role selector or inline execution
+ok 11 - auth form exposes parent runtime contract without a role selector or inline execution
+  ---
+  duration_ms: 4.09274
+  type: 'test'
+  ...
+# Subtest: runtime loads external config, local SDK and module in explicit order
+ok 12 - runtime loads external config, local SDK and module in explicit order
+  ---
+  duration_ms: 10.05299
+  type: 'test'
+  ...
+# Subtest: copyable teaching prompts are complete, keyboard accessible, and honestly labeled
+ok 13 - copyable teaching prompts are complete, keyboard accessible, and honestly labeled
+  ---
+  duration_ms: 2.177639
+  type: 'test'
+  ...
+# Subtest: architecture is accessible, theme-aware and explanatory, including 401 and 403 boundaries
+ok 14 - architecture is accessible, theme-aware and explanatory, including 401 and 403 boundaries
+  ---
+  duration_ms: 1.053029
+  type: 'test'
+  ...
+# Subtest: all seven local packages, icons and texture URLs are available
+ok 15 - all seven local packages, icons and texture URLs are available
+  ---
+  duration_ms: 20.318388
+  type: 'test'
+  ...
+# Subtest: appearance registry/controller are standalone and use distinct local preference keys
+ok 16 - appearance registry/controller are standalone and use distinct local preference keys
+  ---
+  duration_ms: 2.581517
+  type: 'test'
+  ...
+# Subtest: registry prepaint and seven metadata packages resolve local asset URLs
+ok 17 - registry prepaint and seven metadata packages resolve local asset URLs
+  ---
+  duration_ms: 17.31874
+  type: 'test'
+  ...
+# Subtest: all owned HTML IDs are unique and section/copy anchors resolve
+ok 18 - all owned HTML IDs are unique and section/copy anchors resolve
+  ---
+  duration_ms: 5.943466
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 346.705482

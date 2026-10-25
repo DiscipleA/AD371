@@ -1,0 +1,24 @@
+{
+  "scope": "Actual hosted version3 anonymous requests after final deploy/gateway readback",
+  "captured_at": "2026-10-23T07:46:49.463342+00:00",
+  "checks": [
+    {
+      "resource": "public",
+      "status": 200,
+      "body": "{\"resource\":\"public\",\"message\":\"Public resource is available without authentication.\"}",
+      "passed": true
+    },
+    {
+      "resource": "user",
+      "status": 401,
+      "body": "{\"error\":\"Authentication required.\"}",
+      "passed": true
+    },
+    {
+      "resource": "admin",
+      "status": 401,
+      "body": "{\"error\":\"Authentication required.\"}",
+      "passed": true
+    }
+  ]
+}

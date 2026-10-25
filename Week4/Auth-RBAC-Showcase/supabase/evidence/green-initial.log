@@ -1,0 +1,160 @@
+TAP version 13
+# Subtest: public needs no JWT or upstream calls and has security headers
+ok 1 - public needs no JWT or upstream calls and has security headers
+  ---
+  duration_ms: 105.214913
+  type: 'test'
+  ...
+# Subtest: User 200 uses Auth then same bearer-scoped RPC, never Auth metadata role
+ok 2 - User 200 uses Auth then same bearer-scoped RPC, never Auth metadata role
+  ---
+  duration_ms: 6.676639
+  type: 'test'
+  ...
+# Subtest: Admin 200 comes from private-role RPC only
+ok 3 - Admin 200 comes from private-role RPC only
+  ---
+  duration_ms: 3.952785
+  type: 'test'
+  ...
+# Subtest: missing and malformed bearer fail 401 before external calls
+ok 4 - missing and malformed bearer fail 401 before external calls
+  ---
+  duration_ms: 6.760476
+  type: 'test'
+  ...
+# Subtest: forged compact JWT rejected by Auth before RPC
+ok 5 - forged compact JWT rejected by Auth before RPC
+  ---
+  duration_ms: 2.182832
+  type: 'test'
+  ...
+# Subtest: User requesting admin gets 403; metadata and header spoof cannot elevate
+ok 6 - User requesting admin gets 403; metadata and header spoof cannot elevate
+  ---
+  duration_ms: 3.177486
+  type: 'test'
+  ...
+# Subtest: stale/revoked session from independent RPC check maps 401
+ok 7 - stale/revoked session from independent RPC check maps 401
+  ---
+  duration_ms: 1.747147
+  type: 'test'
+  ...
+# Subtest: strict resource query rejects duplicates, unknown keys, tokens and role injection
+ok 8 - strict resource query rejects duplicates, unknown keys, tokens and role injection
+  ---
+  duration_ms: 9.011448
+  type: 'test'
+  ...
+# Subtest: non-GET methods fail 405 and declare Allow
+ok 9 - non-GET methods fail 405 and declare Allow
+  ---
+  duration_ms: 3.78674
+  type: 'test'
+  ...
+# Subtest: exact CORS allowlist denies null, suffix and arbitrary origins without echo
+ok 10 - exact CORS allowlist denies null, suffix and arbitrary origins without echo
+  ---
+  duration_ms: 3.233149
+  type: 'test'
+  ...
+# Subtest: preflight permits only configured origin GET and known headers
+ok 11 - preflight permits only configured origin GET and known headers
+  ---
+  duration_ms: 6.934612
+  type: 'test'
+  ...
+# Subtest: invalid environment fails closed without upstream traffic
+ok 12 - invalid environment fails closed without upstream traffic
+  ---
+  duration_ms: 5.902571
+  type: 'test'
+  ...
+# Subtest: localhost CLI URLs and fallback anon key are accepted
+ok 13 - localhost CLI URLs and fallback anon key are accepted
+  ---
+  duration_ms: 0.59293
+  type: 'test'
+  ...
+# Subtest: Auth unavailable/network errors and malformed identity fail closed
+ok 14 - Auth unavailable/network errors and malformed identity fail closed
+  ---
+  duration_ms: 11.426247
+  type: 'test'
+  ...
+# Subtest: RPC unavailable and malformed envelopes never expose upstream payload
+ok 15 - RPC unavailable and malformed envelopes never expose upstream payload
+  ---
+  duration_ms: 7.31647
+  type: 'test'
+  ...
+# Subtest: response allowlist removes password/hash/token/metadata fields at every layer
+ok 16 - response allowlist removes password/hash/token/metadata fields at every layer
+  ---
+  duration_ms: 3.695437
+  type: 'test'
+  ...
+# Subtest: Auth fetch has timeout and aborts rather than hanging
+ok 17 - Auth fetch has timeout and aborts rather than hanging
+  ---
+  duration_ms: 29.271995
+  type: 'test'
+  ...
+# Subtest: RPC body consumption also times out
+ok 18 - RPC body consumption also times out
+  ---
+  duration_ms: 23.605965
+  type: 'test'
+  ...
+# Subtest: private roles are owner-managed, RLS-enabled and hidden from API roles
+ok 19 - private roles are owner-managed, RLS-enabled and hidden from API roles
+  ---
+  duration_ms: 35.715716
+  type: 'test'
+  ...
+# Subtest: definer uses empty search_path and authenticated-only execute
+ok 20 - definer uses empty search_path and authenticated-only execute
+  ---
+  duration_ms: 14.70163
+  type: 'test'
+  ...
+# Subtest: SQL independently checks identity, valid session UUID and session ownership before protected reads
+ok 21 - SQL independently checks identity, valid session UUID and session ownership before protected reads
+  ---
+  duration_ms: 4.563054
+  type: 'test'
+  ...
+# Subtest: resource authorization is default User and private role only; own-user query is scoped
+ok 22 - resource authorization is default User and private role only; own-user query is scoped
+  ---
+  duration_ms: 20.462464
+  type: 'test'
+  ...
+# Subtest: admin promotion is guarded, SQL-only, not in automatic migrations
+ok 23 - admin promotion is guarded, SQL-only, not in automatic migrations
+  ---
+  duration_ms: 6.371075
+  type: 'test'
+  ...
+# Subtest: edge bootstrap is thin, imports real shared handler and default timeout is eight seconds
+ok 24 - edge bootstrap is thin, imports real shared handler and default timeout is eight seconds
+  ---
+  duration_ms: 5.991367
+  type: 'test'
+  ...
+# Subtest: setup documents live revocation limits, owner boundary and mock evidence scope
+ok 25 - setup documents live revocation limits, owner boundary and mock evidence scope
+  ---
+  duration_ms: 5.891808
+  type: 'test'
+  ...
+1..25
+# tests 25
+# suites 0
+# pass 25
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 417.18869

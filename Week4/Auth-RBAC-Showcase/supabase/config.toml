@@ -1,0 +1,4 @@
+project_id = "auth-rbac-showcase"
+
+[functions.gatekeeper]
+verify_jwt = false

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-style-theme="gothic-stickerboard">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#eee4cf">
+  <meta name="description" content="Gatekeeper Lab: a standalone authentication and role-based authorization showcase. Explore identity, server-owned roles, and real HTTP boundaries with Supabase.">
+  <title>Gatekeeper Lab | App Engineering Showcases</title>
+  <script src="./scripts/callback-cleanup.js"></script>
+  <link rel="icon" type="image/svg+xml" href="./styles/themes/standard/assets/icons/favicon.svg">
+  <link rel="stylesheet" href="./styles/shared/base.css">
+  <link rel="stylesheet" href="./styles/auth-rbac-showcase.css">
+  <link rel="stylesheet" href="./styles/shared/navigation.css">
+  <script src="./site-navigation.js" defer></script>
+  <!-- Appearance stays local. Every installed package owns its CSS and assets. -->
+  <script src="./styles/themes/theme-registry.js"></script>
+  <script src="./styles/themes/standard/theme-config.js"></script>
+  <script src="./styles/themes/playful-pop/theme-config.js"></script>
+  <script src="./styles/themes/raggedy-granite/theme-config.js"></script>
+  <script src="./styles/themes/glossy-marble/theme-config.js"></script>
+  <script src="./styles/themes/luminous-midnight/theme-config.js"></script>
+  <script src="./styles/themes/gothic-stickerboard/theme-config.js"></script>
+  <script src="./styles/themes/baroque-plexiglas/theme-config.js"></script>
+  <link rel="stylesheet" href="./styles/themes/standard/theme.css" data-style-theme-stylesheet data-active-style-theme="standard">
+  <script src="./theme.js"></script>
+</head>
+<body class="flexbox-interfaces-page application-architecture-page auth-rbac-showcase-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div data-portfolio-navigation data-root="./" data-current-page="auth-rbac-showcase"></div>
+
+  <div class="site-shell">
+    <header class="hero">
+      <p class="eyebrow">Design Technologist · App Engineering Showcases</p>
+      <h1>Know the user. Guard the boundary.</h1>
+      <p class="hero-lead">A login answers who you are. A server decides what you can do. Gatekeeper Lab makes that distinction visible—with managed authentication, private roles, and three resource boundaries.</p>
+      <div class="process-strip" aria-label="Project workflow">
+        <div class="process-step"><span class="process-number">01</span><strong>Problem &amp; Scope</strong></div>
+        <div class="process-step"><span class="process-number">02</span><strong>Architecture Concepts</strong></div>
+        <div class="process-step"><span class="process-number">03</span><strong>System Architecture</strong></div>
+        <div class="process-step"><span class="process-number">04</span><strong>AI Prompt</strong></div>
+        <div class="process-step"><span class="process-number">05</span><strong>Audit</strong></div>
+        <div class="process-step"><span class="process-number">06</span><strong>Working System</strong></div>
+        <div class="process-step"><span class="process-number">07</span><strong>Verification</strong></div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section-card" data-architecture-section="problem" aria-labelledby="problem-title">
+        <div class="section-header"><span class="section-index">01</span><div><h2 id="problem-title">Problem &amp; Scope</h2><p class="section-kicker">A hidden button is not a security boundary.</p></div></div>
+        <div class="narrative-grid">
+          <article class="narrative-panel"><h3>Identity is only the beginning</h3><p>A browser can change its own HTML, requests, and local state. Signing in must not let a visitor claim an administrator role or bypass a protected endpoint.</p></article>
+          <article class="narrative-panel"><h3>Put the decision on the server</h3><p>Supabase Auth manages credentials. Our Edge Function and SQL guard check the current identity, session, and owner-assigned role before returning protected data.</p></article>
+        </div>
+        <p class="architecture-note"><strong>Small, intentional scope.</strong> Register, log in, log out, and request Public, User, or Admin resources. New accounts receive User access only. There is no admin signup, role editor, or sensitive production dataset.</p>
+        <div class="risk-strip" aria-label="Security design boundaries"><span>Managed password hashing</span><span>Memory-only session</span><span>Server-owned roles</span><span>No client secrets</span></div>
+      </section>
+
+      <section class="section-card" data-architecture-section="concepts" aria-labelledby="concepts-title">
+        <div class="section-header"><span class="section-index">02</span><div><h2 id="concepts-title">Architecture Concepts</h2><p class="section-kicker">Six ideas behind one permission decision.</p></div></div>
+        <div class="concept-grid">
+          <article class="concept-card"><span class="concept-token">AuthN · identity</span><h3>Who is making the request?</h3><p>Supabase Auth checks email and password, manages verification, and issues the session. The page does not verify passwords itself.</p></article>
+          <article class="concept-card"><span class="concept-token">Salted bcrypt · delegated</span><h3>Hash, never store plaintext</h3><p>Supabase Auth owns salted bcrypt password hashing. This app sends credentials to Auth over HTTPS; it neither implements hashing nor reads stored hashes.</p></article>
+          <article class="concept-card"><span class="concept-token">JWT · short-lived proof</span><h3>A session is not a role</h3><p>A signed access token identifies the caller. Keep the session in page memory only; a token's presence is not proof that access is allowed.</p></article>
+          <article class="concept-card"><span class="concept-token">AuthZ · server policy</span><h3>What may this caller do?</h3><p>Our Edge / SQL RPC boundary checks identity and active session. Admin requests also require a current role from the private roles table.</p></article>
+          <article class="concept-card"><span class="concept-token">Ownership · least privilege</span><h3>No self-promotion</h3><p>Trusted database administration assigns roles. Signup fields, user metadata, and browser controls cannot grant Admin access.</p></article>
+          <article class="concept-card"><span class="concept-token">200 / 401 / 403</span><h3>Make denial observable</h3><p>Success returns permitted data. A missing or invalid session is 401; an authenticated User at the Admin boundary is 403. A failed dependency is not success.</p></article>
+        </div>
+      </section>
+
+      <section class="section-card" data-architecture-section="architecture" id="system-architecture" aria-labelledby="architecture-title">
+        <div class="section-header"><span class="section-index">03</span><div><h2 id="architecture-title">System Architecture</h2><p class="section-kicker">Two journeys. One server-owned security boundary.</p></div></div>
+        <p class="architecture-note">First establish <strong>who the caller is</strong>. Then decide <strong>what that caller may access</strong>. The static frontend never owns either decision.</p>
+        <figure class="auth-architecture">
+          <div class="auth-flow gk-map" role="img" aria-labelledby="auth-diagram-title auth-diagram-description">
+            <div class="gk-map__heading"><p id="auth-diagram-title">Identity is issued. Permission is checked.</p><span>Deployment view · Not live telemetry</span></div>
+            <p class="gk-map__sr" id="auth-diagram-description">Cloudflare is the static frontend deployment target. 1: the untrusted browser sends credentials only to Supabase Auth over HTTPS. 2: Auth verifies email and password using managed salted bcrypt and returns a session stored only in page memory. 3: the browser requests a resource from our Gatekeeper Edge Function. Public requests bypass identity and SQL lookup after request validation. For User and Admin, 4: the Edge Function verifies the caller with the Auth user endpoint; 5: it forwards the caller JWT through PostgREST to gatekeeper_resource, with JWT validation at the Data API boundary; 6: SQL verifies auth.uid and the auth.sessions owner, reads the current private user_roles row, defaults to User when no role row exists, and reads admin_briefing only if Admin is allowed. 7: the Edge Function returns allowed JSON or an actual denial to the browser. No browser table access or metadata-based Admin promotion. 200 allowed; 401 missing or invalid session; 403 authenticated User denied Admin; upstream failure 503 fails closed.</p>
+            <svg class="gk-map__desktop" viewBox="0 0 1160 890" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="gk-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 Z" fill="context-stroke"/></marker>
+              </defs>
+              <!-- Connections first: opaque node surfaces mask the routed lines. -->
+              <rect class="gk-map__zone" x="455" y="36" width="685" height="818" rx="20"/>
+              <text class="gk-map__zone-label" x="480" y="76">SUPABASE · MANAGED PLATFORM</text>
+              <rect class="gk-map__untrusted" x="20" y="254" width="276" height="350" rx="18"/>
+              <text class="gk-map__zone-label" x="40" y="285">UNTRUSTED CLIENT</text>
+              <path data-diagram-flow="static-assets" class="gk-map__wire gk-map__wire--host" d="M 158 192 V 310"/>
+              <text class="gk-map__label" x="175" y="230">Static files</text>
+              <path data-diagram-flow="credentials" class="gk-map__wire gk-map__wire--identity" d="M 276 355 H 350 V 185 H 500"/>
+              <text class="gk-map__label gk-map__label--identity" x="315" y="162">1 · Credentials</text>
+              <path data-diagram-flow="session" class="gk-map__wire gk-map__wire--session" d="M 500 245 H 407 V 405 H 276"/>
+              <text class="gk-map__label gk-map__label--identity" x="308" y="434">2 · Session</text>
+              <path class="gk-map__wire gk-map__wire--identity" d="M 760 203 H 860"/>
+              <text class="gk-map__micro" x="810" y="183" text-anchor="middle">bcrypt</text>
+              <path data-diagram-flow="resource" class="gk-map__wire gk-map__wire--guard" d="M 276 493 H 500"/>
+              <text class="gk-map__label" x="388" y="466" text-anchor="middle">3 · Request*</text>
+              <path data-diagram-flow="verify-caller" class="gk-map__wire gk-map__wire--identity" d="M 630 430 V 282"/>
+              <text class="gk-map__label gk-map__label--identity" x="649" y="352">4 · Protected only</text>
+              <text class="gk-map__micro" x="649" y="378">Verify caller · Auth GET /user</text>
+              <path data-diagram-flow="caller-rpc" class="gk-map__wire gk-map__wire--guard" d="M 760 525 H 860"/>
+              <text class="gk-map__micro" x="810" y="482" text-anchor="middle">5 · RPC</text>
+              <text class="gk-map__micro" x="810" y="506" text-anchor="middle">Caller JWT</text>
+              <path data-diagram-flow="private-lookup" class="gk-map__wire gk-map__wire--data" d="M 998 622 V 692"/>
+              <text class="gk-map__label" x="1017" y="663">6 · Lookup</text>
+              <path data-diagram-flow="public-bypass" class="gk-map__wire gk-map__wire--public" d="M 630 622 V 692"/>
+              <text class="gk-map__label" x="648" y="663">OR · Public</text>
+              <path data-diagram-flow="response" class="gk-map__wire gk-map__wire--response" d="M 500 579 H 356 V 655 H 158 V 584"/>
+              <text class="gk-map__label" x="277" y="687" text-anchor="middle">7 · HTTP + safe JSON</text>
+              <g data-diagram-node="hosting">
+                <rect class="gk-map__node gk-map__node--host" x="20" y="62" width="276" height="130" rx="14"/>
+                <text class="gk-map__tag" x="42" y="93">STATIC HOST · TARGET</text>
+                <text class="gk-map__name" x="42" y="129">Cloudflare</text>
+                <text class="gk-map__body" x="42" y="161">HTML · CSS · JavaScript</text>
+              </g>
+              <g data-diagram-node="browser">
+                <rect class="gk-map__node" x="40" y="310" width="236" height="274" rx="12"/>
+                <path class="gk-map__icon" d="M 61 332 H 101 V 359 H 61 Z M 61 339 H 101 M 66 336 H 69 M 73 336 H 76"/>
+                <text class="gk-map__name" x="61" y="393">Browser</text>
+                <text class="gk-map__body" x="61" y="432">Register / log in</text>
+                <text class="gk-map__body" x="61" y="463">Request a resource</text>
+                <path class="gk-map__rule" d="M 61 487 H 254"/>
+                <text class="gk-map__body" x="61" y="518">Session in memory</text>
+                <text class="gk-map__body" x="61" y="548">No role authority</text>
+              </g>
+              <g data-diagram-node="auth">
+                <rect class="gk-map__node gk-map__node--identity" x="500" y="120" width="260" height="162" rx="14"/>
+                <text class="gk-map__tag" x="522" y="151">MANAGED · AUTHENTICATION</text>
+                <text class="gk-map__name" x="522" y="189">Supabase Auth</text>
+                <text class="gk-map__body" x="522" y="223">Verify credentials</text>
+                <text class="gk-map__body" x="522" y="255">Issue / refresh session</text>
+              </g>
+              <g data-diagram-node="credentials">
+                <rect class="gk-map__node gk-map__node--data" x="860" y="120" width="258" height="162" rx="14"/>
+                <text class="gk-map__tag" x="881" y="151">AUTH-OWNED STORAGE</text>
+                <text class="gk-map__name" x="881" y="189">Credentials</text>
+                <text class="gk-map__body" x="881" y="223">Salted bcrypt hashes</text>
+                <text class="gk-map__body" x="881" y="255">Accounts + sessions</text>
+              </g>
+              <g data-diagram-node="edge">
+                <rect class="gk-map__node gk-map__node--guard" x="500" y="430" width="260" height="192" rx="14"/>
+                <text class="gk-map__tag" x="522" y="461">OUR CODE · EDGE FUNCTION</text>
+                <text class="gk-map__name" x="522" y="499">Gatekeeper</text>
+                <text class="gk-map__body" x="522" y="535">Validate caller</text>
+                <text class="gk-map__body" x="522" y="565">Forward caller identity</text>
+                <text class="gk-map__body" x="522" y="595">Safe JSON only</text>
+              </g>
+              <g data-diagram-node="rpc">
+                <rect class="gk-map__node gk-map__node--guard" x="860" y="430" width="258" height="192" rx="14"/>
+                <text class="gk-map__tag" x="881" y="461">SQL GUARD · POSTGREST</text>
+                <text class="gk-map__name" x="881" y="499">Data API → SQL</text>
+                <text class="gk-map__mono" x="881" y="533">gatekeeper_resource</text>
+                <text class="gk-map__body" x="881" y="565">JWT → uid + session</text>
+                <text class="gk-map__body" x="881" y="595">Role → allow / deny</text>
+              </g>
+              <g data-diagram-node="public">
+                <rect class="gk-map__node gk-map__node--public" x="500" y="692" width="260" height="108" rx="14"/>
+                <text class="gk-map__name" x="522" y="734">Public bypass</text>
+                <text class="gk-map__body" x="522" y="770">200 · no Auth / SQL</text>
+              </g>
+              <g data-diagram-node="private">
+                <rect class="gk-map__node gk-map__node--private" x="860" y="692" width="258" height="144" rx="14"/>
+                <text class="gk-map__tag" x="881" y="720">TRUSTED SQL LOOKUPS</text>
+                <text class="gk-map__mono" x="881" y="752">auth.sessions</text>
+                <text class="gk-map__mono" x="881" y="782">user_roles</text>
+                <text class="gk-map__mono" x="881" y="812">admin_briefing</text>
+              </g>
+              <text class="gk-map__tag" x="40" y="754">PUBLIC CONFIG ≠ AUTHORITY</text>
+              <text class="gk-map__body" x="40" y="787">Publishable project key only.</text>
+              <text class="gk-map__body" x="40" y="817">No service-role key in the browser.</text>
+              <text class="gk-map__micro" x="500" y="838">* JWT required for User / Admin only.</text>
+              <text class="gk-map__micro" x="860" y="882">Default: User · no browser access</text>
+            </svg>
+            <div class="gk-map__mobile" aria-hidden="true">
+              <div class="gk-map__m-host"><span class="gk-map__m-label">Static host · deployment target</span><strong>Cloudflare</strong><span>HTML · CSS · JavaScript → browser</span></div>
+              <div class="gk-map__m-browser"><span class="gk-map__m-label">Untrusted browser</span><strong>The page asks. It cannot grant.</strong><span>Session in page memory · public project key only</span></div>
+              <p class="gk-map__m-lane">A / Establish identity</p>
+              <div class="gk-map__m-route">1 ↓ Credentials over HTTPS</div>
+              <div class="gk-map__m-node gk-map__m-node--identity"><span class="gk-map__m-label">Managed authentication</span><strong>Supabase Auth</strong><span>Email verification + salted bcrypt passwords</span><small>Auth-owned accounts and sessions</small></div>
+              <div class="gk-map__m-route">2 ↑ Session returned to browser</div>
+              <p class="gk-map__m-lane">B / Request a resource</p>
+              <div class="gk-map__m-route">3 ↓ Resource + caller JWT*</div>
+              <div class="gk-map__m-zone">
+                <span class="gk-map__m-label">Supabase · managed platform</span>
+                <div class="gk-map__m-node gk-map__m-node--guard"><span class="gk-map__m-label">Our code · Edge Function</span><strong>Gatekeeper</strong><span>Validate request · choose resource path · safe output</span></div>
+                <div class="gk-map__m-public"><strong>↳ Public bypass → 200</strong><span>No identity / SQL lookup after request validation.</span></div>
+                <div class="gk-map__m-route"><strong>User / Admin only</strong><br>4 ↗ Verify caller with Auth GET /user</div>
+                <div class="gk-map__m-route">5 ↓ PostgREST validates caller JWT</div>
+                <div class="gk-map__m-node gk-map__m-node--guard"><span class="gk-map__m-label">Our code · SQL guard</span><strong>gatekeeper_resource</strong><span>auth.uid + session owner + current role</span></div>
+                <div class="gk-map__m-route">6 ↓ Trusted lookup</div>
+                <div class="gk-map__m-node gk-map__m-node--private"><span class="gk-map__m-label">Owner-managed data</span><strong>Sessions · roles · briefing</strong><span>Default: User. No browser table access.</span></div>
+              </div>
+              <div class="gk-map__m-route">7 ↑ HTTP + safe JSON → browser</div>
+              <p class="gk-map__m-footnote">* JWT required for User / Admin only. No service-role key in the browser.</p>
+            </div>
+            <div class="gk-map__legend" aria-hidden="true"><span><i class="gk-map__key gk-map__key--identity"></i>Identity / session</span><span><i class="gk-map__key gk-map__key--guard"></i>Resource request</span><span><i class="gk-map__key gk-map__key--boundary"></i>Trust boundary</span></div>
+          </div>
+          <figcaption>Design—not live telemetry. Cloudflare is the frontend deployment target; this local preview serves the same static files. Credentials go only to Auth. Resource requests use the caller’s token—not an administrator key.</figcaption>
+        </figure>
+        <dl class="gk-decisions" aria-label="Gatekeeper HTTP decisions"><div><dt>200 <span>Allowed</span></dt><dd>Public, or all protected checks pass.</dd></div><div><dt>401 <span>Authenticate</span></dt><dd>Missing, invalid or absent server session.</dd></div><div><dt>403 <span>Forbidden</span></dt><dd>Signed-in User requesting Admin.</dd></div><div><dt>503 <span>Fail closed</span></dt><dd>Authority or safe response unavailable.</dd></div></dl>
+        <details class="architecture-disclosure"><summary>Read the request path and trust contract</summary><div class="architecture-disclosure-content">
+          <h3>A · Identity is managed</h3><p><strong>1–2 · Browser ↔ Supabase Auth.</strong> Registration and login send email/password directly to Auth over HTTPS. Auth owns salted bcrypt hashing, email confirmation and session issuance. Our page keeps the access/refresh session in memory; it neither stores password hashes nor imports a session from callback URLs.</p>
+          <h3>B · Edge / RPC guard: permission is application-owned</h3><ol start="3"><li><strong>Browser → Gatekeeper:</strong> GET <code>?resource=public|user|admin</code>. Exact origin, method and resource validation run first. Public returns without calling Auth or SQL; a publishable key is configuration, not Admin authority.</li><li><strong>Gatekeeper → Auth:</strong> protected requests require a Bearer token. The handler calls <code>/auth/v1/user</code> to verify the caller; decoding a JWT alone is not authentication.</li><li><strong>Gatekeeper → PostgREST → SQL:</strong> the same caller JWT reaches <code>gatekeeper_resource</code>. PostgREST validates it; only the authenticated API role may execute the RPC. The request never supplies a trusted user ID or Admin role.</li><li><strong>SQL → trusted data:</strong> check <code>auth.uid()</code> and ownership of the matching <code>auth.sessions</code> record, then read <code>gatekeeper_private.user_roles</code>. No role row means User; only Admin may read <code>admin_briefing</code>. Private roles table grants deny browser access. The narrow security-definer function has an empty search path and a privileged, trusted owner.</li><li><strong>Decision → Edge → browser:</strong> SQL returns an internal status/body envelope. Edge maps it to actual HTTP, validates safe fields and omits credentials. A direct RPC may return HTTP 200 with a denial inside its envelope; that is not permission to access the resource.</li></ol>
+          <h3>C · Lifecycle and failure stay explicit</h3><p>Logout clears page credentials and requests current-session revocation. The SQL session-row guard is designed to reject a revoked session; copied-token replay remains a separate verification check. Role changes are read on the next request, not trusted from browser metadata. If Auth, the role lookup or response validation fails, protected data is not released. CORS is an origin rule—not authorization.</p>
+        </div></details>
+      </section>
+
+      <section class="section-card" data-architecture-section="prompt" aria-labelledby="prompt-title">
+        <div class="section-header"><span class="section-index">04</span><div><h2 id="prompt-title">AI Prompt</h2><p class="section-kicker">Review → Plan → Build → Verify. Suggested prompts, not a reconstructed conversation.</p></div></div>
+        <div class="prompt-build architecture-ai-workflow">
+          <ol class="architecture-ai-steps">
+            <li data-ai-step><h3>01 · Review the boundaries</h3><p>Identify what is trusted before changing code.</p><details class="ai-step-prompt"><summary>Suggested review prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Review</span><button class="copy-button" type="button" data-copy-target="gkReviewPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Review prompt"><code id="gkReviewPrompt">Review the supplied standalone HTML/CSS/JavaScript application.
+Map the browser, Supabase Auth, Edge Function, SQL RPC,
+and private roles table. Distinguish AuthN from AuthZ.
+Identify credential, token, role, and secret ownership.
+Preserve the seven-section layout and all local themes.
+Do not edit the reference project or live portfolio.
+List risks and files to change. Do not implement yet.</code></pre></div></details></li>
+            <li data-ai-step><h3>02 · Plan the security contract</h3><p>Make permissions and failure states explicit.</p><details class="ai-step-prompt"><summary>Suggested planning prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Plan</span><button class="copy-button" type="button" data-copy-target="gkPlanPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Planning prompt"><code id="gkPlanPrompt">Plan registration, login, logout, and three resources:
+Public, User, and Admin. Use Supabase Auth for credentials
+and salted bcrypt hashing; do not implement local hashing.
+Keep browser sessions in memory, not persistent storage.
+Define 200, 401, 403, and upstream failure responses.
+Our Edge Function and SQL RPC must enforce authorization.
+Only trusted administration can assign an Admin role.
+Specify validation, email verification, token expiry,
+logout/replay checks, and tests before implementation.
+Do not provision or deploy without exact-target approval.</code></pre></div></details></li>
+            <li data-ai-step><h3>03 · Build a narrow feature</h3><p>Use a complete specification, then inspect the changed files.</p><p><a href="#gkBuildPrompt">Read the implementation prompt</a></p></li>
+            <li data-ai-step><h3>04 · Verify the actual result</h3><p>Test denial paths, not just a successful login.</p><details class="ai-step-prompt"><summary>Suggested verification prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Verify</span><button class="copy-button" type="button" data-copy-target="gkVerifyPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Verification prompt"><code id="gkVerifyPrompt">Run local tests and report their real output separately
+from live Supabase checks. With an explicitly approved,
+configured backend, test Public while signed out; User
+and Admin without a token; User access after login;
+User denied Admin; provisioned Admin allowed Admin;
+forged metadata, direct RPC, expiry, and logout replay.
+Test invalid email, blank and hostile input, Unicode
+password byte limits, duplicate submissions, and failure.
+Check keyboard controls, copying, all seven theme packages,
+light/dark modes, and narrow layouts in real browsers.
+Never show tokens, passwords, hashes, or privileged keys.
+Report blocked checks. Never invent successful evidence.</code></pre></div></details></li>
+          </ol>
+          <details class="ai-build-prompt" data-implementation-spec open><summary>Implementation specification · suggested build prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Standalone Auth + RBAC specification</span><button class="copy-button" type="button" data-copy-target="gkBuildPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Complete implementation prompt"><code id="gkBuildPrompt">Build Gatekeeper Lab as standalone HTML, CSS, and vanilla JS.
+
+1. Preserve the seven-section presentation, local navigation,
+   seven installed theme packages, and independent light/dark
+   mode. Use local appearance keys gk-style-theme and gk-theme.
+   Do not copy the reference cloud-theme feature or alter it.
+
+2. Use locally vendored Supabase JS for Auth. Register with
+   email and password, require email verification, and keep
+   registration to at least 12 characters and at most 72 UTF-8
+   bytes. Login must accept existing valid credentials without
+   imposing the new-registration minimum. Hashing is delegated
+   to Supabase Auth's salted bcrypt, not browser code.
+
+3. Disable session persistence and URL session detection.
+   Keep access/refresh tokens only in page memory; reloading
+   signs out locally. Never save passwords or expose tokens
+   in HTML, logs, URLs, or the response inspector. Use only a
+   publishable browser key, never server secrets.
+
+4. Implement our gatekeeper Edge Function for public, user,
+   and admin resources. Validate the caller with Supabase Auth.
+   Invoke a narrow SQL RPC using the caller's identity. SQL
+   independently checks identity, an active auth session,
+   and the current role from a private owner-managed table.
+   New accounts are Users; metadata cannot grant Admin.
+   Revoke browser access to role tables. Restrict RPC grants,
+   use an empty definer search_path and qualified SQL names.
+
+5. Return genuine status and allowed JSON: Public can succeed
+   without login; protected resources require an active session
+   (401), and Admin additionally requires Admin role (403).
+   Fail closed on dependency failures. Use strict resource
+   validation, no-store responses, and an exact CORS allowlist;
+   CORS does not replace identity or permission checks.
+
+6. Provide labeled email/password fields, separate Register
+   and Log in actions, logout, signed-out and role displays,
+   and Public/User/Admin request buttons. No role dropdown.
+   Disable network controls until configured. Show the selected
+   endpoint, actual HTTP result, and safe JSON, not pretend
+   success badges. Reject stale concurrent results and clear
+   protected output on session change. Use generic login errors.
+
+7. Write tests first. Check positive and negative AuthN/AuthZ,
+   hostile input, byte limits, forged roles, expiry, direct RPC,
+   logout replay, races, offline failures, secret redaction,
+   keyboard access, themes, and mobile layouts. Separate local
+   controlled tests from observed live responses and pending
+   checks. No account changes, deployment, or Git actions
+   without separate approval of the exact target.</code></pre></div></details>
+        </div>
+      </section>
+
+      <section class="section-card" data-architecture-section="audit" aria-labelledby="audit-title">
+        <div class="section-header"><span class="section-index">05</span><div><h2 id="audit-title">Audit</h2><p class="section-kicker">A design contract to inspect—not a claim of a completed live security audit.</p></div></div>
+        <div class="audit-layout">
+          <div class="code-panel"><div class="code-toolbar"><span class="code-label">Permission contract · explanatory excerpt</span><button class="copy-button" type="button" data-copy-target="gkAuditContract">Copy Contract</button></div><pre tabindex="0" aria-label="Authorization design contract excerpt"><code id="gkAuditContract">PUBLIC  → no sign-in required
+USER    → verified identity + active session
+ADMIN   → verified identity + active session
+          + owner-assigned Admin role
+
+Missing / invalid / revoked session → 401
+Authenticated User requesting Admin → 403
+Unavailable authority or role lookup → fail closed
+
+Browser input and user metadata never grant a role.
+Supabase Auth owns password verification and bcrypt.
+Our Edge / SQL guard owns application authorization.</code></pre></div>
+          <div class="audit-grid"><article class="audit-item"><h3>Check the authority</h3><p>Enforce the same boundary in SQL, not only in the interface or Edge route. Keep role writes under trusted ownership.</p></article><article class="audit-item"><h3>Check session lifecycle</h3><p>Use memory-only tokens. Test expiry, logout revocation, replay, and stale responses; do not assume a cleared screen revokes access.</p></article><article class="audit-item"><h3>Check data handling</h3><p>Validate email, password byte limits, and resource names. Return only allowed JSON—never credentials, tokens, or hashes.</p></article><article class="audit-item"><h3>Check the evidence</h3><p>A diagram and a passing local test are not a live permission check. Read the actual HTTP response and state what remains untested.</p></article></div>
+        </div>
+      </section>
+
+      <section class="section-card" data-architecture-section="working" id="final-result" aria-labelledby="result-title">
+        <div class="section-header"><span class="section-index">06</span><div><h2 id="result-title">Working System</h2><p class="section-kicker">Sign in. Request a resource. Inspect the server's decision.</p></div></div>
+        <div class="auth-lab">
+          <div class="auth-lab__header"><div><p class="eyebrow">Gatekeeper Lab · Supabase Auth + RBAC</p><h3>One identity. Different boundaries.</h3></div><p class="connection-state" id="connection-status" role="status" aria-live="polite">Not connected</p></div>
+          <p class="auth-lab__hint">A configured, explicitly connected browser is required for live requests. Until then, no endpoint result is implied. Use test-only credentials and no real sensitive data.</p>
+          <div class="auth-lab__workspace">
+            <form id="auth-form" novalidate aria-describedby="auth-help">
+              <h4>Account access</h4>
+              <div class="auth-field"><label for="auth-email">Email</label><input id="auth-email" name="email" type="email" required maxlength="254" autocomplete="username" inputmode="email" spellcheck="false" autocapitalize="none" aria-describedby="auth-help"></div>
+              <div class="auth-field"><label for="auth-password">Password</label><input id="auth-password" name="password" type="password" required autocomplete="current-password" maxlength="72" aria-describedby="password-help"></div>
+              <p class="auth-lab__hint" id="password-help">Register with 12 or more characters, up to 72 UTF-8 bytes. Log in with your existing credentials; the registration minimum does not apply to login.</p>
+              <div class="auth-lab__actions"><button id="auth-login" type="submit" disabled>Log in</button><button id="auth-register" type="button" disabled>Register</button><button id="auth-logout" type="button" disabled>Log out</button></div>
+              <p class="auth-lab__hint" id="auth-help">New accounts must verify their email before logging in. Credentials are not saved by this app. Reloading signs you out; your browser or password manager may separately offer to save credentials.</p>
+              <p id="auth-action" class="auth-lab__hint">No account action in progress.</p>
+              <p id="auth-message" role="status" aria-live="polite">Connect to a configured backend before using account actions.</p>
+            </form>
+            <div class="resource-panel" aria-labelledby="resource-title">
+              <h4 id="resource-title">Resource access</h4>
+              <dl class="auth-session-summary"><div><dt>Session</dt><dd id="auth-session">Signed out</dd></div><div><dt>Server role</dt><dd id="auth-role">Not authorized / —</dd></div></dl>
+              <p class="auth-lab__hint">Once connected, try all three resources—even while signed out. The server, not these buttons, decides whether to allow access.</p>
+              <div class="auth-lab__actions auth-lab__resources" aria-label="Request a server resource"><button id="request-public" type="button" disabled>Request Public</button><button id="request-user" type="button" disabled>Request User</button><button id="request-admin" type="button" disabled>Request Admin</button></div>
+              <p id="request-message" role="status" aria-live="polite">No resource request has been sent.</p>
+            </div>
+          </div>
+          <div class="response-panel" aria-labelledby="response-title">
+            <div class="response-panel__heading"><h4 id="response-title">Server response</h4><p id="request-status">Not requested</p></div>
+            <p class="auth-lab__hint">The selected endpoint, real HTTP result, and returned JSON appear here after a request. Tokens and credentials are never displayed.</p>
+            <pre class="code-panel" tabindex="0" aria-label="Actual resource response"><code id="request-output">No response yet.</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" data-architecture-section="verification" aria-labelledby="verification-title">
+        <div class="section-header"><span class="section-index">07</span><div><h2 id="verification-title">Verification</h2><p class="section-kicker">A checklist to execute against a connected backend—not recorded results.</p></div></div>
+        <ol class="verification-list"><li><strong>Start signed out.</strong> Request Public, then User and Admin. Compare the actual response with each endpoint's intended permission.</li><li><strong>Exercise identity.</strong> Try invalid input and incorrect credentials. Register a test account, verify its email, and log in.</li><li><strong>Exercise roles.</strong> A User may request User data, not Admin data. Test Admin only with a separately provisioned test account.</li><li><strong>End the session.</strong> Log out, retry protected access, and test token replay separately. Reload to confirm local sign-out.</li><li><strong>Challenge the boundary.</strong> Check direct RPC, altered metadata, expiry, and unavailable services without exposing tokens or secrets.</li><li><strong>Use the interface.</strong> Tab through fields, buttons, prompts, and menus. Try all seven themes, both modes, and a narrow screen.</li></ol>
+        <p class="verification-summary">Identity is managed. Authorization is enforced. Confidence comes from real requests—including the ones the server refuses.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p class="footer-copyright">&copy; 2026 Dmitriy Chernichenko.</p><p>Gatekeeper Lab · Managed identity. Server-owned permissions. Local presentation.</p><p><a href="#main-content">Back to the showcase</a></p></footer>
+    <noscript><p class="noscript-note">The explanation and prompts remain readable without JavaScript. Account actions, live requests, appearance controls, and copying require JavaScript.</p></noscript>
+  </div>
+  <script src="./copy-code.js" defer></script>
+  <script src="./config.js" defer></script>
+  <script src="./vendor/supabase.js" defer></script>
+  <script type="module" src="./scripts/showcase.js"></script>
+</body>
+</html>

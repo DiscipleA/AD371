@@ -1,0 +1,10 @@
+PASS Callback credentials removed from URL without importing or persisting a session
+PASS Configured client enables resource controls
+PASS Seven direct section cards
+PASS Empty input rejected before network request
+PASS SQL-like invalid email rejected without execution
+PASS All installed theme/mode/viewport layout combinations
+PASS Real keyboard opens menu, Escape restores focus, closed descendants excluded
+PASS Copy button copies complete build prompt
+PASS No uncaught JS, broken local assets, or unexpected service requests
+PASS CONTROLLED client flow: 401, generic invalid login, login, User 200, Admin 403, logout, 401

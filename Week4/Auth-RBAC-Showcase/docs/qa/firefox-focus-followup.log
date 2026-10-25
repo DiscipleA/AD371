@@ -1,0 +1,4 @@
+PASS Firefox loads seven-section configured showcase and enabled controls
+PASS Empty credentials rejected in real Firefox
+PASS All Firefox theme/mode/viewport layout combinations
+PASS Firefox real Enter/Tab/Escape menu focus behavior

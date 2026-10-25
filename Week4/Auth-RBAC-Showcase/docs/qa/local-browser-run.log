@@ -1,0 +1,52 @@
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+PASS Configured client enables resource controls
+PASS Seven direct section cards
+PASS Empty input rejected before network request
+PASS SQL-like invalid email rejected without execution
+PASS All installed theme/mode/viewport layout combinations
+PASS Real keyboard opens menu, Escape restores focus, closed descendants excluded
+PASS Copy button copies complete build prompt
+PASS No uncaught JS, broken local assets, or unexpected service requests
+FAIL Browser suite completion
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/browser_local.py", line 133, in <module>
+    try:asyncio.run(main())
+        ~~~~~~~~~~~^^^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+202****0901-linux-x64/lib/python3.14/asyncio/runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+202****0901-linux-x64/lib/python3.14/asyncio/runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+202****0901-linux-x64/lib/python3.14/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/browser_local.py", line 116, in main
+    await page.locator('#request-user').click();await page.wait_for_function("document.querySelector('#request-status').textContent==='HTTP 401'")
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reader/.local/state/hermes-portable-deps-ec97580510d50bfe/installs/84f3f004deaf179b/environments/8bb204078d94408e953b8047b3823dfa/venv/lib/python3.14/site-packages/playwright/async_api/_generated.py", line 12687, in wait_for_function
+    await self._impl_obj.wait_for_function(
+    ...<4 lines>...
+    )
+  File "/home/reader/.local/state/hermes-portable-deps-ec97580510d50bfe/installs/84f3f004deaf179b/environments/8bb204078d94408e953b8047b3823dfa/venv/lib/python3.14/site-packages/playwright/_impl/_page.py", line 1151, in wait_for_function
+    return await self._main_frame.wait_for_function(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reader/.local/state/hermes-portable-deps-ec97580510d50bfe/installs/84f3f004deaf179b/environments/8bb204078d94408e953b8047b3823dfa/venv/lib/python3.14/site-packages/playwright/_impl/_frame.py", line 940, in wait_for_function
+    await self._channel.send("waitForFunction", self._timeout, params)
+  File "/home/reader/.local/state/hermes-portable-deps-ec97580510d50bfe/installs/84f3f004deaf179b/environments/8bb204078d94408e953b8047b3823dfa/venv/lib/python3.14/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/reader/.local/state/hermes-portable-deps-ec97580510d50bfe/installs/84f3f004deaf179b/environments/8bb204078d94408e953b8047b3823dfa/venv/lib/python3.14/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.wait_for_function: EvalError: Evaluating a string as JavaScript violates the following Content Security Policy directive because 'unsafe-eval' is not an allowed source of script: script-src 'self'".
+
+    at eval (<anonymous>)
+    at predicate (eval at evaluate (:311:30), <anonymous>:4:60)
+    at next (eval at evaluate (:311:30), <anonymous>:29:33)

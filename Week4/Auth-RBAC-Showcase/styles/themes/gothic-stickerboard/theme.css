@@ -1,0 +1,738 @@
+/*
+  Gothic Stickerboard
+  State: dramatic, handmade, subcultural, archival, theatrical.
+  Matter: cathedral tracery, street vinyl, wheat-paste paper, torn collage edges.
+
+  Design contract:
+  - This is not a palette swap: the theme changes typography, corner language,
+    control geometry, surface construction, shadows, labels, navigation, imagery,
+    code panels, dashboard modules, and interaction feedback.
+  - Major surfaces resemble layered paper placards pinned over a cathedral-like
+    structural backdrop; compact labels read like pasted stickers and ticket stubs.
+  - Controls are rectangular or clipped-paper shapes, never glossy pills.
+  - Profile Card structure remains locked to the shared 28rem vertical composition,
+    16 / 10 media proportion, image-above-content order, and complete content visibility.
+  - Whole-card learning links remain card-shaped and text-safe.
+  - All theme-owned visuals stay inside styles/themes/gothic-stickerboard/.
+*/
+
+html[data-style-theme="gothic-stickerboard"] {
+  --portfolio-style-family: "gothic-stickerboard";
+  --portfolio-content-max: 76rem;
+  --font-sans: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-mono: "Courier New", Courier, monospace;
+  --radius-xs: 0.05rem;
+  --radius-sm: 0.12rem;
+  --radius-md: 0.18rem;
+  --radius-lg: 0.22rem;
+  --radius-pill: 0.12rem;
+  --border-hairline: 1px;
+  --transition-fast: 150ms steps(2, end);
+  --transition-normal: 240ms cubic-bezier(.22,.75,.2,1);
+  --gothic-collage: url("./assets/textures/cathedral-collage.svg");
+  --gothic-paper-edge: 0.28rem;
+}
+
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] {
+  color-scheme: dark;
+  --color-canvas: #151014;
+  --color-surface: #21181f;
+  --color-surface-elevated: #2d2128;
+  --color-border: #9d8054;
+  --color-text-primary: #f0e5cc;
+  --color-text-secondary: #dbc9aa;
+  --color-text-muted: #bba98f;
+  --color-accent: #d6b36a;
+  --color-accent-hover: #f0cf84;
+  --color-accent-secondary: #d6435e;
+  --color-on-accent: #181116;
+  --color-accent-soft: rgb(214 179 106 / .12);
+  --color-accent-soft-strong: rgb(214 179 106 / .22);
+  --color-accent-glow: rgb(214 179 106 / .20);
+  --color-cyan-glow: rgb(155 52 77 / .16);
+  --color-overlay-soft: rgb(255 240 211 / .045);
+  --color-shadow: rgb(0 0 0 / .68);
+  --color-shadow-soft: rgb(0 0 0 / .42);
+  --color-focus: #f6d27c;
+  --color-image-overlay: rgb(28 13 21 / .36);
+  --color-img-fallback: #2d2128;
+  --color-success: #91b66b;
+  --color-code: #100b0f;
+
+  --canvas: #151014;
+  --surface: #21181f;
+  --surface-2: #2d2128;
+  --border: #9d8054;
+  --text: #f0e5cc;
+  --muted: #bba98f;
+  --brand: #d6b36a;
+  --data: #d6435e;
+  --success: #91b66b;
+  --shadow: rgb(0 0 0 / .62);
+
+  --color-primary: #d6b36a;
+  --color-secondary: #d6435e;
+  --color-background: #151014;
+  --color-surface: #21181f;
+  --color-surface-elevated: #2d2128;
+  --color-border: #9d8054;
+  --color-text: #f0e5cc;
+  --color-text-muted: #bba98f;
+  --color-on-primary: #181116;
+  --color-positive: #91b66b;
+  --color-attention: #e58a54;
+  --color-shadow: rgb(0 0 0 / .62);
+}
+
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] {
+  color-scheme: light;
+  --color-canvas: #eee4cf;
+  --color-surface: #fff8e8;
+  --color-surface-elevated: #e3d2b5;
+  --color-border: #705b42;
+  --color-text-primary: #281c24;
+  --color-text-secondary: #46323c;
+  --color-text-muted: #68564f;
+  --color-accent: #7a5723;
+  --color-accent-hover: #5e4018;
+  --color-accent-secondary: #a12645;
+  --color-on-accent: #fff8e8;
+  --color-accent-soft: rgb(122 87 35 / .10);
+  --color-accent-soft-strong: rgb(122 87 35 / .18);
+  --color-accent-glow: rgb(122 87 35 / .16);
+  --color-cyan-glow: rgb(161 38 69 / .12);
+  --color-overlay-soft: rgb(255 255 255 / .54);
+  --color-shadow: rgb(56 38 31 / .28);
+  --color-shadow-soft: rgb(56 38 31 / .18);
+  --color-focus: #7e2340;
+  --color-image-overlay: rgb(64 35 43 / .18);
+  --color-img-fallback: #ddccb0;
+  --color-success: #4b702e;
+  --color-code: #24191f;
+
+  --canvas: #eee4cf;
+  --surface: #fff8e8;
+  --surface-2: #e3d2b5;
+  --border: #705b42;
+  --text: #281c24;
+  --muted: #68564f;
+  --brand: #7a5723;
+  --data: #a12645;
+  --success: #4b702e;
+  --shadow: rgb(56 38 31 / .24);
+
+  --color-primary: #7a5723;
+  --color-secondary: #a12645;
+  --color-background: #eee4cf;
+  --color-surface: #fff8e8;
+  --color-surface-elevated: #e3d2b5;
+  --color-border: #705b42;
+  --color-text: #281c24;
+  --color-text-muted: #68564f;
+  --color-on-primary: #fff8e8;
+  --color-positive: #4b702e;
+  --color-attention: #8a4b24;
+  --color-shadow: rgb(56 38 31 / .24);
+}
+
+/* Cathedral wall + pasted-paper atmosphere. */
+html[data-style-theme="gothic-stickerboard"] body {
+  background-color: var(--color-canvas, var(--canvas, var(--color-background)));
+  background-image:
+    linear-gradient(90deg, transparent 0 49.6%, color-mix(in srgb, var(--color-border) 13%, transparent) 49.6% 50.1%, transparent 50.1%),
+    var(--gothic-collage),
+    repeating-linear-gradient(7deg, transparent 0 2.8rem, color-mix(in srgb, var(--color-border) 5%, transparent) 2.8rem 2.92rem),
+    radial-gradient(circle at 12% 10%, var(--color-accent-glow), transparent 28rem),
+    radial-gradient(circle at 86% 24%, var(--color-cyan-glow), transparent 30rem);
+  background-attachment: fixed;
+  background-size: auto, 56rem 44rem, auto, auto, auto;
+  font-family: var(--font-sans);
+  letter-spacing: .006em;
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(h1, h2, h3, .profile-name, .profile-card__headline) {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  letter-spacing: -.018em;
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(.eyebrow, .section-kicker, .profile-location, .milestone-status, .project-counter, .section-index, .concept-token, .code-label, .frame-kicker) {
+  font-family: var(--font-mono);
+  letter-spacing: .055em;
+}
+
+html[data-style-theme="gothic-stickerboard"] :where(a, button, input):focus-visible {
+  outline: .18rem solid var(--color-focus, var(--color-accent));
+  outline-offset: .22rem;
+  box-shadow: .25rem .25rem 0 var(--color-shadow-soft, var(--shadow));
+}
+
+/* Shared collage slabs: hard corners, doubled edge, offset paper shadow. */
+html[data-style-theme="gothic-stickerboard"] :is(
+  .profile-card, .profile-header, .dashboard-card, .project-box,
+  .hub-hero, .hub-card, .milestone, .token-hero, .token-section,
+  .hero, .section-card, .concept-card, .narrative-panel, .audit-item,
+  .prompt-layer, .code-panel, .layout-preview-card, .archetype-card,
+  .selection-banner, .token-preview, .token-preview__group, .landmark-card,
+  .integration-card, .progress-card, .architecture-card, .market-card,
+  .dashboard-frame, .dashboard-demo, .gallery-wrapper, .media-card,
+  .commerce-demo, .app-layout, .notification-workspace, .workspace-grid
+) {
+  border-radius: var(--radius-md) !important;
+  border-color: var(--color-border, var(--border));
+  box-shadow:
+    .35rem .42rem 0 color-mix(in srgb, var(--color-accent-secondary) 30%, transparent),
+    .72rem .78rem 0 color-mix(in srgb, var(--color-shadow-soft, var(--shadow)) 80%, transparent);
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(.profile-card, .profile-header, .hub-hero, .token-hero, .hero, .section-card, .dashboard-frame) {
+  position: relative;
+  background-color: var(--color-surface, var(--surface));
+  background-image:
+    linear-gradient(178deg, color-mix(in srgb, var(--color-surface) 91%, white 9%), var(--color-surface)),
+    repeating-linear-gradient(92deg, transparent 0 4.8rem, color-mix(in srgb, var(--color-border) 8%, transparent) 4.8rem 4.92rem);
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(.profile-card, .profile-header, .hub-hero, .token-hero, .hero, .section-card)::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset-inline: 9%;
+  inset-block-start: -.42rem;
+  block-size: .58rem;
+  pointer-events: none;
+  background: color-mix(in srgb, var(--color-accent) 48%, var(--color-surface));
+  clip-path: polygon(0 18%, 9% 0, 23% 22%, 38% 4%, 52% 24%, 68% 3%, 82% 22%, 100% 7%, 98% 100%, 0 100%);
+  opacity: .8;
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(.profile-card, .profile-header, .hub-hero, .token-hero, .hero, .section-card) > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Navigation: pasted vinyl/ticket controls; Profile Card is deliberately NOT round. */
+html[data-style-theme="gothic-stickerboard"] .portfolio-banner {
+  --portfolio-nav-canvas: color-mix(in srgb, var(--color-canvas) 94%, transparent);
+  --portfolio-nav-panel: var(--color-surface);
+  --portfolio-nav-panel-hover: color-mix(in srgb, var(--color-accent-secondary) 14%, var(--color-surface));
+  --portfolio-nav-border: var(--color-border);
+  --portfolio-nav-text: var(--color-text-primary);
+  --portfolio-nav-muted: var(--color-text-muted);
+  --portfolio-nav-accent: var(--color-accent);
+  --portfolio-nav-focus: var(--color-focus);
+  --portfolio-nav-shadow: var(--color-shadow);
+  --portfolio-nav-font: var(--font-mono);
+  border-block-end: 3px double var(--color-border);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background-image: repeating-linear-gradient(96deg, transparent 0 6rem, color-mix(in srgb, var(--color-border) 7%, transparent) 6rem 6.12rem);
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(
+  .portfolio-banner__profile, .portfolio-theme-menu__toggle, .portfolio-theme-menu__item,
+  .portfolio-menu__toggle, .portfolio-menu__item, .portfolio-showcase-menu__toggle,
+  .portfolio-showcase-menu__item, .portfolio-build-menu__toggle, .portfolio-build-menu__item
+) {
+  border-width: 2px;
+  border-radius: 0 !important;
+  background: var(--portfolio-nav-panel);
+  box-shadow: .2rem .22rem 0 color-mix(in srgb, var(--color-accent-secondary) 42%, transparent);
+  text-transform: uppercase;
+  letter-spacing: .045em;
+}
+
+html[data-style-theme="gothic-stickerboard"] .portfolio-banner__profile {
+  transform: rotate(-1deg);
+  border-style: solid;
+  border-color: var(--color-accent-secondary);
+  background:
+    linear-gradient(135deg, transparent 0 82%, color-mix(in srgb, var(--color-accent-secondary) 34%, transparent) 82%),
+    var(--color-surface);
+  color: var(--color-text-primary);
+  font-family: var(--font-serif);
+  font-weight: 900;
+}
+
+html[data-style-theme="gothic-stickerboard"] .portfolio-banner__profile:hover {
+  transform: rotate(.6deg) translateY(-1px);
+  background: var(--color-accent-secondary);
+  color: #fff8e8;
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(.portfolio-theme-menu__panel, .portfolio-menu__panel, .portfolio-showcase-menu__panel, .portfolio-build-menu__panel) {
+  border: 2px solid var(--color-border);
+  border-radius: 0 !important;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 2.4rem, color-mix(in srgb, var(--color-border) 6%, transparent) 2.4rem 2.48rem),
+    var(--color-surface);
+  box-shadow: .5rem .58rem 0 var(--color-shadow);
+}
+
+/* Sticker/ticket actions, never pills. */
+html[data-style-theme="gothic-stickerboard"] :is(
+  .primary-action, .profile-card__action, .project-link, .milestone-link,
+  .nav-link, .copy-button, .theme-toggle, .btn
+) {
+  border: 2px solid currentColor;
+  border-radius: 0 !important;
+  box-shadow: .28rem .31rem 0 color-mix(in srgb, var(--color-shadow) 76%, transparent);
+  font-family: var(--font-mono);
+  font-weight: 900;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(
+  .primary-action, .profile-card__action, .project-link, .milestone-link,
+  .nav-link, .copy-button, .theme-toggle, .btn
+):hover {
+  transform: translate(-.12rem, -.12rem) rotate(-.35deg);
+  box-shadow: .42rem .46rem 0 color-mix(in srgb, var(--color-accent-secondary) 46%, var(--color-shadow));
+}
+
+/* Labels look physically pasted rather than luminous or polished. */
+html[data-style-theme="gothic-stickerboard"] :is(.eyebrow, .concept-token, .selection-label, .milestone-status, .profile-card__badge) {
+  display: inline-block;
+  border-radius: 0 !important;
+  border: 1px dashed currentColor;
+  padding: .18rem .38rem;
+  background: color-mix(in srgb, var(--color-accent) 16%, var(--color-surface));
+  box-shadow: .14rem .16rem 0 color-mix(in srgb, var(--color-accent-secondary) 30%, transparent);
+  transform: rotate(-.35deg);
+}
+
+html[data-style-theme="gothic-stickerboard"] .section-index {
+  border-radius: 0 !important;
+  border: 2px solid var(--color-accent-secondary) !important;
+  background: var(--color-surface-elevated) !important;
+  color: var(--color-accent) !important;
+  box-shadow: .22rem .22rem 0 color-mix(in srgb, var(--color-accent-secondary) 38%, transparent);
+  transform: rotate(-2deg);
+}
+
+/* Whole-card resource links remain text-safe; the container owns the decoration. */
+html[data-style-theme="gothic-stickerboard"] .concept-card--linked {
+  position: relative;
+  padding-inline-end: max(1.25rem, 1em) !important;
+}
+
+html[data-style-theme="gothic-stickerboard"] .concept-card--linked::after {
+  content: "↗";
+  position: absolute;
+  inset-block-start: .5rem;
+  inset-inline-end: .55rem;
+  z-index: 3;
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-accent-secondary);
+  background: var(--color-surface);
+  color: var(--color-accent-secondary);
+  font: 900 .72rem/1 var(--font-mono);
+  transform: rotate(4deg);
+  pointer-events: none;
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(.concept-resource-link, .concept-resource-link--primary, .concept-resource-link--single) {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+html[data-style-theme="gothic-stickerboard"] .concept-card--linked:focus-within {
+  outline: .18rem dashed var(--color-focus);
+  outline-offset: .22rem;
+}
+
+/* Profile Card: structural invariant preserved; material expression changes radically. */
+html[data-style-theme="gothic-stickerboard"] .profile-card {
+  max-inline-size: var(--card-max-width, 28rem);
+  inline-size: 100%;
+  overflow: hidden;
+  border: 2px solid var(--color-border);
+  background:
+    linear-gradient(176deg, color-mix(in srgb, var(--color-surface) 94%, var(--color-accent) 6%), var(--color-surface));
+}
+
+html[data-style-theme="gothic-stickerboard"] .profile-card::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 1rem;
+  inset-block-start: 1rem;
+  inline-size: 3rem;
+  block-size: 1rem;
+  z-index: 4;
+  background: color-mix(in srgb, var(--color-accent-secondary) 72%, #fff 28%);
+  opacity: .72;
+  transform: rotate(8deg);
+  pointer-events: none;
+}
+
+html[data-style-theme="gothic-stickerboard"] .profile-card__media {
+  aspect-ratio: var(--media-aspect-ratio, 16 / 10);
+  border-block-end: 3px double var(--color-border);
+  background: var(--color-img-fallback);
+}
+
+html[data-style-theme="gothic-stickerboard"] .profile-card__img {
+  filter: grayscale(.38) sepia(.18) contrast(1.14) saturate(.78);
+}
+
+html[data-style-theme="gothic-stickerboard"] .profile-card__media::after {
+  background:
+    linear-gradient(to top, var(--color-image-overlay), transparent 58%),
+    repeating-linear-gradient(90deg, transparent 0 3rem, rgb(255 255 255 / .04) 3rem 3.08rem);
+}
+
+html[data-style-theme="gothic-stickerboard"] .profile-card__content {
+  position: relative;
+  background-image: repeating-linear-gradient(0deg, transparent 0 2.1rem, color-mix(in srgb, var(--color-border) 8%, transparent) 2.1rem 2.16rem);
+}
+
+html[data-style-theme="gothic-stickerboard"] .profile-card__headline {
+  color: var(--color-text-primary);
+  text-shadow: .08rem .08rem 0 color-mix(in srgb, var(--color-accent-secondary) 28%, transparent);
+}
+
+html[data-style-theme="gothic-stickerboard"] .profile-card__stack-item {
+  border-radius: 0 !important;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-elevated);
+  box-shadow: .12rem .14rem 0 color-mix(in srgb, var(--color-accent-secondary) 24%, transparent);
+}
+
+html[data-style-theme="gothic-stickerboard"] .theme-toggle {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+}
+
+/* Resume has an editorial noticeboard rhythm. */
+html[data-style-theme="gothic-stickerboard"] .resume-container {
+  max-inline-size: var(--portfolio-content-max);
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(.profile-header, .dashboard-card, .project-box) {
+  border-width: 2px;
+  background:
+    linear-gradient(178deg, color-mix(in srgb, var(--color-surface) 93%, white 7%), var(--color-surface)),
+    repeating-linear-gradient(90deg, transparent 0 4rem, color-mix(in srgb, var(--color-border) 6%, transparent) 4rem 4.08rem);
+}
+
+html[data-style-theme="gothic-stickerboard"] .card-title {
+  padding-block-end: .35rem;
+  border-block-end: 3px double var(--color-accent-secondary);
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(.skills-grid li, .gpa-tag) {
+  border-radius: 0 !important;
+  border: 1px dashed var(--color-border);
+  background: color-mix(in srgb, var(--color-accent) 10%, var(--color-surface-elevated));
+}
+
+/* Project hub + weekly routes. */
+html[data-style-theme="gothic-stickerboard"] :is(.hub-hero, .hub-card, .token-hero, .token-section) {
+  border-width: 2px;
+}
+
+html[data-style-theme="gothic-stickerboard"] .milestone--current {
+  border: 2px solid var(--brand, var(--color-accent));
+  box-shadow:
+    inset .45rem 0 0 var(--data, var(--color-accent-secondary)),
+    .35rem .42rem 0 color-mix(in srgb, var(--color-accent-secondary) 30%, transparent),
+    .7rem .78rem 0 var(--shadow, var(--color-shadow));
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(.frame-rail, .frame-header, .frame-main, .frame-context, .frame-footer) {
+  border-radius: 0 !important;
+  border-width: 2px;
+  background-image: repeating-linear-gradient(0deg, transparent 0 3.4rem, color-mix(in srgb, var(--color-border) 5%, transparent) 3.4rem 3.46rem);
+}
+
+html[data-style-theme="gothic-stickerboard"] .frame-rail > strong {
+  border-radius: 0 !important;
+  border: 2px solid var(--color-on-primary, var(--color-canvas));
+  box-shadow: .25rem .25rem 0 var(--color-accent-secondary, var(--data));
+  transform: rotate(-3deg);
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(.frame-rail a, .context-list li, .market-card__status) {
+  border-radius: 0 !important;
+  border-style: dashed;
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(.market-chart, .adaptive-market-card__visual) span {
+  border-radius: 0 !important;
+  box-shadow: .08rem 0 0 color-mix(in srgb, var(--color-accent-secondary) 35%, transparent);
+}
+
+html[data-style-theme="gothic-stickerboard"] .adaptive-market-card {
+  border-width: 2px;
+  border-radius: 0 !important;
+  box-shadow: .26rem .3rem 0 color-mix(in srgb, var(--color-accent-secondary) 30%, transparent);
+}
+
+/* Code is a blackletter print-shop panel rather than glossy glass. */
+html[data-style-theme="gothic-stickerboard"] :is(.code-panel, pre) {
+  border-radius: 0 !important;
+  border: 2px solid var(--color-border, var(--border));
+  background: var(--color-code, #100b0f) !important;
+  color: #f3e7ce;
+  box-shadow: inset .28rem 0 0 color-mix(in srgb, var(--color-accent-secondary) 55%, transparent), .3rem .34rem 0 var(--color-shadow-soft, var(--shadow));
+}
+
+html[data-style-theme="gothic-stickerboard"] .code-toolbar {
+  border-block-end: 1px dashed var(--color-border);
+  background: color-mix(in srgb, var(--color-surface-elevated) 84%, #000 16%);
+}
+
+html[data-style-theme="gothic-stickerboard"] :is(input, textarea, select) {
+  border-radius: 0 !important;
+  border: 2px solid var(--color-border, var(--border));
+  background: var(--color-surface, var(--surface));
+  color: var(--color-text-primary, var(--text));
+  box-shadow: inset .18rem .18rem 0 color-mix(in srgb, var(--color-border) 12%, transparent);
+}
+
+/* Build Story tabs resemble numbered ticket stubs. */
+html[data-style-theme="gothic-stickerboard"] .week-story-tab {
+  border-radius: 0 !important;
+  border: 2px solid var(--color-border);
+  border-inline-start: .42rem solid var(--color-accent-secondary);
+  background: var(--color-surface);
+  box-shadow: .22rem .25rem 0 color-mix(in srgb, var(--color-shadow) 70%, transparent);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+html[data-style-theme="gothic-stickerboard"] .week-story-tab:hover {
+  background: color-mix(in srgb, var(--color-accent) 14%, var(--color-surface));
+  transform: translateY(-1px) rotate(-.3deg);
+}
+
+/* Fixed-color browser-default islands stay intentionally readable and unthemed inside. */
+html[data-style-theme="gothic-stickerboard"] .before-preview {
+  color-scheme: light !important;
+  background: #fff !important;
+  background-image: none !important;
+  color: #111 !important;
+  border-color: #777 !important;
+  box-shadow: .3rem .34rem 0 color-mix(in srgb, var(--color-accent-secondary) 28%, transparent) !important;
+}
+
+html[data-style-theme="gothic-stickerboard"] .before-preview a { color: #0000ee !important; }
+
+/* Equal-or-stronger body token ownership for Flexbox-derived showcase pages. */
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.flexbox-interfaces-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.scroll-driven-timelines-starting-style-transitions-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.pure-css-reading-progress-view-timeline-content-reveals-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.logical-properties-flexbox-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.responsive-grid-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.asymmetric-dashboard-grid-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.native-nesting-cascade-layers-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.multi-theme-scoped-component-systems-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.container-relative-styling-parent-checking-selectors-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.adaptive-card-widgets-container-queries-state-toggles-page {
+  --flex-color-canvas: #151014;
+  --flex-color-surface: #21181f;
+  --flex-color-surface-elevated: #2d2128;
+  --flex-color-border: #9d8054;
+  --flex-color-text-primary: #f0e5cc;
+  --flex-color-text-secondary: #dbc9aa;
+  --flex-color-text-muted: #bba98f;
+  --flex-color-accent: #d6b36a;
+  --flex-color-accent-hover: #f0cf84;
+  --flex-color-accent-secondary: #d6435e;
+  --flex-color-on-accent: #181116;
+  --flex-color-accent-soft: rgb(214 179 106 / .12);
+  --flex-color-accent-soft-strong: rgb(214 179 106 / .22);
+  --flex-color-accent-glow: rgb(214 179 106 / .20);
+  --flex-color-cyan-glow: rgb(155 52 77 / .16);
+  --flex-color-shadow: rgb(0 0 0 / .62);
+  --flex-color-success: #91b66b;
+  --flex-color-code: #100b0f;
+  --flex-font-sans: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  --flex-font-mono: "Courier New", Courier, monospace;
+  --flex-radius-sm: .08rem;
+  --flex-radius-md: .12rem;
+  --flex-radius-lg: .18rem;
+  --flex-radius-pill: .12rem;
+  --flex-shadow-card: .38rem .44rem 0 rgb(0 0 0 / .48);
+  --flex-focus-ring: 0 0 0 .2rem #f6d27c;
+  --flex-layout-max: var(--portfolio-content-max);
+}
+
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] body.flexbox-interfaces-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] body.scroll-driven-timelines-starting-style-transitions-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] body.pure-css-reading-progress-view-timeline-content-reveals-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] body.logical-properties-flexbox-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] body.responsive-grid-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] body.asymmetric-dashboard-grid-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] body.native-nesting-cascade-layers-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] body.multi-theme-scoped-component-systems-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] body.container-relative-styling-parent-checking-selectors-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] body.adaptive-card-widgets-container-queries-state-toggles-page {
+  --flex-color-canvas: #eee4cf;
+  --flex-color-surface: #fff8e8;
+  --flex-color-surface-elevated: #e3d2b5;
+  --flex-color-border: #705b42;
+  --flex-color-text-primary: #281c24;
+  --flex-color-text-secondary: #46323c;
+  --flex-color-text-muted: #68564f;
+  --flex-color-accent: #7a5723;
+  --flex-color-accent-hover: #5e4018;
+  --flex-color-accent-secondary: #a12645;
+  --flex-color-on-accent: #fff8e8;
+  --flex-color-accent-soft: rgb(122 87 35 / .10);
+  --flex-color-accent-soft-strong: rgb(122 87 35 / .18);
+  --flex-color-accent-glow: rgb(122 87 35 / .16);
+  --flex-color-cyan-glow: rgb(161 38 69 / .12);
+  --flex-color-shadow: rgb(56 38 31 / .24);
+  --flex-color-success: #4b702e;
+  --flex-color-code: #24191f;
+  --flex-font-sans: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  --flex-font-mono: "Courier New", Courier, monospace;
+  --flex-radius-sm: .08rem;
+  --flex-radius-md: .12rem;
+  --flex-radius-lg: .18rem;
+  --flex-radius-pill: .12rem;
+  --flex-shadow-card: .35rem .4rem 0 rgb(56 38 31 / .22);
+  --flex-focus-ring: 0 0 0 .2rem #7e2340;
+  --flex-layout-max: var(--portfolio-content-max);
+}
+
+/* Fluid Typography + Build Story own color tokens on body selectors. */
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.fluid-typography-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.trading-dashboard-page {
+  --color-canvas: #151014;
+  --color-surface: #21181f;
+  --color-surface-elevated: #2d2128;
+  --color-border: #9d8054;
+  --color-text-primary: #f0e5cc;
+  --color-text-secondary: #dbc9aa;
+  --color-text-muted: #bba98f;
+  --color-accent: #d6b36a;
+  --color-accent-hover: #f0cf84;
+  --color-accent-secondary: #d6435e;
+  --color-on-accent: #181116;
+  --color-accent-soft: rgb(214 179 106 / .12);
+  --color-accent-soft-strong: rgb(214 179 106 / .22);
+  --color-accent-glow: rgb(214 179 106 / .20);
+  --color-cyan-glow: rgb(155 52 77 / .16);
+  --color-code: #100b0f;
+  --color-shadow: rgb(0 0 0 / .62);
+  --color-success: #91b66b;
+  --font-sans: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-mono: "Courier New", Courier, monospace;
+  --radius-sm: .08rem;
+  --radius-md: .12rem;
+  --radius-lg: .18rem;
+  --radius-pill: .12rem;
+  --layout-max: var(--portfolio-content-max);
+  --shadow-card: .38rem .44rem 0 rgb(0 0 0 / .48);
+}
+
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] body.fluid-typography-page,
+html[data-style-theme="gothic-stickerboard"][data-theme="light"] body.trading-dashboard-page {
+  --color-canvas: #eee4cf;
+  --color-surface: #fff8e8;
+  --color-surface-elevated: #e3d2b5;
+  --color-border: #705b42;
+  --color-text-primary: #281c24;
+  --color-text-secondary: #46323c;
+  --color-text-muted: #68564f;
+  --color-accent: #7a5723;
+  --color-accent-hover: #5e4018;
+  --color-accent-secondary: #a12645;
+  --color-on-accent: #fff8e8;
+  --color-accent-soft: rgb(122 87 35 / .10);
+  --color-accent-soft-strong: rgb(122 87 35 / .18);
+  --color-accent-glow: rgb(122 87 35 / .16);
+  --color-cyan-glow: rgb(161 38 69 / .12);
+  --color-code: #24191f;
+  --color-shadow: rgb(56 38 31 / .24);
+  --color-success: #4b702e;
+  --font-sans: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-mono: "Courier New", Courier, monospace;
+  --radius-sm: .08rem;
+  --radius-md: .12rem;
+  --radius-lg: .18rem;
+  --radius-pill: .12rem;
+  --layout-max: var(--portfolio-content-max);
+  --shadow-card: .35rem .4rem 0 rgb(56 38 31 / .22);
+}
+
+/* Demo-token coverage: each lesson remains materially owned by Gothic Stickerboard. */
+html[data-style-theme="gothic-stickerboard"] body.flexbox-interfaces-page,
+html[data-style-theme="gothic-stickerboard"] body.scroll-driven-timelines-starting-style-transitions-page,
+html[data-style-theme="gothic-stickerboard"] body.pure-css-reading-progress-view-timeline-content-reveals-page {
+  --commerce-shell-bg: var(--color-canvas); --commerce-shell-border: var(--color-border); --commerce-shell-shadow: var(--color-shadow);
+  --commerce-header-bg: var(--color-surface); --commerce-card-bg: var(--color-surface); --commerce-card-border: var(--color-border);
+  --commerce-text: var(--color-text-primary); --commerce-muted: var(--color-text-muted); --commerce-heading: var(--color-text-primary);
+  --commerce-accent: var(--color-accent); --commerce-accent-hover: var(--color-accent-hover); --commerce-on-accent: var(--color-on-accent);
+  --commerce-field-bg: var(--color-surface-elevated); --commerce-field-border: var(--color-border); --commerce-focus: var(--color-focus);
+  --commerce-success: var(--color-success); --commerce-link: var(--color-accent-secondary); --commerce-rule: var(--color-border);
+}
+
+html[data-style-theme="gothic-stickerboard"] body.logical-properties-flexbox-page .app-layout {
+  --settings-color-page: var(--color-canvas); --settings-color-card: var(--color-surface); --settings-color-profile: var(--color-surface-elevated);
+  --settings-color-border: var(--color-border); --settings-color-text: var(--color-text-primary); --settings-color-muted: var(--color-text-muted);
+  --settings-color-accent: var(--color-accent); --settings-color-accent-strong: var(--color-accent-secondary); --settings-color-on-accent: var(--color-on-accent);
+  --settings-color-focus: var(--color-focus); --settings-color-shadow: var(--color-shadow); --settings-radius-sm: .08rem; --settings-radius-md: .12rem; --settings-radius-lg: .18rem;
+}
+
+html[data-style-theme="gothic-stickerboard"] body.responsive-grid-page .gallery-wrapper {
+  --gallery-canvas: var(--color-canvas); --gallery-surface: var(--color-surface); --gallery-border: var(--color-border);
+  --gallery-text: var(--color-text-primary); --gallery-muted: var(--color-text-muted); --gallery-accent: var(--color-accent-secondary);
+  --gallery-tag: var(--color-accent); --gallery-visual-bg: var(--color-surface-elevated); --gallery-shadow: var(--color-shadow);
+}
+
+html[data-style-theme="gothic-stickerboard"] body.asymmetric-dashboard-grid-page .dashboard-demo {
+  --dashboard-canvas: var(--color-canvas); --dashboard-surface: var(--color-surface); --dashboard-surface-strong: var(--color-surface-elevated);
+  --dashboard-border: var(--color-border); --dashboard-text: var(--color-text-primary); --dashboard-muted: var(--color-text-muted);
+  --dashboard-accent: var(--color-accent); --dashboard-success: var(--color-success); --dashboard-warning: var(--color-attention);
+  --dashboard-danger: var(--color-accent-secondary); --dashboard-radius: .1rem; --dashboard-shadow: var(--color-shadow);
+}
+
+html[data-style-theme="gothic-stickerboard"] body.native-nesting-cascade-layers-page .booking-demo {
+  --booking-demo-bg: var(--color-canvas); --booking-demo-surface: var(--color-surface); --booking-demo-border: var(--color-border);
+  --booking-demo-text: var(--color-text-primary); --booking-demo-muted: var(--color-text-muted); --booking-card-bg: var(--color-surface-elevated);
+  --booking-card-border: var(--color-border); --booking-card-heading: var(--color-text-primary); --booking-card-accent: var(--color-accent);
+  --booking-action-base: var(--color-accent-secondary); --booking-action-text: #fff8e8; --booking-connector: var(--color-border);
+}
+
+html[data-style-theme="gothic-stickerboard"] body.multi-theme-scoped-component-systems-page .multi-theme-demo {
+  --multi-theme-demo-bg: var(--color-canvas); --multi-theme-demo-border: var(--color-border); --multi-theme-demo-shadow: var(--color-shadow); --multi-theme-demo-text: var(--color-text-primary);
+  --card-shell-bg: var(--color-surface); --card-bg: var(--color-surface-elevated); --card-border: var(--color-border); --card-text: var(--color-text-primary);
+  --card-muted: var(--color-text-muted); --card-accent: var(--color-accent); --card-accent-hover: var(--color-accent-hover); --card-on-accent: var(--color-on-accent);
+}
+
+html[data-style-theme="gothic-stickerboard"] body.container-relative-styling-parent-checking-selectors-page .notification-workspace {
+  --notification-stage-bg: var(--color-canvas); --notification-stage-panel: var(--color-surface); --notification-stage-panel-strong: var(--color-surface-elevated);
+  --notification-stage-border: var(--color-border); --notification-text: var(--color-text-primary); --notification-muted: var(--color-text-muted);
+  --notification-accent: var(--color-accent-secondary); --notification-accent-soft: var(--color-accent-soft); --notification-focus: var(--color-focus); --notification-shadow: var(--color-shadow);
+}
+
+html[data-style-theme="gothic-stickerboard"] body.adaptive-card-widgets-container-queries-state-toggles-page .workspace-grid {
+  --adaptive-demo-bg: var(--color-canvas); --adaptive-demo-panel: var(--color-surface); --adaptive-demo-panel-strong: var(--color-surface-elevated);
+  --adaptive-demo-text: var(--color-text-primary); --adaptive-demo-muted: var(--color-text-muted); --adaptive-demo-shadow: var(--color-shadow);
+  --adaptive-demo-card: var(--color-surface-elevated); --adaptive-demo-card-border: var(--color-border); --adaptive-demo-card-text: var(--color-text-primary);
+  --adaptive-demo-card-muted: var(--color-text-muted); --adaptive-demo-card-accent: var(--color-accent-secondary); --adaptive-demo-card-accent-contrast: #fff8e8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-style-theme="gothic-stickerboard"] *,
+  html[data-style-theme="gothic-stickerboard"] *::before,
+  html[data-style-theme="gothic-stickerboard"] *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

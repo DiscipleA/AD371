@@ -1,0 +1,74 @@
+{
+  "target": "http://127.0.0.1:8771/",
+  "captured_at": "2026-10-23T07:09:04.505469+00:00",
+  "scope": "Real isolated Firefox local presentation and validation smoke. No backend requests, no fixture success data, no account mutations.",
+  "checks": [
+    {
+      "name": "Firefox loads seven-section configured showcase and enabled controls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Empty credentials rejected in real Firefox",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All Firefox theme/mode/viewport layout combinations",
+      "passed": true,
+      "detail": {
+        "combinations": 56,
+        "themes": [
+          "standard",
+          "playful-pop",
+          "raggedy-granite",
+          "glossy-marble",
+          "luminous-midnight",
+          "gothic-stickerboard",
+          "baroque-plexiglas"
+        ],
+        "viewports": [
+          [
+            1920,
+            1080
+          ],
+          [
+            768,
+            1024
+          ],
+          [
+            390,
+            844
+          ],
+          [
+            320,
+            900
+          ]
+        ],
+        "note": "Overflow/sheet assertions and sampled screenshots; not accessibility certification"
+      }
+    },
+    {
+      "name": "Firefox completion",
+      "passed": false,
+      "detail": ""
+    }
+  ],
+  "browser": {
+    "engine": "Firefox / Gecko",
+    "version": "158.0.1",
+    "driver": "geckodriver 0.37.1",
+    "binary": "/snap/firefox/current/usr/lib/firefox/firefox",
+    "profile": "isolated temporary scratch profile"
+  },
+  "passed": 3,
+  "failed": 1,
+  "source_hashes": {
+    "index.html": "0a5e8a3824e450a02dcf11e9b0cd7a89bdc707e87d778eeeaf01881c637973e2",
+    "scripts/auth-client.mjs": "8c275d9391dee1d7ae3c61013ee78811e8d3cb57f831c5ede66a5294c461cdf9",
+    "scripts/showcase.js": "5dfe84f3d6e3094faff8ba23e3292187b1da0a06b1d7f72ad55556c448d0c940",
+    "scripts/serve.py": "012d8f7d38543638b697fa82467f5b44fb09a1c981c2e03efda72ed6ada4a447",
+    "config.js": "e671e1179ba13220b3f27bfcf10ea72dc6b2c0f50a389b6821af2e8834aedd12",
+    "styles/auth-rbac-showcase.css": "36b58ee27fd2a10dbf9929031d80cf126121ed3ebb6a3e18cfa3044847a5064c"
+  }
+}

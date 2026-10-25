@@ -1,0 +1,120 @@
+{
+  "scope": "Real hosted unauthenticated API/permissions/input requests. No passwords, login sessions, or successful registrations written.",
+  "captured_at": "2026-10-23T07:21:33.790077+00:00",
+  "backend": "https://ggewxlydkxjutjiqnkhr.supabase.co",
+  "functionVersion": 2,
+  "checks": [
+    {
+      "name": "public signed out",
+      "method": "GET",
+      "path": "/functions/v1/gatekeeper?resource=public",
+      "http": 200,
+      "body": "{\"resource\":\"public\",\"message\":\"Public resource is available without authentication.\"}",
+      "cacheControl": "no-store",
+      "cors": "http://127.0.0.1:8771",
+      "passed": true
+    },
+    {
+      "name": "User signed out",
+      "method": "GET",
+      "path": "/functions/v1/gatekeeper?resource=user",
+      "http": 401,
+      "body": "{\"error\":\"Authentication required.\"}",
+      "cacheControl": "no-store",
+      "cors": "http://127.0.0.1:8771",
+      "passed": true
+    },
+    {
+      "name": "Admin signed out",
+      "method": "GET",
+      "path": "/functions/v1/gatekeeper?resource=admin",
+      "http": 401,
+      "body": "{\"error\":\"Authentication required.\"}",
+      "cacheControl": "no-store",
+      "cors": "http://127.0.0.1:8771",
+      "passed": true
+    },
+    {
+      "name": "invalid resource",
+      "method": "GET",
+      "path": "/functions/v1/gatekeeper?resource=invalid",
+      "http": 400,
+      "body": "{\"error\":\"Invalid request.\"}",
+      "cacheControl": "no-store",
+      "cors": "http://127.0.0.1:8771",
+      "passed": true
+    },
+    {
+      "name": "forbidden origin",
+      "method": "GET",
+      "path": "/functions/v1/gatekeeper?resource=public",
+      "http": 403,
+      "body": "{\"error\":\"Access denied.\"}",
+      "cacheControl": "no-store",
+      "cors": null,
+      "passed": true
+    },
+    {
+      "name": "unsupported method",
+      "method": "POST",
+      "path": "/functions/v1/gatekeeper?resource=public",
+      "http": 405,
+      "body": "{\"error\":\"Method not allowed.\"}",
+      "cacheControl": "no-store",
+      "cors": "http://127.0.0.1:8771",
+      "passed": true
+    },
+    {
+      "name": "approved CORS preflight",
+      "method": "OPTIONS",
+      "path": "/functions/v1/gatekeeper?resource=user",
+      "http": 204,
+      "body": "",
+      "cacheControl": "no-store",
+      "cors": "http://127.0.0.1:8771",
+      "passed": true
+    },
+    {
+      "name": "anonymous direct RPC cannot execute",
+      "method": "POST",
+      "path": "/rest/v1/rpc/gatekeeper_resource",
+      "http": 401,
+      "body": "{\"code\":\"42501\",\"details\":null,\"hint\":null,\"message\":\"permission denied for function gatekeeper_resource\"}",
+      "cacheControl": null,
+      "cors": null,
+      "passed": true
+    },
+    {
+      "name": "private schema not exposed",
+      "method": "GET",
+      "path": "/rest/v1/user_roles",
+      "http": 406,
+      "body": "{\"code\":\"PGRST106\",\"details\":null,\"hint\":\"Only the following schemas are exposed: public, graphql_public\",\"message\":\"Invalid schema: gatekeeper_private\"}",
+      "cacheControl": null,
+      "cors": null,
+      "passed": true
+    },
+    {
+      "name": "server rejects empty login",
+      "method": "POST",
+      "path": "/auth/v1/token?grant_type=password",
+      "http": 400,
+      "body": "{\"code\":400,\"error_code\":\"validation_failed\",\"msg\":\"missing email or phone\"}",
+      "cacheControl": null,
+      "cors": null,
+      "passed": true
+    },
+    {
+      "name": "server rejects empty registration",
+      "method": "POST",
+      "path": "/auth/v1/signup",
+      "http": 422,
+      "body": "{\"code\":422,\"error_code\":\"anonymous_provider_disabled\",\"msg\":\"Anonymous sign-ins are disabled\"}",
+      "cacheControl": null,
+      "cors": null,
+      "passed": true
+    }
+  ],
+  "passed": 11,
+  "failed": 0
+}

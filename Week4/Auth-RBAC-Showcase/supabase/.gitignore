@@ -1,0 +1,8 @@
+# Keep local state and credentials out of future publication.
+.env
+.env.*
+!.env.example
+functions/.env
+functions/.env.*
+.temp/
+.branches/

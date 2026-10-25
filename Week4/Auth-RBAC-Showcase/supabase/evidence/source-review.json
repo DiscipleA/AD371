@@ -1,0 +1,95 @@
+{
+  "method": "Direct HTTPS primary-source GET; extraction backend failed; no credentials sent.",
+  "sources": [
+    {
+      "url": "https://supabase.com/docs/guides/auth/sessions",
+      "http_status": 200,
+      "matches": {
+        "session_id": true,
+        "not proactively": true,
+        "signed out": true
+      },
+      "excerpts": [
+        "her device. Access token (JWT) claims # Every access token contains a session_id claim, a UUID, uniquely identifying"
+      ]
+    },
+    {
+      "url": "https://supabase.com/docs/guides/functions/secrets",
+      "http_status": 200,
+      "matches": {
+        "SUPABASE_PUBLISHABLE_KEYS": true,
+        "SUPABASE_ANON_KEY": true,
+        "SUPABASE_": true
+      },
+      "excerpts": [
+        "mport { createClient } from ' npm:@supabase/supabase-js@2 ' 2 3 const SUPABASE_PUBLISHABLE_KEYS = JSON . parse ( Deno"
+      ]
+    },
+    {
+      "url": "https://supabase.com/docs/guides/functions/auth-headers",
+      "http_status": 200,
+      "matches": {
+        "verify_jwt": true
+      },
+      "excerpts": [
+        "uthorization headers How the Authorization and apikey headers and the verify_jwt platform check work Every request to an"
+      ]
+    },
+    {
+      "url": "https://supabase.com/docs/guides/database/functions",
+      "http_status": 200,
+      "matches": {
+        "security definer": true,
+        "search_path": true,
+        "revoke": true
+      },
+      "excerpts": [
+        "1 select * from add_planet( ' Jakku ' ); Secure a database function # Security definer vs invoker"
+      ]
+    },
+    {
+      "url": "https://supabase.com/docs/reference/javascript/auth-getuser",
+      "http_status": 200,
+      "matches": {
+        "network": true,
+        "authentic": true
+      },
+      "excerpts": [
+        "ementation. global.headers \u2014 Any additional headers to send with each network request. Details Creating a client With a"
+      ]
+    },
+    {
+      "url": "https://supabase.com/docs/reference/cli/supabase-db-diff",
+      "http_status": 200,
+      "matches": {
+        "dry-run": true,
+        "shadow": true
+      },
+      "excerpts": [
+        "ly running the migration, use the migration repair command. Use the --dry-run flag to view the list of"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/supabase/auth-js/master/src/GoTrueClient.ts",
+      "http_status": 200,
+      "matches": {
+        "/user": true,
+        "GET": true
+      },
+      "excerpts": [
+        "try { if (jwt) { return await _request(this.fetch, 'GET', `${this.url}/user`, { headers: this.headers, jwt: jwt, xform: _userResponse, })"
+      ]
+    },
+    {
+      "url": "https://supabase.com/docs/guides/auth/password-security",
+      "http_status": 200,
+      "matches": {
+        "bcrypt": true,
+        "salt": true
+      },
+      "excerpts": [
+        "ntly asked questions # How are passwords stored? # Supabase Auth uses bcrypt , a strong password hashing"
+      ]
+    }
+  ]
+}

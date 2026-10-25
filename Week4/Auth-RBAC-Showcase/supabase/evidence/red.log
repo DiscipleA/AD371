@@ -1,0 +1,500 @@
+TAP version 13
+# Subtest: public needs no JWT or upstream calls and has security headers
+not ok 1 - public needs no JWT or upstream calls and has security headers
+  ---
+  duration_ms: 6.604665
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:33:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: User 200 uses Auth then same bearer-scoped RPC, never Auth metadata role
+not ok 2 - User 200 uses Auth then same bearer-scoped RPC, never Auth metadata role
+  ---
+  duration_ms: 94.328842
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:40:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: Admin 200 comes from private-role RPC only
+not ok 3 - Admin 200 comes from private-role RPC only
+  ---
+  duration_ms: 1.74531
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:47:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: missing and malformed bearer fail 401 before external calls
+not ok 4 - missing and malformed bearer fail 401 before external calls
+  ---
+  duration_ms: 1.027726
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:51:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: forged compact JWT rejected by Auth before RPC
+not ok 5 - forged compact JWT rejected by Auth before RPC
+  ---
+  duration_ms: 1.467222
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:57:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: User requesting admin gets 403; metadata and header spoof cannot elevate
+not ok 6 - User requesting admin gets 403; metadata and header spoof cannot elevate
+  ---
+  duration_ms: 1.487234
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:61:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: stale/revoked session from independent RPC check maps 401
+not ok 7 - stale/revoked session from independent RPC check maps 401
+  ---
+  duration_ms: 2.936632
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:66:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: strict resource query rejects duplicates, unknown keys, tokens and role injection
+not ok 8 - strict resource query rejects duplicates, unknown keys, tokens and role injection
+  ---
+  duration_ms: 1.144663
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:70:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: non-GET methods fail 405 and declare Allow
+not ok 9 - non-GET methods fail 405 and declare Allow
+  ---
+  duration_ms: 1.851654
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:75:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: exact CORS allowlist denies null, suffix and arbitrary origins without echo
+not ok 10 - exact CORS allowlist denies null, suffix and arbitrary origins without echo
+  ---
+  duration_ms: 1.964546
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:78:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: preflight permits only configured origin GET and known headers
+not ok 11 - preflight permits only configured origin GET and known headers
+  ---
+  duration_ms: 1.593785
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:84:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: invalid environment fails closed without upstream traffic
+not ok 12 - invalid environment fails closed without upstream traffic
+  ---
+  duration_ms: 1.545805
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:92:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: localhost CLI URLs and fallback anon key are accepted
+not ok 13 - localhost CLI URLs and fallback anon key are accepted
+  ---
+  duration_ms: 2.404364
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:97:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: Auth unavailable/network errors and malformed identity fail closed
+not ok 14 - Auth unavailable/network errors and malformed identity fail closed
+  ---
+  duration_ms: 4.877499
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:101:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: RPC unavailable and malformed envelopes never expose upstream payload
+not ok 15 - RPC unavailable and malformed envelopes never expose upstream payload
+  ---
+  duration_ms: 2.071488
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:106:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: response allowlist removes password/hash/token/metadata fields at every layer
+not ok 16 - response allowlist removes password/hash/token/metadata fields at every layer
+  ---
+  duration_ms: 1.643518
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:111:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: Auth fetch has timeout and aborts rather than hanging
+not ok 17 - Auth fetch has timeout and aborts rather than hanging
+  ---
+  duration_ms: 1.271308
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:115:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: RPC body consumption also times out
+not ok 18 - RPC body consumption also times out
+  ---
+  duration_ms: 2.351816
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:119:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/functions/_shared/gatekeeper.mjs' imported from /home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: private roles are owner-managed, RLS-enabled and hidden from API roles
+not ok 19 - private roles are owner-managed, RLS-enabled and hidden from API roles
+  ---
+  duration_ms: 18.401475
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:10:1'
+  failureType: 'testCodeFailure'
+  error: "ENOENT: no such file or directory, open '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/migrations/202610230001_gatekeeper.sql'"
+  code: 'ENOENT'
+  stack: |-
+    async open (node:internal/fs/promises:639:25)
+    async readFile (node:internal/fs/promises:1252:14)
+    async TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:11:13)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: definer uses empty search_path and authenticated-only execute
+not ok 20 - definer uses empty search_path and authenticated-only execute
+  ---
+  duration_ms: 6.221299
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:21:1'
+  failureType: 'testCodeFailure'
+  error: "ENOENT: no such file or directory, open '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/migrations/202610230001_gatekeeper.sql'"
+  code: 'ENOENT'
+  stack: |-
+    async open (node:internal/fs/promises:639:25)
+    async readFile (node:internal/fs/promises:1252:14)
+    async TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:22:13)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: SQL independently checks identity, valid session UUID and session ownership before protected reads
+not ok 21 - SQL independently checks identity, valid session UUID and session ownership before protected reads
+  ---
+  duration_ms: 20.889223
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:29:1'
+  failureType: 'testCodeFailure'
+  error: "ENOENT: no such file or directory, open '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/migrations/202610230001_gatekeeper.sql'"
+  code: 'ENOENT'
+  stack: |-
+    async open (node:internal/fs/promises:639:25)
+    async readFile (node:internal/fs/promises:1252:14)
+    async TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:30:13)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: resource authorization is default User and private role only; own-user query is scoped
+not ok 22 - resource authorization is default User and private role only; own-user query is scoped
+  ---
+  duration_ms: 7.876647
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:38:1'
+  failureType: 'testCodeFailure'
+  error: "ENOENT: no such file or directory, open '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/migrations/202610230001_gatekeeper.sql'"
+  code: 'ENOENT'
+  stack: |-
+    async open (node:internal/fs/promises:639:25)
+    async readFile (node:internal/fs/promises:1252:14)
+    async TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:39:13)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: admin promotion is guarded, SQL-only, not in automatic migrations
+not ok 23 - admin promotion is guarded, SQL-only, not in automatic migrations
+  ---
+  duration_ms: 3.584308
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:47:1'
+  failureType: 'testCodeFailure'
+  error: "ENOENT: no such file or directory, open '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/admin/promote-admin.sql'"
+  code: 'ENOENT'
+  stack: |-
+    async open (node:internal/fs/promises:639:25)
+    async readFile (node:internal/fs/promises:1252:14)
+    async TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:48:16)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: edge bootstrap is thin, imports real shared handler and default timeout is eight seconds
+not ok 24 - edge bootstrap is thin, imports real shared handler and default timeout is eight seconds
+  ---
+  duration_ms: 2.684662
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:54:1'
+  failureType: 'testCodeFailure'
+  error: "ENOENT: no such file or directory, open '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/config.toml'"
+  code: 'ENOENT'
+  stack: |-
+    async open (node:internal/fs/promises:639:25)
+    async readFile (node:internal/fs/promises:1252:14)
+    async TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:55:16)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: setup documents live revocation limits, owner boundary and mock evidence scope
+not ok 25 - setup documents live revocation limits, owner boundary and mock evidence scope
+  ---
+  duration_ms: 6.474661
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:60:1'
+  failureType: 'testCodeFailure'
+  error: "ENOENT: no such file or directory, open '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/supabase/README.md'"
+  code: 'ENOENT'
+  stack: |-
+    async open (node:internal/fs/promises:639:25)
+    async readFile (node:internal/fs/promises:1252:14)
+    async TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:61:16)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..25
+# tests 25
+# suites 0
+# pass 0
+# fail 25
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 343.572875

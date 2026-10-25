@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="slab" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8faf9"/>
+      <stop offset="0.45" stop-color="#b9c8c8"/>
+      <stop offset="1" stop-color="#26343e"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#ffffff" stop-opacity=".85"/>
+      <stop offset=".45" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="54" height="54" rx="14" fill="url(#slab)" stroke="#72c9c0" stroke-width="2"/>
+  <path d="M10 45c9-14 15-6 23-20 6-10 12-9 21-15M8 26c12 5 18 2 25-7 6-7 12-5 22-11" fill="none" stroke="#6f8896" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+  <path d="M17 52c8-10 13-8 20-16 7-8 10-4 18-9" fill="none" stroke="#c9a46b" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M18 14h28" stroke="url(#gloss)" stroke-width="8" stroke-linecap="round"/>
+  <text x="32" y="41" text-anchor="middle" font-family="Georgia,serif" font-size="25" font-weight="700" fill="#101820">GM</text>
+</svg>

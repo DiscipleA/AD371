@@ -1,0 +1,418 @@
+TAP version 13
+# Subtest: public needs no JWT or upstream calls and has security headers
+ok 1 - public needs no JWT or upstream calls and has security headers
+  ---
+  duration_ms: 76.541616
+  type: 'test'
+  ...
+# Subtest: User 200 uses Auth then same bearer-scoped RPC, never Auth metadata role
+ok 2 - User 200 uses Auth then same bearer-scoped RPC, never Auth metadata role
+  ---
+  duration_ms: 12.545471
+  type: 'test'
+  ...
+# Subtest: Admin 200 comes from private-role RPC only
+ok 3 - Admin 200 comes from private-role RPC only
+  ---
+  duration_ms: 4.497914
+  type: 'test'
+  ...
+# Subtest: missing and malformed bearer fail 401 before external calls
+ok 4 - missing and malformed bearer fail 401 before external calls
+  ---
+  duration_ms: 5.810152
+  type: 'test'
+  ...
+# Subtest: forged compact JWT rejected by Auth before RPC
+ok 5 - forged compact JWT rejected by Auth before RPC
+  ---
+  duration_ms: 2.938828
+  type: 'test'
+  ...
+# Subtest: User requesting admin gets 403; metadata and header spoof cannot elevate
+ok 6 - User requesting admin gets 403; metadata and header spoof cannot elevate
+  ---
+  duration_ms: 6.141745
+  type: 'test'
+  ...
+# Subtest: stale/revoked session from independent RPC check maps 401
+ok 7 - stale/revoked session from independent RPC check maps 401
+  ---
+  duration_ms: 8.548024
+  type: 'test'
+  ...
+# Subtest: strict resource query rejects duplicates, unknown keys, tokens and role injection
+ok 8 - strict resource query rejects duplicates, unknown keys, tokens and role injection
+  ---
+  duration_ms: 15.4372
+  type: 'test'
+  ...
+# Subtest: non-GET methods fail 405 and declare Allow
+ok 9 - non-GET methods fail 405 and declare Allow
+  ---
+  duration_ms: 2.347104
+  type: 'test'
+  ...
+# Subtest: exact CORS allowlist denies null, suffix and arbitrary origins without echo
+ok 10 - exact CORS allowlist denies null, suffix and arbitrary origins without echo
+  ---
+  duration_ms: 3.214199
+  type: 'test'
+  ...
+# Subtest: preflight permits only configured origin GET and known headers
+ok 11 - preflight permits only configured origin GET and known headers
+  ---
+  duration_ms: 4.103773
+  type: 'test'
+  ...
+# Subtest: invalid environment fails closed without upstream traffic
+ok 12 - invalid environment fails closed without upstream traffic
+  ---
+  duration_ms: 3.474157
+  type: 'test'
+  ...
+# Subtest: localhost CLI URLs and fallback anon key are accepted
+ok 13 - localhost CLI URLs and fallback anon key are accepted
+  ---
+  duration_ms: 1.258125
+  type: 'test'
+  ...
+# Subtest: Auth unavailable/network errors and malformed identity fail closed
+ok 14 - Auth unavailable/network errors and malformed identity fail closed
+  ---
+  duration_ms: 5.306483
+  type: 'test'
+  ...
+# Subtest: RPC unavailable and malformed envelopes never expose upstream payload
+ok 15 - RPC unavailable and malformed envelopes never expose upstream payload
+  ---
+  duration_ms: 9.969226
+  type: 'test'
+  ...
+# Subtest: response allowlist removes password/hash/token/metadata fields at every layer
+ok 16 - response allowlist removes password/hash/token/metadata fields at every layer
+  ---
+  duration_ms: 1.668522
+  type: 'test'
+  ...
+# Subtest: legacy service-role or malformed key cannot be accepted as anon environment credential
+not ok 17 - legacy service-role or malformed key cannot be accepted as anon environment credential
+  ---
+  duration_ms: 3.244843
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:115:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    200 !== 503
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 503
+  actual: 200
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/backend.test.mjs:119:12)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: Admin success cannot be paired with User role even when resource matches
+ok 18 - Admin success cannot be paired with User role even when resource matches
+  ---
+  duration_ms: 1.407308
+  type: 'test'
+  ...
+# Subtest: RPC email mismatch fails closed instead of returning a different identity
+ok 19 - RPC email mismatch fails closed instead of returning a different identity
+  ---
+  duration_ms: 1.464766
+  type: 'test'
+  ...
+# Subtest: Auth fetch has timeout and aborts rather than hanging
+ok 20 - Auth fetch has timeout and aborts rather than hanging
+  ---
+  duration_ms: 28.305989
+  type: 'test'
+  ...
+# Subtest: RPC body consumption also times out
+ok 21 - RPC body consumption also times out
+  ---
+  duration_ms: 17.475225
+  type: 'test'
+  ...
+# Subtest: private roles are owner-managed, RLS-enabled and hidden from API roles
+ok 22 - private roles are owner-managed, RLS-enabled and hidden from API roles
+  ---
+  duration_ms: 18.40152
+  type: 'test'
+  ...
+# Subtest: definer uses empty search_path and authenticated-only execute
+ok 23 - definer uses empty search_path and authenticated-only execute
+  ---
+  duration_ms: 3.666044
+  type: 'test'
+  ...
+# Subtest: SQL independently checks identity, valid session UUID and session ownership before protected reads
+ok 24 - SQL independently checks identity, valid session UUID and session ownership before protected reads
+  ---
+  duration_ms: 6.32135
+  type: 'test'
+  ...
+# Subtest: resource authorization is default User and private role only; own-user query is scoped
+ok 25 - resource authorization is default User and private role only; own-user query is scoped
+  ---
+  duration_ms: 7.023902
+  type: 'test'
+  ...
+# Subtest: admin promotion is guarded, SQL-only, not in automatic migrations
+ok 26 - admin promotion is guarded, SQL-only, not in automatic migrations
+  ---
+  duration_ms: 4.025659
+  type: 'test'
+  ...
+# Subtest: edge bootstrap is thin, imports real shared handler and default timeout is eight seconds
+ok 27 - edge bootstrap is thin, imports real shared handler and default timeout is eight seconds
+  ---
+  duration_ms: 4.788614
+  type: 'test'
+  ...
+# Subtest: service_role default grants are explicitly revoked, not inherited
+not ok 28 - service_role default grants are explicitly revoked, not inherited
+  ---
+  duration_ms: 9.33418
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:60:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /revoke all on schema gatekeeper_private from public, anon, authenticated, service_role/i. Input:
+    
+    '-- AUDIT BEFORE EXECUTION. Not executed by the local Node test suite.\n' +
+      '-- Run only on an explicitly approved Supabase project as its trusted postgres owner.\n' +
+      'begin;\n' +
+      '\n' +
+      'create schema gatekeeper_private;\n' +
+      'revoke all on schema gatekeeper_private from public, anon, authenticated;\n' +
+      'alter default privileges in schema gatekeeper_private revoke all on tables from public, anon, authenticated;\n' +
+      'alter default privileges in schema gatekeeper_private revoke execute on functions from public, anon, authenticated;\n' +
+      '\n' +
+      'create table gatekeeper_private.user_roles (\n' +
+      '  id uuid primary key references auth.users(id) on delete cascade,\n' +
+      "  role text not null check (role in ('User', 'Admin'))\n" +
+      ');\n' +
+      'alter table gatekeeper_private.user_roles enable row level security;\n' +
+      '-- No API policies. The trusted function owner is deliberately the sole reader.\n' +
+      '\n' +
+      'create table gatekeeper_private.admin_briefing (\n' +
+      '  singleton boolean primary key default true check (singleton),\n' +
+      '  briefing text not null check (pg_catalog.length(briefing) between 1 and 1000)\n' +
+      ');\n' +
+      'alter table gatekeeper_private.admin_briefing enable row level security;\n' +
+      'insert into gatekeeper_private.admin_briefing (singleton, briefing) values\n' +
+      "  (true, 'Protected operational briefing: review access grants regularly and verify logout revocation before release.');\n" +
+      'revoke all on all tables in schema gatekeeper_private from public, anon, authenticated;\n' +
+      '\n' +
+      'create function public.gatekeeper_resource(p_resource text)\n' +
+      'returns jsonb\n' +
+      'language plpgsql\n' +
+      'security definer\n' +
+      "set search_path = ''\n" +
+      'as $gatekeeper$\n' +
+      'declare\n' +
+      '  v_uid uuid;\n' +
+      '  v_session_text text;\n' +
+      '  v_session_id uuid;\n' +
+      '  v_role text;\n' +
+      '  v_email text;\n' +
+      '  v_data jsonb;\n' +
+      '  v_briefing text;\n' +
+      'begin\n' +
+      "  if p_resource is null or p_resource not in ('user', 'admin') then\n" +
+      "    return pg_catalog.jsonb_build_object('status', 400, 'body', pg_catalog.jsonb_build_object('error', 'Invalid request.'));\n" +
+      '  end if;\n' +
+      '\n' +
+      '  -- PostgREST validates the JWT; do not accept caller-supplied UUID or role parameters.\n' +
+      '  v_uid := auth.uid();\n' +
+      "  v_session_text := auth.jwt() ->> 'session_id';\n" +
+      '  if v_uid is null or v_session_text is null or\n' +
+      "     v_session_text !~* '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$' then\n" +
+      "    return pg_catalog.jsonb_build_object('status', 401, 'body', pg_catalog.jsonb_build_object('error', 'Authentication required.'));\n" +
+      '  end if;\n' +
+      '  v_session_id := v_session_text::uuid;\n' +
+      '  if not exists (\n' +
+      '    select 1 from auth.sessions as s\n' +
+      '    where s.id = v_session_id and s.user_id = v_uid\n' +
+      '  ) then\n' +
+      "    return pg_catalog.jsonb_build_object('status', 401, 'body', pg_catalog.jsonb_build_object('error', 'Authentication required.'));\n" +
+      '  end if;\n' +
+      '\n' +
+      '  -- Absence is an ordinary User. No JWT/app/user metadata is a role authority.\n' +
+      "  v_role := coalesce((select r.role from gatekeeper_private.user_roles as r where r.id = v_uid), 'User');\n" +
+      "  if p_resource = 'admin' and v_role <> 'Admin' then\n" +
+      "    return pg_catalog.jsonb_build_object('status', 403, 'body', pg_catalog.jsonb_build_object('error', 'Access denied.'));\n" +
+      '  end if;\n' +
+      '  select u.email into v_email from auth.users as u where u.id = v_uid;\n' +
+      '  if v_email is null then\n' +
+      "    return pg_catalog.jsonb_build_object('status', 401, 'body', pg_catalog.jsonb_build_object('error', 'Authentication required.'));\n" +
+      '  end if;\n' +
+      '\n' +
+      "  if p_resource = 'admin' then\n" +
+      '    select b.briefing into v_briefing from gatekeeper_private.admin_briefing as b where b.singleton = true;\n' +
+      '    if v_briefing is null then\n' +
+      "      raise exception 'Gatekeeper protected resource unavailable';\n" +
+      '    end if;\n' +
+      "    v_data := pg_catalog.jsonb_build_object('briefing', v_briefing);\n" +
+      '  else\n' +
+      "    v_data := pg_catalog.jsonb_build_object('scope', 'own-account');\n" +
+      '  end if;\n' +
+      '\n' +
+      '  return pg_catalog.jsonb_build_object(\n' +
+      "    'status', 200,\n" +
+      "    'body', pg_catalog.jsonb_build_object(\n" +
+      "      'resource', p_resource,\n" +
+      "      'message', case when p_resource = 'admin' then 'Admin resource authorized.' else 'User resource authorized.' end,\n" +
+      "      'user', pg_catalog.jsonb_build_object('id', v_uid, 'email', v_email, 'role', v_role),\n" +
+      "      'data', v_data\n" +
+      '    )\n' +
+      '  );\n' +
+      'end;\n' +
+      '$gatekeeper$;\n' +
+      '\n' +
+      '-- postgres can read auth.sessions/auth.users and owns only this narrow callable API.\n' +
+      '-- This is an explicit privileged-owner trust boundary, not a claim that postgres\n' +
+      '-- itself is least-privileged. Re-audit owner grants after every project upgrade.\n' +
+      'alter function public.gatekeeper_resource(text) owner to postgres;\n' +
+      'revoke all on function public.gatekeeper_resource(text) from public, anon, authenticated;\n' +
+      'grant execute on function public.gatekeeper_resource(text) to authenticated;\n' +
+      'comment on function public.gatekeeper_resource(text) is\n' +
+      "  'Caller-scoped resource gate; checks live session ownership and private role; no metadata grants.';\n" +
+      '\n' +
+      'commit;\n'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    -- AUDIT BEFORE EXECUTION. Not executed by the local Node test suite.
+    -- Run only on an explicitly approved Supabase project as its trusted postgres owner.
+    begin;
+    
+    create schema gatekeeper_private;
+    revoke all on schema gatekeeper_private from public, anon, authenticated;
+    alter default privileges in schema gatekeeper_private revoke all on tables from public, anon, authenticated;
+    alter default privileges in schema gatekeeper_private revoke execute on functions from public, anon, authenticated;
+    
+    create table gatekeeper_private.user_roles (
+      id uuid primary key references auth.users(id) on delete cascade,
+      role text not null check (role in ('User', 'Admin'))
+    );
+    alter table gatekeeper_private.user_roles enable row level security;
+    -- No API policies. The trusted function owner is deliberately the sole reader.
+    
+    create table gatekeeper_private.admin_briefing (
+      singleton boolean primary key default true check (singleton),
+      briefing text not null check (pg_catalog.length(briefing) between 1 and 1000)
+    );
+    alter table gatekeeper_private.admin_briefing enable row level security;
+    insert into gatekeeper_private.admin_briefing (singleton, briefing) values
+      (true, 'Protected operational briefing: review access grants regularly and verify logout revocation before release.');
+    revoke all on all tables in schema gatekeeper_private from public, anon, authenticated;
+    
+    create function public.gatekeeper_resource(p_resource text)
+    returns jsonb
+    language plpgsql
+    security definer
+    set search_path = ''
+    as $gatekeeper$
+    declare
+      v_uid uuid;
+      v_session_text text;
+      v_session_id uuid;
+      v_role text;
+      v_email text;
+      v_data jsonb;
+      v_briefing text;
+    begin
+      if p_resource is null or p_resource not in ('user', 'admin') then
+        return pg_catalog.jsonb_build_object('status', 400, 'body', pg_catalog.jsonb_build_object('error', 'Invalid request.'));
+      end if;
+    
+      -- PostgREST validates the JWT; do not accept caller-supplied UUID or role parameters.
+      v_uid := auth.uid();
+      v_session_text := auth.jwt() ->> 'session_id';
+      if v_uid is null or v_session_text is null or
+         v_session_text !~* '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$' then
+        return pg_catalog.jsonb_build_object('status', 401, 'body', pg_catalog.jsonb_build_object('error', 'Authentication required.'));
+      end if;
+      v_session_id := v_session_text::uuid;
+      if not exists (
+        select 1 from auth.sessions as s
+        where s.id = v_session_id and s.user_id = v_uid
+      ) then
+        return pg_catalog.jsonb_build_object('status', 401, 'body', pg_catalog.jsonb_build_object('error', 'Authentication required.'));
+      end if;
+    
+      -- Absence is an ordinary User. No JWT/app/user metadata is a role authority.
+      v_role := coalesce((select r.role from gatekeeper_private.user_roles as r where r.id = v_uid), 'User');
+      if p_resource = 'admin' and v_role <> 'Admin' then
+        return pg_catalog.jsonb_build_object('status', 403, 'body', pg_catalog.jsonb_build_object('error', 'Access denied.'));
+      end if;
+      select u.email into v_email from auth.users as u where u.id = v_uid;
+      if v_email is null then
+        return pg_catalog.jsonb_build_object('status', 401, 'body', pg_catalog.jsonb_build_object('error', 'Authentication required.'));
+      end if;
+    
+      if p_resource = 'admin' then
+        select b.briefing into v_briefing from gatekeeper_private.admin_briefing as b where b.singleton = true;
+        if v_briefing is null then
+          raise exception 'Gatekeeper protected resource unavailable';
+        end if;
+        v_data := pg_catalog.jsonb_build_object('briefing', v_briefing);
+      else
+        v_data := pg_catalog.jsonb_build_object('scope', 'own-account');
+      end if;
+    
+      return pg_catalog.jsonb_build_object(
+        'status', 200,
+        'body', pg_catalog.jsonb_build_object(
+          'resource', p_resource,
+          'message', case when p_resource = 'admin' then 'Admin resource authorized.' else 'User resource authorized.' end,
+          'user', pg_catalog.jsonb_build_object('id', v_uid, 'email', v_email, 'role', v_role),
+          'data', v_data
+        )
+      );
+    end;
+    $gatekeeper$;
+    
+    -- postgres can read auth.sessions/auth.users and owns only this narrow callable API.
+    -- This is an explicit privileged-owner trust boundary, not a claim that postgres
+    -- itself is least-privileged. Re-audit owner grants after every project upgrade.
+    alter function public.gatekeeper_resource(text) owner to postgres;
+    revoke all on function public.gatekeeper_resource(text) from public, anon, authenticated;
+    grant execute on function public.gatekeeper_resource(text) to authenticated;
+    comment on function public.gatekeeper_resource(text) is
+      'Caller-scoped resource gate; checks live session ownership and private role; no metadata grants.';
+    
+    commit;
+    
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/sql-contract.test.mjs:62:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: setup documents live revocation limits, owner boundary and mock evidence scope
+ok 29 - setup documents live revocation limits, owner boundary and mock evidence scope
+  ---
+  duration_ms: 9.187637
+  type: 'test'
+  ...
+1..29
+# tests 29
+# suites 0
+# pass 27
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 346.761974

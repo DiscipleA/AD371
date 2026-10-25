@@ -1,0 +1,16 @@
+# Generated credentials/state — never publish
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+.supabase/
+supabase/.temp/
+supabase/.branches/
+node_modules/
+__pycache__/
+*.py[cod]
+.private/
+*.har
+# Browser profiles and runtime credentials must stay outside this project.

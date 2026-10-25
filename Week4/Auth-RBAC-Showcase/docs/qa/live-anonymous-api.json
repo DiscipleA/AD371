@@ -1,0 +1,73 @@
+{
+  "scope": "Real hosted Edge Function requests; no login tokens or account writes",
+  "captured_at": "2026-10-23T07:16:49.574211+00:00",
+  "endpoint": "https://ggewxlydkxjutjiqnkhr.supabase.co/functions/v1/gatekeeper",
+  "checks": [
+    {
+      "name": "public signed out",
+      "method": "GET",
+      "query": "?resource=public",
+      "origin": "http://127.0.0.1:8771",
+      "http": 503,
+      "body": "{\"error\":\"Service unavailable.\"}",
+      "noStore": "no-store",
+      "cors": null,
+      "passed": false
+    },
+    {
+      "name": "User signed out",
+      "method": "GET",
+      "query": "?resource=user",
+      "origin": "http://127.0.0.1:8771",
+      "http": 503,
+      "body": "{\"error\":\"Service unavailable.\"}",
+      "noStore": "no-store",
+      "cors": null,
+      "passed": false
+    },
+    {
+      "name": "Admin signed out",
+      "method": "GET",
+      "query": "?resource=admin",
+      "origin": "http://127.0.0.1:8771",
+      "http": 503,
+      "body": "{\"error\":\"Service unavailable.\"}",
+      "noStore": "no-store",
+      "cors": null,
+      "passed": false
+    },
+    {
+      "name": "invalid resource",
+      "method": "GET",
+      "query": "?resource=invalid",
+      "origin": "http://127.0.0.1:8771",
+      "http": 503,
+      "body": "{\"error\":\"Service unavailable.\"}",
+      "noStore": "no-store",
+      "cors": null,
+      "passed": false
+    },
+    {
+      "name": "forbidden origin",
+      "method": "GET",
+      "query": "?resource=public",
+      "origin": "https://untrusted.example",
+      "http": 503,
+      "body": "{\"error\":\"Service unavailable.\"}",
+      "noStore": "no-store",
+      "cors": null,
+      "passed": false
+    },
+    {
+      "name": "unsupported method",
+      "method": "POST",
+      "query": "?resource=public",
+      "origin": "http://127.0.0.1:8771",
+      "http": 503,
+      "body": "{\"error\":\"Service unavailable.\"}",
+      "noStore": "no-store",
+      "cors": null,
+      "passed": false
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+TAP version 13
+# Subtest: removes provider callback tokens and auth codes without consuming them
+not ok 1 - removes provider callback tokens and auth codes without consuming them
+  ---
+  duration_ms: 3.343813
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/callback.test.mjs:8:1'
+  failureType: 'testCodeFailure'
+  error: 'Callback URL cleanup is missing'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: ''
+  operator: '=='
+  stack: |-
+    clean (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/callback.test.mjs:7:29)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/callback.test.mjs:9:15)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: leaves normal showcase anchors and unrelated query values intact
+not ok 2 - leaves normal showcase anchors and unrelated query values intact
+  ---
+  duration_ms: 0.488144
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/callback.test.mjs:12:1'
+  failureType: 'testCodeFailure'
+  error: 'Callback URL cleanup is missing'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: ''
+  operator: '=='
+  stack: |-
+    clean (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/callback.test.mjs:7:29)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/callback.test.mjs:13:15)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: rejects unconfigured and privileged browser settings
+ok 3 - rejects unconfigured and privileged browser settings
+  ---
+  duration_ms: 6.044836
+  type: 'test'
+  ...
+# Subtest: accepts only genuine anon legacy JWT browser keys
+ok 4 - accepts only genuine anon legacy JWT browser keys
+  ---
+  duration_ms: 1.06111
+  type: 'test'
+  ...
+# Subtest: validates required email and password without trimming passwords
+ok 5 - validates required email and password without trimming passwords
+  ---
+  duration_ms: 0.758899
+  type: 'test'
+  ...
+# Subtest: session storage is disabled and URL tokens never auto-imported
+ok 6 - session storage is disabled and URL tokens never auto-imported
+  ---
+  duration_ms: 1.70096
+  type: 'test'
+  ...
+# Subtest: only protected resource actions attach the in-memory access token
+ok 7 - only protected resource actions attach the in-memory access token
+  ---
+  duration_ms: 99.471417
+  type: 'test'
+  ...
+# Subtest: keeps real 401 and 403 distinct from network failures
+ok 8 - keeps real 401 and 403 distinct from network failures
+  ---
+  duration_ms: 5.23295
+  type: 'test'
+  ...
+# Subtest: never echoes tokens or credential fields into the resource inspector
+ok 9 - never echoes tokens or credential fields into the resource inspector
+  ---
+  duration_ms: 0.438013
+  type: 'test'
+  ...
+# Subtest: request errors are generic and cannot leak upstream internals
+ok 10 - request errors are generic and cannot leak upstream internals
+  ---
+  duration_ms: 0.886327
+  type: 'test'
+  ...
+# Subtest: malformed or wrong-resource HTTP 200 never claims successful delivery
+ok 11 - malformed or wrong-resource HTTP 200 never claims successful delivery
+  ---
+  duration_ms: 12.133178
+  type: 'test'
+  ...
+# Subtest: invalid JSON preserves the observed HTTP status without claiming delivery
+not ok 12 - invalid JSON preserves the observed HTTP status without claiming delivery
+  ---
+  duration_ms: 7.736566
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/client.test.mjs:66:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    null !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: ~
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week2/Auth-RBAC-Showcase/tests/client.test.mjs:69:34)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: own-account scope is preserved without forwarding arbitrary data
+ok 13 - own-account scope is preserved without forwarding arbitrary data
+  ---
+  duration_ms: 1.972804
+  type: 'test'
+  ...
+# Subtest: login failure message does not reveal whether account exists
+ok 14 - login failure message does not reveal whether account exists
+  ---
+  duration_ms: 0.364882
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 11
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 404.205655

@@ -1,0 +1,137 @@
+{
+  "scope": "Local source presentation + explicitly controlled client API responses, NOT live Supabase backend results",
+  "target": "http://127.0.0.1:8771/",
+  "captured_at": "2026-10-23T07:30:13.443217+00:00",
+  "checks": [
+    {
+      "name": "Callback credentials removed from URL without importing or persisting a session",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Configured client enables resource controls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Seven direct section cards",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Empty input rejected before network request",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SQL-like invalid email rejected without execution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All installed theme/mode/viewport layout combinations",
+      "passed": true,
+      "detail": {
+        "combinations": 56,
+        "themes": [
+          "standard",
+          "playful-pop",
+          "raggedy-granite",
+          "glossy-marble",
+          "luminous-midnight",
+          "gothic-stickerboard",
+          "baroque-plexiglas"
+        ],
+        "modes": [
+          "light",
+          "dark"
+        ],
+        "viewports": [
+          [
+            1920,
+            1080
+          ],
+          [
+            768,
+            1024
+          ],
+          [
+            390,
+            844
+          ],
+          [
+            320,
+            900
+          ]
+        ],
+        "note": "Overflow and visibility assertions; screenshots sampled, not an all-theme accessibility certification."
+      }
+    },
+    {
+      "name": "Real keyboard opens menu, Escape restores focus, closed descendants excluded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Copy button copies complete build prompt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No uncaught JS, broken local assets, or unexpected service requests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "CONTROLLED client flow: 401, generic invalid login, login, User 200, Admin 403, logout, 401",
+      "passed": true,
+      "detail": {
+        "scope": "Mocked Auth/Edge responses test orchestration only, not server security",
+        "calls": [
+          {
+            "method": "GET",
+            "path": "/functions/v1/gatekeeper?resource=user"
+          },
+          {
+            "method": "POST",
+            "path": "/auth/v1/token?grant_type=password"
+          },
+          {
+            "method": "POST",
+            "path": "/auth/v1/token?grant_type=password"
+          },
+          {
+            "method": "GET",
+            "path": "/functions/v1/gatekeeper?resource=user"
+          },
+          {
+            "method": "GET",
+            "path": "/functions/v1/gatekeeper?resource=admin"
+          },
+          {
+            "method": "POST",
+            "path": "/auth/v1/logout?scope=local"
+          },
+          {
+            "method": "GET",
+            "path": "/functions/v1/gatekeeper?resource=user"
+          }
+        ]
+      }
+    }
+  ],
+  "browser": {
+    "engine": "Chromium",
+    "version": "151.0.7922.34",
+    "binary": "/media/reader/DEVELOP/.cache/runtimes/linux-x64/playwright/chromium-1234/chrome-linux64/chrome"
+  },
+  "passed": 10,
+  "failed": 0,
+  "source_hashes": {
+    "index.html": "1f0eacaed37483c7859c4828b9d6d2412435e6e6f31064fa394dc9b298c8742f",
+    "scripts/auth-client.mjs": "59257864216c307056a198e8cdd6503fc291bf203a6617c71daccb78c2e2792e",
+    "scripts/showcase.js": "5dfe84f3d6e3094faff8ba23e3292187b1da0a06b1d7f72ad55556c448d0c940",
+    "config.js": "e671e1179ba13220b3f27bfcf10ea72dc6b2c0f50a389b6821af2e8834aedd12",
+    "styles/auth-rbac-showcase.css": "36b58ee27fd2a10dbf9929031d80cf126121ed3ebb6a3e18cfa3044847a5064c"
+  }
+}

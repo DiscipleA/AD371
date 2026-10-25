@@ -1,0 +1,74 @@
+{
+  "target": "http://127.0.0.1:8771/",
+  "captured_at": "2026-10-23T07:48:31.300069+00:00",
+  "scope": "Real isolated Firefox local presentation and validation smoke. No backend requests, no fixture success data, no account mutations.",
+  "checks": [
+    {
+      "name": "Firefox loads seven-section configured showcase and enabled controls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Empty credentials rejected in real Firefox",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All Firefox theme/mode/viewport layout combinations",
+      "passed": true,
+      "detail": {
+        "combinations": 56,
+        "themes": [
+          "standard",
+          "playful-pop",
+          "raggedy-granite",
+          "glossy-marble",
+          "luminous-midnight",
+          "gothic-stickerboard",
+          "baroque-plexiglas"
+        ],
+        "viewports": [
+          [
+            1920,
+            1080
+          ],
+          [
+            768,
+            1024
+          ],
+          [
+            390,
+            844
+          ],
+          [
+            320,
+            900
+          ]
+        ],
+        "note": "Overflow/sheet assertions and sampled screenshots; not accessibility certification"
+      }
+    },
+    {
+      "name": "Firefox real Enter/Tab/Escape menu focus behavior",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "browser": {
+    "engine": "Firefox / Gecko",
+    "version": "158.0.1",
+    "driver": "geckodriver 0.37.1",
+    "binary": "/snap/firefox/current/usr/lib/firefox/firefox",
+    "profile": "isolated temporary scratch profile"
+  },
+  "passed": 4,
+  "failed": 0,
+  "source_hashes": {
+    "index.html": "1f0eacaed37483c7859c4828b9d6d2412435e6e6f31064fa394dc9b298c8742f",
+    "scripts/auth-client.mjs": "59257864216c307056a198e8cdd6503fc291bf203a6617c71daccb78c2e2792e",
+    "scripts/showcase.js": "f3077a09424b7092dd60318501ab09d139f81135c0c766a2abb024203b389131",
+    "scripts/serve.py": "52265745d1b7df1d35b3e5cab89b00b2589212da36f54e39ca973c11e3102847",
+    "config.js": "e671e1179ba13220b3f27bfcf10ea72dc6b2c0f50a389b6821af2e8834aedd12",
+    "styles/auth-rbac-showcase.css": "36b58ee27fd2a10dbf9929031d80cf126121ed3ebb6a3e18cfa3044847a5064c"
+  }
+}

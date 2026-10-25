@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://supabase.com/docs/guides/auth/password-security",
+    "excerpts": {
+      "bcrypt": [
+        "sing personal information in passwords. Use Multi-Factor Authentication . Frequently asked questions # How are passwords stored? # Supabase Auth uses bcrypt , a strong password hashing function, to store hashes of users' passwords. Only hashed passwords are stored. You cannot impersonate a user with the password hash. Each hash is accompanied by a randomly generated salt parameter for extra security. The hash is stored in the encrypted_password column of the auth.users table. The column's name is a misnomer (cryptographic hashing is not encryption), but is kept for backward compatibility. How will strengthened password requirements affect current users? # Existing users can still sign in with their current password even if it doesn't meet the new, strengthened password requirements. However, if their password falls short of these updated standards, they will encounter a WeakPasswordError during the signInWithPassword process, explaining why it's considered weak. This change is also applicable to new users and existing users changing t"
+      ],
+      "Rate limits": [
+        "hook Send email hook MFA verification hook Password verification hook Before User Created hook Custom SMTP User Management Security Password Security Rate Limits Bot Detection (CAPTCHA) Audit Logs JSON Web Tokens (JWT) Overview Claims Reference JWT Signing Keys Row Level Security Column Level Security DOCS Start Products Build Manage Reference Resources DOCS Search docs... Ctrl K Auth Password security Help your users to protect their password security A password is more secure if it is harder to guess or brute-force. In theory, a password is harder to guess if it is longer. It is also harder to guess if it uses a larger set of characters (for example, digits, lowercase and uppercase letters, and symbols). This table shows the minimum number of guesses that need to be tried to access a user's account: Required characters Length Guesses Digits only 8 ~ 2 27 Digits and letters 8 ~ 2 41 Digits, lower and uppercase letters 8 ~ 2 48 Digits, lower and uppercase letters, symbols 8 ~ 2 52 In reality though, passwords are not always generated "
+      ]
+    }
+  },
+  {
+    "url": "https://supabase.com/docs/guides/auth/sessions",
+    "excerpts": {
+      "session_id": [
+        " out due to inactivity. It reaches its maximum lifetime. A user signs in on another device. Access token (JWT) claims # Every access token contains a session_id claim, a UUID, uniquely identifying the session of the user. You can correlate this ID with the primary key of the auth.sessions table. Initiating a session # A session is initiated when a user signs in. The session is stored in the auth.sessions table, and your app should receive the access and refresh tokens. There are two flows for initiating a session and receiving the tokens: Implicit flow PKCE flow Limiting session lifetime and number of allowed sessions per user # This feature is only available on Pro Plans and up. Supabase Auth can be configured to limit the lifetime of a user's session. By default, all sessions are active until the user signs out or performs some other action that terminates a session. In some applications, it's useful or required for security to ensure that users authenticate often, or that sessions are not left active on devices for too long. There "
+      ],
+      "auth.sessions": [
+        "access token contains a session_id claim, a UUID, uniquely identifying the session of the user. You can correlate this ID with the primary key of the auth.sessions table. Initiating a session # A session is initiated when a user signs in. The session is stored in the auth.sessions table, and your app should receive the access and refresh tokens. There are two flows for initiating a session and receiving the tokens: Implicit flow PKCE flow Limiting session lifetime and number of allowed sessions per user # This feature is only available on Pro Plans and up. Supabase Auth can be configured to limit the lifetime of a user's session. By default, all sessions are active until the user signs out or performs some other action that terminates a session. In some applications, it's useful or required for security to ensure that users authenticate often, or that sessions are not left active on devices for too long. There are three ways to limit the lifetime of a session: Time-boxed sessions, which terminate after a fixed amount of time. Set an i"
+      ],
+      "refresh tokens": [
+        "form of a JWT, and a refresh token which is a unique string. Access tokens are designed to be short lived, usually between 5 minutes and 1 hour while refresh tokens never expire but can only be used once. You can exchange a refresh token only once to get a new access and refresh token pair. This process is called refreshing the session. A session terminates, depending on configuration, when: The user clicks sign out. The user changes their password or performs a security sensitive action. It times out due to inactivity. It reaches its maximum lifetime. A user signs in on another device. Access token (JWT) claims # Every access token contains a session_id claim, a UUID, uniquely identifying the session of the user. You can correlate this ID with the primary key of the auth.sessions table. Initiating a session # A session is initiated when a user signs in. The session is stored in the auth.sessions table, and your app should receive the access and refresh tokens. There are two flows for initiating a session and receiving the tokens: Imp"
+      ],
+      "Rate limits": [
+        "hook Send email hook MFA verification hook Password verification hook Before User Created hook Custom SMTP User Management Security Password Security Rate Limits Bot Detection (CAPTCHA) Audit Logs JSON Web Tokens (JWT) Overview Claims Reference JWT Signing Keys Row Level Security Column Level Security DOCS Start Products Build Manage Reference Resources DOCS Search docs... Ctrl K Auth User sessions Supabase Auth provides fine-grained control over your user's sessions. Some security sensitive applications, or those that need to be SOC 2, HIPAA, PCI-DSS or ISO27000 compliant will require some sort of additional session controls to enforce timeouts or provide additional security guarantees. Supabase Auth makes it easy to build compliant applications. What is a session? # A session is created when a user signs in. By default, it lasts indefinitely and a user can have an unlimited number of active sessions on as many devices. A session is represented by the Supabase Auth access token in the form of a JWT, and a refresh token which is a uni"
+      ]
+    }
+  },
+  {
+    "url": "https://supabase.com/docs/reference/javascript/auth-getuser",
+    "excerpts": {
+      "network request": [
+        "Indexes listVectors putVectors queryVectors JavaScript: getUser Gets the current user details if there is an existing session. This method performs a network request to the Supabase Auth server, so the returned value is authentic and can be used to base authorization rules on. Parameters jwt (Optional) Takes in an optional access token JWT. If no JWT is provided, the JWT from the current session is used. Examples Get the logged in user with the current existing session const { data: { user } } = await supabase.auth.getUser() Get the logged in user with a custom access token jwt const { data: { user } } = await supabase.auth.getUser(jwt)"
+      ]
+    }
+  },
+  {
+    "url": "https://supabase.com/docs/reference/javascript/auth-signout",
+    "excerpts": {
+      "refresh tokens": [
+        "session and log them out - removing all items from localstorage and then trigger a \"SIGNED_OUT\" event. For server-side management, you can revoke all refresh tokens for a user by passing a user's JWT through to auth.api.signOut(JWT: string) . There is no way to revoke a user's access token jwt until it expires. It is recommended to set a shorter expiry on the jwt for this reason. If using others scope, no SIGNED_OUT event is fired! Warning: the default scope is 'global' . This signs the user out of every device they are currently signed in on , not just the current tab/session. If you only want to sign the user out of the current session (the behavior most other auth libraries default to), pass { scope: 'local' } explicitly. Parameters options (Required) Examples Sign out of every device (global \u2013 default) const { error } = await supabase.auth.signOut() Sign out only the current session (recommended for most apps) const { error } = await supabase.auth.signOut({ scope: 'local' }) Sign out of all other sessions, keep the current one con"
+      ]
+    }
+  },
+  {
+    "url": "https://supabase.com/docs/guides/functions/secrets",
+    "excerpts": {
+      "SUPABASE_ANON_KEY": [
+        "et used to verify user JWTs. Same value served at https://<project-ref>.supabase.co/auth/v1/.well-known/jwks.json . Legacy keys: Variable Description SUPABASE_ANON_KEY The anon key for your Supabase API. Safe to use in a browser when you have Row Level Security enabled. SUPABASE_SERVICE_ROLE_KEY The service_role key for your Supabase API. This key bypasses Row Level Security, so use it in Edge Functions and never in a browser. In a hosted environment, functions also have access to these variables: Variable Description SB_REGION The region the function was invoked in. SB_EXECUTION_ID A UUID for the function instance, or isolate . DENO_DEPLOYMENT_ID The version of the function code, formatted as {project_ref}_{function_id}_{version} . Edit this page on GitHub Watch video guide Is this helpful? No Yes AI tools Connect your AI agent Copy as Markdown Ask ChatGPT Ask Claude Prefer on Google Need some help? Contact support Latest product updates? See Changelog Something's not right? Check system status \u00a9 Supabase Inc \u2014 Contributing Author St"
+      ],
+      "SUPABASE_PUBLISHABLE_KEYS": [
+        "ys are already in the environment. Read them and pass them to createClient : 1 import { createClient } from ' npm:@supabase/supabase-js@2 ' 2 3 const SUPABASE_PUBLISHABLE_KEYS = JSON . parse ( Deno . env . get ( ' SUPABASE_PUBLISHABLE_KEYS ' ) ! ) 4 5 // For user-facing operations (respects Row Level Security) 6 const supabase = createClient ( 7 Deno . env . get ( ' SUPABASE_URL ' ) ! , 8 // To use a different API key, change 'default' to your preferred key name 9 SUPABASE_PUBLISHABLE_KEYS [ ' default ' ] 10 ) 11 12 const SUPABASE_SECRET_KEYS = JSON . parse ( Deno . env . get ( ' SUPABASE_SECRET_KEYS ' ) ! ) 13 // For admin operations (bypasses Row Level Security) 14 const supabaseAdmin = createClient ( 15 Deno . env . get ( ' SUPABASE_URL ' ) ! , 16 // To use a different API key, change 'default' to your preferred key name 17 SUPABASE_SECRET_KEYS [ ' default ' ] 18 ) In a Deno script # A Deno script you run yourself, outside supabase functions serve , doesn't read supabase/functions/.env . Pass the file with --env-file , and grant th"
+      ]
+    }
+  },
+  {
+    "url": "https://supabase.com/docs/guides/auth/rate-limits",
+    "excerpts": {
+      "Rate limits": [
+        "Rate limits | Supabase Docs Skip to content DOCS Start Products Build Manage Reference Resources DOCS Search docs... Ctrl K Main menu Auth Overview Architecture Getting Started Next.js Astro React React Native React Native with Expo & Social Sign-in Concepts Users Identities Sessions User sessions Implicit flow PKCE flow Flows (How-tos) Which package to use Server-Side Rendering Overview Creating a client Migrating from Auth Helpers Advanced guide Password-based Email (Magic link or OTP) Phone sign-in Passkey Social Sign-in (OAuth) Overview Google Facebook Apple Azure (Microsoft) Twitter GitHub Gitlab Bitbucket Discord Figma Kakao Keycloak LinkedIn Notion Slack Spotify Twitch WorkOS Zoom Enterprise SSO Overview SAML 2.0 Custom OAuth/OIDC Providers Anonymous Sign-Ins Web3 (Ethereum or Solana) Mobile Deep Linking Identity Linking Multi-Factor Authentication Overview App Authenticator (TOTP"
+      ]
+    }
+  }
+]

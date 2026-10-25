@@ -1,0 +1,351 @@
+TAP version 13
+# Subtest: public needs no JWT or upstream calls and has security headers
+ok 1 - public needs no JWT or upstream calls and has security headers
+  ---
+  duration_ms: 86.59596
+  type: 'test'
+  ...
+# Subtest: User 200 uses Auth then same bearer-scoped RPC, never Auth metadata role
+ok 2 - User 200 uses Auth then same bearer-scoped RPC, never Auth metadata role
+  ---
+  duration_ms: 5.963004
+  type: 'test'
+  ...
+# Subtest: Admin 200 comes from private-role RPC only
+ok 3 - Admin 200 comes from private-role RPC only
+  ---
+  duration_ms: 4.568329
+  type: 'test'
+  ...
+# Subtest: missing and malformed bearer fail 401 before external calls
+ok 4 - missing and malformed bearer fail 401 before external calls
+  ---
+  duration_ms: 5.377272
+  type: 'test'
+  ...
+# Subtest: forged compact JWT rejected by Auth before RPC
+ok 5 - forged compact JWT rejected by Auth before RPC
+  ---
+  duration_ms: 2.71926
+  type: 'test'
+  ...
+# Subtest: User requesting admin gets 403; metadata and header spoof cannot elevate
+ok 6 - User requesting admin gets 403; metadata and header spoof cannot elevate
+  ---
+  duration_ms: 4.71885
+  type: 'test'
+  ...
+# Subtest: stale/revoked session from independent RPC check maps 401
+ok 7 - stale/revoked session from independent RPC check maps 401
+  ---
+  duration_ms: 4.425751
+  type: 'test'
+  ...
+# Subtest: strict resource query rejects duplicates, unknown keys, tokens and role injection
+ok 8 - strict resource query rejects duplicates, unknown keys, tokens and role injection
+  ---
+  duration_ms: 17.229966
+  type: 'test'
+  ...
+# Subtest: non-GET methods fail 405 and declare Allow
+ok 9 - non-GET methods fail 405 and declare Allow
+  ---
+  duration_ms: 6.986312
+  type: 'test'
+  ...
+# Subtest: exact CORS allowlist denies null, suffix and arbitrary origins without echo
+ok 10 - exact CORS allowlist denies null, suffix and arbitrary origins without echo
+  ---
+  duration_ms: 6.612593
+  type: 'test'
+  ...
+# Subtest: preflight permits only configured origin GET and known headers
+ok 11 - preflight permits only configured origin GET and known headers
+  ---
+  duration_ms: 2.166734
+  type: 'test'
+  ...
+# Subtest: invalid environment fails closed without upstream traffic
+ok 12 - invalid environment fails closed without upstream traffic
+  ---
+  duration_ms: 6.386163
+  type: 'test'
+  ...
+# Subtest: hosted plural publishable-key dictionary uses its validated default key
+ok 13 - hosted plural publishable-key dictionary uses its validated default key
+  ---
+  duration_ms: 2.550057
+  type: 'test'
+  ...
+# Subtest: invalid hosted key dictionaries fail closed
+ok 14 - invalid hosted key dictionaries fail closed
+  ---
+  duration_ms: 4.017728
+  type: 'test'
+  ...
+# Subtest: empty hosted dictionary never falls back to a coexisting valid anon key
+ok 15 - empty hosted dictionary never falls back to a coexisting valid anon key
+  ---
+  duration_ms: 1.122397
+  type: 'test'
+  ...
+# Subtest: localhost CLI URLs and fallback anon key are accepted
+ok 16 - localhost CLI URLs and fallback anon key are accepted
+  ---
+  duration_ms: 3.040845
+  type: 'test'
+  ...
+# Subtest: Auth unavailable/network errors and malformed identity fail closed
+ok 17 - Auth unavailable/network errors and malformed identity fail closed
+  ---
+  duration_ms: 8.804889
+  type: 'test'
+  ...
+# Subtest: RPC unavailable and malformed envelopes never expose upstream payload
+ok 18 - RPC unavailable and malformed envelopes never expose upstream payload
+  ---
+  duration_ms: 26.72868
+  type: 'test'
+  ...
+# Subtest: response allowlist removes password/hash/token/metadata fields at every layer
+ok 19 - response allowlist removes password/hash/token/metadata fields at every layer
+  ---
+  duration_ms: 3.871888
+  type: 'test'
+  ...
+# Subtest: legacy service-role or malformed key cannot be accepted as anon environment credential
+ok 20 - legacy service-role or malformed key cannot be accepted as anon environment credential
+  ---
+  duration_ms: 19.989438
+  type: 'test'
+  ...
+# Subtest: Admin success cannot be paired with User role even when resource matches
+ok 21 - Admin success cannot be paired with User role even when resource matches
+  ---
+  duration_ms: 4.757917
+  type: 'test'
+  ...
+# Subtest: RPC email mismatch fails closed instead of returning a different identity
+ok 22 - RPC email mismatch fails closed instead of returning a different identity
+  ---
+  duration_ms: 3.057078
+  type: 'test'
+  ...
+# Subtest: Auth fetch has timeout and aborts rather than hanging
+ok 23 - Auth fetch has timeout and aborts rather than hanging
+  ---
+  duration_ms: 53.417185
+  type: 'test'
+  ...
+# Subtest: RPC body consumption also times out
+ok 24 - RPC body consumption also times out
+  ---
+  duration_ms: 18.717896
+  type: 'test'
+  ...
+# Subtest: removes provider callback tokens and auth codes without consuming them
+ok 25 - removes provider callback tokens and auth codes without consuming them
+  ---
+  duration_ms: 6.257063
+  type: 'test'
+  ...
+# Subtest: leaves normal showcase anchors and unrelated query values intact
+ok 26 - leaves normal showcase anchors and unrelated query values intact
+  ---
+  duration_ms: 5.357935
+  type: 'test'
+  ...
+# Subtest: rejects unconfigured and privileged browser settings
+ok 27 - rejects unconfigured and privileged browser settings
+  ---
+  duration_ms: 6.1077
+  type: 'test'
+  ...
+# Subtest: accepts only genuine anon legacy JWT browser keys
+ok 28 - accepts only genuine anon legacy JWT browser keys
+  ---
+  duration_ms: 1.121142
+  type: 'test'
+  ...
+# Subtest: validates required email and password without trimming passwords
+ok 29 - validates required email and password without trimming passwords
+  ---
+  duration_ms: 0.956948
+  type: 'test'
+  ...
+# Subtest: session storage is disabled and URL tokens never auto-imported
+ok 30 - session storage is disabled and URL tokens never auto-imported
+  ---
+  duration_ms: 0.778393
+  type: 'test'
+  ...
+# Subtest: only protected resource actions attach the in-memory access token
+ok 31 - only protected resource actions attach the in-memory access token
+  ---
+  duration_ms: 84.685967
+  type: 'test'
+  ...
+# Subtest: keeps real 401 and 403 distinct from network failures
+ok 32 - keeps real 401 and 403 distinct from network failures
+  ---
+  duration_ms: 1.264171
+  type: 'test'
+  ...
+# Subtest: never echoes tokens or credential fields into the resource inspector
+ok 33 - never echoes tokens or credential fields into the resource inspector
+  ---
+  duration_ms: 0.26618
+  type: 'test'
+  ...
+# Subtest: request errors are generic and cannot leak upstream internals
+ok 34 - request errors are generic and cannot leak upstream internals
+  ---
+  duration_ms: 0.555268
+  type: 'test'
+  ...
+# Subtest: malformed or wrong-resource HTTP 200 never claims successful delivery
+ok 35 - malformed or wrong-resource HTTP 200 never claims successful delivery
+  ---
+  duration_ms: 12.220354
+  type: 'test'
+  ...
+# Subtest: invalid JSON preserves the observed HTTP status without claiming delivery
+ok 36 - invalid JSON preserves the observed HTTP status without claiming delivery
+  ---
+  duration_ms: 2.726674
+  type: 'test'
+  ...
+# Subtest: protected success requires resource-specific non-array data
+ok 37 - protected success requires resource-specific non-array data
+  ---
+  duration_ms: 16.476232
+  type: 'test'
+  ...
+# Subtest: own-account scope is preserved without forwarding arbitrary data
+ok 38 - own-account scope is preserved without forwarding arbitrary data
+  ---
+  duration_ms: 1.660353
+  type: 'test'
+  ...
+# Subtest: login failure message does not reveal whether account exists
+ok 39 - login failure message does not reveal whether account exists
+  ---
+  duration_ms: 0.339921
+  type: 'test'
+  ...
+# Subtest: seven full-width narrative sections retain reference order and compatibility hooks
+ok 40 - seven full-width narrative sections retain reference order and compatibility hooks
+  ---
+  duration_ms: 3.393283
+  type: 'test'
+  ...
+# Subtest: auth form exposes parent runtime contract without a role selector or inline execution
+ok 41 - auth form exposes parent runtime contract without a role selector or inline execution
+  ---
+  duration_ms: 4.196062
+  type: 'test'
+  ...
+# Subtest: runtime loads external config, local SDK and module in explicit order
+ok 42 - runtime loads external config, local SDK and module in explicit order
+  ---
+  duration_ms: 0.773702
+  type: 'test'
+  ...
+# Subtest: copyable teaching prompts are complete, keyboard accessible, and honestly labeled
+ok 43 - copyable teaching prompts are complete, keyboard accessible, and honestly labeled
+  ---
+  duration_ms: 5.168817
+  type: 'test'
+  ...
+# Subtest: architecture is accessible, theme-aware and explanatory, including 401 and 403 boundaries
+ok 44 - architecture is accessible, theme-aware and explanatory, including 401 and 403 boundaries
+  ---
+  duration_ms: 2.465992
+  type: 'test'
+  ...
+# Subtest: all seven local packages, icons and texture URLs are available
+ok 45 - all seven local packages, icons and texture URLs are available
+  ---
+  duration_ms: 17.798825
+  type: 'test'
+  ...
+# Subtest: appearance registry/controller are standalone and use distinct local preference keys
+ok 46 - appearance registry/controller are standalone and use distinct local preference keys
+  ---
+  duration_ms: 1.363146
+  type: 'test'
+  ...
+# Subtest: registry prepaint and seven metadata packages resolve local asset URLs
+ok 47 - registry prepaint and seven metadata packages resolve local asset URLs
+  ---
+  duration_ms: 9.961388
+  type: 'test'
+  ...
+# Subtest: all owned HTML IDs are unique and section/copy anchors resolve
+ok 48 - all owned HTML IDs are unique and section/copy anchors resolve
+  ---
+  duration_ms: 1.749821
+  type: 'test'
+  ...
+# Subtest: private roles are owner-managed, RLS-enabled and hidden from API roles
+ok 49 - private roles are owner-managed, RLS-enabled and hidden from API roles
+  ---
+  duration_ms: 12.563372
+  type: 'test'
+  ...
+# Subtest: definer uses empty search_path and authenticated-only execute
+ok 50 - definer uses empty search_path and authenticated-only execute
+  ---
+  duration_ms: 4.861283
+  type: 'test'
+  ...
+# Subtest: SQL independently checks identity, valid session UUID and session ownership before protected reads
+ok 51 - SQL independently checks identity, valid session UUID and session ownership before protected reads
+  ---
+  duration_ms: 3.624646
+  type: 'test'
+  ...
+# Subtest: resource authorization is default User and private role only; own-user query is scoped
+ok 52 - resource authorization is default User and private role only; own-user query is scoped
+  ---
+  duration_ms: 3.445535
+  type: 'test'
+  ...
+# Subtest: admin promotion is guarded, SQL-only, not in automatic migrations
+ok 53 - admin promotion is guarded, SQL-only, not in automatic migrations
+  ---
+  duration_ms: 4.7598
+  type: 'test'
+  ...
+# Subtest: edge bootstrap is thin, imports real shared handler and default timeout is eight seconds
+ok 54 - edge bootstrap is thin, imports real shared handler and default timeout is eight seconds
+  ---
+  duration_ms: 4.243336
+  type: 'test'
+  ...
+# Subtest: service_role default grants are explicitly revoked, not inherited
+ok 55 - service_role default grants are explicitly revoked, not inherited
+  ---
+  duration_ms: 4.277779
+  type: 'test'
+  ...
+# Subtest: setup documents live revocation limits, owner boundary and mock evidence scope
+ok 56 - setup documents live revocation limits, owner boundary and mock evidence scope
+  ---
+  duration_ms: 2.618044
+  type: 'test'
+  ...
+1..56
+# tests 56
+# suites 0
+# pass 56
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 534.619368
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
