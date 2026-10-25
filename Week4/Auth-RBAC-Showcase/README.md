@@ -82,4 +82,4 @@ Controlled tests verify handler, client, SQL-source, presentation, and server co
 
 ## 🤖 AI Assistance
 
-AI assisted architecture, implementation, and documentation. The showcase presents a **Review → Plan → Build → Verify** workflow; [AI-PROMPTS.md](AI-PROMPTS.md) preserves the project record. Generated explanations and controlled results do not replace live verification.
+AI assisted architecture, implementation, and documentation. [AI-PROMPTS.md](AI-PROMPTS.md) contains the showcase’s **Review → Plan → Build → Verify** prompt workflow.

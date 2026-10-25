@@ -76,4 +76,4 @@ These checks cover standalone structure and configuration logic. [Included QA re
 
 ## 🤖 AI Assistance
 
-AI assisted architecture, implementation, and documentation. The showcase's **Review → Plan → Build → Verify** prompts support incremental development and checking; [AI-PROMPTS.md](AI-PROMPTS.md) retains the project record. Configuration observations, controlled tests, and live permission checks remain distinct forms of evidence.
+AI assisted architecture, implementation, and documentation. [AI-PROMPTS.md](AI-PROMPTS.md) contains the showcase’s **Review → Plan → Build → Verify** prompt workflow.

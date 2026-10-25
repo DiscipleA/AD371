@@ -1,34 +1,94 @@
-# AI assistance and prompt provenance
+# AI Prompt Workflow — Cloud-Managed Themes
 
-The showcase implementation specification summarizes requirements from the conversation. It is not a verbatim prompt submitted to a second model.
+Prompts from the showcase’s AI Prompt section, arranged as a Review → Plan → Build → Verify development workflow.
 
-## Tools and ownership
+## 1. Review
 
-Hermes Agent using the OpenAI provider authored the SQL, JavaScript, tests, documentation, and showcase adaptation. Dmitriy supplied requirements and performed login, project creation, and SQL execution. Student-authored coding and independent human QA are not claimed.
+```text
+Review the attached application files before editing.
+Identify the theme controller, local theme packages,
+navigation, and the working showcase.
 
-## Verbatim primary user request
+Explain which parts run in the browser and which
+settings could come from a remote service.
+List the files that must remain unchanged.
+Do not write code yet.
+```
 
-> Ok, I need a step by step have a supabase-powered theme system on my resume rendered through the cloudflare, but makesure it is step by step you doing it and requiring me to either login to the supabase, and you need to open up all those preview windows where my intervention needed, and I will login and follow instructions that you can't do it yourself but everything else is on you. Also, will complete it in a separate Week8 folder that you need to begin, so that we can get it up and running, but then after everything functions will have it transition to a separate repo called AD371. So, get the Resume folder in created Week8 folder copied and copy the master prompt in there too. and lets begin. I expect to have this as a separate show case
+## 2. Plan
 
-## Verbatim recovery instruction
+```text
+Using the review above, plan a read-only Supabase
+connection for theme defaults and menu order.
 
-> proceed, I don't know what happened
+Show Static host delivery, a direct browser GET,
+PostgREST, PostgreSQL, SELECT grants, and RLS.
+Keep CSS and assets in the local theme packages.
+Explain visitor preferences, validation, timeout,
+and cache or bundled fallback. No browser writes.
+Return a focused plan before implementation.
+```
 
-## Genuine corrections and scope refinements
+## 3. Build
 
-- The earlier catalog proposal demonstrated an API connection but did not power the real theme system. The user requested control of defaults and menu order.
-- Cloudflare hosting and Supabase persistence have separate responsibilities. No Cloudflare Worker is required for this browser-to-Supabase read.
-- Paused-project count was not treated as a quota failure. Earlier class databases were not modified.
-- Interrupted copying was resumed and hash-verified before editing.
-- An early unit assertion accidentally matched the missing-module message. The message was corrected and all 20 tests were verified RED before implementation.
-- Showcase generation encountered a Python syntax error, suppressed duplicate reads, and an unanchored pattern matching a nested demo main. These unsuccessful attempts were corrected before any completed artifact was reported.
+```text
+Add read-only cloud configuration to this static
+application without replacing its local rendering
+system.
 
-## Verification boundary
+1. Preserve local rendering. Theme packages and
+   standalone navigation remain usable independently
+   of the configuration request. Do not add other
+   portfolio pages.
 
-Official sources ground architecture claims. Browser request observations are not internal telemetry. Offline simulation is explicitly labeled. README and QA artifacts identify checks that actually ran; deployment and user visual approval are separate checkpoints.
+2. Verify the architecture. PostgreSQL stores one
+   public settings record; the Supabase Data API
+   exposes permitted reads through PostgREST. The
+   record controls the default theme, color mode,
+   and menu order, not CSS or assets.
 
-## Verbatim category/content revision request
+3. Restrict access. Use a publishable browser key
+   with SELECT grants and a row-level SELECT policy.
+   Browser roles cannot insert, update, or delete
+   settings. Keep database passwords and privileged
+   keys out of the frontend.
 
-> So here is the thing, I do like it, and it looks good, but we'll need to change the looks of it and well need to have CSS showcases separate from the Application Structures showcases. Also the 7 Step looks was for the CSS, but we'll need to come up with a unique one for Application Structures showcases. For now, I just want to separate the CSS showcases, from application structures showcases. What would be your suggestion? Other than that, it looks good, but in layer 1 you mention my temporary instructions for Week 8, Why? also check this App Structure showcase for ambigious content like that and anything that just makes no sense in content and fix it
+4. Reuse the renderer. Validate remote values
+   against installed local theme IDs. The shared
+   theme controller applies local CSS and assets;
+   remote configuration cannot execute code or
+   supply arbitrary asset paths.
 
-The user selected **Navigation and resume categories — recommended**. The unique Application Structures presentation was explicitly deferred. This change removes temporary instructions from visitor-facing requirements while retaining the genuine historical request above and earlier prompts.
+5. Handle failure and preferences. Render
+   immediately. Use validated cache or bundled
+   settings when a request fails. Override defaults
+   only in dimensions the visitor explicitly
+   selects, including choices made while requests or
+   metadata loads are pending. Save choices when
+   browser storage is available; otherwise keep them
+   for the current page session.
+
+6. Verify observable behavior. Show actual request
+   status, duration, and returned settings. Label
+   offline simulation. Exercise reads, permission
+   checks, independent preferences, malformed data,
+   failure recovery, keyboard access, responsive
+   layouts, and Chromium/Firefox behavior. Keep
+   executed results separate from explanatory
+   diagrams and pending deployment checks.
+```
+
+## 4. Verify
+
+```text
+Test the implementation against its requirements.
+Check a real read when reachable, independent
+style/mode choices, reload, reset, offline fallback,
+restricted storage, search, and keyboard access.
+Check installed themes and narrow layouts.
+
+Separate live observations from controlled tests.
+Report failures and blocked checks honestly.
+Fix only demonstrated defects; preserve the layout.
+Never invent a successful response or test result.
+```
