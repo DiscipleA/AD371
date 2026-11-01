@@ -1,8 +1,8 @@
-# AI Prompt Workflow — Gatekeeper Lab
+# Public AI Prompt Workflow
 
-Prompts from the showcase’s AI Prompt section, arranged as a Review → Plan → Build → Verify development workflow.
+This document reproduces only the reusable prompts published in the showcase.
 
-## 1. Review
+## Review
 
 ```text
 Review the supplied standalone HTML/CSS/JavaScript application.
@@ -14,7 +14,7 @@ Do not edit the reference project or live portfolio.
 List risks and files to change. Do not implement yet.
 ```
 
-## 2. Plan
+## Plan
 
 ```text
 Plan registration, login, logout, and three resources:
@@ -29,7 +29,7 @@ logout/replay checks, and tests before implementation.
 Do not provision or deploy without exact-target approval.
 ```
 
-## 3. Build
+## Build — implementation specification
 
 ```text
 Build Gatekeeper Lab as standalone HTML, CSS, and vanilla JS.
@@ -85,7 +85,7 @@ Build Gatekeeper Lab as standalone HTML, CSS, and vanilla JS.
    without separate approval of the exact target.
 ```
 
-## 4. Verify
+## Verify
 
 ```text
 Run local tests and report their real output separately

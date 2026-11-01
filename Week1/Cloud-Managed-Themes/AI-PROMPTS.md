@@ -1,8 +1,8 @@
-# AI Prompt Workflow — Cloud-Managed Themes
+# Public AI Prompt Workflow
 
-Prompts from the showcase’s AI Prompt section, arranged as a Review → Plan → Build → Verify development workflow.
+This document reproduces only the reusable prompts published in the showcase.
 
-## 1. Review
+## Review
 
 ```text
 Review the attached application files before editing.
@@ -15,7 +15,7 @@ List the files that must remain unchanged.
 Do not write code yet.
 ```
 
-## 2. Plan
+## Plan
 
 ```text
 Using the review above, plan a read-only Supabase
@@ -29,7 +29,7 @@ and cache or bundled fallback. No browser writes.
 Return a focused plan before implementation.
 ```
 
-## 3. Build
+## Build — implementation specification
 
 ```text
 Add read-only cloud configuration to this static
@@ -78,7 +78,7 @@ system.
    diagrams and pending deployment checks.
 ```
 
-## 4. Verify
+## Verify
 
 ```text
 Test the implementation against its requirements.
