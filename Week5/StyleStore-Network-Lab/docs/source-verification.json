@@ -1,0 +1,62 @@
+{
+  "captured_utc": "2026-10-29T06:24:21.116296+00:00",
+  "method": "Direct official documentation HTTP reads and HTML title/fragment inspection; not application verification.",
+  "sources": [
+    {
+      "concept": "bridge networks",
+      "url": "https://docs.docker.com/engine/network/drivers/bridge/",
+      "resolved_url": "https://docs.docker.com/engine/network/drivers/bridge/",
+      "http": 200,
+      "title": "Bridge network driver | Docker Docs",
+      "fragment_present": true
+    },
+    {
+      "concept": "internal network",
+      "url": "https://docs.docker.com/reference/compose-file/networks/#internal",
+      "resolved_url": "https://docs.docker.com/reference/compose-file/networks/#internal",
+      "http": 200,
+      "title": "Define and manage networks in Docker Compose | Docker Docs",
+      "fragment_present": true
+    },
+    {
+      "concept": "service discovery",
+      "url": "https://docs.docker.com/compose/how-tos/networking/",
+      "resolved_url": "https://docs.docker.com/compose/how-tos/networking/",
+      "http": 200,
+      "title": "Networking in Compose | Docker Docs",
+      "fragment_present": true
+    },
+    {
+      "concept": "round robin",
+      "url": "https://nginx.org/en/docs/http/load_balancing.html",
+      "resolved_url": "https://nginx.org/en/docs/http/load_balancing.html",
+      "http": 200,
+      "title": "Using nginx as HTTP load balancer",
+      "fragment_present": true
+    },
+    {
+      "concept": "upstream retry",
+      "url": "https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_next_upstream",
+      "resolved_url": "https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_next_upstream",
+      "http": 200,
+      "title": "Module ngx_http_proxy_module",
+      "fragment_present": true
+    },
+    {
+      "concept": "healthcheck",
+      "url": "https://docs.docker.com/reference/compose-file/services/#healthcheck",
+      "resolved_url": "https://docs.docker.com/reference/compose-file/services/#healthcheck",
+      "http": 200,
+      "title": "Define services in Docker Compose | Docker Docs",
+      "fragment_present": true
+    },
+    {
+      "concept": "React island",
+      "url": "https://react.dev/learn/add-react-to-an-existing-project",
+      "resolved_url": "https://react.dev/learn/add-react-to-an-existing-project",
+      "http": 200,
+      "title": "Add React to an Existing Project \u2013 React",
+      "fragment_present": true
+    }
+  ]
+}

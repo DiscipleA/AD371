@@ -1,0 +1,887 @@
+{
+  "project": "stylestore-network-lab",
+  "compose_file": "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/compose.yaml",
+  "started_at": "2026-10-29T07:20:28.949835+00:00",
+  "checks": {
+    "topology": {
+      "gateway": "http://127.0.0.1:80",
+      "networks": {
+        "public_subnet": {
+          "name": "stylestore-network-lab_public_subnet",
+          "id": "6bbeaf56eb2457454278e8d31d950c5bf12b943605c403f1c65137081c666a87",
+          "cidr": "172.30.51.0/24",
+          "internal": false
+        },
+        "private_subnet": {
+          "name": "stylestore-network-lab_private_subnet",
+          "id": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332",
+          "cidr": "172.30.52.0/24",
+          "internal": true
+        }
+      },
+      "containers": {
+        "nginx": {
+          "id": "7f1d39f3f4758e4fff7f98706a48134dfcec73b84ce7b16d716c435884a5985e",
+          "image_id": "sha256:0e52bd054126cdc040b1276c0af347aeb02a41b9cfe305d6094767ac30e97949",
+          "networks": {
+            "stylestore-network-lab_private_subnet": "172.30.52.4",
+            "stylestore-network-lab_public_subnet": "172.30.51.2"
+          },
+          "host_ports": {
+            "80/tcp": [
+              {
+                "HostIp": "127.0.0.1",
+                "HostPort": "80"
+              }
+            ]
+          }
+        },
+        "store-a": {
+          "id": "4227e8303f34dd6563047a432db5a7e48d158fc5eacffb8e0e259cbed8cfda4c",
+          "image_id": "sha256:b632d27a31105c9a9f0368189151f512ecff155713a63e7b42e1fced44cabae0",
+          "networks": {
+            "stylestore-network-lab_private_subnet": "172.30.52.2"
+          },
+          "host_ports": {}
+        },
+        "store-b": {
+          "id": "23aec9dc67e08b973ec09c76fb58498edcdac196eeb6e0329097d1f1d43bafce",
+          "image_id": "sha256:b632d27a31105c9a9f0368189151f512ecff155713a63e7b42e1fced44cabae0",
+          "networks": {
+            "stylestore-network-lab_private_subnet": "172.30.52.3"
+          },
+          "host_ports": {}
+        }
+      }
+    },
+    "initial_health": {
+      "store-a": {
+        "container_id": "4227e8303f34dd6563047a432db5a7e48d158fc5eacffb8e0e259cbed8cfda4c",
+        "health": "healthy",
+        "gateway_probe": 200
+      },
+      "store-b": {
+        "container_id": "23aec9dc67e08b973ec09c76fb58498edcdac196eeb6e0329097d1f1d43bafce",
+        "health": "healthy",
+        "gateway_probe": 200
+      }
+    },
+    "round_robin": {
+      "valid_200_json_count": 10,
+      "distribution": {
+        "store-b": 5,
+        "store-a": 5
+      },
+      "responses": [
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.156,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-a",
+          "status": 200,
+          "elapsed_ms": 2.436,
+          "body": {
+            "serverId": "store-a",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.508,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-a",
+          "status": 200,
+          "elapsed_ms": 2.288,
+          "body": {
+            "serverId": "store-a",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-a",
+          "status": 200,
+          "elapsed_ms": 2.322,
+          "body": {
+            "serverId": "store-a",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.564,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-a",
+          "status": 200,
+          "elapsed_ms": 2.788,
+          "body": {
+            "serverId": "store-a",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 5.374,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-a",
+          "status": 200,
+          "elapsed_ms": 3.476,
+          "body": {
+            "serverId": "store-a",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.974,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    "http_contracts": [
+      {
+        "method": "GET",
+        "path": "/api/quote",
+        "status": 400
+      },
+      {
+        "method": "GET",
+        "path": "/api/quote?quantity=0",
+        "status": 400
+      },
+      {
+        "method": "GET",
+        "path": "/api/quote?quantity=10",
+        "status": 400
+      },
+      {
+        "method": "GET",
+        "path": "/api/quote?quantity=1&quantity=2",
+        "status": 400
+      },
+      {
+        "method": "GET",
+        "path": "/api/quote?quantity=1&extra=2",
+        "status": 400
+      },
+      {
+        "method": "GET",
+        "path": "/api/unknown",
+        "status": 404
+      },
+      {
+        "method": "GET",
+        "path": "/.env",
+        "status": 404
+      },
+      {
+        "method": "GET",
+        "path": "/server/server.mjs",
+        "status": 404
+      },
+      {
+        "method": "GET",
+        "path": "/docs/assignment-plan.md",
+        "status": 404
+      },
+      {
+        "method": "GET",
+        "path": "/assets/not-real.js.map",
+        "status": 404
+      },
+      {
+        "method": "POST",
+        "path": "/api/quote?quantity=2",
+        "status": 405
+      },
+      {
+        "method": "HEAD",
+        "path": "/api/quote?quantity=2",
+        "status": 200
+      },
+      {
+        "origin": "http://127.0.0.1:8785",
+        "preflight": 204,
+        "get": 200
+      },
+      {
+        "origin": "http://localhost:8785",
+        "preflight": 204,
+        "get": 200
+      },
+      {
+        "origin": "https://chernichenkodmitriy.com",
+        "preflight": 204,
+        "get": 200
+      },
+      {
+        "origin": "https://www.chernichenkodmitriy.com",
+        "preflight": 204,
+        "get": 200
+      },
+      {
+        "origin": "https://attacker.invalid",
+        "preflight": 403
+      },
+      {
+        "origin": "http://localhost:8785.attacker.invalid",
+        "preflight": 403
+      }
+    ],
+    "public_only_probe": {
+      "positiveControl": "gateway-reachable",
+      "targets": [
+        {
+          "ip": "172.30.52.2",
+          "port": 3000,
+          "reachable": false
+        },
+        {
+          "ip": "172.30.52.3",
+          "port": 3000,
+          "reachable": false
+        }
+      ]
+    },
+    "stop_a_failover": {
+      "individual_a_status": 504,
+      "individual_b_status": 200,
+      "valid_200_json_count": 10,
+      "distribution": {
+        "store-b": 10
+      },
+      "responses": [
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 1003.045,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 3.146,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.501,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.958,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 3.558,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.784,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.751,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.169,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 4.77,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.331,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    "restore_a": {
+      "valid_200_json_count": 10,
+      "distribution": {
+        "store-b": 6,
+        "store-a": 4
+      },
+      "responses": [
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 3.197,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.548,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-a",
+          "status": 200,
+          "elapsed_ms": 3.302,
+          "body": {
+            "serverId": "store-a",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.381,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-a",
+          "status": 200,
+          "elapsed_ms": 6.656,
+          "body": {
+            "serverId": "store-a",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 3.577,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-a",
+          "status": 200,
+          "elapsed_ms": 3.186,
+          "body": {
+            "serverId": "store-a",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 3.066,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-a",
+          "status": 200,
+          "elapsed_ms": 3.651,
+          "body": {
+            "serverId": "store-a",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        },
+        {
+          "serverId": "store-b",
+          "status": 200,
+          "elapsed_ms": 2.755,
+          "body": {
+            "serverId": "store-b",
+            "product": {
+              "id": "retro-sneakers",
+              "name": "Retro Sneakers",
+              "unitPriceCents": 8500
+            },
+            "quantity": 2,
+            "totalCents": 17000,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    "recreate_a": {
+      "old_id": "4227e8303f34dd6563047a432db5a7e48d158fc5eacffb8e0e259cbed8cfda4c",
+      "new_id": "03312d78e767dc0b47123f7318f3c750a5bcc9dc8df30225a23879d8fdb60d0f",
+      "old_ip": "172.30.52.2",
+      "new_ip": "172.30.52.5",
+      "ip_changed": true,
+      "dns_new_ip_recovery_proven": true,
+      "healthy": {
+        "store-a": {
+          "container_id": "03312d78e767dc0b47123f7318f3c750a5bcc9dc8df30225a23879d8fdb60d0f",
+          "health": "healthy",
+          "gateway_probe": 200
+        },
+        "store-b": {
+          "container_id": "23aec9dc67e08b973ec09c76fb58498edcdac196eeb6e0329097d1f1d43bafce",
+          "health": "healthy",
+          "gateway_probe": 200
+        }
+      },
+      "batch": {
+        "valid_200_json_count": 10,
+        "distribution": {
+          "store-b": 5,
+          "store-a": 5
+        },
+        "responses": [
+          {
+            "serverId": "store-b",
+            "status": 200,
+            "elapsed_ms": 2.646,
+            "body": {
+              "serverId": "store-b",
+              "product": {
+                "id": "retro-sneakers",
+                "name": "Retro Sneakers",
+                "unitPriceCents": 8500
+              },
+              "quantity": 2,
+              "totalCents": 17000,
+              "currency": "USD"
+            }
+          },
+          {
+            "serverId": "store-a",
+            "status": 200,
+            "elapsed_ms": 3.703,
+            "body": {
+              "serverId": "store-a",
+              "product": {
+                "id": "retro-sneakers",
+                "name": "Retro Sneakers",
+                "unitPriceCents": 8500
+              },
+              "quantity": 2,
+              "totalCents": 17000,
+              "currency": "USD"
+            }
+          },
+          {
+            "serverId": "store-b",
+            "status": 200,
+            "elapsed_ms": 2.303,
+            "body": {
+              "serverId": "store-b",
+              "product": {
+                "id": "retro-sneakers",
+                "name": "Retro Sneakers",
+                "unitPriceCents": 8500
+              },
+              "quantity": 2,
+              "totalCents": 17000,
+              "currency": "USD"
+            }
+          },
+          {
+            "serverId": "store-a",
+            "status": 200,
+            "elapsed_ms": 4.81,
+            "body": {
+              "serverId": "store-a",
+              "product": {
+                "id": "retro-sneakers",
+                "name": "Retro Sneakers",
+                "unitPriceCents": 8500
+              },
+              "quantity": 2,
+              "totalCents": 17000,
+              "currency": "USD"
+            }
+          },
+          {
+            "serverId": "store-b",
+            "status": 200,
+            "elapsed_ms": 3.862,
+            "body": {
+              "serverId": "store-b",
+              "product": {
+                "id": "retro-sneakers",
+                "name": "Retro Sneakers",
+                "unitPriceCents": 8500
+              },
+              "quantity": 2,
+              "totalCents": 17000,
+              "currency": "USD"
+            }
+          },
+          {
+            "serverId": "store-a",
+            "status": 200,
+            "elapsed_ms": 3.532,
+            "body": {
+              "serverId": "store-a",
+              "product": {
+                "id": "retro-sneakers",
+                "name": "Retro Sneakers",
+                "unitPriceCents": 8500
+              },
+              "quantity": 2,
+              "totalCents": 17000,
+              "currency": "USD"
+            }
+          },
+          {
+            "serverId": "store-b",
+            "status": 200,
+            "elapsed_ms": 2.854,
+            "body": {
+              "serverId": "store-b",
+              "product": {
+                "id": "retro-sneakers",
+                "name": "Retro Sneakers",
+                "unitPriceCents": 8500
+              },
+              "quantity": 2,
+              "totalCents": 17000,
+              "currency": "USD"
+            }
+          },
+          {
+            "serverId": "store-a",
+            "status": 200,
+            "elapsed_ms": 4.34,
+            "body": {
+              "serverId": "store-a",
+              "product": {
+                "id": "retro-sneakers",
+                "name": "Retro Sneakers",
+                "unitPriceCents": 8500
+              },
+              "quantity": 2,
+              "totalCents": 17000,
+              "currency": "USD"
+            }
+          },
+          {
+            "serverId": "store-b",
+            "status": 200,
+            "elapsed_ms": 5.771,
+            "body": {
+              "serverId": "store-b",
+              "product": {
+                "id": "retro-sneakers",
+                "name": "Retro Sneakers",
+                "unitPriceCents": 8500
+              },
+              "quantity": 2,
+              "totalCents": 17000,
+              "currency": "USD"
+            }
+          },
+          {
+            "serverId": "store-a",
+            "status": 200,
+            "elapsed_ms": 3.756,
+            "body": {
+              "serverId": "store-a",
+              "product": {
+                "id": "retro-sneakers",
+                "name": "Retro Sneakers",
+                "unitPriceCents": 8500
+              },
+              "quantity": 2,
+              "totalCents": 17000,
+              "currency": "USD"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "success": true,
+  "scope": "Container bridge isolation, not isolation from the privileged host",
+  "restoration": {
+    "store-a": {
+      "container_id": "03312d78e767dc0b47123f7318f3c750a5bcc9dc8df30225a23879d8fdb60d0f",
+      "health": "healthy",
+      "gateway_probe": 200
+    },
+    "store-b": {
+      "container_id": "23aec9dc67e08b973ec09c76fb58498edcdac196eeb6e0329097d1f1d43bafce",
+      "health": "healthy",
+      "gateway_probe": 200
+    }
+  },
+  "finished_at": "2026-10-29T07:21:09.238007+00:00"
+}

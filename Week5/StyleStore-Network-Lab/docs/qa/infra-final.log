@@ -1,0 +1,19 @@
+test_balancer_uses_equal_roundrobin_shared_state_and_docker_dns (__main__.InfraContracts.test_balancer_uses_equal_roundrobin_shared_state_and_docker_dns) ... ok
+test_bridge_networks_have_distinct_configurable_cidrs (__main__.InfraContracts.test_bridge_networks_have_distinct_configurable_cidrs) ... ok
+test_cors_uses_exact_origin_map_not_wildcard_or_arbitrary_echo (__main__.InfraContracts.test_cors_uses_exact_origin_map_not_wildcard_or_arbitrary_echo) ... ok
+test_docker_runtime_contains_only_server_and_compiled_dist (__main__.InfraContracts.test_docker_runtime_contains_only_server_and_compiled_dist) ... ok
+test_exact_individual_health_probes_cannot_fallback (__main__.InfraContracts.test_exact_individual_health_probes_cannot_fallback) ... ok
+test_gateway_enforces_methods_rate_limits_and_safe_error_metadata (__main__.InfraContracts.test_gateway_enforces_methods_rate_limits_and_safe_error_metadata) ... ok
+test_gateway_is_readonly_with_required_writable_runtime_paths (__main__.InfraContracts.test_gateway_is_readonly_with_required_writable_runtime_paths) ... ok
+test_images_are_pinned_to_verified_registry_manifests (__main__.InfraContracts.test_images_are_pinned_to_verified_registry_manifests) ... ok
+test_live_verifier_forces_new_ip_before_claiming_dns_recovery (__main__.InfraContracts.test_live_verifier_forces_new_ip_before_claiming_dns_recovery) ... ok
+test_live_verifier_has_explicit_scope_and_no_implicit_report_write (__main__.InfraContracts.test_live_verifier_has_explicit_scope_and_no_implicit_report_write) ... ok
+test_nginx_worker_count_fits_bounded_pid_limit_on_large_hosts (__main__.InfraContracts.test_nginx_worker_count_fits_bounded_pid_limit_on_large_hosts) ... ok
+test_only_gateway_bridges_networks_and_publishes_loopback (__main__.InfraContracts.test_only_gateway_bridges_networks_and_publishes_loopback) ... ok
+test_replicas_share_image_build_and_are_hardened (__main__.InfraContracts.test_replicas_share_image_build_and_are_hardened) ... ok
+test_safe_backend_errors_are_not_replaced_by_gateway_html_or_success (__main__.InfraContracts.test_safe_backend_errors_are_not_replaced_by_gateway_html_or_success) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.155s
+
+OK

@@ -1,0 +1,335 @@
+/* StyleStore-owned presentation only. Reference chrome and theme packages stay shared. */
+/* Preserve inherited geometry; use readable theme-owned text for step numbers. */
+body.network-showcase-page .process-number {
+  color: var(--flex-color-text-primary);
+}
+
+body.network-showcase-page :where([id]) {
+  scroll-margin-top: 7rem;
+}
+
+body.network-showcase-page :where(summary, pre):focus-visible {
+  outline: 3px solid var(--flex-color-accent-secondary);
+  outline-offset: 3px;
+}
+
+body.network-showcase-page .architecture-note {
+  margin-block: var(--flex-space-lg);
+  color: var(--flex-color-text-secondary);
+  overflow-wrap: anywhere;
+}
+
+body.network-showcase-page a.concept-card {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none;
+}
+
+body.network-showcase-page .concept-source {
+  display: block;
+  margin-block-start: auto;
+  padding-block-start: var(--flex-space-md);
+  color: var(--flex-color-accent-secondary);
+  font: 650 var(--flex-step--1)/1.6 var(--flex-font-mono);
+  overflow-wrap: anywhere;
+}
+
+body.network-showcase-page a.concept-card:focus-visible {
+  outline: 3px solid var(--flex-color-accent-secondary);
+  outline-offset: 3px;
+}
+
+body.network-showcase-page .network-architecture {
+  margin: 0;
+}
+
+/* Static topology: a full-width, editable map, never a live status indicator. */
+body.network-showcase-page .network-map {
+  position: relative;
+  padding: clamp(.75rem, 1.3vw, 1rem);
+  border: 1px solid var(--flex-color-border);
+  border-radius: var(--flex-radius-lg);
+  background-color: var(--flex-color-surface-elevated);
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--flex-color-border) 28%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--flex-color-border) 28%, transparent) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+body.network-showcase-page .network-map__heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem 1rem;
+  padding: .35rem .5rem 1rem;
+  border-block-end: 1px solid var(--flex-color-border);
+}
+
+body.network-showcase-page .network-map__heading p {
+  margin: 0;
+  color: var(--flex-color-text-primary);
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  line-height: 1.45;
+  font-weight: 750;
+}
+
+body.network-showcase-page .network-map__heading > span {
+  color: var(--flex-color-text-secondary);
+  font: 500 .8rem/1.6 var(--flex-font-mono);
+}
+
+body.network-showcase-page .network-map__sr {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+body.network-showcase-page .network-map__desktop {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  overflow: visible;
+  font-family: var(--flex-font-sans);
+}
+
+body.network-showcase-page .network-map__desktop text {
+  fill: var(--flex-color-text-primary);
+  stroke: none;
+}
+
+body.network-showcase-page .network-map__host {
+  fill: none;
+  stroke: var(--flex-color-border);
+  stroke-width: 1.5;
+}
+
+body.network-showcase-page .network-map__containers {
+  fill: color-mix(in srgb, var(--flex-color-surface) 35%, transparent);
+  stroke: var(--flex-color-text-muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 7 6;
+}
+
+body.network-showcase-page .network-map__zone {
+  fill: color-mix(in srgb, var(--flex-color-surface) 58%, transparent);
+  stroke: var(--flex-color-accent-secondary);
+  stroke-width: 1.5;
+  stroke-dasharray: 6 5;
+}
+
+body.network-showcase-page .network-map__zone--private {
+  fill: color-mix(in srgb, var(--flex-color-accent-secondary) 7%, var(--flex-color-surface));
+}
+
+body.network-showcase-page .network-map__node {
+  fill: var(--flex-color-surface);
+  stroke: var(--flex-color-border);
+  stroke-width: 2;
+}
+
+body.network-showcase-page .network-map__node--gateway {
+  stroke: var(--flex-color-accent);
+  stroke-width: 2.5;
+}
+
+body.network-showcase-page .network-map__node--private {
+  stroke: var(--flex-color-accent-secondary);
+}
+
+body.network-showcase-page .network-map__wire {
+  fill: none;
+  stroke: var(--flex-color-accent);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  marker-end: url(#network-arrow);
+}
+
+body.network-showcase-page .network-map__wire--both {
+  marker-start: url(#network-arrow);
+}
+
+body.network-showcase-page .network-map__wire--response {
+  stroke: var(--flex-color-accent-secondary);
+}
+
+/* The minimum SVG label size is 18 units. Reflow at 1000px, never scale it to mobile. */
+body.network-showcase-page .network-map__desktop .network-map__zone-label {
+  fill: var(--flex-color-text-secondary);
+  font: 650 18px var(--flex-font-mono);
+  letter-spacing: .2px;
+}
+
+body.network-showcase-page .network-map__desktop .network-map__tag {
+  fill: var(--flex-color-text-secondary);
+  font: 600 18px var(--flex-font-mono);
+}
+
+body.network-showcase-page .network-map__desktop .network-map__name {
+  font-size: 24px;
+  font-weight: 750;
+}
+
+body.network-showcase-page .network-map__desktop .network-map__body {
+  font-size: 18px;
+}
+
+body.network-showcase-page .network-map__desktop .network-map__label {
+  font-size: 19px;
+  font-weight: 650;
+}
+
+body.network-showcase-page .network-map__desktop .network-map__label--response {
+  fill: var(--flex-color-accent-secondary);
+}
+
+/* Keep the network divider behind, rather than through, the branch annotation. */
+body.network-showcase-page .network-map__desktop .network-map__annotation {
+  stroke: var(--flex-color-surface-elevated);
+  stroke-width: 8px;
+  stroke-linejoin: round;
+  paint-order: stroke fill;
+}
+
+body.network-showcase-page .network-map__mobile {
+  display: none;
+}
+
+body.network-showcase-page .network-map__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem 1.25rem;
+  padding: 1rem .5rem .25rem;
+  border-block-start: 1px solid var(--flex-color-border);
+  color: var(--flex-color-text-secondary);
+  font: 500 .8rem/1.6 var(--flex-font-mono);
+}
+
+body.network-showcase-page .network-map__legend > span {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+body.network-showcase-page .network-map__key {
+  display: inline-block;
+  inline-size: 1.5rem;
+  border-block-start: 2px solid var(--flex-color-accent);
+}
+
+body.network-showcase-page .network-map__key--response {
+  border-color: var(--flex-color-accent-secondary);
+}
+
+body.network-showcase-page .network-map__key--boundary {
+  inline-size: 1.2rem;
+  block-size: .8rem;
+  border: 1px dashed var(--flex-color-accent-secondary);
+  border-radius: .15rem;
+}
+
+body.network-showcase-page .network-architecture figcaption {
+  margin-block-start: var(--flex-space-md);
+  color: var(--flex-color-text-secondary);
+  font-size: var(--flex-step--1);
+}
+
+body.network-showcase-page .architecture-disclosure {
+  margin-block-start: var(--flex-space-lg);
+  padding: var(--flex-space-md);
+  border: 1px solid var(--flex-color-border);
+  border-radius: var(--flex-radius-md);
+  background: var(--flex-color-surface-elevated);
+}
+
+body.network-showcase-page .architecture-disclosure > summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+body.network-showcase-page .architecture-disclosure-content h3 {
+  margin: 1.5rem 0 .5rem;
+  font-size: 1.1rem;
+}
+
+body.network-showcase-page .architecture-disclosure-content p {
+  color: var(--flex-color-text-secondary);
+}
+
+body.network-showcase-page .architecture-disclosure-content code {
+  overflow-wrap: anywhere;
+}
+
+body.network-showcase-page .audit-layout {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body.network-showcase-page .audit-item h3 {
+  color: var(--flex-color-text-primary);
+}
+
+body.network-showcase-page .network-idle {
+  padding: var(--flex-space-lg);
+  border: 1px solid var(--flex-color-border);
+  border-radius: var(--flex-radius-md);
+  background: var(--flex-color-surface-elevated);
+  color: var(--flex-color-text-secondary);
+}
+
+@media (max-width: 1000px) {
+  body.network-showcase-page .network-map__desktop { display: none; }
+  body.network-showcase-page .network-map__mobile { display: grid; gap: .75rem; padding-block: 1.25rem; }
+  body.network-showcase-page .network-map__mobile :where(p, strong, span) { margin: 0; overflow-wrap: anywhere; }
+  body.network-showcase-page .network-map__m-label { color: var(--flex-color-text-secondary); font: 650 .8rem/1.6 var(--flex-font-mono); }
+  body.network-showcase-page .network-map__m-node {
+    display: grid;
+    gap: .4rem;
+    min-inline-size: 0;
+    padding: 1rem;
+    border: 1px solid var(--flex-color-border);
+    border-radius: var(--flex-radius-md);
+    background: var(--flex-color-surface);
+    color: var(--flex-color-text-secondary);
+    font-size: .95rem;
+    line-height: 1.6;
+  }
+  body.network-showcase-page .network-map__m-node strong { color: var(--flex-color-text-primary); font-size: 1.1rem; line-height: 1.4; }
+  body.network-showcase-page .network-map__m-node--gateway { border: 2px solid var(--flex-color-accent); }
+  body.network-showcase-page .network-map__m-zone {
+    display: grid;
+    gap: .6rem;
+    min-inline-size: 0;
+    padding: .85rem;
+    border: 1px dashed var(--flex-color-accent-secondary);
+    border-radius: var(--flex-radius-md);
+    color: var(--flex-color-text-secondary);
+    font-size: .9rem;
+    line-height: 1.6;
+  }
+  body.network-showcase-page .network-map__m-zone--private { background: color-mix(in srgb, var(--flex-color-accent-secondary) 7%, var(--flex-color-surface)); }
+  body.network-showcase-page .network-map__m-route { color: var(--flex-color-text-primary); font: 650 .85rem/1.6 var(--flex-font-mono); overflow-wrap: anywhere; }
+  body.network-showcase-page .network-map__m-or { color: var(--flex-color-accent); font: 650 .85rem/1.5 var(--flex-font-mono); text-align: center; }
+}
+
+@media (max-width: 800px) {
+  body.network-showcase-page .audit-layout { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 480px) {
+  /* The longer local brand must leave room for both inherited menu buttons. */
+  body.network-showcase-page .portfolio-menu__toggle { min-inline-size: 5rem; }
+}
+
+@media print {
+  body.network-showcase-page .copy-button { display: none; }
+  body.network-showcase-page :where(.hero, .section-card) { box-shadow: none; }
+  body.network-showcase-page :where(pre, code) { white-space: pre-wrap; }
+}

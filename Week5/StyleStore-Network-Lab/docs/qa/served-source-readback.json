@@ -1,0 +1,25 @@
+{
+  "index.html": {
+    "http": 200,
+    "sha256": "e0d0ed700b39a909bc8eb188dee2a4249ee55050a699d8d6dd4e25115f43fcf5",
+    "matches_dist": true
+  },
+  "assets/stylestore.js": {
+    "http": 200,
+    "sha256": "7c584f4506a0c9e2ab3794b27d21473a799109099d65f1593ceb30a154bbd341",
+    "matches_dist": true
+  },
+  "assets/stylestore.css": {
+    "http": 200,
+    "sha256": "59c5d2751e68fe0c7eb1e6b8819f8c93e9a3c5a183d35216e5a3f491d2a435fc",
+    "matches_dist": true
+  },
+  "styles/network-showcase.css": {
+    "http": 200,
+    "sha256": "da1984adf530d51655a5ef1851b3f0157a10859b60eb4a206dbef659d794280e",
+    "matches_dist": true
+  },
+  "server/server.mjs": {
+    "error": "HTTP Error 404: Not Found"
+  }
+}

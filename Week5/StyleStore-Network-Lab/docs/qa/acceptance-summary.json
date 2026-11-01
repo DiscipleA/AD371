@@ -1,0 +1,77 @@
+{
+  "node_tests": 62,
+  "infra_tests": 14,
+  "shell_tests": 20,
+  "browser": {
+    "passed": 180,
+    "failed": 0,
+    "engines": [
+      {
+        "engine": "chromium",
+        "version": "151.0.7922.34",
+        "executable": "/media/reader/DEVELOP/.cache/runtimes/linux-x64/playwright/chromium-1234/chrome-linux64/chrome",
+        "layout_states": 70
+      },
+      {
+        "engine": "firefox",
+        "version": "153.0",
+        "executable": "/media/reader/DEVELOP/data/cache/scratch/stylestore-week5-20261028/browsers/firefox-1538/firefox/firefox",
+        "layout_states": 70
+      }
+    ]
+  },
+  "edge": {
+    "passed": 46,
+    "failed": 0
+  },
+  "containers": {
+    "success": true,
+    "checks": [
+      "topology",
+      "initial_health",
+      "round_robin",
+      "http_contracts",
+      "public_only_probe",
+      "stop_a_failover",
+      "restore_a",
+      "recreate_a"
+    ],
+    "round_robin": {
+      "store-b": 5,
+      "store-a": 5
+    },
+    "failover": {
+      "store-b": 10
+    },
+    "recreate_changed_ip": true
+  },
+  "lighthouse": [
+    {
+      "mode": "mobile",
+      "scores": {
+        "performance": 86,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "warnings": [],
+      "runtime_error": null,
+      "remaining_a11y": []
+    },
+    {
+      "mode": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "warnings": [],
+      "runtime_error": null,
+      "remaining_a11y": []
+    }
+  ],
+  "protected_files": 528,
+  "protected_changed": [],
+  "user_groups": "reader adm cdrom sudo dip plugdev lpadmin sambashare"
+}

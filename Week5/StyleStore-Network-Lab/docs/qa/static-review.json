@@ -1,0 +1,121 @@
+{
+  "method": "Targeted regex security indicators on current runtime/test sources; findings require code review, not automatic classification. JSX is parsed by the actual Vite build. No staging/stashing/committing.",
+  "findings": [
+    {
+      "file": "tests/infra_test.py",
+      "rule": "unsafe_python_shell",
+      "line": 156,
+      "excerpt": "shell=True"
+    }
+  ],
+  "syntax": [
+    {
+      "file": "src/client.mjs",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "server/server.mjs",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "styles/themes/theme-registry.js",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "styles/themes/playful-pop/theme-config.js",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "styles/themes/standard/theme-config.js",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "styles/themes/raggedy-granite/theme-config.js",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "styles/themes/baroque-plexiglas/theme-config.js",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "styles/themes/gothic-stickerboard/theme-config.js",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "styles/themes/luminous-midnight/theme-config.js",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "styles/themes/glossy-marble/theme-config.js",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "theme.js",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "site-navigation.js",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "copy-code.js",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "config.js",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "scripts/build.mjs",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "tests/client.test.mjs",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "tests/infra_test.py",
+      "passed": true
+    },
+    {
+      "file": "tests/build.test.mjs",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "tests/dev.test.mjs",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "tests/ui-contract.test.mjs",
+      "passed": true,
+      "errors": ""
+    },
+    {
+      "file": "tests/showcase_test.py",
+      "passed": true
+    },
+    {
+      "file": "tests/server.test.mjs",
+      "passed": true,
+      "errors": ""
+    }
+  ]
+}

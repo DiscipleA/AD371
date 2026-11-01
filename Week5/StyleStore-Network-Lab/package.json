@@ -1,0 +1,25 @@
+{
+  "name": "stylestore-network-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A React storefront backed by an isolated Docker Compose load-balancing lab.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "start": "node server/server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:infra": "python3 -B tests/infra_test.py",
+    "test:shell": "python3 -B tests/showcase_test.py"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "vite": "8.3.5"
+  }
+}

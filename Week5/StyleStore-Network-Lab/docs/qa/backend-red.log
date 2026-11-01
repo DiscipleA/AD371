@@ -1,0 +1,545 @@
+$ node --test tests/server.test.mjs
+TAP version 13
+# Subtest: health exposes the selected real replica identity
+not ok 1 - health exposes the selected real replica identity
+  ---
+  duration_ms: 2.592329
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:39:1'
+  failureType: 'hookFailed'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/server/server.mjs' imported from /home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: quote calculates exact integer cents for each allowed quantity
+not ok 2 - quote calculates exact integer cents for each allowed quantity
+  ---
+  duration_ms: 0.265979
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:43:1'
+  failureType: 'hookFailed'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/server/server.mjs' imported from /home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: quote requires exactly one known integer parameter without coercion
+not ok 3 - quote requires exactly one known integer parameter without coercion
+  ---
+  duration_ms: 0.179727
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:50:1'
+  failureType: 'hookFailed'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/server/server.mjs' imported from /home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: HEAD retains status/metadata without a body
+not ok 4 - HEAD retains status/metadata without a body
+  ---
+  duration_ms: 0.216524
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:55:1'
+  failureType: 'hookFailed'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/server/server.mjs' imported from /home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: non-read methods are rejected safely with Allow
+not ok 5 - non-read methods are rejected safely with Allow
+  ---
+  duration_ms: 0.245474
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:58:1'
+  failureType: 'hookFailed'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/server/server.mjs' imported from /home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: unknown API routes never fall through to frontend HTML
+not ok 6 - unknown API routes never fall through to frontend HTML
+  ---
+  duration_ms: 0.187876
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:61:1'
+  failureType: 'hookFailed'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/server/server.mjs' imported from /home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: only explicitly public build files are served with correct types
+not ok 7 - only explicitly public build files are served with correct types
+  ---
+  duration_ms: 0.342185
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:64:1'
+  failureType: 'hookFailed'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/server/server.mjs' imported from /home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: static boundary denies secrets, directories, source maps, traversal and all symlinks
+not ok 8 - static boundary denies secrets, directories, source maps, traversal and all symlinks
+  ---
+  duration_ms: 0.273521
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:70:1'
+  failureType: 'hookFailed'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/server/server.mjs' imported from /home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: missing build files return safe 404 instead of a raw filesystem error
+not ok 9 - missing build files return safe 404 instead of a raw filesystem error
+  ---
+  duration_ms: 0.779624
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:75:1'
+  failureType: 'hookFailed'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/server/server.mjs' imported from /home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: server identity is mandatory and confined to the two approved replicas
+not ok 10 - server identity is mandatory and confined to the two approved replicas
+  ---
+  duration_ms: 0.591334
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:78:1'
+  failureType: 'hookFailed'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/server/server.mjs' imported from /home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+# Subtest: CLI validates env, starts on an ephemeral port and exits gracefully on SIGTERM
+not ok 11 - CLI validates env, starts on an ephemeral port and exits gracefully on SIGTERM
+  ---
+  duration_ms: 0.181849
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:82:1'
+  failureType: 'hookFailed'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/server/server.mjs' imported from /home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 0
+# fail 11
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 344.15019
+
+EXIT=1
+
+$ python3 -B tests/infra_test.py
+test_balancer_uses_equal_roundrobin_shared_state_and_docker_dns (__main__.InfraContracts.test_balancer_uses_equal_roundrobin_shared_state_and_docker_dns) ... ERROR
+test_bridge_networks_have_distinct_configurable_cidrs (__main__.InfraContracts.test_bridge_networks_have_distinct_configurable_cidrs) ... ERROR
+test_cors_uses_exact_origin_map_not_wildcard_or_arbitrary_echo (__main__.InfraContracts.test_cors_uses_exact_origin_map_not_wildcard_or_arbitrary_echo) ... ERROR
+test_docker_runtime_contains_only_server_and_compiled_dist (__main__.InfraContracts.test_docker_runtime_contains_only_server_and_compiled_dist) ... ERROR
+test_exact_individual_health_probes_cannot_fallback (__main__.InfraContracts.test_exact_individual_health_probes_cannot_fallback) ... ERROR
+test_gateway_enforces_methods_rate_limits_and_safe_error_metadata (__main__.InfraContracts.test_gateway_enforces_methods_rate_limits_and_safe_error_metadata) ... ERROR
+test_gateway_is_readonly_with_required_writable_runtime_paths (__main__.InfraContracts.test_gateway_is_readonly_with_required_writable_runtime_paths) ... ERROR
+test_live_verifier_has_explicit_scope_and_no_implicit_report_write (__main__.InfraContracts.test_live_verifier_has_explicit_scope_and_no_implicit_report_write) ... ERROR
+test_only_gateway_bridges_networks_and_publishes_loopback (__main__.InfraContracts.test_only_gateway_bridges_networks_and_publishes_loopback) ... ERROR
+test_replicas_share_image_build_and_are_hardened (__main__.InfraContracts.test_replicas_share_image_build_and_are_hardened) ... ERROR
+
+======================================================================
+ERROR: test_balancer_uses_equal_roundrobin_shared_state_and_docker_dns (__main__.InfraContracts.test_balancer_uses_equal_roundrobin_shared_state_and_docker_dns)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 11, in setUp
+    self.compose = yaml.safe_load((ROOT / 'compose.yaml').read_text())
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/compose.yaml'
+
+======================================================================
+ERROR: test_bridge_networks_have_distinct_configurable_cidrs (__main__.InfraContracts.test_bridge_networks_have_distinct_configurable_cidrs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 11, in setUp
+    self.compose = yaml.safe_load((ROOT / 'compose.yaml').read_text())
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/compose.yaml'
+
+======================================================================
+ERROR: test_cors_uses_exact_origin_map_not_wildcard_or_arbitrary_echo (__main__.InfraContracts.test_cors_uses_exact_origin_map_not_wildcard_or_arbitrary_echo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 11, in setUp
+    self.compose = yaml.safe_load((ROOT / 'compose.yaml').read_text())
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/compose.yaml'
+
+======================================================================
+ERROR: test_docker_runtime_contains_only_server_and_compiled_dist (__main__.InfraContracts.test_docker_runtime_contains_only_server_and_compiled_dist)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 11, in setUp
+    self.compose = yaml.safe_load((ROOT / 'compose.yaml').read_text())
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/compose.yaml'
+
+======================================================================
+ERROR: test_exact_individual_health_probes_cannot_fallback (__main__.InfraContracts.test_exact_individual_health_probes_cannot_fallback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 11, in setUp
+    self.compose = yaml.safe_load((ROOT / 'compose.yaml').read_text())
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/compose.yaml'
+
+======================================================================
+ERROR: test_gateway_enforces_methods_rate_limits_and_safe_error_metadata (__main__.InfraContracts.test_gateway_enforces_methods_rate_limits_and_safe_error_metadata)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 11, in setUp
+    self.compose = yaml.safe_load((ROOT / 'compose.yaml').read_text())
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/compose.yaml'
+
+======================================================================
+ERROR: test_gateway_is_readonly_with_required_writable_runtime_paths (__main__.InfraContracts.test_gateway_is_readonly_with_required_writable_runtime_paths)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 11, in setUp
+    self.compose = yaml.safe_load((ROOT / 'compose.yaml').read_text())
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/compose.yaml'
+
+======================================================================
+ERROR: test_live_verifier_has_explicit_scope_and_no_implicit_report_write (__main__.InfraContracts.test_live_verifier_has_explicit_scope_and_no_implicit_report_write)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 11, in setUp
+    self.compose = yaml.safe_load((ROOT / 'compose.yaml').read_text())
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/compose.yaml'
+
+======================================================================
+ERROR: test_only_gateway_bridges_networks_and_publishes_loopback (__main__.InfraContracts.test_only_gateway_bridges_networks_and_publishes_loopback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 11, in setUp
+    self.compose = yaml.safe_load((ROOT / 'compose.yaml').read_text())
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/compose.yaml'
+
+======================================================================
+ERROR: test_replicas_share_image_build_and_are_hardened (__main__.InfraContracts.test_replicas_share_image_build_and_are_hardened)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 11, in setUp
+    self.compose = yaml.safe_load((ROOT / 'compose.yaml').read_text())
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/reader/DEVELOP/data/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/compose.yaml'
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.014s
+
+FAILED (errors=10)
+
+EXIT=1
+
+ADDITIONAL TEST-FIRST PIN/WORKER RED
+test_images_are_pinned_to_verified_registry_manifests (__main__.InfraContracts.test_images_are_pinned_to_verified_registry_manifests) ... FAIL
+test_nginx_worker_count_fits_bounded_pid_limit_on_large_hosts (__main__.InfraContracts.test_nginx_worker_count_fits_bounded_pid_limit_on_large_hosts) ... FAIL
+
+======================================================================
+FAIL: test_images_are_pinned_to_verified_registry_manifests (__main__.InfraContracts.test_images_are_pinned_to_verified_registry_manifests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 133, in test_images_are_pinned_to_verified_registry_manifests
+    self.assertIn(f'FROM {node} AS build', dockerfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'FROM node:24-alpine@sha256:8a32c8cf649a49915a66e81e7a609223c708d0adabf288ee3f4077d765542f85 AS build' not found in '# Official registry tag verified before authoring; runtime pull digests belong in QA evidence.\nFROM node:24-alpine AS build\nWORKDIR /app\nCOPY package.json package-lock.json ./\nRUN npm ci\nCOPY . .\nRUN npm run build\n\nFROM node:24-alpine AS runtime\nWORKDIR /app\nENV NODE_ENV=production PORT=3000\nCOPY --from=build --chown=node:node /app/dist ./dist\nCOPY --chown=node:node server/ ./server/\nUSER node\nEXPOSE 3000\nSTOPSIGNAL SIGTERM\nCMD ["node", "server/server.mjs"]\n'
+
+======================================================================
+FAIL: test_nginx_worker_count_fits_bounded_pid_limit_on_large_hosts (__main__.InfraContracts.test_nginx_worker_count_fits_bounded_pid_limit_on_large_hosts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 139, in test_nginx_worker_count_fits_bounded_pid_limit_on_large_hosts
+    self.assertIsNotNone(workers, 'Do not use host CPU auto count inside a pids-limited container')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : Do not use host CPU auto count inside a pids-limited container
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.023s
+
+FAILED (failures=2)
+
+EXIT=1
+
+ADDITIONAL TEST-FIRST ERROR/DNS RED
+test_safe_backend_errors_are_not_replaced_by_gateway_html_or_success (__main__.InfraContracts.test_safe_backend_errors_are_not_replaced_by_gateway_html_or_success) ... FAIL
+test_live_verifier_forces_new_ip_before_claiming_dns_recovery (__main__.InfraContracts.test_live_verifier_forces_new_ip_before_claiming_dns_recovery) ... FAIL
+
+======================================================================
+FAIL: test_safe_backend_errors_are_not_replaced_by_gateway_html_or_success (__main__.InfraContracts.test_safe_backend_errors_are_not_replaced_by_gateway_html_or_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 143, in test_safe_backend_errors_are_not_replaced_by_gateway_html_or_success
+    self.assertIn('proxy_intercept_errors off;', self.nginx)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'proxy_intercept_errors off;' not found in 'worker_processes 2;\nworker_shutdown_timeout 5s;\npid /var/run/nginx.pid;\nerror_log /dev/stderr warn;\nevents { worker_connections 256; }\nhttp {\n    access_log /dev/stdout;\n    server_tokens off;\n    resolver 127.0.0.11 valid=2s ipv6=off;\n    resolver_timeout 2s;\n\n    # An exact allowlist, not origin reflection. CORS is not authorization.\n    map $http_origin $cors_origin {\n        default "";\n        "http://127.0.0.1:8785" "http://127.0.0.1:8785";\n        "http://localhost:8785" "http://localhost:8785";\n        "https://chernichenkodmitriy.com" "https://chernichenkodmitriy.com";\n        "https://www.chernichenkodmitriy.com" "https://www.chernichenkodmitriy.com";\n    }\n    map "$request_method:$cors_origin" $approved_preflight {\n        default 0;\n        ~^OPTIONS:.+ 1;\n    }\n    limit_req_zone $binary_remote_addr zone=quotes:1m rate=10r/s;\n\n    # Equal weights and the default round-robin algorithm, shared across workers.\n    upstream stores {\n        zone stores 64k;\n        server store-a:3000 resolve max_fails=1 fail_timeout=2s;\n        server store-b:3000 resolve max_fails=1 fail_timeout=2s;\n        keepalive 16;\n    }\n    upstream store_a_probe {\n        zone store_a_probe 32k;\n        server store-a:3000 resolve;\n    }\n    upstream store_b_probe {\n        zone store_b_probe 32k;\n        server store-b:3000 resolve;\n    }\n\n    server {\n        listen 80 default_server;\n        server_name _;\n        client_max_body_size 1k;\n        client_body_timeout 3s;\n        client_header_timeout 5s;\n        send_timeout 5s;\n        keepalive_timeout 5s;\n        limit_req_status 429;\n        add_header X-Lab-Gateway nginx always;\n        add_header Cache-Control "no-store" always;\n        add_header X-Content-Type-Options nosniff always;\n        add_header Access-Control-Allow-Origin $cors_origin always;\n        add_header Access-Control-Allow-Methods "GET, HEAD, OPTIONS" always;\n        add_header Access-Control-Allow-Headers "Content-Type" always;\n        add_header Access-Control-Expose-Headers "X-Store-Id, X-Lab-Gateway" always;\n        add_header Access-Control-Max-Age "600" always;\n        add_header Vary Origin always;\n        add_header Allow "GET, HEAD, OPTIONS" always;\n\n        if ($request_method !~ ^(GET|HEAD|OPTIONS)$) { return 405; }\n        if ($approved_preflight = 1) { return 204; }\n        if ($request_method = OPTIONS) { return 403; }\n\n        proxy_http_version 1.1;\n        proxy_set_header Connection "";\n        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n        proxy_set_header X-Forwarded-For $remote_addr;\n        proxy_set_header X-Forwarded-Proto $scheme;\n        proxy_hide_header Cache-Control;\n        proxy_hide_header X-Content-Type-Options;\n        proxy_connect_timeout 1s;\n        proxy_read_timeout 3s;\n        proxy_send_timeout 3s;\n        proxy_next_upstream_timeout 4s;\n        proxy_next_upstream_tries 2;\n        proxy_next_upstream error timeout invalid_header http_502 http_503 http_504;\n        proxy_buffering on;\n        proxy_cache off;\n        proxy_intercept_errors on;\n\n        # Errors have explicit original statuses, safe JSON, gateway/no-store metadata.\n        error_page 400 = @gateway_400;\n        location @gateway_400 {\n            default_type application/json;\n            return 400 \'{"error":"Request could not be completed"}\';\n        }\n        error_page 403 = @gateway_403;\n        location @gateway_403 {\n            default_type application/json;\n            return 403 \'{"error":"Request could not be completed"}\';\n        }\n        error_page 404 = @gateway_404;\n        location @gateway_404 {\n            default_type application/json;\n            return 404 \'{"error":"Request could not be completed"}\';\n        }\n        error_page 405 = @gateway_405;\n        location @gateway_405 {\n            default_type application/json;\n            return 405 \'{"error":"Request could not be completed"}\';\n        }\n        error_page 408 = @gateway_408;\n        location @gateway_408 {\n            default_type application/json;\n            return 408 \'{"error":"Request could not be completed"}\';\n        }\n        error_page 413 = @gateway_413;\n        location @gateway_413 {\n            default_type application/json;\n            return 413 \'{"error":"Request could not be completed"}\';\n        }\n        error_page 414 = @gateway_414;\n        location @gateway_414 {\n            default_type application/json;\n            return 414 \'{"error":"Request could not be completed"}\';\n        }\n        error_page 429 = @gateway_429;\n        location @gateway_429 {\n            default_type application/json;\n            return 429 \'{"error":"Request could not be completed"}\';\n        }\n        error_page 500 = @gateway_500;\n        location @gateway_500 {\n            default_type application/json;\n            return 500 \'{"error":"Request could not be completed"}\';\n        }\n        error_page 502 = @gateway_502;\n        location @gateway_502 {\n            default_type application/json;\n            return 502 \'{"error":"Request could not be completed"}\';\n        }\n        error_page 503 = @gateway_503;\n        location @gateway_503 {\n            default_type application/json;\n            return 503 \'{"error":"Request could not be completed"}\';\n        }\n        error_page 504 = @gateway_504;\n        location @gateway_504 {\n            default_type application/json;\n            return 504 \'{"error":"Request could not be completed"}\';\n        }\n        location = /api/health/store-a {\n            proxy_next_upstream off;\n            proxy_pass http://store_a_probe/healthz;\n        }\n        location = /api/health/store-b {\n            proxy_next_upstream off;\n            proxy_pass http://store_b_probe/healthz;\n        }\n        location = /api/quote {\n            limit_req zone=quotes burst=20 nodelay;\n            proxy_pass http://stores;\n        }\n        location / {\n            proxy_pass http://stores;\n        }\n    }\n}\n'
+
+======================================================================
+FAIL: test_live_verifier_forces_new_ip_before_claiming_dns_recovery (__main__.InfraContracts.test_live_verifier_forces_new_ip_before_claiming_dns_recovery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/infra_test.py", line 147, in test_live_verifier_forces_new_ip_before_claiming_dns_recovery
+    self.assertIn('address-holder', script)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'address-holder' not found in '#!/usr/bin/env python3\n"""Exercise only this Compose project. Never fabricates evidence.\n\nRequires an already built/running lab and Docker privileges. This script stops,\nstarts and recreates ONLY store-a in this project and finally starts both stores.\nUse --output explicitly to retain a JSON report; otherwise writes only stdout.\nThe public-only probe uses the already-built backend image (--pull=never).\n"""\nimport argparse\nfrom collections import Counter\nfrom datetime import datetime, timezone\nimport ipaddress\nimport json\nfrom pathlib import Path\nimport shlex\nimport subprocess\nimport sys\nimport time\nimport urllib.error\nimport urllib.parse\nimport urllib.request\nimport uuid\n\nPROJECT = \'stylestore-network-lab\'\nROOT = Path(__file__).resolve().parents[1]\nCOMPOSE_FILE = ROOT / \'compose.yaml\'\nOPENER = urllib.request.build_opener(urllib.request.ProxyHandler({}))\n\n\ndef require(condition, message):\n    if not condition:\n        raise AssertionError(message)\n\n\nclass Verifier:\n    def __init__(self, args):\n        self.args = args\n        self.docker = shlex.split(args.docker_command)\n        require(bool(self.docker), \'Missing Docker command\')\n        self.compose = self.docker + [\'compose\', \'--project-name\', PROJECT,\n                                     \'--project-directory\', str(ROOT), \'--file\', str(COMPOSE_FILE)]\n        self.report = {\'project\': PROJECT, \'compose_file\': str(COMPOSE_FILE),\n                       \'started_at\': datetime.now(timezone.utc).isoformat(),\n                       \'checks\': {}, \'success\': False,\n                       \'scope\': \'Container bridge isolation, not isolation from the privileged host\'}\n        self.config = None\n        self.base = None\n        self.mutated = False\n        self.probe_name = f\'{PROJECT}-public-probe-{uuid.uuid4().hex[:12]}\'\n\n    def run(self, command, timeout=60):\n        result = subprocess.run(command, cwd=ROOT, text=True, stdout=subprocess.PIPE,\n                                stderr=subprocess.PIPE, timeout=timeout, check=False)\n        if result.returncode:\n            raise RuntimeError(f\'Command failed ({result.returncode}): {shlex.join(command)}\\n{result.stderr.strip()}\\n{result.stdout.strip()}\')\n        return result.stdout.strip()\n\n    def dc(self, *arguments, timeout=60):\n        return self.run(self.compose + list(arguments), timeout)\n\n    def inspect(self, service):\n        ids = self.dc(\'ps\', \'--all\', \'--quiet\', service).splitlines()\n        require(len(ids) == 1, f\'Expected one {service} container, got {len(ids)}\')\n        data = json.loads(self.run(self.docker + [\'inspect\', ids[0]]))[0]\n        require(data[\'Config\'][\'Labels\'].get(\'com.docker.compose.project\') == PROJECT, \'Unexpected project ownership\')\n        require(data[\'Config\'][\'Labels\'].get(\'com.docker.compose.service\') == service, \'Unexpected service ownership\')\n        return data\n\n    def request(self, path, method=\'GET\', headers=None):\n        started = time.monotonic()\n        request = urllib.request.Request(self.base + path, method=method, headers=headers or {})\n        try:\n            response = OPENER.open(request, timeout=8)\n        except urllib.error.HTTPError as error:\n            response = error\n        with response:\n            body = response.read(1024 * 1024)\n            result = {\'status\': response.status, \'headers\': dict(response.headers.items()),\n                      \'body\': body.decode(\'utf-8\', errors=\'replace\'),\n                      \'elapsed_ms\': round((time.monotonic() - started) * 1000, 3)}\n        # urllib\'s original-case header dictionary is preserved for evidence.\n        lower = {key.lower(): value for key, value in result[\'headers\'].items()}\n        require(lower.get(\'x-lab-gateway\') == \'nginx\', f\'Gateway marker missing for {path}: {result}\')\n        require(lower.get(\'cache-control\') == \'no-store\', f\'Unsafe caching for {path}\')\n        require(lower.get(\'x-content-type-options\') == \'nosniff\', f\'Nosniff missing for {path}\')\n        return result\n\n    def quote(self):\n        response = self.request(\'/api/quote?quantity=2\')\n        require(response[\'status\'] == 200, f\'Quote failed: {response}\')\n        headers = {key.lower(): value for key, value in response[\'headers\'].items()}\n        require(headers.get(\'content-type\', \'\').startswith(\'application/json\'), \'Non-JSON quote\')\n        body = json.loads(response[\'body\'])\n        require(body.get(\'serverId\') in [\'store-a\', \'store-b\'], \'Invalid server identity\')\n        expected = {\'serverId\': body[\'serverId\'], \'product\': {\'id\': \'retro-sneakers\', \'name\': \'Retro Sneakers\', \'unitPriceCents\': 8500},\n                    \'quantity\': 2, \'totalCents\': 17000, \'currency\': \'USD\'}\n        require(body == expected, f\'Invalid quote contract: {body}\')\n        require(headers.get(\'x-store-id\') == body[\'serverId\'], \'Replica marker/body mismatch\')\n        return {\'serverId\': body[\'serverId\'], \'status\': 200, \'elapsed_ms\': response[\'elapsed_ms\'], \'body\': body}\n\n    def batch(self, count=10):\n        replies = []\n        for _ in range(count):\n            replies.append(self.quote())\n            time.sleep(0.13)\n        return {\'valid_200_json_count\': len(replies),\n                \'distribution\': dict(Counter(item[\'serverId\'] for item in replies)), \'responses\': replies}\n\n    def wait_healthy(self, services=(\'store-a\', \'store-b\'), timeout=60):\n        deadline = time.monotonic() + timeout\n        last = \'\'\n        while time.monotonic() < deadline:\n            try:\n                observations = {}\n                for service in services:\n                    container = self.inspect(service)\n                    require(container[\'State\'][\'Running\'], f\'{service} is not running\')\n                    require(container[\'State\'].get(\'Health\', {}).get(\'Status\') == \'healthy\', f\'{service} not healthy yet\')\n                    response = self.request(\'/api/health/\' + service)\n                    require(response[\'status\'] == 200, f\'{service} gateway probe {response["status"]}\')\n                    require(json.loads(response[\'body\']) == {\'status\': \'ok\', \'serverId\': service}, \'Probe identity mismatch\')\n                    observations[service] = {\'container_id\': container[\'Id\'], \'health\': \'healthy\', \'gateway_probe\': 200}\n                return observations\n            except (AssertionError, RuntimeError, OSError, ValueError) as error:\n                last = str(error)\n                time.sleep(1)\n        raise TimeoutError(f\'Healthy wait expired: {last}\')\n\n    def topology(self):\n        self.config = json.loads(self.dc(\'config\', \'--format\', \'json\'))\n        require(self.config.get(\'name\') == PROJECT, \'Wrong normalized project\')\n        require(set(self.config[\'services\']) == {\'nginx\', \'store-a\', \'store-b\'}, \'Unexpected service set\')\n        require(set(self.config[\'networks\']) == {\'public_subnet\', \'private_subnet\'}, \'Unexpected network set\')\n        normalized_ports = self.config[\'services\'][\'nginx\'].get(\'ports\', [])\n        require(len(normalized_ports) == 1, \'Gateway must publish exactly one port\')\n        publish = normalized_ports[0]\n        require(str(publish[\'target\']) == \'80\' and publish.get(\'protocol\', \'tcp\') == \'tcp\', \'Unexpected gateway target\')\n        require(publish.get(\'host_ip\') == \'127.0.0.1\', \'Refusing non-loopback host publication\')\n        default_base = f\'http://127.0.0.1:{publish["published"]}\'\n        self.base = (self.args.base_url or default_base).rstrip(\'/\')\n        parsed = urllib.parse.urlsplit(self.base)\n        require(parsed.scheme == \'http\' and parsed.hostname in [\'127.0.0.1\', \'localhost\'] and parsed.path in [\'\', \'/\'] and not parsed.query and not parsed.fragment and not parsed.username,\n                \'Base URL must be this local HTTP gateway\')\n        require((parsed.port or 80) == int(publish[\'published\']), \'Base URL port does not match normalized Compose publication\')\n        containers = {name: self.inspect(name) for name in [\'nginx\', \'store-a\', \'store-b\']}\n        owned_ids = self.run(self.docker + [\'ps\', \'--all\', \'--quiet\', \'--filter\', f\'label=com.docker.compose.project={PROJECT}\']).splitlines()\n        require(len(owned_ids) == 3, f\'Expected exactly three project containers, got {len(owned_ids)}\')\n        network_info = {}\n        cidrs = []\n        for key in [\'public_subnet\', \'private_subnet\']:\n            config = self.config[\'networks\'][key]\n            actual = json.loads(self.run(self.docker + [\'network\', \'inspect\', config[\'name\']]))[0]\n            require(actual[\'Labels\'].get(\'com.docker.compose.project\') == PROJECT, \'Unexpected network owner\')\n            require(actual[\'Driver\'] == \'bridge\', \'Network is not a bridge\')\n            require(actual[\'Internal\'] == (key == \'private_subnet\'), \'Internal network boundary mismatch\')\n            expected_cidr = str(ipaddress.ip_network(config[\'ipam\'][\'config\'][0][\'subnet\']))\n            require(any(item.get(\'Subnet\') == expected_cidr for item in actual[\'IPAM\'][\'Config\']), \'Live IPAM differs from normalized config\')\n            cidrs.append(ipaddress.ip_network(expected_cidr))\n            network_info[key] = {\'name\': config[\'name\'], \'id\': actual[\'Id\'], \'cidr\': expected_cidr, \'internal\': actual[\'Internal\']}\n        require(not cidrs[0].overlaps(cidrs[1]), \'Bridge CIDRs overlap\')\n        public = network_info[\'public_subnet\'][\'name\']\n        private = network_info[\'private_subnet\'][\'name\']\n        for name, container in containers.items():\n            require(container[\'State\'][\'Running\'], f\'{name} is not running\')\n            attached = set(container[\'NetworkSettings\'][\'Networks\'])\n            require(attached == ({public, private} if name == \'nginx\' else {private}), f\'{name} network leakage: {attached}\')\n            bindings = container[\'HostConfig\'].get(\'PortBindings\') or {}\n            live_ports = container[\'NetworkSettings\'].get(\'Ports\') or {}\n            if name == \'nginx\':\n                require(set(bindings) == {\'80/tcp\'}, \'Unexpected gateway host bindings\')\n                require(bindings[\'80/tcp\'] == [{\'HostIp\': \'127.0.0.1\', \'HostPort\': str(publish[\'published\'])}], \'Unsafe live gateway bind\')\n            else:\n                require(not bindings and not any(live_ports.values()), f\'Backend {name} port leaked to host\')\n                require(not self.config[\'services\'][name].get(\'ports\'), f\'{name} normalized ports leaked\')\n                require(container[\'Config\'][\'User\'] == \'node\', \'Backend is not nonroot\')\n                require(container[\'HostConfig\'][\'ReadonlyRootfs\'], \'Backend rootfs is writable\')\n                require(container[\'HostConfig\'][\'CapDrop\'] == [\'ALL\'], \'Backend capabilities not dropped\')\n        require(containers[\'store-a\'][\'Image\'] == containers[\'store-b\'][\'Image\'], \'Replicas do not use identical immutable image ID\')\n        self.report[\'checks\'][\'topology\'] = {\'gateway\': self.base, \'networks\': network_info,\n            \'containers\': {name: {\'id\': c[\'Id\'], \'image_id\': c[\'Image\'],\n                                  \'networks\': {k: v[\'IPAddress\'] for k, v in c[\'NetworkSettings\'][\'Networks\'].items()},\n                                  \'host_ports\': c[\'HostConfig\'].get(\'PortBindings\') or {}} for name, c in containers.items()}}\n        return containers, public, private\n\n    def http_contracts(self):\n        observations = []\n        for path, method, status in [(\'/api/quote\', \'GET\', 400), (\'/api/quote?quantity=0\', \'GET\', 400),\n                 (\'/api/quote?quantity=10\', \'GET\', 400), (\'/api/quote?quantity=1&quantity=2\', \'GET\', 400),\n                 (\'/api/quote?quantity=1&extra=2\', \'GET\', 400), (\'/api/unknown\', \'GET\', 404),\n                 (\'/.env\', \'GET\', 404), (\'/server/server.mjs\', \'GET\', 404),\n                 (\'/docs/assignment-plan.md\', \'GET\', 404), (\'/assets/not-real.js.map\', \'GET\', 404),\n                 (\'/api/quote?quantity=2\', \'POST\', 405), (\'/api/quote?quantity=2\', \'HEAD\', 200)]:\n            response = self.request(path, method)\n            require(response[\'status\'] == status, f\'Wrong status for {method} {path}: {response}\')\n            if method == \'HEAD\': require(not response[\'body\'], \'HEAD contains a body\')\n            observations.append({\'method\': method, \'path\': path, \'status\': response[\'status\']})\n            time.sleep(0.13)\n        approved = [\'http://127.0.0.1:8785\', \'http://localhost:8785\', \'https://chernichenkodmitriy.com\', \'https://www.chernichenkodmitriy.com\']\n        for origin in approved:\n            response = self.request(\'/api/quote?quantity=2\', \'OPTIONS\', {\'Origin\': origin, \'Access-Control-Request-Method\': \'GET\'})\n            require(response[\'status\'] == 204 and not response[\'body\'], f\'Preflight failed for {origin}\')\n            headers = {k.lower(): v for k, v in response[\'headers\'].items()}\n            require(headers.get(\'access-control-allow-origin\') == origin, \'CORS allowlist mismatch\')\n            get = self.request(\'/api/quote?quantity=2\', headers={\'Origin\': origin})\n            require(get[\'status\'] == 200 and {k.lower(): v for k, v in get[\'headers\'].items()}.get(\'access-control-allow-origin\') == origin, \'Approved-origin GET failed\')\n            observations.append({\'origin\': origin, \'preflight\': 204, \'get\': 200})\n            time.sleep(0.13)\n        for origin in [\'https://attacker.invalid\', \'http://localhost:8785.attacker.invalid\']:\n            response = self.request(\'/api/quote?quantity=2\', \'OPTIONS\', {\'Origin\': origin, \'Access-Control-Request-Method\': \'GET\'})\n            require(response[\'status\'] == 403, \'Unapproved-origin preflight must be rejected\')\n            require(\'access-control-allow-origin\' not in {k.lower() for k in response[\'headers\']}, \'Origin reflected\')\n            observations.append({\'origin\': origin, \'preflight\': response[\'status\']})\n        page = self.request(\'/\')\n        require(page[\'status\'] == 200 and \'<!doctype html\' in page[\'body\'].lower(), \'Compiled frontend is not served\')\n        self.report[\'checks\'][\'http_contracts\'] = observations\n\n    def public_probe(self, containers, public, private):\n        targets = [containers[name][\'NetworkSettings\'][\'Networks\'][private][\'IPAddress\'] for name in [\'store-a\', \'store-b\']]\n        # Positive control proves the probe runs and the public network reaches nginx.\n        gateway_ip = containers[\'nginx\'][\'NetworkSettings\'][\'Networks\'][public][\'IPAddress\']\n        source = """const gateway=process.argv[1], targets=process.argv.slice(2);const results=[];\nconst control=await fetch(\'http://\'+gateway+\'/\',{signal:AbortSignal.timeout(2500)});\nif(!control.ok||control.headers.get(\'x-lab-gateway\')!==\'nginx\')throw Error(\'positive control failed\');\nfor(const ip of targets){let reachable=false;try{await fetch(\'http://\'+ip+\':3000/healthz\',{signal:AbortSignal.timeout(2000)});reachable=true}catch{}results.push({ip,port:3000,reachable});}\nconsole.log(JSON.stringify({positiveControl:\'gateway-reachable\',targets:results}));if(results.some(x=>x.reachable))process.exit(1);"""\n        self.mutated = True\n        output = self.run(self.docker + [\'run\', \'--rm\', \'--pull=never\', \'--name\', self.probe_name,\n                   \'--label\', f\'lab.verifier.project={PROJECT}\', \'--network\', public, \'--user\', \'node\',\n                   \'--read-only\', \'--cap-drop=ALL\', \'--security-opt=no-new-privileges:true\',\n                   \'--memory=64m\', \'--pids-limit=32\', \'--entrypoint\', \'node\', containers[\'store-a\'][\'Image\'],\n                   \'--input-type=module\', \'-e\', source, gateway_ip, *targets], timeout=20)\n        result = json.loads(output)\n        require(result[\'positiveControl\'] == \'gateway-reachable\', \'Probe positive control failed\')\n        require(all(not item[\'reachable\'] for item in result[\'targets\']), \'Private backend reachable from public-only bridge\')\n        self.report[\'checks\'][\'public_only_probe\'] = result\n\n    def failover(self):\n        self.mutated = True\n        self.dc(\'stop\', \'--timeout\', \'8\', \'store-a\')\n        require(not self.inspect(\'store-a\')[\'State\'][\'Running\'], \'store-a did not stop\')\n        probe = self.request(\'/api/health/store-a\')\n        require(probe[\'status\'] in [502, 503, 504], f\'Individual stopped probe incorrectly fell back: {probe}\')\n        b_probe = self.request(\'/api/health/store-b\')\n        require(b_probe[\'status\'] == 200 and json.loads(b_probe[\'body\'])[\'serverId\'] == \'store-b\', \'Surviving individual probe failed\')\n        failed = self.batch()\n        require(failed[\'distribution\'] == {\'store-b\': 10}, f\'Stopped-A requests did not all reach B: {failed}\')\n        self.report[\'checks\'][\'stop_a_failover\'] = {\'individual_a_status\': probe[\'status\'], \'individual_b_status\': 200, **failed}\n        self.dc(\'start\', \'store-a\')\n        self.wait_healthy()\n        restored = self.wait_distribution()\n        self.report[\'checks\'][\'restore_a\'] = restored\n        previous = self.inspect(\'store-a\')\n        self.dc(\'up\', \'--detach\', \'--no-deps\', \'--no-build\', \'--force-recreate\', \'store-a\', timeout=90)\n        healthy = self.wait_healthy()\n        current = self.inspect(\'store-a\')\n        require(previous[\'Id\'] != current[\'Id\'], \'Recreate did not create a new container\')\n        private = self.config[\'networks\'][\'private_subnet\'][\'name\']\n        old_ip = previous[\'NetworkSettings\'][\'Networks\'][private][\'IPAddress\']\n        new_ip = current[\'NetworkSettings\'][\'Networks\'][private][\'IPAddress\']\n        # Docker may reuse the IP. Never label unchanged-IP recreation as new-IP DNS evidence.\n        self.report[\'checks\'][\'recreate_a\'] = {\'old_id\': previous[\'Id\'], \'new_id\': current[\'Id\'],\n            \'old_ip\': old_ip, \'new_ip\': new_ip, \'ip_changed\': old_ip != new_ip,\n            \'dns_new_ip_recovery_proven\': old_ip != new_ip,\n            \'healthy\': healthy, \'batch\': self.wait_distribution()}\n\n    def wait_distribution(self, timeout=35):\n        deadline = time.monotonic() + timeout\n        last = None\n        while time.monotonic() < deadline:\n            last = self.batch()\n            if set(last[\'distribution\']) == {\'store-a\', \'store-b\'}:\n                return last\n            time.sleep(2)\n        raise AssertionError(f\'Both replicas did not rejoin distribution: {last}\')\n\n    def execute(self):\n        try:\n            containers, public, private = self.topology()\n            self.report[\'checks\'][\'initial_health\'] = self.wait_healthy()\n            batch = self.batch()\n            require(set(batch[\'distribution\']) == {\'store-a\', \'store-b\'}, \'Initial batch did not reach both stores\')\n            # A gateway healthcheck can insert a page GET during the batch.\n            require(abs(batch[\'distribution\'][\'store-a\'] - batch[\'distribution\'][\'store-b\']) <= 2,\n                    f\'Initial distribution is unexpectedly skewed: {batch}\')\n            self.report[\'checks\'][\'round_robin\'] = batch\n            self.http_contracts()\n            self.public_probe(containers, public, private)\n            self.failover()\n            self.report[\'success\'] = True\n        except Exception as error:\n            self.report[\'error\'] = f\'{type(error).__name__}: {error}\'\n        finally:\n            if self.mutated:\n                try:\n                    # Exact random probe name only. --rm normally already removed it.\n                    result = subprocess.run(self.docker + [\'inspect\', self.probe_name], cwd=ROOT,\n                                            text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=10)\n                    if result.returncode == 0:\n                        container = json.loads(result.stdout)[0]\n                        require(container[\'Config\'][\'Labels\'].get(\'lab.verifier.project\') == PROJECT, \'Probe cleanup ownership mismatch\')\n                        self.run(self.docker + [\'rm\', \'--force\', self.probe_name])\n                    self.dc(\'start\', \'store-a\', \'store-b\')\n                    self.report[\'restoration\'] = self.wait_healthy()\n                except Exception as error:\n                    self.report[\'success\'] = False\n                    self.report[\'restoration_error\'] = f\'{type(error).__name__}: {error}\'\n            self.report[\'finished_at\'] = datetime.now(timezone.utc).isoformat()\n        return self.report\n\n\ndef main():\n    parser = argparse.ArgumentParser(description=__doc__)\n    parser.add_argument(\'--docker-command\', default=\'docker\', help=\'Docker command/prefix, e.g. "sudo docker"; parsed without a shell\')\n    parser.add_argument(\'--base-url\', help=\'Optional loopback gateway URL; port must match Compose\')\n    parser.add_argument(\'--output\', type=Path, help=\'Explicit JSON output path; default is stdout only\')\n    args = parser.parse_args()\n    report = Verifier(args).execute()\n    text = json.dumps(report, indent=2) + \'\\n\'\n    if args.output:\n        args.output.parent.mkdir(parents=True, exist_ok=True)\n        args.output.write_text(text)\n    sys.stdout.write(text)\n    return 0 if report[\'success\'] else 1\n\n\nif __name__ == \'__main__\':\n    sys.exit(main())\n'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.020s
+
+FAILED (failures=2)
+
+EXIT=1
+
+ADDITIONAL THEME TEXTURE RED
+TAP version 13
+# Subtest: theme-owned texture assets stay accessible inside the approved styles tree
+not ok 1 - theme-owned texture assets stay accessible inside the approved styles tree
+  ---
+  duration_ms: 60.772971
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:70:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    404 !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: 404
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:75:10)
+    process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 256.535672
+
+EXIT=1
+
+ADDITIONAL THEME SCRIPT ALLOWLIST RED
+TAP version 13
+# Subtest: only the inspected theme registry and seven theme-config scripts are public
+not ok 1 - only the inspected theme registry and seven theme-config scripts are public
+  ---
+  duration_ms: 135.089117
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:78:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    404 !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: 404
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/server.test.mjs:81:69)
+    process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 664.192073
+
+EXIT=1

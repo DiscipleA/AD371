@@ -1,0 +1,28 @@
+{
+  "captured_utc": "2026-10-29T06:32:08.772461+00:00",
+  "images": [
+    {
+      "repository": "library/node",
+      "tag": "24-alpine",
+      "reference": "node:24-alpine@sha256:8a32c8cf649a49915a66e81e7a609223c708d0adabf288ee3f4077d765542f85",
+      "index_digest": "sha256:8a32c8cf649a49915a66e81e7a609223c708d0adabf288ee3f4077d765542f85",
+      "linux_amd64_manifest": "sha256:4eefa1bfce4197942661ef9148247d779ddf1bb0ee006d3294a467609de60724",
+      "image_versions": [
+        "NODE_VERSION=24.22.2"
+      ],
+      "evidence_scope": "Official registry manifest/config read; not evidence that Docker pulled or ran this image."
+    },
+    {
+      "repository": "library/nginx",
+      "tag": "stable-alpine",
+      "reference": "nginx:stable-alpine@sha256:0e52bd054126cdc040b1276c0af347aeb02a41b9cfe305d6094767ac30e97949",
+      "index_digest": "sha256:0e52bd054126cdc040b1276c0af347aeb02a41b9cfe305d6094767ac30e97949",
+      "linux_amd64_manifest": "sha256:84ed8c0dd296c188bfc24ed506f46589e9285fb0b11cf3a04d91d524d3067e11",
+      "image_versions": [
+        "NGINX_VERSION=1.30.6",
+        "NJS_VERSION=1.0.2"
+      ],
+      "evidence_scope": "Official registry manifest/config read; not evidence that Docker pulled or ran this image."
+    }
+  ]
+}

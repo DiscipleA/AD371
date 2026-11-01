@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/scripts/browser_qa.py", line 118, in <module>
+    check(f'{engine_name}: {theme}/{mode}/{width} no page overflow', geometry['scroll'] <= width + 1, geometry)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/scripts/browser_qa.py", line 28, in check
+    raise AssertionError(f'{name}: {detail}')
+AssertionError: firefox: gothic-stickerboard/light/320 no page overflow: {'width': 320, 'scroll': 328, 'mode': 'light', 'theme': 'gothic-stickerboard', 'buttons': [{'text': 'Get quote →', 'width': 130.88333129882812}, {'text': 'Send 10 requests', 'width': 197.33334350585938}, {'text': 'Check health', 'width': 117.91667175292969}, {'text': 'Clear', 'width': 71.41667175292969}]}

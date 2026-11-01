@@ -1,0 +1,6 @@
+
+> stylestore-network-lab@1.0.0 dev
+> node scripts/dev.mjs
+
+  ➜  Local:   http://127.0.0.1:8785/
+API requests use the real Docker Nginx lab on 127.0.0.1:80. No offline responses are substituted.

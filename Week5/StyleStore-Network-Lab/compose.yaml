@@ -1,0 +1,85 @@
+name: stylestore-network-lab
+
+x-store: &store
+  image: stylestore-network-lab-backend:local
+  build:
+    context: .
+    dockerfile: Dockerfile
+  user: node
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: ["no-new-privileges:true"]
+  mem_limit: 128m
+  pids_limit: 64
+  tmpfs: ["/tmp:rw,noexec,nosuid,size=16m,mode=1777"]
+  expose: ["3000"]
+  networks: [private_subnet]
+  init: true
+  restart: unless-stopped
+  stop_grace_period: 8s
+  healthcheck:
+    test: ["CMD", "node", "--input-type=module", "-e", "const r=await fetch('http://127.0.0.1:3000/healthz',{signal:AbortSignal.timeout(1500)});const b=await r.json();if(!r.ok||b.status!=='ok'||b.serverId!==process.env.SERVER_ID)process.exit(1)"]
+    interval: 5s
+    timeout: 2s
+    retries: 5
+    start_period: 5s
+
+services:
+  store-a:
+    <<: *store
+    environment:
+      SERVER_ID: store-a
+      PORT: "3000"
+      NODE_ENV: production
+  store-b:
+    <<: *store
+    environment:
+      SERVER_ID: store-b
+      PORT: "3000"
+      NODE_ENV: production
+  nginx:
+    # Official registry manifest pinned; see docs/image-sources.json.
+    image: nginx:stable-alpine@sha256:0e52bd054126cdc040b1276c0af347aeb02a41b9cfe305d6094767ac30e97949
+    user: nginx
+    entrypoint: ["nginx"]
+    command: ["-g", "daemon off;"]
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    sysctls:
+      net.ipv4.ip_unprivileged_port_start: "0"
+    mem_limit: 64m
+    pids_limit: 32
+    tmpfs:
+      - /var/cache/nginx:rw,noexec,nosuid,size=8m,mode=1777
+      - /var/run:rw,noexec,nosuid,size=1m,mode=1777
+      - /tmp:rw,noexec,nosuid,size=8m,mode=1777
+    volumes:
+      - ./infra/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "${HOST_BIND:-127.0.0.1}:${HOST_PORT:-80}:80"
+    networks: [public_subnet, private_subnet]
+    depends_on:
+      store-a: {condition: service_healthy}
+      store-b: {condition: service_healthy}
+    restart: unless-stopped
+    stop_grace_period: 8s
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -T 2 -O /dev/null http://127.0.0.1/ || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+
+networks:
+  public_subnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "${PUBLIC_SUBNET_CIDR:-172.30.51.0/24}"
+  private_subnet:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: "${PRIVATE_SUBNET_CIDR:-172.30.52.0/24}"

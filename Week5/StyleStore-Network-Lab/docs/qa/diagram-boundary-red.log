@@ -1,0 +1,31 @@
+test_accessible_editable_architecture_with_numbered_connections (__main__.ShowcaseTests.test_accessible_editable_architecture_with_numbered_connections) ... ok
+test_backend_nodes_have_visible_private_boundary_inset (__main__.ShowcaseTests.test_backend_nodes_have_visible_private_boundary_inset) ... FAIL
+test_compact_audit_is_a_contract_not_completed_results (__main__.ShowcaseTests.test_compact_audit_is_a_contract_not_completed_results) ... ok
+test_narrow_header_and_boundary_annotations_have_owned_safeguards (__main__.ShowcaseTests.test_narrow_header_and_boundary_annotations_have_owned_safeguards) ... ok
+test_no_public_internal_links_or_private_material (__main__.ShowcaseTests.test_no_public_internal_links_or_private_material) ... ok
+test_owned_artifacts_exist (__main__.ShowcaseTests.test_owned_artifacts_exist) ... ok
+test_owned_css_inherits_tokens_and_reflows_instead_of_shrinking (__main__.ShowcaseTests.test_owned_css_inherits_tokens_and_reflows_instead_of_shrinking) ... ok
+test_prompts_are_copyable_suggestions_with_numbered_build_spec (__main__.ShowcaseTests.test_prompts_are_copyable_suggestions_with_numbered_build_spec) ... ok
+test_react_mount_has_only_honest_idle_fallback (__main__.ShowcaseTests.test_react_mount_has_only_honest_idle_fallback) ... ok
+test_reference_compatibility_without_auth_feature (__main__.ShowcaseTests.test_reference_compatibility_without_auth_feature) ... ok
+test_semantic_document_and_unique_ids (__main__.ShowcaseTests.test_semantic_document_and_unique_ids) ... ok
+test_seven_direct_main_sections_match_reference (__main__.ShowcaseTests.test_seven_direct_main_sections_match_reference) ... ok
+test_six_whole_concept_cards_are_precise_official_links (__main__.ShowcaseTests.test_six_whole_concept_cards_are_precise_official_links) ... ok
+test_sneaker_is_original_self_contained_scalable_art (__main__.ShowcaseTests.test_sneaker_is_original_self_contained_scalable_art) ... ok
+test_styles_and_seven_local_theme_packages (__main__.ShowcaseTests.test_styles_and_seven_local_theme_packages) ... ok
+test_topology_and_mobile_equivalent_are_explicit (__main__.ShowcaseTests.test_topology_and_mobile_equivalent_are_explicit) ... ok
+test_verification_covers_manual_and_operator_boundaries (__main__.ShowcaseTests.test_verification_covers_manual_and_operator_boundaries) ... ok
+
+======================================================================
+FAIL: test_backend_nodes_have_visible_private_boundary_inset (__main__.ShowcaseTests.test_backend_nodes_have_visible_private_boundary_inset)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 104, in test_backend_nodes_have_visible_private_boundary_inset
+    self.assertGreaterEqual(right - float(node['x']) - float(node['width']), 12, name)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.0 not greater than or equal to 12 : store-a
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.196s
+
+FAILED (failures=1)

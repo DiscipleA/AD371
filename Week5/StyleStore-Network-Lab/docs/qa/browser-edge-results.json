@@ -1,0 +1,193 @@
+{
+  "captured_utc": "2026-10-29T07:28:01.669016+00:00",
+  "url": "http://127.0.0.1/",
+  "scope": "Real browser validation, cancellation, offline/retry and copying. Offline uses browser network blocking, not fake success responses.",
+  "checks": [
+    {
+      "name": "chromium: invalid quantity '' disables quote",
+      "passed": true
+    },
+    {
+      "name": "chromium: invalid quantity '' emits no quote request",
+      "passed": true
+    },
+    {
+      "name": "chromium: invalid quantity '0' disables quote",
+      "passed": true
+    },
+    {
+      "name": "chromium: invalid quantity '0' emits no quote request",
+      "passed": true
+    },
+    {
+      "name": "chromium: invalid quantity '10' disables quote",
+      "passed": true
+    },
+    {
+      "name": "chromium: invalid quantity '10' emits no quote request",
+      "passed": true
+    },
+    {
+      "name": "chromium: invalid quantity '1.5' disables quote",
+      "passed": true
+    },
+    {
+      "name": "chromium: invalid quantity '1.5' emits no quote request",
+      "passed": true
+    },
+    {
+      "name": "chromium: boundary quantity real total",
+      "passed": true
+    },
+    {
+      "name": "chromium: quantity change invalidates old total",
+      "passed": true
+    },
+    {
+      "name": "chromium: offline error records failed attempt",
+      "passed": true
+    },
+    {
+      "name": "chromium: offline does not fabricate a quote",
+      "passed": true
+    },
+    {
+      "name": "chromium: online retry returns actual total",
+      "passed": true
+    },
+    {
+      "name": "chromium: batch busy gate locks quantity and quote",
+      "passed": true
+    },
+    {
+      "name": "chromium: clear aborts remaining serial batch",
+      "passed": true
+    },
+    {
+      "name": "chromium: clear preserves quantity and removes stale quote",
+      "passed": true
+    },
+    {
+      "name": "chromium: clear removes counters/trail",
+      "passed": true
+    },
+    {
+      "name": "chromium: full copy payload ssnReviewPrompt",
+      "passed": true
+    },
+    {
+      "name": "chromium: full copy payload ssnPlanPrompt",
+      "passed": true
+    },
+    {
+      "name": "chromium: full copy payload ssnShortBuildPrompt",
+      "passed": true
+    },
+    {
+      "name": "chromium: full copy payload ssnVerifyPrompt",
+      "passed": true
+    },
+    {
+      "name": "chromium: full copy payload ssnBuildPrompt",
+      "passed": true
+    },
+    {
+      "name": "chromium: full copy payload ssnAuditContract",
+      "passed": true
+    },
+    {
+      "name": "firefox: invalid quantity '' disables quote",
+      "passed": true
+    },
+    {
+      "name": "firefox: invalid quantity '' emits no quote request",
+      "passed": true
+    },
+    {
+      "name": "firefox: invalid quantity '0' disables quote",
+      "passed": true
+    },
+    {
+      "name": "firefox: invalid quantity '0' emits no quote request",
+      "passed": true
+    },
+    {
+      "name": "firefox: invalid quantity '10' disables quote",
+      "passed": true
+    },
+    {
+      "name": "firefox: invalid quantity '10' emits no quote request",
+      "passed": true
+    },
+    {
+      "name": "firefox: invalid quantity '1.5' disables quote",
+      "passed": true
+    },
+    {
+      "name": "firefox: invalid quantity '1.5' emits no quote request",
+      "passed": true
+    },
+    {
+      "name": "firefox: boundary quantity real total",
+      "passed": true
+    },
+    {
+      "name": "firefox: quantity change invalidates old total",
+      "passed": true
+    },
+    {
+      "name": "firefox: offline error records failed attempt",
+      "passed": true
+    },
+    {
+      "name": "firefox: offline does not fabricate a quote",
+      "passed": true
+    },
+    {
+      "name": "firefox: online retry returns actual total",
+      "passed": true
+    },
+    {
+      "name": "firefox: batch busy gate locks quantity and quote",
+      "passed": true
+    },
+    {
+      "name": "firefox: clear aborts remaining serial batch",
+      "passed": true
+    },
+    {
+      "name": "firefox: clear preserves quantity and removes stale quote",
+      "passed": true
+    },
+    {
+      "name": "firefox: clear removes counters/trail",
+      "passed": true
+    },
+    {
+      "name": "firefox: clipboard write completed ssnReviewPrompt",
+      "passed": true
+    },
+    {
+      "name": "firefox: clipboard write completed ssnPlanPrompt",
+      "passed": true
+    },
+    {
+      "name": "firefox: clipboard write completed ssnShortBuildPrompt",
+      "passed": true
+    },
+    {
+      "name": "firefox: clipboard write completed ssnVerifyPrompt",
+      "passed": true
+    },
+    {
+      "name": "firefox: clipboard write completed ssnBuildPrompt",
+      "passed": true
+    },
+    {
+      "name": "firefox: clipboard write completed ssnAuditContract",
+      "passed": true
+    }
+  ],
+  "passed": 46,
+  "failed": 0
+}

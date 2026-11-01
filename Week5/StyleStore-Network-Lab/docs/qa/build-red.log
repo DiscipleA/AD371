@@ -1,0 +1,59 @@
+TAP version 13
+# Subtest: production build emits a runnable static React island without shipping infrastructure or dependencies
+not ok 1 - production build emits a runnable static React island without shipping infrastructure or dependencies
+  ---
+  duration_ms: 53.392551
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/build.test.mjs:8:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Build failed: 
+    node:internal/modules/cjs/loader:1433
+      throw err;
+      ^
+    
+    Error: Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/scripts/build.mjs'
+        at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)
+        at defaultResolveImpl (node:internal/modules/cjs/loader:1040:19)
+        at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1045:22)
+        at Function._load (node:internal/modules/cjs/loader:1216:25)
+        at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+        at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+        at node:internal/main/run_main_module:36:49 {
+      code: 'MODULE_NOT_FOUND',
+      requireStack: []
+    }
+    
+    Node.js v22.23.2
+    
+    
+    1 !== 0
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 0
+  actual: 1
+  operator: 'strictEqual'
+  stack: |-
+    Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)
+    defaultResolveImpl (node:internal/modules/cjs/loader:1040:19)
+    resolveForCJSWithHooks (node:internal/modules/cjs/loader:1045:22)
+    Function._load (node:internal/modules/cjs/loader:1216:25)
+    wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+    Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    node:internal/main/run_main_module:36:49 {
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/build.test.mjs:10:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 179.092468

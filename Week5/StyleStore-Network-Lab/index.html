@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-style-theme="gothic-stickerboard">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#eee4cf">
+  <meta name="description" content="StyleStore Network Lab: one React sneaker storefront, an Nginx gateway, and two identical Node replicas. Explore Docker network boundaries with real read-only quotes.">
+  <title>StyleStore Network Lab | App Engineering Showcases</title>
+  <link rel="icon" type="image/svg+xml" href="./styles/themes/standard/assets/icons/favicon.svg">
+  <link rel="stylesheet" href="./styles/shared/base.css">
+  <link rel="stylesheet" href="./styles/auth-rbac-showcase.css">
+  <link rel="stylesheet" href="./styles/network-showcase.css">
+  <link rel="stylesheet" href="./styles/storefront.css">
+  <link rel="stylesheet" href="./styles/shared/navigation.css">
+  <script src="./site-navigation.js" defer></script>
+  <script src="./styles/themes/theme-registry.js"></script>
+  <script src="./styles/themes/standard/theme-config.js"></script>
+  <script src="./styles/themes/playful-pop/theme-config.js"></script>
+  <script src="./styles/themes/raggedy-granite/theme-config.js"></script>
+  <script src="./styles/themes/glossy-marble/theme-config.js"></script>
+  <script src="./styles/themes/luminous-midnight/theme-config.js"></script>
+  <script src="./styles/themes/gothic-stickerboard/theme-config.js"></script>
+  <script src="./styles/themes/baroque-plexiglas/theme-config.js"></script>
+  <link rel="stylesheet" href="./styles/themes/standard/theme.css" data-style-theme-stylesheet data-active-style-theme="standard">
+  <script src="./theme.js"></script>
+</head>
+<body class="flexbox-interfaces-page application-architecture-page network-showcase-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div data-portfolio-navigation data-root="./" data-current-page="stylestore-network-lab"></div>
+
+  <div class="site-shell">
+    <header class="hero">
+      <p class="eyebrow">Design Technologist · App Engineering Showcases</p>
+      <h1>One storefront. Two servers.</h1>
+      <p class="hero-lead"><strong>StyleStore Network Lab.</strong> A familiar sneaker store makes an invisible request path visible: React asks for a quote, Nginx chooses a replica, and a private Node API calculates the total.</p>
+      <div class="process-strip" aria-label="Project workflow">
+        <div class="process-step"><span class="process-number">01</span><strong>Problem &amp; Scope</strong></div>
+        <div class="process-step"><span class="process-number">02</span><strong>Architecture Concepts</strong></div>
+        <div class="process-step"><span class="process-number">03</span><strong>System Architecture</strong></div>
+        <div class="process-step"><span class="process-number">04</span><strong>AI Prompt</strong></div>
+        <div class="process-step"><span class="process-number">05</span><strong>Audit</strong></div>
+        <div class="process-step"><span class="process-number">06</span><strong>Working System</strong></div>
+        <div class="process-step"><span class="process-number">07</span><strong>Verification</strong></div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section-card" data-architecture-section="problem" aria-labelledby="problem-title">
+        <div class="section-header"><span class="section-index">01</span><div><h2 id="problem-title">Problem &amp; Scope</h2><p class="section-kicker">A working storefront should not depend on one backend.</p></div></div>
+        <div class="narrative-grid">
+          <article class="narrative-panel"><h3>One action, a real boundary</h3><p>A product card alone cannot show where a request runs. Ask the server for a sneaker quote, then inspect which replica answered—without letting the browser contact a backend directly.</p></article>
+          <article class="narrative-panel"><h3>Two interchangeable replicas</h3><p>The local Docker design places one Nginx gateway in two bridge networks. Two copies of the same Node API remain private. Either copy can calculate the same quote without a session or database.</p></article>
+        </div>
+        <p class="architecture-note"><strong>Small, intentional scope.</strong> One product, quantity 1–9, a server-calculated quote, a short request trail, and explicit health checks. This is a read-only network lab—not checkout, payment processing, or an order service.</p>
+        <div class="risk-strip" aria-label="Network design boundaries"><span>Two bridge networks</span><span>One gateway</span><span>Same backend image</span><span>No backend host ports</span></div>
+      </section>
+
+      <section class="section-card" data-architecture-section="concepts" aria-labelledby="concepts-title">
+        <div class="section-header"><span class="section-index">02</span><div><h2 id="concepts-title">Architecture Concepts</h2><p class="section-kicker">Six ideas behind a request that can reach either server.</p></div></div>
+        <div class="concept-grid">
+          <a class="concept-card" href="https://docs.docker.com/engine/network/drivers/bridge/" target="_blank" rel="noopener noreferrer" title="Docker documentation — opens in a new tab"><span class="concept-token">Bridge · membership</span><h3>Separate who can connect</h3><p>User-defined bridges connect containers on the same network. This lab gives the gateway a public-side bridge while keeping both APIs on a separate private bridge.</p><span class="concept-source">Docker · Bridge networks ↗</span></a>
+          <a class="concept-card" href="https://docs.docker.com/reference/compose-file/networks/#internal" target="_blank" rel="noopener noreferrer" title="Docker documentation — opens in a new tab"><span class="concept-token">Internal · limited reach</span><h3>Keep the backends private</h3><p>The private network uses internal: true. Neither backend publishes a host port. This limits container network reach; it does not remove the Docker host's privileges.</p><span class="concept-source">Docker · Internal networks ↗</span></a>
+          <a class="concept-card" href="https://docs.docker.com/compose/how-tos/networking/" target="_blank" rel="noopener noreferrer" title="Docker documentation — opens in a new tab"><span class="concept-token">DNS · service names</span><h3>Find a service, not an IP</h3><p>The proxy addresses store-a and store-b by Compose service name. Container addresses can change after recreation, so DNS refresh and recovery need explicit verification.</p><span class="concept-source">Docker · Service discovery ↗</span></a>
+          <a class="concept-card" href="https://nginx.org/en/docs/http/load_balancing.html" target="_blank" rel="noopener noreferrer" title="Nginx documentation — opens in a new tab"><span class="concept-token">Round-robin · equal peers</span><h3>Distribute the same work</h3><p>Nginx uses round-robin by default for an equal-weight upstream. Both replicas serve the same API; request counts show observed distribution, not a promise of perfect alternation.</p><span class="concept-source">Nginx · HTTP load balancing ↗</span></a>
+          <a class="concept-card" href="https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_next_upstream" target="_blank" rel="noopener noreferrer" title="Nginx documentation — opens in a new tab"><span class="concept-token">Retry · bounded failure</span><h3>Try another eligible peer</h3><p>Selected upstream failures can retry a read-only GET before a response is sent. Retry count and time must be bounded; a failed dependency must never become a fabricated quote.</p><span class="concept-source">Nginx · Proxy retry policy ↗</span></a>
+          <a class="concept-card" href="https://docs.docker.com/reference/compose-file/services/#healthcheck" target="_blank" rel="noopener noreferrer" title="Docker documentation — opens in a new tab"><span class="concept-token">Health · a separate signal</span><h3>Check each replica directly</h3><p>Compose health checks test container readiness. The page's pinned health routes observe each API separately; Compose health alone does not configure Nginx's runtime peer selection.</p><span class="concept-source">Docker · Health checks ↗</span></a>
+        </div>
+      </section>
+
+      <section class="section-card" data-architecture-section="architecture" id="system-architecture" aria-labelledby="architecture-title">
+        <div class="section-header"><span class="section-index">03</span><div><h2 id="architecture-title">System Architecture</h2><p class="section-kicker">One entry point. Two networks. Two copies of one API.</p></div></div>
+        <p class="architecture-note">Read this as the <strong>local Compose design contract</strong>. The browser runs React outside the containers. Nginx is the only dual-homed service; both replicas belong exclusively to the internal network.</p>
+        <figure class="network-architecture">
+          <div class="network-map" role="img" aria-labelledby="network-diagram-title network-diagram-description">
+            <div class="network-map__heading"><p id="network-diagram-title">The gateway crosses the boundary. The browser does not.</p><span>Local Docker design · Not live telemetry</span></div>
+            <p class="network-map__sr" id="network-diagram-description">On the local machine, the browser runs the React storefront outside Docker containers. Step 1: an API request enters Nginx through published host port 80, bound to loopback by default. Inside Compose, public_subnet and private_subnet are separate bridge networks. Nginx alone joins both. Step 2: Nginx uses service-name DNS and round-robin to choose store-a or store-b on private_subnet, an internal network. Both replicas use the same image and API; neither publishes a host port. Step 3: the selected replica returns its identifier and server-calculated quote through Nginx to the browser. Bounded retries may choose the other eligible peer on configured failures. Health checks are pinned separately and do not prove future availability. The diagram is explanatory, not a connection or health indicator; host privileges remain outside this isolation guarantee.</p>
+            <svg class="network-map__desktop" viewBox="0 0 1000 540" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <defs><marker id="network-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 Z" fill="context-stroke"/></marker></defs>
+              <!-- Network zones and connections precede opaque, editable service nodes. -->
+              <rect class="network-map__host" x="16" y="22" width="968" height="500" rx="18"/>
+              <text class="network-map__zone-label" x="38" y="55">LOCAL MACHINE · DOCKER HOST</text>
+              <rect class="network-map__containers" x="310" y="84" width="660" height="422" rx="14"/>
+              <text class="network-map__tag" x="330" y="116">COMPOSE · CONTAINERS</text>
+              <rect class="network-map__zone network-map__zone--public" x="328" y="145" width="292" height="340" rx="10"/>
+              <rect class="network-map__zone network-map__zone--private" x="620" y="145" width="334" height="340" rx="10"/>
+              <text class="network-map__zone-label" x="346" y="180">public_subnet</text>
+              <text class="network-map__zone-label" x="640" y="180">private_subnet</text>
+              <text class="network-map__body" x="640" y="207">internal: true</text>
+              <path data-diagram-flow="api-request" class="network-map__wire" d="M 274 290 H 505"/>
+              <text class="network-map__label" x="346" y="265">1 · API :80</text>
+              <text class="network-map__body" x="346" y="322">Loopback entry</text>
+              <path data-diagram-flow="replica-a" class="network-map__wire network-map__wire--both" d="M 720 285 H 740 V 275 H 750"/>
+              <path data-diagram-flow="replica-b" class="network-map__wire network-map__wire--both" d="M 720 350 H 740 V 410 H 750"/>
+              <text class="network-map__label network-map__annotation" x="776" y="353">2 · One replica</text>
+              <path data-diagram-flow="api-response" class="network-map__wire network-map__wire--response" d="M 505 355 H 425 V 420 H 156 V 385"/>
+              <text class="network-map__label network-map__label--response" x="44" y="455">3 · HTTP + JSON</text>
+              <g data-diagram-node="browser">
+                <rect class="network-map__node" x="40" y="220" width="234" height="165" rx="12"/>
+                <text class="network-map__tag" x="60" y="250">OUTSIDE CONTAINERS</text>
+                <text class="network-map__name" x="60" y="287">Browser</text>
+                <text class="network-map__body" x="60" y="321">React storefront</text>
+                <text class="network-map__body" x="60" y="354">Gateway access only</text>
+              </g>
+              <g data-diagram-node="nginx">
+                <rect class="network-map__node network-map__node--gateway" x="505" y="245" width="215" height="145" rx="12"/>
+                <text class="network-map__tag" x="523" y="274">OUR PROXY CONFIG</text>
+                <text class="network-map__name" x="523" y="311">Nginx</text>
+                <text class="network-map__body" x="523" y="343">Both networks</text>
+                <text class="network-map__body" x="523" y="372">DNS + round-robin</text>
+              </g>
+              <g data-diagram-node="store-a">
+                <rect class="network-map__node network-map__node--private" x="750" y="225" width="188" height="105" rx="12"/>
+                <text class="network-map__name" x="767" y="260">store-a</text>
+                <text class="network-map__body" x="767" y="289">Same Node API</text>
+                <text class="network-map__tag" x="767" y="315">PRIVATE ONLY</text>
+              </g>
+              <g data-diagram-node="store-b">
+                <rect class="network-map__node network-map__node--private" x="750" y="365" width="188" height="105" rx="12"/>
+                <text class="network-map__name" x="767" y="400">store-b</text>
+                <text class="network-map__body" x="767" y="429">Same Node API</text>
+                <text class="network-map__tag" x="767" y="455">PRIVATE ONLY</text>
+              </g>
+            </svg>
+            <div class="network-map__mobile" aria-hidden="true">
+              <p class="network-map__m-label">Local machine · Docker host</p>
+              <div class="network-map__m-node"><span class="network-map__m-label">Outside containers</span><strong>Browser · React</strong><span>Quantity and quote UI. No direct backend access.</span></div>
+              <div class="network-map__m-route">1 ↓ API request · host port 80 · loopback default</div>
+              <div class="network-map__m-zone"><span class="network-map__m-label">Compose · public_subnet</span><span>Public-side bridge—not a public Internet endpoint.</span></div>
+              <div class="network-map__m-node network-map__m-node--gateway"><span class="network-map__m-label">Both public_subnet + private_subnet</span><strong>Nginx · only dual-homed service</strong><span>Our proxy config · DNS + round-robin · bounded retries</span></div>
+              <div class="network-map__m-route">2 ↓ Choose one replica by service name · ↑ return to Nginx</div>
+              <div class="network-map__m-zone network-map__m-zone--private"><span class="network-map__m-label">Compose · private_subnet · internal: true</span><div class="network-map__m-node"><strong>store-a</strong><span>Same image · same Node API · private only</span></div><div class="network-map__m-or">or</div><div class="network-map__m-node"><strong>store-b</strong><span>Same image · same Node API · private only</span></div><span>No backend host ports.</span></div>
+              <div class="network-map__m-route">3 ↑ HTTP + JSON · replica → Nginx → browser</div>
+            </div>
+            <div class="network-map__legend" aria-hidden="true"><span><i class="network-map__key"></i>Request / chosen peer</span><span><i class="network-map__key network-map__key--response"></i>Gateway response</span><span><i class="network-map__key network-map__key--boundary"></i>Network boundary</span></div>
+          </div>
+          <figcaption>Design—not live telemetry. Both replicas use the same image and API. Only Nginx publishes host port 80 by default, bound to loopback. No backend host ports. The observed responses belong in Working System below.</figcaption>
+        </figure>
+        <details class="architecture-disclosure"><summary>Read the request path and ownership contract</summary><div class="architecture-disclosure-content">
+          <h3>1 · Browser → gateway</h3><p>React runs in the host's browser, not in a backend container. The local Docker build serves compiled HTML, CSS, and JavaScript from Nginx; an API GET returns to the same gateway. <code>public_subnet</code> names the public-side bridge, not a cloud subnet or a promise of Internet access. Host port 80 is loopback-bound by default.</p>
+          <h3>2 · Gateway → one private replica</h3><p>Nginx alone joins both bridges. Its upstream resolves <code>store-a</code> and <code>store-b</code> using Docker service discovery, rather than hard-coded container IPs. Both replicas run the same image, validate quantity, and calculate the same integer-cent total. There is no server-side cart, shared session, or database. The browser's quantity and request trail last only in the current page.</p>
+          <h3>3 · Replica → gateway → browser</h3><p>The selected API returns a safe server identifier and calculated quote. Nginx forwards the response; the browser validates it before updating the order summary and counts. A last response is an observation, not proof that a replica is still healthy. Health requests use separate pinned routes so one replica cannot answer for the other.</p>
+          <h3>Failure, isolation, and hosting limits</h3><p>Retries apply only to configured upstream failures, within a finite try/time budget and before output is sent to the client. A failed or malformed reply stays a failure. Compose health checks and Nginx peer failure handling are separate mechanisms. Bridge isolation does not exclude host privileges or a Docker administrator, and does not make these replicas independent machines.</p><p>A separately hosted static page is a future option, not a deployed service here. It would need an explicitly configured, reachable HTTPS API endpoint and matching origin policy. Merely publishing the page cannot start containers or reach a visitor's loopback lab.</p>
+        </div></details>
+      </section>
+
+      <section class="section-card" data-architecture-section="prompt" aria-labelledby="prompt-title">
+        <div class="section-header"><span class="section-index">04</span><div><h2 id="prompt-title">AI Prompt</h2><p class="section-kicker">Review → Plan → Build → Verify. Suggested prompts for reusing this workflow.</p></div></div>
+        <div class="prompt-build architecture-ai-workflow">
+          <ol class="architecture-ai-steps">
+            <li data-ai-step><h3>01 · Review the boundaries</h3><p>Identify the request path before editing.</p><details class="ai-step-prompt"><summary>Suggested review prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Review</span><button class="copy-button" type="button" data-copy-target="ssnReviewPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Review prompt"><code id="ssnReviewPrompt">Review the supplied storefront and Docker network requirements.
+Map the browser, Nginx, public_subnet, private_subnet,
+and two identical Node replicas. Identify port ownership,
+network membership, DNS, state, and failure boundaries.
+Compare network claims with official Docker and Nginx docs.
+Preserve the reference project and existing presentation.
+Return findings and the exact proposed files. Do not edit yet.</code></pre></div></details></li>
+            <li data-ai-step><h3>02 · Plan the smallest proof</h3><p>One product and one server-calculated action.</p><details class="ai-step-prompt"><summary>Suggested planning prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Plan</span><button class="copy-button" type="button" data-copy-target="ssnPlanPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Planning prompt"><code id="ssnPlanPrompt">Plan one React sneaker card and a read-only quote API.
+Keep two replicas interchangeable and stateless. Publish
+only Nginx on loopback port 80. Put both backends only on
+an internal private bridge; Nginx alone joins both bridges.
+Specify service-name DNS refresh, equal-weight round-robin,
+pinned health routes, finite timeouts, and bounded retries.
+Write acceptance tests for isolation, balancing, failure,
+recreation, input validation, keyboard use, and mobile.
+Return the plan and ownership boundaries before building.</code></pre></div></details></li>
+            <li data-ai-step><h3>03 · Build within the contract</h3><p>Use the complete specification below; keep the React island separate from the page shell.</p><details class="ai-step-prompt"><summary>Suggested build prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Build</span><button class="copy-button" type="button" data-copy-target="ssnShortBuildPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Short build prompt"><code id="ssnShortBuildPrompt">Implement the approved network lab specification below.
+Write failing tests first. Limit edits to the agreed files.
+Build the real Compose services and read-only API; do not
+replace the network with an animation or mock replies.
+Mount React only in #stylestore-root. Preserve the seven
+showcase sections, local themes, navigation, and prompts.
+Return changed files, actual test output, and blockers.
+Do not publish, change accounts, or alter other projects.</code></pre></div></details></li>
+            <li data-ai-step><h3>04 · Verify what actually ran</h3><p>Separate source checks from real container observations.</p><details class="ai-step-prompt"><summary>Suggested verification prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Verify</span><button class="copy-button" type="button" data-copy-target="ssnVerifyPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Verification prompt"><code id="ssnVerifyPrompt">Run source tests, normalized Compose checks, and nginx -t.
+With the approved local lab running, inspect actual ports
+and network membership. Make real quotes and count valid
+replica IDs. Check each pinned health route separately.
+As an operator, stop one replica, repeat requests, restore
+it, and verify recovery; also test service recreation/DNS.
+Check invalid input, unavailable API, abort/stale results,
+keyboard controls, all themes/modes, and mobile layouts.
+Report real output and blocked checks. Do not fabricate
+responses or treat a diagram as proof of connectivity.</code></pre></div></details></li>
+          </ol>
+          <details class="ai-build-prompt" data-implementation-spec><summary>Full implementation specification · suggested build prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">StyleStore Network Lab specification</span><button class="copy-button" type="button" data-copy-target="ssnBuildPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Complete implementation prompt"><code id="ssnBuildPrompt">Build a standalone StyleStore Network Lab, not a simulation.
+
+1. Preserve the seven-section App Engineering showcase,
+   local navigation, seven theme packages, and light/dark
+   appearance. Adapt copied storefront components into a
+   React island mounted only at #stylestore-root. Do not
+   edit the source portfolio or load a cloud theme service.
+
+2. Use Docker Compose with two distinct bridge networks:
+   public_subnet and private_subnet. Set the private network
+   internal: true. Only Nginx joins both. Publish Nginx host
+   port 80 on loopback by default. Never publish API ports.
+
+3. Run store-a and store-b from the same Node image and API
+   code, differing only in a safe server identifier. Attach
+   them only to private_subnet. Use service-name discovery,
+   supported DNS refresh, and equal-weight round-robin.
+   Use explicit timeouts, buffering, and bounded GET retries.
+
+4. Serve one product: retro-sneakers, Retro Sneakers,
+   8500 USD cents. GET /api/quote?quantity=N accepts one
+   integer quantity from 1 through 9 and returns serverId,
+   product, quantity, totalCents, and currency. Calculate
+   totals on the server. Reject malformed, duplicate, and
+   unknown query fields. No checkout, payment, or storage.
+
+5. Implement /healthz for each API and separately pinned
+   /api/health/store-a and /api/health/store-b proxy routes.
+   Do not fail over pinned health checks. Add the gateway
+   response marker X-Lab-Gateway: nginx. Keep Compose health
+   distinct from proxy peer selection and browser evidence.
+
+6. Provide quantity, a quote action, 10 serial real quotes,
+   explicit health checks, Clear, and a compact monitor.
+   Use public config.js with an empty apiBase for same-origin
+   requests; allow a future explicitly configured HTTPS API.
+   Validate gateway marker, safe IDs, requested quantity,
+   integer-cent totals, and response shape. Bound waits and
+   response size; omit credentials and bypass caches.
+
+7. Show idle, busy, success, invalid input, unavailable,
+   and malformed-response states honestly. Count only valid
+   successful quotes, track failures separately, and keep
+   health observations independent. Clear must abort work
+   and reject stale results. Never invent fallback replies.
+   Keep controls labeled and keyboard/mobile accessible.
+
+8. Write tests first. Exercise real Compose membership,
+   private-network isolation, only one published entry,
+   DNS recreation, balancing, pinned health, and operator
+   stop/restore. Report actual output separately from mocks
+   or static checks. Deliver code, configuration, setup,
+   tests, and limitations within the approved file scope.
+   Do not install host services, manage accounts, deploy,
+   publish, or change Git state without separate approval.</code></pre></div></details>
+        </div>
+      </section>
+
+      <section class="section-card" data-architecture-section="audit" aria-labelledby="audit-title">
+        <div class="section-header"><span class="section-index">05</span><div><h2 id="audit-title">Audit</h2><p class="section-kicker">A design and code review contract—not completed runtime results.</p></div></div>
+        <div class="audit-layout">
+          <div class="code-panel"><div class="code-toolbar"><span class="code-label">Network contract · design excerpt, not full config</span><button class="copy-button" type="button" data-copy-target="ssnAuditContract">Copy Contract</button></div><pre tabindex="0" aria-label="Network design contract excerpt"><code id="ssnAuditContract">nginx:
+  networks: [public_subnet, private_subnet]
+  ports: ["127.0.0.1:80:80"]
+
+store-a, store-b:
+  image: same application image
+  networks: [private_subnet]
+  ports: none
+
+private_subnet:
+  driver: bridge
+  internal: true
+
+upstream: service names, equal weights
+retry: explicit conditions + finite tries/time
+health: pinned per replica, never balanced</code></pre></div>
+          <div class="audit-grid">
+            <article class="audit-item"><h3>Ports · one published entry</h3><p>Inspect normalized Compose and running bindings. Only Nginx publishes a port; neither backend gets a host mapping.</p></article>
+            <article class="audit-item"><h3>Network membership · exact peers</h3><p>Inspect both networks. Nginx alone joins both; each API joins only the internal private bridge. Test public-only isolation separately.</p></article>
+            <article class="audit-item"><h3>DNS / retry · recovery is explicit</h3><p>Review service-name resolution, refresh, timeouts, and retry limits. Recreate a service; do not infer DNS recovery from a startup success.</p></article>
+            <article class="audit-item"><h3>Stateless balancing · same API</h3><p>Compare image and API contracts. Observe valid quote IDs over a batch; test one stopped replica and its restoration without claiming perfect alternation.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" data-architecture-section="working" id="final-result" aria-labelledby="result-title">
+        <div class="section-header"><span class="section-index">06</span><div><h2 id="result-title">Working System</h2><p class="section-kicker">Choose a quantity. Request a quote. See which server answered.</p></div></div>
+        <p class="architecture-note">One product, one read-only quote—not a purchase. When connected to the running lab, every quote, batch item, and health check makes a real request. An unavailable API remains unavailable; there are no synthetic fallback responses.</p>
+        <div id="stylestore-root"><p class="network-idle">The storefront requires JavaScript. No requests have been sent.</p></div>
+        <noscript><p class="noscript-note">Enable JavaScript to use the storefront and inspect actual responses. The architecture, prompts, and verification checklist remain readable without it.</p></noscript>
+      </section>
+
+      <section class="section-card" data-architecture-section="verification" aria-labelledby="verification-title">
+        <div class="section-header"><span class="section-index">07</span><div><h2 id="verification-title">Verification</h2><p class="section-kicker">Try these checks against a running lab—not a list of claimed passes.</p></div></div>
+        <ol class="verification-list">
+          <li><strong>Request a quote.</strong> Choose a quantity from 1–9. Compare the returned quantity and server-calculated total with the order summary and responding replica.</li>
+          <li><strong>Run a batch.</strong> Send ten actual quote requests. Inspect the successful counts and failures; healthy distribution need not alternate perfectly.</li>
+          <li><strong>Check health separately.</strong> Request both pinned health routes. Compare their individual observations with the quote trail; a previous response is not current health.</li>
+          <li><strong>Use an operator-controlled failure.</strong> With local operator access, stop one replica, request quotes, restore it, and verify recovery. The page cannot stop containers; never leave a stopped replica unattended.</li>
+          <li><strong>Challenge the boundary.</strong> Inspect ports and network membership, check public-only isolation and service recreation, try invalid input, then test an unavailable API. Host privileges remain outside bridge isolation.</li>
+          <li><strong>Use keyboard and mobile.</strong> Tab through navigation, theme controls, links, prompts, and storefront actions. Try all themes, both modes, a narrow mobile screen, and the diagram's layout change.</li>
+        </ol>
+        <p class="verification-summary">The map explains the contract. Actual responses, container inspection, and deliberate recovery checks establish what the local lab does.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p class="footer-copyright">&copy; 2026 Dmitriy Chernichenko.</p><p>StyleStore Network Lab · One gateway. Private replicas. Observable requests.</p><p><a href="#main-content">Back to the showcase</a></p></footer>
+  </div>
+  <script src="./copy-code.js" defer></script>
+  <script src="./config.js"></script>
+  <script type="module" src="./src/main.jsx"></script>
+</body>
+</html>

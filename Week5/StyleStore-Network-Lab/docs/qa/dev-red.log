@@ -1,0 +1,31 @@
+TAP version 13
+# Subtest: development server stays loopback-only and proxies actual lab API without invented responses
+not ok 1 - development server stays loopback-only and proxies actual lab API without invented responses
+  ---
+  duration_ms: 2.108138
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/dev.test.mjs:4:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot find module '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/scripts/dev.mjs' imported from /home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/dev.test.mjs"
+  code: 'ERR_MODULE_NOT_FOUND'
+  stack: |-
+    finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    moduleResolve (node:internal/modules/esm/resolve:861:10)
+    defaultResolve (node:internal/modules/esm/resolve:985:11)
+    #cachedDefaultResolve (node:internal/modules/esm/loader:747:20)
+    ModuleLoader.resolve (node:internal/modules/esm/loader:724:38)
+    ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:320:38)
+    onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:680:36)
+    TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+    ModuleLoader.import (node:internal/modules/esm/loader:679:21)
+    defaultImportModuleDynamicallyForModule (node:internal/modules/esm/utils:222:31)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 120.624846

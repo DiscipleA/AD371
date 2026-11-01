@@ -1,0 +1,1270 @@
+TAP version 13
+# Subtest: configuration defaults to same origin and accepts HTTPS / loopback only
+not ok 1 - configuration defaults to same origin and accepts HTTPS / loopback only
+  ---
+  duration_ms: 6.874539
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:23:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:24:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: requests use exact routes, bounded timeout, omit credentials and bypass cache
+not ok 2 - requests use exact routes, bounded timeout, omit credentials and bypass cache
+  ---
+  duration_ms: 0.989346
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:31:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:33:15)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: all valid quantities and replica IDs are accepted
+not ok 3 - all valid quantities and replica IDs are accepted
+  ---
+  duration_ms: 0.91489
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:46:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:47:97)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: invalid quantities never reach transport
+not ok 4 - invalid quantities never reach transport
+  ---
+  duration_ms: 0.944681
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:49:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:51:15)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects unknown server before success
+not ok 5 - rejects unknown server before success
+  ---
+  duration_ms: 0.904424
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects injected server before success
+not ok 6 - rejects injected server before success
+  ---
+  duration_ms: 0.68229
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects wrong product ID before success
+not ok 7 - rejects wrong product ID before success
+  ---
+  duration_ms: 0.937902
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects wrong name before success
+not ok 8 - rejects wrong name before success
+  ---
+  duration_ms: 0.738613
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects wrong price before success
+not ok 9 - rejects wrong price before success
+  ---
+  duration_ms: 4.322103
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects string price before success
+not ok 10 - rejects string price before success
+  ---
+  duration_ms: 1.284526
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects wrong quantity before success
+not ok 11 - rejects wrong quantity before success
+  ---
+  duration_ms: 1.855632
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects string quantity before success
+not ok 12 - rejects string quantity before success
+  ---
+  duration_ms: 0.494731
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects wrong total before success
+not ok 13 - rejects wrong total before success
+  ---
+  duration_ms: 0.4442
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects fractional total before success
+not ok 14 - rejects fractional total before success
+  ---
+  duration_ms: 0.418618
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects string total before success
+not ok 15 - rejects string total before success
+  ---
+  duration_ms: 0.413591
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects wrong currency before success
+not ok 16 - rejects wrong currency before success
+  ---
+  duration_ms: 0.584328
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects missing product before success
+not ok 17 - rejects missing product before success
+  ---
+  duration_ms: 0.493312
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:4'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:69:110)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects non-contract JSON null
+not ok 18 - rejects non-contract JSON null
+  ---
+  duration_ms: 0.455452
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:70:48'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:70:130)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_ru
+
+... [OUTPUT TRUNCATED - 2,198 chars omitted out of 52,126 total] ...
+
+tests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects non-contract JSON 42
+not ok 21 - rejects non-contract JSON 42
+  ---
+  duration_ms: 0.330462
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:70:48'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:70:130)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: rejects non-contract JSON {}
+not ok 22 - rejects non-contract JSON {}
+  ---
+  duration_ms: 0.335829
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:70:48'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:70:130)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: requires gateway marker
+not ok 23 - requires gateway marker
+  ---
+  duration_ms: 0.45239
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:71:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:72:73)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: non-200 retains actual HTTP status without leaking body
+not ok 24 - non-200 retains actual HTTP status without leaking body
+  ---
+  duration_ms: 0.626655
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:74:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'ERR_ASSERTION'
+    - 'http'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'http'
+  actual: 'ERR_ASSERTION'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:77:27)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: HTML, missing content-type and malformed JSON are rejected with status 200
+not ok 25 - HTML, missing content-type and malformed JSON are rejected with status 200
+  ---
+  duration_ms: 0.443151
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:80:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:81:73)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: declared and streamed oversized bodies are bounded at 16 KiB
+not ok 26 - declared and streamed oversized bodies are bounded at 16 KiB
+  ---
+  duration_ms: 0.483733
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:84:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:85:21)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: transport failure has safe typed text
+not ok 27 - transport failure has safe typed text
+  ---
+  duration_ms: 0.645246
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:91:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'ERR_ASSERTION'
+    - 'network'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'network'
+  actual: 'ERR_ASSERTION'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:93:25)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: finite deadline settles even when transport ignores AbortSignal
+not ok 28 - finite deadline settles even when transport ignores AbortSignal
+  ---
+  duration_ms: 0.416153
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:95:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:96:21)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: finite deadline covers body reads and preserves received HTTP status
+not ok 29 - finite deadline covers body reads and preserves received HTTP status
+  ---
+  duration_ms: 3.188497
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:98:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:101:21)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: external abort is honored even by uncooperative transport
+not ok 30 - external abort is honored even by uncooperative transport
+  ---
+  duration_ms: 0.507692
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:104:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:106:19)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: pre-abort never calls transport
+not ok 31 - pre-abort never calls transport
+  ---
+  duration_ms: 0.475264
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:110:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:112:21)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: pinned health requires correct server, status and gateway
+not ok 32 - pinned health requires correct server, status and gateway
+  ---
+  duration_ms: 0.534855
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:115:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createClient contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    client (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:12:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:118:26)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: idle session makes no automatic requests and health starts unknown
+not ok 33 - idle session makes no automatic requests and health starts unknown
+  ---
+  duration_ms: 0.51034
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:125:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createLabSession contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    session (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:16:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:126:30)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: synchronous busy gate prevents rapid double submits and blocks quantity edits
+not ok 34 - synchronous busy gate prevents rapid double submits and blocks quantity edits
+  ---
+  duration_ms: 1.943299
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:132:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createLabSession contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    session (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:16:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:134:15)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: only validated successful quotes count; failed HTTP keeps status in trail
+not ok 35 - only validated successful quotes count; failed HTTP keeps status in trail
+  ---
+  duration_ms: 0.599987
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:141:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createLabSession contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    session (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:16:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:142:26)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: quantity change invalidates old quote without inventing a new total
+not ok 36 - quantity change invalidates old quote without inventing a new total
+  ---
+  duration_ms: 1.04183
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:151:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createLabSession contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    session (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:16:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:152:15)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: batch sends ten serial requests, continues failures and caps recent trail at twenty
+not ok 37 - batch sends ten serial requests, continues failures and caps recent trail at twenty
+  ---
+  duration_ms: 0.840072
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:156:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createLabSession contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    session (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:16:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:158:15)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: health checks are independent observations with timestamps, never quote counts
+not ok 38 - health checks are independent observations with timestamps, never quote counts
+  ---
+  duration_ms: 0.567785
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:166:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createLabSession contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    session (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:16:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:167:15)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: Clear resets observations, preserves quantity and invalidates ignored late completion
+not ok 39 - Clear resets observations, preserves quantity and invalidates ignored late completion
+  ---
+  duration_ms: 0.554215
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:174:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createLabSession contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    session (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:16:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:175:52)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: Clear cancels batch during inter-request delay
+not ok 40 - Clear cancels batch during inter-request delay
+  ---
+  duration_ms: 0.565104
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:183:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createLabSession contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    session (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:16:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:184:30)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: dispose aborts work and prevents late notifications
+not ok 41 - dispose aborts work and prevents late notifications
+  ---
+  duration_ms: 1.475768
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:188:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    createLabSession contract is implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    session (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:16:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:189:37)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: invalid configuration is surfaced without any transport activity
+not ok 42 - invalid configuration is surfaced without any transport activity
+  ---
+  duration_ms: 0.70811
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:193:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/client.test.mjs:195:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: React mounts only the owned island and emits scoped stylesheet
+not ok 43 - React mounts only the owned island and emits scoped stylesheet
+  ---
+  duration_ms: 25.828193
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/ui-contract.test.mjs:5:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /getElementById\(['"]stylestore-root['"]\)/. Input:
+    
+    ''
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: ''
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/ui-contract.test.mjs:7:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: storefront retains source identity, descriptive copy, accessible quantity and API-only totals
+not ok 44 - storefront retains source identity, descriptive copy, accessible quantity and API-only totals
+  ---
+  duration_ms: 5.716571
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/ui-contract.test.mjs:11:1'
+  failureType: 'testCodeFailure'
+  error: 'StyleStore'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/ui-contract.test.mjs:13:171)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: monitor explains observation semantics and exposes only working controls
+not ok 45 - monitor explains observation semantics and exposes only working controls
+  ---
+  duration_ms: 5.730854
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/ui-contract.test.mjs:17:1'
+  failureType: 'testCodeFailure'
+  error: 'Nginx'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/ui-contract.test.mjs:19:180)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: App subscribes to tested session with concise live status and unmount cleanup
+not ok 46 - App subscribes to tested session with concise live status and unmount cleanup
+  ---
+  duration_ms: 13.13061
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/ui-contract.test.mjs:23:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /useSyncExternalStore/. Input:
+    
+    ''
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: ''
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/ui-contract.test.mjs:25:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: island CSS consumes inherited themes, source layout and never global body styles
+not ok 47 - island CSS consumes inherited themes, source layout and never global body styles
+  ---
+  duration_ms: 2.605717
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/ui-contract.test.mjs:30:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /\.stylestore-lab/. Input:
+    
+    ''
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: ''
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/ui-contract.test.mjs:32:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..47
+# tests 47
+# suites 0
+# pass 0
+# fail 47
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 338.415776

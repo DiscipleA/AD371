@@ -1,0 +1,25 @@
+{
+  "captured_utc": "2026-10-29T07:53:34.344617+00:00",
+  "maps": {
+    "production_source_sha256": 57,
+    "test_source_sha256": 7,
+    "built_public_sha256": 47
+  },
+  "mismatches": [],
+  "served_mismatches": [],
+  "protected_files_checked": 528,
+  "protected_changes": [],
+  "replica_health_readback": {
+    "store-a": {
+      "status": "ok",
+      "serverId": "store-a"
+    },
+    "store-b": {
+      "status": "ok",
+      "serverId": "store-b"
+    }
+  },
+  "missing_document_links": [],
+  "code_quality_pass": true,
+  "passed": true
+}

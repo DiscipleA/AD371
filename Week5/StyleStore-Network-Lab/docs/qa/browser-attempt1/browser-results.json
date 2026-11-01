@@ -1,0 +1,59 @@
+{
+  "captured_utc": "2026-10-29T06:53:06.204066+00:00",
+  "url": "http://127.0.0.1/",
+  "scope": "Local live Nginx/Node UI. Not public deployment QA.",
+  "engines": [
+    {
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "executable": "/media/reader/DEVELOP/.cache/runtimes/linux-x64/playwright/chromium-1234/chrome-linux64/chrome"
+    }
+  ],
+  "checks": [
+    {
+      "name": "chromium: correct served page",
+      "passed": true,
+      "scope": "live",
+      "detail": "StyleStore Network Lab | App Engineering Showcases"
+    },
+    {
+      "name": "chromium: no automatic quote requests",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: seven content sections",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: every concept links to an official resource",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: quote uses actual gateway response",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: actual quote identity and total",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "serverId": "store-a",
+        "product": {
+          "id": "retro-sneakers",
+          "name": "Retro Sneakers",
+          "unitPriceCents": 8500
+        },
+        "quantity": 1,
+        "totalCents": 8500,
+        "currency": "USD"
+      }
+    }
+  ],
+  "error": "Response.json: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.",
+  "passed": 6,
+  "failed": 0
+}

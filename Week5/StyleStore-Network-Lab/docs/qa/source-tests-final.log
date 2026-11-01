@@ -1,0 +1,386 @@
+
+> stylestore-network-lab@1.0.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: production build emits a runnable static React island without shipping infrastructure or dependencies
+ok 1 - production build emits a runnable static React island without shipping infrastructure or dependencies
+  ---
+  duration_ms: 1979.699682
+  type: 'test'
+  ...
+# Subtest: configuration defaults to same origin and accepts HTTPS / loopback only
+ok 2 - configuration defaults to same origin and accepts HTTPS / loopback only
+  ---
+  duration_ms: 33.896361
+  type: 'test'
+  ...
+# Subtest: requests use exact routes, bounded timeout, omit credentials and bypass cache
+ok 3 - requests use exact routes, bounded timeout, omit credentials and bypass cache
+  ---
+  duration_ms: 105.806683
+  type: 'test'
+  ...
+# Subtest: all valid quantities and replica IDs are accepted
+ok 4 - all valid quantities and replica IDs are accepted
+  ---
+  duration_ms: 34.049225
+  type: 'test'
+  ...
+# Subtest: invalid quantities never reach transport
+ok 5 - invalid quantities never reach transport
+  ---
+  duration_ms: 1.810936
+  type: 'test'
+  ...
+# Subtest: rejects unknown server before success
+ok 6 - rejects unknown server before success
+  ---
+  duration_ms: 1.427686
+  type: 'test'
+  ...
+# Subtest: rejects injected server before success
+ok 7 - rejects injected server before success
+  ---
+  duration_ms: 0.975616
+  type: 'test'
+  ...
+# Subtest: rejects wrong product ID before success
+ok 8 - rejects wrong product ID before success
+  ---
+  duration_ms: 1.227026
+  type: 'test'
+  ...
+# Subtest: rejects wrong name before success
+ok 9 - rejects wrong name before success
+  ---
+  duration_ms: 1.184026
+  type: 'test'
+  ...
+# Subtest: rejects wrong price before success
+ok 10 - rejects wrong price before success
+  ---
+  duration_ms: 4.097007
+  type: 'test'
+  ...
+# Subtest: rejects string price before success
+ok 11 - rejects string price before success
+  ---
+  duration_ms: 1.509587
+  type: 'test'
+  ...
+# Subtest: rejects wrong quantity before success
+ok 12 - rejects wrong quantity before success
+  ---
+  duration_ms: 0.882625
+  type: 'test'
+  ...
+# Subtest: rejects string quantity before success
+ok 13 - rejects string quantity before success
+  ---
+  duration_ms: 0.746313
+  type: 'test'
+  ...
+# Subtest: rejects wrong total before success
+ok 14 - rejects wrong total before success
+  ---
+  duration_ms: 0.754892
+  type: 'test'
+  ...
+# Subtest: rejects fractional total before success
+ok 15 - rejects fractional total before success
+  ---
+  duration_ms: 1.810594
+  type: 'test'
+  ...
+# Subtest: rejects string total before success
+ok 16 - rejects string total before success
+  ---
+  duration_ms: 1.103426
+  type: 'test'
+  ...
+# Subtest: rejects wrong currency before success
+ok 17 - rejects wrong currency before success
+  ---
+  duration_ms: 1.007213
+  type: 'test'
+  ...
+# Subtest: rejects missing product before success
+ok 18 - rejects missing product before success
+  ---
+  duration_ms: 4.17598
+  type: 'test'
+  ...
+# Subtest: rejects non-contract JSON null
+ok 19 - rejects non-contract JSON null
+  ---
+  duration_ms: 1.014693
+  type: 'test'
+  ...
+# Subtest: rejects non-contract JSON []
+ok 20 - rejects non-contract JSON []
+  ---
+  duration_ms: 0.722474
+  type: 'test'
+  ...
+# Subtest: rejects non-contract JSON "HTML"
+ok 21 - rejects non-contract JSON "HTML"
+  ---
+  duration_ms: 1.20637
+  type: 'test'
+  ...
+# Subtest: rejects non-contract JSON 42
+ok 22 - rejects non-contract JSON 42
+  ---
+  duration_ms: 1.38813
+  type: 'test'
+  ...
+# Subtest: rejects non-contract JSON {}
+ok 23 - rejects non-contract JSON {}
+  ---
+  duration_ms: 1.089947
+  type: 'test'
+  ...
+# Subtest: requires gateway marker
+ok 24 - requires gateway marker
+  ---
+  duration_ms: 2.302953
+  type: 'test'
+  ...
+# Subtest: non-200 retains actual HTTP status without leaking body
+ok 25 - non-200 retains actual HTTP status without leaking body
+  ---
+  duration_ms: 1.716074
+  type: 'test'
+  ...
+# Subtest: HTML, missing content-type and malformed JSON are rejected with status 200
+ok 26 - HTML, missing content-type and malformed JSON are rejected with status 200
+  ---
+  duration_ms: 6.49491
+  type: 'test'
+  ...
+# Subtest: declared and streamed oversized bodies are bounded at 16 KiB
+ok 27 - declared and streamed oversized bodies are bounded at 16 KiB
+  ---
+  duration_ms: 5.638823
+  type: 'test'
+  ...
+# Subtest: transport failure has safe typed text
+ok 28 - transport failure has safe typed text
+  ---
+  duration_ms: 0.603074
+  type: 'test'
+  ...
+# Subtest: finite deadline settles even when transport ignores AbortSignal
+ok 29 - finite deadline settles even when transport ignores AbortSignal
+  ---
+  duration_ms: 83.242263
+  type: 'test'
+  ...
+# Subtest: finite deadline covers body reads and preserves received HTTP status
+ok 30 - finite deadline covers body reads and preserves received HTTP status
+  ---
+  duration_ms: 32.323151
+  type: 'test'
+  ...
+# Subtest: external abort is honored even by uncooperative transport
+ok 31 - external abort is honored even by uncooperative transport
+  ---
+  duration_ms: 0.770971
+  type: 'test'
+  ...
+# Subtest: pre-abort never calls transport
+ok 32 - pre-abort never calls transport
+  ---
+  duration_ms: 0.472086
+  type: 'test'
+  ...
+# Subtest: pinned health requires correct server, status and gateway
+ok 33 - pinned health requires correct server, status and gateway
+  ---
+  duration_ms: 10.369167
+  type: 'test'
+  ...
+# Subtest: idle session makes no automatic requests and health starts unknown
+ok 34 - idle session makes no automatic requests and health starts unknown
+  ---
+  duration_ms: 5.328197
+  type: 'test'
+  ...
+# Subtest: synchronous busy gate prevents rapid double submits and blocks quantity edits
+ok 35 - synchronous busy gate prevents rapid double submits and blocks quantity edits
+  ---
+  duration_ms: 13.410955
+  type: 'test'
+  ...
+# Subtest: only validated successful quotes count; failed HTTP keeps status in trail
+ok 36 - only validated successful quotes count; failed HTTP keeps status in trail
+  ---
+  duration_ms: 1.297114
+  type: 'test'
+  ...
+# Subtest: quantity change invalidates old quote without inventing a new total
+ok 37 - quantity change invalidates old quote without inventing a new total
+  ---
+  duration_ms: 8.870499
+  type: 'test'
+  ...
+# Subtest: batch sends ten serial requests, continues failures and caps recent trail at twenty
+ok 38 - batch sends ten serial requests, continues failures and caps recent trail at twenty
+  ---
+  duration_ms: 117.7406
+  type: 'test'
+  ...
+# Subtest: health checks are independent observations with timestamps, never quote counts
+ok 39 - health checks are independent observations with timestamps, never quote counts
+  ---
+  duration_ms: 2.554021
+  type: 'test'
+  ...
+# Subtest: Clear resets observations, preserves quantity and invalidates ignored late completion
+ok 40 - Clear resets observations, preserves quantity and invalidates ignored late completion
+  ---
+  duration_ms: 3.664363
+  type: 'test'
+  ...
+# Subtest: Clear cancels batch during inter-request delay
+ok 41 - Clear cancels batch during inter-request delay
+  ---
+  duration_ms: 1.243494
+  type: 'test'
+  ...
+# Subtest: dispose aborts work and prevents late notifications
+ok 42 - dispose aborts work and prevents late notifications
+  ---
+  duration_ms: 1.013617
+  type: 'test'
+  ...
+# Subtest: invalid configuration is surfaced without any transport activity
+ok 43 - invalid configuration is surfaced without any transport activity
+  ---
+  duration_ms: 1.238639
+  type: 'test'
+  ...
+# Subtest: development server stays loopback-only and proxies actual lab API without invented responses
+ok 44 - development server stays loopback-only and proxies actual lab API without invented responses
+  ---
+  duration_ms: 912.274537
+  type: 'test'
+  ...
+# Subtest: health exposes the selected real replica identity
+ok 45 - health exposes the selected real replica identity
+  ---
+  duration_ms: 200.710493
+  type: 'test'
+  ...
+# Subtest: quote calculates exact integer cents for each allowed quantity
+ok 46 - quote calculates exact integer cents for each allowed quantity
+  ---
+  duration_ms: 46.747102
+  type: 'test'
+  ...
+# Subtest: quote requires exactly one known integer parameter without coercion
+ok 47 - quote requires exactly one known integer parameter without coercion
+  ---
+  duration_ms: 51.947392
+  type: 'test'
+  ...
+# Subtest: HEAD retains status/metadata without a body
+ok 48 - HEAD retains status/metadata without a body
+  ---
+  duration_ms: 25.415013
+  type: 'test'
+  ...
+# Subtest: non-read methods are rejected safely with Allow
+ok 49 - non-read methods are rejected safely with Allow
+  ---
+  duration_ms: 14.67446
+  type: 'test'
+  ...
+# Subtest: unknown API routes never fall through to frontend HTML
+ok 50 - unknown API routes never fall through to frontend HTML
+  ---
+  duration_ms: 8.753592
+  type: 'test'
+  ...
+# Subtest: only explicitly public build files are served with correct types
+ok 51 - only explicitly public build files are served with correct types
+  ---
+  duration_ms: 45.914338
+  type: 'test'
+  ...
+# Subtest: theme-owned texture assets stay accessible inside the approved styles tree
+ok 52 - theme-owned texture assets stay accessible inside the approved styles tree
+  ---
+  duration_ms: 8.47367
+  type: 'test'
+  ...
+# Subtest: only the inspected theme registry and seven theme-config scripts are public
+ok 53 - only the inspected theme registry and seven theme-config scripts are public
+  ---
+  duration_ms: 98.743126
+  type: 'test'
+  ...
+# Subtest: static boundary denies secrets, directories, source maps, traversal and all symlinks
+ok 54 - static boundary denies secrets, directories, source maps, traversal and all symlinks
+  ---
+  duration_ms: 63.198227
+  type: 'test'
+  ...
+# Subtest: missing build files return safe 404 instead of a raw filesystem error
+ok 55 - missing build files return safe 404 instead of a raw filesystem error
+  ---
+  duration_ms: 3.340916
+  type: 'test'
+  ...
+# Subtest: server identity is mandatory and confined to the two approved replicas
+ok 56 - server identity is mandatory and confined to the two approved replicas
+  ---
+  duration_ms: 1.791241
+  type: 'test'
+  ...
+# Subtest: CLI validates env, starts on an ephemeral port and exits gracefully on SIGTERM
+ok 57 - CLI validates env, starts on an ephemeral port and exits gracefully on SIGTERM
+  ---
+  duration_ms: 577.986272
+  type: 'test'
+  ...
+# Subtest: React mounts only the owned island and emits scoped stylesheet
+ok 58 - React mounts only the owned island and emits scoped stylesheet
+  ---
+  duration_ms: 41.658804
+  type: 'test'
+  ...
+# Subtest: storefront retains source identity, descriptive copy, accessible quantity and API-only totals
+ok 59 - storefront retains source identity, descriptive copy, accessible quantity and API-only totals
+  ---
+  duration_ms: 8.781976
+  type: 'test'
+  ...
+# Subtest: monitor explains observation semantics and exposes only working controls
+ok 60 - monitor explains observation semantics and exposes only working controls
+  ---
+  duration_ms: 10.165322
+  type: 'test'
+  ...
+# Subtest: App subscribes to tested session with concise live status and unmount cleanup
+ok 61 - App subscribes to tested session with concise live status and unmount cleanup
+  ---
+  duration_ms: 18.524378
+  type: 'test'
+  ...
+# Subtest: island CSS consumes inherited themes, source layout and never global body styles
+ok 62 - island CSS consumes inherited themes, source layout and never global body styles
+  ---
+  duration_ms: 7.818649
+  type: 'test'
+  ...
+1..62
+# tests 62
+# suites 0
+# pass 62
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2618.911411

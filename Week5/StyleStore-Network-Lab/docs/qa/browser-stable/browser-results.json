@@ -1,0 +1,4357 @@
+{
+  "captured_utc": "2026-10-29T07:26:00.786513+00:00",
+  "url": "http://127.0.0.1/",
+  "scope": "Local live Nginx/Node UI. Not public deployment QA.",
+  "engines": [
+    {
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "executable": "/media/reader/DEVELOP/.cache/runtimes/linux-x64/playwright/chromium-1234/chrome-linux64/chrome",
+      "layout_states": 70
+    },
+    {
+      "engine": "firefox",
+      "version": "153.0",
+      "executable": "/media/reader/DEVELOP/data/cache/scratch/stylestore-week5-20261028/browsers/firefox-1538/firefox/firefox",
+      "layout_states": 70
+    }
+  ],
+  "checks": [
+    {
+      "name": "chromium: correct served page",
+      "passed": true,
+      "scope": "live",
+      "detail": "StyleStore Network Lab | App Engineering Showcases"
+    },
+    {
+      "name": "chromium: no automatic quote requests",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: seven content sections",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: every concept links to an official resource",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: quote uses actual gateway response",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: actual quote identity and total",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "serverId": "store-a",
+        "product": {
+          "id": "retro-sneakers",
+          "name": "Retro Sneakers",
+          "unitPriceCents": 8500
+        },
+        "quantity": 1,
+        "totalCents": 8500,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "chromium: ten-request batch really sends ten requests",
+      "passed": true,
+      "scope": "live",
+      "detail": 11
+    },
+    {
+      "name": "chromium: both actual replicas observed",
+      "passed": true,
+      "scope": "live",
+      "detail": [
+        "store-a",
+        "store-b",
+        "store-a",
+        "store-b",
+        "store-a",
+        "store-b",
+        "store-a",
+        "store-b",
+        "store-a",
+        "store-b",
+        "store-a"
+      ]
+    },
+    {
+      "name": "chromium: store-a counter equals actual responses",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "displayed": 6,
+        "actual": 6
+      }
+    },
+    {
+      "name": "chromium: store-b counter equals actual responses",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "displayed": 5,
+        "actual": 5
+      }
+    },
+    {
+      "name": "chromium: health probes do not increment quote requests",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: health shows both observations",
+      "passed": true,
+      "scope": "live",
+      "detail": "THE CLASSICS, RECONNECTED.\nNetwork lab \u00b7 Quote only\nStyleStore.\nOne classic. Two replicas.\nTHE EVERYDAY ORIGINAL\nRetro Sneakers\n\nPremium classic athletic footwear engineered with modern perceptual cushioning.\n\n$85.00 USD / pair\n\nQuantity\nGet quote\n\u2192\n\nChoose 1\u20139 pairs. Totals come from the API.\n\nOrder Summary\nQuote only\nRetro Sneakers\nRed \u00b7 Qty: 1\nUnit price\n$85.00\nQuote total\n$85.00\n\nValidated for 1 pair \u00b7 USD\n\nNo purchase, payment, tax or shipping calculation. Nothing is saved.\n\nHealth check complete: store-a healthy; store-b healthy.\n\nBEHIND YOUR QUOTE\n\nNetwork monitor\nSend 10 requests\nCheck health\nClear\n\nNginx uses round-robin across two private replicas. Retries and other clients can change the observed sequence; equal counts are not guaranteed.\n\nGateway observation\nNginx response observed\nLast quote response\u2014not health\nstore-a\nFailed quote attempts\n0\nstore-a\n6 validated quotes\n\nHealthy at last check\n\nChecked 12:26:10 AM\n\nstore-b\n5 validated quotes\n\nHealthy at last check\n\nChecked 12:26:10 AM\n\nSession observations only. Quote counts are not health checks. The gateway header identifies the configured path; it is not independent security attestation.\n\nRecent quote requests \u00b7 latest 11, newest first"
+    },
+    {
+      "name": "chromium: request trail contains the actual quote attempts",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: clear does not send another quote",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: clear resets observations rather than faking traffic",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: standard/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: standard/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: standard/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: standard/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 142.5
+          },
+          {
+            "text": "Check health",
+            "width": 116.84375
+          },
+          {
+            "text": "Clear",
+            "width": 267.34375
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: standard/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.8125
+          },
+          {
+            "text": "Check health",
+            "width": 119.609375
+          },
+          {
+            "text": "Clear",
+            "width": 73.203125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: standard/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: standard/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: standard/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: standard/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 142.5
+          },
+          {
+            "text": "Check health",
+            "width": 116.84375
+          },
+          {
+            "text": "Clear",
+            "width": 267.34375
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: standard/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.8125
+          },
+          {
+            "text": "Check health",
+            "width": 119.609375
+          },
+          {
+            "text": "Clear",
+            "width": 73.203125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: playful-pop/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: playful-pop/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: playful-pop/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: playful-pop/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 265.34375
+          },
+          {
+            "text": "Check health",
+            "width": 156.125
+          },
+          {
+            "text": "Clear",
+            "width": 101.21875
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: playful-pop/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 198.8125
+          },
+          {
+            "text": "Check health",
+            "width": 122.859375
+          },
+          {
+            "text": "Clear",
+            "width": 67.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: playful-pop/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: playful-pop/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: playful-pop/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: playful-pop/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 265.34375
+          },
+          {
+            "text": "Check health",
+            "width": 156.125
+          },
+          {
+            "text": "Clear",
+            "width": 101.21875
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: playful-pop/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 198.8125
+          },
+          {
+            "text": "Check health",
+            "width": 122.859375
+          },
+          {
+            "text": "Clear",
+            "width": 67.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: raggedy-granite/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: raggedy-granite/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 131.03436279296875
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.54498291015625
+          },
+          {
+            "text": "Check health",
+            "width": 106.8887939453125
+          },
+          {
+            "text": "Clear",
+            "width": 60.482666015625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: raggedy-granite/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 131.03436279296875
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.54498291015625
+          },
+          {
+            "text": "Check health",
+            "width": 106.88876342773438
+          },
+          {
+            "text": "Clear",
+            "width": 60.482666015625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: raggedy-granite/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 141.5
+          },
+          {
+            "text": "Check health",
+            "width": 115.84375
+          },
+          {
+            "text": "Clear",
+            "width": 265.34375
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: raggedy-granite/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 198.8125
+          },
+          {
+            "text": "Check health",
+            "width": 118.609375
+          },
+          {
+            "text": "Clear",
+            "width": 72.203125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: raggedy-granite/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 131.03436279296875
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.544921875
+          },
+          {
+            "text": "Check health",
+            "width": 106.8887939453125
+          },
+          {
+            "text": "Clear",
+            "width": 60.4825439453125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: raggedy-granite/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 131.03436279296875
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.54498291015625
+          },
+          {
+            "text": "Check health",
+            "width": 106.8887939453125
+          },
+          {
+            "text": "Clear",
+            "width": 60.482666015625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: raggedy-granite/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 131.03436279296875
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.54498291015625
+          },
+          {
+            "text": "Check health",
+            "width": 106.88876342773438
+          },
+          {
+            "text": "Clear",
+            "width": 60.482666015625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: raggedy-granite/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 141.5
+          },
+          {
+            "text": "Check health",
+            "width": 115.84375
+          },
+          {
+            "text": "Clear",
+            "width": 265.34375
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: raggedy-granite/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 198.8125
+          },
+          {
+            "text": "Check health",
+            "width": 118.609375
+          },
+          {
+            "text": "Clear",
+            "width": 72.203125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: glossy-marble/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: glossy-marble/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: glossy-marble/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: glossy-marble/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 267.34375
+          },
+          {
+            "text": "Check health",
+            "width": 157.125
+          },
+          {
+            "text": "Clear",
+            "width": 102.21875
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: glossy-marble/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.8125
+          },
+          {
+            "text": "Check health",
+            "width": 123.859375
+          },
+          {
+            "text": "Clear",
+            "width": 68.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: glossy-marble/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: glossy-marble/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: glossy-marble/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: glossy-marble/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 267.34375
+          },
+          {
+            "text": "Check health",
+            "width": 157.125
+          },
+          {
+            "text": "Clear",
+            "width": 102.21875
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: glossy-marble/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.8125
+          },
+          {
+            "text": "Check health",
+            "width": 123.859375
+          },
+          {
+            "text": "Clear",
+            "width": 68.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: luminous-midnight/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: luminous-midnight/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: luminous-midnight/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: luminous-midnight/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 267.34375
+          },
+          {
+            "text": "Check health",
+            "width": 157.125
+          },
+          {
+            "text": "Clear",
+            "width": 102.21875
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: luminous-midnight/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.8125
+          },
+          {
+            "text": "Check health",
+            "width": 123.859375
+          },
+          {
+            "text": "Clear",
+            "width": 68.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: luminous-midnight/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: luminous-midnight/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: luminous-midnight/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.140625
+          },
+          {
+            "text": "Check health",
+            "width": 120.5625
+          },
+          {
+            "text": "Clear",
+            "width": 65.640625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: luminous-midnight/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 267.34375
+          },
+          {
+            "text": "Check health",
+            "width": 157.125
+          },
+          {
+            "text": "Clear",
+            "width": 102.21875
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: luminous-midnight/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.25
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.8125
+          },
+          {
+            "text": "Check health",
+            "width": 123.859375
+          },
+          {
+            "text": "Clear",
+            "width": 68.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: gothic-stickerboard/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: gothic-stickerboard/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: gothic-stickerboard/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: gothic-stickerboard/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 142.5
+          },
+          {
+            "text": "Check health",
+            "width": 116.84375
+          },
+          {
+            "text": "Clear",
+            "width": 267.34375
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: gothic-stickerboard/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.8125
+          },
+          {
+            "text": "Check health",
+            "width": 119.609375
+          },
+          {
+            "text": "Clear",
+            "width": 73.203125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: gothic-stickerboard/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: gothic-stickerboard/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: gothic-stickerboard/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: gothic-stickerboard/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 142.5
+          },
+          {
+            "text": "Check health",
+            "width": 116.84375
+          },
+          {
+            "text": "Clear",
+            "width": 267.34375
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: gothic-stickerboard/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.8125
+          },
+          {
+            "text": "Check health",
+            "width": 119.609375
+          },
+          {
+            "text": "Clear",
+            "width": 73.203125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: baroque-plexiglas/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: baroque-plexiglas/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: baroque-plexiglas/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: baroque-plexiglas/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 142.5
+          },
+          {
+            "text": "Check health",
+            "width": 116.84375
+          },
+          {
+            "text": "Clear",
+            "width": 267.34375
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: baroque-plexiglas/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.8125
+          },
+          {
+            "text": "Check health",
+            "width": 119.609375
+          },
+          {
+            "text": "Clear",
+            "width": 73.203125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: baroque-plexiglas/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: baroque-plexiglas/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: baroque-plexiglas/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.453125
+          },
+          {
+            "text": "Check health",
+            "width": 106.796875
+          },
+          {
+            "text": "Clear",
+            "width": 60.390625
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: baroque-plexiglas/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 142.5
+          },
+          {
+            "text": "Check health",
+            "width": 116.84375
+          },
+          {
+            "text": "Clear",
+            "width": 267.34375
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: baroque-plexiglas/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.9375
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.8125
+          },
+          {
+            "text": "Check health",
+            "width": 119.609375
+          },
+          {
+            "text": "Clear",
+            "width": 73.203125
+          }
+        ]
+      }
+    },
+    {
+      "name": "chromium: keyboard opens section menu",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: Escape restores menu focus",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: closed menu excludes descendant Tab focus",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "chromium: no uncaught runtime errors",
+      "passed": true,
+      "scope": "live",
+      "detail": []
+    },
+    {
+      "name": "chromium: no failed static assets",
+      "passed": true,
+      "scope": "live",
+      "detail": []
+    },
+    {
+      "name": "firefox: correct served page",
+      "passed": true,
+      "scope": "live",
+      "detail": "StyleStore Network Lab | App Engineering Showcases"
+    },
+    {
+      "name": "firefox: no automatic quote requests",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "firefox: seven content sections",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "firefox: every concept links to an official resource",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "firefox: quote uses actual gateway response",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "firefox: actual quote identity and total",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "serverId": "store-a",
+        "product": {
+          "id": "retro-sneakers",
+          "name": "Retro Sneakers",
+          "unitPriceCents": 8500
+        },
+        "quantity": 1,
+        "totalCents": 8500,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "firefox: ten-request batch really sends ten requests",
+      "passed": true,
+      "scope": "live",
+      "detail": 11
+    },
+    {
+      "name": "firefox: both actual replicas observed",
+      "passed": true,
+      "scope": "live",
+      "detail": [
+        "store-a",
+        "store-b",
+        "store-a",
+        "store-b",
+        "store-a",
+        "store-b",
+        "store-a",
+        "store-b",
+        "store-a",
+        "store-b",
+        "store-a"
+      ]
+    },
+    {
+      "name": "firefox: store-a counter equals actual responses",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "displayed": 6,
+        "actual": 6
+      }
+    },
+    {
+      "name": "firefox: store-b counter equals actual responses",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "displayed": 5,
+        "actual": 5
+      }
+    },
+    {
+      "name": "firefox: health probes do not increment quote requests",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "firefox: health shows both observations",
+      "passed": true,
+      "scope": "live",
+      "detail": "THE CLASSICS, RECONNECTED.\nNetwork lab \u00b7 Quote only\nStyleStore.\nOne classic. Two replicas.\nTHE EVERYDAY ORIGINAL\nRetro Sneakers\n\nPremium classic athletic footwear engineered with modern perceptual cushioning.\n\n$85.00 USD / pair\n\nQuantity\nGet quote\n\u2192\n\nChoose 1\u20139 pairs. Totals come from the API.\n\nOrder Summary\nQuote only\nRetro Sneakers\nRed \u00b7 Qty: 1\nUnit price\n$85.00\nQuote total\n$85.00\n\nValidated for 1 pair \u00b7 USD\n\nNo purchase, payment, tax or shipping calculation. Nothing is saved.\n\nHealth check complete: store-a healthy; store-b healthy.\n\nBEHIND YOUR QUOTE\n\nNetwork monitor\nSend 10 requests\nCheck health\nClear\n\nNginx uses round-robin across two private replicas. Retries and other clients can change the observed sequence; equal counts are not guaranteed.\n\nGateway observation\nNginx response observed\nLast quote response\u2014not health\nstore-a\nFailed quote attempts\n0\nstore-a\n6 validated quotes\n\nHealthy at last check\n\nChecked 12:27:24 AM\n\nstore-b\n5 validated quotes\n\nHealthy at last check\n\nChecked 12:27:24 AM\n\nSession observations only. Quote counts are not health checks. The gateway header identifies the configured path; it is not independent security attestation.\n\nRecent quote requests \u00b7 latest 11, newest first"
+    },
+    {
+      "name": "firefox: request trail contains the actual quote attempts",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "firefox: clear does not send another quote",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "firefox: clear resets observations rather than faking traffic",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "firefox: standard/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66667175292969
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: standard/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: standard/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.2666778564453
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: standard/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 267.3333435058594
+          },
+          {
+            "text": "Check health",
+            "width": 157.15000915527344
+          },
+          {
+            "text": "Clear",
+            "width": 102.18333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: standard/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 123.88333129882812
+          },
+          {
+            "text": "Clear",
+            "width": 68.91665649414062
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: standard/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66667175292969
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: standard/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: standard/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.2666778564453
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: standard/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 267.3333435058594
+          },
+          {
+            "text": "Check health",
+            "width": 157.15000915527344
+          },
+          {
+            "text": "Clear",
+            "width": 102.18333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: standard/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "standard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 123.88333129882812
+          },
+          {
+            "text": "Clear",
+            "width": 68.91665649414062
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: playful-pop/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66667175292969
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: playful-pop/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66667175292969
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: playful-pop/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.2666778564453
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: playful-pop/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 265.3333435058594
+          },
+          {
+            "text": "Check health",
+            "width": 156.15000915527344
+          },
+          {
+            "text": "Clear",
+            "width": 101.18333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: playful-pop/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 198.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 122.88333129882812
+          },
+          {
+            "text": "Clear",
+            "width": 67.91665649414062
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: playful-pop/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66667175292969
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: playful-pop/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: playful-pop/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.2666778564453
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: playful-pop/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 265.3333435058594
+          },
+          {
+            "text": "Check health",
+            "width": 156.15000915527344
+          },
+          {
+            "text": "Clear",
+            "width": 101.18333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: playful-pop/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "playful-pop",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 198.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 122.88333129882812
+          },
+          {
+            "text": "Clear",
+            "width": 67.91665649414062
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: raggedy-granite/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 119.7833251953125
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 114.11666870117188
+          },
+          {
+            "text": "Check health",
+            "width": 93.03334045410156
+          },
+          {
+            "text": "Clear",
+            "width": 54.91667175292969
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: raggedy-granite/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 119.78334045410156
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 114.11666870117188
+          },
+          {
+            "text": "Check health",
+            "width": 93.03334045410156
+          },
+          {
+            "text": "Clear",
+            "width": 54.91667175292969
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: raggedy-granite/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 119.7833251953125
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 114.11666870117188
+          },
+          {
+            "text": "Check health",
+            "width": 93.0333251953125
+          },
+          {
+            "text": "Clear",
+            "width": 54.916656494140625
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: raggedy-granite/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 119.68333435058594
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 139.20001220703125
+          },
+          {
+            "text": "Check health",
+            "width": 118.13333129882812
+          },
+          {
+            "text": "Clear",
+            "width": 265.3333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: raggedy-granite/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 119.68333435058594
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 198.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 114.44999694824219
+          },
+          {
+            "text": "Clear",
+            "width": 76.34999084472656
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: raggedy-granite/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 119.7833251953125
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 114.11666870117188
+          },
+          {
+            "text": "Check health",
+            "width": 93.03334045410156
+          },
+          {
+            "text": "Clear",
+            "width": 54.91667175292969
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: raggedy-granite/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 119.78334045410156
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 114.11666870117188
+          },
+          {
+            "text": "Check health",
+            "width": 93.03334045410156
+          },
+          {
+            "text": "Clear",
+            "width": 54.91667175292969
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: raggedy-granite/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 119.7833251953125
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 114.11666870117188
+          },
+          {
+            "text": "Check health",
+            "width": 93.0333251953125
+          },
+          {
+            "text": "Clear",
+            "width": 54.916656494140625
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: raggedy-granite/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 119.68333435058594
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 139.20001220703125
+          },
+          {
+            "text": "Check health",
+            "width": 118.13333129882812
+          },
+          {
+            "text": "Clear",
+            "width": 265.3333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: raggedy-granite/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "raggedy-granite",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 119.68333435058594
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 198.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 114.44999694824219
+          },
+          {
+            "text": "Clear",
+            "width": 76.34999084472656
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: glossy-marble/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66667175292969
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: glossy-marble/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: glossy-marble/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.2666778564453
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: glossy-marble/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 267.3333435058594
+          },
+          {
+            "text": "Check health",
+            "width": 157.15000915527344
+          },
+          {
+            "text": "Clear",
+            "width": 102.18333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: glossy-marble/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 123.88333129882812
+          },
+          {
+            "text": "Clear",
+            "width": 68.91665649414062
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: glossy-marble/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66667175292969
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: glossy-marble/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: glossy-marble/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.2666778564453
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: glossy-marble/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 267.3333435058594
+          },
+          {
+            "text": "Check health",
+            "width": 157.15000915527344
+          },
+          {
+            "text": "Clear",
+            "width": 102.18333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: glossy-marble/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "glossy-marble",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 123.88333129882812
+          },
+          {
+            "text": "Clear",
+            "width": 68.91665649414062
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: luminous-midnight/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66667175292969
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: luminous-midnight/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: luminous-midnight/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.2666778564453
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.2666778564453
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: luminous-midnight/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 267.3333435058594
+          },
+          {
+            "text": "Check health",
+            "width": 157.15000915527344
+          },
+          {
+            "text": "Clear",
+            "width": 102.18333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: luminous-midnight/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 123.88333129882812
+          },
+          {
+            "text": "Clear",
+            "width": 68.91665649414062
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: luminous-midnight/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66667175292969
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: luminous-midnight/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66667175292969
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: luminous-midnight/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.2666778564453
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: luminous-midnight/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 267.3333435058594
+          },
+          {
+            "text": "Check health",
+            "width": 157.15000915527344
+          },
+          {
+            "text": "Clear",
+            "width": 102.18333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: luminous-midnight/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "luminous-midnight",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 123.88333129882812
+          },
+          {
+            "text": "Clear",
+            "width": 68.91665649414062
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: gothic-stickerboard/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.88333129882812
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.6666717529297
+          },
+          {
+            "text": "Check health",
+            "width": 106.94999694824219
+          },
+          {
+            "text": "Clear",
+            "width": 60.44999694824219
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: gothic-stickerboard/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.88333129882812
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.6666717529297
+          },
+          {
+            "text": "Check health",
+            "width": 106.94999694824219
+          },
+          {
+            "text": "Clear",
+            "width": 60.44999694824219
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: gothic-stickerboard/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.88333129882812
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.6666717529297
+          },
+          {
+            "text": "Check health",
+            "width": 106.94999694824219
+          },
+          {
+            "text": "Clear",
+            "width": 60.44999694824219
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: gothic-stickerboard/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.88333129882812
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 142.5166778564453
+          },
+          {
+            "text": "Check health",
+            "width": 116.81666564941406
+          },
+          {
+            "text": "Clear",
+            "width": 267.3333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: gothic-stickerboard/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.88333129882812
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 119.64999389648438
+          },
+          {
+            "text": "Clear",
+            "width": 73.14999389648438
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: gothic-stickerboard/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.88333129882812
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.6666717529297
+          },
+          {
+            "text": "Check health",
+            "width": 106.94999694824219
+          },
+          {
+            "text": "Clear",
+            "width": 60.44999694824219
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: gothic-stickerboard/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.88333129882812
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.6666717529297
+          },
+          {
+            "text": "Check health",
+            "width": 106.94999694824219
+          },
+          {
+            "text": "Clear",
+            "width": 60.44999694824219
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: gothic-stickerboard/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.88333129882812
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 132.6666717529297
+          },
+          {
+            "text": "Check health",
+            "width": 106.94999694824219
+          },
+          {
+            "text": "Clear",
+            "width": 60.44999694824219
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: gothic-stickerboard/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.88333129882812
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 142.5166778564453
+          },
+          {
+            "text": "Check health",
+            "width": 116.81666564941406
+          },
+          {
+            "text": "Clear",
+            "width": 267.3333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: gothic-stickerboard/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "gothic-stickerboard",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 130.88333129882812
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 119.64999389648438
+          },
+          {
+            "text": "Clear",
+            "width": 73.14999389648438
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: baroque-plexiglas/light/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "light",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66667175292969
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: baroque-plexiglas/light/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "light",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: baroque-plexiglas/light/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "light",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.2666778564453
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: baroque-plexiglas/light/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "light",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 267.3333435058594
+          },
+          {
+            "text": "Check health",
+            "width": 157.15000915527344
+          },
+          {
+            "text": "Clear",
+            "width": 102.18333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: baroque-plexiglas/light/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "light",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 123.88333129882812
+          },
+          {
+            "text": "Clear",
+            "width": 68.91665649414062
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: baroque-plexiglas/dark/1920 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1920,
+        "scroll": 1920,
+        "mode": "dark",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66667175292969
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: baroque-plexiglas/dark/1001 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 1001,
+        "scroll": 1001,
+        "mode": "dark",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.26666259765625
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: baroque-plexiglas/dark/768 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "mode": "dark",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 152.2666778564453
+          },
+          {
+            "text": "Check health",
+            "width": 120.66665649414062
+          },
+          {
+            "text": "Clear",
+            "width": 65.68333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: baroque-plexiglas/dark/390 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "mode": "dark",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 267.3333435058594
+          },
+          {
+            "text": "Check health",
+            "width": 157.15000915527344
+          },
+          {
+            "text": "Clear",
+            "width": 102.18333435058594
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: baroque-plexiglas/dark/320 no page overflow",
+      "passed": true,
+      "scope": "live",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "mode": "dark",
+        "theme": "baroque-plexiglas",
+        "buttons": [
+          {
+            "text": "Get quote \u2192",
+            "width": 141.26666259765625
+          },
+          {
+            "text": "Send 10 requests",
+            "width": 200.79998779296875
+          },
+          {
+            "text": "Check health",
+            "width": 123.88333129882812
+          },
+          {
+            "text": "Clear",
+            "width": 68.91665649414062
+          }
+        ]
+      }
+    },
+    {
+      "name": "firefox: keyboard opens section menu",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "firefox: Escape restores menu focus",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "firefox: closed menu excludes descendant Tab focus",
+      "passed": true,
+      "scope": "live"
+    },
+    {
+      "name": "firefox: no uncaught runtime errors",
+      "passed": true,
+      "scope": "live",
+      "detail": []
+    },
+    {
+      "name": "firefox: no failed static assets",
+      "passed": true,
+      "scope": "live",
+      "detail": []
+    }
+  ],
+  "passed": 180,
+  "failed": 0
+}

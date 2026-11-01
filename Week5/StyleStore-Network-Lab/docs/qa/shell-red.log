@@ -1,0 +1,231 @@
+test_accessible_editable_architecture_with_numbered_connections (__main__.ShowcaseTests.test_accessible_editable_architecture_with_numbered_connections) ... FAIL
+test_compact_audit_is_a_contract_not_completed_results (__main__.ShowcaseTests.test_compact_audit_is_a_contract_not_completed_results) ... FAIL
+test_no_public_internal_links_or_private_material (__main__.ShowcaseTests.test_no_public_internal_links_or_private_material) ... FAIL
+test_owned_artifacts_exist (__main__.ShowcaseTests.test_owned_artifacts_exist) ... 
+  test_owned_artifacts_exist (__main__.ShowcaseTests.test_owned_artifacts_exist) (file='index.html') ... FAIL
+  test_owned_artifacts_exist (__main__.ShowcaseTests.test_owned_artifacts_exist) (file='styles/network-showcase.css') ... FAIL
+  test_owned_artifacts_exist (__main__.ShowcaseTests.test_owned_artifacts_exist) (file='assets/sneaker.svg') ... FAIL
+test_owned_css_inherits_tokens_and_reflows_instead_of_shrinking (__main__.ShowcaseTests.test_owned_css_inherits_tokens_and_reflows_instead_of_shrinking) ... FAIL
+test_prompts_are_copyable_suggestions_with_numbered_build_spec (__main__.ShowcaseTests.test_prompts_are_copyable_suggestions_with_numbered_build_spec) ... FAIL
+test_react_mount_has_only_honest_idle_fallback (__main__.ShowcaseTests.test_react_mount_has_only_honest_idle_fallback) ... FAIL
+test_reference_compatibility_without_auth_feature (__main__.ShowcaseTests.test_reference_compatibility_without_auth_feature) ... FAIL
+test_semantic_document_and_unique_ids (__main__.ShowcaseTests.test_semantic_document_and_unique_ids) ... FAIL
+test_seven_direct_main_sections_match_reference (__main__.ShowcaseTests.test_seven_direct_main_sections_match_reference) ... FAIL
+test_six_whole_concept_cards_are_precise_official_links (__main__.ShowcaseTests.test_six_whole_concept_cards_are_precise_official_links) ... FAIL
+test_sneaker_is_original_self_contained_scalable_art (__main__.ShowcaseTests.test_sneaker_is_original_self_contained_scalable_art) ... FAIL
+test_styles_and_seven_local_theme_packages (__main__.ShowcaseTests.test_styles_and_seven_local_theme_packages) ... FAIL
+test_topology_and_mobile_equivalent_are_explicit (__main__.ShowcaseTests.test_topology_and_mobile_equivalent_are_explicit) ... FAIL
+test_verification_covers_manual_and_operator_boundaries (__main__.ShowcaseTests.test_verification_covers_manual_and_operator_boundaries) ... FAIL
+
+======================================================================
+FAIL: test_accessible_editable_architecture_with_numbered_connections (__main__.ShowcaseTests.test_accessible_editable_architecture_with_numbered_connections)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 173, in test_accessible_editable_architecture_with_numbered_connections
+    section = self.section("architecture")
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 107, in section
+    return self.one("section", data_architecture_section=key)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 103, in one
+    self.assertEqual(len(nodes), 1, (tag, cls, attrs, len(nodes)))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1 : ('section', None, {'data_architecture_section': 'architecture'}, 0)
+
+======================================================================
+FAIL: test_compact_audit_is_a_contract_not_completed_results (__main__.ShowcaseTests.test_compact_audit_is_a_contract_not_completed_results)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 223, in test_compact_audit_is_a_contract_not_completed_results
+    section = self.section("audit")
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 107, in section
+    return self.one("section", data_architecture_section=key)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 103, in one
+    self.assertEqual(len(nodes), 1, (tag, cls, attrs, len(nodes)))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1 : ('section', None, {'data_architecture_section': 'audit'}, 0)
+
+======================================================================
+FAIL: test_no_public_internal_links_or_private_material (__main__.ShowcaseTests.test_no_public_internal_links_or_private_material)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 263, in test_no_public_internal_links_or_private_material
+    self.assertEqual(self.one("footer").find("a")[0].attrs.get("href"), "#main-content")
+                     ~~~~~~~~^^^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 103, in one
+    self.assertEqual(len(nodes), 1, (tag, cls, attrs, len(nodes)))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1 : ('footer', None, {}, 0)
+
+======================================================================
+FAIL: test_owned_artifacts_exist (__main__.ShowcaseTests.test_owned_artifacts_exist) (file='index.html')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 112, in test_owned_artifacts_exist
+    self.assertTrue((ROOT / name).is_file(), "missing shell artifact: " + name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing shell artifact: index.html
+
+======================================================================
+FAIL: test_owned_artifacts_exist (__main__.ShowcaseTests.test_owned_artifacts_exist) (file='styles/network-showcase.css')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 112, in test_owned_artifacts_exist
+    self.assertTrue((ROOT / name).is_file(), "missing shell artifact: " + name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing shell artifact: styles/network-showcase.css
+
+======================================================================
+FAIL: test_owned_artifacts_exist (__main__.ShowcaseTests.test_owned_artifacts_exist) (file='assets/sneaker.svg')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 112, in test_owned_artifacts_exist
+    self.assertTrue((ROOT / name).is_file(), "missing shell artifact: " + name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing shell artifact: assets/sneaker.svg
+
+======================================================================
+FAIL: test_owned_css_inherits_tokens_and_reflows_instead_of_shrinking (__main__.ShowcaseTests.test_owned_css_inherits_tokens_and_reflows_instead_of_shrinking)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 270, in test_owned_css_inherits_tokens_and_reflows_instead_of_shrinking
+    self.assertIn("body.network-showcase-page", self.css)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'body.network-showcase-page' not found in ''
+
+======================================================================
+FAIL: test_prompts_are_copyable_suggestions_with_numbered_build_spec (__main__.ShowcaseTests.test_prompts_are_copyable_suggestions_with_numbered_build_spec)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 203, in test_prompts_are_copyable_suggestions_with_numbered_build_spec
+    section = self.section("prompt")
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 107, in section
+    return self.one("section", data_architecture_section=key)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 103, in one
+    self.assertEqual(len(nodes), 1, (tag, cls, attrs, len(nodes)))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1 : ('section', None, {'data_architecture_section': 'prompt'}, 0)
+
+======================================================================
+FAIL: test_react_mount_has_only_honest_idle_fallback (__main__.ShowcaseTests.test_react_mount_has_only_honest_idle_fallback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 232, in test_react_mount_has_only_honest_idle_fallback
+    section = self.section("working")
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 107, in section
+    return self.one("section", data_architecture_section=key)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 103, in one
+    self.assertEqual(len(nodes), 1, (tag, cls, attrs, len(nodes)))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1 : ('section', None, {'data_architecture_section': 'working'}, 0)
+
+======================================================================
+FAIL: test_reference_compatibility_without_auth_feature (__main__.ShowcaseTests.test_reference_compatibility_without_auth_feature)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 138, in test_reference_compatibility_without_auth_feature
+    classes = self.one("body").attrs.get("class", "").split()
+              ~~~~~~~~^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 103, in one
+    self.assertEqual(len(nodes), 1, (tag, cls, attrs, len(nodes)))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1 : ('body', None, {}, 0)
+
+======================================================================
+FAIL: test_semantic_document_and_unique_ids (__main__.ShowcaseTests.test_semantic_document_and_unique_ids)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 115, in test_semantic_document_and_unique_ids
+    self.assertTrue(self.html.startswith("<!DOCTYPE html>"))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_seven_direct_main_sections_match_reference (__main__.ShowcaseTests.test_seven_direct_main_sections_match_reference)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 125, in test_seven_direct_main_sections_match_reference
+    main = self.one("main", id="main-content")
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 103, in one
+    self.assertEqual(len(nodes), 1, (tag, cls, attrs, len(nodes)))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1 : ('main', None, {'id': 'main-content'}, 0)
+
+======================================================================
+FAIL: test_six_whole_concept_cards_are_precise_official_links (__main__.ShowcaseTests.test_six_whole_concept_cards_are_precise_official_links)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 161, in test_six_whole_concept_cards_are_precise_official_links
+    cards = self.section("concepts").find("a", cls="concept-card")
+            ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 107, in section
+    return self.one("section", data_architecture_section=key)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 103, in one
+    self.assertEqual(len(nodes), 1, (tag, cls, attrs, len(nodes)))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1 : ('section', None, {'data_architecture_section': 'concepts'}, 0)
+
+======================================================================
+FAIL: test_sneaker_is_original_self_contained_scalable_art (__main__.ShowcaseTests.test_sneaker_is_original_self_contained_scalable_art)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 283, in test_sneaker_is_original_self_contained_scalable_art
+    self.assertTrue(path.is_file(), "missing original sneaker asset")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing original sneaker asset
+
+======================================================================
+FAIL: test_styles_and_seven_local_theme_packages (__main__.ShowcaseTests.test_styles_and_seven_local_theme_packages)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 149, in test_styles_and_seven_local_theme_packages
+    self.assertEqual([x for x in links if x in required], required)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [] != ['./styles/shared/base.css', './styles/aut[76 chars]css']
+
+Second list contains 4 additional elements.
+First extra element 0:
+'./styles/shared/base.css'
+
+- []
++ ['./styles/shared/base.css',
++  './styles/auth-rbac-showcase.css',
++  './styles/network-showcase.css',
++  './styles/storefront.css']
+
+======================================================================
+FAIL: test_topology_and_mobile_equivalent_are_explicit (__main__.ShowcaseTests.test_topology_and_mobile_equivalent_are_explicit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 191, in test_topology_and_mobile_equivalent_are_explicit
+    section = self.section("architecture")
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 107, in section
+    return self.one("section", data_architecture_section=key)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 103, in one
+    self.assertEqual(len(nodes), 1, (tag, cls, attrs, len(nodes)))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1 : ('section', None, {'data_architecture_section': 'architecture'}, 0)
+
+======================================================================
+FAIL: test_verification_covers_manual_and_operator_boundaries (__main__.ShowcaseTests.test_verification_covers_manual_and_operator_boundaries)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 250, in test_verification_covers_manual_and_operator_boundaries
+    text = self.section("verification").text().lower()
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 107, in section
+    return self.one("section", data_architecture_section=key)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week5/StyleStore-Network-Lab/tests/showcase_test.py", line 103, in one
+    self.assertEqual(len(nodes), 1, (tag, cls, attrs, len(nodes)))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 1 : ('section', None, {'data_architecture_section': 'verification'}, 0)
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.013s
+
+FAILED (failures=17)
