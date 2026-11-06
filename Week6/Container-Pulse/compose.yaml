@@ -1,0 +1,83 @@
+name: ad371-week6-container-pulse
+
+services:
+  app:
+    image: ad371-week6-container-pulse-app:local
+    build:
+      context: .
+      target: runtime
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      PORT: '3000'
+    user: node
+    init: true
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ['no-new-privileges:true']
+    pids_limit: 128
+    cpus: '0.50'
+    mem_limit: 128M
+    deploy:
+      replicas: ${REPLICAS:-2}
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 128M
+          pids: 128
+    healthcheck:
+      test: [CMD, node, server/healthcheck.mjs]
+      interval: 5s
+      timeout: 3s
+      start_period: 5s
+      retries: 6
+    stop_grace_period: 10s
+    networks: [pulse]
+
+  gateway:
+    image: nginx:stable-alpine@sha256:e9b2d7624fd7957f4ed44ae0a272d93fb73aeb8512ba8916f8118ae6143fd115
+    user: nginx
+    entrypoint: [nginx]
+    command: [-g, 'daemon off;']
+    init: true
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ['no-new-privileges:true']
+    pids_limit: 64
+    cpus: '0.25'
+    mem_limit: 64M
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 64M
+          pids: 64
+    ports:
+      - '127.0.0.1:${HOST_PORT:-8796}:8080'
+    volumes:
+      - type: bind
+        source: ./infra/nginx.conf
+        target: /etc/nginx/nginx.conf
+        read_only: true
+        bind:
+          create_host_path: false
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m,mode=1777
+    depends_on:
+      app:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD-SHELL, "wget -q -T 2 -O - http://127.0.0.1:8080/healthz | grep -q '\"status\":\"ok\"'"]
+      interval: 5s
+      timeout: 3s
+      start_period: 5s
+      retries: 6
+    stop_grace_period: 10s
+    networks: [pulse]
+
+networks:
+  pulse:
+    driver: bridge

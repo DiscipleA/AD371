@@ -1,0 +1,45 @@
+/* Container Pulse owns this presentation delta; shared chrome stays unchanged. */
+body.pulse-page .pulse-concept { text-decoration:none; color:var(--flex-color-text-primary); }
+body.pulse-page .pulse-concept h3 { color:inherit; }
+body.pulse-page .pulse-concept:focus-visible { outline:3px solid var(--flex-color-accent-secondary); outline-offset:4px; }
+/* One SVG composition at every width: nodes, labels and arrows scale together. */
+body.pulse-page .pulse-map { margin:0; min-inline-size:0; border:1px solid var(--flex-color-border); border-radius:var(--flex-radius-lg); overflow:hidden; background:var(--flex-color-surface-elevated); }
+body.pulse-page .pulse-map figcaption { display:flex; flex-wrap:wrap; gap:.5rem 2rem; justify-content:space-between; padding:1rem 1.25rem; border-block-end:1px solid var(--flex-color-border); font-weight:700; }
+body.pulse-page .pulse-map figcaption span { font-size:.85rem; font-weight:400; }
+body.pulse-page .pulse-map-desktop { display:block; inline-size:100%; block-size:auto; color:var(--flex-color-text-primary); }
+body.pulse-page .pulse-map svg text { fill:currentColor; font-family:var(--flex-font-sans); font-size:18px; letter-spacing:0; text-rendering:geometricPrecision; }
+body.pulse-page .pulse-map svg .pulse-map-node-title { font-weight:750; font-size:22px; }
+body.pulse-page .pulse-map svg .pulse-map-boundary-title { font-size:20px; font-weight:700; }
+body.pulse-page .pulse-map svg .pulse-map-lane-title { font-size:22px; font-weight:750; letter-spacing:.2px; }
+body.pulse-page .pulse-map svg .pulse-map-edge-label,
+body.pulse-page .pulse-map svg .pulse-map-legend { font-size:18px; }
+body.pulse-page .pulse-gridline { stroke:var(--flex-color-border); stroke-width:.5; opacity:.4; }
+body.pulse-page .pulse-boundary { fill:color-mix(in srgb,var(--flex-color-accent) 3%,var(--flex-color-surface-elevated)); stroke:var(--flex-color-border); stroke-width:1.5; stroke-dasharray:7 5; }
+body.pulse-page .pulse-node { fill:var(--flex-color-surface); stroke:var(--flex-color-border); stroke-width:1.5; }
+body.pulse-page .pulse-node--container { stroke:var(--flex-color-accent-secondary); stroke-width:2; }
+body.pulse-page .pulse-node--inner { fill:var(--flex-color-surface-elevated); }
+body.pulse-page .pulse-node--artifact { stroke:var(--flex-color-accent); stroke-width:2; }
+body.pulse-page .pulse-flow { fill:none; stroke:var(--flex-color-accent-secondary); stroke-width:2.3; stroke-linejoin:round; }
+body.pulse-page .pulse-flow--build { stroke:var(--flex-color-accent); }
+body.pulse-page .pulse-flow--control { stroke:var(--flex-color-text-muted); stroke-dasharray:6 4; }
+body.pulse-page .pulse-arrowhead { fill:context-stroke; }
+body.pulse-page .pulse-architecture-details { margin-block-start:1rem; }
+body.pulse-page .pulse-contract-body { padding-block-end:1rem; }
+body.pulse-page .pulse-contract-body p { max-inline-size:80ch; }
+body.pulse-page pre { white-space:pre-wrap; overflow-wrap:anywhere; }
+body.pulse-page pre:focus-visible { outline:3px solid var(--flex-color-accent-secondary); outline-offset:-4px; }
+body.pulse-page #pulse-root { min-inline-size:0; }
+/* Keep the established gap below the working application. */
+body.pulse-page #final-result .result-stage + .result-explanation { margin-block-start:clamp(32px, 2.5vw, 40px); }
+body.pulse-page .process-number { color:var(--flex-color-text-primary); }
+/* Match the inspected architecture-family workflow and audit container patterns. */
+body.pulse-page .audit-layout > .audit-grid { margin-block-start:0; align-content:start; align-items:start; align-self:start; grid-auto-rows:min-content; min-block-size:0; }
+/* Preserve the compact three-note desktop row, not the generic 18rem auto-fit floor. */
+body.pulse-page #final-result .result-explanation { grid-template-columns:repeat(3, minmax(0, 1fr)); align-items:stretch; }
+body.pulse-page #final-result .result-note { padding:1rem; min-block-size:0; }
+body.pulse-page #final-result .result-note h3 { margin:0 0 .35rem; font-size:1.05rem; line-height:1.3; }
+body.pulse-page #final-result .result-note p { margin:0; font-size:1rem; line-height:1.55; }
+@media(max-width:600px) { body.pulse-page #final-result .result-explanation { grid-template-columns:minmax(0, 1fr); } }
+/* The longer standalone brand must wrap with, not push past, theme controls. */
+@media(max-width:600px) { body.pulse-page .portfolio-banner__inner { flex-wrap:wrap; } }
+@media(prefers-reduced-motion:reduce) { body.pulse-page .pulse-map * { transition:none; } }
