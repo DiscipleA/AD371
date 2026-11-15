@@ -1,0 +1,460 @@
+TAP version 13
+# Subtest: container architecture has a single fixed-composition SVG at every viewport
+ok 1 - container architecture has a single fixed-composition SVG at every viewport
+  ---
+  duration_ms: 4.911612
+  type: 'test'
+  ...
+# Subtest: diagram explains build, image, orchestration, container internals and observation provenance
+ok 2 - diagram explains build, image, orchestration, container internals and observation provenance
+  ---
+  duration_ms: 1.358195
+  type: 'test'
+  ...
+# Subtest: AI Prompt preserves the unboxed reference workflow and separate full specification
+ok 3 - AI Prompt preserves the unboxed reference workflow and separate full specification
+  ---
+  duration_ms: 2.717005
+  type: 'test'
+  ...
+# Subtest: Audit keeps the actual excerpt and four reference-style checks inside audit-layout
+ok 4 - Audit keeps the actual excerpt and four reference-style checks inside audit-layout
+  ---
+  duration_ms: 0.866613
+  type: 'test'
+  ...
+# Subtest: public prompt appendix reproduces every published prompt literally
+ok 5 - public prompt appendix reproduces every published prompt literally
+  ---
+  duration_ms: 3.874192
+  type: 'test'
+  ...
+# Subtest: health endpoint returns the exact public health contract
+ok 6 - health endpoint returns the exact public health contract
+  ---
+  duration_ms: 62.968594
+  type: 'test'
+  ...
+# Subtest: runtime exposes only the five approved live values
+ok 7 - runtime exposes only the five approved live values
+  ---
+  duration_ms: 28.689034
+  type: 'test'
+  ...
+# Subtest: unsafe configured versions are replaced with a safe default
+ok 8 - unsafe configured versions are replaced with a safe default
+  ---
+  duration_ms: 21.099719
+  type: 'test'
+  ...
+# Subtest: runtime uptime advances rather than returning a fixture value
+ok 9 - runtime uptime advances rather than returning a fixture value
+  ---
+  duration_ms: 59.58293
+  type: 'test'
+  ...
+# Subtest: landing and allowlisted bundled files are served with correct MIME types
+ok 10 - landing and allowlisted bundled files are served with correct MIME types
+  ---
+  duration_ms: 70.110477
+  type: 'test'
+  ...
+# Subtest: production-layout shared scripts, styles and all seven theme packages are public
+ok 11 - production-layout shared scripts, styles and all seven theme packages are public
+  ---
+  duration_ms: 511.097953
+  type: 'test'
+  ...
+# Subtest: automatic favicon requests serve only the known standard-theme icon
+ok 12 - automatic favicon requests serve only the known standard-theme icon
+  ---
+  duration_ms: 15.958021
+  type: 'test'
+  ...
+# Subtest: production layout does not expose arbitrary scripts, styles, themes or protected directories
+ok 13 - production layout does not expose arbitrary scripts, styles, themes or protected directories
+  ---
+  duration_ms: 127.259646
+  type: 'test'
+  ...
+# Subtest: production-layout allowlisted files retain symlink containment and no-follow protection
+ok 14 - production-layout allowlisted files retain symlink containment and no-follow protection
+  ---
+  duration_ms: 88.663583
+  type: 'test'
+  ...
+# Subtest: HEAD preserves status and content length but never sends a body
+ok 15 - HEAD preserves status and content length but never sends a body
+  ---
+  duration_ms: 32.892028
+  type: 'test'
+  ...
+# Subtest: methods other than GET and HEAD are rejected with a safe Allow header
+ok 16 - methods other than GET and HEAD are rejected with a safe Allow header
+  ---
+  duration_ms: 17.76183
+  type: 'test'
+  ...
+# Subtest: CONNECT cannot create a tunnel and receives an explicit 405
+ok 17 - CONNECT cannot create a tunnel and receives an explicit 405
+  ---
+  duration_ms: 18.735889
+  type: 'test'
+  ...
+# Subtest: malformed HTTP receives sanitized security headers without reflecting input
+ok 18 - malformed HTTP receives sanitized security headers without reflecting input
+  ---
+  duration_ms: 44.661966
+  type: 'test'
+  ...
+# Subtest: unexpected query strings including an empty delimiter are rejected
+ok 19 - unexpected query strings including an empty delimiter are rejected
+  ---
+  duration_ms: 48.168824
+  type: 'test'
+  ...
+# Subtest: unknown API routes do not fall back to the HTML landing page
+ok 20 - unknown API routes do not fall back to the HTML landing page
+  ---
+  duration_ms: 85.85703
+  type: 'test'
+  ...
+# Subtest: private files, maps, dotfiles and traversal are never served
+ok 21 - private files, maps, dotfiles and traversal are never served
+  ---
+  duration_ms: 142.407716
+  type: 'test'
+  ...
+# Subtest: allowlisted filenames cannot escape dist through a symlink
+ok 22 - allowlisted filenames cannot escape dist through a symlink
+  ---
+  duration_ms: 18.764383
+  type: 'test'
+  ...
+# Subtest: success and errors carry restrictive same-origin security headers
+ok 23 - success and errors carry restrictive same-origin security headers
+  ---
+  duration_ms: 32.076791
+  type: 'test'
+  ...
+# Subtest: missing build files return sanitized errors with no filesystem disclosure
+ok 24 - missing build files return sanitized errors with no filesystem disclosure
+  ---
+  duration_ms: 11.075742
+  type: 'test'
+  ...
+# Subtest: invalid entrypoint port exits with a sanitized configuration error
+ok 25 - invalid entrypoint port exits with a sanitized configuration error
+  ---
+  duration_ms: 195.754285
+  type: 'test'
+  ...
+# Subtest: container health probe accepts the exact live health endpoint
+ok 26 - container health probe accepts the exact live health endpoint
+  ---
+  duration_ms: 168.610357
+  type: 'test'
+  ...
+# Subtest: container health probe rejects a misleading or non-200 endpoint
+ok 27 - container health probe rejects a misleading or non-200 endpoint
+  ---
+  duration_ms: 247.007246
+  type: 'test'
+  ...
+# Subtest: entrypoint shuts down cleanly on SIGTERM after handling a real request
+ok 28 - entrypoint shuts down cleanly on SIGTERM after handling a real request
+  ---
+  duration_ms: 156.525263
+  type: 'test'
+  ...
+# Subtest: Audit descriptions remain within the inspected reference density
+ok 29 - Audit descriptions remain within the inspected reference density
+  ---
+  duration_ms: 2.273717
+  type: 'test'
+  ...
+# Subtest: Working System explanation notes retain three compact desktop columns
+ok 30 - Working System explanation notes retain three compact desktop columns
+  ---
+  duration_ms: 1.053818
+  type: 'test'
+  ...
+# Subtest: empty graphs have no invented samples, hostnames or successful responses
+ok 31 - empty graphs have no invented samples, hostnames or successful responses
+  ---
+  duration_ms: 5.715926
+  type: 'test'
+  ...
+# Subtest: latency samples are chronological measured values and preserve exact check identity
+ok 32 - latency samples are chronological measured values and preserve exact check identity
+  ---
+  duration_ms: 0.964043
+  type: 'test'
+  ...
+# Subtest: response distribution counts only validated successes with the same retained-window denominator
+ok 33 - response distribution counts only validated successes with the same retained-window denominator
+  ---
+  duration_ms: 1.927216
+  type: 'test'
+  ...
+# Subtest: graphs retain at most the newest twelve completed checks, not cumulative page totals
+ok 34 - graphs retain at most the newest twelve completed checks, not cumulative page totals
+  ---
+  duration_ms: 0.659956
+  type: 'test'
+  ...
+# Subtest: missing or invalid timing stays unplotted instead of becoming zero milliseconds
+ok 35 - missing or invalid timing stays unplotted instead of becoming zero milliseconds
+  ---
+  duration_ms: 0.513084
+  type: 'test'
+  ...
+# Subtest: failed measured requests remain in latency history but never become replica responses
+ok 36 - failed measured requests remain in latency history but never become replica responses
+  ---
+  duration_ms: 0.536132
+  type: 'test'
+  ...
+# Subtest: chart coordinates are finite, bounded and break the line at unavailable timing
+ok 37 - chart coordinates are finite, bounded and break the line at unavailable timing
+  ---
+  duration_ms: 1.175807
+  type: 'test'
+  ...
+# Subtest: hostname grouping does not confuse object prototype property names with existing groups
+ok 38 - hostname grouping does not confuse object prototype property names with existing groups
+  ---
+  duration_ms: 0.68543
+  type: 'test'
+  ...
+# Subtest: validates and projects the exact safe runtime metadata
+ok 39 - validates and projects the exact safe runtime metadata
+  ---
+  duration_ms: 4.610682
+  type: 'test'
+  ...
+# Subtest: rejects arrays, missing fields, unsafe text and invalid numerical/version fields
+ok 40 - rejects arrays, missing fields, unsafe text and invalid numerical/version fields
+  ---
+  duration_ms: 4.351333
+  type: 'test'
+  ...
+# Subtest: rejects terminal line separators in safe metadata and configured API paths
+ok 41 - rejects terminal line separators in safe metadata and configured API paths
+  ---
+  duration_ms: 3.87763
+  type: 'test'
+  ...
+# Subtest: uses same-origin runtime path, no-store and actual HTTP status/browser timing
+ok 42 - uses same-origin runtime path, no-store and actual HTTP status/browser timing
+  ---
+  duration_ms: 75.660293
+  type: 'test'
+  ...
+# Subtest: supports a safe configured same-origin apiBase and rejects external paths
+ok 43 - supports a safe configured same-origin apiBase and rejects external paths
+  ---
+  duration_ms: 2.031557
+  type: 'test'
+  ...
+# Subtest: reads the configured browser apiBase at request time without import side effects
+ok 44 - reads the configured browser apiBase at request time without import side effects
+  ---
+  duration_ms: 3.058814
+  type: 'test'
+  ...
+# Subtest: preserves received HTTP status for malformed JSON and invalid metadata
+ok 45 - preserves received HTTP status for malformed JSON and invalid metadata
+  ---
+  duration_ms: 4.833605
+  type: 'test'
+  ...
+# Subtest: never displays an HTTP error body or invents metadata on network failure
+ok 46 - never displays an HTTP error body or invents metadata on network failure
+  ---
+  duration_ms: 2.244197
+  type: 'test'
+  ...
+# Subtest: timeout is bounded even if transport ignores abort
+ok 47 - timeout is bounded even if transport ignores abort
+  ---
+  duration_ms: 29.894672
+  type: 'test'
+  ...
+# Subtest: timeout includes body parsing and preserves the received HTTP status
+ok 48 - timeout includes body parsing and preserves the received HTTP status
+  ---
+  duration_ms: 12.592708
+  type: 'test'
+  ...
+# Subtest: caller cancellation resolves safely even if transport ignores abort
+ok 49 - caller cancellation resolves safely even if transport ignores abort
+  ---
+  duration_ms: 1.698372
+  type: 'test'
+  ...
+# Subtest: initial store has no fabricated runtime success and repeated checks are bounded
+ok 50 - initial store has no fabricated runtime success and repeated checks are bounded
+  ---
+  duration_ms: 1.355642
+  type: 'test'
+  ...
+# Subtest: records current-page identities, measured durations and bounded newest-first notifications
+ok 51 - records current-page identities, measured durations and bounded newest-first notifications
+  ---
+  duration_ms: 1.378512
+  type: 'test'
+  ...
+# Subtest: failure removes current runtime success and emits an honest visible failure
+ok 52 - failure removes current runtime success and emits an honest visible failure
+  ---
+  duration_ms: 0.736256
+  type: 'test'
+  ...
+# Subtest: Clear aborts work, resets observations and discards stale success ownership
+ok 53 - Clear aborts work, resets observations and discards stale success ownership
+  ---
+  duration_ms: 4.174615
+  type: 'test'
+  ...
+# Subtest: a stale failure cannot overwrite a newer check after Clear
+ok 54 - a stale failure cannot overwrite a newer check after Clear
+  ---
+  duration_ms: 0.723473
+  type: 'test'
+  ...
+# Subtest: sample performs only six sequential checks and cannot overlap another run
+ok 55 - sample performs only six sequential checks and cannot overlap another run
+  ---
+  duration_ms: 2.846722
+  type: 'test'
+  ...
+# Subtest: Clear cancels the remainder of a sample and discards its pending result
+ok 56 - Clear cancels the remainder of a sample and discards its pending result
+  ---
+  duration_ms: 0.72333
+  type: 'test'
+  ...
+# Subtest: subscribers are notified, unsubscribe works and dispose cancels without stale updates
+ok 57 - subscribers are notified, unsubscribe works and dispose cancels without stale updates
+  ---
+  duration_ms: 0.575034
+  type: 'test'
+  ...
+# Subtest: initial dashboard has named regions, three bounded controls and no invented successful runtime
+ok 58 - initial dashboard has named regions, three bounded controls and no invented successful runtime
+  ---
+  duration_ms: 57.043468
+  type: 'test'
+  ...
+# Subtest: pending request disables Check but leaves Clear enabled and advertises only checking
+ok 59 - pending request disables Check but leaves Clear enabled and advertises only checking
+  ---
+  duration_ms: 17.246885
+  type: 'test'
+  ...
+# Subtest: validated request updates dominant metadata, measured metrics and notification together
+ok 60 - validated request updates dominant metadata, measured metrics and notification together
+  ---
+  duration_ms: 124.329911
+  type: 'test'
+  ...
+# Subtest: failure rendering removes current success metadata and exposes safe error notification
+ok 61 - failure rendering removes current success metadata and exposes safe error notification
+  ---
+  duration_ms: 39.112496
+  type: 'test'
+  ...
+# Subtest: notification reuses visual/details/actions structure and a native checkbox, with escaped text
+ok 62 - notification reuses visual/details/actions structure and a native checkbox, with escaped text
+  ---
+  duration_ms: 7.505901
+  type: 'test'
+  ...
+# Subtest: graphs are accessible, honestly empty until checks complete, and clear with observations
+ok 63 - graphs are accessible, honestly empty until checks complete, and clear with observations
+  ---
+  duration_ms: 32.295799
+  type: 'test'
+  ...
+# Subtest: failed checks use explicitly marked graph points without adding replica distribution
+ok 64 - failed checks use explicitly marked graph points without adding replica distribution
+  ---
+  duration_ms: 35.231255
+  type: 'test'
+  ...
+# Subtest: standalone components expose meaningful metadata and metrics without fake fallbacks
+ok 65 - standalone components expose meaningful metadata and metrics without fake fallbacks
+  ---
+  duration_ms: 15.505396
+  type: 'test'
+  ...
+# Subtest: entry mounts the React dashboard at pulse-root and imports only the owned stylesheet
+ok 66 - entry mounts the React dashboard at pulse-root and imports only the owned stylesheet
+  ---
+  duration_ms: 93.995967
+  type: 'test'
+  ...
+# Subtest: owned CSS preserves named asymmetric maps, theme tokens and parent-relative notification styles
+ok 67 - owned CSS preserves named asymmetric maps, theme tokens and parent-relative notification styles
+  ---
+  duration_ms: 10.082613
+  type: 'test'
+  ...
+# Subtest: standalone page has seven ordered engineering sections and React mount
+ok 68 - standalone page has seven ordered engineering sections and React mount
+  ---
+  duration_ms: 5.526506
+  type: 'test'
+  ...
+# Subtest: concept cards have relevant official source destinations
+ok 69 - concept cards have relevant official source destinations
+  ---
+  duration_ms: 1.421208
+  type: 'test'
+  ...
+# Subtest: appearance uses isolated storage and does not bootstrap previous cloud/auth feature
+ok 70 - appearance uses isolated storage and does not bootstrap previous cloud/auth feature
+  ---
+  duration_ms: 2.471848
+  type: 'test'
+  ...
+# Subtest: architecture is explanatory, accessible and preserves one scaled composition
+ok 71 - architecture is explanatory, accessible and preserves one scaled composition
+  ---
+  duration_ms: 1.232633
+  type: 'test'
+  ...
+# Subtest: only reusable public workflow prompts appear
+ok 72 - only reusable public workflow prompts appear
+  ---
+  duration_ms: 1.449961
+  type: 'test'
+  ...
+# Subtest: build resolves React production mode and only publishes explicit static assets
+ok 73 - build resolves React production mode and only publishes explicit static assets
+  ---
+  duration_ms: 0.55952
+  type: 'test'
+  ...
+# Subtest: runtime connection is local and contains no privileged operations
+ok 74 - runtime connection is local and contains no privileged operations
+  ---
+  duration_ms: 0.842246
+  type: 'test'
+  ...
+# Subtest: page describes process uptime and observations without placeholder infrastructure claims
+ok 75 - page describes process uptime and observations without placeholder infrastructure claims
+  ---
+  duration_ms: 3.132628
+  type: 'test'
+  ...
+1..75
+# tests 75
+# suites 0
+# pass 75
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2442.89255

@@ -1,0 +1,8 @@
+{
+  "scope": "Source-only edit in an isolated temporary context; canonical application and running app image untouched",
+  "build_exit": 0,
+  "dependency_install_layer_cached": true,
+  "manifests_unchanged": true,
+  "source_changed": true,
+  "build_tag": "ad371-week6-container-pulse-cache-proof:local"
+}

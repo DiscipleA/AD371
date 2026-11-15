@@ -1,0 +1,16 @@
+{
+  "protected_files": 817,
+  "changed": [],
+  "prior_masters_unchanged": true,
+  "master_count": 3,
+  "scope_preservation": {
+    "protected_sections": [
+      1,
+      2,
+      6,
+      7
+    ],
+    "byte_identical": true,
+    "unexpected_source_changes": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "passed": 13,
+  "total": 13,
+  "results": [
+    {
+      "scenario": "missing assignment: request complete rubric and wait before selection/build",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "scenario": "real backend required: browser mock is not a substitute",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "scenario": "permitted visualizer: no forced cloud account; simulation labeled",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "scenario": "rubric exact historical prompt conflicts with privacy: gap, no export",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "scenario": "container subject: build/image/runtime/resource/provenance not network clone",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "scenario": "narrow diagram: same geometry; ordinary-size supplemental explanation",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "scenario": "prompt/audit conformance requires internals, working copy controls, native markers",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "scenario": "standalone default: Resume integration and publication require separate consent",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "scenario": "CSS master encountered: architecture family wins without modifying broad master",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "scenario": "v1.1 lifecycle section 1 retained exactly except declared family precedence",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "scenario": "v1.1 lifecycle section 3 retained exactly except declared family precedence",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "scenario": "v1.1 lifecycle section 4 retained exactly except declared family precedence",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "scenario": "v1.1 lifecycle section 9 retained exactly except declared family precedence",
+      "passed": true,
+      "missing": []
+    }
+  ],
+  "scope": "Static master decision-contract and unchanged-section comparisons only."
+}

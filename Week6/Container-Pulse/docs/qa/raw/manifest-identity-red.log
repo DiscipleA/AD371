@@ -1,0 +1,27 @@
+test_platform_manifest_identity_is_not_confused_with_config_digest (__main__.RunnerSafetyTests.test_platform_manifest_identity_is_not_confused_with_config_digest) ... FAIL
+
+======================================================================
+FAIL: test_platform_manifest_identity_is_not_confused_with_config_digest (__main__.RunnerSafetyTests.test_platform_manifest_identity_is_not_confused_with_config_digest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/infra_test.py", line 152, in test_platform_manifest_identity_is_not_confused_with_config_digest
+    report = module.verify_runtime_image(records)
+  File "/home/reader/Desktop/AD371/Week6/Container-Pulse/scripts/verify-containers.py", line 241, in verify_runtime_image
+    require(image['user'] == 'node' and all(record['imageId'] == image['id'] for record in apps), 'Unexpected runtime image or root image user')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reader/Desktop/AD371/Week6/Container-Pulse/scripts/verify-containers.py", line 37, in require
+    raise ValueError(message)
+ValueError: Unexpected runtime image or root image user
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/infra_test.py", line 154, in test_platform_manifest_identity_is_not_confused_with_config_digest
+    self.fail('Matching platform manifests must not fail config-ID comparison: ' + str(error))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Matching platform manifests must not fail config-ID comparison: Unexpected runtime image or root image user
+
+----------------------------------------------------------------------
+Ran 1 test in 0.041s
+
+FAILED (failures=1)

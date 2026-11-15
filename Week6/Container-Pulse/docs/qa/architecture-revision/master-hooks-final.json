@@ -1,0 +1,10 @@
+{
+  "passed": 4,
+  "total": 4,
+  "checks": {
+    "fixed diagram-local tracking": true,
+    "audit ownership hook": true,
+    "classes are not the whole styling contract": true,
+    "reference prompt dimensions and state": true
+  }
+}

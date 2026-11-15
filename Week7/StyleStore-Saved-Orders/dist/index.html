@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-style-theme="gothic-stickerboard">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#eee4cf">
+  <meta name="description" content="A familiar StyleStore storefront saves actual orders through one authenticated API to PostgreSQL or MongoDB. Compare relationships and embedded documents.">
+  <title>StyleStore Saved Orders | App Engineering Showcases</title>
+  <link rel="icon" type="image/svg+xml" href="./styles/themes/standard/assets/icons/favicon.svg">
+  <link rel="stylesheet" href="./styles/shared/base.css">
+  <link rel="stylesheet" href="./styles/auth-rbac-showcase.css">
+  <link rel="stylesheet" href="./styles/saved-orders-showcase.css">
+  <link rel="stylesheet" href="./styles/shared/navigation.css">
+  <script src="./site-navigation.js" defer></script>
+  <script src="./styles/themes/theme-registry.js"></script>
+  <script src="./styles/themes/standard/theme-config.js"></script>
+  <script src="./styles/themes/playful-pop/theme-config.js"></script>
+  <script src="./styles/themes/raggedy-granite/theme-config.js"></script>
+  <script src="./styles/themes/glossy-marble/theme-config.js"></script>
+  <script src="./styles/themes/luminous-midnight/theme-config.js"></script>
+  <script src="./styles/themes/gothic-stickerboard/theme-config.js"></script>
+  <script src="./styles/themes/baroque-plexiglas/theme-config.js"></script>
+  <link rel="stylesheet" href="./styles/themes/standard/theme.css" data-style-theme-stylesheet data-active-style-theme="standard">
+  <script src="./theme.js"></script>
+  <link rel="stylesheet" href="./assets/stylestore.css">
+</head>
+<body class="flexbox-interfaces-page application-architecture-page saved-orders-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div data-portfolio-navigation data-root="./" data-current-page="stylestore-saved-orders"></div>
+
+  <div class="site-shell">
+    <header class="hero">
+      <p class="eyebrow">Design Technologist · App Engineering Showcases</p>
+      <h1>Your favorites. Saved your way.</h1>
+      <p class="hero-lead"><strong>StyleStore Saved Orders.</strong> Build a small collection of everyday essentials, save it in PostgreSQL or MongoDB, and see how the same order takes two different shapes behind one API.</p>
+      <div class="process-strip" aria-label="Project workflow">
+        <div class="process-step"><span class="process-number">01</span><strong>Problem &amp; Scope</strong></div>
+        <div class="process-step"><span class="process-number">02</span><strong>Architecture Concepts</strong></div>
+        <div class="process-step"><span class="process-number">03</span><strong>System Architecture</strong></div>
+        <div class="process-step"><span class="process-number">04</span><strong>AI Prompt</strong></div>
+        <div class="process-step"><span class="process-number">05</span><strong>Audit</strong></div>
+        <div class="process-step"><span class="process-number">06</span><strong>Working System</strong></div>
+        <div class="process-step"><span class="process-number">07</span><strong>Verification</strong></div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section-card" data-architecture-section="problem" aria-labelledby="problem-title">
+        <div class="section-header"><span class="section-index">01</span><div><h2 id="problem-title">Problem &amp; Scope</h2><p class="section-kicker">A shopping collection is useful only when it can be read again.</p></div></div>
+        <div class="narrative-grid">
+          <article class="narrative-panel"><h3>A draft becomes a real record</h3><p>Choose sneakers, a tee, a hoodie or a backpack. Build an order locally, then save it through an authenticated API. Read it again, rename it, change its items, or delete it.</p></article>
+          <article class="narrative-panel"><h3>One flow, two data models</h3><p>PostgreSQL stores the parent order and its related item rows. MongoDB stores one order document with embedded items. The engine selector chooses one destination—not both.</p></article>
+        </div>
+        <p class="architecture-note"><strong>Small, intentional scope.</strong> Four catalog products, quantity 1–9, anonymous demo sessions, and genuine order/item CRUD. No payments, inventory, shipping, cross-engine synchronization or distributed transaction.</p>
+        <div class="risk-strip" aria-label="Persistence boundaries"><span>Local draft ≠ saved order</span><span>Server-owned prices</span><span>Owner-scoped records</span><span>Separate engines</span></div>
+      </section>
+
+      <section class="section-card" data-architecture-section="concepts" aria-labelledby="concepts-title">
+        <div class="section-header"><span class="section-index">02</span><div><h2 id="concepts-title">Architecture Concepts</h2><p class="section-kicker">Six boundaries from a local draft to a verified saved order.</p></div></div>
+        <div class="concept-grid">
+          <a class="concept-card" href="https://react.dev/learn/state-as-a-snapshot" target="_blank" rel="noopener noreferrer" title="Official documentation — opens in a new tab"><span class="concept-token">01 · React state</span><h3>Draft state</h3><p>Draft products and estimates live in page memory. A database commit saves the record; a fresh read confirms the result.</p><span class="concept-source">React · State as a Snapshot&nbsp;↗</span></a>
+          <a class="concept-card" href="https://supabase.com/docs/guides/auth/auth-anonymous" target="_blank" rel="noopener noreferrer" title="Official documentation — opens in a new tab"><span class="concept-token">02 · Identity + ownership</span><h3>Identity and ownership</h3><p>Anonymous sign-in creates an identity. The API verifies its token and checks ownership before accessing an order.</p><span class="concept-source">Supabase · Anonymous Sign-Ins&nbsp;↗</span></a>
+          <a class="concept-card" href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html" target="_blank" rel="noopener noreferrer" title="Official documentation — opens in a new tab"><span class="concept-token">03 · Trusted API boundary</span><h3>Trusted validation</h3><p>Validate known products, labels and quantities server-side. Trusted backend catalog values—not browser prices—determine integer-cent totals.</p><span class="concept-source">OWASP · Input Validation Cheat Sheet&nbsp;↗</span></a>
+          <a class="concept-card" href="https://www.postgresql.org/docs/current/tutorial-transactions.html" target="_blank" rel="noopener noreferrer" title="Official documentation — opens in a new tab"><span class="concept-token">04 · Relational integrity</span><h3>Relational integrity</h3><p>Foreign keys connect orders, items and immutable products. Owner-checking SQL transactions keep related changes together.</p><span class="concept-source">PostgreSQL · Transactions&nbsp;↗</span></a>
+          <a class="concept-card" href="https://www.mongodb.com/docs/manual/core/write-operations-atomicity/" target="_blank" rel="noopener noreferrer" title="Official documentation — opens in a new tab"><span class="concept-token">05 · Embedded aggregate</span><h3>Embedded orders</h3><p>Embedded items need no joins. Item edits are atomic; order creation and deletion also transact against the owner quota.</p><span class="concept-source">MongoDB · Atomicity and Transactions&nbsp;↗</span></a>
+          <a class="concept-card" href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" rel="noopener noreferrer" title="Official documentation — opens in a new tab"><span class="concept-token">06 · Verified outcomes</span><h3>Verified read-back</h3><p>Validate responses, then read again before showing success. Ignore stale replies and refresh before repeating an uncertain write.</p><span class="concept-source">MDN · Using the Fetch API&nbsp;↗</span></a>
+        </div>
+      </section>
+
+      <section class="section-card" data-architecture-section="architecture" id="system-architecture" aria-labelledby="architecture-title">
+        <div class="section-header"><span class="section-index">03</span><div><h2 id="architecture-title">System Architecture</h2><p class="section-kicker">Follow the trust boundary. Compare the two consistency boundaries.</p></div></div>
+        <p class="architecture-note">One authenticated API chooses <strong>one database per request</strong>. Follow the numbered path from a memory-only draft to a fresh verified read. The two storage models are alternatives—not replicas. This is a design map, not live telemetry.</p>
+        <figure class="orders-architecture"><div class="orders-map">
+          <svg viewBox="0 0 1440 960" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="sso-map-title sso-map-desc" xmlns="http://www.w3.org/2000/svg">
+            <title id="sso-map-title">Saved Orders: browser intent, verified API, one selected persistence model</title>
+            <desc id="sso-map-desc">Three columns separate browser state, trusted API and Auth, and alternative databases. Start explicitly requests an anonymous session; Auth returns the browser’s access and refresh tokens. Bearer-authenticated CRUD reaches the Edge Function, which validates the user with Auth, derives the owner, validates input and routes to one engine. SQL forwards the caller JWT to an owner-checking transactional RPC, relating orders, order_items and immutable products. MongoDB embeds bounded item snapshots, with atomic item edits and a separate owner-cap document participating in create/delete transactions. JSON returns through the API; the client validates it and makes a fresh record or list read before rendering verified success. Failures retain the draft; ambiguous writes require refresh before repeating. No synchronization or distributed transaction connects the databases.</desc>
+            <defs><marker id="sso-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 1 9 5 0 9Z" fill="context-stroke"/></marker></defs>
+            <rect class="map-zone" x="24" y="48" width="360" height="812" rx="16"/>
+            <rect class="map-zone" x="424" y="48" width="460" height="812" rx="16"/>
+            <rect class="map-zone" x="924" y="48" width="492" height="812" rx="16"/>
+            <text class="map-tag" x="44" y="78">BROWSER · UNTRUSTED INPUT</text><text class="map-tag" x="444" y="78">TRUSTED API + AUTH</text><text class="map-tag" x="944" y="78">PERSISTENCE · CHOOSE ONE</text>
+            <path class="map-flow" data-diagram-flow="start-session" d="M152 308V158H460"/>
+            <path class="map-flow map-response" data-diagram-flow="auth-session" d="M460 234H318V308"/>
+            <path class="map-flow" data-diagram-flow="authenticated-request" d="M360 456H460"/>
+            <path class="map-flow" data-diagram-flow="verify-user" d="M650 326V266"/>
+            <path class="map-flow" data-diagram-flow="sql" d="M848 548H906V284H958"/>
+            <path class="map-flow" data-diagram-flow="mongo" d="M848 688H958"/>
+            <path class="map-flow map-response" data-diagram-flow="verified-response" d="M460 740H404V844H36V716H48"/>
+            <text class="map-label" x="60" y="132">1 · Explicit start</text><text class="map-small" x="170" y="208">Own session tokens</text>
+            <text class="map-label" x="370" y="432">2 · CRUD</text><text class="map-label" x="666" y="302">Verify user</text>
+            <text class="map-label" x="878" y="266">3a · SQL</text><text class="map-label" x="854" y="666">3b · Mongo</text>
+            <text class="map-label" x="60" y="792">4 · Validate JSON → fresh read</text><text class="map-small" x="60" y="818">Record / list → verified render</text>
+            <g data-diagram-node="browser">
+              <rect class="map-node" x="48" y="308" width="312" height="440" rx="12"/>
+              <text class="map-title" x="68" y="348">React storefront</text>
+              <g data-diagram-part="draft"><rect class="map-table" x="68" y="378" width="272" height="126" rx="8"/><text class="map-subtitle" x="84" y="408">Local draft</text><text x="84" y="438">Four catalog products</text><text x="84" y="466">Items + estimated total</text><text class="map-small" x="84" y="490">Page memory only</text></g>
+              <g data-diagram-part="session"><rect class="map-table" x="68" y="532" width="272" height="150" rx="8"/><text class="map-subtitle" x="84" y="562">Session + controls</text><text x="84" y="592">Start · save · read · edit</text><text x="84" y="620">Choose sql OR mongo</text><text class="map-small" x="84" y="648">Session storage ≠ draft</text><text class="map-small" x="84" y="672">Cancel stale work</text></g>
+              <text class="map-small" x="68" y="716">No database credentials</text><text class="map-small" x="68" y="738">Bearer token → API</text>
+            </g>
+            <g data-diagram-node="auth">
+              <rect class="map-node" x="460" y="94" width="388" height="172" rx="12"/>
+              <text class="map-title" x="480" y="132">Supabase Auth</text><text x="480" y="168">Explicit anonymous sign-in</text><text x="480" y="200">Session identity + refresh</text><text class="map-small" x="480" y="236">GET /auth/v1/user</text>
+            </g>
+            <g data-diagram-node="api">
+              <rect class="map-node map-node--api" x="460" y="326" width="388" height="442" rx="12"/>
+              <text class="map-title" x="480" y="364">Edge Function</text><text class="map-tag" x="480" y="392">saved-orders · one endpoint</text>
+              <g data-diagram-part="verify"><rect class="map-table" x="480" y="410" width="348" height="98" rx="8"/><text class="map-subtitle" x="496" y="438">Verify identity</text><text x="496" y="468">Auth → derive owner</text><text class="map-small" x="496" y="492">Ignore payload owner IDs</text></g>
+              <g data-diagram-part="validate"><rect class="map-table" x="480" y="524" width="348" height="104" rx="8"/><text class="map-subtitle" x="496" y="552">Validate input</text><text x="496" y="582">Known IDs · label 1–80</text><text x="496" y="612">Integer quantity 1–9</text></g>
+              <g data-diagram-part="catalog-router"><rect class="map-table" x="480" y="644" width="348" height="104" rx="8"/><text class="map-subtitle" x="496" y="672">Catalog + engine routing</text><text x="496" y="702">Catalog endpoint + dispatch</text><text x="496" y="732">sql OR mongo · trusted path</text></g>
+            </g>
+            <g data-diagram-node="sql">
+              <rect class="map-node map-node--db" x="958" y="94" width="426" height="378" rx="12"/>
+              <text class="map-title" x="978" y="132">PostgreSQL · SQL</text><text class="map-small" x="978" y="160">Caller JWT → ss_orders_api</text>
+              <path class="map-flow" d="M1030 268V242"/><path class="map-flow" d="M1300 330V356"/>
+              <g data-diagram-part="orders"><rect class="map-table" x="978" y="180" width="386" height="62" rx="8"/><text class="map-subtitle" x="994" y="206">orders</text><text class="map-small" x="994" y="230">id PK · owner_id · label</text></g>
+              <g data-diagram-part="order-items"><rect class="map-table" x="978" y="268" width="386" height="62" rx="8"/><text class="map-subtitle" x="994" y="294">order_items</text><text class="map-small" x="994" y="318">order_id FK · product_id FK · qty</text></g>
+              <g data-diagram-part="products"><rect class="map-table" x="978" y="356" width="386" height="62" rx="8"/><text class="map-subtitle" x="994" y="382">products · immutable</text><text class="map-small" x="994" y="406">id PK · name · unit_price_cents</text></g>
+              <text class="map-small" x="978" y="450">RPC totals · txn · cascade delete</text>
+            </g>
+            <g data-diagram-node="mongo">
+              <rect class="map-node map-node--db" x="958" y="518" width="426" height="304" rx="12"/>
+              <text class="map-title" x="978" y="554">MongoDB · Documents</text><text class="map-small" x="978" y="582">Owner-filtered reads · no joins</text>
+              <g data-diagram-part="embedded-order"><rect class="map-table" x="978" y="600" width="386" height="108" rx="8"/><text x="994" y="627">order { id, ownerId, label }</text><text x="994" y="656">items[≤4]: productId, name,</text><text x="994" y="685">unitPriceCents, quantity</text></g>
+              <g data-diagram-part="owner-cap"><rect class="map-table" x="978" y="732" width="386" height="62" rx="8"/><text x="994" y="758">ss_owner_caps · count ≤10</text><text class="map-small" x="994" y="783">Create/delete: two-doc transaction</text></g>
+              <text class="map-small" x="978" y="814">Item edits: single-document atomic</text>
+            </g>
+            <g data-diagram-legend="requests-responses-trust">
+              <path class="map-flow" d="M44 902H94"/><text class="map-small" x="110" y="908">Request / selected engine</text>
+              <path class="map-flow map-response" d="M446 902H496"/><text class="map-small" x="512" y="908">Response · JSON / session</text>
+              <rect class="map-zone" x="870" y="890" width="32" height="22" rx="4"/><text class="map-small" x="918" y="908">Trust boundary</text>
+              <text class="map-tag" x="44" y="946">Design map · not telemetry</text><text class="map-tag" x="782" y="946">SQL OR MongoDB · No synchronization</text>
+            </g>
+          </svg>
+        </div><figcaption>Read the map left to right; read outcomes return through the API. Catalog and router boxes are internal function responsibilities, not new services. The browser has public project configuration and its own session. The MongoDB URI stays server-side.</figcaption></figure>
+        <details class="architecture-disclosure"><summary>Read the persistence path and its limits</summary><div class="architecture-disclosure-content">
+          <h3>1 · Browser state and session state are independent</h3><p>The bundled catalog permits browsing before connection. React draft items and estimates live only in page memory; reloading discards them. Start demo session explicitly requests anonymous Auth. Browser storage can recover that session on reload, but cannot recover the draft. The anonymous signed-in user has the authenticated role, unlike the unauthenticated anon project role. Signing out or clearing storage loses anonymous access, not the saved records themselves.</p>
+          <h3>2 · Auth verifies identity; the API establishes authority</h3><p>The shipped UI sends bearer-authenticated requests to one Edge Function. It calls <code>GET /auth/v1/user</code> to validate the access token rather than merely decoding a JWT, derives the owner from the verified user, and ignores submitted owner identities. It validates known product IDs, label length of 1–80 Unicode code points and integer quantities 1–9. Amounts come from the selected trusted backend path, not universally from the Edge controller: the SQL RPC computes totals from immutable product joins; MongoDB server catalog snapshots feed normalization and cents totals. The internal router selects exactly one engine; neither catalog nor router is a separate microservice.</p>
+          <h3>3 · SQL: relationships plus an owner-checking transaction</h3><p>The SQL adapter forwards the <strong>caller JWT</strong> and <strong>public project key</strong> to <code>ss_orders_api</code>. This <code>SECURITY DEFINER</code> RPC derives <code>auth.uid()</code>, revalidates input and performs explicit owner checks for each operation. RLS is defense in depth; direct table grants are revoked. RLS alone is not the executed definer’s ownership guard, and the RPC also protects direct authenticated calls outside this UI.</p><p><code>ss_private.orders</code> is the parent of <code>ss_private.order_items</code>. Foreign keys link <code>order_id</code> to the parent and <code>product_id</code> to immutable products. SQL item rows contain quantity, not name or price snapshots: reads join product names and <code>unit_price_cents</code> from the catalog. The RPC’s multi-row changes are transactional; cascade delete removes child rows. See PostgreSQL’s <a href="https://www.postgresql.org/docs/current/tutorial-fk.html" target="_blank" rel="noopener noreferrer">foreign-key tutorial ↗</a> for the relationship boundary.</p>
+          <h3>4 · MongoDB: one aggregate, with a deliberate quota exception</h3><p>An owner-filtered <code>findOne</code> reads a full order; the owner-filtered list needs no joins. At most four embedded items hold <code>productId</code>, <code>name</code>, <code>unitPriceCents</code> and <code>quantity</code>. Item edits are single-document atomic. Create and delete instead use a two-document transaction: the order and <code>ss_owner_caps</code> count commit together to enforce ten orders per owner. The driver’s <code>withTransaction</code> helper can retry eligible transaction errors; its server-side <code>retryWrites</code> setting can also retry eligible writes. Neither is a browser retry of an HTTP write. MongoDB explains <a href="https://www.mongodb.com/docs/manual/data-modeling/best-practices/#link-related-data" target="_blank" rel="noopener noreferrer">when to embed related data ↗</a> and <a href="https://www.mongodb.com/docs/drivers/node/current/crud/transactions/" target="_blank" rel="noopener noreferrer">driver transaction behavior ↗</a>.</p>
+          <h3>5 · Verify the outcome; preserve uncertainty honestly</h3><p>Database persistence happens at commit; read-back confirms subsequent observable committed state. It is confirmation, not the commit itself. JSON returns through the API. The client validates the HTTP envelope, engine, identifiers, quantities and cents totals, then performs a fresh record or list read before verified rendering; deletion is checked against the new list. Failed saves retain the draft. Switching engines cancels in-flight work and discards stale replies. Cancellation does not undo a committed write. There are no automatic browser HTTP write retries. A timeout may conceal a committed write: refresh before repeating an uncertain action. Rejected, malformed or unavailable responses remain errors, never synthetic saved orders.</p><p>The selector reads and writes only the selected engine. There is no cross-engine synchronization, dual write, shared transaction or distributed transaction across SQL and MongoDB. Separate records and different consistency boundaries are the point of this comparison.</p>
+        </div></details>
+      </section>
+
+      <section class="section-card" data-architecture-section="prompt" aria-labelledby="prompt-title">
+        <div class="section-header"><span class="section-index">04</span><div><h2 id="prompt-title">AI Prompt</h2><p class="section-kicker">Review → Plan → Build → Verify. Reusable showcase prompts — not historical submissions.</p></div></div>
+        <div class="prompt-build architecture-ai-workflow">
+          <ol class="architecture-ai-steps">
+            <li data-ai-step><h3>01 · Review the boundaries</h3><p>Identify state, trust and persistence before editing.</p><details class="ai-step-prompt"><summary>Suggested review prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Review</span><button class="copy-button" type="button" data-copy-target="ssoReviewPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Review prompt"><code id="ssoReviewPrompt">Review a small saved-orders application and its persistence boundary.
+Identify browser drafts, anonymous authentication, API authorization,
+server-owned catalog prices, SQL parent/child relationships, and
+MongoDB embedded documents. Check claims against official sources.
+Preserve the presentation and original source components.
+Return findings and missing facts before proposing changes.</code></pre></div></details></li>
+            <li data-ai-step><h3>02 · Plan the smallest proof</h3><p>One familiar flow, two independent persistence models.</p><details class="ai-step-prompt"><summary>Suggested planning prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Plan</span><button class="copy-button" type="button" data-copy-target="ssoPlanPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Planning prompt"><code id="ssoPlanPrompt">Plan the smallest complete order and item CRUD flow.
+Use four known products and quantities 1–9. Define public browser
+configuration, an explicitly started anonymous session, one verified
+API, and alternative owner-scoped SQL and MongoDB adapters.
+Specify request/response shapes, failure states and stale-work guards.
+Write tests for input limits, persistence, isolation and browser use.
+Return file ownership and acceptance criteria before implementation.</code></pre></div></details></li>
+            <li data-ai-step><h3>03 · Build within the contract</h3><p>Use the complete specification below; keep the React island separate from the page shell.</p><details class="ai-step-prompt"><summary>Suggested build prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Build</span><button class="copy-button" type="button" data-copy-target="ssoShortBuildPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Short build prompt"><code id="ssoShortBuildPrompt">Implement the complete reusable specification below.
+Write failing tests first. Keep the React storefront in its own island.
+Use real authenticated HTTP and genuine database records.
+Preserve the seven-section shell, local themes and native disclosures.
+Do not replace an unavailable backend with synthetic success.
+Return changed files, actual checks and unresolved blockers.
+Do not publish or change external accounts without separate approval.</code></pre></div></details></li>
+            <li data-ai-step><h3>04 · Verify what actually ran</h3><p>Separate source checks from actual saved-record observations.</p><details class="ai-step-prompt"><summary>Suggested verification prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Verify</span><button class="copy-button" type="button" data-copy-target="ssoVerifyPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Verification prompt"><code id="ssoVerifyPrompt">Run unit tests, a production build and browser checks.
+Separate test fixtures from live database evidence. Verify actual
+create/read/update/delete for orders and items in each engine,
+including reload, owner isolation and invalid requests.
+Test cancelled and malformed replies, failed saves and duplicate clicks.
+Check prompt copying, keyboard use, local themes and mobile layout.
+Report real results and blocked checks without fabricating records.</code></pre></div></details></li>
+          </ol>
+          <details class="ai-build-prompt" data-implementation-spec open><summary>Full implementation specification · suggested build prompt</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">StyleStore Saved Orders specification</span><button class="copy-button" type="button" data-copy-target="ssoBuildPrompt">Copy Prompt</button></div><pre tabindex="0" aria-label="Complete implementation prompt"><code id="ssoBuildPrompt">Build a standalone StyleStore Saved Orders showcase.
+
+1. Deliver a seven-section HTML shell with an isolated React storefront.
+   Preserve source-derived header, adaptive product card, order summary,
+   local theme packages, native prompt disclosures and copy controls.
+   Do not modify the source portfolio or load cloud theme preferences.
+
+2. Bundle four illustrated products: Retro Sneakers (8500 USD cents),
+   Classic Tee (2800), Everyday Hoodie (6400), City Backpack (5200).
+   Local drafts are page-memory estimates, never database records.
+   Limit each product to one line with integer quantity 1–9.
+
+3. Use Supabase JS anonymous Auth only after Start demo session.
+   Recover the dedicated saved-orders-auth session after reload.
+   Public config.js contains supabaseUrl, publishableKey and the
+   saved-orders function name. Never include privileged credentials.
+   Explain anonymous access loss before local sign-out.
+
+4. Expose /catalog, /orders, /orders/:id, /orders/:id/items and
+   /orders/:id/items/:itemId beneath one verified Edge Function.
+   Use GET/POST/PATCH/DELETE as applicable with ?engine=sql|mongo.
+   Validate the bearer token, derive owner identity server-side,
+   validate labels of 1–80 characters and known product IDs, and
+   calculate integer-cent totals from a trusted server catalog.
+
+5. Implement PostgreSQL orders and order_items with foreign keys,
+   owner policies and transactional RPC mutations. Implement MongoDB
+   order documents with embedded items and atomic owner-filtered
+   item changes. Create/delete also maintain an owner cap document
+   transactionally; enforce ten saved orders per owner per engine.
+   The selector chooses one engine per request. No syncing,
+   dual writes or distributed transaction may be implied.
+
+6. Provide draft building, order save/list/read/rename/delete and
+   persisted item add/update/remove. Verify a write with a new read.
+   Validate returned IDs, engine, item values and computed totals.
+   Retain drafts on failure; never fabricate successful responses.
+   Cancel superseded work, reject stale replies and never retry writes
+   automatically. After an ambiguous write, refresh before repeating.
+
+7. Label idle, unconfigured, unavailable, busy and verified outcomes.
+   Keep tokens out of logs and optional JSON disclosures. Maintain
+   visible focus, native labels and responsive card/summary stacking.
+   Draw one accessible, uniformly scaling architecture SVG with the
+   same viewBox and geometry at every viewport; no mobile replacement.
+
+8. Write tests first and actually run the production build and browser.
+   Check CRUD, ownership, limits, races, prompt clipboard, theme modes
+   and 1920/1000/390/320px layouts. Distinguish unit fixtures from real
+   database observations. Deliver only approved frontend/backend,
+   configuration and tests; report unavailable dependencies honestly.
+   Exclude payments, inventory, shipping, publication and unrelated
+   account changes. Never include private conversations or secrets.</code></pre></div></details>
+        </div>
+      </section>
+
+      <section class="section-card" data-architecture-section="audit" aria-labelledby="audit-title">
+        <div class="section-header"><span class="section-index">05</span><div><h2 id="audit-title">Audit</h2><p class="section-kicker">A design and code review contract—not completed runtime results.</p></div></div>
+        <div class="audit-layout">
+          <div class="code-panel"><div class="code-toolbar"><span class="code-label">Save contract · explanatory API excerpt</span><button class="copy-button" type="button" data-copy-target="ssoAuditContract">Copy Contract</button></div><pre tabindex="0" aria-label="Saved order API contract excerpt"><code id="ssoAuditContract">POST /orders?engine=sql|mongo
+Authorization: Bearer &lt;own session&gt;
+{ label, items: [{ productId, quantity }] }
+
+API verifies identity → derives owner
+Server catalog → price + totalCents
+SQL: orders ← FK ← order_items
+MongoDB: order { items: [...] }
+
+Read back before verified success
+Failure ≠ a saved order
+No automatic write retries</code></pre></div>
+          <div class="audit-grid">
+            <article class="audit-item"><h3>Identity · derived, not supplied</h3><p>The API derives ownership from verified Auth; a client-supplied owner is never authoritative.</p></article>
+            <article class="audit-item"><h3>Prices · server catalog</h3><p>Requests contain product IDs and quantities, not trusted browser prices or totals.</p></article>
+            <article class="audit-item"><h3>Atomicity · engine-specific</h3><p>SQL transactions join related rows; MongoDB updates one embedded order document.</p></article>
+            <article class="audit-item"><h3>Outcomes · read before success</h3><p>Validate the returned record and read it again; failures never become synthetic saved orders.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" data-architecture-section="working" id="final-result" aria-labelledby="result-title">
+        <div class="section-header"><span class="section-index">06</span><div><h2 id="result-title">Working System</h2><p class="section-kicker">Choose your essentials. Save an order. Read it again.</p></div></div>
+        <p class="architecture-note">Build a local draft, then start a demo session to save an actual order. Use the engine selector to compare separate SQL and MongoDB records. A missing configuration or failed API stays unavailable—never a sample success.</p>
+        <div id="stylestore-root"><p class="orders-idle">The storefront requires JavaScript. No session has been started and no orders have been saved.</p></div>
+        <noscript><p class="noscript-note">Enable JavaScript for the interactive storefront. The architecture, prompts, and verification checklist remain readable without it.</p></noscript>
+        <div class="result-explanation working-notes">
+          <article class="result-note"><h3>Draft → saved record</h3><p>A draft is local; Save order writes through the API and verifies a new read.</p></article>
+          <article class="result-note"><h3>Two independent engines</h3><p>The selector chooses SQL or MongoDB; it never copies orders between them.</p></article>
+          <article class="result-note"><h3>Your anonymous session</h3><p>Reload keeps access when storage is available; sign-out loses anonymous access.</p></article>
+        </div>
+      </section>
+
+      <section class="section-card" data-architecture-section="verification" aria-labelledby="verification-title">
+        <div class="section-header"><span class="section-index">07</span><div><h2 id="verification-title">Verification</h2><p class="section-kicker">A short walkthrough to try against a configured backend.</p></div></div>
+        <ol class="verification-list">
+          <li><strong>Save a collection.</strong> Start a session, add a few products, label the draft and save. Compare its verified server total with your selected quantities.</li>
+          <li><strong>Read and change it.</strong> Refresh or reload, open the saved order, rename it, change a quantity and remove an item. Read it again after each change.</li>
+          <li><strong>Try the other model.</strong> Switch engines and create a separate order. The original belongs only to the engine in which it was saved.</li>
+          <li><strong>Test limits and failure.</strong> Reach quantity 9, try an empty label, and retry a failed read. A failed save must not erase the local draft or claim success.</li>
+          <li><strong>Delete intentionally.</strong> Delete a saved order and confirm that a new list read no longer includes it. Sign-out is different: it loses access without deleting records.</li>
+          <li><strong>Use keyboard and mobile.</strong> Tab through themes, prompts and storefront controls. Copy a complete prompt, use both appearance modes, and inspect the same proportionally scaled map on a phone.</li>
+        </ol>
+        <p class="verification-summary">The UI stays familiar while the storage model changes. Relationships and embedded aggregates solve the same small problem with different consistency boundaries.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p class="footer-copyright">&copy; 2026 Dmitriy Chernichenko.</p><p>StyleStore Saved Orders · Familiar components. Real records. Two data models.</p><p><a href="#main-content">Back to the showcase</a></p></footer>
+  </div>
+  <script src="./copy-code.js" defer></script>
+  <script src="./config.js"></script>
+  <script type="module" src="./assets/stylestore.js"></script>
+</body>
+</html>

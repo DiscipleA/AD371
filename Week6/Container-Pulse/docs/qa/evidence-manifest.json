@@ -1,0 +1,157 @@
+{
+  "scope": "Explicitly selected technical execution evidence; no browser profiles, dependencies, credentials, or conversations",
+  "files": [
+    {
+      "path": "raw/docker-acceptance-1.json",
+      "sha256": "97277dc2e522045ba02cbce8063b7906363c2d58ebcae8608f31b91a1b6d4aee"
+    },
+    {
+      "path": "raw/docker-acceptance-2.json",
+      "sha256": "97277dc2e522045ba02cbce8063b7906363c2d58ebcae8608f31b91a1b6d4aee"
+    },
+    {
+      "path": "raw/docker-acceptance-3.json",
+      "sha256": "19ae38cff0a863c8123ee8b8984ac9527ceff874137e389ccfa5b760e38b1c48"
+    },
+    {
+      "path": "raw/docker-acceptance-4.json",
+      "sha256": "ff66c5bb13be30b5114e583d50b2fe266e2d0e71419c633a55aa6890d4cc701d"
+    },
+    {
+      "path": "raw/cache-proof.json",
+      "sha256": "31f10c20a96c157e2299c60212acd12048f3d8b1dffbbba8d2baf47256781d7b"
+    },
+    {
+      "path": "raw/cache-proof-first.log",
+      "sha256": "66380f01e28aee06a8f7f32aeffb438cc424766512c2d7e542da2a496c32719e"
+    },
+    {
+      "path": "raw/cache-proof-source-edit.log",
+      "sha256": "3c2434238cd5eb64e5feeb403257bd1aabcd0c85751eaf82ad6b1727c3b46727"
+    },
+    {
+      "path": "raw/served-build-identity.json",
+      "sha256": "35136034e7d1a5c4418fb8c7431ec28c0d911650ad4b3c4ca0197155c246e214"
+    },
+    {
+      "path": "raw/manifest-identity-red.log",
+      "sha256": "4276e352c58f3797f6df75a09ab75097f28811168dd2cd485411aacfefcc4912"
+    },
+    {
+      "path": "raw/docker-metadata-green.log",
+      "sha256": "458fc6dc0621e7d1e48df8bb7364da6bba46a8fbe7aef1fdbebfdbcbc275b3de"
+    },
+    {
+      "path": "raw/sigterm-red.log",
+      "sha256": "b0a750aea6c2bc6d165333f8fce9d853d7b7599c5c3c5a8e0f4c43c7bc9ba4c0"
+    },
+    {
+      "path": "raw/sigterm-green.log",
+      "sha256": "39cd0db98ee25d3e17653f07f581fc7853171bb82616abb7aa1e0d58b5f78f99"
+    },
+    {
+      "path": "raw/final-source-tests.log",
+      "sha256": "56aa39177e152a0a72c4e53995fd3923a59579bb2f267af89ba62fcadcd7f85c"
+    },
+    {
+      "path": "browser/browser-results.json",
+      "sha256": "86643b3acb77fd833ba418262013d3babed05713e68dce6869e54ba506d8b617"
+    },
+    {
+      "path": "attempts/development-browser-initial/browser-results.json",
+      "sha256": "4b6479e85e3f2dea4e2ba0785268c4bfe3bd854148bf0c9898a6d94f767f27c3"
+    },
+    {
+      "path": "attempts/development-browser-corrected/browser-results.json",
+      "sha256": "34d5c0739afe56cabb579ef83ca8c670deb33931042e814135d2791eed98277f"
+    },
+    {
+      "path": "browser/populated-results.json",
+      "sha256": "0906d38f7312409e062fef99bd75d00ee44628fd74f2c2560fd2b07569d47f34"
+    },
+    {
+      "path": "screenshots/chromium-desktop-architecture.png",
+      "sha256": "2e1c612fcc53ea04259444b86492b7cebb0afd7557cd88b83dc1d25ba2858bfd"
+    },
+    {
+      "path": "screenshots/chromium-desktop-working.png",
+      "sha256": "823beae54a80e244dd01d6c2696418d24a7f2a0d6279c3a76294f14b36156a54"
+    },
+    {
+      "path": "screenshots/chromium-mobile-architecture.png",
+      "sha256": "274261a53316bcff806bddf8b089db966f0a65d26a87eb94c18274ee18476084"
+    },
+    {
+      "path": "screenshots/chromium-mobile-working.png",
+      "sha256": "c0687ddc982a0b40345624a084e4714db9c0a04f47e1a677bcfb764e5f6c863b"
+    },
+    {
+      "path": "screenshots/firefox-desktop-architecture.png",
+      "sha256": "2ed7b5808fac5fed2dd9df594ca90bd71ca2f3d080bdd44955b63cc0e8aaeef4"
+    },
+    {
+      "path": "screenshots/firefox-desktop-working.png",
+      "sha256": "f58dafa733e2e9fc66a807b8efeb8011258a463feb5aa5638b2c0b75ff2d57fc"
+    },
+    {
+      "path": "screenshots/firefox-mobile-architecture.png",
+      "sha256": "50ec176888f6deb9724fab28d139d1c17ac7e535c03f22bdab456d0ef8ade704"
+    },
+    {
+      "path": "screenshots/firefox-mobile-working.png",
+      "sha256": "1d0d5a57816cb65c6b393248f4f89435e3ff9446ebb55b619e24ed2f074cb668"
+    },
+    {
+      "path": "lighthouse/desktop-execution.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "lighthouse/desktop.report.html",
+      "sha256": "ec583b656b620b83b15be968133e45e2e5d77921eb652e72ec21f33d8964b615"
+    },
+    {
+      "path": "lighthouse/desktop.report.json",
+      "sha256": "e38ed7312e4f76d0fb241ad2123fdab2c6c61b380f9bd244bedd48ac7f450b28"
+    },
+    {
+      "path": "lighthouse/mobile-execution.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "lighthouse/mobile.report.html",
+      "sha256": "3f7c7ef6498ec235dc70443c7b992dc4ae9486019c42e6432ef51d2110955703"
+    },
+    {
+      "path": "lighthouse/mobile.report.json",
+      "sha256": "f09e04db53df6d3df28a210b889f36e03cac9f53f49991dae6b5f7b68d33a460"
+    },
+    {
+      "path": "lighthouse/summary.json",
+      "sha256": "fd8e621b52fcae3fb6c3415bda6ca39cc522c6a2fa859f4be6088c573aeb6cb6"
+    },
+    {
+      "path": "attempts/lighthouse-development/mobile-execution.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "attempts/lighthouse-development/mobile.report.html",
+      "sha256": "572935040236bba0f02991b5bbe699fe7a1ad164283ec41ea0c41f9ad0d163e5"
+    },
+    {
+      "path": "attempts/lighthouse-development/mobile.report.json",
+      "sha256": "a1cba5875f422c6098238827557e2c26827e7473cba66a13993915bd52d99835"
+    },
+    {
+      "path": "attempts/lighthouse-development/summary.json",
+      "sha256": "b651060391e04583424463f47781a568d388fd918c787391aad1c40949eb18cc"
+    },
+    {
+      "path": "raw/final-infrastructure-tests.log",
+      "sha256": "325166c39be7ed6a2c9160285efcd70700f247e8bcc8090b16442d982f02860c"
+    },
+    {
+      "path": "raw/source-tests-pre-compatibility-closeout.log",
+      "sha256": "75416ef01f03c6b653325815e18ec1697ffaa995eecc28628fcdafb9607f79dc"
+    }
+  ]
+}

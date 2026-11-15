@@ -74,6 +74,18 @@ These checks cover standalone structure and configuration logic. [Included QA re
 | `theme-cloud-config.js`, `setup.sql` | Public connection settings and database permissions |
 | `tests/`, `docs/qa/` | Verification sources and historical evidence |
 
+## QA Test Summary
+
+This checklist summarizes the [historical live-portfolio QA record](docs/qa/qa-report.md), not a fresh test of this standalone copy. Checked means the inspection was executed and documented—not that every result passed.
+
+- [x] **SQL configuration read:** actual Supabase GET 200, preference resolution, reload/reset and local theme rendering were exercised in Chromium and Firefox.
+- [x] **Validation and failure checks:** configuration/search boundaries, fallback and controlled timing regressions were exercised; the held-metadata regression remains a recorded finding ([results](docs/qa/regressions/summary.json)).
+- [x] **Automated browser console/network inspection:** no uncaught JavaScript errors were recorded; the Firefox root-favicon 404 remains a finding ([Chromium](docs/qa/chromium-live.json), [Firefox](docs/qa/firefox-live.json)).
+- [x] **Terminal/tool execution:** Lighthouse CLI audits and regression-runner results are retained in the linked QA record.
+- [ ] **Manual DevTools inspection:** no separate completed manual Network/Console review is documented; automated capture is not relabeled as manual work.
+
+**Storage scope:** this is a read-only SQL-configuration feature. Public SQL create/update/delete and NoSQL CRUD are not implemented and are not claimed as tested. The linked snapshot retains its accessibility and timing findings.
+
 ## 🤖 AI Assistance
 
 AI assisted implementation, tests and documentation. The [public AI prompt workflow](AI-PROMPTS.md) contains only the reusable **Review → Plan → Build → Verify** prompts published in the showcase.

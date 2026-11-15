@@ -1,0 +1,6 @@
+test_sigterm_subprocess_restores_with_repeated_cleanup_signals (__main__.RunnerSafetyTests.test_sigterm_subprocess_restores_with_repeated_cleanup_signals) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 3.078s
+
+OK

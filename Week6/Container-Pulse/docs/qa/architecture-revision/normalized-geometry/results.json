@@ -1,0 +1,1365 @@
+{
+  "url": "http://127.0.0.1:8796/",
+  "captured_at": "2026-11-06T06:17:34.534555+00:00",
+  "scope": "Rendered node/label corners and connector endpoints mapped through element screen CTM and inverse SVG screen CTM; compare shapes/endpoints and text origins at 0.001 source-coordinate-unit tolerance; element matrices/font styles must remain constant. Glyph bounding corners allow at most2CSS pixels: the two independently hinted renderer bounds can each round by a pixel. This tolerance does not apply to node/connector geometry or text positions. Overlaps primary viewport coverage; do not sum as new unique layouts.",
+  "cases": [
+    {
+      "name": "chromium/standard/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/standard/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.5637660657899935e-13
+    },
+    {
+      "name": "chromium/standard/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.686872359143e-13
+    },
+    {
+      "name": "chromium/standard/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.682536844145142e-13
+    },
+    {
+      "name": "chromium/standard/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.9905856624053147e-13
+    },
+    {
+      "name": "chromium/standard/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.687652315168496e-13
+    },
+    {
+      "name": "chromium/standard/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 5.216587990200763e-13
+    },
+    {
+      "name": "chromium/standard/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/standard/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.5637660657899935e-13
+    },
+    {
+      "name": "chromium/standard/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.686872359143e-13
+    },
+    {
+      "name": "chromium/standard/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.682536844145142e-13
+    },
+    {
+      "name": "chromium/standard/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.9905856624053147e-13
+    },
+    {
+      "name": "chromium/standard/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.687652315168496e-13
+    },
+    {
+      "name": "chromium/standard/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 5.216587990200763e-13
+    },
+    {
+      "name": "chromium/playful-pop/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/playful-pop/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.242419011082887e-13
+    },
+    {
+      "name": "chromium/playful-pop/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1182589467234566e-13
+    },
+    {
+      "name": "chromium/playful-pop/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1154288188776327e-13
+    },
+    {
+      "name": "chromium/playful-pop/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.9999369392203565e-13
+    },
+    {
+      "name": "chromium/playful-pop/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 9.490562761283847e-14
+    },
+    {
+      "name": "chromium/playful-pop/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.389644451905042e-14
+    },
+    {
+      "name": "chromium/playful-pop/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/playful-pop/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.242419011082887e-13
+    },
+    {
+      "name": "chromium/playful-pop/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1182589467234566e-13
+    },
+    {
+      "name": "chromium/playful-pop/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1154288188776327e-13
+    },
+    {
+      "name": "chromium/playful-pop/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.9999369392203565e-13
+    },
+    {
+      "name": "chromium/playful-pop/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 9.490562761283847e-14
+    },
+    {
+      "name": "chromium/playful-pop/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.389644451905042e-14
+    },
+    {
+      "name": "chromium/raggedy-granite/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/raggedy-granite/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.121209505541444e-13
+    },
+    {
+      "name": "chromium/raggedy-granite/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.677388420085186e-13
+    },
+    {
+      "name": "chromium/raggedy-granite/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.115428818877633e-13
+    },
+    {
+      "name": "chromium/raggedy-granite/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 2.499921174025446e-13
+    },
+    {
+      "name": "chromium/raggedy-granite/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 8.541506485155464e-13
+    },
+    {
+      "name": "chromium/raggedy-granite/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.1084466677857565e-12
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.121209505541444e-13
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.677388420085186e-13
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.115428818877633e-13
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 2.499921174025446e-13
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 8.541506485155464e-13
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.1084466677857565e-12
+    },
+    {
+      "name": "chromium/glossy-marble/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/glossy-marble/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/glossy-marble/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.124581572762e-13
+    },
+    {
+      "name": "chromium/glossy-marble/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/glossy-marble/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.2539122282868124e-14
+    },
+    {
+      "name": "chromium/glossy-marble/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.77689451083464e-14
+    },
+    {
+      "name": "chromium/glossy-marble/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.72613427871483e-14
+    },
+    {
+      "name": "chromium/glossy-marble/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/glossy-marble/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/glossy-marble/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.124581572762e-13
+    },
+    {
+      "name": "chromium/glossy-marble/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/glossy-marble/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.2539122282868124e-14
+    },
+    {
+      "name": "chromium/glossy-marble/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.77689451083464e-14
+    },
+    {
+      "name": "chromium/glossy-marble/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.72613427871483e-14
+    },
+    {
+      "name": "chromium/luminous-midnight/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/luminous-midnight/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1030982868020184e-13
+    },
+    {
+      "name": "chromium/luminous-midnight/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.562290786381e-13
+    },
+    {
+      "name": "chromium/luminous-midnight/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.5608456147150472e-13
+    },
+    {
+      "name": "chromium/luminous-midnight/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 5.01564891314725e-13
+    },
+    {
+      "name": "chromium/luminous-midnight/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.643031217335424e-13
+    },
+    {
+      "name": "chromium/luminous-midnight/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.863067139357415e-14
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1030982868020184e-13
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.562290786381e-13
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.5608456147150472e-13
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 5.01564891314725e-13
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.643031217335424e-13
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.863067139357415e-14
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.127532131579987e-13
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.686872359143e-13
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1216912294300944e-13
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 5.01564891314725e-13
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.77689451083464e-14
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.72613427871483e-14
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.127532131579987e-13
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.686872359143e-13
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1216912294300944e-13
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 5.01564891314725e-13
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.77689451083464e-14
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.72613427871483e-14
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.818830328949967e-13
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.686872359143e-13
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.804228073575236e-13
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.00938934788835e-13
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 9.55378902166928e-14
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.45226855742966e-14
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.818830328949967e-13
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.686872359143e-13
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.804228073575236e-13
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.00938934788835e-13
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 9.55378902166928e-14
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.45226855742966e-14
+    },
+    {
+      "name": "firefox/standard/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/standard/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.819128509814824e-14
+    },
+    {
+      "name": "firefox/standard/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.811759323173711e-14
+    },
+    {
+      "name": "firefox/standard/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1216348950202644e-13
+    },
+    {
+      "name": "firefox/standard/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.0126956661959423e-13
+    },
+    {
+      "name": "firefox/standard/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.643123872518032e-13
+    },
+    {
+      "name": "firefox/standard/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.8631473927143045e-14
+    },
+    {
+      "name": "firefox/standard/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/standard/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.819128509814824e-14
+    },
+    {
+      "name": "firefox/standard/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.811759323173711e-14
+    },
+    {
+      "name": "firefox/standard/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1216348950202644e-13
+    },
+    {
+      "name": "firefox/standard/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.0126956661959423e-13
+    },
+    {
+      "name": "firefox/standard/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.643123872518032e-13
+    },
+    {
+      "name": "firefox/standard/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.8631473927143045e-14
+    },
+    {
+      "name": "firefox/playful-pop/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/playful-pop/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1213139711772087e-13
+    },
+    {
+      "name": "firefox/playful-pop/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.236718498413285e-13
+    },
+    {
+      "name": "firefox/playful-pop/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.230670276594075e-13
+    },
+    {
+      "name": "firefox/playful-pop/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 2.0000461790209423e-13
+    },
+    {
+      "name": "firefox/playful-pop/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 8.541542717262554e-13
+    },
+    {
+      "name": "firefox/playful-pop/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.389644180854499e-14
+    },
+    {
+      "name": "firefox/playful-pop/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/playful-pop/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1213139711772087e-13
+    },
+    {
+      "name": "firefox/playful-pop/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.236718498413285e-13
+    },
+    {
+      "name": "firefox/playful-pop/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.230670276594075e-13
+    },
+    {
+      "name": "firefox/playful-pop/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 2.0000461790209423e-13
+    },
+    {
+      "name": "firefox/playful-pop/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 8.541542717262554e-13
+    },
+    {
+      "name": "firefox/playful-pop/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.389644180854499e-14
+    },
+    {
+      "name": "firefox/raggedy-granite/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/raggedy-granite/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.121314040718727e-13
+    },
+    {
+      "name": "firefox/raggedy-granite/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1183593122682616e-13
+    },
+    {
+      "name": "firefox/raggedy-granite/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.230670389452068e-13
+    },
+    {
+      "name": "firefox/raggedy-granite/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 2.000046093277808e-13
+    },
+    {
+      "name": "firefox/raggedy-granite/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 9.490602827979739e-14
+    },
+    {
+      "name": "firefox/raggedy-granite/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.389644125119294e-14
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.121314040718727e-13
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1183593122682616e-13
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.230670389452068e-13
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 2.000046093277808e-13
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 9.490602827979739e-14
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.389644125119294e-14
+    },
+    {
+      "name": "firefox/glossy-marble/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/glossy-marble/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.909564254907412e-14
+    },
+    {
+      "name": "firefox/glossy-marble/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1247037292694846e-13
+    },
+    {
+      "name": "firefox/glossy-marble/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1216348950202644e-13
+    },
+    {
+      "name": "firefox/glossy-marble/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 2.0063478330979712e-13
+    },
+    {
+      "name": "firefox/glossy-marble/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.687733388453278e-13
+    },
+    {
+      "name": "firefox/glossy-marble/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.266940227045727e-12
+    },
+    {
+      "name": "firefox/glossy-marble/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/glossy-marble/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.909564254907412e-14
+    },
+    {
+      "name": "firefox/glossy-marble/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1247037292694846e-13
+    },
+    {
+      "name": "firefox/glossy-marble/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1216348950202644e-13
+    },
+    {
+      "name": "firefox/glossy-marble/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 2.0063478330979712e-13
+    },
+    {
+      "name": "firefox/glossy-marble/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.687733388453278e-13
+    },
+    {
+      "name": "firefox/glossy-marble/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.266940227045727e-12
+    },
+    {
+      "name": "firefox/luminous-midnight/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/luminous-midnight/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 9.77391063726853e-15
+    },
+    {
+      "name": "firefox/luminous-midnight/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/luminous-midnight/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1216348950202644e-13
+    },
+    {
+      "name": "firefox/luminous-midnight/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/luminous-midnight/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.643123872518032e-13
+    },
+    {
+      "name": "firefox/luminous-midnight/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.192414331337155e-12
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 9.77391063726853e-15
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1216348950202644e-13
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.643123872518032e-13
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.192414331337155e-12
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 9.77391063726853e-15
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1216348950202644e-13
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.0126956661959423e-13
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.643123872518032e-13
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 9.77391063726853e-15
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1216348950202644e-13
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 4.0126956661959423e-13
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.643123872518032e-13
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.819128509814824e-14
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1247037292694846e-13
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.243269790040529e-13
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 2.0063478330979712e-13
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 9.55390484064754e-14
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.452589570857218e-14
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.819128509814824e-14
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 3.1247037292694846e-13
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 6.243269790040529e-13
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 2.0063478330979712e-13
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 9.55390484064754e-14
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 7.452589570857218e-14
+    }
+  ],
+  "captures": [
+    {
+      "path": "standard-dark-1920-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 388,
+        "y": 2483.6875,
+        "w": 1144,
+        "h": 1220.171875
+      },
+      "full_document": "standard-dark-1920-document.png"
+    },
+    {
+      "path": "standard-dark-1920-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 388,
+        "y": 3731.859375,
+        "w": 1144,
+        "h": 1007.671875
+      },
+      "full_document": "standard-dark-1920-document.png"
+    },
+    {
+      "path": "standard-dark-1920-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 388,
+        "y": 4767.53125,
+        "w": 1144,
+        "h": 916.640625
+      },
+      "full_document": "standard-dark-1920-document.png"
+    },
+    {
+      "path": "standard-dark-390-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 16.96875,
+        "y": 3971.015625,
+        "w": 356.0625,
+        "h": 726.15625
+      },
+      "full_document": "standard-dark-390-document.png"
+    },
+    {
+      "path": "standard-dark-390-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 16.96875,
+        "y": 4713.953125,
+        "w": 356.0625,
+        "h": 1177.046875
+      },
+      "full_document": "standard-dark-390-document.png"
+    },
+    {
+      "path": "standard-dark-390-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 16.96875,
+        "y": 5907.78125,
+        "w": 356.0625,
+        "h": 1833.96875
+      },
+      "full_document": "standard-dark-390-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-1920-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 388,
+        "y": 2520.65625,
+        "w": 1144,
+        "h": 1257.140625
+      },
+      "full_document": "baroque-plexiglas-light-1920-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-1920-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 388,
+        "y": 3805.796875,
+        "w": 1144,
+        "h": 1044.640625
+      },
+      "full_document": "baroque-plexiglas-light-1920-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-1920-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 388,
+        "y": 4878.4375,
+        "w": 1144,
+        "h": 939.90625
+      },
+      "full_document": "baroque-plexiglas-light-1920-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-390-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 16.96875,
+        "y": 3986.09375,
+        "w": 356.0625,
+        "h": 756.984375
+      },
+      "full_document": "baroque-plexiglas-light-390-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-390-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 16.96875,
+        "y": 4759.859375,
+        "w": 356.0625,
+        "h": 1183.25
+      },
+      "full_document": "baroque-plexiglas-light-390-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-390-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 16.96875,
+        "y": 5959.890625,
+        "w": 356.0625,
+        "h": 1837.09375
+      },
+      "full_document": "baroque-plexiglas-light-390-document.png"
+    },
+    {
+      "path": "standard-dark-1920-full-spec-open-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 388,
+        "y": 2483.6875,
+        "w": 1144,
+        "h": 1220.171875
+      },
+      "full_document": "standard-dark-1920-full-spec-open-document.png"
+    },
+    {
+      "path": "standard-dark-1920-full-spec-open-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 388,
+        "y": 3731.859375,
+        "w": 1144,
+        "h": 1007.671875
+      },
+      "full_document": "standard-dark-1920-full-spec-open-document.png"
+    },
+    {
+      "path": "standard-dark-1920-full-spec-open-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 388,
+        "y": 4767.53125,
+        "w": 1144,
+        "h": 902.9375
+      },
+      "full_document": "standard-dark-1920-full-spec-open-document.png"
+    }
+  ],
+  "browsers": {
+    "chromium": "156.0.8078.4",
+    "firefox": "157.0"
+  },
+  "totals": {
+    "passed": 196,
+    "failed": 0
+  },
+  "implementation_spec_scrolling": {
+    "height": 480,
+    "maxHeight": "480px",
+    "scrollHeight": 1332,
+    "clientHeight": 480,
+    "overflow": "auto"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "stylestore-saved-orders",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone StyleStore saved-order CRUD with alternative SQL and MongoDB storage.",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "test": "node --test tests/frontend.test.mjs tests/presentation.test.mjs",
+    "test:browser": "node --test tests/frontend.browser.mjs tests/presentation.browser.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.119.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": { "vite": "8.3.8" }
+}

@@ -1,0 +1,189 @@
+{
+  "all_match": true,
+  "files": [
+    {
+      "path": "assets/pulse.css",
+      "sha256": "7e32b1e0add796c05ed83e2c1ca0bd21f60459a982ee5932ac97ee7841be2260"
+    },
+    {
+      "path": "assets/pulse.js",
+      "sha256": "e11e1250555898b07eadfd3bbc7089d6b5406a11f8d8e75bd602fe0a89219274"
+    },
+    {
+      "path": "config.js",
+      "sha256": "8a26b6c16c873b1047ebf94627dd4c2dab8265f95f84e47d30e64d6e604074d1"
+    },
+    {
+      "path": "copy-code.js",
+      "sha256": "cb659190ad7305b3055e1eb934b5ff88d74d85224c034e104ac62cd0ea9edd77"
+    },
+    {
+      "path": "index.html",
+      "sha256": "df64a0e20cbdccd0341cf2cf75b2760feb465f1fa2070b79eff44bc0828b5536"
+    },
+    {
+      "path": "site-navigation.js",
+      "sha256": "1fa568a009fcad35ae6c1a0033c937c24d1b40e50abdc4f66728d50149c0626b"
+    },
+    {
+      "path": "styles/auth-rbac-showcase.css",
+      "sha256": "c9152ddf1dd81d6e1f44daf70efee03b3e93b01b6d1332ea64e40bc7f90481ff"
+    },
+    {
+      "path": "styles/pulse-dashboard.css",
+      "sha256": "ace4938d880e062c3b697c96151dc5dbd6d3b0a4ee87899f916c0bffcddbabde"
+    },
+    {
+      "path": "styles/pulse-showcase.css",
+      "sha256": "4d6a8f6e06e3b455cfd2fdba820df16b242d9cf6e9e3fc56d05094d0442279f9"
+    },
+    {
+      "path": "styles/shared/base.css",
+      "sha256": "6b1b300764cc89af657261b0fda1ac5266e7cff640fc6674abefa34661db6c1b"
+    },
+    {
+      "path": "styles/shared/navigation.css",
+      "sha256": "9545029fef9b6382dda1e865ada0d11c56e7ff8836b925731f2cb12302730091"
+    },
+    {
+      "path": "styles/themes/baroque-plexiglas/assets/icons/apple-touch-icon.svg",
+      "sha256": "f8fcfa5943dbe6e832c1b8ed7936061734291dc88ce9078e6c47424cf13a7104"
+    },
+    {
+      "path": "styles/themes/baroque-plexiglas/assets/icons/favicon.svg",
+      "sha256": "f8fcfa5943dbe6e832c1b8ed7936061734291dc88ce9078e6c47424cf13a7104"
+    },
+    {
+      "path": "styles/themes/baroque-plexiglas/assets/textures/filigree-refraction.svg",
+      "sha256": "fdda40a3c5a939d9f05094ffc58db676bc9ea29d452b7d9814c844c16e918e53"
+    },
+    {
+      "path": "styles/themes/baroque-plexiglas/assets/textures/prism-facets.svg",
+      "sha256": "7f1436c8a008353e116537e508b19044908758564e7f93bfad74aa5a6a560103"
+    },
+    {
+      "path": "styles/themes/baroque-plexiglas/theme-config.js",
+      "sha256": "02e1f2d08669f9ad9ffe042147a5cfb4d8015fdacee758e3fa6ec8d1f5a7e4e4"
+    },
+    {
+      "path": "styles/themes/baroque-plexiglas/theme.css",
+      "sha256": "9b4d82abed4635b7a2d3398ed7f0e72f6a609b8cb49e1319cd40996f58677834"
+    },
+    {
+      "path": "styles/themes/glossy-marble/assets/icons/apple-touch-icon.svg",
+      "sha256": "4a956640cebb377ca7dc91719439357df21f9d32139b5253c08ea28e05c1e24b"
+    },
+    {
+      "path": "styles/themes/glossy-marble/assets/icons/favicon.svg",
+      "sha256": "4a956640cebb377ca7dc91719439357df21f9d32139b5253c08ea28e05c1e24b"
+    },
+    {
+      "path": "styles/themes/glossy-marble/assets/textures/marble-veins.svg",
+      "sha256": "e79c2c580c06c30de280a1dd0699e445d2dc1098a279d445b4a0762de19b2c8b"
+    },
+    {
+      "path": "styles/themes/glossy-marble/theme-config.js",
+      "sha256": "f673e77a1502d7bd032c887865c1b7e5c40a5cff1c7725966694387038c8f65b"
+    },
+    {
+      "path": "styles/themes/glossy-marble/theme.css",
+      "sha256": "e42e9757ab692be263ff9d2d7a92d5da7a32acee25950d8a4842f3f000df78ac"
+    },
+    {
+      "path": "styles/themes/gothic-stickerboard/assets/icons/apple-touch-icon.svg",
+      "sha256": "0bee21638b84f5ca82969cce1cdbc5b24c13eafacfc151ecb03f6d5c8132d21f"
+    },
+    {
+      "path": "styles/themes/gothic-stickerboard/assets/icons/favicon.svg",
+      "sha256": "b4e8329ad0082b4cbf0d0e0de355606e5f5d4b3b7b8380c47495a755b054d76b"
+    },
+    {
+      "path": "styles/themes/gothic-stickerboard/assets/textures/cathedral-collage.svg",
+      "sha256": "a60b7c8c1febb06104e14fa2f7a5aac979f1bf102eec94b80081eda71b9f6c57"
+    },
+    {
+      "path": "styles/themes/gothic-stickerboard/theme-config.js",
+      "sha256": "63c2de43dc5e3930442044d842dcc0945528dcfbaa8709a284521d09c763ef9b"
+    },
+    {
+      "path": "styles/themes/gothic-stickerboard/theme.css",
+      "sha256": "d0bc4a3fed4e31656da5b474b8be58a3ff3bb69cd839fb43729931bf316134e5"
+    },
+    {
+      "path": "styles/themes/luminous-midnight/assets/icons/apple-touch-icon.svg",
+      "sha256": "b9d2b811d0fbac660b98f17e72d6fa229e4359cfe2303c834c9dbd21581d0f44"
+    },
+    {
+      "path": "styles/themes/luminous-midnight/assets/icons/favicon.svg",
+      "sha256": "b9d2b811d0fbac660b98f17e72d6fa229e4359cfe2303c834c9dbd21581d0f44"
+    },
+    {
+      "path": "styles/themes/luminous-midnight/assets/textures/luminous-grid.svg",
+      "sha256": "649127c3ec80d31455d62507a94fb1a493c9c81b64d3311a5f02c781c2b2b0af"
+    },
+    {
+      "path": "styles/themes/luminous-midnight/theme-config.js",
+      "sha256": "68b6de27c85ddc94e75b9f9625cdd4c623147ed5a59cda9aa378956498930e09"
+    },
+    {
+      "path": "styles/themes/luminous-midnight/theme.css",
+      "sha256": "a0f52d425c4172bed6d6d9a56e290dc4557cd21b957f091ea2c8d0f61ccd7f7e"
+    },
+    {
+      "path": "styles/themes/playful-pop/assets/icons/apple-touch-icon.svg",
+      "sha256": "312c5b8ab8eefa40248e0ca7714c69d352c7e3019e42c9bbb9ee5a63d6307655"
+    },
+    {
+      "path": "styles/themes/playful-pop/assets/icons/favicon.svg",
+      "sha256": "312c5b8ab8eefa40248e0ca7714c69d352c7e3019e42c9bbb9ee5a63d6307655"
+    },
+    {
+      "path": "styles/themes/playful-pop/theme-config.js",
+      "sha256": "1bf34dbb0d6e99f0fa59c947e3d2cb87bdbfc9a8025d8625e9c5a645bfba49f1"
+    },
+    {
+      "path": "styles/themes/playful-pop/theme.css",
+      "sha256": "c16a6ef1f46b83e6fb198e1429ebb09d94a9976080739d4cfe191aff7601f515"
+    },
+    {
+      "path": "styles/themes/raggedy-granite/assets/icons/apple-touch-icon.svg",
+      "sha256": "86ab1184c7f70ea831b0f10beb2d4ae908d77d406edd93cc014f1170369c6ad3"
+    },
+    {
+      "path": "styles/themes/raggedy-granite/assets/icons/favicon.svg",
+      "sha256": "86ab1184c7f70ea831b0f10beb2d4ae908d77d406edd93cc014f1170369c6ad3"
+    },
+    {
+      "path": "styles/themes/raggedy-granite/theme-config.js",
+      "sha256": "a56a83a9615c01d076098944c56b16f10b56c3e0eb6dad553857e9bc3ad29a08"
+    },
+    {
+      "path": "styles/themes/raggedy-granite/theme.css",
+      "sha256": "f3d973bbde1ab949077ff82051b97b878f3cbb882b4a84410a0819675315fd36"
+    },
+    {
+      "path": "styles/themes/standard/assets/icons/apple-touch-icon.svg",
+      "sha256": "eca4193ce7129ba64acef27f5e1611338651f6570f28f0df9b22374a938f29c2"
+    },
+    {
+      "path": "styles/themes/standard/assets/icons/favicon.svg",
+      "sha256": "eca4193ce7129ba64acef27f5e1611338651f6570f28f0df9b22374a938f29c2"
+    },
+    {
+      "path": "styles/themes/standard/theme-config.js",
+      "sha256": "47e49eb23d03eb588e828059f44cb411e7921c481ba0973c77ec0ee7ec158c21"
+    },
+    {
+      "path": "styles/themes/standard/theme.css",
+      "sha256": "f2d4223272779a7b3f8c55eb4132e06334bf00305bd05240ca81715916ad3fe8"
+    },
+    {
+      "path": "styles/themes/theme-registry.js",
+      "sha256": "ff7581452b6e175c98429752400cdcc3addd6d671a45d1fafa6bd67bdf6117b2"
+    },
+    {
+      "path": "theme.js",
+      "sha256": "a55c4a1f843d40867c9738265cc1f0a9deaf26a6b4a04d1e95aacc7863e0e6d4"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "protected_sections": [
+    1,
+    2,
+    3,
+    7
+  ],
+  "sections_byte_identical": true,
+  "working_dashboard_and_runtime_files_unchanged": true,
+  "old_master_preserved": true,
+  "new_master_complete_successor": true,
+  "unexpected_changes": []
+}

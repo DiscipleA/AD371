@@ -1,0 +1,130 @@
+TAP version 13
+# {"browser":"chromium","version":"156.0.8078.4","cases":28,"labelChecks":84,"failedLabelChecks":0,"pageErrors":0,"externalRequests":0}
+# Subtest: chromium: phone order label and all four draft rows stay readable and contained
+ok 1 - chromium: phone order label and all four draft rows stay readable and contained
+  ---
+  duration_ms: 31247.806736
+  type: 'test'
+  ...
+# {"browser":"firefox","version":"157.0","cases":28,"labelChecks":84,"failedLabelChecks":0,"pageErrors":0,"externalRequests":0}
+# Subtest: firefox: phone order label and all four draft rows stay readable and contained
+ok 2 - firefox: phone order label and all four draft rows stay readable and contained
+  ---
+  duration_ms: 32281.158418
+  type: 'test'
+  ...
+# {"browser": "chromium", "scenario": "editor", "type": "intercepted Auth/API fixtures; no hosted mutations", "checks": 15, "requests": 12, "uncaughtErrors": 0, "unexpectedExternalRequests": 0}
+# Subtest: chromium: Unicode label editor uses the 1–80 code-point contract
+ok 3 - chromium: Unicode label editor uses the 1–80 code-point contract
+  ---
+  duration_ms: 10024.256356
+  type: 'test'
+  ...
+# {"browser": "chromium", "scenario": "responses", "type": "intercepted Auth/API fixtures; no hosted mutations", "checks": 2, "requests": 4, "uncaughtErrors": 0, "unexpectedExternalRequests": 0}
+# Subtest: chromium: Unicode label responses uses the 1–80 code-point contract
+ok 4 - chromium: Unicode label responses uses the 1–80 code-point contract
+  ---
+  duration_ms: 5594.488972
+  type: 'test'
+  ...
+# {"browser": "firefox", "scenario": "editor", "type": "intercepted Auth/API fixtures; no hosted mutations", "checks": 15, "requests": 12, "uncaughtErrors": 0, "unexpectedExternalRequests": 0}
+# Subtest: firefox: Unicode label editor uses the 1–80 code-point contract
+ok 5 - firefox: Unicode label editor uses the 1–80 code-point contract
+  ---
+  duration_ms: 13377.08407
+  type: 'test'
+  ...
+# {"browser": "firefox", "scenario": "responses", "type": "intercepted Auth/API fixtures; no hosted mutations", "checks": 2, "requests": 4, "uncaughtErrors": 0, "unexpectedExternalRequests": 0}
+# Subtest: firefox: Unicode label responses uses the 1–80 code-point contract
+ok 6 - firefox: Unicode label responses uses the 1–80 code-point contract
+  ---
+  duration_ms: 9108.434798
+  type: 'test'
+  ...
+# {"browser": "chromium", "type": "intercepted browser fixtures, not hosted database tests", "flow": "explicit auth; draft preserved; 503; order/item CRUD; reload; independent engines; delete; local sign-out", "requests": 29, "uncaughtErrors": 0}
+# {"browser": "firefox", "type": "intercepted browser fixtures, not hosted database tests", "flow": "explicit auth; draft preserved; 503; order/item CRUD; reload; independent engines; delete; local sign-out", "requests": 29, "uncaughtErrors": 0}
+# Subtest: browser contract fixtures exercise full frontend flow without hosted mutations
+ok 7 - browser contract fixtures exercise full frontend flow without hosted mutations
+  ---
+  duration_ms: 23500.707794
+  type: 'test'
+  ...
+# chromium standard light 1920: PASS
+# chromium standard light 390: PASS
+# chromium standard dark 1920: PASS
+# chromium standard dark 390: PASS
+# chromium playful-pop light 1920: PASS
+# chromium playful-pop light 390: PASS
+# chromium playful-pop dark 1920: PASS
+# chromium playful-pop dark 390: PASS
+# chromium raggedy-granite light 1920: PASS
+# chromium raggedy-granite light 390: PASS
+# chromium raggedy-granite dark 1920: PASS
+# chromium raggedy-granite dark 390: PASS
+# chromium glossy-marble light 1920: PASS
+# chromium glossy-marble light 390: PASS
+# chromium glossy-marble dark 1920: PASS
+# chromium glossy-marble dark 390: PASS
+# chromium luminous-midnight light 1920: PASS
+# chromium luminous-midnight light 390: PASS
+# chromium luminous-midnight dark 1920: PASS
+# chromium luminous-midnight dark 390: PASS
+# chromium gothic-stickerboard light 1920: PASS
+# chromium gothic-stickerboard light 390: PASS
+# chromium gothic-stickerboard dark 1920: PASS
+# chromium gothic-stickerboard dark 390: PASS
+# chromium baroque-plexiglas light 1920: PASS
+# chromium baroque-plexiglas light 390: PASS
+# chromium baroque-plexiglas dark 1920: PASS
+# chromium baroque-plexiglas dark 390: PASS
+# firefox standard light 1920: PASS
+# firefox standard light 390: PASS
+# firefox standard dark 1920: PASS
+# firefox standard dark 390: PASS
+# firefox playful-pop light 1920: PASS
+# firefox playful-pop light 390: PASS
+# firefox playful-pop dark 1920: PASS
+# firefox playful-pop dark 390: PASS
+# firefox raggedy-granite light 1920: PASS
+# firefox raggedy-granite light 390: PASS
+# firefox raggedy-granite dark 1920: PASS
+# firefox raggedy-granite dark 390: PASS
+# firefox glossy-marble light 1920: PASS
+# firefox glossy-marble light 390: PASS
+# firefox glossy-marble dark 1920: PASS
+# firefox glossy-marble dark 390: PASS
+# firefox luminous-midnight light 1920: PASS
+# firefox luminous-midnight light 390: PASS
+# firefox luminous-midnight dark 1920: PASS
+# firefox luminous-midnight dark 390: PASS
+# firefox gothic-stickerboard light 1920: PASS
+# firefox gothic-stickerboard light 390: PASS
+# firefox gothic-stickerboard dark 1920: PASS
+# firefox gothic-stickerboard dark 390: PASS
+# firefox baroque-plexiglas light 1920: PASS
+# firefox baroque-plexiglas light 390: PASS
+# firefox baroque-plexiglas dark 1920: PASS
+# firefox baroque-plexiglas dark 390: PASS
+# {"cases":56,"failedCases":0,"pageErrors":0}
+# Subtest: page-wide WCAG audit: inherited theme colors retain contrast in Chromium and Firefox
+ok 8 - page-wide WCAG audit: inherited theme colors retain contrast in Chromium and Firefox
+  ---
+  duration_ms: 157046.563478
+  type: 'test'
+  ...
+# [{"browser": "chromium", "version": "156.0.8078.4", "themeModes": 14, "widths": [1920, 1000, 390, 320], "errors": 0, "assetErrors": 0, "unconfigured": "honest", "localDraft": "passed", "fixedSvg": "passed"}, {"browser": "firefox", "version": "157.0", "themeModes": 14, "widths": [1920, 1000, 390, 320], "errors": 0, "assetErrors": 0, "unconfigured": "honest", "localDraft": "passed", "fixedSvg": "passed"}]
+# Subtest: real Chromium and Firefox: unconfigured browsing, local draft, 112 responsive theme-mode cases, geometry, keyboard and clipboard
+ok 9 - real Chromium and Firefox: unconfigured browsing, local draft, 112 responsive theme-mode cases, geometry, keyboard and clipboard
+  ---
+  duration_ms: 76121.544596
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 359178.54138

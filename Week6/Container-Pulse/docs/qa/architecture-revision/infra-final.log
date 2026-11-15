@@ -1,0 +1,27 @@
+test_build_caches_manifests_before_source_and_excludes_build_dependencies (__main__.InfrastructureTests.test_build_caches_manifests_before_source_and_excludes_build_dependencies) ... ok
+test_compose_has_only_project_scoped_app_gateway_and_bridge (__main__.InfrastructureTests.test_compose_has_only_project_scoped_app_gateway_and_bridge) ... ok
+test_context_excludes_secrets_local_dependencies_and_evidence (__main__.InfrastructureTests.test_context_excludes_secrets_local_dependencies_and_evidence) ... ok
+test_gateway_has_dynamic_dns_and_no_administrative_surface (__main__.InfrastructureTests.test_gateway_has_dynamic_dns_and_no_administrative_surface) ... ok
+test_only_gateway_publishes_localhost_8796 (__main__.InfrastructureTests.test_only_gateway_publishes_localhost_8796) ... ok
+test_services_have_enforced_budgets_and_hardening (__main__.InfrastructureTests.test_services_have_enforced_budgets_and_hardening) ... ok
+test_actual_network_has_only_owned_members_and_matching_ids (__main__.RunnerSafetyTests.test_actual_network_has_only_owned_members_and_matching_ids) ... ok
+test_all_compose_commands_pin_exact_project_and_absolute_file (__main__.RunnerSafetyTests.test_all_compose_commands_pin_exact_project_and_absolute_file) ... ok
+test_effective_configuration_is_checked_before_mutation (__main__.RunnerSafetyTests.test_effective_configuration_is_checked_before_mutation) ... ok
+test_effective_configuration_rejects_hardening_and_context_drift (__main__.RunnerSafetyTests.test_effective_configuration_rejects_hardening_and_context_drift) ... ok
+test_evidence_can_never_be_written_into_the_public_dist_tree (__main__.RunnerSafetyTests.test_evidence_can_never_be_written_into_the_public_dist_tree) ... ok
+test_evidence_can_never_overwrite_existing_project_json (__main__.RunnerSafetyTests.test_evidence_can_never_overwrite_existing_project_json) ... ok
+test_failed_week5_baseline_prevents_build_or_up (__main__.RunnerSafetyTests.test_failed_week5_baseline_prevents_build_or_up) ... ok
+test_inspection_format_never_requests_container_environment (__main__.RunnerSafetyTests.test_inspection_format_never_requests_container_environment) ... ok
+test_interrupted_scaling_restores_two_without_touching_other_projects (__main__.RunnerSafetyTests.test_interrupted_scaling_restores_two_without_touching_other_projects) ... ok
+test_no_mutation_flag_refuses_before_any_docker_call (__main__.RunnerSafetyTests.test_no_mutation_flag_refuses_before_any_docker_call) ... ok
+test_optional_docker_metadata_uses_missing_safe_lookup (__main__.RunnerSafetyTests.test_optional_docker_metadata_uses_missing_safe_lookup) ... ok
+test_platform_manifest_identity_is_not_confused_with_config_digest (__main__.RunnerSafetyTests.test_platform_manifest_identity_is_not_confused_with_config_digest) ... ok
+test_protected_inspection_never_collects_sensitive_health_commands (__main__.RunnerSafetyTests.test_protected_inspection_never_collects_sensitive_health_commands) ... ok
+test_protected_snapshots_compare_identity_restarts_status_and_networks (__main__.RunnerSafetyTests.test_protected_snapshots_compare_identity_restarts_status_and_networks) ... ok
+test_runtime_validation_rejects_missing_extra_and_nonfinite_values (__main__.RunnerSafetyTests.test_runtime_validation_rejects_missing_extra_and_nonfinite_values) ... ok
+test_sigterm_subprocess_restores_with_repeated_cleanup_signals (__main__.RunnerSafetyTests.test_sigterm_subprocess_restores_with_repeated_cleanup_signals) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 9.451s
+
+OK

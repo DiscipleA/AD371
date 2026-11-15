@@ -1,0 +1,967 @@
+/*
+  Playful Pop
+  A modern, energetic visual family built from violet, magenta, electric blue,
+  acid-lime, peach, and cream. It overrides semantic tokens only; page content,
+  layout, routes, and component behavior remain unchanged.
+*/
+
+html[data-style-theme="playful-pop"] {
+  --portfolio-style-family: "playful-pop";
+  --portfolio-content-max: 72rem;
+  --font-sans: "Trebuchet MS", "Avenir Next", Avenir, system-ui, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --radius-xs: 0.55rem;
+  --radius-sm: 0.8rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.35rem;
+  --radius-pill: 999px;
+  --transition-fast: 0.18s cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+html[data-style-theme="playful-pop"][data-theme="dark"] {
+  color-scheme: dark;
+  --color-canvas: oklch(0.20 0.055 300);
+  --color-surface: oklch(0.27 0.072 300);
+  --color-surface-elevated: oklch(0.34 0.085 300);
+  --color-border: oklch(0.60 0.12 300);
+  --color-text-primary: oklch(0.98 0.015 330);
+  --color-text-secondary: oklch(0.90 0.035 315);
+  --color-text-muted: oklch(0.77 0.055 305);
+  --color-accent: oklch(0.73 0.22 350);
+  --color-accent-hover: oklch(0.79 0.19 350);
+  --color-accent-secondary: oklch(0.88 0.20 125);
+  --color-on-accent: oklch(0.18 0.05 340);
+  --color-accent-soft: oklch(0.73 0.22 350 / 0.14);
+  --color-accent-soft-strong: oklch(0.73 0.22 350 / 0.24);
+  --color-accent-glow: oklch(0.73 0.22 350 / 0.30);
+  --color-cyan-glow: oklch(0.80 0.14 220 / 0.24);
+  --color-overlay-soft: oklch(0.98 0.02 330 / 0.05);
+  --color-shadow: oklch(0.08 0.04 300 / 0.58);
+  --color-shadow-soft: oklch(0.08 0.04 300 / 0.38);
+  --color-focus: oklch(0.86 0.16 205);
+  --color-image-overlay: oklch(0.20 0.055 300 / 0.48);
+  --color-img-fallback: oklch(0.34 0.085 300);
+
+  --canvas: oklch(0.20 0.055 300);
+  --surface: oklch(0.27 0.072 300);
+  --surface-2: oklch(0.34 0.085 300);
+  --border: oklch(0.60 0.12 300);
+  --text: oklch(0.98 0.015 330);
+  --muted: oklch(0.77 0.055 305);
+  --brand: oklch(0.73 0.22 350);
+  --data: oklch(0.88 0.20 125);
+  --success: oklch(0.82 0.17 155);
+  --shadow: oklch(0.08 0.04 300 / 0.52);
+
+  --color-primary: oklch(0.73 0.22 350);
+  --color-secondary: oklch(0.88 0.20 125);
+  --color-background: oklch(0.20 0.055 300);
+  --color-surface: oklch(0.27 0.072 300);
+  --color-surface-elevated: oklch(0.34 0.085 300);
+  --color-border: oklch(0.60 0.12 300);
+  --color-text: oklch(0.98 0.015 330);
+  --color-text-muted: oklch(0.77 0.055 305);
+  --color-on-primary: oklch(0.18 0.05 340);
+  --color-shadow: oklch(0.08 0.04 300 / 0.52);
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] {
+  color-scheme: light;
+  --color-canvas: oklch(0.97 0.035 80);
+  --color-surface: oklch(0.995 0.01 70);
+  --color-surface-elevated: oklch(0.93 0.06 305);
+  --color-border: oklch(0.68 0.12 300);
+  --color-text-primary: oklch(0.25 0.075 300);
+  --color-text-secondary: oklch(0.39 0.08 300);
+  --color-text-muted: oklch(0.50 0.075 300);
+  --color-accent: oklch(0.60 0.24 350);
+  --color-accent-hover: oklch(0.54 0.22 350);
+  --color-accent-secondary: oklch(0.50 0.20 255);
+  --color-on-accent: oklch(0.99 0.01 70);
+  --color-accent-soft: oklch(0.60 0.24 350 / 0.11);
+  --color-accent-soft-strong: oklch(0.60 0.24 350 / 0.18);
+  --color-accent-glow: oklch(0.70 0.20 350 / 0.22);
+  --color-cyan-glow: oklch(0.67 0.18 225 / 0.20);
+  --color-overlay-soft: oklch(1 0 0 / 0.56);
+  --color-shadow: oklch(0.42 0.12 300 / 0.22);
+  --color-shadow-soft: oklch(0.42 0.12 300 / 0.14);
+  --color-focus: oklch(0.50 0.20 255);
+  --color-image-overlay: oklch(0.25 0.075 300 / 0.27);
+  --color-img-fallback: oklch(0.93 0.06 305);
+
+  --canvas: oklch(0.97 0.035 80);
+  --surface: oklch(0.995 0.01 70);
+  --surface-2: oklch(0.93 0.06 305);
+  --border: oklch(0.68 0.12 300);
+  --text: oklch(0.25 0.075 300);
+  --muted: oklch(0.50 0.075 300);
+  --brand: oklch(0.60 0.24 350);
+  --data: oklch(0.50 0.20 255);
+  --success: oklch(0.52 0.15 145);
+  --shadow: oklch(0.42 0.12 300 / 0.20);
+
+  --color-primary: oklch(0.60 0.24 350);
+  --color-secondary: oklch(0.50 0.20 255);
+  --color-background: oklch(0.97 0.035 80);
+  --color-surface: oklch(0.995 0.01 70);
+  --color-surface-elevated: oklch(0.93 0.06 305);
+  --color-border: oklch(0.68 0.12 300);
+  --color-text: oklch(0.25 0.075 300);
+  --color-text-muted: oklch(0.50 0.075 300);
+  --color-on-primary: oklch(0.99 0.01 70);
+  --color-shadow: oklch(0.42 0.12 300 / 0.20);
+}
+
+/* Flexbox showcase token family. */
+html[data-style-theme="playful-pop"][data-theme="dark"] body.flexbox-interfaces-page,
+html[data-style-theme="playful-pop"][data-theme="dark"] body.scroll-driven-timelines-starting-style-transitions-page,
+html[data-style-theme="playful-pop"][data-theme="dark"] body.pure-css-reading-progress-view-timeline-content-reveals-page,
+html[data-style-theme="playful-pop"][data-theme="dark"] body.logical-properties-flexbox-page,
+html[data-style-theme="playful-pop"][data-theme="dark"] body.responsive-grid-page,
+html[data-style-theme="playful-pop"][data-theme="dark"] body.asymmetric-dashboard-grid-page,
+html[data-style-theme="playful-pop"][data-theme="dark"] body.native-nesting-cascade-layers-page,
+html[data-style-theme="playful-pop"][data-theme="dark"] body.multi-theme-scoped-component-systems-page {
+  --flex-color-canvas: oklch(0.20 0.055 300);
+  --flex-color-surface: oklch(0.27 0.072 300);
+  --flex-color-surface-elevated: oklch(0.34 0.085 300);
+  --flex-color-border: oklch(0.60 0.12 300);
+  --flex-color-text-primary: oklch(0.98 0.015 330);
+  --flex-color-text-secondary: oklch(0.90 0.035 315);
+  --flex-color-text-muted: oklch(0.77 0.055 305);
+  --flex-color-accent: oklch(0.73 0.22 350);
+  --flex-color-accent-hover: oklch(0.79 0.19 350);
+  --flex-color-accent-secondary: oklch(0.88 0.20 125);
+  --flex-color-success: oklch(0.82 0.17 155);
+  --flex-color-on-accent: oklch(0.18 0.05 340);
+  --flex-color-accent-soft: oklch(0.73 0.22 350 / 0.14);
+  --flex-color-accent-soft-strong: oklch(0.73 0.22 350 / 0.24);
+  --flex-color-accent-glow: oklch(0.73 0.22 350 / 0.30);
+  --flex-color-cyan-glow: oklch(0.80 0.14 220 / 0.24);
+  --flex-color-code: oklch(0.16 0.05 300);
+  --flex-color-shadow: oklch(0.08 0.04 300 / 0.58);
+  --flex-radius-sm: 0.8rem;
+  --flex-radius-md: 1rem;
+  --flex-radius-lg: 1.35rem;
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] body.flexbox-interfaces-page,
+html[data-style-theme="playful-pop"][data-theme="light"] body.scroll-driven-timelines-starting-style-transitions-page,
+html[data-style-theme="playful-pop"][data-theme="light"] body.pure-css-reading-progress-view-timeline-content-reveals-page,
+html[data-style-theme="playful-pop"][data-theme="light"] body.logical-properties-flexbox-page,
+html[data-style-theme="playful-pop"][data-theme="light"] body.responsive-grid-page,
+html[data-style-theme="playful-pop"][data-theme="light"] body.asymmetric-dashboard-grid-page,
+html[data-style-theme="playful-pop"][data-theme="light"] body.native-nesting-cascade-layers-page,
+html[data-style-theme="playful-pop"][data-theme="light"] body.multi-theme-scoped-component-systems-page {
+  --flex-color-canvas: oklch(0.97 0.035 80);
+  --flex-color-surface: oklch(0.995 0.01 70);
+  --flex-color-surface-elevated: oklch(0.93 0.06 305);
+  --flex-color-border: oklch(0.68 0.12 300);
+  --flex-color-text-primary: oklch(0.25 0.075 300);
+  --flex-color-text-secondary: oklch(0.39 0.08 300);
+  --flex-color-text-muted: oklch(0.50 0.075 300);
+  --flex-color-accent: oklch(0.60 0.24 350);
+  --flex-color-accent-hover: oklch(0.54 0.22 350);
+  --flex-color-accent-secondary: oklch(0.50 0.20 255);
+  --flex-color-success: oklch(0.52 0.15 145);
+  --flex-color-on-accent: oklch(0.99 0.01 70);
+  --flex-color-accent-soft: oklch(0.60 0.24 350 / 0.11);
+  --flex-color-accent-soft-strong: oklch(0.60 0.24 350 / 0.18);
+  --flex-color-accent-glow: oklch(0.70 0.20 350 / 0.22);
+  --flex-color-cyan-glow: oklch(0.67 0.18 225 / 0.20);
+  --flex-color-code: oklch(0.91 0.05 305);
+  --flex-color-shadow: oklch(0.42 0.12 300 / 0.20);
+  --flex-radius-sm: 0.8rem;
+  --flex-radius-md: 1rem;
+  --flex-radius-lg: 1.35rem;
+}
+
+/* Navigation family: shared by every page, including all Capstone weeks. */
+html[data-style-theme="playful-pop"][data-theme="dark"] .portfolio-banner {
+  --portfolio-nav-canvas: oklch(0.21 0.07 300 / 0.92);
+  --portfolio-nav-panel: oklch(0.28 0.085 300 / 0.98);
+  --portfolio-nav-panel-hover: oklch(0.73 0.22 350 / 0.16);
+  --portfolio-nav-border: oklch(0.63 0.14 300);
+  --portfolio-nav-text: oklch(0.98 0.015 330);
+  --portfolio-nav-muted: oklch(0.80 0.055 305);
+  --portfolio-nav-accent: oklch(0.88 0.20 125);
+  --portfolio-nav-focus: oklch(0.82 0.15 220);
+  --portfolio-nav-shadow: oklch(0.08 0.04 300 / 0.55);
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] .portfolio-banner {
+  --portfolio-nav-canvas: oklch(0.97 0.035 80 / 0.94);
+  --portfolio-nav-panel: oklch(0.995 0.01 70 / 0.99);
+  --portfolio-nav-panel-hover: oklch(0.60 0.24 350 / 0.10);
+  --portfolio-nav-border: oklch(0.68 0.12 300);
+  --portfolio-nav-text: oklch(0.25 0.075 300);
+  --portfolio-nav-muted: oklch(0.50 0.075 300);
+  --portfolio-nav-accent: oklch(0.60 0.24 350);
+  --portfolio-nav-focus: oklch(0.50 0.20 255);
+  --portfolio-nav-shadow: oklch(0.42 0.12 300 / 0.20);
+}
+
+html[data-style-theme="playful-pop"] .portfolio-banner {
+  background:
+    linear-gradient(90deg, color-mix(in oklch, var(--portfolio-nav-accent) 16%, transparent), transparent 32%),
+    var(--portfolio-nav-canvas);
+}
+
+html[data-style-theme="playful-pop"] :is(
+  .portfolio-banner__profile,
+  .portfolio-theme-menu__toggle,
+  .portfolio-menu__toggle,
+  .portfolio-theme-menu__item,
+  .portfolio-menu__item,
+  .portfolio-showcase-menu__toggle,
+  .portfolio-showcase-menu__item,
+  .portfolio-build-menu__toggle,
+  .portfolio-build-menu__item
+) {
+  border-radius: 0.85rem;
+}
+
+html[data-style-theme="playful-pop"] :is(.portfolio-theme-menu__panel, .portfolio-menu__panel, .portfolio-showcase-menu__panel, .portfolio-build-menu__panel) {
+  border-radius: 1.15rem;
+  box-shadow: 0.45rem 0.55rem 0 color-mix(in oklch, var(--portfolio-nav-accent) 32%, transparent),
+    0 1rem 2.5rem var(--portfolio-nav-shadow);
+}
+
+/* Playful page atmosphere and component shape. */
+html[data-style-theme="playful-pop"] body {
+  background:
+    radial-gradient(circle at 8% 12%, color-mix(in oklch, var(--color-accent) 26%, transparent), transparent 25rem),
+    radial-gradient(circle at 88% 22%, color-mix(in oklch, var(--color-accent-secondary) 24%, transparent), transparent 28rem),
+    radial-gradient(circle at 52% 96%, color-mix(in oklch, oklch(0.76 0.20 50) 18%, transparent), transparent 25rem),
+    var(--color-canvas, var(--canvas, var(--color-background)));
+}
+
+html[data-style-theme="playful-pop"] :is(
+  .profile-card,
+  .resume-container,
+  .section-card,
+  .hub-card,
+  .token-section,
+  .hero,
+  .layout-preview-card,
+  .dashboard-frame
+) {
+  border-radius: 1.35rem;
+}
+
+html[data-style-theme="playful-pop"] :is(
+  .profile-card,
+  .section-card,
+  .hub-card,
+  .token-section,
+  .hero,
+  .layout-preview-card
+) {
+  box-shadow:
+    0.5rem 0.6rem 0 color-mix(in oklch, var(--color-accent-secondary, var(--data, var(--color-secondary))) 22%, transparent),
+    0 1rem 2.5rem var(--color-shadow, var(--shadow, oklch(0 0 0 / 0.25)));
+}
+
+html[data-style-theme="playful-pop"] :is(
+  .profile-card__badge,
+  .profile-card__stack-item,
+  .primary-action,
+  .week-story-tab,
+  .project-link,
+  .gpa-tag,
+  .milestone-status
+) {
+  border-radius: 999px;
+}
+
+html[data-style-theme="playful-pop"] :is(h1, .profile-name, .profile-card__headline) {
+  letter-spacing: -0.035em;
+}
+
+html[data-style-theme="playful-pop"] .profile-card::before {
+  width: 0.5rem;
+  background: linear-gradient(180deg, var(--color-accent), var(--color-accent-secondary), oklch(0.78 0.20 55));
+}
+
+html[data-style-theme="playful-pop"] .profile-card__action,
+html[data-style-theme="playful-pop"] .primary-action {
+  background: linear-gradient(110deg, var(--color-accent, var(--brand)), var(--color-accent-secondary, var(--data)));
+  color: var(--color-on-accent, var(--canvas));
+  box-shadow: 0.2rem 0.28rem 0 color-mix(in oklch, var(--color-text-primary, var(--text)) 30%, transparent);
+}
+
+html[data-style-theme="playful-pop"] pre {
+  border-radius: 1rem;
+  background: color-mix(in oklch, var(--color-surface-elevated, var(--surface-2, var(--color-background))) 70%, black 30%);
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] pre {
+  background: color-mix(in oklch, var(--color-surface-elevated, var(--surface-2, var(--color-background))) 76%, white 24%);
+}
+
+html[data-style-theme="playful-pop"] .milestone--current {
+  box-shadow: inset 0.35rem 0 var(--brand), 0.25rem 0.3rem 0 color-mix(in oklch, var(--data) 24%, transparent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html[data-style-theme="playful-pop"] :is(.profile-card, .section-card, .hub-card, .token-section, .hero) {
+    transition: transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 180ms ease;
+  }
+
+  html[data-style-theme="playful-pop"] :is(.section-card, .hub-card, .token-section, .hero):hover {
+    transform: translateY(-0.12rem);
+  }
+}
+
+@media print {
+  html[data-style-theme="playful-pop"] body {
+    background: white !important;
+  }
+}
+
+/* Complete component token ownership --------------------------------------- */
+html[data-style-theme="playful-pop"][data-theme="dark"] :is(
+  body.fluid-typography-page,
+  body.flexbox-interfaces-page,
+  body.scroll-driven-timelines-starting-style-transitions-page,
+  body.pure-css-reading-progress-view-timeline-content-reveals-page,
+  body.logical-properties-flexbox-page,
+  body.responsive-grid-page,
+  body.asymmetric-dashboard-grid-page,
+  body.native-nesting-cascade-layers-page,
+  body.multi-theme-scoped-component-systems-page
+) {
+  --showcase-before-bg: oklch(0.30 0.09 300);
+  --showcase-before-text: oklch(0.98 0.015 330);
+  --showcase-before-link: oklch(0.88 0.20 125);
+  --showcase-before-border: oklch(0.70 0.16 330);
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] :is(
+  body.fluid-typography-page,
+  body.flexbox-interfaces-page,
+  body.scroll-driven-timelines-starting-style-transitions-page,
+  body.pure-css-reading-progress-view-timeline-content-reveals-page,
+  body.logical-properties-flexbox-page,
+  body.responsive-grid-page,
+  body.asymmetric-dashboard-grid-page,
+  body.native-nesting-cascade-layers-page,
+  body.multi-theme-scoped-component-systems-page
+) {
+  --showcase-before-bg: oklch(0.96 0.06 305);
+  --showcase-before-text: oklch(0.25 0.075 300);
+  --showcase-before-link: oklch(0.50 0.20 255);
+  --showcase-before-border: oklch(0.68 0.12 300);
+}
+
+html[data-style-theme="playful-pop"][data-theme="dark"] body.fluid-typography-page {
+  --fluid-demo-stage-bg: oklch(0.29 0.085 300);
+  --fluid-demo-text: oklch(0.98 0.015 330);
+  --fluid-demo-muted: oklch(0.86 0.05 315);
+  --fluid-demo-subtle: oklch(0.75 0.07 305);
+  --fluid-demo-border: oklch(0.66 0.14 300);
+  --fluid-demo-accent: oklch(0.88 0.20 125);
+  --fluid-demo-quote: oklch(0.84 0.16 220);
+}
+html[data-style-theme="playful-pop"][data-theme="light"] body.fluid-typography-page {
+  --fluid-demo-stage-bg: oklch(0.99 0.025 80);
+  --fluid-demo-text: oklch(0.25 0.075 300);
+  --fluid-demo-muted: oklch(0.42 0.08 300);
+  --fluid-demo-subtle: oklch(0.52 0.08 300);
+  --fluid-demo-border: oklch(0.72 0.11 300);
+  --fluid-demo-accent: oklch(0.60 0.24 350);
+  --fluid-demo-quote: oklch(0.50 0.20 255);
+}
+
+html[data-style-theme="playful-pop"][data-theme="dark"] body.flexbox-interfaces-page,
+html[data-style-theme="playful-pop"][data-theme="dark"] body.scroll-driven-timelines-starting-style-transitions-page,
+html[data-style-theme="playful-pop"][data-theme="dark"] body.pure-css-reading-progress-view-timeline-content-reveals-page {
+  --commerce-stage-start: oklch(0.28 0.10 315);
+  --commerce-stage-end: oklch(0.25 0.08 255);
+  --commerce-stage-text: oklch(0.98 0.015 330);
+  --commerce-shell-bg: oklch(0.31 0.09 300);
+  --commerce-shell-border: oklch(0.67 0.15 300);
+  --commerce-shell-shadow: oklch(0.08 0.04 300 / 0.62);
+  --commerce-utility-bg: oklch(0.73 0.22 350);
+  --commerce-utility-text: oklch(0.18 0.05 340);
+  --commerce-utility-promo: oklch(0.88 0.20 125);
+  --commerce-header-bg: oklch(0.25 0.075 290);
+  --commerce-heading: oklch(0.98 0.015 330);
+  --commerce-logo: oklch(0.88 0.20 125);
+  --commerce-text: oklch(0.96 0.02 325);
+  --commerce-muted: oklch(0.78 0.06 305);
+  --commerce-subtle: oklch(0.70 0.07 300);
+  --commerce-link: oklch(0.84 0.12 220);
+  --commerce-accent: oklch(0.73 0.22 350);
+  --commerce-accent-hover: oklch(0.80 0.18 350);
+  --commerce-accent-soft: oklch(0.73 0.22 350 / 0.18);
+  --commerce-on-accent: oklch(0.18 0.05 340);
+  --commerce-checkout-bg: oklch(0.22 0.065 300);
+  --commerce-card-bg: oklch(0.31 0.09 300);
+  --commerce-card-border: oklch(0.62 0.13 300);
+  --commerce-card-shadow: oklch(0.08 0.04 300 / 0.45);
+  --commerce-field-bg: oklch(0.25 0.075 300);
+  --commerce-field-border: oklch(0.58 0.12 300);
+  --commerce-image-bg: oklch(0.36 0.09 275);
+  --commerce-rule: oklch(0.56 0.11 300);
+  --commerce-success-bg: oklch(0.82 0.17 155 / 0.16);
+  --commerce-success-text: oklch(0.88 0.17 155);
+  --commerce-success: oklch(0.82 0.17 155);
+  --commerce-focus: oklch(0.84 0.16 220);
+}
+html[data-style-theme="playful-pop"][data-theme="light"] body.flexbox-interfaces-page,
+html[data-style-theme="playful-pop"][data-theme="light"] body.scroll-driven-timelines-starting-style-transitions-page,
+html[data-style-theme="playful-pop"][data-theme="light"] body.pure-css-reading-progress-view-timeline-content-reveals-page {
+  --commerce-stage-start: oklch(0.98 0.04 80);
+  --commerce-stage-end: oklch(0.94 0.065 305);
+  --commerce-stage-text: oklch(0.25 0.075 300);
+  --commerce-shell-bg: oklch(0.995 0.01 70);
+  --commerce-shell-border: oklch(0.70 0.12 300);
+  --commerce-shell-shadow: oklch(0.42 0.12 300 / 0.22);
+  --commerce-utility-bg: oklch(0.60 0.24 350);
+  --commerce-utility-text: oklch(0.99 0.01 70);
+  --commerce-utility-promo: oklch(0.88 0.20 125);
+  --commerce-header-bg: oklch(0.99 0.025 80);
+  --commerce-heading: oklch(0.25 0.075 300);
+  --commerce-logo: oklch(0.53 0.21 350);
+  --commerce-text: oklch(0.30 0.08 300);
+  --commerce-muted: oklch(0.50 0.075 300);
+  --commerce-subtle: oklch(0.58 0.07 300);
+  --commerce-link: oklch(0.46 0.16 255);
+  --commerce-accent: oklch(0.60 0.24 350);
+  --commerce-accent-hover: oklch(0.54 0.22 350);
+  --commerce-accent-soft: oklch(0.60 0.24 350 / 0.10);
+  --commerce-on-accent: oklch(0.99 0.01 70);
+  --commerce-checkout-bg: oklch(0.96 0.045 305);
+  --commerce-card-bg: oklch(0.995 0.01 70);
+  --commerce-card-border: oklch(0.76 0.09 300);
+  --commerce-card-shadow: oklch(0.42 0.12 300 / 0.14);
+  --commerce-field-bg: oklch(0.98 0.025 80);
+  --commerce-field-border: oklch(0.78 0.08 300);
+  --commerce-image-bg: oklch(0.91 0.07 305);
+  --commerce-rule: oklch(0.80 0.07 300);
+  --commerce-success-bg: oklch(0.88 0.12 145 / 0.28);
+  --commerce-success-text: oklch(0.42 0.13 145);
+  --commerce-success: oklch(0.48 0.15 145);
+  --commerce-focus: oklch(0.50 0.20 255);
+}
+
+html[data-style-theme="playful-pop"][data-theme="dark"] body.logical-properties-flexbox-page .app-layout {
+  --settings-color-page: oklch(0.22 0.065 300);
+  --settings-color-card: oklch(0.30 0.085 300);
+  --settings-color-profile: oklch(0.35 0.09 285);
+  --settings-color-border: oklch(0.63 0.14 300);
+  --settings-color-text: oklch(0.98 0.015 330);
+  --settings-color-muted: oklch(0.78 0.06 305);
+  --settings-color-accent: oklch(0.73 0.22 350);
+  --settings-color-accent-strong: oklch(0.82 0.18 350);
+  --settings-color-accent-soft: oklch(0.73 0.22 350 / 0.16);
+  --settings-color-on-accent: oklch(0.18 0.05 340);
+  --settings-color-avatar-border: oklch(0.88 0.20 125);
+  --settings-color-focus: oklch(0.84 0.16 220 / 0.62);
+  --settings-color-glow-a: oklch(0.80 0.14 220 / 0.28);
+  --settings-color-glow-b: oklch(0.73 0.22 350 / 0.28);
+  --settings-color-shadow: oklch(0.08 0.04 300 / 0.55);
+  --settings-color-shadow-soft: oklch(0.08 0.04 300 / 0.42);
+}
+html[data-style-theme="playful-pop"][data-theme="light"] body.logical-properties-flexbox-page .app-layout {
+  --settings-color-page: oklch(0.96 0.045 305);
+  --settings-color-card: oklch(0.995 0.01 70);
+  --settings-color-profile: oklch(0.93 0.07 305);
+  --settings-color-border: oklch(0.72 0.11 300);
+  --settings-color-text: oklch(0.25 0.075 300);
+  --settings-color-muted: oklch(0.50 0.075 300);
+  --settings-color-accent: oklch(0.60 0.24 350);
+  --settings-color-accent-strong: oklch(0.54 0.22 350);
+  --settings-color-accent-soft: oklch(0.60 0.24 350 / 0.11);
+  --settings-color-on-accent: oklch(0.99 0.01 70);
+  --settings-color-avatar-border: oklch(0.88 0.20 125);
+  --settings-color-focus: oklch(0.50 0.20 255 / 0.52);
+  --settings-color-glow-a: oklch(0.67 0.18 225 / 0.22);
+  --settings-color-glow-b: oklch(0.70 0.20 350 / 0.20);
+  --settings-color-shadow: oklch(0.42 0.12 300 / 0.20);
+  --settings-color-shadow-soft: oklch(0.42 0.12 300 / 0.14);
+}
+
+html[data-style-theme="playful-pop"][data-theme="dark"] body.responsive-grid-page .gallery-wrapper {
+  --gallery-canvas: oklch(0.22 0.065 300);
+  --gallery-surface: oklch(0.31 0.085 300);
+  --gallery-border: oklch(0.64 0.14 300);
+  --gallery-text: oklch(0.98 0.015 330);
+  --gallery-muted: oklch(0.80 0.055 305);
+  --gallery-accent: oklch(0.84 0.16 220);
+  --gallery-tag: oklch(0.88 0.20 125);
+  --gallery-glow: oklch(0.73 0.22 350 / 0.35);
+  --gallery-shadow: oklch(0.08 0.04 300 / 0.55);
+  --gallery-card-shadow: oklch(0.08 0.04 300 / 0.42);
+  --gallery-visual-bg: oklch(0.36 0.09 275);
+}
+html[data-style-theme="playful-pop"][data-theme="light"] body.responsive-grid-page .gallery-wrapper {
+  --gallery-canvas: oklch(0.97 0.035 80);
+  --gallery-surface: oklch(0.995 0.01 70);
+  --gallery-border: oklch(0.70 0.12 300);
+  --gallery-text: oklch(0.25 0.075 300);
+  --gallery-muted: oklch(0.50 0.075 300);
+  --gallery-accent: oklch(0.50 0.20 255);
+  --gallery-tag: oklch(0.60 0.24 350);
+  --gallery-glow: oklch(0.67 0.18 225 / 0.22);
+  --gallery-shadow: oklch(0.42 0.12 300 / 0.20);
+  --gallery-card-shadow: oklch(0.42 0.12 300 / 0.14);
+  --gallery-visual-bg: oklch(0.91 0.07 305);
+}
+
+/* A recognizably different component language, not a palette-only skin. */
+html[data-style-theme="playful-pop"] :is(.section-card, .dashboard-card, .hub-card, .token-section, .milestone, .concept-card, .audit-item, .prompt-layer, .media-card) {
+  border-width: 2px;
+}
+html[data-style-theme="playful-pop"] .section-card {
+  position: relative;
+  overflow: hidden;
+}
+html[data-style-theme="playful-pop"] .section-card::after {
+  content: "";
+  position: absolute;
+  inline-size: 5rem;
+  block-size: 5rem;
+  inset-block-start: -2.4rem;
+  inset-inline-end: -2rem;
+  border-radius: 50%;
+  background: color-mix(in oklch, var(--color-accent-secondary, var(--data)) 34%, transparent);
+  pointer-events: none;
+}
+html[data-style-theme="playful-pop"] .process-step:nth-child(3n + 1) { transform: rotate(-1deg); }
+html[data-style-theme="playful-pop"] .process-step:nth-child(3n + 2) { transform: rotate(1deg); }
+html[data-style-theme="playful-pop"] :is(.concept-card, .audit-item, .milestone, .media-card):nth-child(even) {
+  transform: translateY(0.2rem);
+}
+html[data-style-theme="playful-pop"] :is(.continue-button, .btn--primary, .primary-action, .profile-card__action) {
+  border-radius: 999px !important;
+}
+
+
+/* CASCADE-COMPLETE PAGE FAMILY TOKENS ---------------------------------------
+   Fix note: Standard Fluid Typography declares its page palette directly on
+   body.fluid-typography-page. Inherited html-level theme variables cannot beat
+   those body-owned tokens. Every non-Standard theme must therefore re-own the
+   same page-family tokens at the body selector level for the shell and the
+   Trading Dashboard Build Story, not only the final demo area. */
+html[data-style-theme="playful-pop"][data-theme="dark"] body.fluid-typography-page,
+html[data-style-theme="playful-pop"][data-theme="dark"] body.trading-dashboard-page {
+  --color-canvas: oklch(0.20 0.055 300);
+  --color-surface: oklch(0.27 0.072 300);
+  --color-surface-elevated: oklch(0.34 0.085 300);
+  --color-border: oklch(0.60 0.12 300);
+  --color-text-primary: oklch(0.98 0.015 330);
+  --color-text-secondary: oklch(0.90 0.035 315);
+  --color-text-muted: oklch(0.77 0.055 305);
+  --color-accent: oklch(0.73 0.22 350);
+  --color-accent-hover: oklch(0.79 0.19 350);
+  --color-accent-secondary: oklch(0.88 0.20 125);
+  --color-on-accent: oklch(0.18 0.05 340);
+  --color-accent-soft: oklch(0.73 0.22 350 / 0.14);
+  --color-accent-soft-strong: oklch(0.73 0.22 350 / 0.24);
+  --color-accent-glow: oklch(0.73 0.22 350 / 0.30);
+  --color-cyan-glow: oklch(0.80 0.14 220 / 0.24);
+  --color-overlay: oklch(0.98 0.02 330 / 0.08);
+  --color-code: oklch(0.16 0.05 300);
+  --color-success: oklch(0.82 0.17 155);
+  --color-shadow: oklch(0.08 0.04 300 / 0.58);
+  --color-shadow-soft: oklch(0.08 0.04 300 / 0.38);
+  --font-sans: "Trebuchet MS", "Avenir Next", Avenir, system-ui, sans-serif;
+  --font-serif: "Georgia", "Times New Roman", serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --radius-sm: 0.8rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.35rem;
+  --border-hairline: 1px;
+  --focus-ring: 0 0 0 0.25rem oklch(0.86 0.16 205 / 0.85);
+  --shadow-card: 0.55rem 0.65rem 0 oklch(0.88 0.20 125 / 0.24), 0 1.15rem 2.75rem var(--color-shadow);
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] body.fluid-typography-page,
+html[data-style-theme="playful-pop"][data-theme="light"] body.trading-dashboard-page {
+  --color-canvas: oklch(0.97 0.035 80);
+  --color-surface: oklch(0.995 0.01 70);
+  --color-surface-elevated: oklch(0.93 0.06 305);
+  --color-border: oklch(0.68 0.12 300);
+  --color-text-primary: oklch(0.25 0.075 300);
+  --color-text-secondary: oklch(0.39 0.08 300);
+  --color-text-muted: oklch(0.50 0.075 300);
+  --color-accent: oklch(0.60 0.24 350);
+  --color-accent-hover: oklch(0.54 0.22 350);
+  --color-accent-secondary: oklch(0.50 0.20 255);
+  --color-on-accent: oklch(0.99 0.01 70);
+  --color-accent-soft: oklch(0.60 0.24 350 / 0.11);
+  --color-accent-soft-strong: oklch(0.60 0.24 350 / 0.18);
+  --color-accent-glow: oklch(0.70 0.20 350 / 0.22);
+  --color-cyan-glow: oklch(0.67 0.18 225 / 0.20);
+  --color-overlay: oklch(0.25 0.075 300 / 0.10);
+  --color-code: oklch(0.91 0.05 305);
+  --color-success: oklch(0.52 0.15 145);
+  --color-shadow: oklch(0.42 0.12 300 / 0.20);
+  --color-shadow-soft: oklch(0.42 0.12 300 / 0.13);
+  --font-sans: "Trebuchet MS", "Avenir Next", Avenir, system-ui, sans-serif;
+  --font-serif: "Georgia", "Times New Roman", serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --radius-sm: 0.8rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.35rem;
+  --border-hairline: 1px;
+  --focus-ring: 0 0 0 0.25rem oklch(0.50 0.20 255 / 0.70);
+  --shadow-card: 0.55rem 0.65rem 0 oklch(0.50 0.20 255 / 0.16), 0 1.15rem 2.75rem var(--color-shadow);
+}
+
+html[data-style-theme="playful-pop"] body.trading-dashboard-page :is(
+  .week-story-tabs,
+  .narrative-panel,
+  .archetype-card,
+  .selection-banner,
+  .token-preview,
+  .token-preview__group,
+  .formula-card,
+  .dashboard-frame,
+  .frame-rail,
+  .frame-header,
+  .frame-main,
+  .frame-context,
+  .frame-footer
+) {
+  border-radius: 1.15rem;
+  border-color: color-mix(in oklch, var(--color-border) 72%, var(--color-accent) 28%);
+  box-shadow: 0.32rem 0.38rem 0 color-mix(in oklch, var(--color-accent-secondary) 22%, transparent);
+}
+
+html[data-style-theme="playful-pop"] body.trading-dashboard-page .dashboard-frame {
+  background:
+    radial-gradient(circle at 18% 16%, color-mix(in oklch, var(--color-accent) 20%, transparent), transparent 18rem),
+    radial-gradient(circle at 82% 88%, color-mix(in oklch, var(--color-accent-secondary) 18%, transparent), transparent 20rem),
+    var(--color-surface);
+}
+
+html[data-style-theme="playful-pop"] body.trading-dashboard-page .week-story-tab {
+  background: linear-gradient(110deg, var(--color-accent-soft), color-mix(in oklch, var(--color-accent-secondary) 12%, transparent));
+  border-color: color-mix(in oklch, var(--color-border) 65%, var(--color-accent) 35%);
+}
+
+html[data-style-theme="playful-pop"] body.trading-dashboard-page .archetype-card--selected {
+  background:
+    linear-gradient(135deg, var(--color-accent-soft-strong), color-mix(in oklch, var(--color-accent-secondary) 12%, transparent)),
+    var(--color-surface-elevated);
+}
+
+
+/* Surgical readability fix: Playful Pop light keeps the playful lavender code
+   surface, but re-owns code-window text so copied source remains readable. */
+html[data-style-theme="playful-pop"][data-theme="light"] :is(
+  body.fluid-typography-page,
+  body.flexbox-interfaces-page,
+  body.scroll-driven-timelines-starting-style-transitions-page,
+  body.pure-css-reading-progress-view-timeline-content-reveals-page,
+  body.logical-properties-flexbox-page,
+  body.responsive-grid-page,
+  body.asymmetric-dashboard-grid-page,
+  body.native-nesting-cascade-layers-page,
+  body.multi-theme-scoped-component-systems-page,
+  body.trading-dashboard-page
+) pre {
+  color: oklch(0.24 0.08 300);
+}
+
+
+/* Week 04 Asymmetric Dashboard Grid demo token ownership. */
+html[data-style-theme="playful-pop"][data-theme="dark"] body.asymmetric-dashboard-grid-page .dashboard-demo {
+  --dashboard-canvas: oklch(0.22 0.065 300);
+  --dashboard-surface: oklch(0.31 0.085 300);
+  --dashboard-surface-strong: oklch(0.36 0.095 285);
+  --dashboard-border: oklch(0.64 0.14 300);
+  --dashboard-text: oklch(0.98 0.015 330);
+  --dashboard-muted: oklch(0.80 0.055 305);
+  --dashboard-accent: oklch(0.88 0.20 125);
+  --dashboard-accent-soft: oklch(0.73 0.22 350 / 0.16);
+  --dashboard-success: oklch(0.82 0.17 155);
+  --dashboard-warning: oklch(0.86 0.17 85);
+  --dashboard-danger: oklch(0.76 0.20 25);
+  --dashboard-grid-line: oklch(0.98 0.015 330 / 0.14);
+  --dashboard-shadow: oklch(0.08 0.04 300 / 0.55);
+  --dashboard-radius: 1.15rem;
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] body.asymmetric-dashboard-grid-page .dashboard-demo {
+  --dashboard-canvas: oklch(0.96 0.05 305);
+  --dashboard-surface: oklch(0.995 0.01 70);
+  --dashboard-surface-strong: oklch(0.93 0.06 305);
+  --dashboard-border: oklch(0.70 0.12 300);
+  --dashboard-text: oklch(0.25 0.075 300);
+  --dashboard-muted: oklch(0.50 0.075 300);
+  --dashboard-accent: oklch(0.50 0.20 255);
+  --dashboard-accent-soft: oklch(0.60 0.24 350 / 0.10);
+  --dashboard-success: oklch(0.52 0.15 145);
+  --dashboard-warning: oklch(0.62 0.16 80);
+  --dashboard-danger: oklch(0.58 0.20 25);
+  --dashboard-grid-line: oklch(0.25 0.075 300 / 0.13);
+  --dashboard-shadow: oklch(0.42 0.12 300 / 0.20);
+  --dashboard-radius: 1.15rem;
+}
+
+
+/* Native Nesting showcase demo tokens */
+html[data-style-theme="playful-pop"][data-theme="dark"] body.native-nesting-cascade-layers-page .booking-demo {
+  --booking-demo-bg: oklch(0.22 0.07 318);
+  --booking-demo-surface: oklch(0.28 0.09 318);
+  --booking-demo-muted: oklch(0.86 0.07 332);
+  --booking-demo-text: oklch(0.98 0.02 326);
+  --booking-demo-border: oklch(0.72 0.18 340);
+  --booking-demo-shadow: oklch(0 0 0 / 0.28);
+  --booking-action-base: oklch(0.68 0.22 324);
+  --booking-action-base-hover: oklch(0.76 0.19 340);
+  --booking-action-text: oklch(0.16 0.05 315);
+  --booking-card-bg: linear-gradient(145deg, oklch(0.32 0.12 312), oklch(0.2 0.08 250));
+  --booking-card-border: oklch(0.78 0.17 348);
+  --booking-card-heading: oklch(0.99 0.03 88);
+  --booking-card-accent: oklch(0.78 0.2 82);
+  --booking-card-accent-hover: oklch(0.84 0.18 95);
+  --booking-card-action-text: oklch(0.18 0.05 260);
+  --booking-badge-bg: oklch(0.82 0.18 150);
+  --booking-badge-text: oklch(0.16 0.06 150);
+  --booking-connector: linear-gradient(90deg, oklch(0.82 0.22 170), oklch(0.78 0.2 82), oklch(0.75 0.22 330));
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] body.native-nesting-cascade-layers-page .booking-demo {
+  --booking-demo-bg: oklch(0.97 0.045 333);
+  --booking-demo-surface: oklch(1 0.02 102);
+  --booking-demo-muted: oklch(0.44 0.1 315);
+  --booking-demo-text: oklch(0.24 0.07 292);
+  --booking-demo-border: oklch(0.78 0.14 328);
+  --booking-demo-shadow: oklch(0.45 0.13 320 / 0.16);
+  --booking-action-base: oklch(0.62 0.21 318);
+  --booking-action-base-hover: oklch(0.56 0.22 318);
+  --booking-action-text: oklch(1 0.01 95);
+  --booking-card-bg: linear-gradient(145deg, oklch(1 0.01 95), oklch(0.94 0.08 195));
+  --booking-card-border: oklch(0.74 0.17 195);
+  --booking-card-heading: oklch(0.23 0.08 285);
+  --booking-card-accent: oklch(0.65 0.22 320);
+  --booking-card-accent-hover: oklch(0.56 0.22 320);
+  --booking-card-action-text: oklch(1 0.01 95);
+  --booking-badge-bg: oklch(0.87 0.14 150);
+  --booking-badge-text: oklch(0.3 0.1 150);
+  --booking-connector: linear-gradient(90deg, oklch(0.74 0.18 190), oklch(0.74 0.18 80), oklch(0.7 0.2 320));
+}
+
+/* Multi-Theme Scoped Component Systems demo tokens */
+html[data-style-theme="playful-pop"][data-theme="dark"] body.multi-theme-scoped-component-systems-page .multi-theme-demo {
+  --multi-theme-demo-bg: oklch(0.20 0.07 305);
+  --multi-theme-demo-border: oklch(0.68 0.16 320);
+  --multi-theme-demo-shadow: oklch(0.08 0.04 300 / 0.52);
+  --multi-theme-light-card-bg: oklch(1 0.025 80);
+  --multi-theme-light-card-text: oklch(0.24 0.08 300);
+  --multi-theme-light-card-muted: oklch(0.48 0.08 300);
+  --multi-theme-light-card-border: oklch(0.78 0.14 320);
+  --multi-theme-light-card-accent: oklch(0.62 0.23 340);
+  --multi-theme-light-card-accent-hover: oklch(0.70 0.2 340);
+  --multi-theme-light-card-on-accent: oklch(1 0.01 80);
+  --multi-theme-light-card-badge-bg: oklch(0.88 0.2 125);
+  --multi-theme-light-card-badge-text: oklch(0.18 0.05 125);
+  --multi-theme-light-card-shadow: oklch(0.08 0.04 300 / 0.18);
+  --multi-theme-light-shell-bg: linear-gradient(145deg, oklch(0.99 0.025 80), oklch(0.94 0.08 310));
+  --multi-theme-dark-card-bg: oklch(0.29 0.085 300);
+  --multi-theme-dark-card-text: oklch(0.99 0.02 330);
+  --multi-theme-dark-card-muted: oklch(0.84 0.055 310);
+  --multi-theme-dark-card-border: oklch(0.67 0.15 300);
+  --multi-theme-dark-card-accent: oklch(0.88 0.2 125);
+  --multi-theme-dark-card-accent-hover: oklch(0.94 0.17 125);
+  --multi-theme-dark-card-on-accent: oklch(0.18 0.05 125);
+  --multi-theme-dark-card-badge-bg: oklch(0.72 0.22 350);
+  --multi-theme-dark-card-badge-text: oklch(0.18 0.05 340);
+  --multi-theme-dark-card-shadow: oklch(0.08 0.04 300 / 0.45);
+  --multi-theme-dark-shell-bg: linear-gradient(145deg, oklch(0.23 0.08 300), oklch(0.17 0.07 250));
+  --multi-theme-cyber-card-bg: oklch(0.16 0.08 300);
+  --multi-theme-cyber-card-text: oklch(0.99 0.03 330);
+  --multi-theme-cyber-card-muted: oklch(0.88 0.08 320);
+  --multi-theme-cyber-card-border: oklch(0.78 0.22 330);
+  --multi-theme-cyber-card-accent: oklch(0.82 0.22 155);
+  --multi-theme-cyber-card-accent-hover: oklch(0.9 0.18 155);
+  --multi-theme-cyber-card-on-accent: oklch(0.15 0.06 155);
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] body.multi-theme-scoped-component-systems-page .multi-theme-demo {
+  --multi-theme-demo-bg: oklch(0.97 0.05 305);
+  --multi-theme-demo-border: oklch(0.70 0.14 320);
+  --multi-theme-demo-shadow: oklch(0.42 0.12 300 / 0.18);
+}
+
+
+/* Week 6 Container Queries showcase token ownership. */
+html[data-style-theme="playful-pop"][data-theme="dark"] body.container-relative-styling-parent-checking-selectors-page {
+  --flex-color-canvas: var(--color-canvas, var(--color-background));
+  --flex-color-surface: var(--color-surface);
+  --flex-color-surface-elevated: var(--color-surface-elevated);
+  --flex-color-border: var(--color-border);
+  --flex-color-text-primary: var(--color-text-primary, var(--color-text));
+  --flex-color-text-secondary: var(--color-text-secondary, var(--color-text-muted));
+  --flex-color-text-muted: var(--color-text-muted);
+  --flex-color-accent: var(--color-accent, var(--color-primary));
+  --flex-color-accent-hover: var(--color-accent-hover, var(--color-primary));
+  --flex-color-accent-secondary: var(--color-accent-secondary, var(--color-secondary));
+  --flex-color-success: var(--color-success, var(--color-positive));
+  --flex-color-on-accent: var(--color-on-accent, var(--color-on-primary));
+  --flex-color-accent-soft: var(--color-accent-soft);
+  --flex-color-accent-soft-strong: var(--color-accent-soft-strong, var(--color-accent-soft));
+  --flex-color-accent-glow: var(--color-accent-glow, var(--color-accent-soft));
+  --flex-color-cyan-glow: var(--color-cyan-glow, var(--color-accent-soft));
+  --flex-color-code: var(--color-code);
+  --flex-color-shadow: var(--color-shadow);
+  --flex-radius-sm: var(--radius-sm);
+  --flex-radius-md: var(--radius-md);
+  --flex-radius-lg: var(--radius-lg);
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] body.container-relative-styling-parent-checking-selectors-page {
+  --flex-color-canvas: var(--color-canvas, var(--color-background));
+  --flex-color-surface: var(--color-surface);
+  --flex-color-surface-elevated: var(--color-surface-elevated);
+  --flex-color-border: var(--color-border);
+  --flex-color-text-primary: var(--color-text-primary, var(--color-text));
+  --flex-color-text-secondary: var(--color-text-secondary, var(--color-text-muted));
+  --flex-color-text-muted: var(--color-text-muted);
+  --flex-color-accent: var(--color-accent, var(--color-primary));
+  --flex-color-accent-hover: var(--color-accent-hover, var(--color-primary));
+  --flex-color-accent-secondary: var(--color-accent-secondary, var(--color-secondary));
+  --flex-color-success: var(--color-success, var(--color-positive));
+  --flex-color-on-accent: var(--color-on-accent, var(--color-on-primary));
+  --flex-color-accent-soft: var(--color-accent-soft);
+  --flex-color-accent-soft-strong: var(--color-accent-soft-strong, var(--color-accent-soft));
+  --flex-color-accent-glow: var(--color-accent-glow, var(--color-accent-soft));
+  --flex-color-cyan-glow: var(--color-cyan-glow, var(--color-accent-soft));
+  --flex-color-code: var(--color-code);
+  --flex-color-shadow: var(--color-shadow);
+  --flex-radius-sm: var(--radius-sm);
+  --flex-radius-md: var(--radius-md);
+  --flex-radius-lg: var(--radius-lg);
+}
+
+html[data-style-theme="playful-pop"][data-theme="dark"] body.container-relative-styling-parent-checking-selectors-page .notification-workspace {
+  --notification-stage-bg: oklch(0.24 0.08 305);
+  --notification-stage-panel: oklch(0.31 0.09 305);
+  --notification-stage-panel-strong: oklch(0.36 0.10 310);
+  --notification-stage-border: oklch(0.67 0.15 320);
+  --notification-text: oklch(0.98 0.02 330);
+  --notification-muted: oklch(0.82 0.06 310);
+  --notification-accent: oklch(0.88 0.20 125);
+  --notification-accent-soft: oklch(0.73 0.22 350 / .18);
+  --notification-archived-bg: oklch(0.27 0.06 300);
+  --notification-archived-border: oklch(0.62 0.11 305);
+  --notification-archived-text: oklch(0.74 0.045 305);
+  --notification-shadow: oklch(0.08 0.04 300 / .55);
+  --notification-focus: oklch(0.84 0.16 220);
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] body.container-relative-styling-parent-checking-selectors-page .notification-workspace {
+  --notification-stage-bg: oklch(0.98 0.045 82);
+  --notification-stage-panel: oklch(0.995 0.015 70);
+  --notification-stage-panel-strong: oklch(0.95 0.06 305);
+  --notification-stage-border: oklch(0.70 0.12 300);
+  --notification-text: oklch(0.25 0.075 300);
+  --notification-muted: oklch(0.48 0.075 300);
+  --notification-accent: oklch(0.60 0.24 350);
+  --notification-accent-soft: oklch(0.60 0.24 350 / .12);
+  --notification-archived-bg: oklch(0.92 0.05 305);
+  --notification-archived-border: oklch(0.66 0.10 300);
+  --notification-archived-text: oklch(0.48 0.075 300);
+  --notification-shadow: oklch(0.42 0.12 300 / .20);
+  --notification-focus: oklch(0.50 0.20 255);
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] body.container-relative-styling-parent-checking-selectors-page pre {
+  color: oklch(0.24 0.08 300);
+}
+
+/* Week 6 Adaptive Card Widgets showcase token ownership. */
+html[data-style-theme="playful-pop"][data-theme="dark"] body.adaptive-card-widgets-container-queries-state-toggles-page {
+  --flex-color-canvas: var(--color-canvas, var(--color-background));
+  --flex-color-surface: var(--color-surface);
+  --flex-color-surface-elevated: var(--color-surface-elevated);
+  --flex-color-border: var(--color-border);
+  --flex-color-text-primary: var(--color-text-primary, var(--color-text));
+  --flex-color-text-secondary: var(--color-text-secondary, var(--color-text-muted));
+  --flex-color-text-muted: var(--color-text-muted);
+  --flex-color-accent: var(--color-accent, var(--color-primary));
+  --flex-color-accent-hover: var(--color-accent-hover, var(--color-primary));
+  --flex-color-accent-secondary: var(--color-accent-secondary, var(--color-secondary));
+  --flex-color-success: var(--color-success, var(--color-positive));
+  --flex-color-on-accent: var(--color-on-accent, var(--color-on-primary));
+  --flex-color-accent-soft: var(--color-accent-soft);
+  --flex-color-accent-soft-strong: var(--color-accent-soft-strong, var(--color-accent-soft));
+  --flex-color-accent-glow: var(--color-accent-glow, var(--color-accent-soft));
+  --flex-color-cyan-glow: var(--color-cyan-glow, var(--color-accent-soft));
+  --flex-color-code: var(--color-code);
+  --flex-color-shadow: var(--color-shadow);
+  --flex-radius-sm: var(--radius-sm);
+  --flex-radius-md: var(--radius-md);
+  --flex-radius-lg: var(--radius-lg);
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] body.adaptive-card-widgets-container-queries-state-toggles-page {
+  --flex-color-canvas: var(--color-canvas, var(--color-background));
+  --flex-color-surface: var(--color-surface);
+  --flex-color-surface-elevated: var(--color-surface-elevated);
+  --flex-color-border: var(--color-border);
+  --flex-color-text-primary: var(--color-text-primary, var(--color-text));
+  --flex-color-text-secondary: var(--color-text-secondary, var(--color-text-muted));
+  --flex-color-text-muted: var(--color-text-muted);
+  --flex-color-accent: var(--color-accent, var(--color-primary));
+  --flex-color-accent-hover: var(--color-accent-hover, var(--color-primary));
+  --flex-color-accent-secondary: var(--color-accent-secondary, var(--color-secondary));
+  --flex-color-success: var(--color-success, var(--color-positive));
+  --flex-color-on-accent: var(--color-on-accent, var(--color-on-primary));
+  --flex-color-accent-soft: var(--color-accent-soft);
+  --flex-color-accent-soft-strong: var(--color-accent-soft-strong, var(--color-accent-soft));
+  --flex-color-accent-glow: var(--color-accent-glow, var(--color-accent-soft));
+  --flex-color-cyan-glow: var(--color-cyan-glow, var(--color-accent-soft));
+  --flex-color-code: var(--color-code);
+  --flex-color-shadow: var(--color-shadow);
+  --flex-radius-sm: var(--radius-sm);
+  --flex-radius-md: var(--radius-md);
+  --flex-radius-lg: var(--radius-lg);
+}
+
+html[data-style-theme="playful-pop"][data-theme="dark"] body.adaptive-card-widgets-container-queries-state-toggles-page .workspace-grid {
+  --adaptive-demo-bg: oklch(0.23 0.08 305);
+  --adaptive-demo-panel: oklch(0.30 0.09 305);
+  --adaptive-demo-panel-strong: oklch(0.36 0.10 315);
+  --adaptive-demo-text: oklch(0.98 0.02 330);
+  --adaptive-demo-muted: oklch(0.84 0.06 310);
+  --adaptive-demo-card: oklch(0.99 0.035 80);
+  --adaptive-demo-card-text: oklch(0.23 0.08 305);
+  --adaptive-demo-card-muted: oklch(0.48 0.08 305);
+  --adaptive-demo-card-border: oklch(0.74 0.15 330);
+  --adaptive-demo-card-accent: oklch(0.78 0.22 350);
+  --adaptive-demo-card-accent-contrast: oklch(0.99 0.02 80);
+  --adaptive-demo-card-dark: oklch(0.25 0.075 295);
+  --adaptive-demo-card-dark-text: oklch(0.99 0.025 330);
+  --adaptive-demo-card-dark-muted: oklch(0.83 0.07 315);
+  --adaptive-demo-card-dark-border: oklch(0.66 0.15 320);
+  --adaptive-demo-shadow: oklch(0.08 0.04 300 / .55);
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] body.adaptive-card-widgets-container-queries-state-toggles-page .workspace-grid {
+  --adaptive-demo-bg: oklch(0.98 0.045 82);
+  --adaptive-demo-panel: oklch(0.96 0.055 305);
+  --adaptive-demo-panel-strong: oklch(0.90 0.075 315);
+  --adaptive-demo-text: oklch(0.24 0.075 300);
+  --adaptive-demo-muted: oklch(0.48 0.075 300);
+  --adaptive-demo-card: oklch(0.995 0.015 70);
+  --adaptive-demo-card-text: oklch(0.23 0.075 300);
+  --adaptive-demo-card-muted: oklch(0.48 0.075 300);
+  --adaptive-demo-card-border: oklch(0.70 0.12 300);
+  --adaptive-demo-card-accent: oklch(0.60 0.24 350);
+  --adaptive-demo-card-accent-contrast: oklch(0.99 0.02 80);
+  --adaptive-demo-card-dark: oklch(0.26 0.08 300);
+  --adaptive-demo-card-dark-text: oklch(0.99 0.025 330);
+  --adaptive-demo-card-dark-muted: oklch(0.84 0.06 315);
+  --adaptive-demo-card-dark-border: oklch(0.66 0.14 320);
+  --adaptive-demo-shadow: oklch(0.42 0.12 300 / .20);
+}
+
+html[data-style-theme="playful-pop"][data-theme="light"] body.adaptive-card-widgets-container-queries-state-toggles-page pre {
+  color: oklch(0.24 0.08 300);
+}

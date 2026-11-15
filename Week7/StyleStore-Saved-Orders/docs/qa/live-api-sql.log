@@ -1,0 +1,67 @@
+TAP version 13
+# Subtest: StyleStore REAL hosted API acceptance (dedicated QA users; sql)
+    # Subtest: real authenticated sessions and empty per-owner/per-engine safety baseline
+    ok 1 - real authenticated sessions and empty per-owner/per-engine safety baseline
+      ---
+      duration_ms: 1891.879063
+      type: 'test'
+      ...
+    # Subtest: exact-origin unauthenticated preflight 204; near-match origin rejected 400
+    ok 2 - exact-origin unauthenticated preflight 204; near-match origin rejected 400
+      ---
+      duration_ms: 253.374841
+      type: 'test'
+      ...
+    # Subtest: sql: trusted catalog, auth 401, selectors/IDs/JSON/request-size 400
+    ok 3 - sql: trusted catalog, auth 401, selectors/IDs/JSON/request-size 400
+      ---
+      duration_ms: 2073.72243
+      type: 'test'
+      ...
+    # Subtest: sql: full order/item CRUD, trusted totals, ownership denial and nonmutation
+    ok 4 - sql: full order/item CRUD, trusted totals, ownership denial and nonmutation
+      ---
+      duration_ms: 3759.264598
+      type: 'test'
+      ...
+    # Subtest: sql: label/quantity boundaries, operators, duplicate/unknown products and forbidden owner/price fields
+    ok 5 - sql: label/quantity boundaries, operators, duplicate/unknown products and forbidden owner/price fields
+      ---
+      duration_ms: 5370.476324
+      type: 'test'
+      ...
+    # Subtest: SQL RPC independently revalidates owner/price/quantity inputs and denies anon execution
+    ok 6 - SQL RPC independently revalidates owner/price/quantity inputs and denies anon execution
+      ---
+      duration_ms: 2018.173022
+      type: 'test'
+      ...
+    # Subtest: sql: 12 concurrent creates (pool 4) admit exactly 10, deny 2, release quota on delete
+    ok 7 - sql: 12 concurrent creates (pool 4) admit exactly 10, deny 2, release quota on delete
+      ---
+      duration_ms: 4142.81004
+      type: 'test'
+      ...
+    # Subtest: finally: delete ONLY this run's returned order IDs; verify each deletion; report unknown outcomes
+    ok 8 - finally: delete ONLY this run's returned order IDs; verify each deletion; report unknown outcomes
+      ---
+      duration_ms: 0.59163
+      type: 'test'
+      ...
+    # Cleanup: attempted=0; verified=0; failed=0; tracked_remaining=0; unknown_create_outcomes=0.
+    1..8
+ok 1 - StyleStore REAL hosted API acceptance (dedicated QA users; sql)
+  ---
+  duration_ms: 19529.733279
+  type: 'test'
+  ...
+# PARTIAL acceptance: only sql; the other hosted engine and dataset-isolation gate are NOT verified by this run.
+1..1
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 19716.629254

@@ -126,6 +126,18 @@ SIGTERM and Ctrl-C trigger controlled failure and bounded restoration to two hea
 
 [QA status and evidence](docs/qa/report.md) identify actual results, failed attempts, local browser coverage, Lighthouse scope, and remaining gates. No historical Week 5 scores or test counts certify this application.
 
+## QA Test Summary
+
+The [November 6 release-verification record](docs/qa/report.md) documents these executed checks. This README update does not rerun containers, browser tests or production requests.
+
+- [x] **Runtime functionality:** real runtime reads, bounded sampling/history, acknowledgment, Clear, offline failure and recovery were exercised in Chromium and Firefox against the deployed API.
+- [x] **Constraints and exposure:** API/CORS permissions, error responses and private-path denial checks were recorded; responses expose allowlisted runtime metadata.
+- [x] **Terminal/container inspection:** 89 Node source tests, 23 Python infrastructure/safety tests and a real 2 → 3 → 2 replica lifecycle were recorded, with restoration verified.
+- [x] **Automated browser console/network inspection:** deployed real-API flows recorded no missing same-origin assets or uncaught page errors; responses were not fabricated.
+- [ ] **Manual DevTools inspection:** no separate completed manual Network/Console review is documented. Lighthouse CLI/CDP audits are not branded Chrome DevTools inspection.
+
+**Storage scope:** no database is implemented; SQL/NoSQL CRUD is not applicable. The broader diagram matrix remains partial and its raw failures/limitations remain in the linked report; this is not an all-green/all-theme certification.
+
 ## 📁 Project Files
 
 | Location | Responsibility |

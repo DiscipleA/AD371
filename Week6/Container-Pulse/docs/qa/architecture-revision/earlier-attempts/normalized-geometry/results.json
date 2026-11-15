@@ -1,0 +1,1169 @@
+{
+  "url": "http://127.0.0.1:8796/",
+  "captured_at": "2026-11-06T05:51:54.377495+00:00",
+  "scope": "Rendered node/label corners and connector endpoints mapped through element screen CTM and inverse SVG screen CTM; compare at 0.001 source-coordinate-unit tolerance. Overlaps primary viewport coverage; do not sum as new unique layouts.",
+  "cases": [
+    {
+      "name": "chromium/standard/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/standard/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [40, 17.643812179564975]"
+    },
+    {
+      "name": "chromium/standard/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [40, 17.624588012695312]"
+    },
+    {
+      "name": "chromium/standard/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [40, 17.60572624206543]"
+    },
+    {
+      "name": "chromium/standard/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [39.999996185302706, 17.600214004515692]"
+    },
+    {
+      "name": "chromium/standard/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [39.999999999999964, 18.960542678829366]"
+    },
+    {
+      "name": "chromium/standard/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [39.999999999999936, 19.693599700924093]"
+    },
+    {
+      "name": "chromium/standard/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/standard/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [40, 17.643812179564975]"
+    },
+    {
+      "name": "chromium/standard/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [40, 17.624588012695312]"
+    },
+    {
+      "name": "chromium/standard/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [40, 17.60572624206543]"
+    },
+    {
+      "name": "chromium/standard/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [39.999996185302706, 17.600214004515692]"
+    },
+    {
+      "name": "chromium/standard/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [39.999999999999964, 18.960542678829366]"
+    },
+    {
+      "name": "chromium/standard/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [39.999999999999936, 19.693599700924093]"
+    },
+    {
+      "name": "chromium/playful-pop/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/playful-pop/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 18.350875854491733] != [40, 17.60257720947311]"
+    },
+    {
+      "name": "chromium/playful-pop/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 18.350875854491733] != [40, 17.583276748657227]"
+    },
+    {
+      "name": "chromium/playful-pop/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 18.350875854491733] != [40, 17.564729690551758]"
+    },
+    {
+      "name": "chromium/playful-pop/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 18.350875854491733] != [40, 17.535722732543036]"
+    },
+    {
+      "name": "chromium/playful-pop/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 18.350875854491733] != [40.00000000000003, 18.833703994750977]"
+    },
+    {
+      "name": "chromium/playful-pop/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 18.350875854491733] != [40, 19.53845977783203]"
+    },
+    {
+      "name": "chromium/playful-pop/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/playful-pop/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 18.350875854491733] != [40, 17.60257720947311]"
+    },
+    {
+      "name": "chromium/playful-pop/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 18.350875854491733] != [40, 17.583276748657227]"
+    },
+    {
+      "name": "chromium/playful-pop/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 18.350875854491733] != [40, 17.564729690551758]"
+    },
+    {
+      "name": "chromium/playful-pop/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 18.350875854491733] != [40, 17.535722732543036]"
+    },
+    {
+      "name": "chromium/playful-pop/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 18.350875854491733] != [40.00000000000003, 18.833703994750977]"
+    },
+    {
+      "name": "chromium/playful-pop/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 18.350875854491733] != [40, 19.53845977783203]"
+    },
+    {
+      "name": "chromium/raggedy-granite/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/raggedy-granite/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000005, 17.75368881225631] != [39.99999999999999, 17.602577209472653]"
+    },
+    {
+      "name": "chromium/raggedy-granite/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000005, 17.75368881225631] != [40, 17.583276748658136]"
+    },
+    {
+      "name": "chromium/raggedy-granite/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000005, 17.75368881225631] != [39.99999999999998, 17.564729690551754]"
+    },
+    {
+      "name": "chromium/raggedy-granite/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000005, 17.75368881225631] != [39.999999999999964, 17.53572273254394]"
+    },
+    {
+      "name": "chromium/raggedy-granite/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000005, 17.75368881225631] != [39.99999999999999, 18.833703994747335]"
+    },
+    {
+      "name": "chromium/raggedy-granite/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000005, 17.75368881225631] != [39.999999999999964, 19.538459777839304]"
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000005, 17.75368881225631] != [39.99999999999999, 17.602577209472653]"
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000005, 17.75368881225631] != [40, 17.583276748658136]"
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000005, 17.75368881225631] != [39.99999999999998, 17.564729690551754]"
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000005, 17.75368881225631] != [39.999999999999964, 17.53572273254394]"
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000005, 17.75368881225631] != [39.99999999999999, 18.833703994747335]"
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000005, 17.75368881225631] != [39.999999999999964, 19.538459777839304]"
+    },
+    {
+      "name": "chromium/glossy-marble/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/glossy-marble/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.789247512817383] != [40, 17.64381217956543]"
+    },
+    {
+      "name": "chromium/glossy-marble/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.789247512817383] != [40, 17.624588012695767]"
+    },
+    {
+      "name": "chromium/glossy-marble/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.789247512817383] != [40, 17.60572624206543]"
+    },
+    {
+      "name": "chromium/glossy-marble/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.789247512817383] != [39.999996185302706, 17.6002140045166]"
+    },
+    {
+      "name": "chromium/glossy-marble/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.789247512817383] != [39.999999999999964, 18.960542678833004]"
+    },
+    {
+      "name": "chromium/glossy-marble/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.789247512817383] != [39.999999999999936, 19.69359970092773]"
+    },
+    {
+      "name": "chromium/glossy-marble/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/glossy-marble/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.789247512817383] != [40, 17.64381217956543]"
+    },
+    {
+      "name": "chromium/glossy-marble/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.789247512817383] != [40, 17.624588012695767]"
+    },
+    {
+      "name": "chromium/glossy-marble/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.789247512817383] != [40, 17.60572624206543]"
+    },
+    {
+      "name": "chromium/glossy-marble/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.789247512817383] != [39.999996185302706, 17.6002140045166]"
+    },
+    {
+      "name": "chromium/glossy-marble/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.789247512817383] != [39.999999999999964, 18.960542678833004]"
+    },
+    {
+      "name": "chromium/glossy-marble/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.789247512817383] != [39.999999999999936, 19.69359970092773]"
+    },
+    {
+      "name": "chromium/luminous-midnight/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/luminous-midnight/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 17.925571441650387] != [40, 17.643812179564975]"
+    },
+    {
+      "name": "chromium/luminous-midnight/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 17.925571441650387] != [40, 17.624588012695312]"
+    },
+    {
+      "name": "chromium/luminous-midnight/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 17.925571441650387] != [40, 17.60572624206543]"
+    },
+    {
+      "name": "chromium/luminous-midnight/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 17.925571441650387] != [39.999996185302706, 17.60021400451751]"
+    },
+    {
+      "name": "chromium/luminous-midnight/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 17.925571441650387] != [39.999999999999964, 18.960542678829366]"
+    },
+    {
+      "name": "chromium/luminous-midnight/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 17.925571441650387] != [39.999999999999936, 19.69359970092773]"
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 17.925571441650387] != [40, 17.643812179564975]"
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 17.925571441650387] != [40, 17.624588012695312]"
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 17.925571441650387] != [40, 17.60572624206543]"
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 17.925571441650387] != [39.999996185302706, 17.60021400451751]"
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 17.925571441650387] != [39.999999999999964, 18.960542678829366]"
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 17.925571441650387] != [39.999999999999936, 19.69359970092773]"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.999996185302614, 18.689655303955075] != [40, 17.64381217956543]"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.999996185302614, 18.689655303955075] != [40, 17.624588012695767]"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.999996185302614, 18.689655303955075] != [40, 17.60572624206543]"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.999996185302614, 18.689655303955075] != [39.999996185302706, 17.60021400451751]"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.999996185302614, 18.689655303955075] != [39.999999999999964, 18.960542678833004]"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.999996185302614, 18.689655303955075] != [39.999999999999936, 19.69359970092773]"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.999996185302614, 18.689655303955075] != [40, 17.64381217956543]"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.999996185302614, 18.689655303955075] != [40, 17.624588012695767]"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.999996185302614, 18.689655303955075] != [40, 17.60572624206543]"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.999996185302614, 18.689655303955075] != [39.999996185302706, 17.60021400451751]"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.999996185302614, 18.689655303955075] != [39.999999999999964, 18.960542678833004]"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.999996185302614, 18.689655303955075] != [39.999999999999936, 19.69359970092773]"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [40, 17.643812179565884]"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [40, 17.624588012695312]"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [40, 17.605726242065884]"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [39.999996185302706, 17.6002140045166]"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [39.999999999999964, 18.960542678833004]"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [39.999999999999936, 19.69359970092773]"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [40, 17.643812179565884]"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [40, 17.624588012695312]"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [40, 17.605726242065884]"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [39.999996185302706, 17.6002140045166]"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [39.999999999999964, 18.960542678833004]"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999999, 18.388782501220245] != [39.999999999999936, 19.69359970092773]"
+    },
+    {
+      "name": "firefox/standard/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/standard/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.988189697265625] != [40.000000000000014, 16.190631866455078]"
+    },
+    {
+      "name": "firefox/standard/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.988189697265625] != [40, 16.17005729675293]"
+    },
+    {
+      "name": "firefox/standard/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.988189697265625] != [40, 16.1485977172847]"
+    },
+    {
+      "name": "firefox/standard/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.988189697265625] != [40, 17.6011142730722]"
+    },
+    {
+      "name": "firefox/standard/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.988189697265625] != [40.00000000000003, 16.000000000003638]"
+    },
+    {
+      "name": "firefox/standard/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.988189697265625] != [40, 16]"
+    },
+    {
+      "name": "firefox/standard/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/standard/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.988189697265625] != [40.000000000000014, 16.190631866455078]"
+    },
+    {
+      "name": "firefox/standard/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.988189697265625] != [40, 16.17005729675293]"
+    },
+    {
+      "name": "firefox/standard/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.988189697265625] != [40, 16.1485977172847]"
+    },
+    {
+      "name": "firefox/standard/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.988189697265625] != [40, 17.6011142730722]"
+    },
+    {
+      "name": "firefox/standard/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.988189697265625] != [40.00000000000003, 16.000000000003638]"
+    },
+    {
+      "name": "firefox/standard/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.988189697265625] != [40, 16]"
+    },
+    {
+      "name": "firefox/playful-pop/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/playful-pop/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.947368621825717] != [39.999999999999986, 16.146350860595703]"
+    },
+    {
+      "name": "firefox/playful-pop/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.947368621825717] != [40, 17.58393287658737]"
+    },
+    {
+      "name": "firefox/playful-pop/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.947368621825717] != [40, 17.564115524292447]"
+    },
+    {
+      "name": "firefox/playful-pop/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.947368621825717] != [40, 17.536842346191406]"
+    },
+    {
+      "name": "firefox/playful-pop/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.947368621825717] != [40, 16.000000000003638]"
+    },
+    {
+      "name": "firefox/playful-pop/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.947368621825717] != [40, 16]"
+    },
+    {
+      "name": "firefox/playful-pop/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/playful-pop/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.947368621825717] != [39.999999999999986, 16.146350860595703]"
+    },
+    {
+      "name": "firefox/playful-pop/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.947368621825717] != [40, 17.58393287658737]"
+    },
+    {
+      "name": "firefox/playful-pop/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.947368621825717] != [40, 17.564115524292447]"
+    },
+    {
+      "name": "firefox/playful-pop/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.947368621825717] != [40, 17.536842346191406]"
+    },
+    {
+      "name": "firefox/playful-pop/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.947368621825717] != [40, 16.000000000003638]"
+    },
+    {
+      "name": "firefox/playful-pop/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.947368621825717] != [40, 16]"
+    },
+    {
+      "name": "firefox/raggedy-granite/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/raggedy-granite/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999994, 16.48857688903763] != [40, 16.146350860595703]"
+    },
+    {
+      "name": "firefox/raggedy-granite/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999994, 16.48857688903763] != [40, 16.125642776489258]"
+    },
+    {
+      "name": "firefox/raggedy-granite/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999994, 16.48857688903763] != [40, 16.104410171509244]"
+    },
+    {
+      "name": "firefox/raggedy-granite/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999994, 16.48857688903763] != [40, 15.263157844542548]"
+    },
+    {
+      "name": "firefox/raggedy-granite/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999994, 16.48857688903763] != [39.99999999999997, 16]"
+    },
+    {
+      "name": "firefox/raggedy-granite/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999994, 16.48857688903763] != [40.00000000000003, 16]"
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999994, 16.48857688903763] != [40, 16.146350860595703]"
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999994, 16.48857688903763] != [40, 16.125642776489258]"
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999994, 16.48857688903763] != [40, 16.104410171509244]"
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999994, 16.48857688903763] != [40, 15.263157844542548]"
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999994, 16.48857688903763] != [39.99999999999997, 16]"
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [39.99999999999994, 16.48857688903763] != [40.00000000000003, 16]"
+    },
+    {
+      "name": "firefox/glossy-marble/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/glossy-marble/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000006, 16.52631568908737] != [40.000000000000014, 16.190631866455533]"
+    },
+    {
+      "name": "firefox/glossy-marble/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000006, 16.52631568908737] != [40, 16.17005729675293]"
+    },
+    {
+      "name": "firefox/glossy-marble/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000006, 16.52631568908737] != [40, 16.148597717285156]"
+    },
+    {
+      "name": "firefox/glossy-marble/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000006, 16.52631568908737] != [40, 17.60111427307129]"
+    },
+    {
+      "name": "firefox/glossy-marble/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000006, 16.52631568908737] != [40.00000000000003, 16.000000000003638]"
+    },
+    {
+      "name": "firefox/glossy-marble/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000006, 16.52631568908737] != [40, 15.999999999992724]"
+    },
+    {
+      "name": "firefox/glossy-marble/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/glossy-marble/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000006, 16.52631568908737] != [40.000000000000014, 16.190631866455533]"
+    },
+    {
+      "name": "firefox/glossy-marble/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000006, 16.52631568908737] != [40, 16.17005729675293]"
+    },
+    {
+      "name": "firefox/glossy-marble/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000006, 16.52631568908737] != [40, 16.148597717285156]"
+    },
+    {
+      "name": "firefox/glossy-marble/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000006, 16.52631568908737] != [40, 17.60111427307129]"
+    },
+    {
+      "name": "firefox/glossy-marble/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000006, 16.52631568908737] != [40.00000000000003, 16.000000000003638]"
+    },
+    {
+      "name": "firefox/glossy-marble/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.00000000000006, 16.52631568908737] != [40, 15.999999999992724]"
+    },
+    {
+      "name": "firefox/luminous-midnight/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/luminous-midnight/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.58722686767578] != [40.000000000000014, 16.190631866455078]"
+    },
+    {
+      "name": "firefox/luminous-midnight/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.58722686767578] != [40, 16.17005729675293]"
+    },
+    {
+      "name": "firefox/luminous-midnight/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.58722686767578] != [40, 16.1485977172847]"
+    },
+    {
+      "name": "firefox/luminous-midnight/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.58722686767578] != [40, 17.60111427307129]"
+    },
+    {
+      "name": "firefox/luminous-midnight/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.58722686767578] != [40.00000000000003, 16.000000000003638]"
+    },
+    {
+      "name": "firefox/luminous-midnight/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.58722686767578] != [40, 15.999999999992724]"
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.58722686767578] != [40.000000000000014, 16.190631866455078]"
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.58722686767578] != [40, 16.17005729675293]"
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.58722686767578] != [40, 16.1485977172847]"
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.58722686767578] != [40, 17.60111427307129]"
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.58722686767578] != [40.00000000000003, 16.000000000003638]"
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 16.58722686767578] != [40, 15.999999999992724]"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.310344696044922] != [40.000000000000014, 17.644588470458984]"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.310344696044922] != [40, 17.62538719177246]"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.310344696044922] != [40, 17.60535621643021]"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.310344696044922] != [40, 17.6011142730722]"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.310344696044922] != [40.00000000000003, 16.000000000003638]"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.310344696044922] != [40, 16]"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.310344696044922] != [40.000000000000014, 17.644588470458984]"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.310344696044922] != [40, 17.62538719177246]"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.310344696044922] != [40, 17.60535621643021]"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.310344696044922] != [40, 17.6011142730722]"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.310344696044922] != [40.00000000000003, 16.000000000003638]"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40, 17.310344696044922] != [40, 16]"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.98818969726608] != [40.000000000000014, 16.190631866455533]"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.98818969726608] != [40, 16.17005729675293]"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.98818969726608] != [40, 16.1485977172847]"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.98818969726608] != [40, 17.60111427307129]"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.98818969726608] != [40.00000000000003, 16]"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.98818969726608] != [40, 16]"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/1920",
+      "status": "passed",
+      "elements": 102
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/1151",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.98818969726608] != [40.000000000000014, 16.190631866455533]"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/1150",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.98818969726608] != [40, 16.17005729675293]"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/1149",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.98818969726608] != [40, 16.1485977172847]"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/768",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.98818969726608] != [40, 17.60111427307129]"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/390",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.98818969726608] != [40.00000000000003, 16]"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/320",
+      "status": "failed",
+      "detail": "Normalized geometry changed: 01 \u00b7 BUILD ONCE \u2014 STAGES & ARTIFACTS: [40.000000000000114, 16.98818969726608] != [40, 16]"
+    }
+  ],
+  "captures": [
+    {
+      "path": "standard-dark-1920-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 388,
+        "y": 2483.6875,
+        "w": 1144,
+        "h": 1220.171875
+      },
+      "full_document": "standard-dark-1920-document.png"
+    },
+    {
+      "path": "standard-dark-1920-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 388,
+        "y": 3731.859375,
+        "w": 1144,
+        "h": 1007.671875
+      },
+      "full_document": "standard-dark-1920-document.png"
+    },
+    {
+      "path": "standard-dark-1920-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 388,
+        "y": 4767.53125,
+        "w": 1144,
+        "h": 916.640625
+      },
+      "full_document": "standard-dark-1920-document.png"
+    },
+    {
+      "path": "standard-dark-390-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 16.96875,
+        "y": 3971.015625,
+        "w": 356.0625,
+        "h": 726.15625
+      },
+      "full_document": "standard-dark-390-document.png"
+    },
+    {
+      "path": "standard-dark-390-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 16.96875,
+        "y": 4713.953125,
+        "w": 356.0625,
+        "h": 1177.046875
+      },
+      "full_document": "standard-dark-390-document.png"
+    },
+    {
+      "path": "standard-dark-390-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 16.96875,
+        "y": 5907.78125,
+        "w": 356.0625,
+        "h": 1833.96875
+      },
+      "full_document": "standard-dark-390-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-1920-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 388,
+        "y": 2520.65625,
+        "w": 1144,
+        "h": 1257.140625
+      },
+      "full_document": "baroque-plexiglas-light-1920-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-1920-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 388,
+        "y": 3805.796875,
+        "w": 1144,
+        "h": 1044.640625
+      },
+      "full_document": "baroque-plexiglas-light-1920-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-1920-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 388,
+        "y": 4878.4375,
+        "w": 1144,
+        "h": 939.90625
+      },
+      "full_document": "baroque-plexiglas-light-1920-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-390-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 16.96875,
+        "y": 3986.09375,
+        "w": 356.0625,
+        "h": 756.984375
+      },
+      "full_document": "baroque-plexiglas-light-390-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-390-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 16.96875,
+        "y": 4759.859375,
+        "w": 356.0625,
+        "h": 1183.25
+      },
+      "full_document": "baroque-plexiglas-light-390-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-390-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 16.96875,
+        "y": 5959.890625,
+        "w": 356.0625,
+        "h": 1837.09375
+      },
+      "full_document": "baroque-plexiglas-light-390-document.png"
+    },
+    {
+      "path": "standard-dark-1920-full-spec-open-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 388,
+        "y": 2483.6875,
+        "w": 1144,
+        "h": 1220.171875
+      },
+      "full_document": "standard-dark-1920-full-spec-open-document.png"
+    },
+    {
+      "path": "standard-dark-1920-full-spec-open-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 388,
+        "y": 3731.859375,
+        "w": 1144,
+        "h": 1007.671875
+      },
+      "full_document": "standard-dark-1920-full-spec-open-document.png"
+    },
+    {
+      "path": "standard-dark-1920-full-spec-open-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 388,
+        "y": 4767.53125,
+        "w": 1144,
+        "h": 902.9375
+      },
+      "full_document": "standard-dark-1920-full-spec-open-document.png"
+    }
+  ],
+  "browsers": {
+    "chromium": "156.0.8078.4",
+    "firefox": "157.0"
+  },
+  "totals": {
+    "passed": 28,
+    "failed": 168
+  },
+  "implementation_spec_scrolling": {
+    "height": 480,
+    "maxHeight": "480px",
+    "scrollHeight": 1332,
+    "clientHeight": 480,
+    "overflow": "auto"
+  }
+}

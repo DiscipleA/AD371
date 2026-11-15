@@ -1,0 +1,1016 @@
+{
+  "url": "http://127.0.0.1:8796/",
+  "scope": "Additional populated dashboard layout checks, not added to original suite totals",
+  "checks": [
+    {
+      "engine": "chromium",
+      "theme": "standard",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "standard",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "standard",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "standard",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "standard",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "standard",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "standard",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "standard",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "playful-pop",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "playful-pop",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "playful-pop",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "playful-pop",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "playful-pop",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "playful-pop",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "playful-pop",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "playful-pop",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "raggedy-granite",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "raggedy-granite",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "raggedy-granite",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "raggedy-granite",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "raggedy-granite",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "raggedy-granite",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "raggedy-granite",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "raggedy-granite",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "glossy-marble",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "glossy-marble",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "glossy-marble",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "glossy-marble",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "glossy-marble",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "glossy-marble",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "glossy-marble",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "glossy-marble",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "luminous-midnight",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "luminous-midnight",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "luminous-midnight",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "luminous-midnight",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "luminous-midnight",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "luminous-midnight",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "luminous-midnight",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "luminous-midnight",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "gothic-stickerboard",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "gothic-stickerboard",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "gothic-stickerboard",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "gothic-stickerboard",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "gothic-stickerboard",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "gothic-stickerboard",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "gothic-stickerboard",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "gothic-stickerboard",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "baroque-plexiglas",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "baroque-plexiglas",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "baroque-plexiglas",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "baroque-plexiglas",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "baroque-plexiglas",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "baroque-plexiglas",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "baroque-plexiglas",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "chromium",
+      "theme": "baroque-plexiglas",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "standard",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "standard",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "standard",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "standard",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "standard",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "standard",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "standard",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "standard",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "playful-pop",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "playful-pop",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "playful-pop",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "playful-pop",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "playful-pop",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "playful-pop",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "playful-pop",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "playful-pop",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "raggedy-granite",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "raggedy-granite",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "raggedy-granite",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "raggedy-granite",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "raggedy-granite",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "raggedy-granite",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "raggedy-granite",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "raggedy-granite",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "glossy-marble",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "glossy-marble",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "glossy-marble",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "glossy-marble",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "glossy-marble",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "glossy-marble",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "glossy-marble",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "glossy-marble",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "luminous-midnight",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "luminous-midnight",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "luminous-midnight",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "luminous-midnight",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "luminous-midnight",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "luminous-midnight",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "luminous-midnight",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "luminous-midnight",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "gothic-stickerboard",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "gothic-stickerboard",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "gothic-stickerboard",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "gothic-stickerboard",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "gothic-stickerboard",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "gothic-stickerboard",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "gothic-stickerboard",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "gothic-stickerboard",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "baroque-plexiglas",
+      "mode": "light",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "baroque-plexiglas",
+      "mode": "light",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "baroque-plexiglas",
+      "mode": "light",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "baroque-plexiglas",
+      "mode": "light",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "baroque-plexiglas",
+      "mode": "dark",
+      "width": 1920,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "baroque-plexiglas",
+      "mode": "dark",
+      "width": 768,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "baroque-plexiglas",
+      "mode": "dark",
+      "width": 390,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    },
+    {
+      "engine": "firefox",
+      "theme": "baroque-plexiglas",
+      "mode": "dark",
+      "width": 320,
+      "overflow": 0,
+      "cards": 6,
+      "checked": 1
+    }
+  ],
+  "passed": 112,
+  "failed": 0
+}

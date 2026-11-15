@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:8796/",
+  "captured_at": "2026-11-06T01:35:08.677718+00:00",
+  "browsers": {
+    "chromium": "156.0.8078.4"
+  },
+  "cases": [
+    {
+      "engine": "chromium",
+      "name": "compact paired desktop cards with no decorative arrow",
+      "status": "failed",
+      "detail": "Desktop workspace is unnecessarily tall: {'height': 1299.34375, 'feedHeight': 1011.53125, 'runtimeHeight': 671.609375, 'graphTop': 6377.59375, 'runtimeTop': 6377.59375, 'distributionTop': 7070.796875, 'feedTop': 6377.59375, 'hasArrow': True}",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 51, in compact\n    require(data['height'] <= 1000, f'Desktop workspace is unnecessarily tall: {data}')\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Desktop workspace is unnecessarily tall: {'height': 1299.34375, 'feedHeight': 1011.53125, 'runtimeHeight': 671.609375, 'graphTop': 6377.59375, 'runtimeTop': 6377.59375, 'distributionTop': 7070.796875, 'feedTop': 6377.59375, 'hasArrow': True}\n"
+    }
+  ],
+  "totals": {
+    "passed": 0,
+    "failed": 1
+  }
+}

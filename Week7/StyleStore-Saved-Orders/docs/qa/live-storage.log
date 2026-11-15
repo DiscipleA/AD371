@@ -1,0 +1,4 @@
+PASS REAL SQL: FK rejection/cascade, indexes/RLS/grants/catalog, direct RPC auth/CRUD/boundaries/quota; post-ROLLBACK baseline unchanged.
+PASS CONTROLLED fault on REAL SQL: second-child trigger rejection returned 503; parent and first child rolled back; fault DDL rolled back.
+PASS REAL Mongo: approved strict validators/indexes, persisted owner-filtered CRUD/aggregation, monitored single-find aggregate read, concurrent atomic push/set/pull, unique rejection, transactions and 12-create quota (10 commits/2 conflicts).
+PASS CONTROLLED fault on REAL Mongo: cap increment plus validator-rejected insert rolled back together; scoped adapter cleanup verified empty QA orders and zero counters (zero-count cap documents retained).

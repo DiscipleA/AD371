@@ -145,6 +145,16 @@ python3 -B tests/showcase_test.py
 
 These source/unit tests are separate from real infrastructure and browser execution. The [QA report](docs/qa/report.md) records local acceptance and genuine findings; the [assignment plan](docs/assignment-plan.md) maps requirements to evidence. The [official-source record](docs/source-verification.json) documents checked reference titles and destinations.
 
+## QA Test Summary
+
+The existing completed checklist below documents real local network acceptance. These are recorded results, not a fresh run or a guarantee of current service availability.
+
+- [x] **Terminal and constraint inspection:** 62 Node checks and 14 Compose/Nginx checks passed in the recorded acceptance run ([source output](docs/qa/source-tests-acceptance.log), [infrastructure output](docs/qa/infra-acceptance.log)).
+- [x] **Automated browser console/network inspection:** real quote/health traffic, response contracts and final healthy-flow errors/assets were inspected in Chromium and Firefox ([browser results](docs/qa/browser-stable/browser-results.json)).
+- [ ] **Manual DevTools inspection:** no separate completed manual review is documented; automated network capture and CLI audits are identified as such.
+
+**Storage scope:** this is a stateless quote/network lab, not a database application. SQL/NoSQL CRUD is not applicable. The [QA report](docs/qa/report.md) retains the Linux host-isolation limitation and other scope boundaries.
+
 ### Completed QA checklist
 
 The following results are from the **October 29, 2026 UTC local acceptance run**, not a claim of continuous uptime or a new fault test. The original [container acceptance log](docs/qa/container-run-acceptance.log) retains the actual JSON observations.

@@ -1,0 +1,59 @@
+{
+  "observations": [
+    {
+      "status": 200,
+      "service": "container-pulse",
+      "hostname": "60178770b70e",
+      "processUptimeSeconds": 852.909146529,
+      "nodeVersion": "v24.22.2",
+      "appVersion": "1.0.0"
+    },
+    {
+      "status": 200,
+      "service": "container-pulse",
+      "hostname": "d03392d8bc90",
+      "processUptimeSeconds": 853.578955486,
+      "nodeVersion": "v24.22.2",
+      "appVersion": "1.0.0"
+    },
+    {
+      "status": 200,
+      "service": "container-pulse",
+      "hostname": "60178770b70e",
+      "processUptimeSeconds": 852.913606399,
+      "nodeVersion": "v24.22.2",
+      "appVersion": "1.0.0"
+    },
+    {
+      "status": 200,
+      "service": "container-pulse",
+      "hostname": "d03392d8bc90",
+      "processUptimeSeconds": 853.583335513,
+      "nodeVersion": "v24.22.2",
+      "appVersion": "1.0.0"
+    },
+    {
+      "status": 200,
+      "service": "container-pulse",
+      "hostname": "60178770b70e",
+      "processUptimeSeconds": 852.918038272,
+      "nodeVersion": "v24.22.2",
+      "appVersion": "1.0.0"
+    },
+    {
+      "status": 200,
+      "service": "container-pulse",
+      "hostname": "d03392d8bc90",
+      "processUptimeSeconds": 853.586937111,
+      "nodeVersion": "v24.22.2",
+      "appVersion": "1.0.0"
+    }
+  ],
+  "health": {
+    "status": 200,
+    "body": {
+      "status": "ok",
+      "service": "container-pulse"
+    }
+  }
+}

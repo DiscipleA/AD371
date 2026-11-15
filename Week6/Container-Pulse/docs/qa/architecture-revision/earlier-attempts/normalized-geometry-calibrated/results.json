@@ -1,0 +1,1267 @@
+{
+  "url": "http://127.0.0.1:8796/",
+  "captured_at": "2026-11-06T06:00:25.570248+00:00",
+  "scope": "Rendered node/label corners and connector endpoints mapped through element screen CTM and inverse SVG screen CTM; compare shapes/endpoints and text origins at 0.001 source-coordinate-unit tolerance; element matrices/font styles must remain constant. Glyph bounding corners allow at most2CSS pixels: the two independently hinted renderer bounds can each round by a pixel. This tolerance does not apply to node/connector geometry or text positions. Overlaps primary viewport coverage; do not sum as new unique layouts.",
+  "cases": [
+    {
+      "name": "chromium/standard/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/standard/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.6455436896469439
+    },
+    {
+      "name": "chromium/standard/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.881985963401226
+    },
+    {
+      "name": "chromium/standard/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.679239647267209
+    },
+    {
+      "name": "chromium/standard/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.7222240884425778
+    },
+    {
+      "name": "chromium/standard/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.8078726052227667
+    },
+    {
+      "name": "chromium/standard/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.5683187258445517
+    },
+    {
+      "name": "chromium/standard/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/standard/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.6455436896469439
+    },
+    {
+      "name": "chromium/standard/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.881985963401226
+    },
+    {
+      "name": "chromium/standard/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.679239647267209
+    },
+    {
+      "name": "chromium/standard/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.7222240884425778
+    },
+    {
+      "name": "chromium/standard/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.8078726052227667
+    },
+    {
+      "name": "chromium/standard/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.5683187258445517
+    },
+    {
+      "name": "chromium/playful-pop/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/playful-pop/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.7752302200107252
+    },
+    {
+      "name": "chromium/playful-pop/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.6657382583214064
+    },
+    {
+      "name": "chromium/playful-pop/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.6963799783738993
+    },
+    {
+      "name": "chromium/playful-pop/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.5880899863728022
+    },
+    {
+      "name": "chromium/playful-pop/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.823794673762079
+    },
+    {
+      "name": "chromium/playful-pop/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.5717031478881837
+    },
+    {
+      "name": "chromium/playful-pop/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/playful-pop/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.7752302200107252
+    },
+    {
+      "name": "chromium/playful-pop/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.6657382583214064
+    },
+    {
+      "name": "chromium/playful-pop/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.6963799783738993
+    },
+    {
+      "name": "chromium/playful-pop/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.5880899863728022
+    },
+    {
+      "name": "chromium/playful-pop/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.823794673762079
+    },
+    {
+      "name": "chromium/playful-pop/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.5717031478881837
+    },
+    {
+      "name": "chromium/raggedy-granite/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/raggedy-granite/light/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/raggedy-granite/light/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/raggedy-granite/light/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/raggedy-granite/light/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/raggedy-granite/light/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/raggedy-granite/light/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/raggedy-granite/dark/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/glossy-marble/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/glossy-marble/light/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/glossy-marble/light/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/glossy-marble/light/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/glossy-marble/light/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/glossy-marble/light/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/glossy-marble/light/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/glossy-marble/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/glossy-marble/dark/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/glossy-marble/dark/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/glossy-marble/dark/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/glossy-marble/dark/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/glossy-marble/dark/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/glossy-marble/dark/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/luminous-midnight/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/luminous-midnight/light/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/luminous-midnight/light/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/luminous-midnight/light/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/luminous-midnight/light/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/luminous-midnight/light/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/luminous-midnight/light/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/luminous-midnight/dark/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/light/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/gothic-stickerboard/dark/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.6455436896469439
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.881985963401226
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.679239647267209
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.7222240884425778
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.8078726052227667
+    },
+    {
+      "name": "chromium/baroque-plexiglas/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.5683187258445517
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.6455436896469439
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.881985963401226
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.679239647267209
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.7222240884425778
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.8078726052227667
+    },
+    {
+      "name": "chromium/baroque-plexiglas/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.5683187258445517
+    },
+    {
+      "name": "firefox/standard/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/standard/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.993119852052665
+    },
+    {
+      "name": "firefox/standard/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.0625995676801594
+    },
+    {
+      "name": "firefox/standard/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.1106288526207209
+    },
+    {
+      "name": "firefox/standard/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.3417112439728451
+    },
+    {
+      "name": "firefox/standard/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.9521295099716315
+    },
+    {
+      "name": "firefox/standard/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.7427152116829161
+    },
+    {
+      "name": "firefox/standard/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/standard/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.993119852052665
+    },
+    {
+      "name": "firefox/standard/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.0625995676801594
+    },
+    {
+      "name": "firefox/standard/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.1106288526207209
+    },
+    {
+      "name": "firefox/standard/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.3417112439728451
+    },
+    {
+      "name": "firefox/standard/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.9521295099716315
+    },
+    {
+      "name": "firefox/standard/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.7427152116829161
+    },
+    {
+      "name": "firefox/playful-pop/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/playful-pop/light/1151",
+      "status": "failed",
+      "detail": "Glyph bounds change exceeds paired raster-rounding tolerance: Solid \u2192 build / observed data     Dashed \u2192 Compose / lifecycle     \u2194 HTTP     Enclosure = stage or deployment boundary"
+    },
+    {
+      "name": "firefox/playful-pop/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.4075051175859699
+    },
+    {
+      "name": "firefox/playful-pop/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.2518490001166356
+    },
+    {
+      "name": "firefox/playful-pop/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.6037107075026142
+    },
+    {
+      "name": "firefox/playful-pop/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.9626288199051487
+    },
+    {
+      "name": "firefox/playful-pop/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.7495292388648522
+    },
+    {
+      "name": "firefox/playful-pop/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/playful-pop/dark/1151",
+      "status": "failed",
+      "detail": "Glyph bounds change exceeds paired raster-rounding tolerance: Solid \u2192 build / observed data     Dashed \u2192 Compose / lifecycle     \u2194 HTTP     Enclosure = stage or deployment boundary"
+    },
+    {
+      "name": "firefox/playful-pop/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.4075051175859699
+    },
+    {
+      "name": "firefox/playful-pop/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.2518490001166356
+    },
+    {
+      "name": "firefox/playful-pop/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.6037107075026142
+    },
+    {
+      "name": "firefox/playful-pop/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.9626288199051487
+    },
+    {
+      "name": "firefox/playful-pop/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.7495292388648522
+    },
+    {
+      "name": "firefox/raggedy-granite/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/raggedy-granite/light/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/raggedy-granite/light/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/raggedy-granite/light/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/raggedy-granite/light/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/raggedy-granite/light/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/raggedy-granite/light/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/raggedy-granite/dark/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/glossy-marble/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/glossy-marble/light/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/glossy-marble/light/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/glossy-marble/light/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/glossy-marble/light/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/glossy-marble/light/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/glossy-marble/light/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/glossy-marble/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/glossy-marble/dark/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/glossy-marble/dark/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/glossy-marble/dark/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/glossy-marble/dark/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/glossy-marble/dark/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/glossy-marble/dark/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/luminous-midnight/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/luminous-midnight/light/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/luminous-midnight/light/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/luminous-midnight/light/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/luminous-midnight/light/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/luminous-midnight/light/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/luminous-midnight/light/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/luminous-midnight/dark/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/light/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/1151",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/1150",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/1149",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/768",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/390",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/gothic-stickerboard/dark/320",
+      "status": "failed",
+      "detail": "Responsive font properties changed"
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.993119852052665
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.0625995676801594
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.1106288526207209
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.3417112439728451
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.9521295099716315
+    },
+    {
+      "name": "firefox/baroque-plexiglas/light/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.7427152116829161
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/1920",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.0
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/1151",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.993119852052665
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/1150",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.0625995676801594
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/1149",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.1106288526207209
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/768",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 1.3417112439728451
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/390",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.9521295099716315
+    },
+    {
+      "name": "firefox/baroque-plexiglas/dark/320",
+      "status": "passed",
+      "elements": 102,
+      "max_glyph_bound_difference_css_px": 0.7427152116829161
+    }
+  ],
+  "captures": [
+    {
+      "path": "standard-dark-1920-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 388,
+        "y": 2483.6875,
+        "w": 1144,
+        "h": 1220.171875
+      },
+      "full_document": "standard-dark-1920-document.png"
+    },
+    {
+      "path": "standard-dark-1920-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 388,
+        "y": 3731.859375,
+        "w": 1144,
+        "h": 1007.671875
+      },
+      "full_document": "standard-dark-1920-document.png"
+    },
+    {
+      "path": "standard-dark-1920-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 388,
+        "y": 4767.53125,
+        "w": 1144,
+        "h": 916.640625
+      },
+      "full_document": "standard-dark-1920-document.png"
+    },
+    {
+      "path": "standard-dark-390-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 16.96875,
+        "y": 3971.015625,
+        "w": 356.0625,
+        "h": 726.15625
+      },
+      "full_document": "standard-dark-390-document.png"
+    },
+    {
+      "path": "standard-dark-390-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 16.96875,
+        "y": 4713.953125,
+        "w": 356.0625,
+        "h": 1177.046875
+      },
+      "full_document": "standard-dark-390-document.png"
+    },
+    {
+      "path": "standard-dark-390-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 16.96875,
+        "y": 5907.78125,
+        "w": 356.0625,
+        "h": 1833.96875
+      },
+      "full_document": "standard-dark-390-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-1920-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 388,
+        "y": 2520.65625,
+        "w": 1144,
+        "h": 1257.140625
+      },
+      "full_document": "baroque-plexiglas-light-1920-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-1920-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 388,
+        "y": 3805.796875,
+        "w": 1144,
+        "h": 1044.640625
+      },
+      "full_document": "baroque-plexiglas-light-1920-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-1920-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 388,
+        "y": 4878.4375,
+        "w": 1144,
+        "h": 939.90625
+      },
+      "full_document": "baroque-plexiglas-light-1920-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-390-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 16.96875,
+        "y": 3986.09375,
+        "w": 356.0625,
+        "h": 756.984375
+      },
+      "full_document": "baroque-plexiglas-light-390-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-390-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 16.96875,
+        "y": 4759.859375,
+        "w": 356.0625,
+        "h": 1183.25
+      },
+      "full_document": "baroque-plexiglas-light-390-document.png"
+    },
+    {
+      "path": "baroque-plexiglas-light-390-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 16.96875,
+        "y": 5959.890625,
+        "w": 356.0625,
+        "h": 1837.09375
+      },
+      "full_document": "baroque-plexiglas-light-390-document.png"
+    },
+    {
+      "path": "standard-dark-1920-full-spec-open-architecture.png",
+      "document_box": {
+        "name": "architecture",
+        "x": 388,
+        "y": 2483.6875,
+        "w": 1144,
+        "h": 1220.171875
+      },
+      "full_document": "standard-dark-1920-full-spec-open-document.png"
+    },
+    {
+      "path": "standard-dark-1920-full-spec-open-prompt.png",
+      "document_box": {
+        "name": "prompt",
+        "x": 388,
+        "y": 3731.859375,
+        "w": 1144,
+        "h": 1007.671875
+      },
+      "full_document": "standard-dark-1920-full-spec-open-document.png"
+    },
+    {
+      "path": "standard-dark-1920-full-spec-open-audit.png",
+      "document_box": {
+        "name": "audit",
+        "x": 388,
+        "y": 4767.53125,
+        "w": 1144,
+        "h": 902.9375
+      },
+      "full_document": "standard-dark-1920-full-spec-open-document.png"
+    }
+  ],
+  "browsers": {
+    "chromium": "156.0.8078.4",
+    "firefox": "157.0"
+  },
+  "totals": {
+    "passed": 98,
+    "failed": 98
+  },
+  "implementation_spec_scrolling": {
+    "height": 480,
+    "maxHeight": "480px",
+    "scrollHeight": 1332,
+    "clientHeight": 480,
+    "overflow": "auto"
+  }
+}

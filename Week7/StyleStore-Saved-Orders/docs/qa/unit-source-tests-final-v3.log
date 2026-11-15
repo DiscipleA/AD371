@@ -1,0 +1,496 @@
+TAP version 13
+# Subtest: catalog requires verified auth but never touches either adapter
+ok 1 - catalog requires verified auth but never touches either adapter
+  ---
+  duration_ms: 193.718755
+  type: 'test'
+  ...
+# Subtest: missing, invalid or decode-only tokens cannot access storage
+ok 2 - missing, invalid or decode-only tokens cannot access storage
+  ---
+  duration_ms: 12.556367
+  type: 'test'
+  ...
+# Subtest: authentication failures are sanitized and verification precedes DB access
+ok 3 - authentication failures are sanitized and verification precedes DB access
+  ---
+  duration_ms: 5.892564
+  type: 'test'
+  ...
+# Subtest: preflight is auth-free and CORS only reflects explicit origins
+ok 4 - preflight is auth-free and CORS only reflects explicit origins
+  ---
+  duration_ms: 1.45759
+  type: 'test'
+  ...
+# Subtest: routes all CRUD operations to selected adapter with verified owner and original bearer
+ok 5 - routes all CRUD operations to selected adapter with verified owner and original bearer
+  ---
+  duration_ms: 28.633585
+  type: 'test'
+  ...
+# Subtest: invalid engine, repeated selector, invalid UUID and unknown routes never touch storage
+ok 6 - invalid engine, repeated selector, invalid UUID and unknown routes never touch storage
+  ---
+  duration_ms: 6.309759
+  type: 'test'
+  ...
+# Subtest: reject malformed, unsafe, wrong-content-type and oversized JSON before storage
+ok 7 - reject malformed, unsafe, wrong-content-type and oversized JSON before storage
+  ---
+  duration_ms: 6.414498
+  type: 'test'
+  ...
+# Subtest: streamed body is byte-bounded even without Content-Length
+ok 8 - streamed body is byte-bounded even without Content-Length
+  ---
+  duration_ms: 3.229774
+  type: 'test'
+  ...
+# Subtest: provider failures and untrusted thrown objects never escape as raw errors
+ok 9 - provider failures and untrusted thrown objects never escape as raw errors
+  ---
+  duration_ms: 3.414289
+  type: 'test'
+  ...
+# Subtest: controlled adapter envelopes preserve 404/409 without disclosing provider data
+ok 10 - controlled adapter envelopes preserve 404/409 without disclosing provider data
+  ---
+  duration_ms: 3.050498
+  type: 'test'
+  ...
+# Subtest: Mongo full document read is exactly one owner-qualified query (controlled Mongo client)
+ok 11 - Mongo full document read is exactly one owner-qualified query (controlled Mongo client)
+  ---
+  duration_ms: 17.167719
+  type: 'test'
+  ...
+# Subtest: Mongo listing is owner-qualified summaries without embedded/private data (controlled Mongo client)
+ok 12 - Mongo listing is owner-qualified summaries without embedded/private data (controlled Mongo client)
+  ---
+  duration_ms: 1.001469
+  type: 'test'
+  ...
+# Subtest: Mongo creation uses trusted snapshots and an atomic per-owner reservation with insertion (controlled Mongo client)
+ok 13 - Mongo creation uses trusted snapshots and an atomic per-owner reservation with insertion (controlled Mongo client)
+  ---
+  duration_ms: 18.265067
+  type: 'test'
+  ...
+# Subtest: Mongo at-cap rejection never inserts and transaction failure is surfaced, not fake success (controlled Mongo client)
+ok 14 - Mongo at-cap rejection never inserts and transaction failure is surfaced, not fake success (controlled Mongo client)
+  ---
+  duration_ms: 7.391993
+  type: 'test'
+  ...
+# Subtest: Mongo deletion decrements owner cap only after owner-qualified deletion in the same transaction (controlled Mongo client)
+ok 15 - Mongo deletion decrements owner cap only after owner-qualified deletion in the same transaction (controlled Mongo client)
+  ---
+  duration_ms: 2.063263
+  type: 'test'
+  ...
+# Subtest: Mongo atomic push prevents duplicate products and fifth items without read-modify-write (controlled Mongo client)
+ok 16 - Mongo atomic push prevents duplicate products and fifth items without read-modify-write (controlled Mongo client)
+  ---
+  duration_ms: 5.457589
+  type: 'test'
+  ...
+# Subtest: Mongo uses positional filtered set for quantity and pull for removal (controlled Mongo client)
+ok 17 - Mongo uses positional filtered set for quantity and pull for removal (controlled Mongo client)
+  ---
+  duration_ms: 10.441347
+  type: 'test'
+  ...
+# Subtest: Mongo rename is a field-level update and misses stay owner-opaque (controlled Mongo client)
+ok 18 - Mongo rename is a field-level update and misses stay owner-opaque (controlled Mongo client)
+  ---
+  duration_ms: 8.621414
+  type: 'test'
+  ...
+# Subtest: Mongo admin bootstrap defines strict exact schemas, indexes and counter tradeoff; no connection at import
+ok 19 - Mongo admin bootstrap defines strict exact schemas, indexes and counter tradeoff; no connection at import
+  ---
+  duration_ms: 15.525021
+  type: 'test'
+  ...
+# Subtest: publishable JSON default is checked; legacy is only a fallback
+ok 20 - publishable JSON default is checked; legacy is only a fallback
+  ---
+  duration_ms: 15.098294
+  type: 'test'
+  ...
+# Subtest: auth uses a real Supabase user verification endpoint, not JWT payload decoding (controlled HTTP)
+ok 21 - auth uses a real Supabase user verification endpoint, not JWT payload decoding (controlled HTTP)
+  ---
+  duration_ms: 124.118528
+  type: 'test'
+  ...
+# Subtest: controlled auth HTTP: invalid token gives null, provider error sanitized, invalid identity rejected
+ok 22 - controlled auth HTTP: invalid token gives null, provider error sanitized, invalid identity rejected
+  ---
+  duration_ms: 3.393268
+  type: 'test'
+  ...
+# Subtest: SQL transport calls restricted RPC with caller bearer, never forwards ownerId (controlled HTTP)
+ok 23 - SQL transport calls restricted RPC with caller bearer, never forwards ownerId (controlled HTTP)
+  ---
+  duration_ms: 1.823924
+  type: 'test'
+  ...
+# Subtest: SQL transport never propagates raw database HTTP errors (controlled HTTP)
+ok 24 - SQL transport never propagates raw database HTTP errors (controlled HTTP)
+  ---
+  duration_ms: 1.31207
+  type: 'test'
+  ...
+# Subtest: Mongo client initialization is lazy, shared and retryable after connection failure (controlled client)
+ok 25 - Mongo client initialization is lazy, shared and retryable after connection failure (controlled client)
+  ---
+  duration_ms: 2.319956
+  type: 'test'
+  ...
+# Subtest: Deno entrypoint pins MongoDB npm driver and wires controller, verified auth and lazy adapters
+ok 26 - Deno entrypoint pins MongoDB npm driver and wires controller, verified auth and lazy adapters
+  ---
+  duration_ms: 46.387236
+  type: 'test'
+  ...
+# Subtest: function platform JWT check is explicitly replaced by handler verification and environment template has exact CORS
+ok 27 - function platform JWT check is explicitly replaced by handler verification and environment template has exact CORS
+  ---
+  duration_ms: 27.371332
+  type: 'test'
+  ...
+# Subtest: trusted catalog has four fixed products, integer cents and local art
+ok 28 - trusted catalog has four fixed products, integer cents and local art
+  ---
+  duration_ms: 4.413752
+  type: 'test'
+  ...
+# Subtest: create validation trims Unicode labels and projects fixed fields
+ok 29 - create validation trims Unicode labels and projects fixed fields
+  ---
+  duration_ms: 1.403026
+  type: 'test'
+  ...
+# Subtest: reject empty label
+ok 30 - reject empty label
+  ---
+  duration_ms: 1.312029
+  type: 'test'
+  ...
+# Subtest: reject 81 codepoints
+ok 31 - reject 81 codepoints
+  ---
+  duration_ms: 0.426212
+  type: 'test'
+  ...
+# Subtest: reject missing label
+ok 32 - reject missing label
+  ---
+  duration_ms: 0.378297
+  type: 'test'
+  ...
+# Subtest: reject null
+ok 33 - reject null
+  ---
+  duration_ms: 0.349733
+  type: 'test'
+  ...
+# Subtest: reject array
+ok 34 - reject array
+  ---
+  duration_ms: 2.015895
+  type: 'test'
+  ...
+# Subtest: reject unknown owner
+ok 35 - reject unknown owner
+  ---
+  duration_ms: 2.810432
+  type: 'test'
+  ...
+# Subtest: reject forged price
+ok 36 - reject forged price
+  ---
+  duration_ms: 1.144595
+  type: 'test'
+  ...
+# Subtest: reject zero
+ok 37 - reject zero
+  ---
+  duration_ms: 1.240374
+  type: 'test'
+  ...
+# Subtest: reject ten
+ok 38 - reject ten
+  ---
+  duration_ms: 0.644535
+  type: 'test'
+  ...
+# Subtest: reject fraction
+ok 39 - reject fraction
+  ---
+  duration_ms: 0.324174
+  type: 'test'
+  ...
+# Subtest: reject string quantity
+ok 40 - reject string quantity
+  ---
+  duration_ms: 0.248546
+  type: 'test'
+  ...
+# Subtest: reject operator
+ok 41 - reject operator
+  ---
+  duration_ms: 0.235249
+  type: 'test'
+  ...
+# Subtest: reject unknown product
+ok 42 - reject unknown product
+  ---
+  duration_ms: 0.39557
+  type: 'test'
+  ...
+# Subtest: reject duplicate
+ok 43 - reject duplicate
+  ---
+  duration_ms: 0.288806
+  type: 'test'
+  ...
+# Subtest: reject empty items
+ok 44 - reject empty items
+  ---
+  duration_ms: 0.358975
+  type: 'test'
+  ...
+# Subtest: reject prototype key
+ok 45 - reject prototype key
+  ---
+  duration_ms: 0.222972
+  type: 'test'
+  ...
+# Subtest: 80 Unicode codepoints are accepted and one-field patches are strict
+ok 46 - 80 Unicode codepoints are accepted and one-field patches are strict
+  ---
+  duration_ms: 0.900778
+  type: 'test'
+  ...
+# Subtest: server generates ids and snapshots prices; normalization computes totals without leaking owner
+ok 47 - server generates ids and snapshots prices; normalization computes totals without leaking owner
+  ---
+  duration_ms: 1.09238
+  type: 'test'
+  ...
+# Subtest: frontend client exists
+ok 48 - frontend client exists
+  ---
+  duration_ms: 5.517676
+  type: 'test'
+  ...
+# Subtest: config is explicitly unavailable until safe public configuration exists
+ok 49 - config is explicitly unavailable until safe public configuration exists
+  ---
+  duration_ms: 1.05915
+  type: 'test'
+  ...
+# Subtest: draft is immutable, unique and bounded; amounts use integer cents
+ok 50 - draft is immutable, unique and bounded; amounts use integer cents
+  ---
+  duration_ms: 8.153564
+  type: 'test'
+  ...
+# Subtest: validate actual order records, never accepting wrong totals or unknown products
+ok 51 - validate actual order records, never accepting wrong totals or unknown products
+  ---
+  duration_ms: 1.610898
+  type: 'test'
+  ...
+# Subtest: label boundary counts trimmed Unicode code points: one emoji
+ok 52 - label boundary counts trimmed Unicode code points: one emoji
+  ---
+  duration_ms: 0.395891
+  type: 'test'
+  ...
+# Subtest: label boundary counts trimmed Unicode code points: 41 emoji
+ok 53 - label boundary counts trimmed Unicode code points: 41 emoji
+  ---
+  duration_ms: 0.25436
+  type: 'test'
+  ...
+# Subtest: label boundary counts trimmed Unicode code points: 80 emoji with surrounding whitespace
+ok 54 - label boundary counts trimmed Unicode code points: 80 emoji with surrounding whitespace
+  ---
+  duration_ms: 0.47009
+  type: 'test'
+  ...
+# Subtest: label boundary counts trimmed Unicode code points: 80 ASCII characters
+ok 55 - label boundary counts trimmed Unicode code points: 80 ASCII characters
+  ---
+  duration_ms: 0.265659
+  type: 'test'
+  ...
+# Subtest: label boundary counts trimmed Unicode code points: 81 emoji
+ok 56 - label boundary counts trimmed Unicode code points: 81 emoji
+  ---
+  duration_ms: 10.2865
+  type: 'test'
+  ...
+# Subtest: label boundary counts trimmed Unicode code points: 81 ASCII characters
+ok 57 - label boundary counts trimmed Unicode code points: 81 ASCII characters
+  ---
+  duration_ms: 1.144498
+  type: 'test'
+  ...
+# Subtest: order response accepts and preserves 80 emoji
+ok 58 - order response accepts and preserves 80 emoji
+  ---
+  duration_ms: 24.542787
+  type: 'test'
+  ...
+# Subtest: order response rejects 81 emoji code points
+ok 59 - order response rejects 81 emoji code points
+  ---
+  duration_ms: 3.570803
+  type: 'test'
+  ...
+# Subtest: order response rejects 81 ASCII code points
+ok 60 - order response rejects 81 ASCII code points
+  ---
+  duration_ms: 3.641657
+  type: 'test'
+  ...
+# Subtest: list response accepts and preserves 80 emoji
+ok 61 - list response accepts and preserves 80 emoji
+  ---
+  duration_ms: 2.228189
+  type: 'test'
+  ...
+# Subtest: list response rejects 81 emoji code points
+ok 62 - list response rejects 81 emoji code points
+  ---
+  duration_ms: 1.567357
+  type: 'test'
+  ...
+# Subtest: list response rejects 81 ASCII code points
+ok 63 - list response rejects 81 ASCII code points
+  ---
+  duration_ms: 1.677435
+  type: 'test'
+  ...
+# Subtest: validated responses strip unknown payload fields before public JSON disclosure
+ok 64 - validated responses strip unknown payload fields before public JSON disclosure
+  ---
+  duration_ms: 0.414161
+  type: 'test'
+  ...
+# Subtest: actual loopback HTTP validates envelopes, methods, owner token and does not retry writes
+ok 65 - actual loopback HTTP validates envelopes, methods, owner token and does not retry writes
+  ---
+  duration_ms: 189.699382
+  type: 'test'
+  ...
+# Subtest: list and deletion disclosures include only public contract fields
+ok 66 - list and deletion disclosures include only public contract fields
+  ---
+  duration_ms: 18.528946
+  type: 'test'
+  ...
+# Subtest: wrong-engine, malformed and unavailable responses remain errors
+ok 67 - wrong-engine, malformed and unavailable responses remain errors
+  ---
+  duration_ms: 7.128111
+  type: 'test'
+  ...
+# Subtest: cancellation rejects superseded response even if transport ignores abort
+ok 68 - cancellation rejects superseded response even if transport ignores abort
+  ---
+  duration_ms: 6.254632
+  type: 'test'
+  ...
+# Subtest: standalone HTML exists
+ok 69 - standalone HTML exists
+  ---
+  duration_ms: 15.163618
+  type: 'test'
+  ...
+# Subtest: exact seven source-derived sections and compatibility hooks
+ok 70 - exact seven source-derived sections and compatibility hooks
+  ---
+  duration_ms: 2.78652
+  type: 'test'
+  ...
+# Subtest: all copy targets unique and complete multiline specification
+ok 71 - all copy targets unique and complete multiline specification
+  ---
+  duration_ms: 1.296678
+  type: 'test'
+  ...
+# Subtest: one fixed accessible architecture SVG without mobile replacement
+ok 72 - one fixed accessible architecture SVG without mobile replacement
+  ---
+  duration_ms: 1.241399
+  type: 'test'
+  ...
+# Subtest: exactly four bundled product illustrations and no old service coupling
+ok 73 - exactly four bundled product illustrations and no old service coupling
+  ---
+  duration_ms: 22.136641
+  type: 'test'
+  ...
+# Subtest: working explanation remains three compact columns until phone breakpoint
+ok 74 - working explanation remains three compact columns until phone breakpoint
+  ---
+  duration_ms: 11.340476
+  type: 'test'
+  ...
+# Subtest: public output is allowlisted, production-only and server path traversal denied
+ok 75 - public output is allowlisted, production-only and server path traversal denied
+  ---
+  duration_ms: 121.544029
+  type: 'test'
+  ...
+# Subtest: SQL source: normalized private schema, foreign keys, uniqueness, constraints and indexes exist
+ok 76 - SQL source: normalized private schema, foreign keys, uniqueness, constraints and indexes exist
+  ---
+  duration_ms: 3.495228
+  type: 'test'
+  ...
+# Subtest: SQL source: defense-in-depth RLS, no direct browser privileges, auth-derived owner and empty search_path
+ok 77 - SQL source: defense-in-depth RLS, no direct browser privileges, auth-derived owner and empty search_path
+  ---
+  duration_ms: 2.056678
+  type: 'test'
+  ...
+# Subtest: SQL source: every mutation owner-locks before cap test; reads return before lock
+ok 78 - SQL source: every mutation owner-locks before cap test; reads return before lock
+  ---
+  duration_ms: 0.473288
+  type: 'test'
+  ...
+# Subtest: SQL source: RPC independently validates body size, fields, Unicode labels, quantities and duplicates
+ok 79 - SQL source: RPC independently validates body size, fields, Unicode labels, quantities and duplicates
+  ---
+  duration_ms: 0.89648
+  type: 'test'
+  ...
+# Subtest: SQL source: catalog seed agrees with trusted JS prices, is idempotent and immutable
+ok 80 - SQL source: catalog seed agrees with trusted JS prices, is idempotent and immutable
+  ---
+  duration_ms: 1.031748
+  type: 'test'
+  ...
+# Subtest: SQL source: order JSON aggregates join immutable catalog and all owner reads are qualified
+ok 81 - SQL source: order JSON aggregates join immutable catalog and all owner reads are qualified
+  ---
+  duration_ms: 0.604384
+  type: 'test'
+  ...
+1..81
+# tests 81
+# suites 0
+# pass 81
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1281.580517

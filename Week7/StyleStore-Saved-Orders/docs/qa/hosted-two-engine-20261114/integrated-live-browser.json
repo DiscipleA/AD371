@@ -1,0 +1,135 @@
+{
+  "url": "http://127.0.0.1:8807/showcases/stylestore-saved-orders/index.html",
+  "scope": "Actual integrated browser CRUD and genuine hosted requests; private operator sessions, no API mocks.",
+  "engines": [
+    "sql",
+    "mongo"
+  ],
+  "browsers": [
+    "chromium",
+    "firefox"
+  ],
+  "fullTwoEngineCoverage": true,
+  "cases": [
+    {
+      "browser": "chromium",
+      "version": "156.0.8078.4",
+      "engine": "sql",
+      "apiResponses": 21,
+      "httpStatuses": [
+        200,
+        201,
+        400,
+        404
+      ],
+      "pageErrors": 0,
+      "failedLocalAssets": 0,
+      "ownerDenial": 404,
+      "actualHostedResponses": true,
+      "apiInterception": false,
+      "restoredExistingQAIdentity": true,
+      "reloadEngineReselected": false,
+      "passed": [
+        "create two items",
+        "trusted total",
+        "owner denial",
+        "invalid quantity",
+        "rename",
+        "quantity edit",
+        "remove item",
+        "reload/read-back",
+        "delete and 404"
+      ]
+    },
+    {
+      "browser": "chromium",
+      "version": "156.0.8078.4",
+      "engine": "mongo",
+      "apiResponses": 25,
+      "httpStatuses": [
+        200,
+        201,
+        400,
+        404
+      ],
+      "pageErrors": 0,
+      "failedLocalAssets": 0,
+      "ownerDenial": 404,
+      "actualHostedResponses": true,
+      "apiInterception": false,
+      "restoredExistingQAIdentity": true,
+      "reloadEngineReselected": true,
+      "passed": [
+        "create two items",
+        "trusted total",
+        "owner denial",
+        "invalid quantity",
+        "rename",
+        "quantity edit",
+        "remove item",
+        "reload/read-back",
+        "delete and 404"
+      ]
+    },
+    {
+      "browser": "firefox",
+      "version": "157.0",
+      "engine": "sql",
+      "apiResponses": 21,
+      "httpStatuses": [
+        200,
+        201,
+        400,
+        404
+      ],
+      "pageErrors": 0,
+      "failedLocalAssets": 0,
+      "ownerDenial": 404,
+      "actualHostedResponses": true,
+      "apiInterception": false,
+      "restoredExistingQAIdentity": true,
+      "reloadEngineReselected": false,
+      "passed": [
+        "create two items",
+        "trusted total",
+        "owner denial",
+        "invalid quantity",
+        "rename",
+        "quantity edit",
+        "remove item",
+        "reload/read-back",
+        "delete and 404"
+      ]
+    },
+    {
+      "browser": "firefox",
+      "version": "157.0",
+      "engine": "mongo",
+      "apiResponses": 25,
+      "httpStatuses": [
+        200,
+        201,
+        400,
+        404
+      ],
+      "pageErrors": 0,
+      "failedLocalAssets": 0,
+      "ownerDenial": 404,
+      "actualHostedResponses": true,
+      "apiInterception": false,
+      "restoredExistingQAIdentity": true,
+      "reloadEngineReselected": true,
+      "passed": [
+        "create two items",
+        "trusted total",
+        "owner denial",
+        "invalid quantity",
+        "rename",
+        "quantity edit",
+        "remove item",
+        "reload/read-back",
+        "delete and 404"
+      ]
+    }
+  ]
+}

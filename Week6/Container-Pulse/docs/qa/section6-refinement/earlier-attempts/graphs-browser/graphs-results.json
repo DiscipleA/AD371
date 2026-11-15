@@ -1,0 +1,2804 @@
+{
+  "url": "http://127.0.0.1:8796/",
+  "captured_at": "2026-11-06T01:48:36.989679+00:00",
+  "browsers": {
+    "chromium": "156.0.8078.4",
+    "firefox": "157.0"
+  },
+  "cases": [
+    {
+      "engine": "chromium",
+      "name": "compact paired desktop cards with no decorative arrow",
+      "status": "passed",
+      "detail": {
+        "height": 869.828125,
+        "feedHeight": 240.203125,
+        "runtimeHeight": 240.203125,
+        "graphWidth": 1004,
+        "gridWidth": 1004,
+        "graphBottom": 6548.484375,
+        "runtimeTop": 6561.28125,
+        "distributionTop": 6814.28125,
+        "distributionWidth": 1004,
+        "feedBottom": 6801.484375,
+        "hasArrow": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "honest empty graphs and section spacing",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "graphs agree with real responses and bounded observation window",
+      "status": "passed",
+      "detail": {
+        "actual_responses": 18,
+        "retained_points": 12,
+        "distribution": {
+          "9509ffe8f9f6": 6,
+          "13ba7df60a80": 6
+        }
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 913.203125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 887.984375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 887.046875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 886.171875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 534.921875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 206.953125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 140.421875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 913.203125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 887.984375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 887.046875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 886.171875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 534.921875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 206.953125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 140.421875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 911.203125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 885.984375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 885.046875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 884.171875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 532.921875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 204.953125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 138.421875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 911.203125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 885.984375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 885.046875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 884.171875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 532.921875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 204.953125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 138.421875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 29.6123046875,
+        "overflow": 0,
+        "plotWidth": 1022.5615234375,
+        "plotHeight": 122.140625,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/1151",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 21.92578125px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 21.92578125px; expected at least 24px\n"
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/1150",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 21.927734375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 21.927734375px; expected at least 24px\n"
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/1149",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 21.9296875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 21.9296875px; expected at least 24px\n"
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/768",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 22.6689453125px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 22.6689453125px; expected at least 24px\n"
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 204.140625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 137.625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 29.6123046875,
+        "overflow": 0,
+        "plotWidth": 1022.5615234375,
+        "plotHeight": 122.140625,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/1151",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 21.92578125px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 21.92578125px; expected at least 24px\n"
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/1150",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 21.927734375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 21.927734375px; expected at least 24px\n"
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/1149",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 21.9296875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 21.9296875px; expected at least 24px\n"
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/768",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 22.6689453125px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 22.6689453125px; expected at least 24px\n"
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 204.140625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 137.625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 1024.90625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 887.6875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 886.75,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 885.875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 534.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 206.671875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 140.140625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 1024.90625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 887.6875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 886.75,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 885.875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 534.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 206.671875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 140.140625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 960.90625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 887.6875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 886.75,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 885.875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 534.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 206.671875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 140.140625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 960.90625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 887.6875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 886.75,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 885.875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 534.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 206.671875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 140.140625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 928.671875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 887.453125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 886.515625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 885.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 534.421875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 206.46875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 139.9375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 928.671875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 887.453125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 886.515625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 885.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 534.421875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 206.46875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 139.9375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 913.09375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 887.875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 886.9375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 886.0625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 534.8125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 206.84375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 140.3125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 913.09375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 887.875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 886.9375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 886.0625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 534.8125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 206.84375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 140.3125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "Clear resets both graphs",
+      "status": "passed",
+      "detail": "Cleared plotted observations, distribution and notifications."
+    },
+    {
+      "engine": "chromium",
+      "name": "no uncaught browser errors",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "engine": "firefox",
+      "name": "compact paired desktop cards with no decorative arrow",
+      "status": "passed",
+      "detail": {
+        "height": 870.11669921875,
+        "feedHeight": 240.3333282470703,
+        "runtimeHeight": 240.3333282470703,
+        "graphWidth": 1004,
+        "gridWidth": 1004,
+        "graphBottom": 6571.066497802734,
+        "runtimeTop": 6583.86669921875,
+        "distributionTop": 6837,
+        "distributionWidth": 1004,
+        "feedBottom": 6824.20002746582,
+        "hasArrow": false
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "honest empty graphs and section spacing",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "graphs agree with real responses and bounded observation window",
+      "status": "passed",
+      "detail": {
+        "actual_responses": 18,
+        "retained_points": 12,
+        "distribution": {
+          "13ba7df60a80": 6,
+          "9509ffe8f9f6": 6
+        }
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 920.4000244140625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/1151",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999954223632812px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999954223632812px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24.00006103515625,
+        "overflow": 0,
+        "plotWidth": 894.2999877929688,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/1149",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 542.13330078125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/390",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999755859375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999755859375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/320",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99951171875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99951171875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 920.4000244140625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/1151",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999954223632812px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999954223632812px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24.00006103515625,
+        "overflow": 0,
+        "plotWidth": 894.2999877929688,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/1149",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 542.13330078125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/390",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999755859375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999755859375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/320",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99951171875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99951171875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 918.4000244140625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24.000015258789062,
+        "overflow": 0,
+        "plotWidth": 893.2000122070312,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 892.2999877929688,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/1149",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 540.13330078125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24.000244140625,
+        "overflow": 0,
+        "plotWidth": 212.13333129882812,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24.00048828125,
+        "overflow": 0,
+        "plotWidth": 145.60000610351562,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 918.4000244140625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24.000015258789062,
+        "overflow": 0,
+        "plotWidth": 893.2000122070312,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 892.2999877929688,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/1149",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 540.13330078125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24.000244140625,
+        "overflow": 0,
+        "plotWidth": 212.13333129882812,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24.00048828125,
+        "overflow": 0,
+        "plotWidth": 145.60000610351562,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 29.61663818359375,
+        "overflow": 0,
+        "plotWidth": 1029.9166259765625,
+        "plotHeight": 122.14999389648438,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/1151",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 21.933349609375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 21.933349609375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/1150",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 21.933349609375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 21.933349609375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/1149",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 21.93328857421875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 21.93328857421875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/768",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 22.666748046875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 22.666748046875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24.0003662109375,
+        "overflow": 0,
+        "plotWidth": 211.46665954589844,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/320",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999755859375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999755859375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 29.61663818359375,
+        "overflow": 0,
+        "plotWidth": 1029.9166259765625,
+        "plotHeight": 122.14999389648438,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/1151",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 21.933349609375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 21.933349609375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/1150",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 21.933349609375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 21.933349609375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/1149",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 21.93328857421875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 21.93328857421875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/768",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 22.666748046875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 22.666748046875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24.0003662109375,
+        "overflow": 0,
+        "plotWidth": 211.46665954589844,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/320",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999755859375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999755859375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 1032.199951171875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/1151",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/1150",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999969482421875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999969482421875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/1149",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999969482421875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999969482421875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/768",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.9998779296875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.9998779296875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/390",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999755859375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999755859375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 147.39999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 1032.199951171875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/1151",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/1150",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999969482421875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999969482421875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/1149",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999969482421875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999969482421875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/768",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.9998779296875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.9998779296875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/390",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999755859375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999755859375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 147.39999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99993896484375,
+        "overflow": 0,
+        "plotWidth": 968.2000122070312,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/1151",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999969482421875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999969482421875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 894.0999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 893.0999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24.0001220703125,
+        "overflow": 0,
+        "plotWidth": 541.933349609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/390",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999755859375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999755859375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 147.39999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99993896484375,
+        "overflow": 0,
+        "plotWidth": 968.2000122070312,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/1151",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999969482421875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999969482421875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 894.0999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 893.0999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24.0001220703125,
+        "overflow": 0,
+        "plotWidth": 541.933349609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/390",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.999755859375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.999755859375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 147.39999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 936,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/1151",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/1150",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 892.9000244140625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24.0001220703125,
+        "overflow": 0,
+        "plotWidth": 541.7333374023438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/390",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.9998779296875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.9998779296875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/320",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99951171875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99951171875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 936,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/1151",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/1150",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99993896484375px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 892.9000244140625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24.0001220703125,
+        "overflow": 0,
+        "plotWidth": 541.7333374023438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/390",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.9998779296875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.9998779296875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/320",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 23.99951171875px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 23, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 95, in layout\n    result = spacing(page)\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 32, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 19, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 23.99951171875px; expected at least 24px\n"
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32.00006103515625,
+        "overflow": 0,
+        "plotWidth": 920.3333129882812,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 895.13330078125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 894.2333374023438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 893.2333374023438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24.0001220703125,
+        "overflow": 0,
+        "plotWidth": 542.066650390625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24.000244140625,
+        "overflow": 0,
+        "plotWidth": 214.06666564941406,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24.000732421875,
+        "overflow": 0,
+        "plotWidth": 147.53334045410156,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 32.00006103515625,
+        "overflow": 0,
+        "plotWidth": 920.3333129882812,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 895.13330078125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 894.2333374023438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 24,
+        "overflow": 0,
+        "plotWidth": 893.2333374023438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 24.0001220703125,
+        "overflow": 0,
+        "plotWidth": 542.066650390625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 24.000244140625,
+        "overflow": 0,
+        "plotWidth": 214.06666564941406,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 24.000732421875,
+        "overflow": 0,
+        "plotWidth": 147.53334045410156,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "Clear resets both graphs",
+      "status": "passed",
+      "detail": "Cleared plotted observations, distribution and notifications."
+    },
+    {
+      "engine": "firefox",
+      "name": "no uncaught browser errors",
+      "status": "passed",
+      "detail": null
+    }
+  ],
+  "totals": {
+    "passed": 156,
+    "failed": 50
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "reviewed_source_fingerprints": 75,
+  "source_tests": 68,
+  "infrastructure_tests": 22,
+  "graph_browser_totals": {
+    "passed": 206,
+    "failed": 0
+  },
+  "docker_scale": [
+    2,
+    3,
+    2
+  ],
+  "protected_files_unchanged": 817,
+  "lighthouse": {
+    "mobile": {
+      "performance": 79,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "desktop": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    }
+  },
+  "local_report_links_valid": 18,
+  "independent_specification": "passed",
+  "independent_code_security": "passed",
+  "visual_approval": "pending",
+  "resume_integration": "not_performed",
+  "publication": "not_performed"
+}

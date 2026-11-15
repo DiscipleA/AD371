@@ -1,0 +1,310 @@
+TAP version 13
+# Subtest: container architecture has a single fixed-composition SVG at every viewport
+not ok 1 - container architecture has a single fixed-composition SVG at every viewport
+  ---
+  duration_ms: 5.581586
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/architecture_revision.test.mjs:8:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /preserveAspectRatio="xMidYMid meet"/. Input:
+    
+    ' aria-labelledby="architecture-title" id="system-architecture">\n' +
+      '        <div class="section-header"><span class="section-index">03</span><div><h2 id="architecture-title">System Architecture</h2><p class="section-kicker">One request, one responding process, two coordinated UI components.</p></div></div>\n' +
+      '        <figure class="pulse-map">\n' +
+      '          <figcaption>Runtime request path <span>Explanatory map · not live telemetry</span></figcaption>\n' +
+      '          <svg class="pulse-map-desktop" viewBox="0 0 1040 390" role="img" aria-labelledby="pulse-map-title pulse-map-description">\n' +
+      '            <title id="pulse-map-title">Container Pulse request flow</title>\n' +
+      '            <desc id="pulse-map-description">React in the browser calls the loopback Nginx gateway. Nginx selects one of two identical Node app replicas on a dedicated Compose network. The JSON response updates runtime details and a notification card. Scaling and container inspection are trusted terminal operations, not browser actions.</desc>\n' +
+      '            <defs><pattern id="pulse-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" class="pulse-gridline" fill="none"/></pattern><marker id="pulse-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" class="pulse-arrowhead"/></marker></defs>\n' +
+      '            <rect width="1040" height="390" fill="url(#pulse-grid)"/>\n' +
+      '            <rect x="320" y="38" width="690" height="310" rx="14" class="pulse-boundary"/>\n' +
+      '            <text x="342" y="67" class="pulse-map-boundary-title">DEDICATED COMPOSE PROJECT · OWN NETWORK</text>\n' +
+      '            <path d="M260 183H354" class="pulse-flow" marker-end="url(#pulse-arrow)"/>\n' +
+      '            <path d="M564 170H625V140H689" class="pulse-flow" marker-end="url(#pulse-arrow)"/>\n' +
+      '            <path d="M564 199H625V264H689" class="pulse-flow" marker-end="url(#pulse-arrow)"/>\n' +
+      '            <path d="M459 234V330H155V238" class="pulse-return" marker-end="url(#pulse-arrow)"/>\n' +
+      '            <rect x="30" y="127" width="230" height="111" rx="12" class="pulse-node"/>\n' +
+      '            <text x="48" y="157" class="pulse-map-node-title">Browser · React</text><text x="48" y="185">Runtime dashboard</text><text x="48" y="210">Notification cards</text>\n' +
+      '            <rect x="354" y="127" width="210" height="107" rx="12" class="pulse-node"/>\n' +
+      '            <text x="373" y="157" class="pulse-map-node-title">Nginx gateway</text><text x="373" y="185">One published port</text><text x="373" y="210">Service-name routing</text>\n' +
+      '            <rect x="689" y="96" width="287" height="98" rx="12" class="pulse-node"/>\n' +
+      '            <text x="710" y="124" class="pulse-map-node-title">Node app · replica 1</text><text x="710" y="150">/api/runtime · /healthz</text><text x="710" y="175">Non-root · resource limits</text>\n' +
+      '            <rect x="689" y="220" width="287" height="98" rx="12" class="pulse-node"/>\n' +
+      '            <text x="710" y="248" class="pulse-map-node-title">Node app · replica 2</text><text x="710" y="274">Same image &amp; API</text><text x="710" y="299">Independently running process</text>\n' +
+      '            <text x="275" y="157" class="pulse-step">1</text><text x="641" y="115" class="pulse-step">2</text><text x="40" y="280" class="pulse-map-return-label">3 · JSON</text>\n' +
+      '            <text x="33" y="375" class="pulse-map-legend">→ request / response     - - dedicated deployment boundary</text>\n' +
+      '          </svg>\n' +
+      '          <ol class="pulse-map-mobile">\n' +
+      '            <li><strong>1 · Browser / React</strong><span>Check runtime sends a request; no Docker administration is exposed.</span></li>\n' +
+      '            <li><strong>2 · Nginx / dedicated Compose network</strong><span>One loopback port routes to an application replica.</span></li>\n' +
+      '            <li><strong>App replica 1 or app replica 2</strong><span>The same non-root image serves metadata and health. Compose owns limits and lifecycle.</span></li>\n' +
+      '            <li><strong>3 · JSON returns to React</strong><span>Validated metadata updates the dashboard and adds a request-result notification.</span></li>\n' +
+      '          </ol>\n' +
+      '        </figure>\n' +
+      '        <details class="pulse-details"><summary>Request path &amp; ownership</summary><div class="pulse-details-body"><p><strong>Build:</strong> pinned Node Alpine → locked dependency installation → React compilation → final image with only assets and server. The same image runs in every app replica.</p><p><strong>Runtime:</strong> the gateway forwards the landing page and read-only API. Each process supplies its own hostname and process uptime. The client measures request duration and records only responses observed on the current page.</p><p><strong>Operator:</strong> trusted terminal commands build, inspect, and scale this Compose project. Health checks report probe results; the restart policy addresses process exit and does not automatically restart a merely unhealthy container.</p><p><strong>State:</strong> acknowledgments, counts, and observed identities live in browser memory and reset on reload. Observed identities are not a complete inventory of running or healthy replicas.</p><p><strong>Hosting:</strong> this standalone lab serves its own frontend. A static portfolio edition still needs a reachable running API; static publication alone cannot execute containers.</p></div></details>\n' +
+      '      </section>\n' +
+      '      '
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+     aria-labelledby="architecture-title" id="system-architecture">
+            <div class="section-header"><span class="section-index">03</span><div><h2 id="architecture-title">System Architecture</h2><p class="section-kicker">One request, one responding process, two coordinated UI components.</p></div></div>
+            <figure class="pulse-map">
+              <figcaption>Runtime request path <span>Explanatory map · not live telemetry</span></figcaption>
+              <svg class="pulse-map-desktop" viewBox="0 0 1040 390" role="img" aria-labelledby="pulse-map-title pulse-map-description">
+                <title id="pulse-map-title">Container Pulse request flow</title>
+                <desc id="pulse-map-description">React in the browser calls the loopback Nginx gateway. Nginx selects one of two identical Node app replicas on a dedicated Compose network. The JSON response updates runtime details and a notification card. Scaling and container inspection are trusted terminal operations, not browser actions.</desc>
+                <defs><pattern id="pulse-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" class="pulse-gridline" fill="none"/></pattern><marker id="pulse-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" class="pulse-arrowhead"/></marker></defs>
+                <rect width="1040" height="390" fill="url(#pulse-grid)"/>
+                <rect x="320" y="38" width="690" height="310" rx="14" class="pulse-boundary"/>
+                <text x="342" y="67" class="pulse-map-boundary-title">DEDICATED COMPOSE PROJECT · OWN NETWORK</text>
+                <path d="M260 183H354" class="pulse-flow" marker-end="url(#pulse-arrow)"/>
+                <path d="M564 170H625V140H689" class="pulse-flow" marker-end="url(#pulse-arrow)"/>
+                <path d="M564 199H625V264H689" class="pulse-flow" marker-end="url(#pulse-arrow)"/>
+                <path d="M459 234V330H155V238" class="pulse-return" marker-end="url(#pulse-arrow)"/>
+                <rect x="30" y="127" width="230" height="111" rx="12" class="pulse-node"/>
+                <text x="48" y="157" class="pulse-map-node-title">Browser · React</text><text x="48" y="185">Runtime dashboard</text><text x="48" y="210">Notification cards</text>
+                <rect x="354" y="127" width="210" height="107" rx="12" class="pulse-node"/>
+                <text x="373" y="157" class="pulse-map-node-title">Nginx gateway</text><text x="373" y="185">One published port</text><text x="373" y="210">Service-name routing</text>
+                <rect x="689" y="96" width="287" height="98" rx="12" class="pulse-node"/>
+                <text x="710" y="124" class="pulse-map-node-title">Node app · replica 1</text><text x="710" y="150">/api/runtime · /healthz</text><text x="710" y="175">Non-root · resource limits</text>
+                <rect x="689" y="220" width="287" height="98" rx="12" class="pulse-node"/>
+                <text x="710" y="248" class="pulse-map-node-title">Node app · replica 2</text><text x="710" y="274">Same image &amp; API</text><text x="710" y="299">Independently running process</text>
+                <text x="275" y="157" class="pulse-step">1</text><text x="641" y="115" class="pulse-step">2</text><text x="40" y="280" class="pulse-map-return-label">3 · JSON</text>
+                <text x="33" y="375" class="pulse-map-legend">→ request / response     - - dedicated deployment boundary</text>
+              </svg>
+              <ol class="pulse-map-mobile">
+                <li><strong>1 · Browser / React</strong><span>Check runtime sends a request; no Docker administration is exposed.</span></li>
+                <li><strong>2 · Nginx / dedicated Compose network</strong><span>One loopback port routes to an application replica.</span></li>
+                <li><strong>App replica 1 or app replica 2</strong><span>The same non-root image serves metadata and health. Compose owns limits and lifecycle.</span></li>
+                <li><strong>3 · JSON returns to React</strong><span>Validated metadata updates the dashboard and adds a request-result notification.</span></li>
+              </ol>
+            </figure>
+            <details class="pulse-details"><summary>Request path &amp; ownership</summary><div class="pulse-details-body"><p><strong>Build:</strong> pinned Node Alpine → locked dependency installation → React compilation → final image with only assets and server. The same image runs in every app replica.</p><p><strong>Runtime:</strong> the gateway forwards the landing page and read-only API. Each process supplies its own hostname and process uptime. The client measures request duration and records only responses observed on the current page.</p><p><strong>Operator:</strong> trusted terminal commands build, inspect, and scale this Compose project. Health checks report probe results; the restart policy addresses process exit and does not automatically restart a merely unhealthy container.</p><p><strong>State:</strong> acknowledgments, counts, and observed identities live in browser memory and reset on reload. Observed identities are not a complete inventory of running or healthy replicas.</p><p><strong>Hosting:</strong> this standalone lab serves its own frontend. A static portfolio edition still needs a reachable running API; static publication alone cannot execute containers.</p></div></details>
+          </section>
+          
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/architecture_revision.test.mjs:11:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: diagram explains build, image, orchestration, container internals and observation provenance
+not ok 2 - diagram explains build, image, orchestration, container internals and observation provenance
+  ---
+  duration_ms: 0.710592
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/architecture_revision.test.mjs:17:1'
+  failureType: 'testCodeFailure'
+  error: 'build-inputs'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+     aria-labelledby="architecture-title" id="system-architecture">
+            <div class="section-header"><span class="section-index">03</span><div><h2 id="architecture-title">System Architecture</h2><p class="section-kicker">One request, one responding process, two coordinated UI components.</p></div></div>
+            <figure class="pulse-map">
+              <figcaption>Runtime request path <span>Explanatory map · not live telemetry</span></figcaption>
+              <svg class="pulse-map-desktop" viewBox="0 0 1040 390" role="img" aria-labelledby="pulse-map-title pulse-map-description">
+                <title id="pulse-map-title">Container Pulse request flow</title>
+                <desc id="pulse-map-description">React in the browser calls the loopback Nginx gateway. Nginx selects one of two identical Node app replicas on a dedicated Compose network. The JSON response updates runtime details and a notification card. Scaling and container inspection are trusted terminal operations, not browser actions.</desc>
+                <defs><pattern id="pulse-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" class="pulse-gridline" fill="none"/></pattern><marker id="pulse-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" class="pulse-arrowhead"/></marker></defs>
+                <rect width="1040" height="390" fill="url(#pulse-grid)"/>
+                <rect x="320" y="38" width="690" height="310" rx="14" class="pulse-boundary"/>
+                <text x="342" y="67" class="pulse-map-boundary-title">DEDICATED COMPOSE PROJECT · OWN NETWORK</text>
+                <path d="M260 183H354" class="pulse-flow" marker-end="url(#pulse-arrow)"/>
+                <path d="M564 170H625V140H689" class="pulse-flow" marker-end="url(#pulse-arrow)"/>
+                <path d="M564 199H625V264H689" class="pulse-flow" marker-end="url(#pulse-arrow)"/>
+                <path d="M459 234V330H155V238" class="pulse-return" marker-end="url(#pulse-arrow)"/>
+                <rect x="30" y="127" width="230" height="111" rx="12" class="pulse-node"/>
+                <text x="48" y="157" class="pulse-map-node-title">Browser · React</text><text x="48" y="185">Runtime dashboard</text><text x="48" y="210">Notification cards</text>
+                <rect x="354" y="127" width="210" height="107" rx="12" class="pulse-node"/>
+                <text x="373" y="157" class="pulse-map-node-title">Nginx gateway</text><text x="373" y="185">One published port</text><text x="373" y="210">Service-name routing</text>
+                <rect x="689" y="96" width="287" height="98" rx="12" class="pulse-node"/>
+                <text x="710" y="124" class="pulse-map-node-title">Node app · replica 1</text><text x="710" y="150">/api/runtime · /healthz</text><text x="710" y="175">Non-root · resource limits</text>
+                <rect x="689" y="220" width="287" height="98" rx="12" class="pulse-node"/>
+                <text x="710" y="248" class="pulse-map-node-title">Node app · replica 2</text><text x="710" y="274">Same image &amp; API</text><text x="710" y="299">Independently running process</text>
+                <text x="275" y="157" class="pulse-step">1</text><text x="641" y="115" class="pulse-step">2</text><text x="40" y="280" class="pulse-map-return-label">3 · JSON</text>
+                <text x="33" y="375" class="pulse-map-legend">→ request / response     - - dedicated deployment boundary</text>
+              </svg>
+              <ol class="pulse-map-mobile">
+                <li><strong>1 · Browser / React</strong><span>Check runtime sends a request; no Docker administration is exposed.</span></li>
+                <li><strong>2 · Nginx / dedicated Compose network</strong><span>One loopback port routes to an application replica.</span></li>
+                <li><strong>App replica 1 or app replica 2</strong><span>The same non-root image serves metadata and health. Compose owns limits and lifecycle.</span></li>
+                <li><strong>3 · JSON returns to React</strong><span>Validated metadata updates the dashboard and adds a request-result notification.</span></li>
+              </ol>
+            </figure>
+            <details class="pulse-details"><summary>Request path &amp; ownership</summary><div class="pulse-details-body"><p><strong>Build:</strong> pinned Node Alpine → locked dependency installation → React compilation → final image with only assets and server. The same image runs in every app replica.</p><p><strong>Runtime:</strong> the gateway forwards the landing page and read-only API. Each process supplies its own hostname and process uptime. The client measures request duration and records only responses observed on the current page.</p><p><strong>Operator:</strong> trusted terminal commands build, inspect, and scale this Compose project. Health checks report probe results; the restart policy addresses process exit and does not automatically restart a merely unhealthy container.</p><p><strong>State:</strong> acknowledgments, counts, and observed identities live in browser memory and reset on reload. Observed identities are not a complete inventory of running or healthy replicas.</p><p><strong>Hosting:</strong> this standalone lab serves its own frontend. A static portfolio edition still needs a reachable running API; static publication alone cannot execute containers.</p></div></details>
+          </section>
+          
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/architecture_revision.test.mjs:20:12)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: AI Prompt preserves the unboxed reference workflow and separate full specification
+not ok 3 - AI Prompt preserves the unboxed reference workflow and separate full specification
+  ---
+  duration_ms: 1.322136
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/architecture_revision.test.mjs:27:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /class="prompt-build architecture-ai-workflow"/. Input:
+    
+    ' aria-labelledby="prompt-title">\n' +
+      '        <div class="section-header"><span class="section-index">04</span><div><h2 id="prompt-title">AI Prompt</h2><p class="section-kicker">Review the boundary. Plan the build. Verify the actual runtime.</p></div></div>\n' +
+      '        <p class="architecture-note">Reusable showcase prompts — not historical submissions. Each step is a public development guide for this type of application.</p>\n' +
+      '        <div class="pulse-prompt-steps">\n' +
+      '          <details class="pulse-details"><summary>01 · Review</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Review the source</span><button type="button" class="copy-button" data-copy-target="pulseReviewPrompt">Copy Review</button></div><pre tabindex="0"><code id="pulseReviewPrompt">Review the supplied React application and container files.\n' +
+      'Identify browser components, API handlers, runtime state,\n' +
+      'build dependencies, exposed ports, and existing Compose projects.\n' +
+      'Separate decorative examples from measured runtime values.\n' +
+      'List protected files and possible port or network collisions.\n' +
+      'Do not change existing applications.</code></pre></div></details>\n' +
+      '          <details class="pulse-details"><summary>02 · Plan</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Plan one isolated application</span><button type="button" class="copy-button" data-copy-target="pulsePlanPrompt">Copy Plan</button></div><pre tabindex="0"><code id="pulsePlanPrompt">Plan a small React runtime dashboard with responsive notifications.\n' +
+      'Use one Node application image and multiple equivalent replicas.\n' +
+      'Define a pinned multi-stage build, non-root execution, health checks,\n' +
+      'CPU/memory budgets, restart policy, and non-secret environment settings.\n' +
+      'Use a dedicated Compose project, network, image tag, and loopback port.\n' +
+      'Keep scaling in a trusted terminal, not in the public browser.\n' +
+      'Map each requirement to an actual verification step.</code></pre></div></details>\n' +
+      '          <details class="pulse-details" open><summary>03 · Build</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Implementation specification</span><button type="button" class="copy-button" data-copy-target="pulseBuildPrompt">Copy Build</button></div><pre tabindex="0"><code id="pulseBuildPrompt">Build Container Pulse as a small standalone App Engineering Showcase.\n' +
+      '\n' +
+      '1. Adapt the asymmetric CSS dashboard and container-relative cards\n' +
+      '   into React components. Preserve original showcases and shared themes.\n' +
+      '2. Implement a landing page, /healthz, and /api/runtime with hostname,\n' +
+      '   process uptime, runtime version, and application version.\n' +
+      '3. Validate real responses before updating metadata, counters, or cards.\n' +
+      '   Label observations as current-page data; do not fabricate live values.\n' +
+      '4. Support Check runtime, a bounded sample batch, Clear, and acknowledgment.\n' +
+      '   Cancel stale work; keep acknowledgments in browser memory only.\n' +
+      '5. Copy dependency manifests before installing locked dependencies.\n' +
+      '   Compile in a build stage; ship only runtime assets and the server.\n' +
+      '6. Run as non-root with resource limits, health checks, restart policies,\n' +
+      '   and a non-secret .env file. Keep replicas interchangeable and scalable.\n' +
+      '7. Use independent Compose resources and an unused localhost port.\n' +
+      '   Do not restart Docker, alter older projects, or mount its socket.\n' +
+      '8. Test endpoints, failures, cancellation, themes, keyboard access,\n' +
+      '   actual container configuration, and two-to-three-to-two scaling.\n' +
+      '   Keep source tests, real runtime evidence, and pending work distinct.</code></pre></div></details>\n' +
+      '          <details class="pulse-details"><summary>04 · Verify</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Check reality, not configuration alone</span><button type="button" class="copy-button" data-copy-target="pulseVerifyPrompt">Copy Verify</button></div><pre tabindex="0"><code id="pulseVerifyPrompt">Run source tests, build the real image, and inspect its final contents.\n' +
+      'Verify non-root identity, applied CPU/memory limits, restart policy,\n' +
+      'health state, exposed ports, and environment behavior.\n' +
+      'Scale two replicas to three and back; verify actual container readiness\n' +
+      'and new responses after discovery updates. Restore two healthy replicas.\n' +
+      'Check dashboard updates, notification acknowledgment, cancellation,\n' +
+      'malformed responses, offline recovery, keyboard controls, and themes.\n' +
+      'Compare prior projects before and after without modifying them.\n' +
+      'Report failures and blocked checks. Never invent successful evidence.</code></pre></div></details>\n' +
+      '        </div>\n' +
+      '      </section>\n' +
+      '      '
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+     aria-labelledby="prompt-title">
+            <div class="section-header"><span class="section-index">04</span><div><h2 id="prompt-title">AI Prompt</h2><p class="section-kicker">Review the boundary. Plan the build. Verify the actual runtime.</p></div></div>
+            <p class="architecture-note">Reusable showcase prompts — not historical submissions. Each step is a public development guide for this type of application.</p>
+            <div class="pulse-prompt-steps">
+              <details class="pulse-details"><summary>01 · Review</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Review the source</span><button type="button" class="copy-button" data-copy-target="pulseReviewPrompt">Copy Review</button></div><pre tabindex="0"><code id="pulseReviewPrompt">Review the supplied React application and container files.
+    Identify browser components, API handlers, runtime state,
+    build dependencies, exposed ports, and existing Compose projects.
+    Separate decorative examples from measured runtime values.
+    List protected files and possible port or network collisions.
+    Do not change existing applications.</code></pre></div></details>
+              <details class="pulse-details"><summary>02 · Plan</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Plan one isolated application</span><button type="button" class="copy-button" data-copy-target="pulsePlanPrompt">Copy Plan</button></div><pre tabindex="0"><code id="pulsePlanPrompt">Plan a small React runtime dashboard with responsive notifications.
+    Use one Node application image and multiple equivalent replicas.
+    Define a pinned multi-stage build, non-root execution, health checks,
+    CPU/memory budgets, restart policy, and non-secret environment settings.
+    Use a dedicated Compose project, network, image tag, and loopback port.
+    Keep scaling in a trusted terminal, not in the public browser.
+    Map each requirement to an actual verification step.</code></pre></div></details>
+              <details class="pulse-details" open><summary>03 · Build</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Implementation specification</span><button type="button" class="copy-button" data-copy-target="pulseBuildPrompt">Copy Build</button></div><pre tabindex="0"><code id="pulseBuildPrompt">Build Container Pulse as a small standalone App Engineering Showcase.
+    
+    1. Adapt the asymmetric CSS dashboard and container-relative cards
+       into React components. Preserve original showcases and shared themes.
+    2. Implement a landing page, /healthz, and /api/runtime with hostname,
+       process uptime, runtime version, and application version.
+    3. Validate real responses before updating metadata, counters, or cards.
+       Label observations as current-page data; do not fabricate live values.
+    4. Support Check runtime, a bounded sample batch, Clear, and acknowledgment.
+       Cancel stale work; keep acknowledgments in browser memory only.
+    5. Copy dependency manifests before installing locked dependencies.
+       Compile in a build stage; ship only runtime assets and the server.
+    6. Run as non-root with resource limits, health checks, restart policies,
+       and a non-secret .env file. Keep replicas interchangeable and scalable.
+    7. Use independent Compose resources and an unused localhost port.
+       Do not restart Docker, alter older projects, or mount its socket.
+    8. Test endpoints, failures, cancellation, themes, keyboard access,
+       actual container configuration, and two-to-three-to-two scaling.
+       Keep source tests, real runtime evidence, and pending work distinct.</code></pre></div></details>
+              <details class="pulse-details"><summary>04 · Verify</summary><div class="code-panel"><div class="code-toolbar"><span class="code-label">Check reality, not configuration alone</span><button type="button" class="copy-button" data-copy-target="pulseVerifyPrompt">Copy Verify</button></div><pre tabindex="0"><code id="pulseVerifyPrompt">Run source tests, build the real image, and inspect its final contents.
+    Verify non-root identity, applied CPU/memory limits, restart policy,
+    health state, exposed ports, and environment behavior.
+    Scale two replicas to three and back; verify actual container readiness
+    and new responses after discovery updates. Restore two healthy replicas.
+    Check dashboard updates, notification acknowledgment, cancellation,
+    malformed responses, offline recovery, keyboard controls, and themes.
+    Compare prior projects before and after without modifying them.
+    Report failures and blocked checks. Never invent successful evidence.</code></pre></div></details>
+            </div>
+          </section>
+          
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/architecture_revision.test.mjs:29:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: Audit keeps the actual excerpt and four reference-style checks inside audit-layout
+not ok 4 - Audit keeps the actual excerpt and four reference-style checks inside audit-layout
+  ---
+  duration_ms: 2.160231
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/architecture_revision.test.mjs:38:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    0 !== 4
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 4
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/architecture_revision.test.mjs:42:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 0
+# fail 4
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 214.433894

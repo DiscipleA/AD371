@@ -1,0 +1,50 @@
+test_sigterm_subprocess_restores_with_repeated_cleanup_signals (__main__.RunnerSafetyTests.test_sigterm_subprocess_restores_with_repeated_cleanup_signals) ... 
+  test_sigterm_subprocess_restores_with_repeated_cleanup_signals (__main__.RunnerSafetyTests.test_sigterm_subprocess_restores_with_repeated_cleanup_signals) (mode='single') ... FAIL
+  test_sigterm_subprocess_restores_with_repeated_cleanup_signals (__main__.RunnerSafetyTests.test_sigterm_subprocess_restores_with_repeated_cleanup_signals) (mode='repeated') ... FAIL
+  test_sigterm_subprocess_restores_with_repeated_cleanup_signals (__main__.RunnerSafetyTests.test_sigterm_subprocess_restores_with_repeated_cleanup_signals) (mode='restore-timeout') ... FAIL
+
+======================================================================
+FAIL: test_sigterm_subprocess_restores_with_repeated_cleanup_signals (__main__.RunnerSafetyTests.test_sigterm_subprocess_restores_with_repeated_cleanup_signals) (mode='single')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/infra_test.py", line 333, in test_sigterm_subprocess_restores_with_repeated_cleanup_signals
+    self.assertEqual(result.returncode, expected_code, f'Catchable signals must finish bounded cleanup; stderr={result.stderr!r}')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: -15 != 1 : Catchable signals must finish bounded cleanup; stderr='fixture: SIGTERM at app=3\n'
+
+======================================================================
+FAIL: test_sigterm_subprocess_restores_with_repeated_cleanup_signals (__main__.RunnerSafetyTests.test_sigterm_subprocess_restores_with_repeated_cleanup_signals) (mode='repeated')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/infra_test.py", line 339, in test_sigterm_subprocess_restores_with_repeated_cleanup_signals
+    self.assertEqual(evidence['previousHandlerCalls'], [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [15, 15, 15] != []
+
+First list contains 3 additional elements.
+First extra element 0:
+15
+
+- [15, 15, 15]
++ []
+
+======================================================================
+FAIL: test_sigterm_subprocess_restores_with_repeated_cleanup_signals (__main__.RunnerSafetyTests.test_sigterm_subprocess_restores_with_repeated_cleanup_signals) (mode='restore-timeout')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/infra_test.py", line 339, in test_sigterm_subprocess_restores_with_repeated_cleanup_signals
+    self.assertEqual(evidence['previousHandlerCalls'], [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [15, 15, 15] != []
+
+First list contains 3 additional elements.
+First extra element 0:
+15
+
+- [15, 15, 15]
++ []
+
+----------------------------------------------------------------------
+Ran 1 test in 1.015s
+
+FAILED (failures=3)

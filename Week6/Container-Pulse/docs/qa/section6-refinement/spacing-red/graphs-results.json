@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:8796/",
+  "captured_at": "2026-11-06T01:23:49.498075+00:00",
+  "browsers": {
+    "chromium": "156.0.8078.4"
+  },
+  "cases": [
+    {
+      "engine": "chromium",
+      "name": "dashboard is separated from explanation cards",
+      "status": "failed",
+      "detail": "Dashboard-to-cards gap is 0px; expected at least 24px",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 22, in record\n    detail = action()\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 45, in <lambda>\n    record(engine, 'dashboard is separated from explanation cards', lambda: spacing(page))\n                                                                            ~~~~~~~^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 31, in spacing\n    require(data['gap'] >= 24, f\"Dashboard-to-cards gap is {data['gap']}px; expected at least 24px\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_graphs.py\", line 18, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Dashboard-to-cards gap is 0px; expected at least 24px\n"
+    }
+  ],
+  "totals": {
+    "passed": 0,
+    "failed": 1
+  }
+}

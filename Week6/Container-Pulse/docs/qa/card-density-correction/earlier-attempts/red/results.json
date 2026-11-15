@@ -1,0 +1,1158 @@
+{
+  "url": "http://127.0.0.1:8796/",
+  "reference": "http://127.0.0.1/",
+  "captured_at": "2026-11-06T06:50:51.031933+00:00",
+  "cases": [
+    {
+      "engine": "chromium",
+      "theme": "standard",
+      "mode": "light",
+      "width": 1920,
+      "actual": {
+        "audit": [
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 497,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 192
+          },
+          {
+            "card": {
+              "height": 160.078125,
+              "width": 497,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 99.1875,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 189
+          },
+          {
+            "card": {
+              "height": 160.078125,
+              "width": 497,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 99.1875,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 212
+          },
+          {
+            "card": {
+              "height": 160.078125,
+              "width": 497,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 99.1875,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 216
+          }
+        ],
+        "notes": {
+          "columns": 3,
+          "cards": [
+            {
+              "card": {
+                "height": 290.4375,
+                "width": 328.9375,
+                "padding": "36px",
+                "fontSize": "18px",
+                "lineHeight": "29.7px"
+              },
+              "title": {
+                "height": 56,
+                "width": 254.9375,
+                "padding": "0px",
+                "fontSize": "22.4px",
+                "lineHeight": "28px"
+              },
+              "body": {
+                "height": 148.4375,
+                "width": 254.9375,
+                "padding": "0px",
+                "fontSize": "18px",
+                "lineHeight": "29.7px"
+              }
+            },
+            {
+              "card": {
+                "height": 290.4375,
+                "width": 328.9375,
+                "padding": "36px",
+                "fontSize": "18px",
+                "lineHeight": "29.7px"
+              },
+              "title": {
+                "height": 56,
+                "width": 254.9375,
+                "padding": "0px",
+                "fontSize": "22.4px",
+                "lineHeight": "28px"
+              },
+              "body": {
+                "height": 118.75,
+                "width": 254.9375,
+                "padding": "0px",
+                "fontSize": "18px",
+                "lineHeight": "29.7px"
+              }
+            },
+            {
+              "card": {
+                "height": 290.4375,
+                "width": 328.9375,
+                "padding": "36px",
+                "fontSize": "18px",
+                "lineHeight": "29.7px"
+              },
+              "title": {
+                "height": 28,
+                "width": 254.9375,
+                "padding": "0px",
+                "fontSize": "22.4px",
+                "lineHeight": "28px"
+              },
+              "body": {
+                "height": 148.4375,
+                "width": 254.9375,
+                "padding": "0px",
+                "fontSize": "18px",
+                "lineHeight": "29.7px"
+              }
+            }
+          ],
+          "gap": 40
+        },
+        "overflow": 0
+      },
+      "reference": {
+        "audit": [
+          {
+            "card": {
+              "height": 110.484375,
+              "width": 497,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 49.59375,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 114
+          },
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 497,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 134
+          },
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 497,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 138
+          },
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 497,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 463,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 153
+          }
+        ],
+        "notes": null,
+        "overflow": 0
+      },
+      "status": "failed",
+      "error": "Audit prose exceeds reference density"
+    },
+    {
+      "engine": "chromium",
+      "theme": "standard",
+      "mode": "light",
+      "width": 1000,
+      "actual": {
+        "audit": [
+          {
+            "card": {
+              "height": 160.078125,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 99.1875,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 192
+          },
+          {
+            "card": {
+              "height": 160.078125,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 99.1875,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 189
+          },
+          {
+            "card": {
+              "height": 184.875,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 123.984375,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 212
+          },
+          {
+            "card": {
+              "height": 184.875,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 123.984375,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 216
+          }
+        ],
+        "notes": {
+          "columns": 2,
+          "cards": [
+            {
+              "card": {
+                "height": 189.265625,
+                "width": 416.484375,
+                "padding": "31.48px",
+                "fontSize": "17.36px",
+                "lineHeight": "28.644px"
+              },
+              "title": {
+                "height": 26.40625,
+                "width": 351.546875,
+                "padding": "0px",
+                "fontSize": "21.12px",
+                "lineHeight": "26.4px"
+              },
+              "body": {
+                "height": 85.921875,
+                "width": 351.546875,
+                "padding": "0px",
+                "fontSize": "17.36px",
+                "lineHeight": "28.644px"
+              }
+            },
+            {
+              "card": {
+                "height": 189.265625,
+                "width": 416.5,
+                "padding": "31.48px",
+                "fontSize": "17.36px",
+                "lineHeight": "28.644px"
+              },
+              "title": {
+                "height": 26.40625,
+                "width": 351.5625,
+                "padding": "0px",
+                "fontSize": "21.12px",
+                "lineHeight": "26.4px"
+              },
+              "body": {
+                "height": 85.921875,
+                "width": 351.5625,
+                "padding": "0px",
+                "fontSize": "17.36px",
+                "lineHeight": "28.644px"
+              }
+            },
+            {
+              "card": {
+                "height": 189.265625,
+                "width": 416.484375,
+                "padding": "31.48px",
+                "fontSize": "17.36px",
+                "lineHeight": "28.644px"
+              },
+              "title": {
+                "height": 26.40625,
+                "width": 351.546875,
+                "padding": "0px",
+                "fontSize": "21.12px",
+                "lineHeight": "26.4px"
+              },
+              "body": {
+                "height": 85.921875,
+                "width": 351.546875,
+                "padding": "0px",
+                "fontSize": "17.36px",
+                "lineHeight": "28.644px"
+              }
+            }
+          ],
+          "gap": 32
+        },
+        "overflow": 0
+      },
+      "reference": {
+        "audit": [
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 114
+          },
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 134
+          },
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 138
+          },
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 153
+          }
+        ],
+        "notes": null,
+        "overflow": 0
+      },
+      "status": "failed",
+      "error": "Expected compact three-column desktop row; actualcolumns=2"
+    },
+    {
+      "engine": "chromium",
+      "theme": "gothic-stickerboard",
+      "mode": "light",
+      "width": 1920,
+      "actual": {
+        "audit": [
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 505,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 192
+          },
+          {
+            "card": {
+              "height": 160.078125,
+              "width": 505,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 99.1875,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 189
+          },
+          {
+            "card": {
+              "height": 160.078125,
+              "width": 505,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 99.1875,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 212
+          },
+          {
+            "card": {
+              "height": 160.078125,
+              "width": 505,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 99.1875,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 216
+          }
+        ],
+        "notes": {
+          "columns": 3,
+          "cards": [
+            {
+              "card": {
+                "height": 262.4375,
+                "width": 334.265625,
+                "padding": "36px",
+                "fontSize": "18px",
+                "lineHeight": "29.7px"
+              },
+              "title": {
+                "height": 28,
+                "width": 260.265625,
+                "padding": "0px",
+                "fontSize": "22.4px",
+                "lineHeight": "28px"
+              },
+              "body": {
+                "height": 148.4375,
+                "width": 260.265625,
+                "padding": "0px",
+                "fontSize": "18px",
+                "lineHeight": "29.7px"
+              }
+            },
+            {
+              "card": {
+                "height": 262.4375,
+                "width": 334.265625,
+                "padding": "36px",
+                "fontSize": "18px",
+                "lineHeight": "29.7px"
+              },
+              "title": {
+                "height": 28,
+                "width": 260.265625,
+                "padding": "0px",
+                "fontSize": "22.4px",
+                "lineHeight": "28px"
+              },
+              "body": {
+                "height": 118.75,
+                "width": 260.265625,
+                "padding": "0px",
+                "fontSize": "18px",
+                "lineHeight": "29.7px"
+              }
+            },
+            {
+              "card": {
+                "height": 262.4375,
+                "width": 334.28125,
+                "padding": "36px",
+                "fontSize": "18px",
+                "lineHeight": "29.7px"
+              },
+              "title": {
+                "height": 28,
+                "width": 260.28125,
+                "padding": "0px",
+                "fontSize": "22.4px",
+                "lineHeight": "28px"
+              },
+              "body": {
+                "height": 148.4375,
+                "width": 260.28125,
+                "padding": "0px",
+                "fontSize": "18px",
+                "lineHeight": "29.7px"
+              }
+            }
+          ],
+          "gap": 40
+        },
+        "overflow": 0
+      },
+      "reference": {
+        "audit": [
+          {
+            "card": {
+              "height": 110.484375,
+              "width": 505,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 49.59375,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 114
+          },
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 505,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 134
+          },
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 505,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 138
+          },
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 505,
+              "padding": "12.8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "29.7px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 471,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 153
+          }
+        ],
+        "notes": null,
+        "overflow": 0
+      },
+      "status": "failed",
+      "error": "Audit prose exceeds reference density"
+    },
+    {
+      "engine": "chromium",
+      "theme": "gothic-stickerboard",
+      "mode": "light",
+      "width": 1000,
+      "actual": {
+        "audit": [
+          {
+            "card": {
+              "height": 160.078125,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 99.1875,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 192
+          },
+          {
+            "card": {
+              "height": 160.078125,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 99.1875,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 189
+          },
+          {
+            "card": {
+              "height": 184.875,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 123.984375,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 212
+          },
+          {
+            "card": {
+              "height": 184.875,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 123.984375,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 216
+          }
+        ],
+        "notes": {
+          "columns": 2,
+          "cards": [
+            {
+              "card": {
+                "height": 189.265625,
+                "width": 416.484375,
+                "padding": "31.48px",
+                "fontSize": "17.36px",
+                "lineHeight": "28.644px"
+              },
+              "title": {
+                "height": 26.40625,
+                "width": 351.546875,
+                "padding": "0px",
+                "fontSize": "21.12px",
+                "lineHeight": "26.4px"
+              },
+              "body": {
+                "height": 85.921875,
+                "width": 351.546875,
+                "padding": "0px",
+                "fontSize": "17.36px",
+                "lineHeight": "28.644px"
+              }
+            },
+            {
+              "card": {
+                "height": 189.265625,
+                "width": 416.5,
+                "padding": "31.48px",
+                "fontSize": "17.36px",
+                "lineHeight": "28.644px"
+              },
+              "title": {
+                "height": 26.40625,
+                "width": 351.5625,
+                "padding": "0px",
+                "fontSize": "21.12px",
+                "lineHeight": "26.4px"
+              },
+              "body": {
+                "height": 85.921875,
+                "width": 351.5625,
+                "padding": "0px",
+                "fontSize": "17.36px",
+                "lineHeight": "28.644px"
+              }
+            },
+            {
+              "card": {
+                "height": 189.265625,
+                "width": 416.484375,
+                "padding": "31.48px",
+                "fontSize": "17.36px",
+                "lineHeight": "28.644px"
+              },
+              "title": {
+                "height": 26.40625,
+                "width": 351.546875,
+                "padding": "0px",
+                "fontSize": "21.12px",
+                "lineHeight": "26.4px"
+              },
+              "body": {
+                "height": 85.921875,
+                "width": 351.546875,
+                "padding": "0px",
+                "fontSize": "17.36px",
+                "lineHeight": "28.644px"
+              }
+            }
+          ],
+          "gap": 32
+        },
+        "overflow": 0
+      },
+      "reference": {
+        "audit": [
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 114
+          },
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 134
+          },
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 138
+          },
+          {
+            "card": {
+              "height": 135.28125,
+              "width": 410.453125,
+              "padding": "12.8px 16px",
+              "fontSize": "17.36px",
+              "lineHeight": "28.644px"
+            },
+            "title": {
+              "height": 27.703125,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16.8px",
+              "lineHeight": "27.72px"
+            },
+            "body": {
+              "height": 74.390625,
+              "width": 376.453125,
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24.8px"
+            },
+            "characters": 153
+          }
+        ],
+        "notes": null,
+        "overflow": 0
+      },
+      "status": "failed",
+      "error": "Expected compact three-column desktop row; actualcolumns=2"
+    }
+  ],
+  "browsers": {
+    "chromium": "156.0.8078.4"
+  },
+  "totals": {
+    "passed": 0,
+    "failed": 4
+  }
+}

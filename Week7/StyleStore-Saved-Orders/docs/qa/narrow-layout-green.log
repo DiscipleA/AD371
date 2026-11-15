@@ -1,0 +1,24 @@
+TAP version 13
+# {"browser":"chromium","version":"156.0.8078.4","cases":28,"labelChecks":84,"failedLabelChecks":0,"pageErrors":0,"externalRequests":0}
+# Subtest: chromium: phone order label and all four draft rows stay readable and contained
+ok 1 - chromium: phone order label and all four draft rows stay readable and contained
+  ---
+  duration_ms: 29370.110819
+  type: 'test'
+  ...
+# {"browser":"firefox","version":"157.0","cases":28,"labelChecks":84,"failedLabelChecks":0,"pageErrors":0,"externalRequests":0}
+# Subtest: firefox: phone order label and all four draft rows stay readable and contained
+ok 2 - firefox: phone order label and all four draft rows stay readable and contained
+  ---
+  duration_ms: 31097.25161
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 60686.190425

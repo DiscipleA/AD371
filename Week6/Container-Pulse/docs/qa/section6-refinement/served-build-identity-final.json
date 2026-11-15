@@ -1,0 +1,18 @@
+{
+  "index.html": {
+    "same": true,
+    "sha256": "bc1fa2215e43e0303520f7b5fbb5cedbe041ca855e0fc8681a3ed16e947c1e2c"
+  },
+  "assets/pulse.js": {
+    "same": true,
+    "sha256": "e11e1250555898b07eadfd3bbc7089d6b5406a11f8d8e75bd602fe0a89219274"
+  },
+  "assets/pulse.css": {
+    "same": true,
+    "sha256": "7e32b1e0add796c05ed83e2c1ca0bd21f60459a982ee5932ac97ee7841be2260"
+  },
+  "styles/pulse-showcase.css": {
+    "same": true,
+    "sha256": "bcb04a73566b9c65a8eccd6438d691babed5df6a4bccef1174003c929dc62cc0"
+  }
+}

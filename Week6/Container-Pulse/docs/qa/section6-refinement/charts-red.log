@@ -1,0 +1,855 @@
+TAP version 13
+# Subtest: empty graphs have no invented samples, hostnames or successful responses
+not ok 1 - empty graphs have no invented samples, hostnames or successful responses
+  ---
+  duration_ms: 4.057564
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:15:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Real observation chart model is not implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    summarize (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:10:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:16:16)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: latency samples are chronological measured values and preserve exact check identity
+not ok 2 - latency samples are chronological measured values and preserve exact check identity
+  ---
+  duration_ms: 0.800603
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:26:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Real observation chart model is not implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    summarize (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:10:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:28:16)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: response distribution counts only validated successes with the same retained-window denominator
+not ok 3 - response distribution counts only validated successes with the same retained-window denominator
+  ---
+  duration_ms: 0.453064
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:35:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Real observation chart model is not implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    summarize (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:10:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:36:16)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: graphs retain at most the newest twelve completed checks, not cumulative page totals
+not ok 4 - graphs retain at most the newest twelve completed checks, not cumulative page totals
+  ---
+  duration_ms: 0.705281
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:46:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Real observation chart model is not implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    summarize (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:10:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:48:16)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: missing or invalid timing stays unplotted instead of becoming zero milliseconds
+not ok 5 - missing or invalid timing stays unplotted instead of becoming zero milliseconds
+  ---
+  duration_ms: 0.804867
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:54:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Real observation chart model is not implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    summarize (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:10:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:56:16)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: failed measured requests remain in latency history but never become replica responses
+not ok 6 - failed measured requests remain in latency history but never become replica responses
+  ---
+  duration_ms: 1.012445
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:62:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Real observation chart model is not implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    summarize (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:10:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:63:16)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: chart coordinates are finite, bounded and break the line at unavailable timing
+not ok 7 - chart coordinates are finite, bounded and break the line at unavailable timing
+  ---
+  duration_ms: 1.116938
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:71:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Real observation chart model is not implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    summarize (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:10:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:72:16)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: hostname grouping does not confuse object prototype property names with existing groups
+not ok 8 - hostname grouping does not confuse object prototype property names with existing groups
+  ---
+  duration_ms: 0.96335
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:86:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Real observation chart model is not implemented
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    summarize (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:10:10)
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/charts.test.mjs:87:16)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: initial dashboard has named regions, three bounded controls and no invented successful runtime
+ok 9 - initial dashboard has named regions, three bounded controls and no invented successful runtime
+  ---
+  duration_ms: 26.214069
+  type: 'test'
+  ...
+# Subtest: pending request disables Check but leaves Clear enabled and advertises only checking
+ok 10 - pending request disables Check but leaves Clear enabled and advertises only checking
+  ---
+  duration_ms: 5.102669
+  type: 'test'
+  ...
+# Subtest: validated request updates dominant metadata, measured metrics and notification together
+ok 11 - validated request updates dominant metadata, measured metrics and notification together
+  ---
+  duration_ms: 35.14348
+  type: 'test'
+  ...
+# Subtest: failure rendering removes current success metadata and exposes safe error notification
+ok 12 - failure rendering removes current success metadata and exposes safe error notification
+  ---
+  duration_ms: 9.071215
+  type: 'test'
+  ...
+# Subtest: notification reuses visual/details/actions structure and a native checkbox, with escaped text
+ok 13 - notification reuses visual/details/actions structure and a native checkbox, with escaped text
+  ---
+  duration_ms: 1.145429
+  type: 'test'
+  ...
+# Subtest: graphs are accessible, honestly empty until checks complete, and clear with observations
+not ok 14 - graphs are accessible, honestly empty until checks complete, and clear with observations
+  ---
+  duration_ms: 3.737406
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/components.test.mjs:89:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /Response time/. Input:
+    
+    '<div class="pulse-dashboard"><div class="dashboard-shell"><header class="dashboard-header"><div><p class="dashboard-eyebrow">Runtime observation workspace</p><h3 class="dashboard-title">Container Pulse</h3><p class="dashboard-subtitle">One request. One responding process. Actual runtime metadata.</p></div><div class="dashboard-controls" role="group" aria-label="Runtime checks"><button type="button" class="pulse-button pulse-button--primary">Check runtime</button><button type="button" class="pulse-button">Sample 6 checks</button><button type="button" class="pulse-button pulse-button--clear">Clear</button></div></header><p class="dashboard-feedback dashboard-feedback--idle" role="status" aria-live="polite" aria-atomic="true">Ready. No runtime checked yet.</p><div class="dashboard-grid" aria-busy="false"><section class="dash-card card-runtime" aria-labelledby="pulse-runtime-title"><div class="dash-card__header"><h4 id="pulse-runtime-title">Latest runtime</h4><span class="status-indicator status-indicator--idle">Not checked</span></div><div class="runtime-empty"><span class="runtime-symbol" aria-hidden="true">⌘</span><p class="runtime-empty__title">Awaiting a response</p><p>Run a check to see which process answers this request.</p><span class="runtime-endpoint">GET /api/runtime</span></div></section><section class="dash-card card-stat-a" aria-label="Successful checks"><h4 class="stat-label">Successful checks</h4><span class="stat-number">0</span><p class="stat-note">Validated responses on this page</p></section><section class="dash-card card-stat-b" aria-label="Last check duration"><h4 class="stat-label">Last check duration</h4><span class="stat-number">—</span><p class="stat-note">Browser measured · request + response</p></section><section class="dash-card card-feed" aria-labelledby="pulse-feed-title"><div class="dash-card__header"><h4 id="pulse-feed-title">Response notifications</h4><span class="event-count">0 retained</span></div><p class="feed-hint">Newest first · up to 12. Acknowledge changes only this card’s presentation on this page.</p><div class="feed-empty"><span aria-hidden="true">↳</span><p>No notifications yet</p><p>Each completed check adds its actual outcome here.</p></div></section><section class="dash-card card-status" aria-labelledby="pulse-identities-title"><div class="dash-card__header"><h4 id="pulse-identities-title">Observed identities</h4><span class="cluster-summary">0 distinct hostnames</span></div><p class="identities-empty">No hostname observed yet.</p><p class="observation-scope">Current page observations, not a total replica count or a health assessment. Clear resets these observations; reloading does too.</p></section></div><p class="dashboard-footer">Checks run only on demand. Sample makes six sequential requests and may return the same hostname. Clear cancels pending work.</p></div></div>'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: '<div class="pulse-dashboard"><div class="dashboard-shell"><header class="dashboard-header"><div><p class="dashboard-eyebrow">Runtime observation workspace</p><h3 class="dashboard-title">Container Pulse</h3><p class="dashboard-subtitle">One request. One responding process. Actual runtime metadata.</p></div><div class="dashboard-controls" role="group" aria-label="Runtime checks"><button type="button" class="pulse-button pulse-button--primary">Check runtime</button><button type="button" class="pulse-button">Sample 6 checks</button><button type="button" class="pulse-button pulse-button--clear">Clear</button></div></header><p class="dashboard-feedback dashboard-feedback--idle" role="status" aria-live="polite" aria-atomic="true">Ready. No runtime checked yet.</p><div class="dashboard-grid" aria-busy="false"><section class="dash-card card-runtime" aria-labelledby="pulse-runtime-title"><div class="dash-card__header"><h4 id="pulse-runtime-title">Latest runtime</h4><span class="status-indicator status-indicator--idle">Not checked</span></div><div class="runtime-empty"><span class="runtime-symbol" aria-hidden="true">⌘</span><p class="runtime-empty__title">Awaiting a response</p><p>Run a check to see which process answers this request.</p><span class="runtime-endpoint">GET /api/runtime</span></div></section><section class="dash-card card-stat-a" aria-label="Successful checks"><h4 class="stat-label">Successful checks</h4><span class="stat-number">0</span><p class="stat-note">Validated responses on this page</p></section><section class="dash-card card-stat-b" aria-label="Last check duration"><h4 class="stat-label">Last check duration</h4><span class="stat-number">—</span><p class="stat-note">Browser measured · request + response</p></section><section class="dash-card card-feed" aria-labelledby="pulse-feed-title"><div class="dash-card__header"><h4 id="pulse-feed-title">Response notifications</h4><span class="event-count">0 retained</span></div><p class="feed-hint">Newest first · up to 12. Acknowledge changes only this card’s presentation on this page.</p><div class="feed-empty"><span aria-hidden="true">↳</span><p>No notifications yet</p><p>Each completed check adds its actual outcome here.</p></div></section><section class="dash-card card-status" aria-labelledby="pulse-identities-title"><div class="dash-card__header"><h4 id="pulse-identities-title">Observed identities</h4><span class="cluster-summary">0 distinct hostnames</span></div><p class="identities-empty">No hostname observed yet.</p><p class="observation-scope">Current page observations, not a total replica count or a health assessment. Clear resets these observations; reloading does too.</p></section></div><p class="dashboard-footer">Checks run only on demand. Sample makes six sequential requests and may return the same hostname. Clear cancels pending work.</p></div></div>'
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/components.test.mjs:92:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: failed checks use explicitly marked graph points without adding replica distribution
+not ok 15 - failed checks use explicitly marked graph points without adding replica distribution
+  ---
+  duration_ms: 3.932557
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/components.test.mjs:110:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /data-check-id="1"[^>]*data-outcome="failed"/. Input:
+    
+    '<div class="pulse-dashboard"><div class="dashboard-shell"><header class="dashboard-header"><div><p class="dashboard-eyebrow">Runtime observation workspace</p><h3 class="dashboard-title">Container Pulse</h3><p class="dashboard-subtitle">One request. One responding process. Actual runtime metadata.</p></div><div class="dashboard-controls" role="group" aria-label="Runtime checks"><button type="button" class="pulse-button pulse-button--primary">Check runtime</button><button type="button" class="pulse-button">Sample 6 checks</button><button type="button" class="pulse-button pulse-button--clear">Clear</button></div></header><p class="dashboard-feedback dashboard-feedback--failed" role="status" aria-live="polite" aria-atomic="true">Check failed. The runtime returned an HTTP error response.</p><div class="dashboard-grid" aria-busy="false"><section class="dash-card card-runtime" aria-labelledby="pulse-runtime-title"><div class="dash-card__header"><h4 id="pulse-runtime-title">Latest runtime</h4><span class="status-indicator status-indicator--failed">Check failed</span></div><div class="runtime-empty"><span class="runtime-symbol" aria-hidden="true">⌘</span><p class="runtime-empty__title">No verified runtime to display</p><p>The last check failed. Retry to capture a fresh, validated response.</p><span class="runtime-endpoint">GET /api/runtime</span></div></section><section class="dash-card card-stat-a" aria-label="Successful checks"><h4 class="stat-label">Successful checks</h4><span class="stat-number">0</span><p class="stat-note">Validated responses on this page</p></section><section class="dash-card card-stat-b" aria-label="Last check duration"><h4 class="stat-label">Last check duration</h4><span class="stat-number">9.0 ms</span><p class="stat-note">Browser measured · request + response</p></section><section class="dash-card card-feed" aria-labelledby="pulse-feed-title"><div class="dash-card__header"><h4 id="pulse-feed-title">Response notifications</h4><span class="event-count">1 retained</span></div><p class="feed-hint">Newest first · up to 12. Acknowledge changes only this card’s presentation on this page.</p><ul class="activity-list"><li><div class="notification-container"><article class="notification-card notification-card--failure"><div class="card-visual" aria-hidden="true">!</div><div class="card-details"><p class="notification-sequence">Check 1 · HTTP 503</p><h5 class="card-title">Runtime check failed</h5><p class="card-message">The runtime returned an HTTP error response.</p><p class="notification-duration">Browser duration: 9.0 ms</p></div><div class="card-actions"><label class="action-check"><input type="checkbox" class="acknowledge-toggle" aria-label="Acknowledge check 1"/><span class="label-text">Acknowledge</span></label></div></article></div></li></ul></section><section class="dash-card card-status" aria-labelledby="pulse-identities-title"><div class="dash-card__header"><h4 id="pulse-identities-title">Observed identities</h4><span class="cluster-summary">0 distinct hostnames</span></div><p class="identities-empty">No hostname observed yet.</p><p class="observation-scope">Current page observations, not a total replica count or a health assessment. Clear resets these observations; reloading does too.</p></section></div><p class="dashboard-footer">Checks run only on demand. Sample makes six sequential requests and may return the same hostname. Clear cancels pending work.</p></div></div>'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: '<div class="pulse-dashboard"><div class="dashboard-shell"><header class="dashboard-header"><div><p class="dashboard-eyebrow">Runtime observation workspace</p><h3 class="dashboard-title">Container Pulse</h3><p class="dashboard-subtitle">One request. One responding process. Actual runtime metadata.</p></div><div class="dashboard-controls" role="group" aria-label="Runtime checks"><button type="button" class="pulse-button pulse-button--primary">Check runtime</button><button type="button" class="pulse-button">Sample 6 checks</button><button type="button" class="pulse-button pulse-button--clear">Clear</button></div></header><p class="dashboard-feedback dashboard-feedback--failed" role="status" aria-live="polite" aria-atomic="true">Check failed. The runtime returned an HTTP error response.</p><div class="dashboard-grid" aria-busy="false"><section class="dash-card card-runtime" aria-labelledby="pulse-runtime-title"><div class="dash-card__header"><h4 id="pulse-runtime-title">Latest runtime</h4><span class="status-indicator status-indicator--failed">Check failed</span></div><div class="runtime-empty"><span class="runtime-symbol" aria-hidden="true">⌘</span><p class="runtime-empty__title">No verified runtime to display</p><p>The last check failed. Retry to capture a fresh, validated response.</p><span class="runtime-endpoint">GET /api/runtime</span></div></section><section class="dash-card card-stat-a" aria-label="Successful checks"><h4 class="stat-label">Successful checks</h4><span class="stat-number">0</span><p class="stat-note">Validated responses on this page</p></section><section class="dash-card card-stat-b" aria-label="Last check duration"><h4 class="stat-label">Last check duration</h4><span class="stat-number">9.0 ms</span><p class="stat-note">Browser measured · request + response</p></section><section class="dash-card card-feed" aria-labelledby="pulse-feed-title"><div class="dash-card__header"><h4 id="pulse-feed-title">Response notifications</h4><span class="event-count">1 retained</span></div><p class="feed-hint">Newest first · up to 12. Acknowledge changes only this card’s presentation on this page.</p><ul class="activity-list"><li><div class="notification-container"><article class="notification-card notification-card--failure"><div class="card-visual" aria-hidden="true">!</div><div class="card-details"><p class="notification-sequence">Check 1 · HTTP 503</p><h5 class="card-title">Runtime check failed</h5><p class="card-message">The runtime returned an HTTP error response.</p><p class="notification-duration">Browser duration: 9.0 ms</p></div><div class="card-actions"><label class="action-check"><input type="checkbox" class="acknowledge-toggle" aria-label="Acknowledge check 1"/><span class="label-text">Acknowledge</span></label></div></article></div></li></ul></section><section class="dash-card card-status" aria-labelledby="pulse-identities-title"><div class="dash-card__header"><h4 id="pulse-identities-title">Observed identities</h4><span class="cluster-summary">0 distinct hostnames</span></div><p class="identities-empty">No hostname observed yet.</p><p class="observation-scope">Current page observations, not a total replica count or a health assessment. Clear resets these observations; reloading does too.</p></section></div><p class="dashboard-footer">Checks run only on demand. Sample makes six sequential requests and may return the same hostname. Clear cancels pending work.</p></div></div>'
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/components.test.mjs:114:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: standalone components expose meaningful metadata and metrics without fake fallbacks
+ok 16 - standalone components expose meaningful metadata and metrics without fake fallbacks
+  ---
+  duration_ms: 4.081225
+  type: 'test'
+  ...
+# Subtest: entry mounts the React dashboard at pulse-root and imports only the owned stylesheet
+ok 17 - entry mounts the React dashboard at pulse-root and imports only the owned stylesheet
+  ---
+  duration_ms: 17.650455
+  type: 'test'
+  ...
+# Subtest: owned CSS preserves named asymmetric maps, theme tokens and parent-relative notification styles
+not ok 18 - owned CSS preserves named asymmetric maps, theme tokens and parent-relative notification styles
+  ---
+  duration_ms: 3.872358
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/components.test.mjs:136:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /grid-template-areas:\s*"latency latency runtime feed"\s*"stat-a stat-b runtime feed"\s*"status status status feed"/. Input:
+    
+    '/* Isolated adaptations of the inspected Final Result demos:\n' +
+      '   asymmetric-dashboard-grid.css, assignment rules 1357–1698;\n' +
+      '   container-relative-styling-parent-checking-selectors.css, rules 1357–1536.\n' +
+      '   Original showcase files and shared theme ownership remain unchanged. */\n' +
+      '.pulse-dashboard {\n' +
+      '  --pulse-canvas: var(--flex-color-canvas, oklch(0.145 0.022 255));\n' +
+      '  --pulse-surface: var(--flex-color-surface, oklch(0.195 0.024 255));\n' +
+      '  --pulse-surface-strong: var(--flex-color-surface-elevated, oklch(0.235 0.028 255));\n' +
+      '  --pulse-border: var(--flex-color-border, oklch(0.335 0.03 255));\n' +
+      '  --pulse-text: var(--flex-color-text-primary, oklch(0.955 0.012 255));\n' +
+      '  --pulse-muted: var(--flex-color-text-muted, oklch(0.7 0.025 255));\n' +
+      '  --pulse-accent: var(--flex-color-accent-secondary, oklch(0.79 0.12 205));\n' +
+      '  --pulse-success: var(--flex-color-success, oklch(0.78 0.13 145));\n' +
+      '  --pulse-danger: var(--flex-color-accent, oklch(0.72 0.17 48));\n' +
+      '  --pulse-accent-soft: color-mix(in oklch, var(--pulse-accent) 10%, transparent);\n' +
+      '  --pulse-shadow: var(--flex-color-shadow, oklch(0 0 0 / 0.3));\n' +
+      '  --pulse-gap: clamp(0.85rem, 0.7rem + 0.75vw, 1.35rem);\n' +
+      '  --pulse-radius: 0.8rem;\n' +
+      '  min-inline-size: 0;\n' +
+      '  color: var(--pulse-text);\n' +
+      '}\n' +
+      '\n' +
+      '.pulse-dashboard .dashboard-shell {\n' +
+      '  min-inline-size: 0;\n' +
+      '  padding: clamp(1rem, 0.7rem + 1.25vw, 2rem);\n' +
+      '  border: 1px solid var(--pulse-border);\n' +
+      '  border-radius: var(--pulse-radius);\n' +
+      '  background: radial-gradient(circle at 12% 10%, var(--pulse-accent-soft), transparent 24rem), var(--pulse-canvas);\n' +
+      '  box-shadow: 0 1rem 2.5rem var(--pulse-shadow);\n' +
+      '}\n' +
+      '.pulse-dashboard .dashboard-header {\n' +
+      '  display: flex;\n' +
+      '  align-items: end;\n' +
+      '  justify-content: space-between;\n' +
+      '  flex-wrap: wrap;\n' +
+      '  gap: 1.25rem;\n' +
+      '  margin-block-end: 1rem;\n' +
+      '}\n' +
+      '.pulse-dashboard .dashboard-header > div { min-inline-size: 0; }\n' +
+      '.pulse-dashboard .dashboard-eyebrow,\n' +
+      '.pulse-dashboard .runtime-overline {\n' +
+      '  margin: 0 0 0.5rem;\n' +
+      '  color: var(--pulse-accent);\n' +
+      '  font-family: var(--flex-font-mono, monospace);\n' +
+      '  font-size: 0.75rem;\n' +
+      '  font-weight: 800;\n' +
+      '  letter-spacing: 0.08em;\n' +
+      '  text-transform: uppercase;\n' +
+      '}\n' +
+      '.pulse-dashboard .dashboard-title {\n' +
+      '  margin: 0;\n' +
+      '  color: var(--pulse-text);\n' +
+      '  font-size: clamp(1.8rem, 1.45rem + 1.75vw, 3rem);\n' +
+      '  line-height: 1.1;\n' +
+      '  letter-spacing: -0.035em;\n' +
+      '}\n' +
+      '.pulse-dashboard .dashboard-subtitle {\n' +
+      '  margin: 0.65rem 0 0;\n' +
+      '  color: var(--pulse-muted);\n' +
+      '  font-size: 0.95rem;\n' +
+      '  line-height: 1.5;\n' +
+      '}\n' +
+      '.pulse-dashboard .dashboard-controls { display: flex; flex-wrap: wrap; gap: 0.6rem; }\n' +
+      '.pulse-dashboard .pulse-button {\n' +
+      '  min-block-size: 2.75rem;\n' +
+      '  max-inline-size: 100%;\n' +
+      '  padding: 0.6rem 0.85rem;\n' +
+      '  border: 1px solid var(--pulse-border);\n' +
+      '  border-radius: 0.6rem;\n' +
+      '  background: var(--pulse-surface-strong);\n' +
+      '  color: var(--pulse-text);\n' +
+      '  font: inherit;\n' +
+      '  font-size: 0.85rem;\n' +
+      '  font-weight: 750;\n' +
+      '  cursor: pointer;\n' +
+      '}\n' +
+      '.pulse-dashboard .pulse-button--primary {\n' +
+      '  border-color: var(--pulse-accent);\n' +
+      '  background: var(--pulse-accent-soft);\n' +
+      '  color: var(--pulse-accent);\n' +
+      '}\n' +
+      '.pulse-dashboard .pulse-button--clear { background: transparent; }\n' +
+      '.pulse-dashboard .pulse-button:hover:not(:disabled) { border-color: var(--pulse-accent); }\n' +
+      '.pulse-dashboard .pulse-button:disabled { opacity: 0.55; cursor: wait; }\n' +
+      '.pulse-dashboard .pulse-button:focus-visible,\n' +
+      '.pulse-dashboard .activity-list:focus-visible {\n' +
+      '  outline: 3px solid var(--pulse-accent);\n' +
+      '  outline-offset: 3px;\n' +
+      '}\n' +
+      '.pulse-dashboard .dashboard-feedback {\n' +
+      '  min-block-size: 1.5rem;\n' +
+      '  margin: 0 0 var(--pulse-gap);\n' +
+      '  padding-inline-start: 0.8rem;\n' +
+      '  border-inline-start: 2px solid var(--pulse-border);\n' +
+      '  color: var(--pulse-muted);\n' +
+      '  font-size: 0.85rem;\n' +
+      '  overflow-wrap: anywhere;\n' +
+      '}\n' +
+      '.pulse-dashboard .dashboard-feedback--failed { border-color: var(--pulse-danger); color: var(--pulse-danger); }\n' +
+      '.pulse-dashboard .dashboard-feedback--success { border-color: var(--pulse-success); }\n' +
+      '\n' +
+      '/* Preserve the four-column asymmetric shell and its five named regions. */\n' +
+      '.pulse-dashboard .dashboard-grid {\n' +
+      '  display: grid;\n' +
+      '  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1.35fr) minmax(10rem, 0.75fr) minmax(15rem, 1.2fr);\n' +
+      '  grid-template-rows: minmax(10rem, auto) minmax(10rem, auto) minmax(8rem, auto);\n' +
+      '  grid-template-areas:\n' +
+      '    "runtime runtime stat-a feed"\n' +
+      '    "runtime runtime stat-b feed"\n' +
+      '    "status status status feed";\n' +
+      '  grid-auto-rows: minmax(8rem, auto);\n' +
+      '  gap: var(--pulse-gap);\n' +
+      '  min-inline-size: 0;\n' +
+      '}\n' +
+      '.pulse-dashboard .card-runtime { grid-area: runtime; }\n' +
+      '.pulse-dashboard .card-stat-a { grid-area: stat-a; }\n' +
+      '.pulse-dashboard .card-stat-b { grid-area: stat-b; }\n' +
+      '.pulse-dashboard .card-feed { grid-area: feed; }\n' +
+      '.pulse-dashboard .card-status { grid-area: status; }\n' +
+      '.pulse-dashboard .dash-card {\n' +
+      '  min-inline-size: 0;\n' +
+      '  padding: var(--pulse-gap);\n' +
+      '  border: 1px solid var(--pulse-border);\n' +
+      '  border-radius: var(--pulse-radius);\n' +
+      '  background: linear-gradient(145deg, var(--pulse-accent-soft), transparent 50%), var(--pulse-surface);\n' +
+      '  box-shadow: 0 0.75rem 1.8rem color-mix(in oklch, var(--pulse-shadow) 60%, transparent);\n' +
+      '  overflow-wrap: anywhere;\n' +
+      '}\n' +
+      '.pulse-dashboard .dash-card__header {\n' +
+      '  display: flex;\n' +
+      '  align-items: center;\n' +
+      '  justify-content: space-between;\n' +
+      '  flex-wrap: wrap;\n' +
+      '  gap: 0.5rem;\n' +
+      '  margin-block-end: 0.75rem;\n' +
+      '}\n' +
+      '.pulse-dashboard .dash-card__header h4 {\n' +
+      '  margin: 0;\n' +
+      '  color: var(--pulse-text);\n' +
+      '  font-size: clamp(1rem, 0.92rem + 0.4vw, 1.2rem);\n' +
+      '  line-height: 1.35;\n' +
+      '}\n' +
+      '.pulse-dashboard .status-indicator,\n' +
+      '.pulse-dashboard .event-count,\n' +
+      '.pulse-dashboard .cluster-summary {\n' +
+      '  color: var(--pulse-muted);\n' +
+      '  font-family: var(--flex-font-mono, monospace);\n' +
+      '  font-size: 0.75rem;\n' +
+      '  font-weight: 750;\n' +
+      '}\n' +
+      '.pulse-dashboard .status-indicator { display: inline-flex; align-items: center; gap: 0.4rem; }\n' +
+      '.pulse-dashboard .status-indicator::before { content: ""; inline-size: 0.5rem; block-size: 0.5rem; border-radius: 50%; background: currentColor; flex-shrink: 0; }\n' +
+      '.pulse-dashboard .status-indicator--success { color: var(--pulse-success); }\n' +
+      '.pulse-dashboard .status-indicator--failed { color: var(--pulse-danger); }\n' +
+      '.pulse-dashboard .status-indicator--checking { color: var(--pulse-accent); }\n' +
+      '\n' +
+      '/* The dominant region is metadata, never a decorative telemetry chart. */\n' +
+      '.pulse-dashboard .card-runtime { display: flex; flex-direction: column; }\n' +
+      '.pulse-dashboard .runtime-observation { display: flex; flex-direction: column; flex: 1; }\n' +
+      '.pulse-dashboard .runtime-identity { display: flex; align-items: center; gap: 1rem; padding-block: 1.25rem 1.65rem; }\n' +
+      '.pulse-dashboard .runtime-identity > div { min-inline-size: 0; }\n' +
+      '.pulse-dashboard .runtime-symbol {\n' +
+      '  display: grid;\n' +
+      '  place-items: center;\n' +
+      '  flex-shrink: 0;\n' +
+      '  inline-size: 3.25rem;\n' +
+      '  block-size: 3.25rem;\n' +
+      '  border: 1px solid color-mix(in oklch, var(--pulse-accent) 45%, var(--pulse-border));\n' +
+      '  border-radius: 0.8rem;\n' +
+      '  background: var(--pulse-accent-soft);\n' +
+      '  color: var(--pulse-accent);\n' +
+      '  font-size: 1.75rem;\n' +
+      '}\n' +
+      '.pulse-dashboard .runtime-hostname {\n' +
+      '  margin: 0;\n' +
+      '  color: var(--pulse-text);\n' +
+      '  font-family: var(--flex-font-mono, monospace);\n' +
+      '  font-size: clamp(1.35rem, 1.1rem + 1.2vw, 2.2rem);\n' +
+      '  font-weight: 800;\n' +
+      '  line-height: 1.25;\n' +
+      '  letter-spacing: -0.04em;\n' +
+      '  overflow-wrap: anywhere;\n' +
+      '}\n' +
+      '.pulse-dashboard .runtime-properties {\n' +
+      '  display: grid;\n' +
+      '  grid-template-columns: repeat(2, minmax(0, 1fr));\n' +
+      '  gap: 1px;\n' +
+      '  margin: 0;\n' +
+      '  border: 1px solid var(--pulse-border);\n' +
+      '  border-radius: 0.65rem;\n' +
+      '  background: var(--pulse-border);\n' +
+      '  overflow: hidden;\n' +
+      '}\n' +
+      '.pulse-dashboard .runtime-properties > div { min-inline-size: 0; padding: 1rem; background: var(--pulse-surface-strong); }\n' +
+      '.pulse-dashboard .runtime-properties dt { margin-block-end: 0.45rem; color: var(--pulse-muted); font-size: 0.78rem; font-weight: 700; }\n' +
+      '.pulse-dashboard .runtime-properties dd { margin: 0; color: var(--pulse-text); font-family: var(--flex-font-mono, monospace); font-size: clamp(0.9rem, 0.8rem + 0.3vw, 1.1rem); font-weight: 700; }\n' +
+      '.pulse-dashboard .runtime-unit { color: var(--pulse-muted); font-size: 0.85rem; }\n' +
+      '.pulse-dashboard .runtime-footnote { margin: 1.1rem 0 0; color: var(--pulse-muted); font-size: 0.8rem; line-height: 1.55; }\n' +
+      '.pulse-dashboard .runtime-empty { display: grid; justify-items: start; align-content: center; gap: 0.85rem; min-block-size: 19rem; flex: 1; }\n' +
+      '.pulse-dashboard .runtime-empty p { margin: 0; max-inline-size: 35ch; color: var(--pulse-muted); line-height: 1.6; }\n' +
+      '.pulse-dashboard .runtime-empty .runtime-empty__title { color: var(--pulse-text); font-size: clamp(1.2rem, 1rem + 0.5vw, 1.5rem); font-weight: 750; }\n' +
+      '.pulse-dashboard .runtime-endpoint { padding: 0.4rem 0.65rem; border: 1px solid var(--pulse-border); border-radius: 0.4rem; color: var(--pulse-accent); font-family: var(--flex-font-mono, monospace); font-size: 0.8rem; }\n' +
+      '.pulse-dashboard .card-stat-a,\n' +
+      '.pulse-dashboard .card-stat-b { display: grid; align-content: center; justify-items: start; gap: 0.6rem; }\n' +
+      '.pulse-dashboard .stat-label { margin: 0; color: var(--pulse-muted); font-size: 0.85rem; font-weight: 750; line-height: 1.4; }\n' +
+      '.pulse-dashboard .stat-number { color: var(--pulse-text); font-size: clamp(1.65rem, 1.2rem + 1.7vw, 3rem); font-weight: 900; line-height: 1.15; letter-spacing: -0.045em; font-variant-numeric: tabular-nums; }\n' +
+      '.pulse-dashboard .stat-note { margin: 0; color: var(--pulse-accent); font-family: var(--flex-font-mono, monospace); font-size: 0.72rem; line-height: 1.55; }\n' +
+      '\n' +
+      '/* Notification cards retain visual/details/actions anatomy inside the real feed. */\n' +
+      '.pulse-dashboard .card-feed { display: flex; flex-direction: column; }\n' +
+      '.pulse-dashboard .feed-hint,\n' +
+      '.pulse-dashboard .observation-scope,\n' +
+      '.pulse-dashboard .dashboard-footer { margin: 0; color: var(--pulse-muted); font-size: 0.78rem; line-height: 1.6; overflow-wrap: anywhere; }\n' +
+      '.pulse-dashboard .activity-list { display: grid; align-content: start; gap: 0.8rem; max-block-size: 37rem; margin: 1rem 0 0; padding: 0.2rem; list-style: none; overflow-y: auto; scrollbar-gutter: stable; }\n' +
+      '.pulse-dashboard .activity-list > li { min-inline-size: 0; }\n' +
+      '.pulse-dashboard .notification-container { container-type: inline-size; container-name: pulse-notification; min-inlin'... 5251 more characters
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    /* Isolated adaptations of the inspected Final Result demos:
+       asymmetric-dashboard-grid.css, assignment rules 1357–1698;
+       container-relative-styling-parent-checking-selectors.css, rules 1357–1536.
+       Original showcase files and shared theme ownership remain unchanged. */
+    .pulse-dashboard {
+      --pulse-canvas: var(--flex-color-canvas, oklch(0.145 0.022 255));
+      --pulse-surface: var(--flex-color-surface, oklch(0.195 0.024 255));
+      --pulse-surface-strong: var(--flex-color-surface-elevated, oklch(0.235 0.028 255));
+      --pulse-border: var(--flex-color-border, oklch(0.335 0.03 255));
+      --pulse-text: var(--flex-color-text-primary, oklch(0.955 0.012 255));
+      --pulse-muted: var(--flex-color-text-muted, oklch(0.7 0.025 255));
+      --pulse-accent: var(--flex-color-accent-secondary, oklch(0.79 0.12 205));
+      --pulse-success: var(--flex-color-success, oklch(0.78 0.13 145));
+      --pulse-danger: var(--flex-color-accent, oklch(0.72 0.17 48));
+      --pulse-accent-soft: color-mix(in oklch, var(--pulse-accent) 10%, transparent);
+      --pulse-shadow: var(--flex-color-shadow, oklch(0 0 0 / 0.3));
+      --pulse-gap: clamp(0.85rem, 0.7rem + 0.75vw, 1.35rem);
+      --pulse-radius: 0.8rem;
+      min-inline-size: 0;
+      color: var(--pulse-text);
+    }
+    
+    .pulse-dashboard .dashboard-shell {
+      min-inline-size: 0;
+      padding: clamp(1rem, 0.7rem + 1.25vw, 2rem);
+      border: 1px solid var(--pulse-border);
+      border-radius: var(--pulse-radius);
+      background: radial-gradient(circle at 12% 10%, var(--pulse-accent-soft), transparent 24rem), var(--pulse-canvas);
+      box-shadow: 0 1rem 2.5rem var(--pulse-shadow);
+    }
+    .pulse-dashboard .dashboard-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-block-end: 1rem;
+    }
+    .pulse-dashboard .dashboard-header > div { min-inline-size: 0; }
+    .pulse-dashboard .dashboard-eyebrow,
+    .pulse-dashboard .runtime-overline {
+      margin: 0 0 0.5rem;
+      color: var(--pulse-accent);
+      font-family: var(--flex-font-mono, monospace);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .pulse-dashboard .dashboard-title {
+      margin: 0;
+      color: var(--pulse-text);
+      font-size: clamp(1.8rem, 1.45rem + 1.75vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+    }
+    .pulse-dashboard .dashboard-subtitle {
+      margin: 0.65rem 0 0;
+      color: var(--pulse-muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .pulse-dashboard .dashboard-controls { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .pulse-dashboard .pulse-button {
+      min-block-size: 2.75rem;
+      max-inline-size: 100%;
+      padding: 0.6rem 0.85rem;
+      border: 1px solid var(--pulse-border);
+      border-radius: 0.6rem;
+      background: var(--pulse-surface-strong);
+      color: var(--pulse-text);
+      font: inherit;
+      font-size: 0.85rem;
+      font-weight: 750;
+      cursor: pointer;
+    }
+    .pulse-dashboard .pulse-button--primary {
+      border-color: var(--pulse-accent);
+      background: var(--pulse-accent-soft);
+      color: var(--pulse-accent);
+    }
+    .pulse-dashboard .pulse-button--clear { background: transparent; }
+    .pulse-dashboard .pulse-button:hover:not(:disabled) { border-color: var(--pulse-accent); }
+    .pulse-dashboard .pulse-button:disabled { opacity: 0.55; cursor: wait; }
+    .pulse-dashboard .pulse-button:focus-visible,
+    .pulse-dashboard .activity-list:focus-visible {
+      outline: 3px solid var(--pulse-accent);
+      outline-offset: 3px;
+    }
+    .pulse-dashboard .dashboard-feedback {
+      min-block-size: 1.5rem;
+      margin: 0 0 var(--pulse-gap);
+      padding-inline-start: 0.8rem;
+      border-inline-start: 2px solid var(--pulse-border);
+      color: var(--pulse-muted);
+      font-size: 0.85rem;
+      overflow-wrap: anywhere;
+    }
+    .pulse-dashboard .dashboard-feedback--failed { border-color: var(--pulse-danger); color: var(--pulse-danger); }
+    .pulse-dashboard .dashboard-feedback--success { border-color: var(--pulse-success); }
+    
+    /* Preserve the four-column asymmetric shell and its five named regions. */
+    .pulse-dashboard .dashboard-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1.35fr) minmax(10rem, 0.75fr) minmax(15rem, 1.2fr);
+      grid-template-rows: minmax(10rem, auto) minmax(10rem, auto) minmax(8rem, auto);
+      grid-template-areas:
+        "runtime runtime stat-a feed"
+        "runtime runtime stat-b feed"
+        "status status status feed";
+      grid-auto-rows: minmax(8rem, auto);
+      gap: var(--pulse-gap);
+      min-inline-size: 0;
+    }
+    .pulse-dashboard .card-runtime { grid-area: runtime; }
+    .pulse-dashboard .card-stat-a { grid-area: stat-a; }
+    .pulse-dashboard .card-stat-b { grid-area: stat-b; }
+    .pulse-dashboard .card-feed { grid-area: feed; }
+    .pulse-dashboard .card-status { grid-area: status; }
+    .pulse-dashboard .dash-card {
+      min-inline-size: 0;
+      padding: var(--pulse-gap);
+      border: 1px solid var(--pulse-border);
+      border-radius: var(--pulse-radius);
+      background: linear-gradient(145deg, var(--pulse-accent-soft), transparent 50%), var(--pulse-surface);
+      box-shadow: 0 0.75rem 1.8rem color-mix(in oklch, var(--pulse-shadow) 60%, transparent);
+      overflow-wrap: anywhere;
+    }
+    .pulse-dashboard .dash-card__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-block-end: 0.75rem;
+    }
+    .pulse-dashboard .dash-card__header h4 {
+      margin: 0;
+      color: var(--pulse-text);
+      font-size: clamp(1rem, 0.92rem + 0.4vw, 1.2rem);
+      line-height: 1.35;
+    }
+    .pulse-dashboard .status-indicator,
+    .pulse-dashboard .event-count,
+    .pulse-dashboard .cluster-summary {
+      color: var(--pulse-muted);
+      font-family: var(--flex-font-mono, monospace);
+      font-size: 0.75rem;
+      font-weight: 750;
+    }
+    .pulse-dashboard .status-indicator { display: inline-flex; align-items: center; gap: 0.4rem; }
+    .pulse-dashboard .status-indicator::before { content: ""; inline-size: 0.5rem; block-size: 0.5rem; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+    .pulse-dashboard .status-indicator--success { color: var(--pulse-success); }
+    .pulse-dashboard .status-indicator--failed { color: var(--pulse-danger); }
+    .pulse-dashboard .status-indicator--checking { color: var(--pulse-accent); }
+    
+    /* The dominant region is metadata, never a decorative telemetry chart. */
+    .pulse-dashboard .card-runtime { display: flex; flex-direction: column; }
+    .pulse-dashboard .runtime-observation { display: flex; flex-direction: column; flex: 1; }
+    .pulse-dashboard .runtime-identity { display: flex; align-items: center; gap: 1rem; padding-block: 1.25rem 1.65rem; }
+    .pulse-dashboard .runtime-identity > div { min-inline-size: 0; }
+    .pulse-dashboard .runtime-symbol {
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      inline-size: 3.25rem;
+      block-size: 3.25rem;
+      border: 1px solid color-mix(in oklch, var(--pulse-accent) 45%, var(--pulse-border));
+      border-radius: 0.8rem;
+      background: var(--pulse-accent-soft);
+      color: var(--pulse-accent);
+      font-size: 1.75rem;
+    }
+    .pulse-dashboard .runtime-hostname {
+      margin: 0;
+      color: var(--pulse-text);
+      font-family: var(--flex-font-mono, monospace);
+      font-size: clamp(1.35rem, 1.1rem + 1.2vw, 2.2rem);
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.04em;
+      overflow-wrap: anywhere;
+    }
+    .pulse-dashboard .runtime-properties {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      margin: 0;
+      border: 1px solid var(--pulse-border);
+      border-radius: 0.65rem;
+      background: var(--pulse-border);
+      overflow: hidden;
+    }
+    .pulse-dashboard .runtime-properties > div { min-inline-size: 0; padding: 1rem; background: var(--pulse-surface-strong); }
+    .pulse-dashboard .runtime-properties dt { margin-block-end: 0.45rem; color: var(--pulse-muted); font-size: 0.78rem; font-weight: 700; }
+    .pulse-dashboard .runtime-properties dd { margin: 0; color: var(--pulse-text); font-family: var(--flex-font-mono, monospace); font-size: clamp(0.9rem, 0.8rem + 0.3vw, 1.1rem); font-weight: 700; }
+    .pulse-dashboard .runtime-unit { color: var(--pulse-muted); font-size: 0.85rem; }
+    .pulse-dashboard .runtime-footnote { margin: 1.1rem 0 0; color: var(--pulse-muted); font-size: 0.8rem; line-height: 1.55; }
+    .pulse-dashboard .runtime-empty { display: grid; justify-items: start; align-content: center; gap: 0.85rem; min-block-size: 19rem; flex: 1; }
+    .pulse-dashboard .runtime-empty p { margin: 0; max-inline-size: 35ch; color: var(--pulse-muted); line-height: 1.6; }
+    .pulse-dashboard .runtime-empty .runtime-empty__title { color: var(--pulse-text); font-size: clamp(1.2rem, 1rem + 0.5vw, 1.5rem); font-weight: 750; }
+    .pulse-dashboard .runtime-endpoint { padding: 0.4rem 0.65rem; border: 1px solid var(--pulse-border); border-radius: 0.4rem; color: var(--pulse-accent); font-family: var(--flex-font-mono, monospace); font-size: 0.8rem; }
+    .pulse-dashboard .card-stat-a,
+    .pulse-dashboard .card-stat-b { display: grid; align-content: center; justify-items: start; gap: 0.6rem; }
+    .pulse-dashboard .stat-label { margin: 0; color: var(--pulse-muted); font-size: 0.85rem; font-weight: 750; line-height: 1.4; }
+    .pulse-dashboard .stat-number { color: var(--pulse-text); font-size: clamp(1.65rem, 1.2rem + 1.7vw, 3rem); font-weight: 900; line-height: 1.15; letter-spacing: -0.045em; font-variant-numeric: tabular-nums; }
+    .pulse-dashboard .stat-note { margin: 0; color: var(--pulse-accent); font-family: var(--flex-font-mono, monospace); font-size: 0.72rem; line-height: 1.55; }
+    
+    /* Notification cards retain visual/details/actions anatomy inside the real feed. */
+    .pulse-dashboard .card-feed { display: flex; flex-direction: column; }
+    .pulse-dashboard .feed-hint,
+    .pulse-dashboard .observation-scope,
+    .pulse-dashboard .dashboard-footer { margin: 0; color: var(--pulse-muted); font-size: 0.78rem; line-height: 1.6; overflow-wrap: anywhere; }
+    .pulse-dashboard .activity-list { display: grid; align-content: start; gap: 0.8rem; max-block-size: 37rem; margin: 1rem 0 0; padding: 0.2rem; list-style: none; overflow-y: auto; scrollbar-gutter: stable; }
+    .pulse-dashboard .activity-list > li { min-inline-size: 0; }
+    .pulse-dashboard .notification-container { container-type: inline-size; container-name: pulse-notification; min-inline-size: 0; }
+    .pulse-dashboard .notification-card {
+      display: grid;
+      gap: 0.85rem;
+      align-items: start;
+      min-inline-size: 0;
+      padding: 1rem;
+      border: 1px solid var(--pulse-border);
+      border-radius: 0.85rem;
+      background: var(--pulse-surface-strong);
+      color: var(--pulse-text);
+      transition: border-color var(--flex-transition-fast, 160ms), background-color var(--flex-transition-fast, 160ms), color var(--flex-transition-fast, 160ms);
+    }
+    .pulse-dashboard .card-visual { display: grid; place-items: center; inline-size: 2.7rem; block-size: 2.7rem; border-radius: 0.8rem; background: var(--pulse-accent-soft); color: var(--pulse-success); font-size: 1.3rem; font-weight: 800; }
+    .pulse-dashboard .notification-card--failure { border-inline-start: 3px solid var(--pulse-danger); }
+    .pulse-dashboard .notification-card--failure .card-visual { color: var(--pulse-danger); background: color-mix(in oklch, var(--pulse-danger) 12%, transparent); }
+    .pulse-dashboard .card-details,
+    .pulse-dashboard .card-actions { min-inline-size: 0; }
+    .pulse-dashboard .notification-sequence { margin: 0 0 0.4rem; color: var(--pulse-accent); font-family: var(--flex-font-mono, monospace); font-size: 0.72rem; font-weight: 750; }
+    .pulse-dashboard .card-title { margin: 0 0 0.4rem; color: inherit; font-size: 1rem; font-weight: 750; line-height: 1.35; overflow-wrap: anywhere; }
+    .pulse-dashboard .card-message { margin: 0; color: var(--pulse-muted); font-size: 0.85rem; line-height: 1.6; overflow-wrap: anywhere; }
+    .pulse-dashboard .notification-duration { margin: 0.6rem 0 0; color: var(--pulse-muted); font-family: var(--flex-font-mono, monospace); font-size: 0.72rem; }
+    .pulse-dashboard .action-check { display: inline-flex; align-items: center; gap: 0.55rem; min-block-size: 2.75rem; max-inline-size: 100%; padding: 0.45rem 0.65rem; border: 1px solid var(--pulse-border); border-radius: var(--flex-radius-pill, 999px); background: var(--pulse-surface); color: var(--pulse-text); font-size: 0.78rem; cursor: pointer; user-select: none; }
+    .pulse-dashboard .acknowledge-toggle { inline-size: 1.05rem; block-size: 1.05rem; flex-shrink: 0; margin: 0; accent-color: var(--pulse-accent); }
+    .pulse-dashboard .action-check:focus-within { outline: 3px solid var(--pulse-accent); outline-offset: 3px; }
+    @container pulse-notification (min-width: 500px) {
+      .pulse-dashboard .notification-card { grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; }
+      .pulse-dashboard .card-actions { justify-self: end; }
+    }
+    /* Native checkbox state drives presentation only, with no persistence/server write. */
+    .pulse-dashboard .notification-card:has(.acknowledge-toggle:checked) {
+      border-color: var(--pulse-muted);
+      background: var(--pulse-canvas);
+      color: var(--pulse-muted);
+    }
+    .pulse-dashboard .notification-card:has(.acknowledge-toggle:checked) .card-visual { color: var(--pulse-muted); background: color-mix(in oklch, var(--pulse-muted) 12%, transparent); }
+    .pulse-dashboard .feed-empty { display: grid; align-content: center; justify-items: start; gap: 0.5rem; min-block-size: 14rem; flex: 1; color: var(--pulse-muted); }
+    .pulse-dashboard .feed-empty > span { font-size: 2rem; color: var(--pulse-accent); }
+    .pulse-dashboard .feed-empty p { margin: 0; font-size: 0.85rem; line-height: 1.55; }
+    .pulse-dashboard .feed-empty p:first-of-type { color: var(--pulse-text); font-weight: 750; }
+    .pulse-dashboard .status-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+    .pulse-dashboard .pill { display: inline-flex; align-items: center; min-inline-size: 0; max-inline-size: 100%; min-block-size: 2.25rem; padding: 0.45rem 0.75rem; border: 1px solid var(--pulse-accent); border-radius: 999px; background: var(--pulse-accent-soft); color: var(--pulse-accent); font-family: var(--flex-font-mono, monospace); font-size: 0.75rem; font-weight: 750; overflow-wrap: anywhere; }
+    .pulse-dashboard .identities-empty { margin: 0; color: var(--pulse-muted); font-size: 0.85rem; }
+    .pulse-dashboard .observation-scope { margin-block-start: 0.9rem; }
+    .pulse-dashboard .dashboard-footer { margin-block-start: 1rem; }
+    
+    @media (max-width: 1000px) {
+      .pulse-dashboard .dashboard-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: minmax(18rem, auto) minmax(10rem, auto) auto auto;
+        grid-template-areas: "runtime runtime" "stat-a stat-b" "status status" "feed feed";
+      }
+      .pulse-dashboard .activity-list { max-block-size: 34rem; }
+    }
+    @media (max-width: 640px) {
+      .pulse-dashboard .dashboard-shell { padding: 0.85rem; }
+      .pulse-dashboard .dashboard-grid {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "runtime" "stat-a" "stat-b" "feed" "status";
+      }
+      .pulse-dashboard .dashboard-controls { inline-size: 100%; }
+      .pulse-dashboard .pulse-button { flex: 1 1 auto; }
+      .pulse-dashboard .runtime-properties { grid-template-columns: minmax(0, 1fr); }
+      .pulse-dashboard .runtime-identity { flex-wrap: wrap; }
+      .pulse-dashboard .runtime-empty { min-block-size: 16rem; }
+      .pulse-dashboard .card-stat-a,
+      .pulse-dashboard .card-stat-b { min-block-size: 8rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .pulse-dashboard .notification-card { transition: none; }
+    }
+    
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/components.test.mjs:139:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 7
+# fail 11
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1108.376604

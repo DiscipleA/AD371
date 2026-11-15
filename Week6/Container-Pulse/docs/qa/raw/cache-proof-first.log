@@ -1,0 +1,94 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 798B done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 0.6s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#3 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/library/node:24-alpine@sha256:a34ab6d7f6f4813f4d0c5469d74685604b962fbdbf5793a7bc7b4998ecb867c8
+#4 DONE 0.0s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 314B done
+#5 DONE 0.0s
+
+#6 [build 1/6] FROM docker.io/library/node:24-alpine@sha256:a34ab6d7f6f4813f4d0c5469d74685604b962fbdbf5793a7bc7b4998ecb867c8
+#6 resolve docker.io/library/node:24-alpine@sha256:a34ab6d7f6f4813f4d0c5469d74685604b962fbdbf5793a7bc7b4998ecb867c8 0.1s done
+#6 DONE 0.1s
+
+#7 [internal] load build context
+#7 transferring context: 521.50kB 0.1s done
+#7 DONE 0.1s
+
+#8 [build 2/6] WORKDIR /app
+#8 CACHED
+
+#9 [build 3/6] COPY package.json package-lock.json ./
+#9 DONE 0.1s
+
+#10 [build 4/6] RUN npm ci --ignore-scripts && npm cache clean --force && rm -rf /root/.npm
+#10 6.952 
+#10 6.952 added 20 packages, and audited 21 packages in 5s
+#10 6.952 
+#10 6.952 9 packages are looking for funding
+#10 6.953   run `npm fund` for details
+#10 6.955 
+#10 6.955 found 0 vulnerabilities
+#10 6.965 npm notice
+#10 6.965 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+#10 6.965 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+#10 6.965 npm notice To update run: npm install -g npm@12.2.2
+#10 6.965 npm notice
+#10 7.371 npm warn using --force Recommended protections disabled.
+#10 DONE 8.1s
+
+#11 [build 5/6] COPY . .
+#11 DONE 0.2s
+
+#12 [build 6/6] RUN npm run build
+#12 1.444 
+#12 1.444 > ad371-week6-container-pulse@1.0.0 build
+#12 1.444 > node scripts/build.mjs
+#12 1.444 
+#12 2.059 vite v8.3.6 building client environment for production...
+#12 2.129 transforming...
+#12 2.585 ✓ 16 modules transformed.
+#12 2.722 rendering chunks...
+#12 2.910 computing gzip size...
+#12 2.929 dist/assets/pulse.css   12.92 kB │ gzip:  2.77 kB
+#12 2.929 dist/assets/pulse.js   313.80 kB │ gzip: 81.19 kB
+#12 2.929 
+#12 2.931 ✓ built in 868ms
+#12 3.012 Built isolated static showcase in dist/; source, environment files, tests and infrastructure excluded.
+#12 3.042 npm notice
+#12 3.042 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+#12 3.042 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+#12 3.042 npm notice To update run: npm install -g npm@12.2.2
+#12 3.042 npm notice
+#12 DONE 3.1s
+
+#13 [runtime 3/4] COPY --from=build --chown=node:node /app/dist ./dist
+#13 DONE 0.1s
+
+#14 [runtime 4/4] COPY --from=build --chown=node:node /app/server ./server
+#14 DONE 0.1s
+
+#15 exporting to image
+#15 exporting layers
+#15 exporting layers 0.3s done
+#15 exporting manifest sha256:9376b08f0ba3dcdb2b41ad7eef1ef4e156a087197a2bf8da04b70bdad1e36e71
+#15 exporting manifest sha256:9376b08f0ba3dcdb2b41ad7eef1ef4e156a087197a2bf8da04b70bdad1e36e71 0.0s done
+#15 exporting config sha256:e01aabaa49d0131d3b07c491495bf7a6e382a5f67999f5ec6badd6fdd6a70263 0.0s done
+#15 exporting attestation manifest sha256:da69d8d08e53c96fe26d68cae8f3200ba9b84b11af371de5de21ee10ad3b8c4a
+#15 exporting attestation manifest sha256:da69d8d08e53c96fe26d68cae8f3200ba9b84b11af371de5de21ee10ad3b8c4a 0.0s done
+#15 exporting manifest list sha256:e312b10e8a6414a687233e4dbe0c02ce19589feabebafa1c4e95e5f82df80793 0.0s done
+#15 naming to docker.io/library/ad371-week6-container-pulse-cache-proof:local done
+#15 unpacking to docker.io/library/ad371-week6-container-pulse-cache-proof:local
+#15 unpacking to docker.io/library/ad371-week6-container-pulse-cache-proof:local 0.2s done
+#15 DONE 0.8s

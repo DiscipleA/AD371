@@ -1,0 +1,1227 @@
+{
+  "url": "http://127.0.0.1:8796/",
+  "captured_at": "2026-11-06T00:54:38.394543+00:00",
+  "execution": "Lighthouse CLI with isolated Playwright Chromium over loopback CDP; emulation, not physical devices or branded Chrome DevTools",
+  "profiles": {
+    "mobile": {
+      "status": "completed",
+      "exit_code": 0,
+      "lighthouseVersion": "13.6.0",
+      "browser": "HeadlessChrome/156.0.8078.4",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "warnings": [
+        "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+      ],
+      "runtimeError": null,
+      "formFactor": "mobile",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.83,
+          "displayValue": "2.0\u00a0s",
+          "details": null
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.96,
+          "displayValue": "2.0\u00a0s",
+          "details": null
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.99,
+          "displayValue": "2.0\u00a0s",
+          "details": null
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.99,
+          "displayValue": "80\u00a0ms",
+          "details": null
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.87,
+          "displayValue": "140\u00a0ms",
+          "details": null
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.88,
+          "displayValue": "4.0\u00a0s",
+          "details": null
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.9\u00a0s",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "groupLabel",
+                "valueType": "text",
+                "label": "Category"
+              },
+              {
+                "key": "duration",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Time Spent"
+              }
+            ],
+            "items": [
+              {
+                "group": "styleLayout",
+                "groupLabel": "Style & Layout",
+                "duration": 1479.2040000000004
+              },
+              {
+                "group": "other",
+                "groupLabel": "Other",
+                "duration": 992.463999999998
+              },
+              {
+                "group": "scriptEvaluation",
+                "groupLabel": "Script Evaluation",
+                "duration": 323.72000000000025
+              },
+              {
+                "group": "parseHTML",
+                "groupLabel": "Parse HTML & CSS",
+                "duration": 88.59600000000003
+              },
+              {
+                "group": "paintCompositeRender",
+                "groupLabel": "Rendering",
+                "duration": 40.46399999999998
+              },
+              {
+                "group": "scriptParseCompile",
+                "groupLabel": "Script Parsing & Compilation",
+                "duration": 25.292
+              }
+            ],
+            "sortedBy": [
+              "duration"
+            ]
+          }
+        },
+        {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "score": 0.5,
+          "displayValue": "Est savings of 10\u00a0KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/gothic-stickerboard/theme.css",
+                "totalBytes": 34516,
+                "wastedBytes": 5327,
+                "wastedPercent": 15.434093045112785
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/auth-rbac-showcase.css",
+                "totalBytes": 38836,
+                "wastedBytes": 4879,
+                "wastedPercent": 12.561897315611159
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 10206,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "unminified-javascript",
+          "title": "Minify JavaScript",
+          "score": 0.5,
+          "displayValue": "Est savings of 87\u00a0KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8796/assets/pulse.js",
+                "totalBytes": 313802,
+                "wastedBytes": 85954,
+                "wastedPercent": 27.39122259650778
+              },
+              {
+                "url": "http://127.0.0.1:8796/theme.js",
+                "totalBytes": 11900,
+                "wastedBytes": 2686,
+                "wastedPercent": 22.571428571428577
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 88640,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "displayValue": "Est savings of 41\u00a0KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8796/styles/auth-rbac-showcase.css",
+                "wastedBytes": 21186,
+                "wastedPercent": 55.21501172791243,
+                "totalBytes": 38370
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/gothic-stickerboard/theme.css",
+                "wastedBytes": 20992,
+                "wastedPercent": 61.65119830827067,
+                "totalBytes": 34050
+              }
+            ],
+            "overallSavingsMs": 180,
+            "overallSavingsBytes": 42178,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 180,
+                "LCP": 180
+              }
+            }
+          }
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0.5,
+          "displayValue": "Est savings of 187\u00a0KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "subItemsHeading": {
+                  "key": "source",
+                  "valueType": "code"
+                },
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceBytes"
+                },
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceWastedBytes"
+                },
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8796/assets/pulse.js",
+                "totalBytes": 313783,
+                "wastedBytes": 191309,
+                "wastedPercent": 60.968567449479416
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 191309,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "displayValue": "Est savings of 15\u00a0KiB",
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 8 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "No compression applied",
+                "value": false
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 8,
+              "uncompressedResponseBytes": 14891,
+              "wastedBytes": 14891
+            }
+          }
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": [
+                  {
+                    "source": {
+                      "type": "text",
+                      "value": "[unattributed]"
+                    },
+                    "reflowTime": 89.033
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "C2952596BCFE1377EC88AA52E5377851": {
+                      "url": "http://127.0.0.1:8796/",
+                      "navStartToEndTime": 199,
+                      "transferSize": 22693,
+                      "isLongest": true,
+                      "children": {
+                        "606190.20": {
+                          "url": "http://127.0.0.1:8796/assets/pulse.js",
+                          "navStartToEndTime": 545,
+                          "transferSize": 314276,
+                          "isLongest": true,
+                          "children": {}
+                        },
+                        "606190.7": {
+                          "url": "http://127.0.0.1:8796/styles/themes/theme-registry.js",
+                          "navStartToEndTime": 223,
+                          "transferSize": 4357,
+                          "children": {
+                            "606190.27": {
+                              "url": "http://127.0.0.1:8796/styles/themes/gothic-stickerboard/theme.css",
+                              "navStartToEndTime": 263,
+                              "transferSize": 34516,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "606190.19": {
+                          "url": "http://127.0.0.1:8796/config.js",
+                          "navStartToEndTime": 257,
+                          "transferSize": 532,
+                          "children": {}
+                        },
+                        "606190.16": {
+                          "url": "http://127.0.0.1:8796/theme.js",
+                          "navStartToEndTime": 256,
+                          "transferSize": 12373,
+                          "children": {}
+                        },
+                        "606190.14": {
+                          "url": "http://127.0.0.1:8796/styles/themes/baroque-plexiglas/theme-config.js",
+                          "navStartToEndTime": 251,
+                          "transferSize": 1020,
+                          "children": {}
+                        },
+                        "606190.13": {
+                          "url": "http://127.0.0.1:8796/styles/themes/gothic-stickerboard/theme-config.js",
+                          "navStartToEndTime": 250,
+                          "transferSize": 1024,
+                          "children": {}
+                        },
+                        "606190.12": {
+                          "url": "http://127.0.0.1:8796/styles/themes/luminous-midnight/theme-config.js",
+                          "navStartToEndTime": 249,
+                          "transferSize": 1020,
+                          "children": {}
+                        },
+                        "606190.17": {
+                          "url": "http://127.0.0.1:8796/assets/pulse.css",
+                          "navStartToEndTime": 246,
+                          "transferSize": 13391,
+                          "children": {}
+                        },
+                        "606190.10": {
+                          "url": "http://127.0.0.1:8796/styles/themes/raggedy-granite/theme-config.js",
+                          "navStartToEndTime": 238,
+                          "transferSize": 1016,
+                          "children": {}
+                        },
+                        "606190.15": {
+                          "url": "http://127.0.0.1:8796/styles/themes/standard/theme.css",
+                          "navStartToEndTime": 231,
+                          "transferSize": 817,
+                          "children": {}
+                        },
+                        "606190.8": {
+                          "url": "http://127.0.0.1:8796/styles/themes/standard/theme-config.js",
+                          "navStartToEndTime": 222,
+                          "transferSize": 1023,
+                          "children": {}
+                        },
+                        "606190.11": {
+                          "url": "http://127.0.0.1:8796/styles/themes/glossy-marble/theme-config.js",
+                          "navStartToEndTime": 221,
+                          "transferSize": 1012,
+                          "children": {}
+                        },
+                        "606190.9": {
+                          "url": "http://127.0.0.1:8796/styles/themes/playful-pop/theme-config.js",
+                          "navStartToEndTime": 220,
+                          "transferSize": 1008,
+                          "children": {}
+                        },
+                        "606190.5": {
+                          "url": "http://127.0.0.1:8796/styles/shared/navigation.css",
+                          "navStartToEndTime": 204,
+                          "transferSize": 9306,
+                          "children": {}
+                        },
+                        "606190.4": {
+                          "url": "http://127.0.0.1:8796/styles/pulse-showcase.css",
+                          "navStartToEndTime": 184,
+                          "transferSize": 4780,
+                          "children": {}
+                        },
+                        "606190.3": {
+                          "url": "http://127.0.0.1:8796/styles/auth-rbac-showcase.css",
+                          "navStartToEndTime": 181,
+                          "transferSize": 38836,
+                          "children": {}
+                        },
+                        "606190.2": {
+                          "url": "http://127.0.0.1:8796/styles/shared/base.css",
+                          "navStartToEndTime": 171,
+                          "transferSize": 5523,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 545
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "No origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 950\u00a0ms",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8796/theme.js",
+                "totalBytes": 12373,
+                "wastedMs": 307
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/baroque-plexiglas/theme-config.js",
+                "totalBytes": 1020,
+                "wastedMs": 157
+              },
+              {
+                "url": "http://127.0.0.1:8796/config.js",
+                "totalBytes": 532,
+                "wastedMs": 157
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/gothic-stickerboard/theme-config.js",
+                "totalBytes": 1024,
+                "wastedMs": 157
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/luminous-midnight/theme-config.js",
+                "totalBytes": 1020,
+                "wastedMs": 157
+              },
+              {
+                "url": "http://127.0.0.1:8796/assets/pulse.css",
+                "totalBytes": 13391,
+                "wastedMs": 757
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/raggedy-granite/theme-config.js",
+                "totalBytes": 1016,
+                "wastedMs": 157
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/standard/theme.css",
+                "totalBytes": 817,
+                "wastedMs": 307
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/theme-registry.js",
+                "totalBytes": 4357,
+                "wastedMs": 157
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/standard/theme-config.js",
+                "totalBytes": 1023,
+                "wastedMs": 157
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/glossy-marble/theme-config.js",
+                "totalBytes": 1012,
+                "wastedMs": 157
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/playful-pop/theme-config.js",
+                "totalBytes": 1008,
+                "wastedMs": 157
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/shared/navigation.css",
+                "totalBytes": 9306,
+                "wastedMs": 607
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/shared/base.css",
+                "totalBytes": 5523,
+                "wastedMs": 307
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/gothic-stickerboard/theme.css",
+                "totalBytes": 34516
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/pulse-showcase.css",
+                "totalBytes": 4780,
+                "wastedMs": 457
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/auth-rbac-showcase.css",
+                "totalBytes": 38836,
+                "wastedMs": 1207
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "desktop": {
+      "status": "completed",
+      "exit_code": 0,
+      "lighthouseVersion": "13.6.0",
+      "browser": "HeadlessChrome/156.0.8078.4",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "warnings": [],
+      "runtimeError": null,
+      "formFactor": "desktop",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.96,
+          "displayValue": "0.8\u00a0s",
+          "details": null
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.98,
+          "displayValue": "0.8\u00a0s",
+          "details": null
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.99,
+          "displayValue": "0.8\u00a0s",
+          "details": null
+        },
+        {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "score": 0.5,
+          "displayValue": "Est savings of 10\u00a0KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/gothic-stickerboard/theme.css",
+                "totalBytes": 34516,
+                "wastedBytes": 5327,
+                "wastedPercent": 15.434093045112785
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/auth-rbac-showcase.css",
+                "totalBytes": 38836,
+                "wastedBytes": 4879,
+                "wastedPercent": 12.561897315611159
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 10206,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "unminified-javascript",
+          "title": "Minify JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 87\u00a0KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8796/assets/pulse.js",
+                "totalBytes": 313802,
+                "wastedBytes": 85954,
+                "wastedPercent": 27.39122259650778
+              },
+              {
+                "url": "http://127.0.0.1:8796/theme.js",
+                "totalBytes": 11900,
+                "wastedBytes": 2686,
+                "wastedPercent": 22.571428571428577
+              }
+            ],
+            "overallSavingsMs": 80,
+            "overallSavingsBytes": 88640,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 80,
+                "LCP": 80
+              }
+            }
+          }
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "displayValue": "Est savings of 42\u00a0KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8796/styles/auth-rbac-showcase.css",
+                "wastedBytes": 21619,
+                "wastedPercent": 56.34349752410738,
+                "totalBytes": 38370
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/gothic-stickerboard/theme.css",
+                "wastedBytes": 20992,
+                "wastedPercent": 61.65119830827067,
+                "totalBytes": 34050
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 42611,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "displayValue": "Est savings of 187\u00a0KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "subItemsHeading": {
+                  "key": "source",
+                  "valueType": "code"
+                },
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceBytes"
+                },
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceWastedBytes"
+                },
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8796/assets/pulse.js",
+                "totalBytes": 313783,
+                "wastedBytes": 191309,
+                "wastedPercent": 60.968567449479416
+              }
+            ],
+            "overallSavingsMs": 160,
+            "overallSavingsBytes": 191309,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 160,
+                "LCP": 160
+              }
+            }
+          }
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "displayValue": "Est savings of 15\u00a0KiB",
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 2 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "No compression applied",
+                "value": false
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 2,
+              "uncompressedResponseBytes": 14891,
+              "wastedBytes": 14891
+            }
+          }
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "EDEB0C658F2BF7CB1258D4020A6962FC": {
+                      "url": "http://127.0.0.1:8796/",
+                      "navStartToEndTime": 214,
+                      "transferSize": 22693,
+                      "isLongest": true,
+                      "children": {
+                        "606686.20": {
+                          "url": "http://127.0.0.1:8796/assets/pulse.js",
+                          "navStartToEndTime": 255,
+                          "transferSize": 314276,
+                          "isLongest": true,
+                          "children": {}
+                        },
+                        "606686.16": {
+                          "url": "http://127.0.0.1:8796/theme.js",
+                          "navStartToEndTime": 214,
+                          "transferSize": 12373,
+                          "children": {}
+                        },
+                        "606686.14": {
+                          "url": "http://127.0.0.1:8796/styles/themes/baroque-plexiglas/theme-config.js",
+                          "navStartToEndTime": 213,
+                          "transferSize": 1020,
+                          "children": {}
+                        },
+                        "606686.19": {
+                          "url": "http://127.0.0.1:8796/config.js",
+                          "navStartToEndTime": 213,
+                          "transferSize": 532,
+                          "children": {}
+                        },
+                        "606686.13": {
+                          "url": "http://127.0.0.1:8796/styles/themes/gothic-stickerboard/theme-config.js",
+                          "navStartToEndTime": 212,
+                          "transferSize": 1024,
+                          "children": {}
+                        },
+                        "606686.12": {
+                          "url": "http://127.0.0.1:8796/styles/themes/luminous-midnight/theme-config.js",
+                          "navStartToEndTime": 212,
+                          "transferSize": 1020,
+                          "children": {}
+                        },
+                        "606686.11": {
+                          "url": "http://127.0.0.1:8796/styles/themes/glossy-marble/theme-config.js",
+                          "navStartToEndTime": 211,
+                          "transferSize": 1012,
+                          "children": {}
+                        },
+                        "606686.9": {
+                          "url": "http://127.0.0.1:8796/styles/themes/playful-pop/theme-config.js",
+                          "navStartToEndTime": 211,
+                          "transferSize": 1008,
+                          "children": {}
+                        },
+                        "606686.10": {
+                          "url": "http://127.0.0.1:8796/styles/themes/raggedy-granite/theme-config.js",
+                          "navStartToEndTime": 210,
+                          "transferSize": 1016,
+                          "children": {}
+                        },
+                        "606686.7": {
+                          "url": "http://127.0.0.1:8796/styles/themes/theme-registry.js",
+                          "navStartToEndTime": 196,
+                          "transferSize": 4357,
+                          "children": {
+                            "606686.27": {
+                              "url": "http://127.0.0.1:8796/styles/themes/gothic-stickerboard/theme.css",
+                              "navStartToEndTime": 205,
+                              "transferSize": 34516,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "606686.8": {
+                          "url": "http://127.0.0.1:8796/styles/themes/standard/theme-config.js",
+                          "navStartToEndTime": 203,
+                          "transferSize": 1023,
+                          "children": {}
+                        },
+                        "606686.17": {
+                          "url": "http://127.0.0.1:8796/assets/pulse.css",
+                          "navStartToEndTime": 189,
+                          "transferSize": 13391,
+                          "children": {}
+                        },
+                        "606686.15": {
+                          "url": "http://127.0.0.1:8796/styles/themes/standard/theme.css",
+                          "navStartToEndTime": 187,
+                          "transferSize": 817,
+                          "children": {}
+                        },
+                        "606686.5": {
+                          "url": "http://127.0.0.1:8796/styles/shared/navigation.css",
+                          "navStartToEndTime": 187,
+                          "transferSize": 9306,
+                          "children": {}
+                        },
+                        "606686.4": {
+                          "url": "http://127.0.0.1:8796/styles/pulse-showcase.css",
+                          "navStartToEndTime": 171,
+                          "transferSize": 4780,
+                          "children": {}
+                        },
+                        "606686.3": {
+                          "url": "http://127.0.0.1:8796/styles/auth-rbac-showcase.css",
+                          "navStartToEndTime": 164,
+                          "transferSize": 38836,
+                          "children": {}
+                        },
+                        "606686.2": {
+                          "url": "http://127.0.0.1:8796/styles/shared/base.css",
+                          "navStartToEndTime": 160,
+                          "transferSize": 5523,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 255
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "No origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 140\u00a0ms",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/glossy-marble/theme-config.js",
+                "totalBytes": 1012
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/playful-pop/theme-config.js",
+                "totalBytes": 1008
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/raggedy-granite/theme-config.js",
+                "totalBytes": 1016
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/luminous-midnight/theme-config.js",
+                "totalBytes": 1020
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/gothic-stickerboard/theme-config.js",
+                "totalBytes": 1024
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/baroque-plexiglas/theme-config.js",
+                "totalBytes": 1020
+              },
+              {
+                "url": "http://127.0.0.1:8796/theme.js",
+                "totalBytes": 12373,
+                "wastedMs": 82
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/standard/theme-config.js",
+                "totalBytes": 1023
+              },
+              {
+                "url": "http://127.0.0.1:8796/config.js",
+                "totalBytes": 532
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/theme-registry.js",
+                "totalBytes": 4357
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/shared/navigation.css",
+                "totalBytes": 9306,
+                "wastedMs": 122
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/pulse-showcase.css",
+                "totalBytes": 4780,
+                "wastedMs": 82
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/standard/theme.css",
+                "totalBytes": 817,
+                "wastedMs": 82
+              },
+              {
+                "url": "http://127.0.0.1:8796/assets/pulse.css",
+                "totalBytes": 13391,
+                "wastedMs": 122
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/auth-rbac-showcase.css",
+                "totalBytes": 38836,
+                "wastedMs": 242
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/shared/base.css",
+                "totalBytes": 5523
+              },
+              {
+                "url": "http://127.0.0.1:8796/styles/themes/gothic-stickerboard/theme.css",
+                "totalBytes": 34516
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

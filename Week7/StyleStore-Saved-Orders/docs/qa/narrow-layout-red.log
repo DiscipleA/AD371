@@ -1,0 +1,2726 @@
+TAP version 13
+# {"browser":"chromium","version":"156.0.8078.4","cases":28,"labelChecks":84,"failedLabelChecks":42,"pageErrors":0,"externalRequests":0}
+# Subtest: chromium: phone order label and all four draft rows stay readable and contained
+not ok 1 - chromium: phone order label and all four draft rows stay readable and contained
+  ---
+  duration_ms: 29825.183154
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week7/StyleStore-Saved-Orders/tests/frontend-narrow.browser.mjs:16:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Label boxes, complete words, and usable row controls must fit their actual containers
+    + actual - expected
+    
+    + [
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00',
+    +       'form scroll overflow: 200 > 162',
+    +       'summary scroll overflow: 220 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'standard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00',
+    +       'form scroll overflow: 200 > 162',
+    +       'summary scroll overflow: 220 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'standard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00',
+    +       'form scroll overflow: 200 > 162',
+    +       'summary scroll overflow: 220 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'standard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00',
+    +       'form scroll overflow: 200 > 162',
+    +       'summary scroll overflow: 220 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'standard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00',
+    +       'form scroll overflow: 200 > 162',
+    +       'summary scroll overflow: 220 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'standard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00',
+    +       'form scroll overflow: 200 > 162',
+    +       'summary scroll overflow: 220 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'standard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..273.78 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..273.78 outside 59.00..261.00',
+    +       'form scroll overflow: 194 > 160',
+    +       'summary scroll overflow: 214 > 200',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'playful-pop',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..273.78 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..273.78 outside 59.00..261.00',
+    +       'form scroll overflow: 194 > 160',
+    +       'summary scroll overflow: 214 > 200',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'playful-pop',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..273.78 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..273.78 outside 59.00..261.00',
+    +       'form scroll overflow: 194 > 160',
+    +       'summary scroll overflow: 214 > 200',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'playful-pop',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..273.78 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..273.78 outside 59.00..261.00',
+    +       'form scroll overflow: 194 > 160',
+    +       'summary scroll overflow: 214 > 200',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'playful-pop',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..273.78 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..273.78 outside 59.00..261.00',
+    +       'form scroll overflow: 194 > 160',
+    +       'summary scroll overflow: 214 > 200',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'playful-pop',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..273.78 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..273.78 outside 59.00..261.00',
+    +       'form scroll overflow: 194 > 160',
+    +       'summary scroll overflow: 214 > 200',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'playful-pop',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..279.78 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..279.78 outside 59.00..261.00',
+    +       'form scroll overflow: 200 > 160',
+    +       'summary scroll overflow: 220 > 200',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'raggedy-granite',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..279.78 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..279.78 outside 59.00..261.00',
+    +       'form scroll overflow: 200 > 160',
+    +       'summary scroll overflow: 220 > 200',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'raggedy-granite',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..279.78 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..279.78 outside 59.00..261.00',
+    +       'form scroll overflow: 200 > 160',
+    +       'summary scroll overflow: 220 > 200',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'raggedy-granite',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..279.78 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..279.78 outside 59.00..261.00',
+    +       'form scroll overflow: 200 > 160',
+    +       'summary scroll overflow: 220 > 200',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'raggedy-granite',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..279.78 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..279.78 outside 59.00..261.00',
+    +       'form scroll overflow: 200 > 160',
+    +       'summary scroll overflow: 220 > 200',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'raggedy-granite',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..279.78 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..279.78 outside 59.00..261.00',
+    +       'form scroll overflow: 200 > 160',
+    +       'summary scroll overflow: 220 > 200',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'raggedy-granite',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00',
+    +       'form scroll overflow: 194 > 162',
+    +       'summary scroll overflow: 214 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'glossy-marble',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00',
+    +       'form scroll overflow: 194 > 162',
+    +       'summary scroll overflow: 214 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'glossy-marble',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00',
+    +       'form scroll overflow: 194 > 162',
+    +       'summary scroll overflow: 214 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'glossy-marble',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00',
+    +       'form scroll overflow: 194 > 162',
+    +       'summary scroll overflow: 214 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'glossy-marble',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00',
+    +       'form scroll overflow: 194 > 162',
+    +       'summary scroll overflow: 214 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'glossy-marble',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00',
+    +       'form scroll overflow: 194 > 162',
+    +       'summary scroll overflow: 214 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'glossy-marble',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00',
+    +       'form scroll overflow: 194 > 162',
+    +       'summary scroll overflow: 214 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'luminous-midnight',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00',
+    +       'form scroll overflow: 194 > 162',
+    +       'summary scroll overflow: 214 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'luminous-midnight',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00',
+    +       'form scroll overflow: 194 > 162',
+    +       'summary scroll overflow: 214 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'luminous-midnight',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00',
+    +       'form scroll overflow: 194 > 162',
+    +       'summary scroll overflow: 214 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'luminous-midnight',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00',
+    +       'form scroll overflow: 194 > 162',
+    +       'summary scroll overflow: 214 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'luminous-midnight',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00',
+    +       'form scroll overflow: 194 > 162',
+    +       'summary scroll overflow: 214 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'luminous-midnight',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..280.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..280.78 outside 58.00..262.00',
+    +       'form scroll overflow: 202 > 162',
+    +       'summary scroll overflow: 222 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'gothic-stickerboard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..280.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..280.78 outside 58.00..262.00',
+    +       'form scroll overflow: 202 > 162',
+    +       'summary scroll overflow: 222 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'gothic-stickerboard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..280.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..280.78 outside 58.00..262.00',
+    +       'form scroll overflow: 202 > 162',
+    +       'summary scroll overflow: 222 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'gothic-stickerboard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..280.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..280.78 outside 58.00..262.00',
+    +       'form scroll overflow: 202 > 162',
+    +       'summary scroll overflow: 222 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'gothic-stickerboard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..280.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..280.78 outside 58.00..262.00',
+    +       'form scroll overflow: 202 > 162',
+    +       'summary scroll overflow: 222 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'gothic-stickerboard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..280.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..280.78 outside 58.00..262.00',
+    +       'form scroll overflow: 202 > 162',
+    +       'summary scroll overflow: 222 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'gothic-stickerboard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00',
+    +       'form scroll overflow: 200 > 162',
+    +       'summary scroll overflow: 220 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'baroque-plexiglas',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00',
+    +       'form scroll overflow: 200 > 162',
+    +       'summary scroll overflow: 220 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'baroque-plexiglas',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00',
+    +       'form scroll overflow: 200 > 162',
+    +       'summary scroll overflow: 220 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'baroque-plexiglas',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00',
+    +       'form scroll overflow: 200 > 162',
+    +       'summary scroll overflow: 220 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'baroque-plexiglas',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00',
+    +       'form scroll overflow: 200 > 162',
+    +       'summary scroll overflow: 220 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'baroque-plexiglas',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00',
+    +       'form scroll overflow: 200 > 162',
+    +       'summary scroll overflow: 220 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'baroque-plexiglas',
+    +     width: 320
+    +   }
+    + ]
+    - []
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+    0:
+      theme: 'standard'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 200 > 162'
+        3: 'summary scroll overflow: 220 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    1:
+      theme: 'standard'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 200 > 162'
+        3: 'summary scroll overflow: 220 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    2:
+      theme: 'standard'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 200 > 162'
+        3: 'summary scroll overflow: 220 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    3:
+      theme: 'standard'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 200 > 162'
+        3: 'summary scroll overflow: 220 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    4:
+      theme: 'standard'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 200 > 162'
+        3: 'summary scroll overflow: 220 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    5:
+      theme: 'standard'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 200 > 162'
+        3: 'summary scroll overflow: 220 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    6:
+      theme: 'playful-pop'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 80.00..273.78 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..273.78 outside 59.00..261.00'
+        2: 'form scroll overflow: 194 > 160'
+        3: 'summary scroll overflow: 214 > 200'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    7:
+      theme: 'playful-pop'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 80.00..273.78 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..273.78 outside 59.00..261.00'
+        2: 'form scroll overflow: 194 > 160'
+        3: 'summary scroll overflow: 214 > 200'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    8:
+      theme: 'playful-pop'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 80.00..273.78 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..273.78 outside 59.00..261.00'
+        2: 'form scroll overflow: 194 > 160'
+        3: 'summary scroll overflow: 214 > 200'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    9:
+      theme: 'playful-pop'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 80.00..273.78 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..273.78 outside 59.00..261.00'
+        2: 'form scroll overflow: 194 > 160'
+        3: 'summary scroll overflow: 214 > 200'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    10:
+      theme: 'playful-pop'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 80.00..273.78 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..273.78 outside 59.00..261.00'
+        2: 'form scroll overflow: 194 > 160'
+        3: 'summary scroll overflow: 214 > 200'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    11:
+      theme: 'playful-pop'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 80.00..273.78 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..273.78 outside 59.00..261.00'
+        2: 'form scroll overflow: 194 > 160'
+        3: 'summary scroll overflow: 214 > 200'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    12:
+      theme: 'raggedy-granite'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 80.00..279.78 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..279.78 outside 59.00..261.00'
+        2: 'form scroll overflow: 200 > 160'
+        3: 'summary scroll overflow: 220 > 200'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    13:
+      theme: 'raggedy-granite'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 80.00..279.78 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..279.78 outside 59.00..261.00'
+        2: 'form scroll overflow: 200 > 160'
+        3: 'summary scroll overflow: 220 > 200'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    14:
+      theme: 'raggedy-granite'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 80.00..279.78 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..279.78 outside 59.00..261.00'
+        2: 'form scroll overflow: 200 > 160'
+        3: 'summary scroll overflow: 220 > 200'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    15:
+      theme: 'raggedy-granite'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 80.00..279.78 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..279.78 outside 59.00..261.00'
+        2: 'form scroll overflow: 200 > 160'
+        3: 'summary scroll overflow: 220 > 200'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    16:
+      theme: 'raggedy-granite'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 80.00..279.78 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..279.78 outside 59.00..261.00'
+        2: 'form scroll overflow: 200 > 160'
+        3: 'summary scroll overflow: 220 > 200'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    17:
+      theme: 'raggedy-granite'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 80.00..279.78 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..279.78 outside 59.00..261.00'
+        2: 'form scroll overflow: 200 > 160'
+        3: 'summary scroll overflow: 220 > 200'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    18:
+      theme: 'glossy-marble'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 194 > 162'
+        3: 'summary scroll overflow: 214 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    19:
+      theme: 'glossy-marble'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 194 > 162'
+        3: 'summary scroll overflow: 214 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    20:
+      theme: 'glossy-marble'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 194 > 162'
+        3: 'summary scroll overflow: 214 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    21:
+      theme: 'glossy-marble'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 194 > 162'
+        3: 'summary scroll overflow: 214 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    22:
+      theme: 'glossy-marble'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 194 > 162'
+        3: 'summary scroll overflow: 214 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    23:
+      theme: 'glossy-marble'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 194 > 162'
+        3: 'summary scroll overflow: 214 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    24:
+      theme: 'luminous-midnight'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 194 > 162'
+        3: 'summary scroll overflow: 214 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    25:
+      theme: 'luminous-midnight'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 194 > 162'
+        3: 'summary scroll overflow: 214 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    26:
+      theme: 'luminous-midnight'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 194 > 162'
+        3: 'summary scroll overflow: 214 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    27:
+      theme: 'luminous-midnight'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 194 > 162'
+        3: 'summary scroll overflow: 214 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    28:
+      theme: 'luminous-midnight'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 194 > 162'
+        3: 'summary scroll overflow: 214 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    29:
+      theme: 'luminous-midnight'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..272.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..272.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 194 > 162'
+        3: 'summary scroll overflow: 214 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    30:
+      theme: 'gothic-stickerboard'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..280.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..280.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 202 > 162'
+        3: 'summary scroll overflow: 222 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    31:
+      theme: 'gothic-stickerboard'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..280.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..280.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 202 > 162'
+        3: 'summary scroll overflow: 222 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    32:
+      theme: 'gothic-stickerboard'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..280.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..280.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 202 > 162'
+        3: 'summary scroll overflow: 222 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    33:
+      theme: 'gothic-stickerboard'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..280.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..280.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 202 > 162'
+        3: 'summary scroll overflow: 222 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    34:
+      theme: 'gothic-stickerboard'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..280.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..280.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 202 > 162'
+        3: 'summary scroll overflow: 222 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    35:
+      theme: 'gothic-stickerboard'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..280.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..280.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 202 > 162'
+        3: 'summary scroll overflow: 222 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    36:
+      theme: 'baroque-plexiglas'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 200 > 162'
+        3: 'summary scroll overflow: 220 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    37:
+      theme: 'baroque-plexiglas'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 200 > 162'
+        3: 'summary scroll overflow: 220 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    38:
+      theme: 'baroque-plexiglas'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 200 > 162'
+        3: 'summary scroll overflow: 220 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    39:
+      theme: 'baroque-plexiglas'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 200 > 162'
+        3: 'summary scroll overflow: 220 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    40:
+      theme: 'baroque-plexiglas'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 200 > 162'
+        3: 'summary scroll overflow: 220 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    41:
+      theme: 'baroque-plexiglas'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..278.78 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..278.78 outside 58.00..262.00'
+        2: 'form scroll overflow: 200 > 162'
+        3: 'summary scroll overflow: 220 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Backpack" in City Backpack: 2 lines'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week7/StyleStore-Saved-Orders/tests/frontend-narrow.browser.mjs:127:14)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# {"browser":"firefox","version":"157.0","cases":28,"labelChecks":84,"failedLabelChecks":42,"pageErrors":0,"externalRequests":0}
+# Subtest: firefox: phone order label and all four draft rows stay readable and contained
+not ok 2 - firefox: phone order label and all four draft rows stay readable and contained
+  ---
+  duration_ms: 31375.472918
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week7/StyleStore-Saved-Orders/tests/frontend-narrow.browser.mjs:16:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Label boxes, complete words, and usable row controls must fit their actual containers
+    + actual - expected
+    
+    + [
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'standard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'standard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'standard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'standard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'standard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'standard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..288.80 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..288.80 outside 59.00..261.00',
+    +       'form scroll overflow: 209 > 160',
+    +       'summary scroll overflow: 229 > 200',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'playful-pop',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..239.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..260.00',
+    +       'form scroll overflow: 209 > 160',
+    +       'summary scroll overflow: 229 > 200',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'playful-pop',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..239.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..260.00',
+    +       'form scroll overflow: 209 > 160',
+    +       'summary scroll overflow: 229 > 200',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'playful-pop',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 80.00..288.80 outside 80.00..240.00',
+    +       'Order-label input escapes summary: 80.00..288.80 outside 59.00..261.00',
+    +       'form scroll overflow: 209 > 160',
+    +       'summary scroll overflow: 229 > 200',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'playful-pop',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..239.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..260.00',
+    +       'form scroll overflow: 209 > 160',
+    +       'summary scroll overflow: 229 > 200',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'playful-pop',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..239.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..260.00',
+    +       'form scroll overflow: 209 > 160',
+    +       'summary scroll overflow: 229 > 200',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'playful-pop',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'raggedy-granite',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'raggedy-granite',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'raggedy-granite',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'raggedy-granite',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'raggedy-granite',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'raggedy-granite',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'glossy-marble',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'glossy-marble',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'glossy-marble',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'glossy-marble',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'glossy-marble',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'glossy-marble',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'luminous-midnight',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'luminous-midnight',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'luminous-midnight',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'luminous-midnight',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'luminous-midnight',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'luminous-midnight',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..274.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..274.80 outside 58.00..262.00',
+    +       'form scroll overflow: 196 > 162',
+    +       'summary scroll overflow: 216 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'gothic-stickerboard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..274.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..274.80 outside 58.00..262.00',
+    +       'form scroll overflow: 196 > 162',
+    +       'summary scroll overflow: 216 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'gothic-stickerboard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..274.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..274.80 outside 58.00..262.00',
+    +       'form scroll overflow: 196 > 162',
+    +       'summary scroll overflow: 216 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'gothic-stickerboard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..274.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..274.80 outside 58.00..262.00',
+    +       'form scroll overflow: 196 > 162',
+    +       'summary scroll overflow: 216 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'gothic-stickerboard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..274.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..274.80 outside 58.00..262.00',
+    +       'form scroll overflow: 196 > 162',
+    +       'summary scroll overflow: 216 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'gothic-stickerboard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..274.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..274.80 outside 58.00..262.00',
+    +       'form scroll overflow: 196 > 162',
+    +       'summary scroll overflow: 216 > 202',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 2 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'gothic-stickerboard',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'light',
+    +     theme: 'baroque-plexiglas',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'light',
+    +     theme: 'baroque-plexiglas',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'light',
+    +     theme: 'baroque-plexiglas',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: 'short',
+    +     mode: 'dark',
+    +     theme: 'baroque-plexiglas',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 ASCII',
+    +     mode: 'dark',
+    +     theme: 'baroque-plexiglas',
+    +     width: 320
+    +   },
+    +   {
+    +     issues: [
+    +       'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00',
+    +       'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00',
+    +       'form scroll overflow: 209 > 162',
+    +       'summary scroll overflow: 229 > 202',
+    +       'Fractured word "Retro" in Retro Sneakers: 2 lines',
+    +       'Fractured word "Sneakers" in Retro Sneakers: 3 lines',
+    +       'Fractured word "Classic" in Classic Tee: 2 lines',
+    +       'Fractured word "Everyday" in Everyday Hoodie: 3 lines',
+    +       'Fractured word "Hoodie" in Everyday Hoodie: 2 lines',
+    +       'Fractured word "Backpack" in City Backpack: 3 lines'
+    +     ],
+    +     label: '80 emoji',
+    +     mode: 'dark',
+    +     theme: 'baroque-plexiglas',
+    +     width: 320
+    +   }
+    + ]
+    - []
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+    0:
+      theme: 'standard'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    1:
+      theme: 'standard'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    2:
+      theme: 'standard'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    3:
+      theme: 'standard'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    4:
+      theme: 'standard'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    5:
+      theme: 'standard'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    6:
+      theme: 'playful-pop'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 80.00..288.80 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..288.80 outside 59.00..261.00'
+        2: 'form scroll overflow: 209 > 160'
+        3: 'summary scroll overflow: 229 > 200'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    7:
+      theme: 'playful-pop'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..239.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..260.00'
+        2: 'form scroll overflow: 209 > 160'
+        3: 'summary scroll overflow: 229 > 200'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    8:
+      theme: 'playful-pop'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..239.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..260.00'
+        2: 'form scroll overflow: 209 > 160'
+        3: 'summary scroll overflow: 229 > 200'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    9:
+      theme: 'playful-pop'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 80.00..288.80 outside 80.00..240.00'
+        1: 'Order-label input escapes summary: 80.00..288.80 outside 59.00..261.00'
+        2: 'form scroll overflow: 209 > 160'
+        3: 'summary scroll overflow: 229 > 200'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    10:
+      theme: 'playful-pop'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..239.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..260.00'
+        2: 'form scroll overflow: 209 > 160'
+        3: 'summary scroll overflow: 229 > 200'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    11:
+      theme: 'playful-pop'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..239.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..260.00'
+        2: 'form scroll overflow: 209 > 160'
+        3: 'summary scroll overflow: 229 > 200'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    12:
+      theme: 'raggedy-granite'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    13:
+      theme: 'raggedy-granite'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    14:
+      theme: 'raggedy-granite'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    15:
+      theme: 'raggedy-granite'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    16:
+      theme: 'raggedy-granite'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    17:
+      theme: 'raggedy-granite'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    18:
+      theme: 'glossy-marble'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    19:
+      theme: 'glossy-marble'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    20:
+      theme: 'glossy-marble'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    21:
+      theme: 'glossy-marble'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    22:
+      theme: 'glossy-marble'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    23:
+      theme: 'glossy-marble'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    24:
+      theme: 'luminous-midnight'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    25:
+      theme: 'luminous-midnight'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    26:
+      theme: 'luminous-midnight'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    27:
+      theme: 'luminous-midnight'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    28:
+      theme: 'luminous-midnight'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    29:
+      theme: 'luminous-midnight'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    30:
+      theme: 'gothic-stickerboard'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..274.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..274.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 196 > 162'
+        3: 'summary scroll overflow: 216 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    31:
+      theme: 'gothic-stickerboard'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..274.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..274.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 196 > 162'
+        3: 'summary scroll overflow: 216 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    32:
+      theme: 'gothic-stickerboard'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..274.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..274.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 196 > 162'
+        3: 'summary scroll overflow: 216 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    33:
+      theme: 'gothic-stickerboard'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..274.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..274.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 196 > 162'
+        3: 'summary scroll overflow: 216 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    34:
+      theme: 'gothic-stickerboard'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..274.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..274.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 196 > 162'
+        3: 'summary scroll overflow: 216 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    35:
+      theme: 'gothic-stickerboard'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..274.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..274.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 196 > 162'
+        3: 'summary scroll overflow: 216 > 202'
+        4: 'Fractured word "Sneakers" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        6: 'Fractured word "Everyday" in Everyday Hoodie: 2 lines'
+        7: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        8: 'Fractured word "Backpack" in City Backpack: 2 lines'
+    36:
+      theme: 'baroque-plexiglas'
+      mode: 'light'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    37:
+      theme: 'baroque-plexiglas'
+      mode: 'light'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    38:
+      theme: 'baroque-plexiglas'
+      mode: 'light'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    39:
+      theme: 'baroque-plexiglas'
+      mode: 'dark'
+      width: 320
+      label: 'short'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    40:
+      theme: 'baroque-plexiglas'
+      mode: 'dark'
+      width: 320
+      label: '80 ASCII'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+    41:
+      theme: 'baroque-plexiglas'
+      mode: 'dark'
+      width: 320
+      label: '80 emoji'
+      issues:
+        0: 'Order-label input escapes form: 79.00..287.80 outside 79.00..241.00'
+        1: 'Order-label input escapes summary: 79.00..287.80 outside 58.00..262.00'
+        2: 'form scroll overflow: 209 > 162'
+        3: 'summary scroll overflow: 229 > 202'
+        4: 'Fractured word "Retro" in Retro Sneakers: 2 lines'
+        5: 'Fractured word "Sneakers" in Retro Sneakers: 3 lines'
+        6: 'Fractured word "Classic" in Classic Tee: 2 lines'
+        7: 'Fractured word "Everyday" in Everyday Hoodie: 3 lines'
+        8: 'Fractured word "Hoodie" in Everyday Hoodie: 2 lines'
+        9: 'Fractured word "Backpack" in City Backpack: 3 lines'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week7/StyleStore-Saved-Orders/tests/frontend-narrow.browser.mjs:127:14)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 0
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 61380.908049

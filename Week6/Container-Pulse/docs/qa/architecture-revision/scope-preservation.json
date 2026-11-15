@@ -1,0 +1,10 @@
+{
+  "protected_sections": [
+    1,
+    2,
+    6,
+    7
+  ],
+  "byte_identical": true,
+  "unexpected_source_changes": []
+}

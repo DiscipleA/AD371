@@ -1,0 +1,37 @@
+{
+  "url": "http://127.0.0.1:8796/",
+  "captured_at": "2026-11-06T06:06:28.480221+00:00",
+  "cases": [
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/light/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1044,
+        "height": 855.5,
+        "scaleX": 0.725,
+        "scaleY": 0.725,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/light/390",
+      "status": "failed",
+      "detail": "Individual font sizing drifted with viewport",
+      "trace": "Traceback (most recent call last):\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_architecture_revision.py\", line 20, in record\n    try: report['cases'].append({'engine': engine, 'name': name, 'status': 'passed', 'detail': action()})\n                                                                                               ~~~~~~^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_architecture_revision.py\", line 75, in geometry\n    if fonts is not None: require(d['fontProperties']==fonts,'Individual font sizing drifted with viewport')\n                          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/browser_architecture_revision.py\", line 17, in require\n    if not value: raise AssertionError(message)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Individual font sizing drifted with viewport\n"
+    }
+  ],
+  "browsers": {
+    "chromium": "156.0.8078.4"
+  },
+  "totals": {
+    "passed": 1,
+    "failed": 1
+  }
+}

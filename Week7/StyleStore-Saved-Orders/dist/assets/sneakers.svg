@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="sneaker-title sneaker-description">
+  <title id="sneaker-title">Retro Sneakers — original product illustration</title>
+  <desc id="sneaker-description">An unbranded cream, coral, and teal low-top sneaker, drawn in profile over a soft pale background. Layered panels, simple laces, and a thick rubber sole suggest a retro running shoe.</desc>
+  <defs>
+    <linearGradient id="backdrop" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6eee1"/><stop offset="1" stop-color="#e8e2d6"/></linearGradient>
+    <linearGradient id="upper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff9ea"/><stop offset="1" stop-color="#e5dcc9"/></linearGradient>
+    <linearGradient id="coral" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ec896f"/><stop offset="1" stop-color="#c75948"/></linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#456a6b"/><stop offset="1" stop-color="#254b50"/></linearGradient>
+    <linearGradient id="sole" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fffdf4"/><stop offset="1" stop-color="#dcd2bf"/></linearGradient>
+  </defs>
+  <rect width="800" height="560" rx="28" fill="url(#backdrop)"/>
+  <circle cx="626" cy="146" r="114" fill="#f3b89c" opacity=".28"/>
+  <circle cx="146" cy="399" r="114" fill="#b9cfca" opacity=".32"/>
+  <path d="M90 420h620" fill="none" stroke="#d1c5b3" stroke-width="2"/>
+  <ellipse cx="410" cy="427" rx="278" ry="22" fill="#3a4342" opacity=".13"/>
+  <g stroke="#303d3d" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Original vector panel construction; no third-party marks or embedded media. -->
+    <path d="M117 357c9-19 28-25 48-31l59-17 60-81 47-30 41 25 72 40 65 33 107 29c25 7 50 14 67 31l9 24-72 24-444-9z" fill="url(#upper)" stroke-width="5"/>
+    <path d="M227 307l57-79 45-29 29 17-14 47-54 62z" fill="url(#teal)" stroke-width="4"/>
+    <path d="M276 229l-15-27 13-18 44-10 33 24-21 20-32-13z" fill="#364d51" stroke-width="5"/>
+    <path d="M296 230l22-26 27 5 83 62-24 28-55-21z" fill="url(#coral)" stroke-width="4"/>
+    <path d="M147 334l58-22 57 22-17 52-103-2-28-24z" fill="url(#coral)" stroke-width="4"/>
+    <path d="M241 326l50-54 47 21-34 30-14 57-43 8z" fill="#c5d7cd" stroke-width="4"/>
+    <path d="M303 380l24-71 24-18 59 11 44-22 50 29-27 50-55 31z" fill="#f6eddd" stroke-width="4"/>
+    <path d="M398 306l38-37 42 21-28 65-34 28-30-6 35-46z" fill="url(#teal)" stroke-width="4"/>
+    <path d="M474 363l28-55 47 16 65 12c24 6 48 14 63 29l-47 24-95 2z" fill="url(#coral)" stroke-width="4"/>
+    <path d="M508 328l34 10 45 7 39 12" fill="none" stroke="#f9d6c0" stroke-width="3"/>
+    <path d="M120 365c26 12 65 15 106 16l301 7c63 1 112-5 154-22l11 17-6 23c-50 17-113 20-170 18l-300-8c-40-1-76-5-99-19l-7-17z" fill="url(#sole)" stroke-width="5"/>
+    <path d="M115 391c26 13 65 18 105 19l299 8c57 2 118-1 169-18l-8 16c-45 16-109 20-164 18l-297-8c-48-1-77-8-97-18z" fill="#41585a" stroke-width="4"/>
+    <path d="M139 388l28 6m16 2 28 2m18 1 33 1m222 5 37 1m17 0 34-1m17-2 28-3m16-3 26-6" fill="none" stroke="#b6aa96" stroke-width="2"/>
+    <path d="M179 329l40 17-10 26m46-46 23-27m34 15-13 48m187-7 26 14 88 6" fill="none" stroke="#526364" stroke-width="2" stroke-dasharray="3 6"/>
+    <path d="M309 237l49 23m-38-5 52 24m-41-5 52 23m-38-5 52 21" fill="none" stroke="#2a4548" stroke-width="10"/>
+    <path d="M309 237l49 23m-38-5 52 24m-41-5 52 23m-38-5 52 21" fill="none" stroke="#fff9eb" stroke-width="6"/>
+    <path d="M375 281c17-29 37-22 26-8-8 10-26 8-26 8zm0 0c-12-27-31-22-24-8 5 9 24 8 24 8zm0 0 10 28m-10-28-15 16" fill="none" stroke="#fff9eb" stroke-width="5"/>
+    <path d="M155 348l9-23 22-5" fill="none" stroke="#fbd4bf" stroke-width="5"/>
+    <path d="M284 218l-5-13 17-7" fill="none" stroke="#819d98" stroke-width="4"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+project_id = "stylestore-saved-orders"
+
+[functions.saved-orders]
+enabled = true
+# Required for modern signing keys. controller.mjs explicitly verifies EVERY
+# non-OPTIONS request at Supabase Auth /auth/v1/user before any storage access.
+verify_jwt = false
+entrypoint = "./functions/saved-orders/index.ts"

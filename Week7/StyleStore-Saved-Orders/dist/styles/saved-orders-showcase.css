@@ -1,0 +1,66 @@
+/* Assignment-owned styles. Outer chrome, workflow and audit internals are cloned from the course reference. */
+body.saved-orders-page .process-number { color:var(--flex-color-text-primary); }
+body.saved-orders-page :where([id]) { scroll-margin-top:7rem; }
+body.saved-orders-page :where(summary,pre):focus-visible { outline:3px solid var(--flex-color-accent-secondary); outline-offset:3px; }
+body.saved-orders-page [data-implementation-spec] pre { block-size:24rem; max-block-size:60vh; overflow:auto; scrollbar-gutter:stable; }
+body.saved-orders-page .architecture-note { margin-block:var(--flex-space-lg); color:var(--flex-color-text-secondary); overflow-wrap:anywhere; }
+body.saved-orders-page a.concept-card { display:flex; flex-direction:column; color:inherit; text-decoration:none; }
+body.saved-orders-page .concept-source { display:block; margin-block-start:auto; padding-block-start:var(--flex-space-md); color:var(--flex-color-accent-secondary); font:650 var(--flex-step--1)/1.6 var(--flex-font-mono); overflow-wrap:anywhere; }
+body.saved-orders-page a.concept-card:focus-visible { outline:3px solid var(--flex-color-accent-secondary); outline-offset:3px; }
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.saved-orders-page .concept-token { color:color-mix(in srgb,var(--flex-color-accent-secondary) 65%,white); }
+body.saved-orders-page .orders-architecture { margin:0; }
+body.saved-orders-page .orders-map { padding:clamp(.5rem,1.3vw,1rem); border:1px solid var(--flex-color-border); border-radius:var(--flex-radius-lg); background-color:var(--flex-color-surface-elevated); background-image:linear-gradient(color-mix(in srgb,var(--flex-color-border) 28%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--flex-color-border) 28%,transparent) 1px,transparent 1px); background-size:24px 24px; }
+body.saved-orders-page .orders-map svg { display:block; inline-size:100%; block-size:auto; font-family:var(--flex-font-sans); font-size:20px; letter-spacing:0; word-spacing:0; }
+body.saved-orders-page .orders-map text { fill:var(--flex-color-text-primary); stroke:none; font-size:20px; letter-spacing:0; word-spacing:0; }
+body.saved-orders-page .orders-map .map-title { font-size:26px; font-weight:750; }
+body.saved-orders-page .orders-map .map-subtitle { font-size:22px; font-weight:700; }
+body.saved-orders-page .orders-map .map-small { font-size:18px; fill:var(--flex-color-text-secondary); }
+body.saved-orders-page .orders-map .map-tag { font:650 18px var(--flex-font-mono); fill:var(--flex-color-text-secondary); }
+body.saved-orders-page .orders-map .map-label { font-size:18px; font-weight:700; }
+body.saved-orders-page .orders-map .map-zone { fill:none; stroke:var(--flex-color-border); stroke-width:1.5; stroke-dasharray:2 6; }
+body.saved-orders-page .orders-map .map-node { fill:var(--flex-color-surface); stroke:var(--flex-color-border); stroke-width:2; }
+body.saved-orders-page .orders-map .map-node--api { stroke:var(--flex-color-accent); stroke-width:2.5; }
+body.saved-orders-page .orders-map .map-node--db { stroke:var(--flex-color-accent-secondary); }
+body.saved-orders-page .orders-map .map-table { fill:var(--flex-color-surface-elevated); stroke:var(--flex-color-border); stroke-width:1.5; }
+body.saved-orders-page .orders-map .map-flow { fill:none; stroke:var(--flex-color-accent); stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#sso-arrow); }
+body.saved-orders-page .orders-map .map-response { stroke:var(--flex-color-accent-secondary); stroke-dasharray:8 6; }
+body.saved-orders-page .orders-architecture figcaption { margin-block-start:var(--flex-space-md); color:var(--flex-color-text-secondary); font-size:var(--flex-step--1); }
+body.saved-orders-page .architecture-disclosure { margin-block-start:var(--flex-space-lg); color:var(--flex-color-text-secondary); }
+body.saved-orders-page .architecture-disclosure>summary { cursor:pointer; color:var(--flex-color-text-primary); font-weight:700; }
+body.saved-orders-page .architecture-disclosure-content h3 { margin:1.5rem 0 .5rem; font-size:1.1rem; color:var(--flex-color-text-primary); }
+body.saved-orders-page .audit-layout { grid-template-columns:repeat(2,minmax(0,1fr)); }
+body.saved-orders-page .audit-item h3 { color:var(--flex-color-text-primary); }
+body.saved-orders-page .orders-idle { padding:var(--flex-space-lg); border:1px solid var(--flex-color-border); border-radius:var(--flex-radius-md); background:var(--flex-color-surface-elevated); color:var(--flex-color-text-secondary); }
+body.saved-orders-page .working-notes { grid-template-columns:repeat(3,minmax(0,1fr)); margin-block-start:var(--flex-space-lg); align-items:start; }
+body.saved-orders-page .working-notes .result-note { padding:1rem 1.1rem; }
+body.saved-orders-page .working-notes h3 { font-size:1rem; margin-block-end:.5rem; }
+body.saved-orders-page .working-notes p { font-size:.85rem; line-height:1.65; }
+/* Pair the conditional JSON output's own dark surface and light text. Theme
+   !important code-surface pairs remain intact; summary and hint keep their
+   independently readable storefront surface. No global palette override. */
+body.saved-orders-page .saved-orders-app.stylestore-lab .ss-response pre {
+  background:#101820;
+  color:#f3e7ce;
+}
+/* Local contrast corrections for the inherited theme surfaces. Keep the shared
+   palette, decoration and component geometry unchanged. */
+html[data-style-theme="raggedy-granite"][data-theme="light"] body.saved-orders-page :is(.narrative-panel,.concept-card,.audit-item,.result-note) p,
+html[data-style-theme="raggedy-granite"][data-theme="light"] body.saved-orders-page .ss-quote-disclaimer {
+  color:var(--flex-color-text-secondary);
+}
+html[data-style-theme="raggedy-granite"][data-theme="light"] body.saved-orders-page :is(.concept-source,.audit-layout .code-label) {
+  color:color-mix(in srgb,var(--flex-color-accent-secondary) 75%,black);
+}
+html[data-style-theme="raggedy-granite"] body.saved-orders-page .stylestore-lab .ss-header-utility > :first-child,
+html[data-style-theme="raggedy-granite"][data-theme="dark"] body.saved-orders-page :is(.section-index,.ss-eyebrow) {
+  color:var(--flex-color-accent-hover);
+}
+html[data-style-theme="gothic-stickerboard"][data-theme="dark"] body.saved-orders-page :is(.eyebrow,.concept-source,.audit-layout .code-label) {
+  color:color-mix(in srgb,var(--flex-color-accent-secondary) 65%,white);
+}
+html[data-style-theme="baroque-plexiglas"][data-theme="light"] body.saved-orders-page .audit-layout .code-label {
+  color:color-mix(in srgb,var(--flex-color-accent-secondary) 60%,black);
+}
+@media (max-width:800px) { body.saved-orders-page .audit-layout { grid-template-columns:minmax(0,1fr); } }
+@media (max-width:480px) { body.saved-orders-page .working-notes { grid-template-columns:minmax(0,1fr); } body.saved-orders-page .portfolio-menu__toggle { min-inline-size:5rem; } }
+@media print { body.saved-orders-page .copy-button { display:none; } body.saved-orders-page :where(.hero,.section-card) { box-shadow:none; } body.saved-orders-page :where(pre,code) { white-space:pre-wrap; } }

@@ -1,0 +1,3254 @@
+{
+  "url": "http://127.0.0.1:8796/",
+  "captured_at": "2026-11-06T01:56:43.551752+00:00",
+  "browsers": {
+    "chromium": "156.0.8078.4",
+    "firefox": "157.0"
+  },
+  "cases": [
+    {
+      "engine": "chromium",
+      "name": "compact paired desktop cards with no decorative arrow",
+      "status": "passed",
+      "detail": {
+        "height": 869.828125,
+        "feedHeight": 240.203125,
+        "runtimeHeight": 240.203125,
+        "graphWidth": 1004,
+        "gridWidth": 1004,
+        "graphBottom": 6548.484375,
+        "runtimeTop": 6561.28125,
+        "distributionTop": 6814.28125,
+        "distributionWidth": 1004,
+        "feedBottom": 6801.484375,
+        "hasArrow": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "honest empty graphs and section spacing",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "graphs agree with real responses and bounded observation window",
+      "status": "passed",
+      "detail": {
+        "actual_responses": 18,
+        "retained_points": 12,
+        "distribution": {
+          "60178770b70e": 6,
+          "d03392d8bc90": 6
+        }
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 906,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 880.78125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 879.84375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 878.96875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 527.71875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 199.75,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 133.21875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 906,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 880.78125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 879.84375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 878.96875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 527.71875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 199.75,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout standard/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 133.21875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 904,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 878.78125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 877.84375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 876.96875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 525.71875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 197.75,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 131.21875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 904,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 878.78125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 877.84375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 876.96875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 525.71875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 197.75,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout playful-pop/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 131.21875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 37.6123046875,
+        "overflow": 0,
+        "plotWidth": 1015.1710205078125,
+        "plotHeight": 122.12548828125,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 29.92578125,
+        "overflow": 0,
+        "plotWidth": 877.9681396484375,
+        "plotHeight": 121.837890625,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 29.927734375,
+        "overflow": 0,
+        "plotWidth": 877.0307006835938,
+        "plotHeight": 121.8359375,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 29.9296875,
+        "overflow": 0,
+        "plotWidth": 876.1556396484375,
+        "plotHeight": 121.83447265625,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 30.6689453125,
+        "overflow": 0,
+        "plotWidth": 524.9532470703125,
+        "plotHeight": 121.0986328125,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 196.78125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 130.265625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 37.6123046875,
+        "overflow": 0,
+        "plotWidth": 1015.1710205078125,
+        "plotHeight": 122.12548828125,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 29.92578125,
+        "overflow": 0,
+        "plotWidth": 877.9681396484375,
+        "plotHeight": 121.837890625,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 29.927734375,
+        "overflow": 0,
+        "plotWidth": 877.0307006835938,
+        "plotHeight": 121.8359375,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 29.9296875,
+        "overflow": 0,
+        "plotWidth": 876.1556396484375,
+        "plotHeight": 121.83447265625,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 30.6689453125,
+        "overflow": 0,
+        "plotWidth": 524.9532470703125,
+        "plotHeight": 121.0986328125,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 196.78125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout raggedy-granite/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 130.265625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 1017.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 880.4375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 879.5,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 878.625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 527.375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 199.421875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 132.890625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 1017.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 880.4375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 879.5,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 878.625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 527.375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 199.421875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout glossy-marble/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 132.890625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 953.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 880.4375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 879.5,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 878.625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 527.375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 199.421875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 132.890625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 953.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 880.4375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 879.5,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 878.625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 527.375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 199.421875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout luminous-midnight/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 132.890625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 921.359375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 880.15625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 879.21875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 878.34375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 527.109375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 199.171875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 132.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 921.359375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 880.15625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 879.21875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 878.34375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 527.109375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 199.171875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout gothic-stickerboard/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 132.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 905.859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 880.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 879.703125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 878.828125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 527.578125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 199.609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 133.078125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 905.859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 880.640625,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 879.703125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 878.828125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 527.578125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 199.609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "populated layout baroque-plexiglas/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 133.078125,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "Clear resets both graphs",
+      "status": "passed",
+      "detail": "Cleared plotted observations, distribution and notifications."
+    },
+    {
+      "engine": "chromium",
+      "name": "no uncaught browser errors",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "engine": "firefox",
+      "name": "compact paired desktop cards with no decorative arrow",
+      "status": "passed",
+      "detail": {
+        "height": 870.11669921875,
+        "feedHeight": 240.3333282470703,
+        "runtimeHeight": 240.3333282470703,
+        "graphWidth": 1004,
+        "gridWidth": 1004,
+        "graphBottom": 6571.066497802734,
+        "runtimeTop": 6583.86669921875,
+        "distributionTop": 6837,
+        "distributionWidth": 1004,
+        "feedBottom": 6824.20002746582,
+        "hasArrow": false
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "honest empty graphs and section spacing",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "graphs agree with real responses and bounded observation window",
+      "status": "passed",
+      "detail": {
+        "actual_responses": 18,
+        "retained_points": 12,
+        "distribution": {
+          "d03392d8bc90": 6,
+          "60178770b70e": 6
+        }
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 913.2000122070312,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 31.999954223632812,
+        "overflow": 0,
+        "plotWidth": 888,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32.00006103515625,
+        "overflow": 0,
+        "plotWidth": 887.0999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99993896484375,
+        "overflow": 0,
+        "plotWidth": 886.0999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 534.933349609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 206.93333435058594,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99951171875,
+        "overflow": 0,
+        "plotWidth": 140.39999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "standard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 913.2000122070312,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 31.999954223632812,
+        "overflow": 0,
+        "plotWidth": 888,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32.00006103515625,
+        "overflow": 0,
+        "plotWidth": 887.0999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99993896484375,
+        "overflow": 0,
+        "plotWidth": 886.0999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 534.933349609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 206.93333435058594,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout standard/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99951171875,
+        "overflow": 0,
+        "plotWidth": 140.39999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "standard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 911.2000122070312,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32.00004577636719,
+        "overflow": 0,
+        "plotWidth": 886,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 885.0999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99993896484375,
+        "overflow": 0,
+        "plotWidth": 884.0999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 532.933349609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32.00048828125,
+        "overflow": 0,
+        "plotWidth": 204.93333435058594,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32.00048828125,
+        "overflow": 0,
+        "plotWidth": 138.39999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "playful-pop",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 911.2000122070312,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32.00004577636719,
+        "overflow": 0,
+        "plotWidth": 886,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 885.0999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99993896484375,
+        "overflow": 0,
+        "plotWidth": 884.0999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 532.933349609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32.00048828125,
+        "overflow": 0,
+        "plotWidth": 204.93333435058594,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout playful-pop/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32.00048828125,
+        "overflow": 0,
+        "plotWidth": 138.39999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "playful-pop",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 37.61663818359375,
+        "overflow": 0,
+        "plotWidth": 1022.5333251953125,
+        "plotHeight": 122.13333129882812,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 29.933349609375,
+        "overflow": 0,
+        "plotWidth": 885.3333129882812,
+        "plotHeight": 121.84999084472656,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 29.933349609375,
+        "overflow": 0,
+        "plotWidth": 884.4000244140625,
+        "plotHeight": 121.85000610351562,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 29.93328857421875,
+        "overflow": 0,
+        "plotWidth": 883.4666748046875,
+        "plotHeight": 121.85000610351562,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 30.666748046875,
+        "overflow": 0,
+        "plotWidth": 532.3499755859375,
+        "plotHeight": 121.11666870117188,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32.0003662109375,
+        "overflow": 0,
+        "plotWidth": 204.09999084472656,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 31.999755859375,
+        "overflow": 0,
+        "plotWidth": 137.56666564941406,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "raggedy-granite",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 37.61663818359375,
+        "overflow": 0,
+        "plotWidth": 1022.5333251953125,
+        "plotHeight": 122.13333129882812,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 29.933349609375,
+        "overflow": 0,
+        "plotWidth": 885.3333129882812,
+        "plotHeight": 121.84999084472656,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 29.933349609375,
+        "overflow": 0,
+        "plotWidth": 884.4000244140625,
+        "plotHeight": 121.85000610351562,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 29.93328857421875,
+        "overflow": 0,
+        "plotWidth": 883.4666748046875,
+        "plotHeight": 121.85000610351562,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 30.666748046875,
+        "overflow": 0,
+        "plotWidth": 532.3499755859375,
+        "plotHeight": 121.11666870117188,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32.0003662109375,
+        "overflow": 0,
+        "plotWidth": 204.09999084472656,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout raggedy-granite/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 31.999755859375,
+        "overflow": 0,
+        "plotWidth": 137.56666564941406,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "raggedy-granite",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 1024.949951171875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99993896484375,
+        "overflow": 0,
+        "plotWidth": 887.75,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 31.999969482421875,
+        "overflow": 0,
+        "plotWidth": 886.8499755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 31.999969482421875,
+        "overflow": 0,
+        "plotWidth": 885.8499755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 31.9998779296875,
+        "overflow": 0,
+        "plotWidth": 534.683349609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 206.68333435058594,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 140.14999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "glossy-marble",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 1024.949951171875,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99993896484375,
+        "overflow": 0,
+        "plotWidth": 887.75,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 31.999969482421875,
+        "overflow": 0,
+        "plotWidth": 886.8499755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 31.999969482421875,
+        "overflow": 0,
+        "plotWidth": 885.8499755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 31.9998779296875,
+        "overflow": 0,
+        "plotWidth": 534.683349609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 206.68333435058594,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout glossy-marble/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 140.14999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "glossy-marble",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 39.99993896484375,
+        "overflow": 0,
+        "plotWidth": 960.9500122070312,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 31.999969482421875,
+        "overflow": 0,
+        "plotWidth": 887.75,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 886.8499755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 885.8499755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32.0001220703125,
+        "overflow": 0,
+        "plotWidth": 534.683349609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 31.9998779296875,
+        "overflow": 0,
+        "plotWidth": 206.68333435058594,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 140.14999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "luminous-midnight",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 39.99993896484375,
+        "overflow": 0,
+        "plotWidth": 960.9500122070312,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 31.999969482421875,
+        "overflow": 0,
+        "plotWidth": 887.75,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 886.8499755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 885.8499755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32.0001220703125,
+        "overflow": 0,
+        "plotWidth": 534.683349609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 31.9998779296875,
+        "overflow": 0,
+        "plotWidth": 206.68333435058594,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout luminous-midnight/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 140.14999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "luminous-midnight",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 928.7000122070312,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99993896484375,
+        "overflow": 0,
+        "plotWidth": 887.5,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99993896484375,
+        "overflow": 0,
+        "plotWidth": 886.5999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 885.5999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32.0001220703125,
+        "overflow": 0,
+        "plotWidth": 534.433349609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 31.9998779296875,
+        "overflow": 0,
+        "plotWidth": 206.43333435058594,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99951171875,
+        "overflow": 0,
+        "plotWidth": 139.89999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "gothic-stickerboard",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40,
+        "overflow": 0,
+        "plotWidth": 928.7000122070312,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99993896484375,
+        "overflow": 0,
+        "plotWidth": 887.5,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99993896484375,
+        "overflow": 0,
+        "plotWidth": 886.5999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 885.5999755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32.0001220703125,
+        "overflow": 0,
+        "plotWidth": 534.433349609375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 31.9998779296875,
+        "overflow": 0,
+        "plotWidth": 206.43333435058594,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout gothic-stickerboard/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 31.99951171875,
+        "overflow": 0,
+        "plotWidth": 139.89999389648438,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "gothic-stickerboard",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40.00006103515625,
+        "overflow": 0,
+        "plotWidth": 913.1166381835938,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 887.9166870117188,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 887.0166625976562,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 886.0166625976562,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32.0001220703125,
+        "overflow": 0,
+        "plotWidth": 534.8499755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 206.84999084472656,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/light/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32.000732421875,
+        "overflow": 0,
+        "plotWidth": 140.31666564941406,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "baroque-plexiglas",
+        "mode": "light"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/1920",
+      "status": "passed",
+      "detail": {
+        "gap": 40.00006103515625,
+        "overflow": 0,
+        "plotWidth": 913.1166381835938,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1920,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/1151",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 887.9166870117188,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1151,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/1150",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 887.0166625976562,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1150,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/1149",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 886.0166625976562,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 1149,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/768",
+      "status": "passed",
+      "detail": {
+        "gap": 32.0001220703125,
+        "overflow": 0,
+        "plotWidth": 534.8499755859375,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 768,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/390",
+      "status": "passed",
+      "detail": {
+        "gap": 32,
+        "overflow": 0,
+        "plotWidth": 206.84999084472656,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 390,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "populated layout baroque-plexiglas/dark/320",
+      "status": "passed",
+      "detail": {
+        "gap": 32.000732421875,
+        "overflow": 0,
+        "plotWidth": 140.31666564941406,
+        "plotHeight": 120,
+        "badLabels": [],
+        "escaped": [],
+        "width": 320,
+        "theme": "baroque-plexiglas",
+        "mode": "dark"
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "Clear resets both graphs",
+      "status": "passed",
+      "detail": "Cleared plotted observations, distribution and notifications."
+    },
+    {
+      "engine": "firefox",
+      "name": "no uncaught browser errors",
+      "status": "passed",
+      "detail": null
+    }
+  ],
+  "totals": {
+    "passed": 206,
+    "failed": 0
+  }
+}

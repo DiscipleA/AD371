@@ -1,0 +1,53 @@
+{
+  "scope": "Final v3 built local preview; fresh anonymous headless Chromium per sequential audit; no concurrent browser suites; default theme, no authenticated session. Not public-site or all-theme certification.",
+  "results": [
+    {
+      "device": "desktop",
+      "lighthouseVersion": "13.6.0",
+      "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+      "fetchTime": "2026-11-12T13:03:25.202Z",
+      "formFactor": "desktop",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": "0.5\u00a0s",
+        "largest-contentful-paint": "0.5\u00a0s",
+        "total-blocking-time": "80\u00a0ms",
+        "cumulative-layout-shift": "0.048",
+        "speed-index": "0.8\u00a0s"
+      },
+      "warnings": [],
+      "rawReport": "lighthouse-final-v3-desktop.report.json",
+      "htmlReport": "lighthouse-final-v3-desktop.report.html"
+    },
+    {
+      "device": "mobile",
+      "lighthouseVersion": "13.6.0",
+      "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+      "fetchTime": "2026-11-12T13:03:41.903Z",
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 73,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": "2.1\u00a0s",
+        "largest-contentful-paint": "2.1\u00a0s",
+        "total-blocking-time": "1,170\u00a0ms",
+        "cumulative-layout-shift": "0",
+        "speed-index": "2.4\u00a0s"
+      },
+      "warnings": [],
+      "rawReport": "lighthouse-final-v3-mobile.report.json",
+      "htmlReport": "lighthouse-final-v3-mobile.report.html"
+    }
+  ]
+}

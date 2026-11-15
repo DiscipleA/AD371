@@ -1,0 +1,78 @@
+{
+  "error": "Docker operation failed with exit status 1",
+  "mutationsPerformed": true,
+  "project": "ad371-week6-container-pulse",
+  "protectedAfter": {
+    "03312d78e767dc0b47123f7318f3c750a5bcc9dc8df30225a23879d8fdb60d0f": {
+      "networks": {
+        "stylestore-network-lab_private_subnet": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332"
+      },
+      "restarts": 0,
+      "startedAt": "2026-11-01T09:49:11.776380393Z",
+      "status": "exited"
+    },
+    "23aec9dc67e08b973ec09c76fb58498edcdac196eeb6e0329097d1f1d43bafce": {
+      "networks": {
+        "stylestore-network-lab_private_subnet": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332"
+      },
+      "restarts": 0,
+      "startedAt": "2026-11-04T23:25:11.733185072Z",
+      "status": "running"
+    },
+    "7f1d39f3f4758e4fff7f98706a48134dfcec73b84ce7b16d716c435884a5985e": {
+      "networks": {
+        "stylestore-network-lab_private_subnet": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332",
+        "stylestore-network-lab_public_subnet": "6bbeaf56eb2457454278e8d31d950c5bf12b943605c403f1c65137081c666a87"
+      },
+      "restarts": 0,
+      "startedAt": "2026-11-04T23:25:11.734692818Z",
+      "status": "running"
+    }
+  },
+  "protectedBefore": {
+    "03312d78e767dc0b47123f7318f3c750a5bcc9dc8df30225a23879d8fdb60d0f": {
+      "networks": {
+        "stylestore-network-lab_private_subnet": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332"
+      },
+      "restarts": 0,
+      "startedAt": "2026-11-01T09:49:11.776380393Z",
+      "status": "exited"
+    },
+    "23aec9dc67e08b973ec09c76fb58498edcdac196eeb6e0329097d1f1d43bafce": {
+      "networks": {
+        "stylestore-network-lab_private_subnet": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332"
+      },
+      "restarts": 0,
+      "startedAt": "2026-11-04T23:25:11.733185072Z",
+      "status": "running"
+    },
+    "7f1d39f3f4758e4fff7f98706a48134dfcec73b84ce7b16d716c435884a5985e": {
+      "networks": {
+        "stylestore-network-lab_private_subnet": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332",
+        "stylestore-network-lab_public_subnet": "6bbeaf56eb2457454278e8d31d950c5bf12b943605c403f1c65137081c666a87"
+      },
+      "restarts": 0,
+      "startedAt": "2026-11-04T23:25:11.734692818Z",
+      "status": "running"
+    }
+  },
+  "protectedUnchanged": true,
+  "restoration": {
+    "error": "Docker operation failed with exit status 1",
+    "status": "failed"
+  },
+  "stages": [],
+  "status": "failed",
+  "week5After": {
+    "bodyBytes": 31978,
+    "bodySha256": "ce0f3a1d742696fbe7e974364305bb68fcdce579f575687b61a05ffa0607ca5f",
+    "contentType": "text/html; charset=utf-8",
+    "status": 200
+  },
+  "week5Before": {
+    "bodyBytes": 31978,
+    "bodySha256": "ce0f3a1d742696fbe7e974364305bb68fcdce579f575687b61a05ffa0607ca5f",
+    "contentType": "text/html; charset=utf-8",
+    "status": 200
+  }
+}

@@ -1,0 +1,198 @@
+TAP version 13
+# Subtest: container architecture has a single fixed-composition SVG at every viewport
+ok 1 - container architecture has a single fixed-composition SVG at every viewport
+  ---
+  duration_ms: 3.650184
+  type: 'test'
+  ...
+# Subtest: diagram explains build, image, orchestration, container internals and observation provenance
+ok 2 - diagram explains build, image, orchestration, container internals and observation provenance
+  ---
+  duration_ms: 0.998466
+  type: 'test'
+  ...
+# Subtest: AI Prompt preserves the unboxed reference workflow and separate full specification
+ok 3 - AI Prompt preserves the unboxed reference workflow and separate full specification
+  ---
+  duration_ms: 0.564062
+  type: 'test'
+  ...
+# Subtest: Audit keeps the actual excerpt and four reference-style checks inside audit-layout
+ok 4 - Audit keeps the actual excerpt and four reference-style checks inside audit-layout
+  ---
+  duration_ms: 0.502536
+  type: 'test'
+  ...
+# Subtest: public prompt appendix reproduces every published prompt literally
+not ok 5 - public prompt appendix reproduces every published prompt literally
+  ---
+  duration_ms: 7.258208
+  type: 'test'
+  location: '/home/reader/Desktop/AD371/Week6/Container-Pulse/tests/architecture_revision.test.mjs:50:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    ... Skipped lines
+    
+      [
+        'Build Container Pulse as a small standalone App Engineering Showcase.\n' +
+          '\n' +
+          '1. Adapt the asymmetric CSS dashboard and container-relative cards\n' +
+          '   into React components. Preserve original showcases and shared themes.\n' +
+    ...
+          '   actual container configuration, and two-to-three-to-two scaling.\n' +
+    +     '   Keep source tests, real runtime evidence, and pending work distinct.',
+    -     '   Keep source tests, real runtime evidence, and pending work distinct.\n' +
+    -     '9. Plot only actual browser-measured durations and outcomes from the most\n' +
+    -     '   recent 12 completed checks. Keep process metadata, configured resource\n' +
+    -     '   ceilings and cumulative page totals distinct. Per-host response shares\n' +
+    -     '   include validated responses only; failed checks remain explicit.\n' +
+    -     '10. Explain image construction, container internals, lifecycle controls and\n' +
+    -     '    measurement provenance in one theme-aware SVG. Scale its entire fixed\n' +
+    -     '    composition, including text and connectors, without a mobile panel swap.\n' +
+    -     '    Preserve the reference AI workflow and Audit structures, not just headings.',
+    -   'Implement the approved Container Pulse specification below.\n' +
+    -     'Write failing tests before changing behavior. Limit edits to the agreed files.\n' +
+    -     'Build the actual multi-stage image and scalable Compose service.\n' +
+    -     'Preserve the seven-section shell, local themes and native workflow disclosures.\n' +
+    -     'Keep the SVG diagram as one uniformly scaled composition at every width.\n' +
+    -     'Use real responses for graph data; never invent container utilization.\n' +
+    -     'Return changed files, executed checks and remaining blockers.\n' +
+    -     'Do not publish or alter other assignments.',
+        'Plan a small React runtime dashboard with responsive notifications.\n' +
+          'Use one Node application image and multiple equivalent replicas.\n' +
+          'Define a pinned multi-stage build, non-root execution, health checks,\n' +
+          'CPU/memory budgets, restart policy, and non-secret environment settings.\n' +
+          'Use a dedicated Compose project, network, image tag, and loopback port.\n' +
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: |-
+      Build Container Pulse as a small standalone App Engineering Showcase.
+      
+      1. Adapt the asymmetric CSS dashboard and container-relative cards
+         into React components. Preserve original showcases and shared themes.
+      2. Implement a landing page, /healthz, and /api/runtime with hostname,
+         process uptime, runtime version, and application version.
+      3. Validate real responses before updating metadata, counters, or cards.
+         Label observations as current-page data; do not fabricate live values.
+      4. Support Check runtime, a bounded sample batch, Clear, and acknowledgment.
+         Cancel stale work; keep acknowledgments in browser memory only.
+      5. Copy dependency manifests before installing locked dependencies.
+         Compile in a build stage; ship only runtime assets and the server.
+      6. Run as non-root with resource limits, health checks, restart policies,
+         and a non-secret .env file. Keep replicas interchangeable and scalable.
+      7. Use independent Compose resources and an unused localhost port.
+         Do not restart Docker, alter older projects, or mount its socket.
+      8. Test endpoints, failures, cancellation, themes, keyboard access,
+         actual container configuration, and two-to-three-to-two scaling.
+         Keep source tests, real runtime evidence, and pending work distinct.
+      9. Plot only actual browser-measured durations and outcomes from the most
+         recent 12 completed checks. Keep process metadata, configured resource
+         ceilings and cumulative page totals distinct. Per-host response shares
+         include validated responses only; failed checks remain explicit.
+      10. Explain image construction, container internals, lifecycle controls and
+          measurement provenance in one theme-aware SVG. Scale its entire fixed
+          composition, including text and connectors, without a mobile panel swap.
+          Preserve the reference AI workflow and Audit structures, not just headings.
+    1: |-
+      Implement the approved Container Pulse specification below.
+      Write failing tests before changing behavior. Limit edits to the agreed files.
+      Build the actual multi-stage image and scalable Compose service.
+      Preserve the seven-section shell, local themes and native workflow disclosures.
+      Keep the SVG diagram as one uniformly scaled composition at every width.
+      Use real responses for graph data; never invent container utilization.
+      Return changed files, executed checks and remaining blockers.
+      Do not publish or alter other assignments.
+    2: |-
+      Plan a small React runtime dashboard with responsive notifications.
+      Use one Node application image and multiple equivalent replicas.
+      Define a pinned multi-stage build, non-root execution, health checks,
+      CPU/memory budgets, restart policy, and non-secret environment settings.
+      Use a dedicated Compose project, network, image tag, and loopback port.
+      Keep scaling in a trusted terminal, not in the public browser.
+      Map each requirement to an actual verification step.
+    3: |-
+      Review the supplied React application and container files.
+      Identify browser components, API handlers, runtime state,
+      build dependencies, exposed ports, and existing Compose projects.
+      Separate decorative examples from measured runtime values.
+      List protected files and possible port or network collisions.
+      Do not change existing applications.
+    4: |-
+      Run source tests, build the real image, and inspect its final contents.
+      Verify non-root identity, applied CPU/memory limits, restart policy,
+      health state, exposed ports, and environment behavior.
+      Scale two replicas to three and back; verify actual container readiness
+      and new responses after discovery updates. Restore two healthy replicas.
+      Check dashboard updates, notification acknowledgment, cancellation,
+      malformed responses, offline recovery, keyboard controls, and themes.
+      Compare prior projects before and after without modifying them.
+      Report failures and blocked checks. Never invent successful evidence.
+  actual:
+    0: |-
+      Build Container Pulse as a small standalone App Engineering Showcase.
+      
+      1. Adapt the asymmetric CSS dashboard and container-relative cards
+         into React components. Preserve original showcases and shared themes.
+      2. Implement a landing page, /healthz, and /api/runtime with hostname,
+         process uptime, runtime version, and application version.
+      3. Validate real responses before updating metadata, counters, or cards.
+         Label observations as current-page data; do not fabricate live values.
+      4. Support Check runtime, a bounded sample batch, Clear, and acknowledgment.
+         Cancel stale work; keep acknowledgments in browser memory only.
+      5. Copy dependency manifests before installing locked dependencies.
+         Compile in a build stage; ship only runtime assets and the server.
+      6. Run as non-root with resource limits, health checks, restart policies,
+         and a non-secret .env file. Keep replicas interchangeable and scalable.
+      7. Use independent Compose resources and an unused localhost port.
+         Do not restart Docker, alter older projects, or mount its socket.
+      8. Test endpoints, failures, cancellation, themes, keyboard access,
+         actual container configuration, and two-to-three-to-two scaling.
+         Keep source tests, real runtime evidence, and pending work distinct.
+    1: |-
+      Plan a small React runtime dashboard with responsive notifications.
+      Use one Node application image and multiple equivalent replicas.
+      Define a pinned multi-stage build, non-root execution, health checks,
+      CPU/memory budgets, restart policy, and non-secret environment settings.
+      Use a dedicated Compose project, network, image tag, and loopback port.
+      Keep scaling in a trusted terminal, not in the public browser.
+      Map each requirement to an actual verification step.
+    2: |-
+      Review the supplied React application and container files.
+      Identify browser components, API handlers, runtime state,
+      build dependencies, exposed ports, and existing Compose projects.
+      Separate decorative examples from measured runtime values.
+      List protected files and possible port or network collisions.
+      Do not change existing applications.
+    3: |-
+      Run source tests, build the real image, and inspect its final contents.
+      Verify non-root identity, applied CPU/memory limits, restart policy,
+      health state, exposed ports, and environment behavior.
+      Scale two replicas to three and back; verify actual container readiness
+      and new responses after discovery updates. Restore two healthy replicas.
+      Check dashboard updates, notification acknowledgment, cancellation,
+      malformed responses, offline recovery, keyboard controls, and themes.
+      Compare prior projects before and after without modifying them.
+      Report failures and blocked checks. Never invent successful evidence.
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/reader/Desktop/AD371/Week6/Container-Pulse/tests/architecture_revision.test.mjs:56:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 4
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 171.566149

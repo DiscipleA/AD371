@@ -1,0 +1,834 @@
+{
+  "httpChecks": [
+    {
+      "method": "GET",
+      "path": "/",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/healthz",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "path": "/api/runtime",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/unknown",
+      "status": 404
+    },
+    {
+      "method": "GET",
+      "path": "/api/runtime?debug=1",
+      "status": 400
+    },
+    {
+      "method": "POST",
+      "path": "/api/runtime",
+      "status": 405
+    },
+    {
+      "method": "GET",
+      "path": "/.env",
+      "status": 404
+    },
+    {
+      "method": "GET",
+      "path": "/package.json",
+      "status": 404
+    }
+  ],
+  "mutationsPerformed": true,
+  "network": {
+    "driver": "bridge",
+    "id": "be4027a275003c8dcb0ae25b7c2a2ea29f006166d9e701a859fa5b34d0b9b2cb",
+    "members": {
+      "277892230c9a368f896e64c6670bd4f7ac01394cd98e2d4df36a26bdee0e0341": "ad371-week6-container-pulse-app-2",
+      "418e05d74b46021fc0cbbbdaf8bae58efc7a34ca67dc5e8761343b1ee3392996": "ad371-week6-container-pulse-gateway-1",
+      "f6c996b514fe8ea195351a4001847a7e69391b5fc16cb4a9baf986fbc38bcfba": "ad371-week6-container-pulse-app-1"
+    },
+    "name": "ad371-week6-container-pulse_pulse",
+    "project": "ad371-week6-container-pulse"
+  },
+  "project": "ad371-week6-container-pulse",
+  "protectedAfter": {
+    "03312d78e767dc0b47123f7318f3c750a5bcc9dc8df30225a23879d8fdb60d0f": {
+      "networks": {
+        "stylestore-network-lab_private_subnet": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332"
+      },
+      "restarts": 0,
+      "startedAt": "2026-11-01T09:49:11.776380393Z",
+      "status": "exited"
+    },
+    "23aec9dc67e08b973ec09c76fb58498edcdac196eeb6e0329097d1f1d43bafce": {
+      "networks": {
+        "stylestore-network-lab_private_subnet": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332"
+      },
+      "restarts": 0,
+      "startedAt": "2026-11-04T23:25:11.733185072Z",
+      "status": "running"
+    },
+    "7f1d39f3f4758e4fff7f98706a48134dfcec73b84ce7b16d716c435884a5985e": {
+      "networks": {
+        "stylestore-network-lab_private_subnet": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332",
+        "stylestore-network-lab_public_subnet": "6bbeaf56eb2457454278e8d31d950c5bf12b943605c403f1c65137081c666a87"
+      },
+      "restarts": 0,
+      "startedAt": "2026-11-04T23:25:11.734692818Z",
+      "status": "running"
+    }
+  },
+  "protectedBefore": {
+    "03312d78e767dc0b47123f7318f3c750a5bcc9dc8df30225a23879d8fdb60d0f": {
+      "networks": {
+        "stylestore-network-lab_private_subnet": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332"
+      },
+      "restarts": 0,
+      "startedAt": "2026-11-01T09:49:11.776380393Z",
+      "status": "exited"
+    },
+    "23aec9dc67e08b973ec09c76fb58498edcdac196eeb6e0329097d1f1d43bafce": {
+      "networks": {
+        "stylestore-network-lab_private_subnet": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332"
+      },
+      "restarts": 0,
+      "startedAt": "2026-11-04T23:25:11.733185072Z",
+      "status": "running"
+    },
+    "7f1d39f3f4758e4fff7f98706a48134dfcec73b84ce7b16d716c435884a5985e": {
+      "networks": {
+        "stylestore-network-lab_private_subnet": "acb7d57e27ca02f1fc09621ad047de00485db65afb4dbd2a4e2f925c64205332",
+        "stylestore-network-lab_public_subnet": "6bbeaf56eb2457454278e8d31d950c5bf12b943605c403f1c65137081c666a87"
+      },
+      "restarts": 0,
+      "startedAt": "2026-11-04T23:25:11.734692818Z",
+      "status": "running"
+    }
+  },
+  "protectedUnchanged": true,
+  "restoration": {
+    "appContainerIds": [
+      "277892230c9a368f896e64c6670bd4f7ac01394cd98e2d4df36a26bdee0e0341",
+      "f6c996b514fe8ea195351a4001847a7e69391b5fc16cb4a9baf986fbc38bcfba"
+    ],
+    "status": "two-healthy-replicas"
+  },
+  "runtimeImage": {
+    "appExecutionProbes": [
+      {
+        "hasBuildDependencies": false,
+        "hasBuildScript": false,
+        "hasDist": true,
+        "hasPackageCache": false,
+        "hasServer": true,
+        "hasSource": false,
+        "hostname": "277892230c9a",
+        "uid": 1000
+      },
+      {
+        "hasBuildDependencies": false,
+        "hasBuildScript": false,
+        "hasDist": true,
+        "hasPackageCache": false,
+        "hasServer": true,
+        "hasSource": false,
+        "hostname": "f6c996b514fe",
+        "uid": 1000
+      }
+    ],
+    "gatewayUid": 101,
+    "image": {
+      "id": "sha256:eef91aeff4f3feaff37f7fd1c427d122271fc9472b98ff7916e0a21f5aa5113a",
+      "platform": "linux/amd64",
+      "sizeBytes": 244884195,
+      "user": "node"
+    },
+    "restartDisruptionTestPerformed": false,
+    "restartPolicy": "unless-stopped"
+  },
+  "stages": [
+    {
+      "containers": [
+        {
+          "capDrop": [
+            "ALL"
+          ],
+          "health": "healthy",
+          "healthcheck": {
+            "Interval": 5000000000,
+            "Retries": 6,
+            "StartPeriod": 5000000000,
+            "Test": [
+              "CMD",
+              "node",
+              "server/healthcheck.mjs"
+            ],
+            "Timeout": 3000000000
+          },
+          "hostname": "277892230c9a",
+          "id": "277892230c9a368f896e64c6670bd4f7ac01394cd98e2d4df36a26bdee0e0341",
+          "imageId": "sha256:be9fc9ae22b5e510fe1cc4495e654af776b2a5c16542a4cef30285b34ea99a33",
+          "imageManifest": {
+            "digest": "sha256:eef91aeff4f3feaff37f7fd1c427d122271fc9472b98ff7916e0a21f5aa5113a",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            },
+            "size": 1621
+          },
+          "imageName": "ad371-week6-container-pulse-app:local",
+          "init": true,
+          "memory": 134217728,
+          "mounts": [],
+          "nanoCpus": 500000000,
+          "networks": {
+            "ad371-week6-container-pulse_pulse": "be4027a275003c8dcb0ae25b7c2a2ea29f006166d9e701a859fa5b34d0b9b2cb"
+          },
+          "pidsLimit": 128,
+          "portBindings": {},
+          "project": "ad371-week6-container-pulse",
+          "readOnly": true,
+          "restartPolicy": "unless-stopped",
+          "restarts": 0,
+          "securityOpt": [
+            "no-new-privileges:true"
+          ],
+          "service": "app",
+          "startedAt": "2026-11-06T07:05:09.369900038Z",
+          "status": "running",
+          "tmpfs": null,
+          "user": "node"
+        },
+        {
+          "capDrop": [
+            "ALL"
+          ],
+          "health": "healthy",
+          "healthcheck": {
+            "Interval": 5000000000,
+            "Retries": 6,
+            "StartPeriod": 5000000000,
+            "Test": [
+              "CMD",
+              "node",
+              "server/healthcheck.mjs"
+            ],
+            "Timeout": 3000000000
+          },
+          "hostname": "f6c996b514fe",
+          "id": "f6c996b514fe8ea195351a4001847a7e69391b5fc16cb4a9baf986fbc38bcfba",
+          "imageId": "sha256:be9fc9ae22b5e510fe1cc4495e654af776b2a5c16542a4cef30285b34ea99a33",
+          "imageManifest": {
+            "digest": "sha256:eef91aeff4f3feaff37f7fd1c427d122271fc9472b98ff7916e0a21f5aa5113a",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            },
+            "size": 1621
+          },
+          "imageName": "ad371-week6-container-pulse-app:local",
+          "init": true,
+          "memory": 134217728,
+          "mounts": [],
+          "nanoCpus": 500000000,
+          "networks": {
+            "ad371-week6-container-pulse_pulse": "be4027a275003c8dcb0ae25b7c2a2ea29f006166d9e701a859fa5b34d0b9b2cb"
+          },
+          "pidsLimit": 128,
+          "portBindings": {},
+          "project": "ad371-week6-container-pulse",
+          "readOnly": true,
+          "restartPolicy": "unless-stopped",
+          "restarts": 0,
+          "securityOpt": [
+            "no-new-privileges:true"
+          ],
+          "service": "app",
+          "startedAt": "2026-11-06T07:05:09.061235204Z",
+          "status": "running",
+          "tmpfs": null,
+          "user": "node"
+        },
+        {
+          "capDrop": [
+            "ALL"
+          ],
+          "health": "healthy",
+          "healthcheck": {
+            "Interval": 5000000000,
+            "Retries": 6,
+            "StartPeriod": 5000000000,
+            "Test": [
+              "CMD-SHELL",
+              "wget -q -T 2 -O - http://127.0.0.1:8080/healthz | grep -q '\"status\":\"ok\"'"
+            ],
+            "Timeout": 3000000000
+          },
+          "hostname": "418e05d74b46",
+          "id": "418e05d74b46021fc0cbbbdaf8bae58efc7a34ca67dc5e8761343b1ee3392996",
+          "imageId": "sha256:e9b2d7624fd7957f4ed44ae0a272d93fb73aeb8512ba8916f8118ae6143fd115",
+          "imageManifest": {
+            "annotations": {
+              "com.docker.official-images.bashbrew.arch": "amd64",
+              "org.opencontainers.image.base.digest": "sha256:95af6eee6124ea2ebdee9a62c3de9684a6387a0d1531be13a6fd207c4a2fffaa",
+              "org.opencontainers.image.base.name": "nginx:1.30.6-alpine-slim",
+              "org.opencontainers.image.created": "2026-11-05T19:55:22Z",
+              "org.opencontainers.image.revision": "4b9f658be76820b24e4ef4605413a5c08707a512",
+              "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#4b9f658be76820b24e4ef4605413a5c08707a512:stable/alpine",
+              "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+              "org.opencontainers.image.version": "1.30.6-alpine"
+            },
+            "digest": "sha256:bb8f722b4be005fcd7827816a136ab779fd40185d85b5171be915cc7fc0575c7",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            },
+            "size": 2493
+          },
+          "imageName": "nginx:stable-alpine@sha256:e9b2d7624fd7957f4ed44ae0a272d93fb73aeb8512ba8916f8118ae6143fd115",
+          "init": true,
+          "memory": 67108864,
+          "mounts": [
+            {
+              "Destination": "/etc/nginx/nginx.conf",
+              "Mode": "",
+              "Propagation": "rprivate",
+              "RW": false,
+              "Source": "/home/reader/Desktop/AD371/Week6/Container-Pulse/infra/nginx.conf",
+              "Type": "bind"
+            }
+          ],
+          "nanoCpus": 250000000,
+          "networks": {
+            "ad371-week6-container-pulse_pulse": "be4027a275003c8dcb0ae25b7c2a2ea29f006166d9e701a859fa5b34d0b9b2cb"
+          },
+          "pidsLimit": 64,
+          "portBindings": {
+            "8080/tcp": [
+              {
+                "HostIp": "127.0.0.1",
+                "HostPort": "8796"
+              }
+            ]
+          },
+          "project": "ad371-week6-container-pulse",
+          "readOnly": true,
+          "restartPolicy": "unless-stopped",
+          "restarts": 0,
+          "securityOpt": [
+            "no-new-privileges:true"
+          ],
+          "service": "gateway",
+          "startedAt": "2026-11-06T00:38:22.500254169Z",
+          "status": "running",
+          "tmpfs": {
+            "/tmp": "rw,noexec,nosuid,size=16m,mode=1777"
+          },
+          "user": "nginx"
+        }
+      ],
+      "gatewayObservations": {
+        "expectedHostnames": [
+          "277892230c9a",
+          "f6c996b514fe"
+        ],
+        "observedHostnames": [
+          "277892230c9a",
+          "f6c996b514fe"
+        ],
+        "sample": {
+          "appVersion": "1.0.0",
+          "hostname": "f6c996b514fe",
+          "nodeVersion": "v24.22.2",
+          "processUptimeSeconds": 12.008518607,
+          "service": "container-pulse"
+        },
+        "successfulRequestsInStableWindow": 24
+      },
+      "replicas": 2
+    },
+    {
+      "containers": [
+        {
+          "capDrop": [
+            "ALL"
+          ],
+          "health": "healthy",
+          "healthcheck": {
+            "Interval": 5000000000,
+            "Retries": 6,
+            "StartPeriod": 5000000000,
+            "Test": [
+              "CMD",
+              "node",
+              "server/healthcheck.mjs"
+            ],
+            "Timeout": 3000000000
+          },
+          "hostname": "6589b760c721",
+          "id": "6589b760c721708bdbf0c4bed127d3b37d7d1ad94f9a3fb54d6fd5dab35b4ae0",
+          "imageId": "sha256:be9fc9ae22b5e510fe1cc4495e654af776b2a5c16542a4cef30285b34ea99a33",
+          "imageManifest": {
+            "digest": "sha256:eef91aeff4f3feaff37f7fd1c427d122271fc9472b98ff7916e0a21f5aa5113a",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            },
+            "size": 1621
+          },
+          "imageName": "ad371-week6-container-pulse-app:local",
+          "init": true,
+          "memory": 134217728,
+          "mounts": [],
+          "nanoCpus": 500000000,
+          "networks": {
+            "ad371-week6-container-pulse_pulse": "be4027a275003c8dcb0ae25b7c2a2ea29f006166d9e701a859fa5b34d0b9b2cb"
+          },
+          "pidsLimit": 128,
+          "portBindings": {},
+          "project": "ad371-week6-container-pulse",
+          "readOnly": true,
+          "restartPolicy": "unless-stopped",
+          "restarts": 0,
+          "securityOpt": [
+            "no-new-privileges:true"
+          ],
+          "service": "app",
+          "startedAt": "2026-11-06T07:05:21.830366392Z",
+          "status": "running",
+          "tmpfs": null,
+          "user": "node"
+        },
+        {
+          "capDrop": [
+            "ALL"
+          ],
+          "health": "healthy",
+          "healthcheck": {
+            "Interval": 5000000000,
+            "Retries": 6,
+            "StartPeriod": 5000000000,
+            "Test": [
+              "CMD",
+              "node",
+              "server/healthcheck.mjs"
+            ],
+            "Timeout": 3000000000
+          },
+          "hostname": "277892230c9a",
+          "id": "277892230c9a368f896e64c6670bd4f7ac01394cd98e2d4df36a26bdee0e0341",
+          "imageId": "sha256:be9fc9ae22b5e510fe1cc4495e654af776b2a5c16542a4cef30285b34ea99a33",
+          "imageManifest": {
+            "digest": "sha256:eef91aeff4f3feaff37f7fd1c427d122271fc9472b98ff7916e0a21f5aa5113a",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            },
+            "size": 1621
+          },
+          "imageName": "ad371-week6-container-pulse-app:local",
+          "init": true,
+          "memory": 134217728,
+          "mounts": [],
+          "nanoCpus": 500000000,
+          "networks": {
+            "ad371-week6-container-pulse_pulse": "be4027a275003c8dcb0ae25b7c2a2ea29f006166d9e701a859fa5b34d0b9b2cb"
+          },
+          "pidsLimit": 128,
+          "portBindings": {},
+          "project": "ad371-week6-container-pulse",
+          "readOnly": true,
+          "restartPolicy": "unless-stopped",
+          "restarts": 0,
+          "securityOpt": [
+            "no-new-privileges:true"
+          ],
+          "service": "app",
+          "startedAt": "2026-11-06T07:05:09.369900038Z",
+          "status": "running",
+          "tmpfs": null,
+          "user": "node"
+        },
+        {
+          "capDrop": [
+            "ALL"
+          ],
+          "health": "healthy",
+          "healthcheck": {
+            "Interval": 5000000000,
+            "Retries": 6,
+            "StartPeriod": 5000000000,
+            "Test": [
+              "CMD",
+              "node",
+              "server/healthcheck.mjs"
+            ],
+            "Timeout": 3000000000
+          },
+          "hostname": "f6c996b514fe",
+          "id": "f6c996b514fe8ea195351a4001847a7e69391b5fc16cb4a9baf986fbc38bcfba",
+          "imageId": "sha256:be9fc9ae22b5e510fe1cc4495e654af776b2a5c16542a4cef30285b34ea99a33",
+          "imageManifest": {
+            "digest": "sha256:eef91aeff4f3feaff37f7fd1c427d122271fc9472b98ff7916e0a21f5aa5113a",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            },
+            "size": 1621
+          },
+          "imageName": "ad371-week6-container-pulse-app:local",
+          "init": true,
+          "memory": 134217728,
+          "mounts": [],
+          "nanoCpus": 500000000,
+          "networks": {
+            "ad371-week6-container-pulse_pulse": "be4027a275003c8dcb0ae25b7c2a2ea29f006166d9e701a859fa5b34d0b9b2cb"
+          },
+          "pidsLimit": 128,
+          "portBindings": {},
+          "project": "ad371-week6-container-pulse",
+          "readOnly": true,
+          "restartPolicy": "unless-stopped",
+          "restarts": 0,
+          "securityOpt": [
+            "no-new-privileges:true"
+          ],
+          "service": "app",
+          "startedAt": "2026-11-06T07:05:09.061235204Z",
+          "status": "running",
+          "tmpfs": null,
+          "user": "node"
+        },
+        {
+          "capDrop": [
+            "ALL"
+          ],
+          "health": "healthy",
+          "healthcheck": {
+            "Interval": 5000000000,
+            "Retries": 6,
+            "StartPeriod": 5000000000,
+            "Test": [
+              "CMD-SHELL",
+              "wget -q -T 2 -O - http://127.0.0.1:8080/healthz | grep -q '\"status\":\"ok\"'"
+            ],
+            "Timeout": 3000000000
+          },
+          "hostname": "418e05d74b46",
+          "id": "418e05d74b46021fc0cbbbdaf8bae58efc7a34ca67dc5e8761343b1ee3392996",
+          "imageId": "sha256:e9b2d7624fd7957f4ed44ae0a272d93fb73aeb8512ba8916f8118ae6143fd115",
+          "imageManifest": {
+            "annotations": {
+              "com.docker.official-images.bashbrew.arch": "amd64",
+              "org.opencontainers.image.base.digest": "sha256:95af6eee6124ea2ebdee9a62c3de9684a6387a0d1531be13a6fd207c4a2fffaa",
+              "org.opencontainers.image.base.name": "nginx:1.30.6-alpine-slim",
+              "org.opencontainers.image.created": "2026-11-05T19:55:22Z",
+              "org.opencontainers.image.revision": "4b9f658be76820b24e4ef4605413a5c08707a512",
+              "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#4b9f658be76820b24e4ef4605413a5c08707a512:stable/alpine",
+              "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+              "org.opencontainers.image.version": "1.30.6-alpine"
+            },
+            "digest": "sha256:bb8f722b4be005fcd7827816a136ab779fd40185d85b5171be915cc7fc0575c7",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            },
+            "size": 2493
+          },
+          "imageName": "nginx:stable-alpine@sha256:e9b2d7624fd7957f4ed44ae0a272d93fb73aeb8512ba8916f8118ae6143fd115",
+          "init": true,
+          "memory": 67108864,
+          "mounts": [
+            {
+              "Destination": "/etc/nginx/nginx.conf",
+              "Mode": "",
+              "Propagation": "rprivate",
+              "RW": false,
+              "Source": "/home/reader/Desktop/AD371/Week6/Container-Pulse/infra/nginx.conf",
+              "Type": "bind"
+            }
+          ],
+          "nanoCpus": 250000000,
+          "networks": {
+            "ad371-week6-container-pulse_pulse": "be4027a275003c8dcb0ae25b7c2a2ea29f006166d9e701a859fa5b34d0b9b2cb"
+          },
+          "pidsLimit": 64,
+          "portBindings": {
+            "8080/tcp": [
+              {
+                "HostIp": "127.0.0.1",
+                "HostPort": "8796"
+              }
+            ]
+          },
+          "project": "ad371-week6-container-pulse",
+          "readOnly": true,
+          "restartPolicy": "unless-stopped",
+          "restarts": 0,
+          "securityOpt": [
+            "no-new-privileges:true"
+          ],
+          "service": "gateway",
+          "startedAt": "2026-11-06T00:38:22.500254169Z",
+          "status": "running",
+          "tmpfs": {
+            "/tmp": "rw,noexec,nosuid,size=16m,mode=1777"
+          },
+          "user": "nginx"
+        }
+      ],
+      "gatewayObservations": {
+        "expectedHostnames": [
+          "277892230c9a",
+          "6589b760c721",
+          "f6c996b514fe"
+        ],
+        "observedHostnames": [
+          "277892230c9a",
+          "6589b760c721",
+          "f6c996b514fe"
+        ],
+        "sample": {
+          "appVersion": "1.0.0",
+          "hostname": "277892230c9a",
+          "nodeVersion": "v24.22.2",
+          "processUptimeSeconds": 23.013975688,
+          "service": "container-pulse"
+        },
+        "successfulRequestsInStableWindow": 24
+      },
+      "replicas": 3
+    },
+    {
+      "containers": [
+        {
+          "capDrop": [
+            "ALL"
+          ],
+          "health": "healthy",
+          "healthcheck": {
+            "Interval": 5000000000,
+            "Retries": 6,
+            "StartPeriod": 5000000000,
+            "Test": [
+              "CMD",
+              "node",
+              "server/healthcheck.mjs"
+            ],
+            "Timeout": 3000000000
+          },
+          "hostname": "277892230c9a",
+          "id": "277892230c9a368f896e64c6670bd4f7ac01394cd98e2d4df36a26bdee0e0341",
+          "imageId": "sha256:be9fc9ae22b5e510fe1cc4495e654af776b2a5c16542a4cef30285b34ea99a33",
+          "imageManifest": {
+            "digest": "sha256:eef91aeff4f3feaff37f7fd1c427d122271fc9472b98ff7916e0a21f5aa5113a",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            },
+            "size": 1621
+          },
+          "imageName": "ad371-week6-container-pulse-app:local",
+          "init": true,
+          "memory": 134217728,
+          "mounts": [],
+          "nanoCpus": 500000000,
+          "networks": {
+            "ad371-week6-container-pulse_pulse": "be4027a275003c8dcb0ae25b7c2a2ea29f006166d9e701a859fa5b34d0b9b2cb"
+          },
+          "pidsLimit": 128,
+          "portBindings": {},
+          "project": "ad371-week6-container-pulse",
+          "readOnly": true,
+          "restartPolicy": "unless-stopped",
+          "restarts": 0,
+          "securityOpt": [
+            "no-new-privileges:true"
+          ],
+          "service": "app",
+          "startedAt": "2026-11-06T07:05:09.369900038Z",
+          "status": "running",
+          "tmpfs": null,
+          "user": "node"
+        },
+        {
+          "capDrop": [
+            "ALL"
+          ],
+          "health": "healthy",
+          "healthcheck": {
+            "Interval": 5000000000,
+            "Retries": 6,
+            "StartPeriod": 5000000000,
+            "Test": [
+              "CMD",
+              "node",
+              "server/healthcheck.mjs"
+            ],
+            "Timeout": 3000000000
+          },
+          "hostname": "f6c996b514fe",
+          "id": "f6c996b514fe8ea195351a4001847a7e69391b5fc16cb4a9baf986fbc38bcfba",
+          "imageId": "sha256:be9fc9ae22b5e510fe1cc4495e654af776b2a5c16542a4cef30285b34ea99a33",
+          "imageManifest": {
+            "digest": "sha256:eef91aeff4f3feaff37f7fd1c427d122271fc9472b98ff7916e0a21f5aa5113a",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            },
+            "size": 1621
+          },
+          "imageName": "ad371-week6-container-pulse-app:local",
+          "init": true,
+          "memory": 134217728,
+          "mounts": [],
+          "nanoCpus": 500000000,
+          "networks": {
+            "ad371-week6-container-pulse_pulse": "be4027a275003c8dcb0ae25b7c2a2ea29f006166d9e701a859fa5b34d0b9b2cb"
+          },
+          "pidsLimit": 128,
+          "portBindings": {},
+          "project": "ad371-week6-container-pulse",
+          "readOnly": true,
+          "restartPolicy": "unless-stopped",
+          "restarts": 0,
+          "securityOpt": [
+            "no-new-privileges:true"
+          ],
+          "service": "app",
+          "startedAt": "2026-11-06T07:05:09.061235204Z",
+          "status": "running",
+          "tmpfs": null,
+          "user": "node"
+        },
+        {
+          "capDrop": [
+            "ALL"
+          ],
+          "health": "healthy",
+          "healthcheck": {
+            "Interval": 5000000000,
+            "Retries": 6,
+            "StartPeriod": 5000000000,
+            "Test": [
+              "CMD-SHELL",
+              "wget -q -T 2 -O - http://127.0.0.1:8080/healthz | grep -q '\"status\":\"ok\"'"
+            ],
+            "Timeout": 3000000000
+          },
+          "hostname": "418e05d74b46",
+          "id": "418e05d74b46021fc0cbbbdaf8bae58efc7a34ca67dc5e8761343b1ee3392996",
+          "imageId": "sha256:e9b2d7624fd7957f4ed44ae0a272d93fb73aeb8512ba8916f8118ae6143fd115",
+          "imageManifest": {
+            "annotations": {
+              "com.docker.official-images.bashbrew.arch": "amd64",
+              "org.opencontainers.image.base.digest": "sha256:95af6eee6124ea2ebdee9a62c3de9684a6387a0d1531be13a6fd207c4a2fffaa",
+              "org.opencontainers.image.base.name": "nginx:1.30.6-alpine-slim",
+              "org.opencontainers.image.created": "2026-11-05T19:55:22Z",
+              "org.opencontainers.image.revision": "4b9f658be76820b24e4ef4605413a5c08707a512",
+              "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#4b9f658be76820b24e4ef4605413a5c08707a512:stable/alpine",
+              "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+              "org.opencontainers.image.version": "1.30.6-alpine"
+            },
+            "digest": "sha256:bb8f722b4be005fcd7827816a136ab779fd40185d85b5171be915cc7fc0575c7",
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            },
+            "size": 2493
+          },
+          "imageName": "nginx:stable-alpine@sha256:e9b2d7624fd7957f4ed44ae0a272d93fb73aeb8512ba8916f8118ae6143fd115",
+          "init": true,
+          "memory": 67108864,
+          "mounts": [
+            {
+              "Destination": "/etc/nginx/nginx.conf",
+              "Mode": "",
+              "Propagation": "rprivate",
+              "RW": false,
+              "Source": "/home/reader/Desktop/AD371/Week6/Container-Pulse/infra/nginx.conf",
+              "Type": "bind"
+            }
+          ],
+          "nanoCpus": 250000000,
+          "networks": {
+            "ad371-week6-container-pulse_pulse": "be4027a275003c8dcb0ae25b7c2a2ea29f006166d9e701a859fa5b34d0b9b2cb"
+          },
+          "pidsLimit": 64,
+          "portBindings": {
+            "8080/tcp": [
+              {
+                "HostIp": "127.0.0.1",
+                "HostPort": "8796"
+              }
+            ]
+          },
+          "project": "ad371-week6-container-pulse",
+          "readOnly": true,
+          "restartPolicy": "unless-stopped",
+          "restarts": 0,
+          "securityOpt": [
+            "no-new-privileges:true"
+          ],
+          "service": "gateway",
+          "startedAt": "2026-11-06T00:38:22.500254169Z",
+          "status": "running",
+          "tmpfs": {
+            "/tmp": "rw,noexec,nosuid,size=16m,mode=1777"
+          },
+          "user": "nginx"
+        }
+      ],
+      "gatewayObservations": {
+        "expectedHostnames": [
+          "277892230c9a",
+          "f6c996b514fe"
+        ],
+        "observedHostnames": [
+          "277892230c9a",
+          "f6c996b514fe"
+        ],
+        "sample": {
+          "appVersion": "1.0.0",
+          "hostname": "f6c996b514fe",
+          "nodeVersion": "v24.22.2",
+          "processUptimeSeconds": 30.17443121,
+          "service": "container-pulse"
+        },
+        "successfulRequestsInStableWindow": 24
+      },
+      "replicas": 2
+    }
+  ],
+  "status": "passed",
+  "week5After": {
+    "bodyBytes": 31978,
+    "bodySha256": "ce0f3a1d742696fbe7e974364305bb68fcdce579f575687b61a05ffa0607ca5f",
+    "contentType": "text/html; charset=utf-8",
+    "status": 200
+  },
+  "week5Before": {
+    "bodyBytes": 31978,
+    "bodySha256": "ce0f3a1d742696fbe7e974364305bb68fcdce579f575687b61a05ffa0607ca5f",
+    "contentType": "text/html; charset=utf-8",
+    "status": 200
+  }
+}

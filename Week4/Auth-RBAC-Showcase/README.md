@@ -80,6 +80,18 @@ Controlled tests verify handler, client, SQL-source, presentation, and server co
 | `supabase/` | Migration, Edge handler, configuration, and trusted-owner tools |
 | `tests/`, `docs/` | Verification sources, assignment, and supporting records |
 
+## QA Test Summary
+
+Recorded checks are documented in the [QA report](docs/qa/qa-report.md). Checked means executed/documented for the stated snapshot, not a new run or a security certification.
+
+- [x] **Hosted authentication/RBAC:** registration/confirmation, login, User 200, Admin denial 403, temporary role grant/revocation and logout/protected 401 were observed on function version 2; version 3 has separate anonymous smoke evidence.
+- [x] **Constraints and permission boundaries:** empty/invalid input, resource/method/origin rejection, private-schema access and independent authorization checks were exercised ([hosted follow-up](docs/qa/live-anonymous-api-followup.json)).
+- [x] **Terminal inspection:** 56 Node checks and three Python server checks passed in the recorded run ([actual output](docs/qa/final-source-tests.log)).
+- [x] **Automated browser console/network inspection:** local Chromium/Firefox checks captured errors/assets and controlled Auth scenarios; fixtures are distinguished from actual hosted permission evidence ([browser record](docs/qa/browser-local.json)).
+- [ ] **Manual DevTools inspection / full real-auth capture:** not documented complete. A full authenticated regression on the final function revision also remains pending in the QA record.
+
+**Storage scope:** SQL supports identity/role authorization; general-purpose SQL/NoSQL CRUD is not this showcase's feature. No MongoDB verification is claimed.
+
 ## 🤖 AI Assistance
 
 AI assisted implementation, tests and documentation. The [public AI prompt workflow](AI-PROMPTS.md) contains only the reusable **Review → Plan → Build → Verify** prompts published in the showcase.

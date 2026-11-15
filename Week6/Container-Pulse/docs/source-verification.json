@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-11-06T00:13:08.516833+00:00",
+  "scope": "Actual concept-card destinations, HTTP/title verification; not full external-site QA",
+  "destinations": [
+    {
+      "authored_url": "https://docs.docker.com/build/building/multi-stage/",
+      "final_url": "https://docs.docker.com/build/building/multi-stage/",
+      "status": 200,
+      "title": "Multi-stage builds | Docker Docs"
+    },
+    {
+      "authored_url": "https://docs.docker.com/build/cache/optimize/",
+      "final_url": "https://docs.docker.com/build/cache/optimize/",
+      "status": 200,
+      "title": "Optimize cache usage in builds | Docker Docs"
+    },
+    {
+      "authored_url": "https://docs.docker.com/build/building/best-practices/#user",
+      "final_url": "https://docs.docker.com/build/building/best-practices/#user",
+      "status": 200,
+      "title": "Building best practices | Docker Docs"
+    },
+    {
+      "authored_url": "https://docs.docker.com/reference/compose-file/services/",
+      "final_url": "https://docs.docker.com/reference/compose-file/services/",
+      "status": 200,
+      "title": "Define services in Docker Compose | Docker Docs"
+    },
+    {
+      "authored_url": "https://nginx.org/en/docs/http/ngx_http_upstream_module.html",
+      "final_url": "https://nginx.org/en/docs/http/ngx_http_upstream_module.html",
+      "status": 200,
+      "title": "Module ngx_http_upstream_module"
+    },
+    {
+      "authored_url": "https://react.dev/learn/add-react-to-an-existing-project",
+      "final_url": "https://react.dev/learn/add-react-to-an-existing-project",
+      "status": 200,
+      "title": "Add React to an Existing Project \u2013 React"
+    }
+  ]
+}

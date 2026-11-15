@@ -1,0 +1,289 @@
+{
+  "target": "/home/reader/Desktop/AD371/MasterPrompts/App-Engineering-Showcase-Master-Prompt-v1.2.md",
+  "passed": 70,
+  "total": 70,
+  "failed": [],
+  "checks": [
+    {
+      "name": "higher-version complete master exists",
+      "passed": true
+    },
+    {
+      "name": "version title",
+      "passed": true
+    },
+    {
+      "name": "complete lifecycle section 1",
+      "passed": true
+    },
+    {
+      "name": "complete lifecycle section 2",
+      "passed": true
+    },
+    {
+      "name": "complete lifecycle section 3",
+      "passed": true
+    },
+    {
+      "name": "complete lifecycle section 4",
+      "passed": true
+    },
+    {
+      "name": "complete lifecycle section 5",
+      "passed": true
+    },
+    {
+      "name": "complete lifecycle section 6",
+      "passed": true
+    },
+    {
+      "name": "complete lifecycle section 7",
+      "passed": true
+    },
+    {
+      "name": "complete lifecycle section 8",
+      "passed": true
+    },
+    {
+      "name": "complete lifecycle section 9",
+      "passed": true
+    },
+    {
+      "name": "complete lifecycle section 10",
+      "passed": true
+    },
+    {
+      "name": "architecture section 1",
+      "passed": true
+    },
+    {
+      "name": "architecture section 2",
+      "passed": true
+    },
+    {
+      "name": "architecture section 3",
+      "passed": true
+    },
+    {
+      "name": "architecture section 4",
+      "passed": true
+    },
+    {
+      "name": "architecture section 5",
+      "passed": true
+    },
+    {
+      "name": "architecture section 6",
+      "passed": true
+    },
+    {
+      "name": "architecture section 7",
+      "passed": true
+    },
+    {
+      "name": "dominant public-only privacy",
+      "passed": true
+    },
+    {
+      "name": "public reusable label",
+      "passed": true
+    },
+    {
+      "name": "privacy reconstruction prohibition",
+      "passed": true
+    },
+    {
+      "name": "no fabricated historical error",
+      "passed": true
+    },
+    {
+      "name": "authorization gate",
+      "passed": true
+    },
+    {
+      "name": "rubric mapping",
+      "passed": true
+    },
+    {
+      "name": "option gate",
+      "passed": true
+    },
+    {
+      "name": "fresh-chat next-assignment form",
+      "passed": true
+    },
+    {
+      "name": "source-level clone discipline",
+      "passed": true
+    },
+    {
+      "name": "family-specific precedence",
+      "passed": true
+    },
+    {
+      "name": "correct discovered Auth reference",
+      "passed": true
+    },
+    {
+      "name": "network reference limited to internals",
+      "passed": true
+    },
+    {
+      "name": "one fixed SVG",
+      "passed": true
+    },
+    {
+      "name": "uniform SVG scaling",
+      "passed": true
+    },
+    {
+      "name": "fixed geometry",
+      "passed": true
+    },
+    {
+      "name": "no minimum mobile font fiction",
+      "passed": true
+    },
+    {
+      "name": "accessible equivalent",
+      "passed": true
+    },
+    {
+      "name": "native deeper explanation",
+      "passed": true
+    },
+    {
+      "name": "no node ceiling",
+      "passed": true
+    },
+    {
+      "name": "build stage",
+      "passed": true
+    },
+    {
+      "name": "image contents",
+      "passed": true
+    },
+    {
+      "name": "orchestration",
+      "passed": true
+    },
+    {
+      "name": "container processes",
+      "passed": true
+    },
+    {
+      "name": "resource boundary",
+      "passed": true
+    },
+    {
+      "name": "metric provenance",
+      "passed": true
+    },
+    {
+      "name": "theme scope",
+      "passed": true
+    },
+    {
+      "name": "workflow container",
+      "passed": true
+    },
+    {
+      "name": "workflow ordered list",
+      "passed": true
+    },
+    {
+      "name": "workflow native step details",
+      "passed": true
+    },
+    {
+      "name": "implementation details",
+      "passed": true
+    },
+    {
+      "name": "four-step workflow",
+      "passed": true
+    },
+    {
+      "name": "one native marker",
+      "passed": true
+    },
+    {
+      "name": "default state distinction",
+      "passed": true
+    },
+    {
+      "name": "copy test",
+      "passed": true
+    },
+    {
+      "name": "audit enclosing layout",
+      "passed": true
+    },
+    {
+      "name": "audit nested grid",
+      "passed": true
+    },
+    {
+      "name": "professional README",
+      "passed": true
+    },
+    {
+      "name": "deferred existing rollout",
+      "passed": true
+    },
+    {
+      "name": "visual review then integration",
+      "passed": true
+    },
+    {
+      "name": "real QA no fabricated evidence",
+      "passed": true
+    },
+    {
+      "name": "obsolete Week2 Auth path absent",
+      "passed": true
+    },
+    {
+      "name": "old node target removed",
+      "passed": true
+    },
+    {
+      "name": "contradictory mobile reflow removed",
+      "passed": true
+    },
+    {
+      "name": "old breakpoint requirement removed",
+      "passed": true
+    },
+    {
+      "name": "historical AI preservation instruction removed",
+      "passed": true
+    },
+    {
+      "name": "playful README mandate removed",
+      "passed": true
+    },
+    {
+      "name": "no positive alternate-mobile instruction",
+      "passed": true
+    },
+    {
+      "name": "balanced fenced code blocks",
+      "passed": true
+    },
+    {
+      "name": "preserved SHA256 /home/reader/Desktop/AD371/MasterPrompts/App-Engineering-Showcase-Master-Prompt-v1.0.md",
+      "passed": true
+    },
+    {
+      "name": "preserved SHA256 /home/reader/Desktop/AD371/MasterPrompts/App-Engineering-Showcase-Master-Prompt-v1.1.md",
+      "passed": true
+    },
+    {
+      "name": "preserved SHA256 /home/reader/Desktop/Shocases/Master-Resume-Portfolio-Integration-Prompt-v5.7.txt",
+      "passed": true
+    }
+  ],
+  "scope": "Static master-document checks and protected-master SHA256 checks only; not application, browser, Docker, build, or publication QA."
+}

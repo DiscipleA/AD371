@@ -1,0 +1,2545 @@
+{
+  "url": "http://127.0.0.1:8797/",
+  "captured_at": "2026-11-06T05:23:17.774030+00:00",
+  "cases": [
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/light/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1028,
+        "height": 842.375,
+        "scaleX": 0.7138771186440678,
+        "scaleY": 0.7138771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/light/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.375,
+        "height": 811.546875,
+        "scaleX": 0.6877515889830509,
+        "scaleY": 0.6877515889830509,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/light/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4375,
+        "height": 810.78125,
+        "scaleX": 0.6871027542372882,
+        "scaleY": 0.6871027542372882,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/light/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.53125,
+        "height": 810.03125,
+        "scaleX": 0.6864671610169492,
+        "scaleY": 0.6864671610169492,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/light/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3125,
+        "height": 520.59375,
+        "scaleX": 0.4411811440677966,
+        "scaleY": 0.4411811440677966,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/light/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.53125,
+        "height": 247.90625,
+        "scaleX": 0.21009004237288137,
+        "scaleY": 0.21009004237288137,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/light/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.375,
+        "scaleX": 0.1638771186440678,
+        "scaleY": 0.1638771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/dark/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1028,
+        "height": 842.375,
+        "scaleX": 0.7138771186440678,
+        "scaleY": 0.7138771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/dark/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.375,
+        "height": 811.546875,
+        "scaleX": 0.6877515889830509,
+        "scaleY": 0.6877515889830509,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/dark/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4375,
+        "height": 810.78125,
+        "scaleX": 0.6871027542372882,
+        "scaleY": 0.6871027542372882,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/dark/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.53125,
+        "height": 810.03125,
+        "scaleX": 0.6864671610169492,
+        "scaleY": 0.6864671610169492,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/dark/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3125,
+        "height": 520.59375,
+        "scaleX": 0.4411811440677966,
+        "scaleY": 0.4411811440677966,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/dark/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.53125,
+        "height": 247.90625,
+        "scaleX": 0.21009004237288137,
+        "scaleY": 0.21009004237288137,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map standard/dark/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.375,
+        "scaleX": 0.1638771186440678,
+        "scaleY": 0.1638771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/light/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1026,
+        "height": 840.75,
+        "scaleX": 0.7125,
+        "scaleY": 0.7125,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/light/1151",
+      "status": "passed",
+      "detail": {
+        "width": 988.375,
+        "height": 809.90625,
+        "scaleX": 0.6863612288135593,
+        "scaleY": 0.6863612288135593,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/light/1150",
+      "status": "passed",
+      "detail": {
+        "width": 987.4375,
+        "height": 809.140625,
+        "scaleX": 0.6857123940677966,
+        "scaleY": 0.6857123940677966,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/light/1149",
+      "status": "passed",
+      "detail": {
+        "width": 986.53125,
+        "height": 808.40625,
+        "scaleX": 0.6850900423728814,
+        "scaleY": 0.6850900423728814,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/light/768",
+      "status": "passed",
+      "detail": {
+        "width": 633.3125,
+        "height": 518.953125,
+        "scaleX": 0.43979078389830506,
+        "scaleY": 0.43979078389830506,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/light/390",
+      "status": "passed",
+      "detail": {
+        "width": 300.53125,
+        "height": 246.265625,
+        "scaleX": 0.20869968220338983,
+        "scaleY": 0.20869968220338983,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/light/320",
+      "status": "passed",
+      "detail": {
+        "width": 234,
+        "height": 191.75,
+        "scaleX": 0.1625,
+        "scaleY": 0.1625,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/dark/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1026,
+        "height": 840.75,
+        "scaleX": 0.7125,
+        "scaleY": 0.7125,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/dark/1151",
+      "status": "passed",
+      "detail": {
+        "width": 988.375,
+        "height": 809.90625,
+        "scaleX": 0.6863612288135593,
+        "scaleY": 0.6863612288135593,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/dark/1150",
+      "status": "passed",
+      "detail": {
+        "width": 987.4375,
+        "height": 809.140625,
+        "scaleX": 0.6857123940677966,
+        "scaleY": 0.6857123940677966,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/dark/1149",
+      "status": "passed",
+      "detail": {
+        "width": 986.53125,
+        "height": 808.40625,
+        "scaleX": 0.6850900423728814,
+        "scaleY": 0.6850900423728814,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/dark/768",
+      "status": "passed",
+      "detail": {
+        "width": 633.3125,
+        "height": 518.953125,
+        "scaleX": 0.43979078389830506,
+        "scaleY": 0.43979078389830506,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/dark/390",
+      "status": "passed",
+      "detail": {
+        "width": 300.53125,
+        "height": 246.265625,
+        "scaleX": 0.20869968220338983,
+        "scaleY": 0.20869968220338983,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map playful-pop/dark/320",
+      "status": "passed",
+      "detail": {
+        "width": 234,
+        "height": 191.75,
+        "scaleX": 0.1625,
+        "scaleY": 0.1625,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/light/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1139.9505615234375,
+        "height": 934.89697265625,
+        "scaleX": 0.7902674788135594,
+        "scaleY": 0.7902674788135594,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/light/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.0690307617188,
+        "height": 811.974365234375,
+        "scaleX": 0.6863612288135594,
+        "scaleY": 0.6863612288135594,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/light/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.1300659179688,
+        "height": 811.206787109375,
+        "scaleX": 0.6857123940677967,
+        "scaleY": 0.6857123940677967,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/light/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.2222290039062,
+        "height": 810.470458984375,
+        "scaleX": 0.6850900423728815,
+        "scaleY": 0.6850900423728815,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/light/768",
+      "status": "passed",
+      "detail": {
+        "width": 634.3980102539062,
+        "height": 520.2783203125,
+        "scaleX": 0.4397907838983051,
+        "scaleY": 0.4397907838983051,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/light/390",
+      "status": "passed",
+      "detail": {
+        "width": 301.04638671875,
+        "height": 246.89453125,
+        "scaleX": 0.20869968220338986,
+        "scaleY": 0.20869968220338986,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/light/320",
+      "status": "passed",
+      "detail": {
+        "width": 234.4010772705078,
+        "height": 192.23974609375,
+        "scaleX": 0.16250000000000003,
+        "scaleY": 0.16250000000000003,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/dark/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1139.9505615234375,
+        "height": 934.89697265625,
+        "scaleX": 0.7902674788135594,
+        "scaleY": 0.7902674788135594,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/dark/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.0690307617188,
+        "height": 811.974365234375,
+        "scaleX": 0.6863612288135594,
+        "scaleY": 0.6863612288135594,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/dark/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.1300659179688,
+        "height": 811.206787109375,
+        "scaleX": 0.6857123940677967,
+        "scaleY": 0.6857123940677967,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/dark/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.2222290039062,
+        "height": 810.470458984375,
+        "scaleX": 0.6850900423728815,
+        "scaleY": 0.6850900423728815,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/dark/768",
+      "status": "passed",
+      "detail": {
+        "width": 634.3980102539062,
+        "height": 520.2783203125,
+        "scaleX": 0.4397907838983051,
+        "scaleY": 0.4397907838983051,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/dark/390",
+      "status": "passed",
+      "detail": {
+        "width": 301.04638671875,
+        "height": 246.89453125,
+        "scaleX": 0.20869968220338986,
+        "scaleY": 0.20869968220338986,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map raggedy-granite/dark/320",
+      "status": "passed",
+      "detail": {
+        "width": 234.4010772705078,
+        "height": 192.23974609375,
+        "scaleX": 0.16250000000000003,
+        "scaleY": 0.16250000000000003,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/light/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1140,
+        "height": 934.15625,
+        "scaleX": 0.7916578389830509,
+        "scaleY": 0.7916578389830509,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/light/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.375,
+        "height": 811.546875,
+        "scaleX": 0.6877515889830509,
+        "scaleY": 0.6877515889830509,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/light/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4375,
+        "height": 810.78125,
+        "scaleX": 0.6871027542372882,
+        "scaleY": 0.6871027542372882,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/light/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.53125,
+        "height": 810.03125,
+        "scaleX": 0.6864671610169492,
+        "scaleY": 0.6864671610169492,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/light/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3125,
+        "height": 520.59375,
+        "scaleX": 0.4411811440677966,
+        "scaleY": 0.4411811440677966,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/light/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.53125,
+        "height": 247.90625,
+        "scaleX": 0.21009004237288137,
+        "scaleY": 0.21009004237288137,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/light/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.375,
+        "scaleX": 0.1638771186440678,
+        "scaleY": 0.1638771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/dark/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1140,
+        "height": 934.15625,
+        "scaleX": 0.7916578389830509,
+        "scaleY": 0.7916578389830509,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/dark/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.375,
+        "height": 811.546875,
+        "scaleX": 0.6877515889830509,
+        "scaleY": 0.6877515889830509,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/dark/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4375,
+        "height": 810.78125,
+        "scaleX": 0.6871027542372882,
+        "scaleY": 0.6871027542372882,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/dark/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.53125,
+        "height": 810.03125,
+        "scaleX": 0.6864671610169492,
+        "scaleY": 0.6864671610169492,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/dark/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3125,
+        "height": 520.59375,
+        "scaleX": 0.4411811440677966,
+        "scaleY": 0.4411811440677966,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/dark/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.53125,
+        "height": 247.90625,
+        "scaleX": 0.21009004237288137,
+        "scaleY": 0.21009004237288137,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map glossy-marble/dark/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.375,
+        "scaleX": 0.1638771186440678,
+        "scaleY": 0.1638771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/light/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1076,
+        "height": 881.71875,
+        "scaleX": 0.747219279661017,
+        "scaleY": 0.747219279661017,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/light/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.375,
+        "height": 811.546875,
+        "scaleX": 0.6877515889830509,
+        "scaleY": 0.6877515889830509,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/light/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4375,
+        "height": 810.78125,
+        "scaleX": 0.6871027542372882,
+        "scaleY": 0.6871027542372882,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/light/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.53125,
+        "height": 810.03125,
+        "scaleX": 0.6864671610169492,
+        "scaleY": 0.6864671610169492,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/light/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3125,
+        "height": 520.59375,
+        "scaleX": 0.4411811440677966,
+        "scaleY": 0.4411811440677966,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/light/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.53125,
+        "height": 247.90625,
+        "scaleX": 0.21009004237288137,
+        "scaleY": 0.21009004237288137,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/light/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.375,
+        "scaleX": 0.1638771186440678,
+        "scaleY": 0.1638771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/dark/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1076,
+        "height": 881.71875,
+        "scaleX": 0.747219279661017,
+        "scaleY": 0.747219279661017,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/dark/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.375,
+        "height": 811.546875,
+        "scaleX": 0.6877515889830509,
+        "scaleY": 0.6877515889830509,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/dark/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4375,
+        "height": 810.78125,
+        "scaleX": 0.6871027542372882,
+        "scaleY": 0.6871027542372882,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/dark/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.53125,
+        "height": 810.03125,
+        "scaleX": 0.6864671610169492,
+        "scaleY": 0.6864671610169492,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/dark/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3125,
+        "height": 520.59375,
+        "scaleX": 0.4411811440677966,
+        "scaleY": 0.4411811440677966,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/dark/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.53125,
+        "height": 247.90625,
+        "scaleX": 0.21009004237288137,
+        "scaleY": 0.21009004237288137,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map luminous-midnight/dark/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.375,
+        "scaleX": 0.1638771186440678,
+        "scaleY": 0.1638771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/light/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1044,
+        "height": 855.5,
+        "scaleX": 0.725,
+        "scaleY": 0.725,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/light/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.375,
+        "height": 811.546875,
+        "scaleX": 0.6877515889830509,
+        "scaleY": 0.6877515889830509,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/light/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4375,
+        "height": 810.78125,
+        "scaleX": 0.6871027542372882,
+        "scaleY": 0.6871027542372882,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/light/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.53125,
+        "height": 810.03125,
+        "scaleX": 0.6864671610169492,
+        "scaleY": 0.6864671610169492,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/light/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3125,
+        "height": 520.59375,
+        "scaleX": 0.4411811440677966,
+        "scaleY": 0.4411811440677966,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/light/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.53125,
+        "height": 247.90625,
+        "scaleX": 0.21009004237288137,
+        "scaleY": 0.21009004237288137,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/light/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.375,
+        "scaleX": 0.1638771186440678,
+        "scaleY": 0.1638771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/dark/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1044,
+        "height": 855.5,
+        "scaleX": 0.725,
+        "scaleY": 0.725,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/dark/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.375,
+        "height": 811.546875,
+        "scaleX": 0.6877515889830509,
+        "scaleY": 0.6877515889830509,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/dark/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4375,
+        "height": 810.78125,
+        "scaleX": 0.6871027542372882,
+        "scaleY": 0.6871027542372882,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/dark/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.53125,
+        "height": 810.03125,
+        "scaleX": 0.6864671610169492,
+        "scaleY": 0.6864671610169492,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/dark/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3125,
+        "height": 520.59375,
+        "scaleX": 0.4411811440677966,
+        "scaleY": 0.4411811440677966,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/dark/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.53125,
+        "height": 247.90625,
+        "scaleX": 0.21009004237288137,
+        "scaleY": 0.21009004237288137,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map gothic-stickerboard/dark/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.375,
+        "scaleX": 0.1638771186440678,
+        "scaleY": 0.1638771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/light/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1028,
+        "height": 842.375,
+        "scaleX": 0.7138771186440678,
+        "scaleY": 0.7138771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/light/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.375,
+        "height": 811.546875,
+        "scaleX": 0.6877515889830509,
+        "scaleY": 0.6877515889830509,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/light/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4375,
+        "height": 810.78125,
+        "scaleX": 0.6871027542372882,
+        "scaleY": 0.6871027542372882,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/light/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.53125,
+        "height": 810.03125,
+        "scaleX": 0.6864671610169492,
+        "scaleY": 0.6864671610169492,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/light/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3125,
+        "height": 520.59375,
+        "scaleX": 0.4411811440677966,
+        "scaleY": 0.4411811440677966,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/light/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.53125,
+        "height": 247.90625,
+        "scaleX": 0.21009004237288137,
+        "scaleY": 0.21009004237288137,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/light/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.375,
+        "scaleX": 0.1638771186440678,
+        "scaleY": 0.1638771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/dark/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1028,
+        "height": 842.375,
+        "scaleX": 0.7138771186440678,
+        "scaleY": 0.7138771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/dark/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.375,
+        "height": 811.546875,
+        "scaleX": 0.6877515889830509,
+        "scaleY": 0.6877515889830509,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/dark/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4375,
+        "height": 810.78125,
+        "scaleX": 0.6871027542372882,
+        "scaleY": 0.6871027542372882,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/dark/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.53125,
+        "height": 810.03125,
+        "scaleX": 0.6864671610169492,
+        "scaleY": 0.6864671610169492,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/dark/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3125,
+        "height": 520.59375,
+        "scaleX": 0.4411811440677966,
+        "scaleY": 0.4411811440677966,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/dark/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.53125,
+        "height": 247.90625,
+        "scaleX": 0.21009004237288137,
+        "scaleY": 0.21009004237288137,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "preserved map baroque-plexiglas/dark/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.375,
+        "scaleX": 0.1638771186440678,
+        "scaleY": 0.1638771186440678,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "six copy targets and native keyboard disclosures",
+      "status": "passed",
+      "detail": [
+        "pulseReviewPrompt",
+        "pulsePlanPrompt",
+        "pulseShortBuildPrompt",
+        "pulseBuildPrompt",
+        "pulseVerifyPrompt",
+        "pulseAuditContract"
+      ]
+    },
+    {
+      "engine": "chromium",
+      "name": "no uncaught application errors",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/light/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1028,
+        "height": 842.38330078125,
+        "scaleX": 0.7138842344284058,
+        "scaleY": 0.7138842344284058,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/light/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.4000244140625,
+        "height": 811.5833129882812,
+        "scaleX": 0.6877778172492981,
+        "scaleY": 0.6877778172492981,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/light/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4666748046875,
+        "height": 810.816650390625,
+        "scaleX": 0.6871296167373657,
+        "scaleY": 0.6871296167373657,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/light/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.5,
+        "height": 810.0166625976562,
+        "scaleX": 0.6864547729492188,
+        "scaleY": 0.6864547729492188,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/light/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3333740234375,
+        "height": 520.61669921875,
+        "scaleX": 0.4412005543708801,
+        "scaleY": 0.4412005543708801,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/light/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.5333251953125,
+        "height": 247.9166717529297,
+        "scaleX": 0.21009258925914764,
+        "scaleY": 0.21009258925914764,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/light/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.38333129882812,
+        "scaleX": 0.16388417780399323,
+        "scaleY": 0.16388417780399323,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/dark/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1028,
+        "height": 842.38330078125,
+        "scaleX": 0.7138842344284058,
+        "scaleY": 0.7138842344284058,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/dark/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.4000244140625,
+        "height": 811.5833129882812,
+        "scaleX": 0.6877778172492981,
+        "scaleY": 0.6877778172492981,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/dark/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4666748046875,
+        "height": 810.816650390625,
+        "scaleX": 0.6871296167373657,
+        "scaleY": 0.6871296167373657,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/dark/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.5,
+        "height": 810.0166625976562,
+        "scaleX": 0.6864547729492188,
+        "scaleY": 0.6864547729492188,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/dark/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3333740234375,
+        "height": 520.61669921875,
+        "scaleX": 0.4412005543708801,
+        "scaleY": 0.4412005543708801,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/dark/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.5333251953125,
+        "height": 247.9166717529297,
+        "scaleX": 0.21009258925914764,
+        "scaleY": 0.21009258925914764,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map standard/dark/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.38333129882812,
+        "scaleX": 0.16388417780399323,
+        "scaleY": 0.16388417780399323,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/light/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1026,
+        "height": 840.75,
+        "scaleX": 0.7124999761581421,
+        "scaleY": 0.7124999761581421,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/light/1151",
+      "status": "passed",
+      "detail": {
+        "width": 988.4000244140625,
+        "height": 809.933349609375,
+        "scaleX": 0.6863842010498047,
+        "scaleY": 0.6863842010498047,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/light/1150",
+      "status": "passed",
+      "detail": {
+        "width": 987.4666748046875,
+        "height": 809.1666870117188,
+        "scaleX": 0.6857344508171082,
+        "scaleY": 0.6857344508171082,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/light/1149",
+      "status": "passed",
+      "detail": {
+        "width": 986.5,
+        "height": 808.38330078125,
+        "scaleX": 0.6850694417953491,
+        "scaleY": 0.6850694417953491,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/light/768",
+      "status": "passed",
+      "detail": {
+        "width": 633.3333740234375,
+        "height": 518.9833374023438,
+        "scaleX": 0.43981480598449707,
+        "scaleY": 0.43981480598449707,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/light/390",
+      "status": "passed",
+      "detail": {
+        "width": 300.5333251953125,
+        "height": 246.26666259765625,
+        "scaleX": 0.20870056748390198,
+        "scaleY": 0.20870056748390198,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/light/320",
+      "status": "passed",
+      "detail": {
+        "width": 234,
+        "height": 191.75,
+        "scaleX": 0.16249999403953552,
+        "scaleY": 0.16249999403953552,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/dark/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1026,
+        "height": 840.75,
+        "scaleX": 0.7124999761581421,
+        "scaleY": 0.7124999761581421,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/dark/1151",
+      "status": "passed",
+      "detail": {
+        "width": 988.4000244140625,
+        "height": 809.933349609375,
+        "scaleX": 0.6863842010498047,
+        "scaleY": 0.6863842010498047,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/dark/1150",
+      "status": "passed",
+      "detail": {
+        "width": 987.4666748046875,
+        "height": 809.1666870117188,
+        "scaleX": 0.6857344508171082,
+        "scaleY": 0.6857344508171082,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/dark/1149",
+      "status": "passed",
+      "detail": {
+        "width": 986.5,
+        "height": 808.38330078125,
+        "scaleX": 0.6850694417953491,
+        "scaleY": 0.6850694417953491,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/dark/768",
+      "status": "passed",
+      "detail": {
+        "width": 633.3333740234375,
+        "height": 518.9833374023438,
+        "scaleX": 0.43981480598449707,
+        "scaleY": 0.43981480598449707,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/dark/390",
+      "status": "passed",
+      "detail": {
+        "width": 300.5333251953125,
+        "height": 246.26666259765625,
+        "scaleX": 0.20870056748390198,
+        "scaleY": 0.20870056748390198,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map playful-pop/dark/320",
+      "status": "passed",
+      "detail": {
+        "width": 234,
+        "height": 191.75,
+        "scaleX": 0.16249999403953552,
+        "scaleY": 0.16249999403953552,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/light/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1139.949951171875,
+        "height": 934.9166259765625,
+        "scaleX": 0.7902777838402427,
+        "scaleY": 0.7902777838402427,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/light/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.0999755859375,
+        "height": 812,
+        "scaleX": 0.6863842163421463,
+        "scaleY": 0.6863842163421463,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/light/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.1666259765625,
+        "height": 811.2333374023438,
+        "scaleX": 0.6857344646845048,
+        "scaleY": 0.6857344646845048,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/light/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.183349609375,
+        "height": 810.4500122070312,
+        "scaleX": 0.6850694542042167,
+        "scaleY": 0.6850694542042167,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/light/768",
+      "status": "passed",
+      "detail": {
+        "width": 634.4166259765625,
+        "height": 520.316650390625,
+        "scaleX": 0.43981478712938243,
+        "scaleY": 0.43981478712938243,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/light/390",
+      "status": "passed",
+      "detail": {
+        "width": 301.04998779296875,
+        "height": 246.89999389648438,
+        "scaleX": 0.20870056327935024,
+        "scaleY": 0.20870056327935024,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/light/320",
+      "status": "passed",
+      "detail": {
+        "width": 234.40000915527344,
+        "height": 192.23333740234375,
+        "scaleX": 0.1624999928139054,
+        "scaleY": 0.1624999928139054,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/dark/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1139.949951171875,
+        "height": 934.9166259765625,
+        "scaleX": 0.7902777838402427,
+        "scaleY": 0.7902777838402427,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/dark/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.0999755859375,
+        "height": 812,
+        "scaleX": 0.6863842163421463,
+        "scaleY": 0.6863842163421463,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/dark/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.1666259765625,
+        "height": 811.2333374023438,
+        "scaleX": 0.6857344646845048,
+        "scaleY": 0.6857344646845048,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/dark/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.183349609375,
+        "height": 810.4500122070312,
+        "scaleX": 0.6850694542042167,
+        "scaleY": 0.6850694542042167,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/dark/768",
+      "status": "passed",
+      "detail": {
+        "width": 634.4166259765625,
+        "height": 520.316650390625,
+        "scaleX": 0.43981478712938243,
+        "scaleY": 0.43981478712938243,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/dark/390",
+      "status": "passed",
+      "detail": {
+        "width": 301.04998779296875,
+        "height": 246.89999389648438,
+        "scaleX": 0.20870056327935024,
+        "scaleY": 0.20870056327935024,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map raggedy-granite/dark/320",
+      "status": "passed",
+      "detail": {
+        "width": 234.40000915527344,
+        "height": 192.23333740234375,
+        "scaleX": 0.1624999928139054,
+        "scaleY": 0.1624999928139054,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map glossy-marble/light/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1140,
+        "height": 934.1666870117188,
+        "scaleX": 0.7916666865348816,
+        "scaleY": 0.7916666865348816,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map glossy-marble/light/1151",
+      "status": "passed",
+      "detail": {
+        "width": 990.4000244140625,
+        "height": 811.5833129882812,
+        "scaleX": 0.6877778172492981,
+        "scaleY": 0.6877778172492981,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map glossy-marble/light/1150",
+      "status": "passed",
+      "detail": {
+        "width": 989.4666748046875,
+        "height": 810.816650390625,
+        "scaleX": 0.6871296167373657,
+        "scaleY": 0.6871296167373657,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map glossy-marble/light/1149",
+      "status": "passed",
+      "detail": {
+        "width": 988.5,
+        "height": 810.0166625976562,
+        "scaleX": 0.6864547729492188,
+        "scaleY": 0.6864547729492188,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map glossy-marble/light/768",
+      "status": "passed",
+      "detail": {
+        "width": 635.3333740234375,
+        "height": 520.61669921875,
+        "scaleX": 0.4412005543708801,
+        "scaleY": 0.4412005543708801,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map glossy-marble/light/390",
+      "status": "passed",
+      "detail": {
+        "width": 302.5333251953125,
+        "height": 247.9166717529297,
+        "scaleX": 0.21009258925914764,
+        "scaleY": 0.21009258925914764,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map glossy-marble/light/320",
+      "status": "passed",
+      "detail": {
+        "width": 236,
+        "height": 193.38333129882812,
+        "scaleX": 0.16388417780399323,
+        "scaleY": 0.16388417780399323,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    },
+    {
+      "engine": "firefox",
+      "name": "preserved map glossy-marble/dark/1920",
+      "status": "passed",
+      "detail": {
+        "width": 1140,
+        "height": 934.1666870117188,
+        "scaleX": 0.7916666865348816,
+        "scaleY": 0.7916666865348816,
+        "dot": 0,
+        "overflow": 0,
+        "badText": [],
+        "intersections": [],
+        "nodes": 17,
+        "mobilePanels": 0
+      }
+    }
+  ],
+  "browsers": {
+    "chromium": "156.0.8078.4",
+    "firefox": "157.0"
+  }
+}
