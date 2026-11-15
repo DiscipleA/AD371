@@ -151,9 +151,10 @@ The existing completed checklist below documents real local network acceptance. 
 
 - [x] **Terminal and constraint inspection:** 62 Node checks and 14 Compose/Nginx checks passed in the recorded acceptance run ([source output](docs/qa/source-tests-acceptance.log), [infrastructure output](docs/qa/infra-acceptance.log)).
 - [x] **Automated browser console/network inspection:** real quote/health traffic, response contracts and final healthy-flow errors/assets were inspected in Chromium and Firefox ([browser results](docs/qa/browser-stable/browser-results.json)).
-- [ ] **Manual DevTools inspection:** no separate completed manual review is documented; automated network capture and CLI audits are identified as such.
 
-**Storage scope:** this is a stateless quote/network lab, not a database application. SQL/NoSQL CRUD is not applicable. The [QA report](docs/qa/report.md) retains the Linux host-isolation limitation and other scope boundaries.
+**Inspection method:** actual automated network/console capture and terminal/CLI records provide the inspection evidence. They are not relabeled as a manual DevTools GUI session; no extra manual-GUI gate is imposed.
+
+**Storage scope:** this is a stateless quote/network lab, not a database application. SQL DDL/ER, MongoDB documents, database provisioning/migrations/seeds and SQL/NoSQL CRUD are N/A: quantity and observations are page-memory state, and replicas calculate quotes without persistent storage. The [QA report](docs/qa/report.md) retains the Linux host-isolation limitation and other scope boundaries.
 
 ### Completed QA checklist
 
@@ -195,6 +196,21 @@ This optional acceptance runner **stops, starts and recreates `store-a`**, launc
 
 ## 🤖 AI Assistance
 
-AI assisted implementation, tests and documentation. The [public AI prompt workflow](AI-PROMPTS.md) contains only the reusable **Review → Plan → Build → Verify** prompts published in the showcase.
+Hermes Agent assisted implementation, tests and documentation. The [public AI prompt workflow](AI-PROMPTS.md) contains only the reusable **Review → Plan → Build → Verify** prompts published in the showcase. Exact submitted prompts/conversations remain private; reusable prompts are not historical-submission evidence.
 
-Verification confirmed private-only backends, a dual-homed Nginx gateway, service-name discovery and bounded retries. Browser testing also identified a missing production environment definition, corrected in `scripts/build.mjs`. See the [recorded QA findings](docs/qa/report.md#genuine-findings-and-follow-ups) for the technical corrections and their evidence.
+Verification confirmed private-only backends, a dual-homed Nginx gateway, service-name discovery and bounded retries. Browser testing also identified a missing production environment definition, corrected in `scripts/build.mjs`. See the [recorded QA findings](docs/qa/report.md#genuine-findings-and-follow-ups) for the technical corrections and their evidence. The build correction is not a database-modeling or network-isolation repair.
+
+## 🎥 Demonstration & Submission Links
+
+| Item | State |
+|---|---|
+| Standalone frontend | Local Nginx lab at `http://127.0.0.1/` |
+| Portfolio delivery | Separately managed integration/tunnel described above; not a standalone source-publication claim |
+| Standalone source / video | No separate public repository or uploaded video URL established here |
+| Recorded Lighthouse | Performance **100 desktop / 86 mobile**, other categories **100** at the local lab URL ([reports](docs/qa/report.md#lighthouse--exact-local-url)) |
+
+Show real quote distribution, pinned health and the recorded boundary evidence; a separately approved replica-stop demonstration interrupts the lab. Retain the Linux-host limitation and do not expose connector secrets or present browser Connection IDs as upstream tracing.
+
+## 💡 Reflection
+
+Service discovery and bounded retries make replicas interchangeable, but two replicas on one host are not multi-host availability. A successful public-subnet isolation probe does not prove Docker-host isolation.

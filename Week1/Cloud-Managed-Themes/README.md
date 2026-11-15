@@ -23,6 +23,40 @@ Static host → Browser → Supabase Data API / PostgREST → PostgreSQL
 
 The Working System displays observed HTTP status, request duration, configuration, and source. The architecture diagram explains responsibilities; it is not internal database telemetry.
 
+### SQL domain and schema
+
+The domain is one site-wide appearance configuration, not visitor profiles. This is the complete table DDL from [setup.sql](setup.sql); the linked script also contains grants, RLS, seed and verification SQL.
+
+```sql
+create table if not exists public.portfolio_theme_settings (
+  id text primary key check (id = 'portfolio'),
+  default_theme text not null check (default_theme in (
+    'standard', 'playful-pop', 'raggedy-granite', 'glossy-marble',
+    'luminous-midnight', 'gothic-stickerboard', 'baroque-plexiglas'
+  )),
+  default_mode text not null check (default_mode in ('light', 'dark')),
+  theme_order text[] not null check (
+    cardinality(theme_order) = 7
+    and theme_order @> array[
+      'standard', 'playful-pop', 'raggedy-granite', 'glossy-marble',
+      'luminous-midnight', 'gothic-stickerboard', 'baroque-plexiglas'
+    ]::text[]
+    and theme_order <@ array[
+      'standard', 'playful-pop', 'raggedy-granite', 'glossy-marble',
+      'luminous-midnight', 'gothic-stickerboard', 'baroque-plexiglas'
+    ]::text[]
+  )
+);
+```
+
+```text
+public.portfolio_theme_settings (singleton; no foreign keys)
+  PK id = 'portfolio'
+     default_theme, default_mode, theme_order[7]
+```
+
+There are no related entity tables or ER edges. Browser preferences/cache are local state, not SQL relations. MongoDB/document modeling is N/A: no NoSQL store exists.
+
 ## 🔐 Permissions and Configuration Ownership
 
 The browser uses a **publishable client key**. SQL grants and row-level security permit browser roles to read the public configuration row, but not insert, update, or delete settings. Only an authorized project administrator changes site-wide defaults.
@@ -54,7 +88,14 @@ window.PortfolioThemeCloudConnection = Object.freeze({
 });
 ```
 
-Retain the supplied public connection settings to use the existing demonstration. For a separate project, review and apply `setup.sql` in that project, then replace both public configuration values. A working fallback does not prove that the database connection is available.
+Retain the supplied public connection settings to use the existing demonstration. A working fallback does not prove that the database connection is available.
+
+### Provision a separate hosted database (operator only)
+
+1. Create an isolated Supabase project with PostgreSQL/Data API and open its SQL Editor as the trusted project owner. No local database or Docker is required for this hosted path.
+2. Review and run the **entire** [setup.sql](setup.sql) in that project, not just the DDL excerpt. It creates the table, permits only reads for browser roles and seeds `portfolio` with Gothic Stickerboard/light and the seven-theme order. `ON CONFLICT DO NOTHING` preserves an existing row; this is not a destructive reset/migration tool.
+3. Inspect the script's final SELECT: one row, RLS enabled, read privileges true and write privileges false for `anon`/`authenticated`. Do not expose a SQL-owner connection to the browser.
+4. Set `projectUrl` and `publishableKey` in `theme-cloud-config.js` to that project's public values, serve the frontend as above, and observe a real configuration GET. No visitor write/seed interface is provided.
 
 ## 🧪 Verification and Project Files
 
@@ -82,10 +123,26 @@ This checklist summarizes the [historical live-portfolio QA record](docs/qa/qa-r
 - [x] **Validation and failure checks:** configuration/search boundaries, fallback and controlled timing regressions were exercised; the held-metadata regression remains a recorded finding ([results](docs/qa/regressions/summary.json)).
 - [x] **Automated browser console/network inspection:** no uncaught JavaScript errors were recorded; the Firefox root-favicon 404 remains a finding ([Chromium](docs/qa/chromium-live.json), [Firefox](docs/qa/firefox-live.json)).
 - [x] **Terminal/tool execution:** Lighthouse CLI audits and regression-runner results are retained in the linked QA record.
-- [ ] **Manual DevTools inspection:** no separate completed manual Network/Console review is documented; automated capture is not relabeled as manual work.
+
+**Inspection method:** recorded browser network/console events and terminal/CLI output provide the inspection evidence; no separate manual DevTools GUI session is claimed or required as an additional completion gate here.
 
 **Storage scope:** this is a read-only SQL-configuration feature. Public SQL create/update/delete and NoSQL CRUD are not implemented and are not claimed as tested. The linked snapshot retains its accessibility and timing findings.
 
 ## 🤖 AI Assistance
 
-AI assisted implementation, tests and documentation. The [public AI prompt workflow](AI-PROMPTS.md) contains only the reusable **Review → Plan → Build → Verify** prompts published in the showcase.
+Hermes Agent assisted implementation, tests and documentation. The [public AI prompt workflow](AI-PROMPTS.md) contains only the reusable **Review → Plan → Build → Verify** prompts published in the showcase. Exact submitted prompts/conversations remain private; reusable prompts are not historical-submission evidence.
+
+Source review supports constrained configuration, local rendering and a read-only SQL boundary. No database-model correction is established by the QA record; its unresolved timing/accessibility findings are not presented as fixes. Historical live Lighthouse scores were performance **98 desktop / 80 mobile**, accessibility **96**, best practices/SEO **100** ([record](docs/qa/qa-report.md)).
+
+## 🎥 Demonstration & Submission Links
+
+| Item | State |
+|---|---|
+| Public frontend | Live portfolio edition linked above; maintained separately |
+| Standalone source / video | No separate public repository or uploaded video URL established in this README |
+
+A concise demonstration can show a real configuration read, independent theme/mode preferences, labeled offline simulation and the dated QA findings. Keep request credentials out of expanded headers; publication/submission are separate steps.
+
+## 💡 Reflection
+
+Keeping remote configuration separate from local theme code limits what database content can change. A successful fallback is useful resilience, but is not proof of a connected database or a passed timing regression.

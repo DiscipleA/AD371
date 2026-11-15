@@ -96,6 +96,8 @@ npm run build
 python3 -B tests/infra_test.py
 ```
 
+After `npm run build`, `npm start` runs the actual single-process Node server on port **3000** (or exported `PORT`). It binds **0.0.0.0**, not loopback-only; use an appropriate trusted network/firewall. Open `http://127.0.0.1:3000/` for this non-container development path. It serves both the built frontend and runtime API, but does not reproduce the Nginx/replica topology. Node does not automatically load `.env`; Compose consumes the file for container settings.
+
 The public `dist/` output contains the showcase shell, compiled React island, local themes, and public configuration. It excludes `.env`, server/infrastructure source, tests, documentation, dependencies, and Git metadata.
 
 `config.js` sets the frontend's `apiBase`; the standalone default (`''` or a safe slash path) is same-origin. A separately approved static integration can set a reviewed absolute HTTPS base. Remote requests use CORS, omit credentials and reject redirects; configuration never comes from URL queries, browser storage or visitor input. Credentials, query/hash delimiters, unsafe path segments, protocol-relative URLs and remote HTTP are rejected. Backend and Compose settings come from the environment file. There are no cloud keys in this application.
@@ -134,9 +136,10 @@ The [November 6 release-verification record](docs/qa/report.md) documents these 
 - [x] **Constraints and exposure:** API/CORS permissions, error responses and private-path denial checks were recorded; responses expose allowlisted runtime metadata.
 - [x] **Terminal/container inspection:** 89 Node source tests, 23 Python infrastructure/safety tests and a real 2 → 3 → 2 replica lifecycle were recorded, with restoration verified.
 - [x] **Automated browser console/network inspection:** deployed real-API flows recorded no missing same-origin assets or uncaught page errors; responses were not fabricated.
-- [ ] **Manual DevTools inspection:** no separate completed manual Network/Console review is documented. Lighthouse CLI/CDP audits are not branded Chrome DevTools inspection.
 
-**Storage scope:** no database is implemented; SQL/NoSQL CRUD is not applicable. The broader diagram matrix remains partial and its raw failures/limitations remain in the linked report; this is not an all-green/all-theme certification.
+**Inspection method:** automated browser network/console observations, terminal/container inspection and Lighthouse CLI/CDP records provide the inspection evidence; no separate manual DevTools GUI session is claimed or imposed as a completion gate.
+
+**Storage scope:** no database is implemented. SQL DDL/ER, MongoDB documents, provisioning/migrations/seeds and SQL/NoSQL CRUD are N/A: observations/acknowledgments live only in page memory, and the API reads process metadata. The broader diagram matrix remains partial and its raw failures/limitations remain in the linked report; this is not an all-green/all-theme certification.
 
 ## 📁 Project Files
 
@@ -165,7 +168,9 @@ The inherited `flexbox-interfaces-page` and architecture compatibility classes a
 
 ## 🤖 AI Assistance
 
-AI assisted implementation, tests, and documentation. [AI-PROMPTS.md](AI-PROMPTS.md) contains only the public showcase's reusable Review → Plan → Build → Verify prompts, not historical submissions or private conversations.
+Hermes Agent assisted implementation, tests and documentation. [AI-PROMPTS.md](AI-PROMPTS.md) contains only the public showcase's reusable Review → Plan → Build → Verify prompts. Exact submitted prompts/conversations remain private; reusable prompts are not historical-submission evidence.
+
+The recorded review supports dependency-first multi-stage builds, non-root replicas, allowlisted metadata and project-scoped scaling/restoration. No database-model defect applies and no additional runtime correction is established by this README work. The [QA record](docs/qa/report.md#broader-diagram-matrix--partial-not-a-full-pass) retains partial diagram coverage and diagnostic failures rather than converting them to a full pass.
 
 ## Deployment Boundary
 
@@ -174,3 +179,18 @@ This folder is the standalone application. In the approved split-host profile, t
 The gateway allows browser reads only from `https://chernichenkodmitriy.com`, `https://wild-resume-deployment.dmitriy-chernichenko.workers.dev` and `http://127.0.0.1:8788`. It emits the exact allowed origin and `Vary: Origin` on successes and errors; unknown origins receive no CORS permission. No wildcard, credentials permission or browser header/body forwarding is added. GET/HEAD remain supported and other methods remain denied. The standalone self-only CSP is unchanged; the portfolio owns its frontend policy.
 
 Source tests and a refreshed bundle do not prove live browser connectivity. Verify the running gateway/tunnel and browser-enforced CORS separately; Node fetch does not enforce browser CORS. Runtime changes, publication and recording/submission remain separately authorized operations.
+
+## 🎥 Demonstration & Submission Links
+
+| Item | State |
+|---|---|
+| Standalone frontend | Local loopback gateway at `http://127.0.0.1:8796/` |
+| Public delivery | Split-host frontend/API profile described above; dated release evidence is in `docs/qa/report.md` |
+| Standalone source / video | No separate public repository or uploaded video URL established here |
+| Recorded Lighthouse | Performance **100 desktop / 71 mobile**, other categories **100** on the deployed route ([record](docs/qa/report.md#lighthouse-on-the-deployed-site)) |
+
+Show a real runtime response, bounded sampling, acknowledgment/Clear and the terminal's actual replica count. Scaling requires an approved interruption window and restoration; browser hostname sampling alone is not inventory.
+
+## 💡 Reflection
+
+A small read-only metadata contract is enough to connect the dashboard to real runtime behavior without exposing Docker administration. Process uptime and encountered hostnames must remain observations, not invented cluster-health metrics.
